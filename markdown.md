@@ -42,3 +42,9 @@ $\mathscr{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
 |:---:|:---:|:---:|
 |x|y|z|
 |a|b|c|
+
+$\dot{\vec{r}}$
+
+$\ddots$
+
+$\dag$
