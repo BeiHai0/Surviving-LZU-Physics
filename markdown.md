@@ -48,3 +48,12 @@ $\dot{\vec{r}}$
 $\ddots$
 
 $\dag$
+
+$$
+\left\{
+    \begin{aligned}
+    \frac{1}{2} \\
+    \frac{\partial y}{\partial x}
+    \end{aligned}
+\right.
+$$
