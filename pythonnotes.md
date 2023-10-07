@@ -1,9 +1,0 @@
-divmod(a,b)计算商和余数
-round(x,n)四舍五入
-abs()绝对值
-a+bj复数
-abs(a+bj)复数的模
-a.real取复数a的实部
-a.imag取复数a的虚部
-complex(a,b)得到实部为a，虚部为b的复数
-\r回车，光标移到行首

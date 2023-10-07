@@ -57,3 +57,51 @@ $$
     \end{aligned}
 \right.
 $$
+
+$$
+\stackrel{hhhhhh}{=}
+$$
+
+$$
+\overset{hhhhhh}{=}
+$$
+
+$$
+\lang\rang \\
+\langle\rangle
+$$
+
+$$
+\begin{alignat}{2}
+2&x+&3&y=10 \\
+3&x+&44444&y=11
+\end{alignat}
+$$
+
+$$
+\begin{CD}
+A @>a>> B \\
+@VbVV @AAdA \\
+C@=D
+\end{CD}
+$$
+
+$$
+\xlongequal{hhhhhhhhhhhhhhhhhh}
+$$
+
+$$
+\bra{\phi}
+$$
+
+$$
+\ket{\psi}
+$$
+
+$$
+\braket{\phi|\psi}
+$$
+
+$$
+\Braket{\phi|\frac{\partial^2}{\partial t^2}|\psi}
+$$
