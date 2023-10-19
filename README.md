@@ -6,4 +6,6 @@
 
 ## 统计力学
 
-(https://zhuanlan.zhihu.com/p/348728397)
+[笔记 by WSLY](https://zhuanlan.zhihu.com/p/348728397)
+
+[热力学](https://zhuanlan.zhihu.com/p/69562371)
