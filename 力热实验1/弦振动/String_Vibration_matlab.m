@@ -1,20 +1,19 @@
-x = log([0.482, 0.242, 0.186, 0.093, 0.089]);
-y = log([0.4250, 0.3123, 0.2369, 0.1503, 0.1274]);
+x = ([10, 15, 20, 25, 30, 35, 40, 45]);
+y = ([5.749, 6.990, 8.103, 9.048, 9.902, 10.689, 11.437, 12.129]).^2;
 p = polyfit(x, y, 1);
 p
-x1 = linspace(-3, 0);
+x1 = linspace(0, 50);
 y1 = polyval(p, x1);
 figure
 plot(x, y, 'o')
 hold on
-title("弦振动实验数据直线拟合")
-xlabel("ln T")
-ylabel("ln L_n")
+title("牛顿环")
+xlabel("X")
+ylabel("Y")
 plot(x1, y1)
 legend({"measured data","fitting line"})
 hold off
 
-a = [0.5, -log(2*50*sqrt(0.000325))];
-error1 = (p(1)-0.5)/0.5
-error2 = (p(2)+log(2*50*sqrt(0.000325)))/(-log(2*50*sqrt(0.000325)))
+
+
 
