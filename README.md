@@ -16,6 +16,10 @@
 
 [受周期性驱动力有阻尼一维谐振子](https://zhuanlan.zhihu.com/p/135856012)
 
+[弹簧摆](https://zhuanlan.zhihu.com/p/664522639)
+
+[带电粒子的E-L方程在电磁场规范变换下具有不变性](https://www.zhihu.com/question/552502390/answer/2666510475)
+
 ## 数理方法
 
 [一致收敛和逐点收敛](https://wuli.wiki/online/UniCnv.html)
