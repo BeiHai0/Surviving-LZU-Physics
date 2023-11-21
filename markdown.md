@@ -105,3 +105,7 @@ $$
 $$
 \Braket{\phi|\frac{\partial^2}{\partial t^2}|\psi}
 $$
+
+$$
+\mathrm{d}\mkern-0.48em^{-} 
+$$
