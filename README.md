@@ -20,6 +20,8 @@
 
 [带电粒子的E-L方程在电磁场规范变换下具有不变性](https://www.zhihu.com/question/552502390/answer/2666510475)
 
+[单摆](https://zhuanlan.zhihu.com/p/68606317)
+
 ## 数理方法
 
 [一致收敛和逐点收敛](https://wuli.wiki/online/UniCnv.html)
