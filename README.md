@@ -33,7 +33,7 @@
 ## "<>" 不成对出现
 
 ```
-...\Programs\Microsoft VS Code\resources\app\extensions\markdown-basics
+...\Microsoft VS Code\resources\app\extensions\markdown-basics
 ```
 
 沿着上面路径，打开 language-configuration.json 文件，注释掉下面这一句：
@@ -53,4 +53,60 @@
 ## snippets
 
 ## 只保留自己的 snippetSuggestions，关闭 VS Code 自带的代码提示与补全功能
+
+```
+...\Microsoft VS Code\resources\app\extensions\markdown-basics
+```
+
+按以上路径走，打开 language-configuration 文件，加上下面这句（要加在最外面的大括号内部，并且注意上一句末尾加个逗号）：
+
+```
+    "[markdown]":{
+         "editor.quickSuggestions":true
+    }
+```
+
+加完之后应该长这样：
+
+```
+{
+    "comments":{"blockComment":["<!--","-->"]},
+
+    "brackets":[["{","}"],["[","]"],["(",")"]],
+
+    "colorizedBracketPairs":[],
+
+    "autoClosingPairs":[{"open":"{","close":"}"},
+
+    {"open":"[","close":"]"},{"open":"(","close":")"},
+
+    /* {"open":"<","close":">","notIn":["string"]},
+
+    */{"open":"`","close":"`"},
+
+    {"open":"```","close":"```"}],
+
+    "surroundingPairs":[["(",")"],["[","]"],["`","`"],["_","_"],["*","*"],["{","}"],["'","'"],["\"","\""]],
+
+    "folding":{"offSide":true,"markers":{"start":"^\\s*<!--\\s*#?region\\b.*-->",
+    
+    "end":"^\\s*<!--\\s*#?endregion\\b.*-->"}},
+    
+    "wordPattern":{"pattern":"(\\p{Alphabetic}|\\p{Number}|\\p{Nonspacing_Mark})(((\\p{Alphabetic}|\\p{Number}|\\p{Nonspacing_Mark})|[_])?(\\p{Alphabetic}|\\p{Number}|\\p{Nonspacing_Mark}))*","flags":"ug"},
+
+    "[markdown]":{
+         "editor.quickSuggestions":true
+    }
+}
+```
+
+重启 VS Code 即可使用自定义的 snippets
+
+## 个人惯用 markdown snippets
+
+注意：
+
+所有连续出现两个 “\” 的地方，第一个 “\” 起转义作用
+
+在行内或行间使用的 snippets 不能把 scope 设置为 markdown。scope 那行直接删掉或注释掉即可
 
