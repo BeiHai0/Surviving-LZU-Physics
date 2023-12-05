@@ -108,5 +108,5 @@
 
 所有连续出现两个 “\” 的地方，第一个 “\” 起转义作用
 
-在行内或行间使用的 snippets 不能把 scope 设置为 markdown。scope 那行直接删掉或注释掉即可
+在行内或行间使用的 snippets 不能把 scope 设置为 markdown。scope 那行直接删掉或注释掉即可。
 
