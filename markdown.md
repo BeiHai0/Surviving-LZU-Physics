@@ -116,4 +116,12 @@ Home # 光标跳转到行首
 
 Shift + Alt + A # 块区域注释
 
-<
+$$
+\implies \\
+\Longrightarrow
+$$
+
+$$
+\underbrace{a}_{b}
+$$
+
