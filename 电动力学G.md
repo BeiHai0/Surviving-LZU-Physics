@@ -136,6 +136,82 @@ $$
 
 推广到三维情形：
 
+$$
+\begin{bmatrix}
+A_{x'} \\
+A_{y'} \\
+A_{z'}
+\end{bmatrix}
+=\begin{bmatrix}
+R_{xx} &R_{xy} &R_{xz} \\
+R_{yx} &R_{yy} &R_{yz} \\
+R_{zx} &R_{zy} &R_{zz}
+\end{bmatrix}
+\begin{bmatrix}
+A_x \\
+A_y \\
+A_z
+\end{bmatrix}
+$$
+
+或者用爱因斯坦求和约定简写为：
+
+$$
+A_{i'}
+=R_{ij} A_j
+$$
+
+设 $T=T(x,y,z)$
+
+$$
+\nabla T
+\equiv \frac{\partial T}{\partial x}\vec{e}_x+\frac{\partial T}{\partial y}\vec{e}_y+\frac{\partial T}{\partial z}\vec{e}_z
+$$
+
+$$
+\mathrm{d}\vec{l}
+\equiv \vec{e}_x\mathrm{d}x+\vec{e}_y\mathrm{d}y+\vec{e}_z\mathrm{d}z
+$$
+
+于是 $T$ 的全微分 $\mathrm{d}T$：
+
+$$
+\begin{aligned}
+\mathrm{d}T
+&=\frac{\partial T}{\partial x}\mathrm{d}x+\frac{\partial T}{\partial y}\mathrm{d}y+\frac{\partial T}{\partial z}\mathrm{d}z \\
+&\equiv(\nabla T)\cdot(\mathrm{d}\vec{l}) \\
+&=|\nabla T||\mathrm{d}\vec{l} |\cos\theta
+\end{aligned}
+$$
+
+对于确定的场点 $(x,y,z)$，场量 $T(x,y,z)$ 是确定的，场点的梯度 $\nabla T$ （向量）也是确定的，假设 $|\mathrm{d}\vec{l} |$ 的大小不变，则当 $\theta=0$，即 $\mathrm{d}\vec{l} $ 与 $\nabla T$ 的方向一致时，$\mathrm{d}T$ 最大，这就是说，$\nabla T$ 的方向就是 $T$ 的最快增加方向
+
+$|\nabla T|$ 给出 $T$ 在最快增加方向的斜率
+
+若 $\nabla T(x,y,z)=0 $，则称 $(x,y,z)$ 为稳定点，$T(x,y,z)$ 可能是极大值，也可能是极小值
+
+$$
+\nabla
+\equiv \vec{e}_x\frac{\partial }{\partial x}+\vec{e}_y\frac{\partial}{\partial y}+\vec{e}_z\frac{\partial}{\partial z}
+$$
+
+梯度（the gradient）：$\nabla T$
+
+散度（the divergence）：$\nabla\cdot\vec{v} $
+
+旋度（the curl）：$\nabla\times\vec{v} $
+
+$$
+\nabla T
+\equiv \frac{\partial T}{\partial x}\vec{e}_x+\frac{\partial T}{\partial y}\vec{e}_y+\frac{\partial T}{\partial z}\vec{e}_z
+$$
+
+$$
+\nabla\cdot\vec{v}
+=\frac{\partial v_x}{\partial x}+\frac{\partial v_y}{\partial y}+\frac{\partial v_z}{\partial z}
+$$
+
+
 
 
 ## 矢量代数
