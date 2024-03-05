@@ -28,6 +28,10 @@
 
 [一致收敛和逐点收敛](https://wuli.wiki/online/UniCnv.html)
 
+## 量纲
+
+[自然单位制?](https://physics.stackexchange.com/questions/102527/how-can-planck-units-be-consistent-with-conflicting-dimensions-of-mass)
+
 # markdown 配置
 
 ## "<>" 不成对出现
