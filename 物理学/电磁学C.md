@@ -1433,7 +1433,7 @@ $$
 
 退极化场：
 
-电介质极化时出现极化电荷，这些极化电荷在周围空间产生附加的电场$E'$,空间中任意一点的场强$\vec{E} $是外电场$\vec{E}_0 $和极化电荷的电场$\vec{E'} $的矢量和.
+电介质极化时出现极化电荷，这些极化电荷在周围空间产生附加的电场$E'$,空间中任意一点的场强 $\vec{E} $ 是外电场 $\vec{E}_0 $ 和极化电荷的电场 $\vec{E'} $ 的矢量和.
 
 $$
 \vec{E}=\vec{E}_0+\vec{E}'
@@ -1451,7 +1451,7 @@ $$
 E'=\frac{P}{3\varepsilon_0}
 $$
 
-电极化率：
+各向同性线性介质电极化率：
 
 $$
 \vec{P}=\chi_e\varepsilon_0\vec{E}
@@ -1480,9 +1480,10 @@ $\varepsilon $ 称为电介质的相对介电常量.真空中$\varepsilon=1$
 $$
 \oiint_S\vec{D}\cdot \mathrm{d}\vec{S}=\sum_{(S内)}q_0
 $$
-其中,$q_0$是$S$内的自由电荷.
+其中，$q_0$ 是 $S$ 内的自由电荷.
 
 做题几板斧：
+
 $$
 \sigma_e'=\vec{P}\cdot\vec{e}_n=P_n \\
 \vec{P}=\chi_e\varepsilon_0\vec{E} \\
@@ -4036,7 +4037,7 @@ $$
 
 $$
 \frac{\mathrm{d}\varPhi_D}{\mathrm{d}t}
-=\iint\limits_S\frac{\partial \vec{D}}{\partial t}\cdot\mathrm{d}\vec{Ss}
+=\iint\limits_S\frac{\partial \vec{D}}{\partial t}\cdot\mathrm{d}\vec{S}
 $$
 
 $\frac{\mathrm{d}\varPhi_D}{\mathrm{d}t} $ 称为位移电流，$\frac{\partial \vec{D}}{\partial t} $ 称为位移电流密度.
