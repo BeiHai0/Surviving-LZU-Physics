@@ -5,39 +5,61 @@
 ### 库仑定律
 
 $$
-\vec{F}_{12}=k\frac{q_1q_2}{r_{12}^2}\vec{e}_{12}
+\vec{F}_{12}
+=k\frac{q_1q_2}{r_{12}^2}\vec{e}_{12}
 $$
 
-式中，$\vec{F}_{12}$ 是电荷 $q_1$ 对电荷 $q_2$ 的静电力，$\vec{e}_{12}$ 是从 $q_1$ 到 $q_2$ 的单位矢量，其中：
+式中，$\vec{F}_{12}$ 是**真空中**电荷 $q_1$ 对电荷 $q_2$ 的静电力，$\vec{e}_{12}$ 是从 $q_1$ 到 $q_2$ 的单位矢量，其中：
 
 $$
-k=\frac{1}{4\pi\varepsilon_0}
+k
+=\frac{1}{4\pi\varepsilon_0}
 $$
 
-上式中，$\varepsilon_0$称为真空介电常量或真空电容率，其数值为：
+上式中，$\varepsilon_0$ 称为真空介电常量或真空电容率，其数值为：
 
 $$
-\varepsilon_0=8.85\times10^{-12}\mathrm{C}^2/(\mathrm{N}\cdot\mathrm{m}^2)
+\varepsilon_0
+=8.85\times10^{-12}~\mathrm{C}^2/(\mathrm{N}\cdot\mathrm{m}^2)
 $$
 
 对应的$k$值为：
 
 $$
-k=8.99\times 10^{9}\mathrm{N}\cdot \mathrm{m}^2/\mathrm{C}^2 
+k
+=8.99\times 10^{9}~\mathrm{N}\cdot \mathrm{m}^2/\mathrm{C}^2 
 $$
 
 库仑定律又可以写为：
+
 $$
-\vec{F}_{12}=\frac{1}{4\pi\varepsilon_0}\frac{q_1q_2}{r_{12}^2}\vec{e}_{12}
+\vec{F}_{12}
+=\frac{1}{4\pi\varepsilon_0}\frac{q_1q_2}{r_{12}^2}\vec{e}_{12}
 $$
 
 ### 电场强度
 
-电场的定义：
+电场强度，记为 $\vec{E} $，定义为：
+
 $$
 \vec{E}
-\equiv \frac{\vec{F}}{q_0}=\frac{1}{4\pi\varepsilon_0}\frac{q}{r^2}\vec{e}_r
+\equiv \frac{\vec{F}}{q_0}
 $$
+
+其中，$q_0$ 是试探电荷的电荷量，$\vec{F} $ 是试探电荷所受电场力
+
+特别地，若产生电场的源是点电荷 $q$，则有：
+
+$$
+\begin{aligned}
+\vec{E}
+&\equiv \frac{\vec{F}}{q_0} \\
+&=\frac{1}{4\pi\varepsilon_0}\frac{qq_0}{r^2}\vec{e}_r \\
+&=\frac{1}{4\pi\varepsilon_0}\frac{q}{r^2}\vec{e}_r
+\end{aligned}
+$$
+
+其中，$r $ 是场点到源点的位矢大小，$\vec{e}_r $ 是源点指向场点的单位矢量
 
 ### 电场叠加原理
 
@@ -48,7 +70,8 @@ $$
 答案：
 
 $$
-\vec{E}=-\frac{\lambda_0}{4\varepsilon_0 R}\vec{e}_y
+\vec{E}
+=-\frac{\lambda_0}{4\varepsilon_0 R}\vec{e}_y
 $$
 
 $$
@@ -80,7 +103,7 @@ $$
 
 **电偶极子**：
 
-由一对等量异号点电荷组成的带电体系叫做**电偶极子**.两电荷间的距离 $l$ 远比场点到它们的距离小
+由一对等量异号点电荷组成的带电体系叫做**电偶极子**。两电荷间的距离 $l$ 远比场点到它们的距离小
 
 
 **电偶极矩**：
@@ -126,18 +149,14 @@ $$
 近似：当$r\gg l $时，
 
 $$
-
 \begin{aligned}
-
 E_Q
 &=\frac{q}{4\pi\varepsilon_0}\frac{l}{(r^2+\frac{l^2}{4})^\frac{3}{2}} \\
 &=\frac{q}{4\pi\varepsilon_0}\frac{l}{(r^2(1+\frac{l^2}{4r^2}))^\frac{3}{2}} \\
 &=\frac{q}{4\pi\varepsilon_0}\frac{l}{r^3(1+\frac{l^2}{4r^2})^\frac{3}{2}} \\
 &\approx \frac{q}{4\pi\varepsilon_0}\frac{l}{r^3(1)^\frac{3}{2}} \\
 &=\frac{q}{4\pi\varepsilon_0}\frac{l}{r^3}
-
 \end{aligned}
-
 $$
 
 上面用到的近似：当$r\gg l$，
@@ -151,7 +170,8 @@ $$
 电偶极子在均匀电场中所受力矩(以电偶极子中点为坐标原点)：
 
 $$
-\vec{L}=\vec{p}\times\vec{E}
+\vec{L}
+=\vec{p}\times\vec{E}
 $$
 
 推导：
@@ -163,7 +183,7 @@ $$
 =\vec{p}\times\vec{E}
 $$
 
-### 电场线：
+### 电场线
 
 在电场中作出许多曲线，使这些曲线上每一点的切线方向和该点场强方向一致，那么所有这样作出的曲线叫做电场的**电场线**
 
@@ -177,33 +197,38 @@ $$
 
 (4)静电场中的电场线不会形成闭合线
 
-### 电场强度通量：
+### 电场强度通量
+
+通过某一曲面 $S$ 的电场强度通量，记为 $\Phi_E$，定义为：
 
 $$
 \varPhi_E
-=\iint\limits_{S} \vec{E}\cdot\mathrm{d}\vec{S}
+\equiv \iint\limits_{S} \vec{E}\cdot\mathrm{d}\vec{S}
 =\iint\limits_{S} E\cos\theta\mathrm{d}S
 $$
 
-### 电场强度通量定义：
+### 电场强度通量定义
 
 通过一面元$\Delta S$的电场强度通量定义为该点的电场强度的大小$E$与$\Delta S$在垂直于场强方向的投影面积$\Delta S'=\Delta S\cos\theta$的乘积，其中$\theta$是面元的法线方向与场强方向的夹角.注意，面元很小，面上的电场强度在如此小的面上来不及作出很大的变化，以至于在面元上的电场可以看作匀强电场
 
 $$
-\Delta \Phi_E=E\Delta S\cos\theta
+\Delta \Phi_E
+=E\Delta S\cos\theta
 $$
 
 
 $$
-\Phi_E=\iint_SE\cos\theta dS
+\Phi_E
+=\iint\limits_S E\cos\theta dS
 $$
 
-### 高斯定理：
+### 高斯定理
 
-通过任意闭合曲面 $S$ 的电场强度通量 $\varPhi_E$ 等于该面所包围的所有电荷量的代数和 $\sum q$ 除以 $\varepsilon_0,$ 与闭合曲面外的电荷无关.
+通过任意闭合曲面 $S$ 的电场强度通量等于该面所包围的**所有电荷量**的代数和 $\sum q$ 除以 $\varepsilon_0,$ 与闭合曲面外的电荷无关.
 
 $$
-\Phi_E=\oiint_SE\cos\theta dS=\frac{1}{\varepsilon_0}\sum_{S内}q_i
+\oiint\limits_S \vec{E} \cdot\mathrm{d} \vec{S}
+=\frac{1}{\varepsilon_0}\sum_{S内}q_i
 $$
 
 立体角：
@@ -447,8 +472,6 @@ E=
 \frac{q_e}{4\pi\varepsilon_0 r^2}(\frac{2}{a_0^2}r^2+\frac{2}{a_0}r+1)e^{-\frac{2r}{a_0}}
 $$
 
-
-
 例：1.3-12
 
 三个无限大的平行平面都均匀带电，电荷面密度分别为 $\sigma_{e1},\sigma_{e2},\sigma_{e3} ,$求下列各种情形下各处的场强.
@@ -534,13 +557,15 @@ $$
 假设有一块完整的无限大均匀带电平面，其可被人为分为两部分：一个实心圆和除圆以外的部分.设完整平板所产生的电场为 $\vec{E}_{total},$实心圆产生的电场为 $\vec{E}_{o},$除实心圆外部分产生的电场为 $\vec{E},$则由电场叠加原理，有：
 
 $$
-\vec{E}_{total}=\vec{E}_o+\vec{E}
+\vec{E}_{total}
+=\vec{E}_o+\vec{E}
 $$
 
 于是：
 
 $$
-\vec{E}=\vec{E}_{total}-\vec{E}_o
+\vec{E}
+=\vec{E}_{total}-\vec{E}_o
 $$
 
 这就是说，若想求无限大均匀带电平板除实心圆以外部分产生的电场，只要求出整个平板产生的电场，再减去实心圆产生电场即可.
@@ -615,47 +640,50 @@ $$
 
 任何带电体系产生的电场：
 
-
-
-
 **静电场**的环路定理：
 $$
-\oint_L\vec{E}\cdot d\vec{l}=0
+\oint\limits_L\vec{E}\cdot \mathrm{d}\vec{l}
+=0
 $$
 
 证明(利用静电场力做功与路径无关这一结论)：
 
 
-电势能的改变量/增量：
+### 电势能的改变量/增量
 
-在电场中把一个试探电荷 $q_0$ 从 $P$ 点移到 $Q$ 点，此过程中**试探电荷电势能的改变量**(或称之为增量)$\Delta E_p$ 定义为此过程中**静电场力对试探电荷做功的负值**$-A_{PQ}$
+在电场中把一个试探电荷 $q_0$ 从 $P$ 点移到 $Q$ 点，此过程中**试探电荷电势能的改变量**(或称之为增量)，记为 $\Delta E_p$，定义为此过程中**静电场力对试探电荷做功的负值**$-A_{PQ}$
 
 $$
+\begin{aligned}
 \Delta E_p
-=-A_{PQ}=-\int_P^Q q_0\vec{E}\cdot\mathrm{d}\vec{l}
-=-q_0\int_P^Q\vec{E}\cdot\mathrm{d} \vec{l}
+&\equiv -A_{PQ} \\
+&=-\int_P^Q q_0\vec{E}\cdot\mathrm{d}\vec{l} \\
+&=-q_0\int_P^Q\vec{E}\cdot\mathrm{d} \vec{l} \\
+\end{aligned}
 $$
 
 电势能：
 
 电场力做功的负值
 
-电势差定义：
+### 电势差
 
 $$
-U_{PQ}=\frac{-\Delta E_p}{q_0}=\frac{A_0}{q_0}=\int_P^Q\vec{E}\cdot d\vec{l}
+\begin{aligned}
+U_{PQ}
+&\equiv \frac{-\Delta E_p}{q_0} \\
+&=\frac{A_0}{q_0} \\
+&=\int_P^Q\vec{E}\cdot \mathrm{d}\vec{l}
+\end{aligned}
 $$
 
-$P,Q$两点之间的电势差定义为从$P$到$Q$移动单位正电荷时电场力所做的功，并可被进一步表达为从$P$到$Q$电场沿任意路径的路径积分
+$P,Q$ 两点之间的电势差，记为 $U_{PQ}$，定义为从 $P$ 到 $Q$ 移动单位正电荷时电场力所做的功，并可被进一步表达为从 $P$ 到 $Q$ 电场沿任意路径的路径积分
 
+### 电势
 
-
-电势：
-
-空间中某点$P$的电势$U(P)$就是$P$点对电势零点的电势差$U_{P零点}$.也就是说，我们选择空间中的某点$Q$，并规定其电势为$U(Q)=0$，则空间中的任意一点$P$的电势$U(P)$等于$P$对$Q$的电势差,即：$U(P)=U_{PQ}$
+空间中某点 $P$ 的电势 $U(P)$ 就是 $P$ 点对人为选定的电势零点的电势差 $U_{P零点}$.也就是说，我们选择空间中的某点 $Q$，并规定其电势为 $U(Q)=0$，则空间中的任意一点 $P$ 的电势 $U(P)$ 等于 $P$ 对 $Q$ 的电势差,即：$U(P)=U_{PQ}$
 
 即：若规定$U(Q)=0$,则$U(P)=U_{PQ}=\int_P^Q\vec{E}\cdot\mathrm{d}\vec{l} $
-
 
 若规定无穷远处为电势零点，即无穷远处电势为零，即：$U(\infty)=0$,则：
 
@@ -685,10 +713,12 @@ $$
 若以选取无穷远处为电势零点，则**点电荷**产生的电场中某一点电势：
 
 $$
+\begin{aligned}
 U(P)
-=\int_P^\infty \vec{E}\cdot\mathrm{d}\vec{l}
-=\int_{r_p}^\infty\frac{1}{4\pi\varepsilon_0}\frac{q}{r^2}\mathrm{d}r
-=\frac{1}{4\pi\varepsilon_0}\frac{q}{r_P}
+&=\int_P^\infty \vec{E}\cdot\mathrm{d}\vec{l} \\
+&=\int_{r_p}^\infty\frac{1}{4\pi\varepsilon_0}\frac{q}{r^2}\mathrm{d}r \\
+&=\frac{1}{4\pi\varepsilon_0}\frac{q}{r_P}
+\end{aligned}
 $$
 
 一般默认无穷远处为电势零点，即无穷远处电势为$0$
@@ -755,9 +785,9 @@ $$
 
 $$
 
-电势叠加原理：
+### 电势叠加原理
 
-点电荷组的电场中某点的电势，等于各个点电荷单独存在时的电场在该点电势的代数和.
+点电荷组的电场中某点的电势，等于各个点电荷单独存在时的电场在该点电势的代数和
 
 证明：
 
@@ -782,13 +812,11 @@ U
 =\frac{q}{2\pi\varepsilon_0R^2}(\sqrt{R^2+x^2}-|x|)
 $$
 
-
-
-等势面：
+### 等势面
 
 电势相等的点所组成的面叫做等势面
 
-等势面的性质：
+**等势面的性质**:
 
 等势面与电场线处处正交
 
@@ -797,7 +825,8 @@ $$
 电势的梯度：
 
 $$
-\vec{E}=-\nabla U
+\vec{E}
+=-\nabla U
 $$
 
 证明：
@@ -862,11 +891,11 @@ $$
 
 
 
-### 带电体系的静电能：
+### 带电体系的静电能
 
-带电体系的静电能$W_e$等于把各部分电荷从无限分散的状态聚集成现有带电体系时抵抗静电力所做的功$A'$
+带电体系的静电能 $W_e$ 等于把各部分电荷从无限分散的状态聚集成现有带电体系时抵抗静电力所做的功 $A'$
 
-设带电体系由若干个带电体组成，带电体系的总静电能$W_e$由各带电体之间的相互作用能$W_互$和每个带电体的自能$W_自$组成.
+设带电体系由若干个带电体组成，带电体系的总静电能 $W_e$ 由各带电体之间的相互作用能 $W_互$ 和每个带电体的自能 $W_自$ 组成.
 
 相互作用能：
 
@@ -880,9 +909,9 @@ $$
 
 由电势能差的定义(电势能的改变量等于电场力做功的负值)：
 
-先把$q_1$移动到它应该在的位置，此过程还没有已经存在的电场，电场力为零，静电能改变量为零.
+先把 $q_1$ 移动到它应该在的位置，此过程还没有已经存在的电场，电场力为零，静电能改变量为零.
 
-再把$q_2$移动到它应该在的位置，由于已经存在由$q_1$产生的电场，故此过程电场力做功的负值即为$q_2$电势能的改变量
+再把 $q_2$ 移动到它应该在的位置，由于已经存在由 $q_1$ 产生的电场，故此过程电场力做功的负值即为 $q_2$ 电势能的改变量
 
 $$
 E_p
@@ -923,10 +952,11 @@ $$
 由于：
 
 $$
-q_iU_{ji}
+q_i U_{ji}
 =\frac{1}{4\pi\varepsilon_0}\frac{q_iq_j}{r_{ij}}
 \\
-q_jU_{ji}=\frac{1}{4\pi\varepsilon_0}\frac{q_{ij}}{r_{ij}}
+q_j U_{ji}
+=\frac{1}{4\pi\varepsilon_0}\frac{q_{ij}}{r_{ij}}
 $$
 
 所以(这一步有必要吗？)：
