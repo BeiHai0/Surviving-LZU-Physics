@@ -65,14 +65,18 @@ $$
 
 点电荷组产生的电场在某点的电场强度等于各点电荷单独存在时所产生的电场在该点电场强度的矢量叠加。
 
-例：半径为 $R$ 的带电细圆环，线密度为  $\lambda=\lambda_0\sin\varphi,\lambda_0$ 是一个正的常数， $\varphi$ 是半径 $R$ 和 $x$ 轴正方向所成的角，求环心 $O$ 处的电场强度 $\vec{E} $
+**例**：半径为 $R$ 的带电细圆环，电荷线密度为  $\lambda=\lambda_0\sin\varphi,\lambda_0$ 是一个正的常数， $\varphi$ 是半径 $R$ 和 $x$ 轴正方向所成的角，求环心 $O$ 处的电场强度 $\vec{E} $
 
-答案：
+**答案**：
 
 $$
 \vec{E}
 =-\frac{\lambda_0}{4\varepsilon_0 R}\vec{e}_y
 $$
+
+**解**：
+
+$\varphi\sim \varphi+\mathrm{d}\varphi$ 范围内的电荷：
 
 $$
 \mathrm{d}q
@@ -80,31 +84,35 @@ $$
 =\lambda_0 R\sin\varphi\mathrm{d}\varphi
 $$
 
+$\mathrm{d}q $ 产生的电场大小：
+
 $$
 \mathrm{d}E
 =\frac{1}{4\pi\varepsilon_0} \frac{\mathrm{d}q}{R^2}
 =\frac{\lambda_0}{4\pi \varepsilon_0 R}\sin\varphi\mathrm{d}\varphi
 $$
 
-由对称性：
+由对称性，原点处电场的 $x$ 分量 $E_x=0$，$y$ 分量为：
 
 $$
-E
-=2\int_{\varphi=0}^{\varphi=\pi} \mathrm{d}E\sin\varphi \mathrm{d}\varphi
-=\frac{2\lambda_0}{4\pi\varepsilon_0 R} \int_{\varphi=0}^{\varphi=\pi}\sin^2\varphi\mathrm{d}\varphi
-=\frac{\lambda_0}{4\varepsilon_0 R}
+\begin{aligned}
+E_y
+&=2\int_{\varphi=0}^{\varphi=\pi} \mathrm{d}E\sin\varphi \mathrm{d}\varphi \\
+&=\frac{2\lambda_0}{4\pi\varepsilon_0 R} \int_{\varphi=0}^{\varphi=\pi}\sin^2\varphi\mathrm{d}\varphi \\
+&=\frac{\lambda_0}{4\varepsilon_0 R}
+\end{aligned}
 $$
 
 考虑方向，得：
 
 $$
-\vec{E}=-\frac{\lambda_0}{4\varepsilon_0 R}\vec{e}_y
+\vec{E}
+=-\frac{\lambda_0}{4\varepsilon_0 R}\vec{e}_y
 $$
 
 **电偶极子**：
 
 由一对等量异号点电荷组成的带电体系叫做**电偶极子**。两电荷间的距离 $l$ 远比场点到它们的距离小
-
 
 **电偶极矩**：
 
@@ -280,26 +288,35 @@ $$
 
 引理(4)：多个点电荷的电场强度通量等于它们单独存在时的电场强度通量的代数和.
 
-例：求半径为 $R$，带电量为 $Q$ 的，均匀带电球壳内外场强：
+**例**：求半径为 $R$，带电量为 $Q$ 的，**均匀带电球壳**内外场强
 
-外，$r>R $：由对称性，球壳外某点的电场强度方向与球壳中心和此点连线平行
+**解**：
+
+$r>R $：
+
+由对称性，球壳外某点的电场强度方向与球壳中心和此点连线平行
 
 取高斯面为球面，则由高斯定理：
 
 $$
-4\pi r^2E=\frac{1}{\varepsilon_0}Q
+4\pi r^2E
+=\frac{1}{\varepsilon_0}Q
 $$
 
 于是：
 
 $$
-E=\frac{Q}{4\pi\varepsilon_0r^2}
+E
+=\frac{Q}{4\pi\varepsilon_0r^2}
 $$
 
-内，$0<r<R$，同样由对称性，取高斯面为球面，则由高斯定理：
+$0<r<R$：
+
+同样由对称性，取高斯面为球面，则由高斯定理：
 
 $$
-4\pi r^2 E=\frac{1}{\varepsilon_0}\cdot 0
+4\pi r^2 E
+=\frac{1}{\varepsilon_0}\cdot 0
 $$
 
 于是：
@@ -311,20 +328,24 @@ $$
 综上，结合电场强度的方向：
 
 $$
-\vec{E}=
-\begin{cases}
-0&, 0\leqslant r< R \\
-\frac{Q}{4\pi\varepsilon_0r^2} &,r>R
-\end{cases}
+E
+=\left\{
+\begin{aligned}
+0,~~0\leqslant r< R \\
+\frac{Q}{4\pi\varepsilon_0r^2},~~r>R
+\end{aligned}
+\right.
 $$
 
 这个例子说明，均匀带电球壳内的电场为零.
 
-例：求均匀带电球体内外的电场分布，球体半径为 $R$，球体总带电量为 $Q$(暂时先不要管现实中怎样才能得到一个均匀带电球体；当然学了静电屏蔽后再看这题可能怎么也想不通了)
+**例**：求均匀带电球体内外的电场分布，球体半径为 $R$，球体总带电量为 $Q$
+
+**解**：
 
 由对称性，球体内外某点$P$的电场方向与$P$和球心$O$的连线共线
 
-外，$r>R$,取高斯面为球面，则由高斯定理：
+$r>R$，取高斯面为球面，则由高斯定理：
 
 $$
 \oiint\limits_S \vec{E}\cdot\mathrm{d}\vec{S}
@@ -334,16 +355,18 @@ $$
 分别计算上式等号两端表达式，有：
 
 $$
-4\pi r^2 E=\frac{1}{\varepsilon_0}Q
+4\pi r^2 E
+=\frac{1}{\varepsilon_0}Q
 $$
 
 于是：
 
 $$
-E=\frac{Q}{4\pi\varepsilon_0 r^2}
+E
+=\frac{Q}{4\pi\varepsilon_0 r^2},~~r>R
 $$
 
-内，$r<R$，取高斯面为球面，则由高斯定理：
+$r<R$，取高斯面为球面，则由高斯定理：
 
 $$
 4\pi r^2 E
@@ -354,51 +377,57 @@ $$
 
 $$
 E
-=\frac{Qr}{4\pi R^3}
+=\frac{Qr}{4\pi R^3},~~r<R
 $$
 
 这个例子说明，均匀带电球体内部电场强度随离球心距离增加而成正比例增加
-
-
 
 例1.3-6：半径为 $R$ 的无穷长直圆筒面上均匀带电，沿轴线单位长度的电荷量为 $\lambda$ .求场强分布
 
 答案：
 
 $$
-
-\begin{cases}
-E=0 &,r<R \\
-E=\frac{\lambda}{2\pi\varepsilon_0 r}&,r>R
-\end{cases}
-
+\left\{
+\begin{aligned}
+&E=0 &&,r<R \\
+&E=\frac{\lambda}{2\pi\varepsilon_0 r}&&,r>R
+\end{aligned}
+\right.
 $$
 
 解：
 
-$r>R,$取高斯面为一个高为 $h,$底面半径为 $r$ 的闭合圆柱
+$r>R,$ 取高斯面为一个高为 $h,$底面半径为 $r$ 的闭合圆柱，由高斯定理，有：
 
 $$
-2\pi r hE=\frac{1}{\varepsilon_0} h\lambda
+2\pi r hE
+=\frac{1}{\varepsilon_0} h\lambda
 $$
 
 解得：
 
 $$
-E=\frac{\lambda}{2\pi\varepsilon_0 r}
+E
+=\frac{\lambda}{2\pi\varepsilon_0 r}
 $$
-
-
 
 例1.3-4：
 
 根据量子理论，氢原子中心是一个带正电 $q_e$ 的原子核(可以看作点电荷)，外面是带负电的电子云.在正常状态(核外电子处在$s$态)下，电子云的电荷密度分布是球对称的：
 
 $$
-\rho_e(r)=-\frac{q_e}{\pi a_0^3}e^{-\frac{2r}{a_0}}
+\rho_e(r)
+=-\frac{q_e}{\pi a_0^3}e^{-\frac{2r}{a_0}}
 $$
 
 其中，$a_0$是一常量. 求原子内的电场分布
+
+答案：
+
+$$
+E=
+\frac{q_e}{4\pi\varepsilon_0 r^2}(\frac{2}{a_0^2}r^2+\frac{2}{a_0}r+1)e^{-\frac{2r}{a_0}}
+$$
 
 思路：积分有点难算(可以用待定系数法求此类积分)，不过思路还是明确的
 
@@ -433,13 +462,13 @@ $$
 对应项系数相等，解方程组：
 
 $$
-\begin{cases}
-
+\left\{
+\begin{aligned}
 -\frac{2A}{a_0}=1 \\
 2A-\frac{2B}{a_0}=0 \\
 B-\frac{2C}{a_0}=0
-
-\end{cases}
+\end{aligned}
+\right.
 $$
 
 解得：
@@ -453,23 +482,12 @@ $$
 于是：
 
 $$
-
 \begin{aligned}
-
 E
 &=\frac{q_e}{4\pi\varepsilon_0 r^2}(1-\frac{4}{a_0^3}\int_0^r r^2 e^{-\frac{2r}{a_0}}\mathrm{d}r) \\
 &=\frac{q_e}{4\pi\varepsilon_0 r^2}\bigg(1-\frac{4}{a_0^3}(-\frac{a_0}{2}r^2-\frac{a_0^2}{2}r-\frac{a_0^3}{4})e^{-\frac{2r}{a_0}}\bigg|_0^r \bigg) \\
 &=\frac{q_e}{4\pi\varepsilon_0 r^2}(\frac{2}{a_0^2}r^2+\frac{2}{a_0}r+1)e^{-\frac{2r}{a_0}}
-
 \end{aligned}
-
-$$
-
-答案：
-
-$$
-E=
-\frac{q_e}{4\pi\varepsilon_0 r^2}(\frac{2}{a_0^2}r^2+\frac{2}{a_0}r+1)e^{-\frac{2r}{a_0}}
 $$
 
 例：1.3-12
@@ -499,12 +517,8 @@ $$
 解得：
 
 $$
-E=\frac{kb^2}{4\varepsilon_0}
-$$
-
-答案：
-$$
-E_外=\frac{k b^2}{4\varepsilon_0}
+E
+=\frac{kb^2}{4\varepsilon_0}
 $$
 
 (2)求平板内任一点$P$的电场强度
@@ -514,9 +528,11 @@ $$
 解：
 
 $$
+\begin{aligned}
 -E_{内}\Delta S+E_{外}\Delta S
-=\frac{1}{\varepsilon_0}\int_x^b kx\Delta S\mathrm{d}x
-=\frac{1}{\varepsilon_0}k\Delta S \frac{b^2-x^2}{2}
+&=\frac{1}{\varepsilon_0}\int_x^b kx\Delta S\mathrm{d}x \\
+&=\frac{1}{\varepsilon_0}k\Delta S \frac{b^2-x^2}{2} \\
+\end{aligned}
 $$
 
 解得：
@@ -529,7 +545,8 @@ $$
 答案：
 
 $$
-E_内=\frac{k}{2\varepsilon_0}(x^2-\frac{b^2}{2}),~~~~~~(0\leqslant x\leqslant b)
+E_内
+=\frac{k}{2\varepsilon_0}(x^2-\frac{b^2}{2}),~~~~~~(0\leqslant x\leqslant b)
 $$
 
 (3)求场强为零的点的坐标
@@ -541,16 +558,23 @@ $$
 令 $E_{内}=0,$解得：
 
 $$
-x=\frac{b}{\sqrt{2}}
+x
+=\frac{b}{\sqrt{2}}
 $$
+
+例：一无限大平面，中部有一半径为 $R$ 的圆孔，设平面上均匀带电，电荷面密度为 $\sigma_e,$求通过小孔中心 $O$ 且与平面垂直的直线上某点 $P$ 的场强和电势(设小孔中心$O$的电势为零)
 
 答案：
 
 $$
-x=\frac{b}{\sqrt{2}}
+\vec{E}
+=\frac{\sigma_e}{2\varepsilon_0}\frac{x}{\sqrt{R^2+x^2}}\hat{x}
 $$
 
-例：一无限大平面，中部有一半径为 $R$ 的圆孔，设平面上均匀带电，电荷面密度为 $\sigma_e,$求通过小孔中心 $O$ 且与平面垂直的直线上某点 $P$ 的场强和电势(设小孔中心$O$的电势为零)
+$$
+U
+=\frac{\sigma_e}{2\varepsilon_0}(R-\sqrt{R^2+x^2})
+$$
 
 解：
 
@@ -585,19 +609,13 @@ $$
 下面求实心圆产生的电场 $E_o:$
 
 $$
+\begin{aligned}
 E_o
-=\int_0^R \frac{1}{4\pi\varepsilon_0}\frac{2\pi\sigma_e r\frac{x}{\sqrt{x^2+r^2}} }{r^2+x^2}\mathrm{d}r 
-=\frac{\sigma_e}{2\varepsilon_0}\int_0^R\frac{\frac{r}{x}}{(1+(\frac{r}{x})^2)^\frac{3}{2}}\mathrm{d}(\frac{r}{x})
-=\frac{\sigma_e}{2\varepsilon_0}\cdot (-\frac{1}{\sqrt{1+(\frac{r}{x})^2}}) \bigg|_0^R
-=\frac{\sigma_e}{2\varepsilon_0}(1-\frac{x}{R^2+x^2})
-$$
-
-由于题目假定小孔中心电势为零，故：
-
-$$
-U
-=\int \vec{E}\cdot\mathrm{d}\vec{l}
-=\int_0^x 
+&=\int_0^R \frac{1}{4\pi\varepsilon_0}\frac{2\pi r\sigma_e \frac{x}{\sqrt{x^2+r^2}} }{r^2+x^2}\mathrm{d}r \\
+&=\frac{\sigma_e}{2\varepsilon_0}\int_0^R\frac{\frac{r}{x}}{(1+(\frac{r}{x})^2)^\frac{3}{2}}\mathrm{d}(\frac{r}{x}) \\
+&=\frac{\sigma_e}{2\varepsilon_0}\cdot (-\frac{1}{\sqrt{1+(\frac{r}{x})^2}}) \bigg|_0^R \\
+&=\frac{\sigma_e}{2\varepsilon_0}(1-\frac{x}{\sqrt{R^2+x^2}})
+\end{aligned}
 $$
 
 于是：
@@ -608,15 +626,15 @@ E
 =\frac{\sigma_e}{2\varepsilon_0}\frac{x}{\sqrt{R^2+x^2}}
 $$
 
-
-答案：
-
-$$
-\vec{E}=\frac{\sigma_e}{2\varepsilon_0}\frac{x}{\sqrt{R^2+x^2}}\hat{x}
-$$
+由于题目假定小孔中心电势为零，故：
 
 $$
-U=\frac{\sigma_e}{2\varepsilon_0}(R-\frac{1}{\sqrt{R^2+x^2}})
+\begin{aligned}
+U
+&=\int \vec{E}\cdot\mathrm{d}\vec{l} \\
+&=\int_x^0 \frac{\sigma_e}{2\varepsilon_0}\frac{x}{\sqrt{R^2+x^2}} \mathrm{d}x \\
+&=\frac{\sigma_e}{2\varepsilon_0}(R-\sqrt{R^2+x^2})
+\end{aligned}
 $$
 
 **静电场力**做功与路径无关
@@ -727,43 +745,35 @@ $$
 
 例(1.4-29)：
 
-一对无限长的共轴直圆筒，半径分别为$R_1$和$R_2(R_1<R_2) $，筒面上都带电，沿轴线单位长度的电荷量分别为$\lambda_1 $和$\lambda_2$且$\lambda_1=-\lambda_2$，求两圆筒间电势分布.
+一对无限长的共轴直圆筒，半径分别为$R_1$和$R_2(R_1<R_2) $，筒面上都带电，沿轴线单位长度的电荷量分别为 $\lambda_1 $ 和 $\lambda_2$ 且 $\lambda_1=-\lambda_2$ ，求两圆筒间电势分布.
 
-先求电场分布：
-
-答案：
+设无穷远处电势为零，先求电场分布：
 
 $$
-
-E=
-
-\begin{cases}
-
-0 &,0<r<R_1 \\
-\frac{\lambda_1}{2\pi\varepsilon_0 r} &,R_1<r<R_2 \\
-0&,r>R_2
-\end{cases}
-
+E
+=\left\{
+\begin{aligned}
+&0 &&,0<r<R_1 \\
+&\frac{\lambda_1}{2\pi\varepsilon_0 r} &&,R_1<r<R_2 \\
+&0&&,r>R_2
+\end{aligned}
+\right.
 $$
 
-而:$U(P)=\int_P^\infty \vec{E}\cdot\mathrm{d}\vec{l}$
+而 $U(P)=\int_P^\infty \vec{E}\cdot\mathrm{d}\vec{l}$
 
 于是两圆筒间电势分布：
 
 $$
-
-\begin{cases}
-
 U
-=\frac{\lambda_1}{2\pi\varepsilon_0}\ln\frac{R_2}{r},R_1<r<R_2
-
-\end{cases}
-
+=\frac{\lambda_1}{2\pi\varepsilon_0}\ln\frac{R_2}{r},~~R_1<r<R_2
 $$
+
+当然也可以设圆筒对称轴处电势为零，方法一样，结果不一样。
 
 例(1.4-30)：
 
-求无限长均匀带电直圆柱体的电势分布圆柱半径为$R$，电荷体密度为$\rho_e$.以轴线为参考点，设轴线上面的电势为零(利用电场分布求电势分步)：
+求无限长均匀带电直圆柱体的电势分布。圆柱半径为$R$，电荷体密度为 $\rho_e$. 以轴线为参考点，设轴线上面的电势为零(利用电场分布求电势分步)：
 
 先求电场分布：
 
@@ -793,12 +803,13 @@ $$
 
 例1.4-14(电势叠加原理求电势)：
 
-求均匀带电圆环轴线上的电势分布
+求均匀带电圆环轴线上的电势分布，圆环电荷量为 $q$
 
 答案：
 
 $$
-U=\frac{q}{4\pi\varepsilon_0\sqrt{R^2+x^2}}
+U
+=\frac{q}{4\pi\varepsilon_0\sqrt{R^2+x^2}}
 $$
 
 例1.4-15(电势叠加原理求电势)：
@@ -914,12 +925,13 @@ $$
 再把 $q_2$ 移动到它应该在的位置，由于已经存在由 $q_1$ 产生的电场，故此过程电场力做功的负值即为 $q_2$ 电势能的改变量
 
 $$
+\begin{aligned}
 E_p
-=-\int_\infty^{P_2}\vec{F}\cdot\mathrm{d}\vec{l}
-=q_2\int_{P_2}^\infty\vec{E}\cdot\mathrm{d}\vec{l} 
-=q_2U_{12}
+&=-\int_\infty^{P_2}\vec{F}\cdot\mathrm{d}\vec{l} \\
+&=q_2\int_{P_2}^\infty\vec{E}\cdot\mathrm{d}\vec{l} \\
+&=q_2U_{12} \\
+\end{aligned}
 $$
-
 
 多个点电荷的情形：
 
@@ -936,17 +948,20 @@ $$
 用求和符号表达：
 
 $$
-E_{pi}=q_i\sum_{j=1}^{i-1}U_{ji} ,~~~~~~~~(i=1,2,\cdots,n)
+E_{pi}
+=q_i\sum_{j=1}^{i-1}U_{ji} ,~~(i=1,2,\cdots,n)
 $$
 
 总电势能：
 
 $$
+\begin{aligned}
 E_p
-=\sum_{i=1}^n E_{pi}
-=\sum_{i=1}^n q_i\sum_{j=1}^{i-1}U_{ji}
-=\sum_{i=1}^n\sum_{j=1}^{i-1}q_i U_{ji}
-=\frac{1}{4\pi\varepsilon_0}\sum_{i=1}^n\sum_{j=1}^{i-1}\frac{q_iq_j}{r_{ij}}
+&=\sum_{i=1}^n E_{pi} \\
+&=\sum_{i=1}^n \bigg(q_i\sum_{j=1}^{i-1}U_{ji}\bigg) \\
+&=\sum_{i=1}^n\sum_{j=1}^{i-1}q_i U_{ji} \\
+&=\frac{1}{4\pi\varepsilon_0}\sum_{i=1}^n\sum_{j=1}^{i-1}\frac{q_iq_j}{r_{ij}}
+\end{aligned}
 $$
 
 由于：
@@ -954,27 +969,30 @@ $$
 $$
 q_i U_{ji}
 =\frac{1}{4\pi\varepsilon_0}\frac{q_iq_j}{r_{ij}}
-\\
+\\[1mm]
 q_j U_{ji}
 =\frac{1}{4\pi\varepsilon_0}\frac{q_{ij}}{r_{ij}}
 $$
 
-所以(这一步有必要吗？)：
+所以：
 
 $$
-q_iU_{ji}=q_jU_{ji}
+q_iU_{ji}
+=q_jU_{ji}
 $$
 
-$E_p$可进一步表达为()：
+$E_p$可进一步表达为：
 
 $$
+\begin{aligned}
 E_p
-=\frac{1}{4\pi\varepsilon_0}\sum_{i=1}^n\sum_{j=1}^{i-1}\frac{q_iq_j}{r_{ij}}
-=\frac{1}{2}\frac{1}{4\pi\varepsilon_0}\underset{(j\ne i)}{\sum_{i=1}^n\sum_{j=1}^n}\frac{q_iq_j}{r_{ij}}
-=\frac{1}{8\pi\varepsilon_0}\underset{(j\ne i)}{\sum_{i=1}^n\sum_{j=1}^n}\frac{q_iq_j}{r_{ij}}
+&=\frac{1}{4\pi\varepsilon_0}\sum_{i=1}^n\sum_{j=1}^{i-1}\frac{q_iq_j}{r_{ij}} \\
+&=\frac{1}{2}\frac{1}{4\pi\varepsilon_0}\underset{(j\ne i)}{\sum_{i=1}^n\sum_{j=1}^n}\frac{q_iq_j}{r_{ij}} \\
+&=\frac{1}{8\pi\varepsilon_0}\underset{(j\ne i)}{\sum_{i=1}^n\sum_{j=1}^n}\frac{q_iq_j}{r_{ij}}
+\end{aligned}
 $$
 
-记$U_i$为除$q_i$外其余电荷在$q_i$位置$P_i$上产生的电势，则电势能又可以写成：
+记 $U_i$ 为除 $q_i$ 外其余电荷在 $q_i$ 位置 $P_i$ 上产生的电势，则电势能又可以写成：
 
 $$
 E_p
@@ -1022,19 +1040,22 @@ $$
 计算均匀带电球壳的静电自能，设球的半径为 $R$，总带电荷量为 $q$
 
 $$
-\sigma_e=\frac{q}{4\pi R^2} \\[1mm]
-U=\frac{q}{4\pi\varepsilon_0 R}
+\sigma_e
+=\frac{q}{4\pi R^2} \\[1mm]
+U
+=\frac{q}{4\pi\varepsilon_0 R}
 $$
 
-
 $$
+\begin{aligned}
 W_e
-=\frac{1}{2}\iint\limits_{S}\sigma_e U\mathrm{d}S
-=\frac{1}{2}\cdot\frac{q}{4\pi R^2}\frac{q}{4\pi\varepsilon_0 R}\oiint\limits_{(球面)}\mathrm{d}S
-=\frac{q^2}{8\pi\varepsilon_0R}
+&=\frac{1}{2}\iint\limits_{S}\sigma_e U\mathrm{d}S \\
+&=\frac{1}{2}\cdot\frac{q}{4\pi R^2}\frac{q}  {4\pi\varepsilon_0 R}\oiint\limits_{(球面)}\mathrm{d}S \\
+&=\frac{q^2}{8\pi\varepsilon_0R}
+\end{aligned}
 $$
 
-例：计算均匀带电球体的静电自能，设求得半径为 $R$.总带电荷量为 $q$
+例：计算均匀带电球体的静电自能，设球的半径为 $R$，总带电荷量为 $q$
 
 法一：
 
