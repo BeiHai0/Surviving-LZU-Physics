@@ -1561,19 +1561,25 @@ $$
 
 例：平行板电容器(极板面积为 $S, $间距为 $d$ )中间充满两层厚度为 $d_1,d_2(d_1+d_2=d)$、介电常量为 $\varepsilon_1,\varepsilon_2 $ 的电介质层
 
-(1)求电容$C$
+(1) 求电容$C$
 
-结合：
-
-$$
+>电介质解题几板斧：
+>
+>$$
+\oiint\limits_{S} \vec{D}\cdot\mathrm{d}\vec{S}
+=\sum_{S内}q_0 \\[1mm]
 \vec{D}
-=\varepsilon\varepsilon_0\vec{E}
-$$
+\equiv \varepsilon_0 \vec{E}+\vec{P} = \varepsilon_0\vec{E}+\chi_e\varepsilon_0\vec{E} = (1+\chi_e)\varepsilon_0\vec{E} = \varepsilon_r\varepsilon_0\vec{E} \\[1mm]
+\vec{P}
+=\chi_e \varepsilon_0\vec{E} = (\varepsilon_r-1)\varepsilon_0\vec{E} \\[1mm]
+\sigma_e'
+=\vec{P}\cdot\vec{e}_n = P_n
+>$$
 
-和介质中的高斯定理：
+介质中的高斯定理：
 
 $$
-\oiint_S\vec{D}\cdot\mathrm{d}\vec{S}=\sum_{S内}q_0
+\oiint\limits_S\vec{D}\cdot\mathrm{d}\vec{S}=\sum_{S内}q_0
 $$
 
 取一个圆柱形高斯面，圆柱一端的底面在电容器一个极板内部，圆柱另一端的底面在电介质中，有：
@@ -1582,13 +1588,13 @@ $$
 D\Delta S=\sigma_{e0}\Delta S
 $$
 
-于是第一步求出电位移矢量$\vec{D}$：
+于是第一步求出**介质中的**电位移矢量 $\vec{D}$：
 
 $$
 D=\sigma_{e0}=\frac{Q}{S}(假设电容器带电荷Q)
 $$
 
-再由$\vec{D}=\varepsilon\varepsilon_0\vec{E} (\varepsilon是电介质的介电常量)$分别求出电介质1,2中的实际电场(原来电场和退极化场叠加后的结果)：
+再由 $\vec{D}=\varepsilon_r\varepsilon_0\vec{E} (\varepsilon_r是电介质的相对介电常量)$ 分别求出电介质1,2中的实际电场（原来电场和退极化场叠加后的结果）：
 
 $$
 E_1
@@ -1615,49 +1621,42 @@ C
 =\frac{\varepsilon_1\varepsilon_2\varepsilon_0 S}{\varepsilon_2d_1+\varepsilon_1d_2}
 $$
 
-(2)
+(2) 当金属极板上带电面密度为 $\pm\sigma_{e0}$ 时，求两层介质间分界面上的极化电荷面密度 $\sigma_e'$
 
-当金属极板上带电面密度为$\pm\sigma_{e0}$时，求两层介质间分界面上的极化电荷面密度$\sigma_e'$
-
-分析：
-
-电介质解题几板斧：
-
-$$
-\sigma_e'=\vec{P}\cdot\vec{e}_n=P_n \\
-\vec{P}=\chi_e\varepsilon_0\vec{E} \\
-\varepsilon=1+\chi_e \\
-\vec{D}=\varepsilon_0\vec{E}+\vec{P}=\varepsilon\varepsilon_0\vec{E} \\ 
-\oiint_S\vec{D}\cdot d\vec{S}=\sum_{S内}q_0 \\
-
-$$
-
-要想求$\sigma_{e0}',$就要求电极化矢量$\vec{P}$
-
-第一步：
-
-结合(电容器两极板间电场为零，电位移矢量也为零):
-
-$$
+>电介质解题几板斧：
+>
+>$$
+\oiint\limits_{S} \vec{D}\cdot\mathrm{d}\vec{S}
+=\sum_{S内}q_0 \\[1mm]
 \vec{D}
-=\varepsilon_0\vec{E}+\vec{P}
-=\varepsilon\varepsilon_0\vec{E}
-$$
-和介质中的高斯定理：
+\equiv \varepsilon_0 \vec{E}+\vec{P} = \varepsilon_0\vec{E}+\chi_e\varepsilon_0\vec{E} = (1+\chi_e)\varepsilon_0\vec{E} = \varepsilon_r\varepsilon_0\vec{E} \\[1mm]
+\vec{P}
+=\chi_e \varepsilon_0\vec{E} = (\varepsilon_r-1)\varepsilon_0\vec{E} \\[1mm]
+\sigma_e'
+=\vec{P}\cdot\vec{e}_n = P_n
+>$$
+
+要想求 $\sigma_{e0}'$，就要求电极化矢量 $\vec{P}$
+
+介质中的高斯定理：
 
 $$
-\oiint_S\vec{D}\cdot\mathrm{d}\vec{S}=\sum_{(S内)}q_0
+\oiint\limits_S\vec{D}\cdot\mathrm{d}\vec{S}
+=\sum_{(S内)}q_0
 $$
 
 有：
 
 $$
-D\Delta S=\sigma_{e0}\Delta S
+D\Delta S
+=\sigma_{e0}\Delta S
 $$
-即：
+
+于是求出**介质中的**电位移矢量：
 
 $$
-D=\sigma_{e0}
+D
+=\sigma_{e0}
 $$
 
 于是：
@@ -1676,7 +1675,7 @@ $$
 $$
 \vec{P}
 =\chi_e\varepsilon_0\vec{E}
-=(\varepsilon-1)\varepsilon_0\vec{E}
+=(\varepsilon_r-1)\varepsilon_0\vec{E}
 $$
 
 于是：
@@ -1698,41 +1697,18 @@ $$
 =\frac{\varepsilon_1-\varepsilon_2}{\varepsilon_1\varepsilon_2}\sigma_{e0}
 $$
 
-(3)求电容器两极板间电势差$U$
+(3) 求电容器两极板间电势差$U$
 
 $$
 U=
 \frac{(\varepsilon_2d_1+\varepsilon_1d_2)\sigma_{e0}}{\varepsilon_1\varepsilon_2\varepsilon_0}
 $$
 
-(4)两层电介质中的电位移$D$
+(4) 两层电介质中的电位移$D$
 
 $$
 D=\sigma_{e0}
 $$
-
-总结：
-
-电介质解题几板斧：
-
-$$
-\sigma_e'=\vec{P}\cdot\vec{e}_n=P_n \\
-\vec{P}=\chi_e\varepsilon_0\vec{E} \\
-\varepsilon=1+\chi_e \\
-\vec{D}=\varepsilon_0\vec{E}+\vec{P}=\varepsilon\varepsilon_0\vec{E} \\ 
-\oiint_S\vec{D}\cdot d\vec{S}=\sum_{S内}q_0 \\
-
-$$
-
-上式中，
-
-$$
-\sigma_e'=\vec{P}\cdot\vec{e}_n=P_n
-\\
-\oiint_S\vec{D}\cdot d\vec{S}=\sum_{S内}q_0
-$$
-
-独立
 
 各向同性线性介质中，三个矢量：$\vec{P},\vec{E},\vec{D}$存在各种转化关系：
 
@@ -1748,11 +1724,11 @@ $\varepsilon=1+\chi_e$
 
 解题一般步骤：
 
-一、求电位移矢量$\vec{D} $
+一、求电位移矢量 $\vec{D} $
 
-二、由电位移矢量可以求得$\vec{E},\vec{P} $
+二、由电位移矢量可以求得 $\vec{E},\vec{P} $
 
-三、从$\vec{E} $出发，可以求电势差$U$；从$\vec{P} $出发可以求极化电荷面密度
+三、从 $\vec{E} $ 出发，可以求电势差 $U$；从 $\vec{P} $ 出发可以求极化电荷面密度
 
 ## 电场的能量和能量密度
 
