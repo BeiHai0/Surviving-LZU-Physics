@@ -2059,15 +2059,15 @@ $$
 $$
 
 $$
-k=\frac{\mu_0}{4\pi},\mu_0=4\pi\times 10^{-7}N/A^2
+k
+=\frac{\mu_0}{4\pi},\mu_0=4\pi\times 10^{-7}~\mathrm{N/A^2}
 $$
 
-例：平行电流元之间得相互作用力，二者都与连线垂直
+例：平行电流元之间的相互作用力，二者都与连线垂直
 
 例：一对垂直电流元间的相互作用力，其中电流元1沿连线，电流元2垂直于连线
 
 安培秤：
-
 
 磁感应强度矢量：
 
@@ -2138,40 +2138,57 @@ $$
 
 显然，把 $\theta$ 作为积分变量会好积一点
 
-$l$是以$O$为原点，以竖直向上为正方向，建立一维坐标系后导线上一点$P$相对原点$O$的位矢.为什么 $l$ 不设为$P$相对原点$O$的距离呢？因为如果这样做，$l$相对$\theta $就不是处处可微了，会存在一个不可微的V型顶点，于是求微分时会出现问题；而如果设 $l$ 为位矢，则 $l$ 相对 $\theta$ 是连续的、处处可微的，
+$l$ 是以 $O$ 为原点，以竖直向上为正方向，建立一维坐标系后导线上一点 $P$ 相对原点 $O$ 的**位矢**。为什么 $l$ 不设为 $P$ 相对原点 $O$ 的距离呢？因为如果这样做，$l$ 相对 $\theta $ 就不是处处可微了，会存在一个不可微的V型顶点，于是求微分时会出现问题；而如果设 $l$ 为位矢，则 $l$ 相对 $\theta$ 是连续的、处处可微的，
 
-先找$l,\theta$关系：
-
-$$
-\tan\theta =\frac{r_0}{-l}
-$$
+先找 $l,\theta$关系：
 
 $$
-l=-r_0\cot\theta 
+\tan(\pi -\theta)
+=\frac{r_0}{l}
+\Longrightarrow
+\tan\theta
+=\frac{r_0}{-l}
 $$
 
-**两别取微分**：
+$$
+l
+=-r_0\cot\theta 
+$$
+
+**两边取微分**：
 
 $$
+\boxed{
 \mathrm{d}l
 =r_0\frac{1}{\sin^2\theta}\mathrm{d}\theta
+}
 $$
 
-再找$r,\theta$关系：
+再找 $r,\theta$ 关系：
 
 $$
-\sin\theta=\frac{r_0}{r}
+\sin(\pi-\theta)
+=\frac{r_0}{r}
+\Longrightarrow
+\sin\theta
+=\frac{r_0}{r}
+\Longrightarrow
+\boxed{
+r=\frac{r_0}{\sin\theta}
+}
 $$
 
-于是(替换$\mathrm{d}l,r$)：
+于是（消去 $\mathrm{d}l,r$）：
 
 $$
-B=
-\frac{\mu_0}{4\pi}\int_{A_1}^{A_2}\frac{I\mathrm{d}l\sin\theta}{r^2}
-=\frac{\mu_0 I}{4\pi r_0}\int_{\theta_1}^{\theta_2} \sin\theta\mathrm{d}\theta
-=\frac{\mu_0 I}{4\pi r_0}(\cos\theta_1-\cos\theta_2)
+\begin{aligned}
+B
+&=\frac{\mu_0}{4\pi}\int\frac{I\mathrm{d}\vec{l}\times\vec{e}_r}{r^2} \\
+&=\frac{\mu_0}{4\pi}\int_{A_1}^{A_2}\frac{I\mathrm{d}l\sin\theta}{r^2} \\
+&=\frac{\mu_0 I}{4\pi r_0}\int_{\theta_1}^{\theta_2} \sin\theta\mathrm{d}\theta \\
+&=\frac{\mu_0 I}{4\pi r_0}(\cos\theta_1-\cos\theta_2)
+\end{aligned}
 $$
-
 
 #### 无限长载流直导线$(\theta_1=0,\theta_2=\pi)$：
 
@@ -2187,7 +2204,7 @@ SOP:
 
 确定$\vec{B}$的方向，确定 $\mathrm{d}\vec{l},\vec{e}_r$间的夹角：
 
-由叉乘规则，$\vec{B}$既垂直于$\vec{l} $又垂直于$\vec{e}_r$，但这样还不好找到$\vec{B} $的方向，最好找到一个能承载$\vec{B}$方向的平面才.找到这个平面的方法：：
+由叉乘规则，$\vec{B}$既垂直于$\vec{l} $又垂直于$\vec{e}_r$，但这样还不好找到$\vec{B} $的方向，最好找到一个能承载$\vec{B}$方向的平面才.找到这个平面的方法：
 
 $$
 B=\frac{\mu_0}{2}\frac{R^2I}{(R^2+r_0^2)^\frac{3}{2}}
@@ -2271,7 +2288,7 @@ $$
 磁场的“高斯定理”(通过任意闭合曲面的磁通量恒等于$0$)：
 
 $$
-\oiint_S \vec{B}\cdot\mathrm{d}\vec{S}=0
+\oiint\limits_S \vec{B}\cdot\mathrm{d}\vec{S}=0
 $$
 
 证明：
@@ -2346,16 +2363,17 @@ $$
 于是：
 
 $$
-B=\frac{\mu_0 NI}{2\pi R}=\mu_0 nI
+B
+=\frac{\mu_0 NI}{2\pi R}=\mu_0 nI
 $$
-
 
 ### 磁场对载流导线的作用
 
 安培公式：
 
 $$
-\mathrm{d}\vec{F}=I\mathrm{d}\vec{l}\times\vec{B}
+\mathrm{d}\vec{F}
+=I\mathrm{d}\vec{l}\times\vec{B}
 $$
 
 #### 平行无限长直导线间的相互作用
@@ -2417,10 +2435,6 @@ $$
 
 霍尔效应：
 
-
-
-
-
 感应电流：
 
 产生感应电流的条件：当穿过闭合回路的磁通量发生变化时，回路中就产生感应电流
@@ -2465,7 +2479,7 @@ $$
 
 楞次定律：
 
-闭合回路中感应电流的方向，总是使得它(感应电流)所激发的磁场来**阻碍**引起感应电流的磁通量的变化.
+闭合回路中感应电流的方向，总是使得它(感应电流)所激发的磁场来**阻碍**引起感应电流的磁通量的变化。
 
 涡电流和电磁阻尼：
 
@@ -2548,7 +2562,7 @@ $$
 
 变化的磁场在其周围会激发一种电场，称为感应电场或涡旋电场
 
-涡旋电场不是由电荷激发，而是由变化的磁场激发；描述涡旋电场的电场线是闭合的，从而它不是保守场
+涡旋电场不是由电荷激发，而是由变化的磁场激发；描述涡旋电场的电场线是闭合的，从而它不是保守场。
 
 数学表达式：
 
@@ -2667,13 +2681,9 @@ $$
 
 ### 自感磁能和互感磁能
 
-
-
 ### 暂态过程
 
 #### LR电路的暂态过程
-
-
 
 **从断开到闭合**：
 
@@ -2778,6 +2788,7 @@ $$
 阻尼振荡：$0<\lambda<1$
 
 自由振荡频率：
+
 $$
 f_0=\frac{1}{2\pi\sqrt{LC}}
 $$
@@ -2796,17 +2807,18 @@ $$
 
 ## 分子电流观点
 
-
 磁化强度矢量$\vec{M} $，定义为单位体积内分子磁矩的矢量和，数学表达式为：
 
 $$
-\vec{M}=\frac{\sum\vec{m}_{分子}}{\Delta V}
+\vec{M}
+=\frac{\sum\vec{m}_{分子}}{\Delta V}
 $$
 
 磁介质公式：
 
 $$
-\oint_L \vec{M}\cdot\mathrm{d}\vec{l}=\sum_{(L内)}I'
+\oint_L \vec{M}\cdot\mathrm{d}\vec{l}
+=\sum_{(L内)}I'
 $$
 
 磁介质公式反映了磁介质中磁化电流 $I'$ 的分布与磁化强度之间的联系
