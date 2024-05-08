@@ -2811,7 +2811,7 @@ $$
 
 $$
 \vec{M}
-=\frac{\sum\vec{m}_{分子}}{\Delta V}
+\equiv \lim_{\Delta V\to 0^+} \frac{\sum\vec{m}_{分子}}{\Delta V}
 $$
 
 磁介质公式：
