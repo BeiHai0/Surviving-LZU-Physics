@@ -1,3 +1,6 @@
+
+[toc]
+
 | | | | | | | | 
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | | | | | | | |
@@ -59,6 +62,60 @@
    - a tiempo: 准时
    - tarde o temprano: 迟早
    - desde...hasta...: 从……到……
+
+### 关系
+
+#### 方位
+
+1. 上面 - arriba
+
+2. 下面 - abajo
+
+3. 前面 - adelante
+
+4. 后面 - atrás
+
+5. 左边 - izquierda
+
+6. 右边 - derecha
+
+7. 里面 - dentro
+
+8. 外面 - fuera
+
+9. 顶部 - parte superior
+
+10. 底部 - parte inferior
+
+11. 中间 - medio/centro
+
+12. 边缘 - borde
+
+13. 东 - este
+
+14. 南 - sur
+
+15. 西 - oeste
+
+16. 北 - norte
+
+#### 时间关系
+
+之前 - antes
+
+之后 - después
+
+#### 比较
+
+1. 大于 - mayor que
+
+2. 小于 - menor que
+
+3. 等于 - igual a
+
+4. 大于等于 - mayor o igual que
+
+5. 小于等于 - menor o igual que
 
 # 语法
 
@@ -172,6 +229,30 @@ piden
 
 ## 5
 
+![](img/gra_5_1.png)
+
+![](img/gra_5_2.png)
+
+![](img/gra_5_3.png)
+
+![](img/gra_5_4.png)
+
+![](img/gra_5_5.png)
+
+![](img/gra_5_6.png)
+
+![](img/gra_5_7.png)
+
+![](img/gra_5_8.png)
+
+![](img/gra_5_9.png)
+
+![](img/gra_5_10.png)
+
+![](img/gra_5_11.png)
+
+![](img/gra_5_12.png)
+
 # 词汇
 
 ## 1
@@ -195,4 +276,10 @@ piden
 ![](img/voc_4_1.png)
 
 ![](img/voc_4_2.png)
+
+## 5
+
+![](img/voc_5_1.png)
+
+![](img/voc_5_2.png)
 
