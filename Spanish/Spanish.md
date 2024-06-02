@@ -149,6 +149,72 @@ pedís
 
 piden
 
+el vaso 杯子
+
+Doy el vaso a Pepe. 我把杯子给Pepe
+
+Se lo doy
+
+Amo a Juan 
+
+Lo amo 我爱他 Le 化：Le amo
+
+Te amo 我爱你
+
+Te amamos 我们爱你
+
+Digo esto a Ana.
+
+Se lo digo
+
+Te lo digo 我把它告诉你
+
+¿Me lo puedes decir ? 你可以把它告诉我吗
+
+¿Puedes decírmelo ? 你可以把它告诉我吗
+
+Sí, te lo puedo decir
+
+Sí, puedo decírtelo
+
+No, no te lo puedo decir
+
+No, no puedo decírtelo
+
+复指现象：
+
+**直接宾语**的完整内容放在谓语动词前面，必须用相应宾格代词重复指出直接宾语
+
+每天 casa día
+
+报纸 periódico
+
+阅读 leer
+
+Leo estos periódicos cada día
+
+Estdos periódicos **los** leo cada día
+
+Amo a Javier
+
+A Javier **lo/le** amo
+
+**间接宾语**
+
+**Le** digo esto a Ana
+
+**Le** doy el vaso a Pepe
+
+Te doy esto libro
+
+A ti te lo doy 
+
+¿Me lo puedes dar?
+
+¿A mí me lo puedes dar?
+
+No, a ti no puedo dártelo
+
 #### 动词陈述式现在时变位
 
 ||estudiar(第一变位规则)|ser|estar|tener||  
@@ -253,6 +319,26 @@ piden
 
 ![](img/gra_5_12.png)
 
+## 6
+
+![](img/gra_6_1.png)
+
+![](img/gra_6_2.png)
+
+![](img/gra_6_3.png)
+
+![](img/gra_6_4.png)
+
+![](img/gra_6_5.png)
+
+![](img/gra_6_6.png)
+
+![](img/gra_6_7.png)
+
+![](img/gra_6_8.png)
+
+![](img/gra_6_9.png)
+
 # 词汇
 
 ## 1
@@ -283,3 +369,6 @@ piden
 
 ![](img/voc_5_2.png)
 
+## 6
+
+![](img/voc_6_1.png)
