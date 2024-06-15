@@ -442,6 +442,40 @@ No, a ti no puedo dártelo
 
 ![](img/gra_6_9.png)
 
+## 7
+
+![](img/gra_7_1.png)
+
+![](img/gra_7_2.png)
+
+![](img/gra_7_3.png)
+
+![](img/gra_7_4.png)
+
+![](img/gra_7_5.png)
+
+![](img/gra_7_6.png)
+
+![](img/gra_7_7.png)
+
+![](img/gra_7_8.png)
+
+![](img/gra_7_9.png)
+
+## 8
+
+![](img/gra_8_1.png)
+
+![](img/gra_8_2.png)
+
+![](img/gra_8_3.png)
+
+![](img/gra_8_4.png)
+
+![](img/gra_8_5.png)
+
+![](img/gra_8_6.png)
+
 # 词汇
 
 Querer(ie) ' amar/ 喜欢/想要（情态动词）
@@ -489,3 +523,15 @@ Quiero estudiar español
 ## 6
 
 ![](img/voc_6_1.png)
+
+## 7
+
+![](img/voc_7_1.png)
+
+![](img/voc_7_2.png)
+
+## 8
+
+![](img/voc_8_1.png)
+
+![](img/voc_8_2.png)
