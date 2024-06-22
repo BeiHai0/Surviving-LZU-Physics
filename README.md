@@ -36,56 +36,6 @@
 
 ## snippets
 
-## 只保留自己的 snippetSuggestions，关闭 VS Code 自带的代码提示与补全功能
-
-```
-...\Microsoft VS Code\resources\app\extensions\markdown-basics
-```
-
-按以上路径走，打开 language-configuration 文件，加上下面这句（要加在最外面的大括号内部，并且注意上一句末尾加个逗号）：
-
-```
-    "[markdown]":{
-         "editor.quickSuggestions":true
-    }
-```
-
-加完之后应该长这样：
-
-```
-{
-    "comments":{"blockComment":["<!--","-->"]},
-
-    "brackets":[["{","}"],["[","]"],["(",")"]],
-
-    "colorizedBracketPairs":[],
-
-    "autoClosingPairs":[{"open":"{","close":"}"},
-
-    {"open":"[","close":"]"},{"open":"(","close":")"},
-
-    /* {"open":"<","close":">","notIn":["string"]},
-
-    */{"open":"`","close":"`"},
-
-    {"open":"```","close":"```"}],
-
-    "surroundingPairs":[["(",")"],["[","]"],["`","`"],["_","_"],["*","*"],["{","}"],["'","'"],["\"","\""]],
-
-    "folding":{"offSide":true,"markers":{"start":"^\\s*<!--\\s*#?region\\b.*-->",
-    
-    "end":"^\\s*<!--\\s*#?endregion\\b.*-->"}},
-    
-    "wordPattern":{"pattern":"(\\p{Alphabetic}|\\p{Number}|\\p{Nonspacing_Mark})(((\\p{Alphabetic}|\\p{Number}|\\p{Nonspacing_Mark})|[_])?(\\p{Alphabetic}|\\p{Number}|\\p{Nonspacing_Mark}))*","flags":"ug"},
-
-    "[markdown]":{
-         "editor.quickSuggestions":true
-    }
-}
-```
-
-重启 VS Code 即可使用自定义的 snippets
-
 ## 个人惯用 markdown snippets
 
 注意：
@@ -335,6 +285,33 @@
 			"\\{$0 \\\\}"
 		],
 		"description":"ps"
+	},
+
+	"displaystyle": {
+		//"scope":"markdown",
+		"prefix":".ds",
+		"body":[
+			"$\\displaystyle{$1 }$ $2"
+		],
+		"description":""
+	},
+
+	"矩阵表示": {
+		//"scope":"markdown",
+		"prefix":".mr",
+		"body":[
+			"\\mathop{=}\\limits^{$1 }$2"
+		],
+		"description":"某一表象下的矩阵表示"
+	},
+
+	"big ps": {
+		//"scope":"markdown",
+		"prefix":".bps",
+		"body":[
+			"\\bigg\\{$1 \\bigg\\\\} $2"
+		],
+		"description":"big ps"
 	},
 
 	"": {
