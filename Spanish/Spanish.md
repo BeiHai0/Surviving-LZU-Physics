@@ -30,8 +30,7 @@
    - segundo: 秒
 
 2. **表示时间段的词汇和短语**：
-    - por la mañana: 早上
-
+   - por la mañana: 早上
    - por la tarde: 下午
    - por la noche: 晚上
    - de mañana: 早晨
