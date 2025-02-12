@@ -1,11 +1,11 @@
 # Fdb version 4
-["pdflatex"] 1736748141.2945 "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/科3/pre/NLE3.tex" "NLE3.pdf" "NLE3" 1736748148.55718 0
-  "NLE3.aux" 1736748147 14625 4a01af3b7c1f9416de8147db4d0041d1 "pdflatex"
-  "NLE3.nav" 1736748147 9832 60b00a9fc0c716b17a313817992cb7d8 "pdflatex"
-  "NLE3.out" 1736748147 3253 55d71400c07574d4450f6ce772236924 "pdflatex"
-  "NLE3.tex" 1736747922 52912 d280958ca9b8ba9abdb8f6d3fedc56d8 ""
-  "NLE3.toc" 1736748147 1317 d244dab11a0b69aee4c8b9bccb01109d "pdflatex"
-  "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/科3/pre/NLE3.tex" 1736747922 52912 d280958ca9b8ba9abdb8f6d3fedc56d8 ""
+["pdflatex"] 1739372528.84474 "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/科3/pre/NLE3.tex" "NLE3.pdf" "NLE3" 1739372537.47804 0
+  "NLE3.aux" 1739372536 14625 4e1a9fb2968a8a205441095fb702b5f0 "pdflatex"
+  "NLE3.nav" 1739372536 9832 8c221c93e941bc9596235f1f3e62cb46 "pdflatex"
+  "NLE3.out" 1739372536 3253 83adbfb2dff47fa8120a3c7e0e842157 "pdflatex"
+  "NLE3.tex" 1739372516 53273 3d09c7fbfe6e368ae856bec74e012960 ""
+  "NLE3.toc" 1739372536 1317 be29b806a0134b6219c30c2b67481337 "pdflatex"
+  "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/科3/pre/NLE3.tex" 1739372516 53273 3d09c7fbfe6e368ae856bec74e012960 ""
   "c:/Windows/Fonts/msyh.ttc" 1575709707 19647736 ff2e53a6131130a07589812ea5b5b0d0 ""
   "c:/Windows/Fonts/simhei.ttf" 1571147160 9753388 6abc0fcfbaa40600f9cecca3afeb3aa7 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1736593604 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -95,6 +95,7 @@
   "c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei86.tfm" 1736595497 1172 580a15928ff7c62adcfd1ae1167a5f7e ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei88.tfm" 1736595497 1172 4b5747a6c0d911e39c45f758903a60d6 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei89.tfm" 1736595497 1172 364fffd8ea27d98d6edb9222bf84c180 ""
+  "c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei8a.tfm" 1736595497 1172 b8090cf7ab844b8c390669cbe8997c0c ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei8b.tfm" 1736595497 1172 bdf00141a2e7bd9848cfb6dae5c7e1ef ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei8c.tfm" 1736595497 1172 d7fb4fbe30ca7c33dda3dd09f420024a ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei8d.tfm" 1736595497 1172 f0be8ff15d300dd67be1d65ad94ec80b ""

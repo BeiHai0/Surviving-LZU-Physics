@@ -1,0 +1,596 @@
+%% ****** Start of file apstemplate.tex ****** %
+%%
+%%
+%%   This file is part of the APS files in the REVTeX 4.2 distribution.
+%%   Version 4.2a of REVTeX, January, 2015
+%%
+%%
+%%   Copyright (c) 2015 The American Physical Society.
+%%
+%%   See the REVTeX 4 README file for restrictions and more information.
+%%
+%
+% This is a template for producing manuscripts for use with REVTEX 4.2
+% Copy this file to another name and then work on that file.
+% That way, you always have this original template file to use.
+%
+% Group addresses by affiliation; use superscriptaddress for long
+% author lists, or if there are many overlapping affiliations.
+% For Phys. Rev. appearance, change preprint to twocolumn.
+% Choose pra, prb, prc, prd, pre, prl, prstab, prstper, or rmp for journal
+%  Add 'draft' option to mark overfull boxes with black boxes
+%  Add 'showkeys' option to make keywords appear
+\documentclass[aps,prl,preprint,groupedaddress]{revtex4-2}
+%\documentclass[aps,prl,preprint,superscriptaddress]{revtex4-2}
+%\documentclass[aps,prl,reprint,groupedaddress]{revtex4-2}
+
+% You should use BibTeX and apsrev.bst for references
+% Choosing a journal automatically selects the correct APS
+% BibTeX style file (bst file), so only uncomment the line
+% below if necessary.
+%\bibliographystyle{apsrev4-2}
+
+\usepackage{natbib}
+\usepackage[export]{adjustbox}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{braket}
+\usepackage[utf8]{inputenc}
+\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{amsbsy}
+\usepackage{amsfonts}
+
+\begin{document}
+
+% Use the \preprint command to place your local institutional report
+% number in the upper righthand corner of the title page in preprint mode.
+% Multiple \preprint commands are allowed.
+% Use the 'preprintnumbers' class option to override journal defaults
+% to display numbers if necessary
+%\preprint{}
+
+%Title of paper
+\title{非线性电动力学与引力耦合}
+
+% repeat the \author .. \affiliation  etc. as needed
+% \email, \thanks, \homepage, \altaffiliation all apply to the current
+% author. Explanatory text should go in the []'s, actual e-mail
+% address or url should go in the {}'s for \email and \homepage.
+% Please use the appropriate macro foreach each type of information
+
+% \affiliation command applies to all authors since the last
+% \affiliation command. The \affiliation command should follow the
+% other information
+% \affiliation can be followed by \email, \homepage, \thanks as well.
+\author{林照翔}
+%\email[]{Your e-mail address}
+%\homepage[]{Your web page}
+%\thanks{}
+%\altaffiliation{}
+\affiliation{}
+
+%Collaboration name if desired (requires use of superscriptaddress
+%option in \documentclass). \noaffiliation is required (may also be
+%used with the \author command).
+%\collaboration can be followed by \email, \homepage, \thanks as well.
+%\collaboration{}
+%\noaffiliation
+
+\date{\today}
+
+\begin{abstract}
+% insert abstract here
+
+本文综合研究了非线性电动力学（NLED）在不同物理背景下的理论特性和应用。首先，我们探讨了一种新型非线性电动力学模型在平坦时空中和与广义相对论耦合情况下的行为\cite{kar2024aspects}。该模型通过引入两个有量纲的参数，成功解决了麦克斯韦电动力学中点电荷电场和自能在径向距离趋近于零时的发散问题。在弱场极限下，该模型展现出与Born-Infeld拉格朗日量相似的行为，且点电荷的电场具有明确的最大值，使得自能有限。此外，该模型还表现出真空双折射现象，并在所有背景电场下满足因果性和幺正性条件，但在磁场方面仅在有限的参数范围内有效。进一步地，将该模型与爱因斯坦的广义相对论进行最小耦合，能够得到正则黑洞或裸奇点的解，具体取决于源是非线性磁单极子还是电荷。
+
+其次，我们回顾了Born-Infeld（BI）电动力学在黑洞物理中的应用，特别是其在解决麦克斯韦理论中点电荷奇异性方面的成功\cite{breton2007nonlinear}。BI理论通过引入最大场强参数，使得电场在点电荷位置处保持有限，并且具有良好的物理性质，如保持对偶旋转不变性等。我们详细分析了BI理论与爱因斯坦方程耦合得到的静态球对称解，包括黑洞解和粒子状解（EBIon）。这些解在中心处表现出不同的行为，黑洞解在中心处发散，而EBIon解在中心处是有限的。此外，我们还研究了BI黑洞解的热力学性质，包括零定律和第一定律，并探讨了其与孤立视界框架的关系。通过分析，我们发现BI黑洞解在孤立视界框架下满足Ashtekar等人的模型，且其稳定性在一定条件下得到保证。
+
+最后，我们研究了在f(T)引力框架下，包含尘埃物质、磁场和挠率贡献的非线性电动力学对宇宙加速膨胀的影响，以及对广义第二定律（GSLT）的验证\cite{sharif2013nonlinear}。通过假设极点型和幂律型尺度因子，我们构建了相应的f(T)模型，并分析了宇宙学参数（如方程状态参数和减速参数）随红移的变化，以及GSLT在哈勃视界和事件视界上的有效性。结果表明，所构建的f(T)模型能够描述宇宙的加速膨胀，并且在某些红移范围内，GSLT在事件视界上始终成立，而在哈勃视界上则在特定条件下成立。这表明非线性电动力学在f(T)引力框架下对宇宙学的研究具有重要意义。
+
+综上所述，非线性电动力学在解决经典理论中的奇异性问题、描述黑洞物理以及探索宇宙学现象等方面展现出了丰富的物理内涵和潜在的应用价值。未来的研究将进一步深入探讨其在更广泛的物理背景下的性质和应用。
+
+\end{abstract}
+
+% insert suggested keywords - APS authors don't need to do this
+%\keywords{}
+
+%\maketitle must follow title, authors, abstract, and keywords
+\maketitle
+
+% body of paper here - Use proper section commands
+% References should be done using the \cite, \ref, and \label commands
+\section{I. 一种新型非线性电动力学模型在平坦时空中和与广义相对论耦合情况下的行为}
+
+\subsection{1. 非线性电动力学模型与场方程}
+
+\subsubsection{(1) 拉氏量}
+
+麦克斯韦的拉氏量
+
+$$
+F
+=\frac{1 }{2 } (B^2-E^2)
+$$
+
+$$
+L_{\mathrm{maxwell}}
+=-F
+$$
+
+BI 模型的拉氏量\cite{born1934quantum}
+
+$$
+L_{\mathrm{BI}}
+=\frac{2 }{\beta } \left(1-\sqrt{1+\beta F} \right) 
+$$
+
+$\beta $ 是任意常数。   弱场极限 $\beta F\ll 1 $ 下，BI 模型的拉氏量可近似为：
+
+$$
+L_{\mathrm{BI}}
+=\frac{2 }{\beta } \left(1-\sqrt{1+\beta F} \right)
+\approx -F + \frac{1 }{4 } \beta F^2 - \frac{1 }{8 } \beta^2 F^3 +\mathcal{O}\left(\beta^3 F^4 \right) 
+$$
+
+当 $\beta\to 0 $，BI 模型的拉氏量与线性麦克斯韦的拉氏量相同。
+
+新 NLE 模型的拉氏量
+
+$$
+L_{\mathrm{general}}(F)
+=-\frac{\left(aF+1 \right)^m }{\delta(bF+1)^n } \left(\beta F \right)^p
+$$
+
+$m,n,p $ 是无量纲常数，$a,b,\beta,\delta $ 是长度平方量纲的任意常数。在弱场极限下，拉氏量可近似为：
+
+$$
+L_{\mathrm{general}}(F)
+=-\frac{\left(aF+1 \right)^m }{\delta(bF+1)^n } \left(\beta F \right)^p
+\approx -c\left[F^p + c_1 F^{p+1} +c_2 F^{p+2}  + \mathcal{O}\left(c_3 F^{p+3} \right) \right]
+$$
+
+$p=1 $ 时得到麦克斯韦的拉氏量。通过分析取 $m=1,n=m+1,a=-3b $，得到含有两个参数且遵守麦克斯韦极限的拉氏量：
+
+$$
+L(F)
+=\frac{\gamma(3\eta F - 1 )F }{(1+\eta F)^2 }
+$$
+
+其中，$\gamma=\beta/\delta $ 和 $\eta $ 是任意参数。
+
+当 $\eta F\ll 1 $，即弱场极限下，拉氏量近似为：
+
+$$
+L(F)
+=\frac{\gamma(3\eta F - 1 )F }{(1+\eta F)^2 } 
+\approx -\gamma F + 5\gamma \eta F^2 -9\gamma \eta^2 F^3 + \gamma\mathcal{O}\left(\eta^3F^4 \right) 
+$$
+
+\subsubsection{(2) 新NLE模型的物理对应}
+
+利用电位移矢量 $\vec{D} $ 与 $\vec{E} $ 的关系 $\vec{D}=\partial L/\partial \vec{E} $，可由拉氏量式得到：
+
+$$
+\vec{D}
+=\gamma\frac{1-7\eta F }{(1+\eta F)^3 } \vec{E}
+$$
+
+电位移矢量与电场可由电极化强度张量联系 $D_i = \varepsilon_i^{~~ j } E_j $ 
+
+$$
+\varepsilon_{ij} = \gamma \frac{1-7\eta F }{(1+\eta F)^3 }\delta_{ij} 
+$$
+
+类似地，磁场 $\vec{H}=-\partial L/\partial \vec{B} $ 结合拉氏量有
+
+$$
+\vec{H}
+=\gamma \frac{1-7\eta F }{(1+\eta F)^3 } \vec{B}
+$$
+
+磁感强强度与磁场强度可由磁导率张量联系 $B_i=\mu_i^{~~j}H_j $，磁导率张量的逆 $\left(\mu^{-1} \right)_{ij} $
+
+$$
+\left(\mu^{-1} \right)_{ij}
+=\gamma \frac{1-7\eta F }{(1+\eta F)^3 } \delta_{ij}
+$$
+
+可以认为新 NLE 拉氏量由这种特殊的介质生成。注意到 $\vec{D}\cdot\vec{H}\ne \vec{E}\cdot\vec{B}$，这违背了对偶对称性。
+
+\subsubsection{(3) 场方程}
+
+平坦时空中拉氏量给出欧拉-拉格朗日运动方程
+
+$$
+\partial_\mu\left(L_F F^{\mu\nu} \right) = 0
+$$
+
+其中，
+
+$$
+L_F
+\equiv \frac{\partial L }{\partial F } 
+=\frac{\gamma(-1+7\eta F) }{(1+\eta F)^3 }
+$$
+    
+$F^{\mu \nu} $ 是麦克斯韦场强张量。运动方程可以回到无源麦克斯韦方程
+
+$$
+\nabla\cdot\vec{D} = 0,\quad
+\frac{\partial \vec{D} }{\partial t } - \nabla\times\vec{H}= \vec{0} 
+$$
+    
+由 Bianchi identity $\partial_\mu \tilde{F}^{\mu \nu}=0 $，$\tilde{F}^{\mu\nu}=\frac{1 }{2 } \varepsilon^{\mu\nu\rho\sigma}F_{\rho\sigma} $ 是电磁场张量的对偶张量，可得
+    
+$$
+\nabla\cdot\vec{B} = \vec{0},\quad 
+\frac{\partial \vec{B} }{\partial t } + \nabla\times\vec{E} = \vec{0} 
+$$
+
+\subsubsection{(4) 静电极限下点电荷产生的电场}
+
+考虑静电极限(electrostatic limit) $\vec{B}=\vec{H}=\vec{0} $，点电荷产生的电位移矢量满足
+
+$$
+\nabla\cdot\vec{D} = e\delta(\vec{r})
+$$
+
+其解为
+
+$$
+\vec{D}
+=\frac{e }{4\pi r^3 } \vec{r}
+$$
+
+结合 $\vec{D},\vec{E} $ 关系 $\vec{D}=\gamma\frac{1-7\eta F }{(1+\eta F)^3 }\vec{E} $ 和 $F=-E^2/2 $ 可得
+
+$$
+E+\frac{7 }{2 } \eta E^3
+=\frac{e }{4\gamma \pi r^2 } \left(1-\frac{\eta  }{2 } E^2 \right)^3 
+$$
+
+上式限制 $F>-1/\eta$，且电场最大值为
+
+$$
+E_{\max}=\sqrt{\frac{2 }{\eta } }
+$$
+
+可见，新NLE模型中电场有限。当 $\eta\to 0 $，电场发散。
+
+弱场极限 $\eta F\ll 1 $，$E(r) $ 可按 $\eta $ 展开
+
+$$
+E
+=E_{(0)} + \eta E_{(1)} + \eta^2 E_{(3)} + \mathcal{O}\left(\eta^3 \right)
+$$
+
+$E_{(1)},E_{(2)} $ 分别代表对电场 $E_{(0)} $ 的一阶和二阶修正。比较系数可得
+    
+$$
+E_{(0)}
+=\frac{e }{4\pi\gamma r^2 }
+$$
+
+$$
+E_{(1)} 
+=-\frac{7 }{2 } E_{(0)}^3 - \frac{e }{4\pi \gamma r^2 } E_{(0)}^2
+$$
+
+$$
+E_{(2)}
+=-\frac{21 }{2 } E_{(0)}^2 E_{(1)} + \frac{e }{4\pi\gamma r^2 } \left(-3E_{(0)}E_{(1)} + \frac{3 }{4 } E_{(0)}^4 \right)
+$$
+
+弱场极限下，点电荷电场近似为
+
+$$
+E
+\approx \frac{e }{4\pi\gamma r^2 } - 5\eta\left(\frac{e }{4\pi\gamma r^2 }  \right)^3 + \frac{273 }{4 } \eta^2\left(\frac{e }{4\pi\gamma r^2 }  \right)^5 + \mathcal{O}\left(\eta^3 \right)
+$$
+
+\subsection{2. 点电荷的能量}
+
+平坦时空中希尔伯特应力-能量张量(Hilbert stress-energy tensor)是一个对称张量且是不变量，其定义为
+
+$$
+T_{\mu\nu}^H
+\equiv -\frac{2 }{\sqrt{-g} } \left(\frac{\partial \left(\sqrt{-g}L(F) \right) }{\partial g^{\mu\nu} }  \right)\bigg|_{g=\eta}
+$$
+
+结合新NLE模型 $L(F)=\frac{\gamma(3\eta F-1)F }{(1+\eta F)^2 } $ 可得
+
+$$
+T_{\mu\nu}^H
+=\eta_{\mu\nu}L(F) - L_FF_\mu^\alpha F_{\nu\alpha}
+$$
+
+因此电能密度为
+
+$$
+\rho
+=-T_t^t
+=-L_FE^2-L(F)
+=\frac{\gamma E^2\left[1+\frac{3 }{2 } \eta E^2 \left(4+\frac{\eta }{2 } E^2 \right) \right] }{2\left(1-\frac{\eta }{2 } E^2 \right)^3 } 
+$$
+
+总电能
+
+$$
+\epsilon
+=4\pi\int_{0}^{+\infty} \rho(r)r^2\mathrm{d}r
+$$
+
+利用点电荷电场方程 $E+\frac{7 }{2 } \eta E^3=\frac{e }{4\gamma \pi r^2 } \left(1-\frac{\eta  }{2 } E^2 \right)^3 $，对 $r$ 的积分可转化为对 $E $ 的积分
+
+$$
+\epsilon
+=\frac{e^{3/2} }{\sqrt{4\pi\gamma} } \int_{0}^{\sqrt{\frac{2 }{\eta  } }} \frac{\sqrt{\left(2-\eta E^2 \right)\left[4+3\eta E^2\left(8+\eta E^2 \right) \right]\left[4+\eta E^2\left(52+21\eta E^2 \right) \right]} }{16\sqrt{E}\left(2+7\eta E^2 \right)^{5/2} } \mathrm{d}E
+$$
+
+总能量有限，这与BI模型一致。当 $\eta\to 0$，点电荷自能发散。
+
+\subsection{3. 真空双折射}
+
+考虑平面电磁波 $\left(\vec{e},\vec{b}\right) $ 沿 $z $ 轴在两片平行电容板间传播，$x $ 轴方向有匀强电场。外电场 $\bar{\vec{E}}=(\bar{E},0,0) $，总电场 $\vec{E}=\vec{e}+\bar{\vec{E}},\vec{B}=\vec{b} $，设 $\vec{e} $ 远小于 $\bar{\vec{E}} $，拉氏量
+
+$$
+L\left(\vec{e}+\bar{\vec{E}},\vec{b} \right)
+=\gamma\frac{\left\{\frac{3 }{2 } \eta\left[\vec{b}^2-\left(\vec{e}+\bar{\vec{E}} \right)^2 \right] - 1 \right\}\left[\vec{b}^2-\left(\vec{e}+\bar{\vec{E}} \right)^2 \right] }{2\left\{1+\frac{\eta }{2 } \left[\vec{b}^2-\left(\vec{e} + \bar{\vec{E}}^2 \right) \right] \right\}^2 } 
+$$
+
+忽略高阶项，只保留二次项
+
+$$
+L^{(2)}(\vec{e}+\bar{\vec{E}},\vec{b})
+=\frac{\gamma\eta\left(5+\frac{7 }{2 } \eta \bar{\vec{E}}^2 \right) }{\left(1-\frac{\eta }{2 } \bar{\vec{E}}^2 \right)^4 }\left(\vec{e}\cdot\bar{\vec{E}} \right)^2 - \frac{1 }{2 } \gamma \frac{\left(1+\frac{7 }{2 } \eta \bar{\vec{E}}^2 \right) }{\left(1-\frac{\eta }{2 } \bar{\vec{E}}^2 \right)^3 }\left(\vec{b}^2-\vec{e}^2 \right) 
+$$
+
+相应电位移矢量和磁场强度
+
+$$
+d_i = \frac{\partial L^{(2)} }{\partial e_i } = \left(\alpha\delta_i^j+\beta\bar{E}_i\bar{E}^j \right)e_j,\quad
+h_i
+=-\frac{\partial L^{(2)} }{\partial b_i } 
+=\alpha\delta_i^j b_j 
+$$
+
+$$
+\beta = \frac{2\gamma \eta\left(5+\frac{7 }{2 } \eta \bar{\vec{E}}^2 \right) }{\left(1-\frac{\eta }{2 } \bar{\vec{E}}^2 \right)^4 },\quad 
+\alpha = \gamma \frac{\left(1+\frac{7 }{2 }\eta\bar{\vec{E}}^2 \right)  }{\left(1-\frac{\eta }{2 } \bar{\vec{E}}^2 \right)^3 }
+$$
+
+结合关系 $d_i=\varepsilon_i^j e_j,h_i=\left(\mu^{-1} \right)_i^j b_j $，对比可得
+    
+$$
+\varepsilon_{ij} = \alpha\delta_{ij} + \beta\bar{E}_i\bar{E}_j ,\quad
+\left(\mu^{-1} \right)_{ij} = \alpha\delta_{ij} 
+$$
+
+结合平面波麦克斯韦方程
+
+$$
+k_i d^i = k_i b^i = 0,\quad
+\vec{k}\times\vec{e} = \omega\vec{b},\quad
+\vec{k}\times\vec{h} = -\omega\vec{d} 
+$$
+
+得到电场 $\vec{e}$ 所满足的方程
+
+$$
+\left\{\varepsilon^{ijk}\varepsilon_{lmn} \left(\mu^{-1} \right)_k^l k_j k^m+\omega^2\epsilon_n^i \right\}e^n = 0
+$$
+
+$\varepsilon_{ijk} $ 是反对称张量。方程的矩阵形式为
+
+$$
+\Lambda \vec{e} = 0 
+$$
+
+其中，
+
+$$
+\Lambda
+\equiv \begin{bmatrix}
+-k^2 \alpha+\omega^2\left(\alpha+\beta\bar{E} \right) &0 &0 \\
+0 &-k^2\alpha+\omega^2\alpha &0 \\
+0 &0 &\omega^2\alpha
+\end{bmatrix} 
+$$
+
+由 $\mathrm{det}(\Lambda)=0 $ 可知电场有两种模式。两种模式定义了色散关系。折射率定义为 $n\equiv k/\omega $，因此有两种不同的折射率
+
+$$
+n_\parallel = \sqrt{1+\frac{\beta }{\alpha } \bar{E}^2},\quad
+n_\perp = 1 
+$$
+
+不同偏振的电磁波有不同的速度 $v_\parallel=n_\parallel^{-1},v_\perp=1 $，这里平行和垂直极化是相对于背景匀强电场而言的。这种真空双折射现象是由模型的非线性性造成的。当 $\eta\to 0$ 时，$\beta\to 0$，真空双折射现象也消失。
+
+\subsection{4. 拉格朗日量的因果性和幺正性条件}
+
+只有当因果性(causality)和幺正性(unitarity)成立时，NLE模型才是合法的\cite{shabad2011effective}。
+
+若拉氏量满足不等式
+
+$$
+L_F \leq 0,\quad
+L_{FF}\geq 0,\quad
+L_F + 2F L_{FF} \leq 0
+$$
+
+则背景场上元激发的群速度不超过真空光速，且动能非负。
+
+\subsubsection{(1) 电场部分的因果性和幺正性条件}
+
+电场部分取 $B=0 $，拉氏量 $\displaystyle{L(F)=-\frac{\left(aF+1 \right)^m }{\delta(bF+1)^n } \left(\beta F \right)^p }$ ，前两个不等式给出
+
+$$
+n\geq m+1,\quad a\leq 0,\quad b\geq 0
+$$
+
+在此基础上，第三个不等式自动满足。
+
+\subsubsection{(2) 磁场部分的因果性和幺正性条件}
+
+磁场部分取 $E=0 $，类似可得
+
+$$
+n\geq m+1,\quad a\geq 0,\quad b\leq 0
+$$
+
+\subsubsection{(3) $n=m+1,a=-3b $ 时的因果性和幺正性条件}
+
+此时拉氏量的偏微分为
+
+$$
+L_F
+=\frac{\gamma\left(-1+7\eta F \right) }{\left(1+\eta F \right)^3 },\quad
+L_{FF}
+=\frac{2\gamma \eta\left(5-7\eta F \right) }{\left(1+\eta F \right)^4 } 
+$$
+
+$$
+L_F + 2FL_{FF} 
+=\gamma \frac{-\eta F\left(26-21\eta F \right) }{\left(1+\eta F \right)^4 }
+$$
+
+仅电场部分，取 $B=0 $，因果性和幺正性条件三个不等式给出
+    
+$$
+-\frac{2+7\eta E^2 }{\left(2-\eta E^2 \right)^3 } \leq 0,\quad
+\frac{10+7\eta E^2 }{\left(2-\eta E^2 \right)^4 } \geq 0,\quad
+\frac{-4-\eta E^2\left(521\eta E^2 \right) }{\left(2-\eta E^2 \right)^4 } \leq 0
+$$
+
+所有情况要求 $E<\sqrt{2/\eta} $，而之前的结果表明 $E_{\max}=\sqrt{2/\eta} $，因此，对于所有 $E$ 的所有允许的取值，新NLE模型都满足因果性和幺正性条件。
+
+分析磁场，取 $E=0 $，前两个不等式给出
+
+$$
+\left(-1+\frac{7 }{2 } \eta B^2 \right)\leq 0,\quad
+\left(5-\frac{7 }{2 } \eta B^2 \right)\geq 0
+$$
+
+可以得到 $F<1/7\eta $。因此，只有当磁场的取值在一定范围内时，因果性条件才得到满足。
+
+第三不等式给出
+
+$$
+-2+\eta B^2\left(26-\frac{21 }{2 } \eta B^2 \right)\leq 0
+$$
+
+得到 $(13-2\sqrt{37})/21<\eta F<(13+2\sqrt{37})/21 $。因此，对于纯磁场，只有一定范围内的磁场的取值才满足因果性和幺正性条件。
+
+\subsection{5. 新NLE模型与广义相对论的耦合}
+
+\section{II. 非线性电动力学与黑洞}
+
+\subsection{1. NLED形式}
+
+\subsection{2. NLED黑洞}
+
+\subsection{3. NLED黑洞热力学}
+
+\subsection{4. 孤立视界框架和质量关系}
+
+\subsection{5. NLED黑洞的稳定性}
+
+\section{III. f(T)引力框架下的非线性电动力学与广义热力学第二定律}
+
+\subsection{1. f(T)引力和NLED基础}
+
+\subsection{2. 宇宙学参数和热力学}
+
+\subsection{3. f(T)模型的一个例子}
+
+% Put \label in argument of \section for cross-referencing
+%\section{\label{}}
+\subsection{}
+\subsubsection{}
+
+% If in two-column mode, this environment will change to single-column
+% format so that long equations can be displayed. Use
+% sparingly.
+%\begin{widetext}
+% put long equation here
+%\end{widetext}
+
+% figures should be put into the text as floats.
+% Use the graphics or graphicx packages (distributed with LaTeX2e)
+% and the \includegraphics macro defined in those packages.
+% See the LaTeX Graphics Companion by Michel Goosens, Sebastian Rahtz,
+% and Frank Mittelbach for instance.
+%
+% Here is an example of the general form of a figure:
+% Fill in the caption in the braces of the \caption{} command. Put the label
+% that you will use with \ref{} command in the braces of the \label{} command.
+% Use the figure* environment if the figure should span across the
+% entire page. There is no need to do explicit centering.
+
+% \begin{figure}
+% \includegraphics{}%
+% \caption{\label{}}
+% \end{figure}
+
+% Surround figure environment with turnpage environment for landscape
+% figure
+% \begin{turnpage}
+% \begin{figure}
+% \includegraphics{}%
+% \caption{\label{}}
+% \end{figure}
+% \end{turnpage}
+
+% tables should appear as floats within the text
+%
+% Here is an example of the general form of a table:
+% Fill in the caption in the braces of the \caption{} command. Put the label
+% that you will use with \ref{} command in the braces of the \label{} command.
+% Insert the column specifiers (l, r, c, d, etc.) in the empty braces of the
+% \begin{tabular}{} command.
+% The ruledtabular enviroment adds doubled rules to table and sets a
+% reasonable default table settings.
+% Use the table* environment to get a full-width table in two-column
+% Add \usepackage{longtable} and the longtable (or longtable*}
+% environment for nicely formatted long tables. Or use the the [H]
+% placement option to break a long table (with less control than 
+% in longtable).
+% \begin{table}%[H] add [H] placement to break table across pages
+% \caption{\label{}}
+% \begin{ruledtabular}
+% \begin{tabular}{}
+% Lines of table here ending with \\
+% \end{tabular}
+% \end{ruledtabular}
+% \end{table}
+
+% Surround table environment with turnpage environment for landscape
+% table
+% \begin{turnpage}
+% \begin{table}
+% \caption{\label{}}
+% \begin{ruledtabular}
+% \begin{tabular}{}
+% \end{tabular}
+% \end{ruledtabular}
+% \end{table}
+% \end{turnpage}
+
+% Specify following sections are appendices. Use \appendix* if there
+% only one appendix.
+%\appendix
+%\section{}
+
+% If you have acknowledgments, this puts in the proper section head.
+%\begin{acknowledgments}
+% put your acknowledgments here.
+%\end{acknowledgments}
+
+% Create the reference section using BibTeX:
+\bibliography{ref.bib}
+
+\end{document}
+%
+% ****** End of file apstemplate.tex ******
+

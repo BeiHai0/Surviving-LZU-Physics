@@ -84,9 +84,7 @@ L_{\mathrm{BI}}
 =\frac{2 }{\beta } \left(1-\sqrt{1+\beta F} \right) 
 $$
 
-$\beta $ 是任意常数。
-
-弱场极限 $\beta F\ll 1 $ 下，BI 模型的拉氏量可近似为：
+$\beta $ 是任意常数。   弱场极限 $\beta F\ll 1 $ 下，BI 模型的拉氏量可近似为：
 
 $$
 L_{\mathrm{BI}}
@@ -106,9 +104,7 @@ L_{\mathrm{general}}(F)
 =-\frac{\left(aF+1 \right)^m }{\delta(bF+1)^n } \left(\beta F \right)^p
 $$
 
-$m,n,p $ 是无量纲常数，$a,b,\beta,\delta $ 是长度平方量纲的任意常数。
-
-在弱场极限下，拉氏量可近似为：
+$m,n,p $ 是无量纲常数，$a,b,\beta,\delta $ 是长度平方量纲的任意常数。在弱场极限下，拉氏量可近似为：
 
 $$
 L_{\mathrm{general}}(F)
@@ -116,11 +112,7 @@ L_{\mathrm{general}}(F)
 \approx -c\left[F^p + c_1 F^{p+1} +c_2 F^{p+2}  + \mathcal{O}\left(c_3 F^{p+3} \right) \right]
 $$
 
-$p=1 $ 时得到麦克斯韦的拉氏量。
-
-通过分析取 $m=1,n=m+1,a=-3b $
-
-得到含有两个参数且遵守麦克斯韦极限的拉氏量：
+$p=1 $ 时得到麦克斯韦的拉氏量。通过分析取 $m=1,n=m+1,a=-3b $，得到含有两个参数且遵守麦克斯韦极限的拉氏量：
 
 $$
 L(F)
@@ -172,7 +164,7 @@ $$
 \end{frame}
 
 \begin{frame}{点电荷电场}
-    平坦时空中拉氏量给出 E-L 运动方程：
+    平坦时空中拉氏量给出欧拉-拉格朗日运动方程：
 
     $$
     \partial_\mu\left(L_F F^{\mu\nu} \right) = 0
@@ -273,13 +265,15 @@ $$
 \subsection{点电荷的能量}
 
 \begin{frame}{点电荷的能量}
-    希尔伯特应力-能量张量(Hilbert stress-energy tensor)
+    平坦时空中希尔伯特应力-能量张量(Hilbert stress-energy tensor)是一个对称张量且是不变量，其定义为
 
     $$
     T_{\mu\nu}^H
     \equiv -\frac{2 }{\sqrt{-g} } \left(\frac{\partial \left(\sqrt{-g}L(F) \right) }{\partial g^{\mu\nu} }  \right)\bigg|_{g=\eta}
     =\eta_{\mu\nu}L(F) - L_FF_\mu^\alpha F_{\nu\alpha}
     $$
+
+    结合新NLE模型 $L(F)=\frac{\gamma(3\eta F-1)F }{(1+\eta F)^2 } $ 可得
     
     电能密度
     
@@ -382,12 +376,12 @@ $$
     n_\perp = 1 
     $$
     
-    不同偏振的电磁波有不同的速度 $v_\parallel=n_\parallel^{-1},v_\perp=1 $
+    不同偏振的电磁波有不同的速度 $v_\parallel=n_\parallel^{-1},v_\perp=1 $，这里平行和垂直极化是相对于背景匀强电场而言的。这种真空双折射现象是由模型的非线性性造成的。当 $\eta\to 0$ 时，$\beta\to 0$，真空双折射现象也消失。
 \end{frame}
 
-\subsection{拉格朗日量的因果性和单一性条件}
+\subsection{拉格朗日量的因果性和幺正性条件}
 
-\begin{frame}{拉格朗日量的因果性和单一性条件}
+\begin{frame}{拉格朗日量的因果性和幺正性条件}
     若拉氏量满足不等式：
 
     $$
