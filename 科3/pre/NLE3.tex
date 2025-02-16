@@ -84,9 +84,7 @@ L_{\mathrm{BI}}
 =\frac{2 }{\beta } \left(1-\sqrt{1+\beta F} \right) 
 $$
 
-$\beta $ 是任意常数。
-
-弱场极限 $\beta F\ll 1 $ 下，BI 模型的拉氏量可近似为：
+$\beta $ 是任意常数。   弱场极限 $\beta F\ll 1 $ 下，BI 模型的拉氏量可近似为：
 
 $$
 L_{\mathrm{BI}}
@@ -106,9 +104,7 @@ L_{\mathrm{general}}(F)
 =-\frac{\left(aF+1 \right)^m }{\delta(bF+1)^n } \left(\beta F \right)^p
 $$
 
-$m,n,p $ 是无量纲常数，$a,b,\beta,\delta $ 是长度平方量纲的任意常数。
-
-在弱场极限下，拉氏量可近似为：
+$m,n,p $ 是无量纲常数，$a,b,\beta,\delta $ 是长度平方量纲的任意常数。在弱场极限下，拉氏量可近似为：
 
 $$
 L_{\mathrm{general}}(F)
@@ -116,11 +112,7 @@ L_{\mathrm{general}}(F)
 \approx -c\left[F^p + c_1 F^{p+1} +c_2 F^{p+2}  + \mathcal{O}\left(c_3 F^{p+3} \right) \right]
 $$
 
-$p=1 $ 时得到麦克斯韦的拉氏量。
-
-通过分析取 $m=1,n=m+1,a=-3b $
-
-得到含有两个参数且遵守麦克斯韦极限的拉氏量：
+$p=1 $ 时得到麦克斯韦的拉氏量。通过分析取 $m=1,n=m+1,a=-3b $，得到含有两个参数且遵守麦克斯韦极限的拉氏量：
 
 $$
 L(F)
@@ -172,7 +164,7 @@ $$
 \end{frame}
 
 \begin{frame}{点电荷电场}
-    平坦时空中拉氏量给出 E-L 运动方程：
+    平坦时空中拉氏量给出欧拉-拉格朗日运动方程：
 
     $$
     \partial_\mu\left(L_F F^{\mu\nu} \right) = 0
@@ -273,13 +265,15 @@ $$
 \subsection{点电荷的能量}
 
 \begin{frame}{点电荷的能量}
-    希尔伯特应力-能量张量(Hilbert stress-energy tensor)
+    平坦时空中希尔伯特应力-能量张量(Hilbert stress-energy tensor)是一个对称张量且是不变量，其定义为
 
     $$
     T_{\mu\nu}^H
     \equiv -\frac{2 }{\sqrt{-g} } \left(\frac{\partial \left(\sqrt{-g}L(F) \right) }{\partial g^{\mu\nu} }  \right)\bigg|_{g=\eta}
     =\eta_{\mu\nu}L(F) - L_FF_\mu^\alpha F_{\nu\alpha}
     $$
+
+    结合新NLE模型 $L(F)=\frac{\gamma(3\eta F-1)F }{(1+\eta F)^2 } $ 可得
     
     电能密度
     
@@ -382,12 +376,12 @@ $$
     n_\perp = 1 
     $$
     
-    不同偏振的电磁波有不同的速度 $v_\parallel=n_\parallel^{-1},v_\perp=1 $
+    不同偏振的电磁波有不同的速度 $v_\parallel=n_\parallel^{-1},v_\perp=1 $，这里平行和垂直极化是相对于背景匀强电场而言的。这种真空双折射现象是由模型的非线性性造成的。当 $\eta\to 0$ 时，$\beta\to 0$，真空双折射现象也消失。
 \end{frame}
 
-\subsection{拉格朗日量的因果性和单一性条件}
+\subsection{拉格朗日量的因果性和幺正性条件}
 
-\begin{frame}{拉格朗日量的因果性和单一性条件}
+\begin{frame}{拉格朗日量的因果性和幺正性条件}
     若拉氏量满足不等式：
 
     $$
@@ -771,9 +765,7 @@ $$
     =\mathrm{d}t^2 - a^2(t)\left(\mathrm{d}x^2+\mathrm{d}y^2+\mathrm{d}z^2 \right),
     $$
 
-    其中，$a$ 是依赖于时间的比例因子，相应 $h_\mu^a=\mathrm{diag}(1,a,a,a)$
-
-    modified Friedmann equations 描述了宇宙的演化:
+    其中，$a$ 是依赖于时间的比例因子，相应 $h_\mu^a=\mathrm{diag}(1,a,a,a)$。修改 Friedmann 方程描述了宇宙的演化:
 
     $$
     12 H^2 f_T + f = 2\kappa^2 \rho_t,
@@ -783,7 +775,7 @@ $$
     48H^2\dot{H} f_{TT} - \left(12 H^2 + 4\dot{H} \right) f_T - f= 2\kappa^2 p_t,
     $$
 
-    其中，$H=\dot{a}/a$ 是哈勃参数，$\rho_t,p_t$ 是宇宙的总能量密度和压力。
+    其中，$H=\dot{a}/a$ 是哈勃参数，$\rho_t,p_t$ 分别是宇宙的总能量密度和压力。
 \end{frame}
 
 \begin{frame}{非线性电动力学基础}
@@ -1174,8 +1166,6 @@ $$
 
 \section{Nonlinear electrodynamics and black holes}
 
-
-
 \subsection{NLED formalism}
 
 \begin{frame}{电磁场不变量}
@@ -1193,9 +1183,7 @@ $$
     \tilde{G} = \frac{1 }{4 } F_{\alpha\beta} \tilde{F}^{\alpha\beta} 
     $$
 
-    其中 $\tilde{F}^{\alpha\beta}=\left(\mathrm{i}/2\sqrt{-g} \right)\varepsilon^{\alpha\beta\gamma\delta}F_{\gamma\delta}$ 是 $F^{\alpha\beta}$ 的对偶。
-
-    若 NLED 拉氏量在洛伦兹群作用下不变，则它依赖于 $F$ 和 $\tilde{G}$；同时，在弱场极限下应与线性理论相同。
+    其中 $\tilde{F}^{\alpha\beta}=\left(\mathrm{i}/2\sqrt{-g} \right)\varepsilon^{\alpha\beta\gamma\delta}F_{\gamma\delta}$ 是 $F^{\alpha\beta}$ 的对偶。若 NLED 拉氏量在洛伦兹群作用下不变，则它依赖于 $F$ 和 $\tilde{G}$；同时，在弱场极限下应与经典线性理论相同。
 \end{frame}
 
 \begin{frame}{$(F,\tilde{G})$ 和 $(P,\tilde{Q})$ 框架}
@@ -1289,7 +1277,7 @@ $$
 \subsection{NLED 黑洞}
 
 \begin{frame}{NLED 黑洞}
-    SSS(静态球对称) 线元
+    SSS(静态球对称)线元
 
     $$
     \mathrm{d}s^2 = -\psi\mathrm{d}t^2 + \psi^{-1} \mathrm{d}r^2 + r^2\left(\mathrm{d}\theta^2+\sin^2\theta\mathrm{d}\phi^2 \right)
@@ -1403,9 +1391,7 @@ $$
     \dot{r}^2 + \psi\left(\frac{l^2 }{r^2 } + 1 \right) - \left\{E+\frac{\varepsilon g }{\mu } \sqrt{\frac{b }{4g } } \mathbb{F} \left[\arccos\left(\frac{r^2-g/b }{r^2+g/b }  , \frac{1 }{\sqrt{2} }  \right) \right] \right\}^2=0
     $$
 
-    与 $\dot{r}^2/2+U_{\mathrm{eff}}(E,l,r)=0$ 比较可得有效势。
-
-    对于光子，类似有
+    与 $\dot{r}^2/2+U_{\mathrm{eff}}(E,l,r)=0$ 比较可得有效势。对于光子，类似有
 
     $$
     \dot{r}_{ph}

@@ -1,0 +1,82 @@
+%apsrev4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
+%Control: key (0)
+%Control: author (8) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (0) allowed
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{10}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{https://doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Kar}(2024)}]{kar2024aspects}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Kar}},\ }\bibfield  {title} {\bibinfo {title} {Aspects of a novel nonlinear electrodynamics in flat spacetime and in a gravity-coupled scenario},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {arXiv preprint arXiv:2406.10577}\ } (\bibinfo {year} {2024})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Breton}\ and\ \citenamefont {Garcia-Salcedo}(2007)}]{breton2007nonlinear}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Breton}}\ and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Garcia-Salcedo}},\ }\bibfield  {title} {\bibinfo {title} {Nonlinear electrodynamics and black holes},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {arXiv preprint hep-th/0702008}\ } (\bibinfo {year} {2007})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Sharif}\ and\ \citenamefont {Rani}(2013)}]{sharif2013nonlinear}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Sharif}}\ and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Rani}},\ }\bibfield  {title} {\bibinfo {title} {Nonlinear electrodynamics in f (t) gravity and generalized second law of thermodynamics},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Astrophysics and Space Science}\ }\textbf {\bibinfo {volume} {346}},\ \bibinfo {pages} {573} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Born}(1934)}]{born1934quantum}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Born}},\ }\bibfield  {title} {\bibinfo {title} {On the quantum theory of the electromagnetic field},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Proceedings of the Royal Society of London. Series A, Containing Papers of a Mathematical and Physical Character}\ }\textbf {\bibinfo {volume} {143}},\ \bibinfo {pages} {410} (\bibinfo {year} {1934})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Shabad}\ and\ \citenamefont {Usov}(2011)}]{shabad2011effective}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~E.}\ \bibnamefont {Shabad}}\ and\ \bibinfo {author} {\bibfnamefont {V.~V.}\ \bibnamefont {Usov}},\ }\bibfield  {title} {\bibinfo {title} {Effective lagrangian in nonlinear electrodynamics and its properties of causality and unitarity},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review D—Particles, Fields, Gravitation, and Cosmology}\ }\textbf {\bibinfo {volume} {83}},\ \bibinfo {pages} {105006} (\bibinfo {year} {2011})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hoffmann}\ and\ \citenamefont {Infeld}(1937)}]{hoffmann1937choice}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Hoffmann}}\ and\ \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Infeld}},\ }\bibfield  {title} {\bibinfo {title} {On the choice of the action function in the new field theory},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review}\ }\textbf {\bibinfo {volume} {51}},\ \bibinfo {pages} {765} (\bibinfo {year} {1937})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Pellicer}\ and\ \citenamefont {Torrence}(1969)}]{pellicer1969nonlinear}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Pellicer}}\ and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Torrence}},\ }\bibfield  {title} {\bibinfo {title} {Nonlinear electrodynamics and general relativity},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Journal of Mathematical Physics}\ }\textbf {\bibinfo {volume} {10}},\ \bibinfo {pages} {1718} (\bibinfo {year} {1969})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ay{\'o}n-Beato}\ and\ \citenamefont {Garc{\i}a}(2000)}]{ayon2000bardeen}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Ay{\'o}n-Beato}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Garc{\i}a}},\ }\bibfield  {title} {\bibinfo {title} {The bardeen model as a nonlinear magnetic monopole},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physics Letters B}\ }\textbf {\bibinfo {volume} {493}},\ \bibinfo {pages} {149} (\bibinfo {year} {2000})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ashtekar}\ \emph {et~al.}(2000)\citenamefont {Ashtekar}, \citenamefont {Fairhurst},\ and\ \citenamefont {Krishnan}}]{ashtekar2000isolated}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Ashtekar}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Fairhurst}},\ and\ \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Krishnan}},\ }\bibfield  {title} {\bibinfo {title} {Isolated horizons: Hamiltonian evolution and the first law},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review D}\ }\textbf {\bibinfo {volume} {62}},\ \bibinfo {pages} {104025} (\bibinfo {year} {2000})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Moreno}\ and\ \citenamefont {Sarbach}(2003)}]{moreno2003stability}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Moreno}}\ and\ \bibinfo {author} {\bibfnamefont {O.}~\bibnamefont {Sarbach}},\ }\bibfield  {title} {\bibinfo {title} {Stability properties of black holes in self-gravitating nonlinear electrodynamics},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review D}\ }\textbf {\bibinfo {volume} {67}},\ \bibinfo {pages} {024028} (\bibinfo {year} {2003})}\BibitemShut {NoStop}%
+\end{thebibliography}%
