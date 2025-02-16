@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{5}%
+\begin{thebibliography}{10}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -64,4 +64,19 @@
 \bibitem [{\citenamefont {Shabad}\ and\ \citenamefont {Usov}(2011)}]{shabad2011effective}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~E.}\ \bibnamefont {Shabad}}\ and\ \bibinfo {author} {\bibfnamefont {V.~V.}\ \bibnamefont {Usov}},\ }\bibfield  {title} {\bibinfo {title} {Effective lagrangian in nonlinear electrodynamics and its properties of causality and unitarity},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review D—Particles, Fields, Gravitation, and Cosmology}\ }\textbf {\bibinfo {volume} {83}},\ \bibinfo {pages} {105006} (\bibinfo {year} {2011})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hoffmann}\ and\ \citenamefont {Infeld}(1937)}]{hoffmann1937choice}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Hoffmann}}\ and\ \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Infeld}},\ }\bibfield  {title} {\bibinfo {title} {On the choice of the action function in the new field theory},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review}\ }\textbf {\bibinfo {volume} {51}},\ \bibinfo {pages} {765} (\bibinfo {year} {1937})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Pellicer}\ and\ \citenamefont {Torrence}(1969)}]{pellicer1969nonlinear}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Pellicer}}\ and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Torrence}},\ }\bibfield  {title} {\bibinfo {title} {Nonlinear electrodynamics and general relativity},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Journal of Mathematical Physics}\ }\textbf {\bibinfo {volume} {10}},\ \bibinfo {pages} {1718} (\bibinfo {year} {1969})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ay{\'o}n-Beato}\ and\ \citenamefont {Garc{\i}a}(2000)}]{ayon2000bardeen}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Ay{\'o}n-Beato}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Garc{\i}a}},\ }\bibfield  {title} {\bibinfo {title} {The bardeen model as a nonlinear magnetic monopole},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physics Letters B}\ }\textbf {\bibinfo {volume} {493}},\ \bibinfo {pages} {149} (\bibinfo {year} {2000})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ashtekar}\ \emph {et~al.}(2000)\citenamefont {Ashtekar}, \citenamefont {Fairhurst},\ and\ \citenamefont {Krishnan}}]{ashtekar2000isolated}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Ashtekar}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Fairhurst}},\ and\ \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Krishnan}},\ }\bibfield  {title} {\bibinfo {title} {Isolated horizons: Hamiltonian evolution and the first law},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review D}\ }\textbf {\bibinfo {volume} {62}},\ \bibinfo {pages} {104025} (\bibinfo {year} {2000})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Moreno}\ and\ \citenamefont {Sarbach}(2003)}]{moreno2003stability}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Moreno}}\ and\ \bibinfo {author} {\bibfnamefont {O.}~\bibnamefont {Sarbach}},\ }\bibfield  {title} {\bibinfo {title} {Stability properties of black holes in self-gravitating nonlinear electrodynamics},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review D}\ }\textbf {\bibinfo {volume} {67}},\ \bibinfo {pages} {024028} (\bibinfo {year} {2003})}\BibitemShut {NoStop}%
 \end{thebibliography}%

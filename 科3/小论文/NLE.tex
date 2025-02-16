@@ -20,7 +20,7 @@
 % Choose pra, prb, prc, prd, pre, prl, prstab, prstper, or rmp for journal
 %  Add 'draft' option to mark overfull boxes with black boxes
 %  Add 'showkeys' option to make keywords appear
-\documentclass[aps,prl,preprint,groupedaddress]{revtex4-2}
+\documentclass[aps,prl,preprint,groupedaddress,showkeys]{revtex4-2}
 %\documentclass[aps,prl,preprint,superscriptaddress]{revtex4-2}
 %\documentclass[aps,prl,reprint,groupedaddress]{revtex4-2}
 
@@ -36,10 +36,30 @@
 \usepackage{float}
 \usepackage{braket}
 \usepackage[utf8]{inputenc}
-\usepackage{ctex}
+\usepackage[UTF8]{ctex}
 \usepackage{amsmath}
 \usepackage{amsbsy}
 \usepackage{amsfonts}
+
+\usepackage{titlesec}
+
+\titleformat{\section}
+  {\normalfont\LARGE\bfseries} % 设置字体样式和大小
+  {\thesection}                % 章节编号的格式
+  {1em}                        % 编号与标题之间的间距
+  {}                           % 标题前的代码
+
+  \titleformat{\subsection}
+  {\normalfont\Large\bfseries} % 设置字体样式和大小
+  {\thesection}                % 章节编号的格式
+  {1em}                        % 编号与标题之间的间距
+  {}                           % 标题前的代码
+
+  \titleformat{\subsubsection}
+  {\normalfont\large\bfseries} % 设置字体样式和大小
+  {\thesection}                % 章节编号的格式
+  {1em}                        % 编号与标题之间的间距
+  {}                           % 标题前的代码
 
 \begin{document}
 
@@ -68,7 +88,7 @@
 %\homepage[]{Your web page}
 %\thanks{}
 %\altaffiliation{}
-\affiliation{}
+\affiliation{兰州大学物理科学与技术学院}
 
 %Collaboration name if desired (requires use of superscriptaddress
 %option in \documentclass). \noaffiliation is required (may also be
@@ -93,14 +113,25 @@
 \end{abstract}
 
 % insert suggested keywords - APS authors don't need to do this
-%\keywords{}
+\keywords{非线性电动力学、广义相对论、黑洞、广义热力学第二定律、宇宙学}
 
 %\maketitle must follow title, authors, abstract, and keywords
 \maketitle
 
 % body of paper here - Use proper section commands
 % References should be done using the \cite, \ref, and \label commands
-\section{I. 一种新型非线性电动力学模型在平坦时空中和与广义相对论耦合情况下的行为}
+
+\section{I. 引言}
+
+非线性电动力学（Nonlinear Electrodynamics, NLED）是经典电动力学的一个重要扩展，旨在解决线性麦克斯韦理论中的一些基本问题，例如点电荷的无限自能和奇异场强。自20世纪30年代Born和Infeld提出非线性电动力学模型以来，这一领域经历了多次复兴和发展。近年来，随着对宇宙加速膨胀和黑洞物理的深入研究，NLED在广义相对论和宇宙学中的应用引起了广泛关注。
+
+在广义相对论中，NLED与引力的耦合为解决奇点问题提供了新的思路。例如，Born-Infeld电动力学在与爱因斯坦方程耦合时，能够产生无奇点的黑洞解。这些解被称为“正则黑洞”，在某些情况下表现出与Reissner-Nordström解类似的渐近行为。然而，NLED在引力耦合中的应用仍面临诸多挑战，例如能量条件的违反和解的稳定性问题。
+
+在宇宙学中，NLED的应用主要集中在解释宇宙的加速膨胀和避免初始奇点。研究表明，非线性电磁场可能在宇宙早期阶段发挥重要作用，甚至能够诱导宇宙从收缩状态反弹到膨胀状态。此外，NLED在f(T)引力理论中的应用也显示出其在描述宇宙演化中的潜力。f(T)引力理论通过引入挠率标量T来修改引力作用，为研究宇宙加速膨胀提供了新的框架。
+
+本文综合了三篇相关研究\cite{kar2024aspects, breton2007nonlinear, sharif2013nonlinear}，探讨了NLED在平坦时空中、与引力耦合的黑洞解以及在f(T)引力理论中的应用。这些研究不仅展示了NLED在解决经典电动力学和广义相对论中奇点问题的潜力，还揭示了其在宇宙学中的重要应用前景。通过对这些研究的分析，我们希望进一步理解NLED在现代物理中的角色，并为未来的研究提供新的方向。
+
+\section{II. 一种新型非线性电动力学模型在平坦时空中和与广义相对论耦合情况下的行为}
 
 \subsection{1. 非线性电动力学模型与场方程}
 
@@ -427,7 +458,7 @@ $$
 
 \subsection{4. 拉格朗日量的因果性和幺正性条件}
 
-只有当因果性(causality)和幺正性(unitarity)成立时，NLE模型才是合法的\cite{shabad2011effective}。
+只有当因果性(causality)和幺正性(unitarity)成立时，NLE模型才是合理的\cite{shabad2011effective}。
 
 若拉氏量满足不等式
 
@@ -649,21 +680,21 @@ $$
 
 只有当曲率标量都是正则时时空才是正则的。因此考察三个标量不变量：
     
-Ricci scalar
+Ricci 标量
 
 $$
 R = g^{\mu\nu}R_{\mu\nu}
 =\frac{4b_0^2\left(3g^8-5g^4r^4 \right) }{\left(r^4+g^4 \right)^3 }
 $$
 
-Ricci contraction
+Ricci 收缩量
 
 $$
 R_{\mu\nu} R^{\mu\nu}
 =\frac{4b_0^2 \left(r^{16}-14g^4r^{12}+74g^8r^8-30g^{12}r^4+9g^{16} \right) }{\left(r^4+g^4 \right)^6 }
 $$
 
-Kretschmann scalar
+Kretschmann 标量
 
 $$
 K
@@ -685,14 +716,14 @@ p
 =-\frac{b_0^2\left(3g^8-12g^4r^4+r^8 \right) }{\kappa \left(r^4+g^4 \right)^3 }
 $$
 
-NEC(Null Energy Condition)要求 $\rho+\tau \geq 0,\rho+p\geq 0 $，第一个不等式在 $\rho+\tau=0 $ 时自动满足；
+Null Energy Condition(NEC)要求 $\rho+\tau \geq 0,\rho+p\geq 0 $，第一个不等式在 $\rho+\tau=0 $ 时自动满足；
 
 $$
 \rho+p
 =\frac{2b_0^2 r^4\left(r^4-7g^4 \right) }{\kappa \left(r^4+g^4 \right)^3 }
 $$
 
-若第二个不等式得到满足，则只能 $r^4\leq 7g^4 $，即并非所有 $r$ 的取值都是合法的。
+若第二个不等式得到满足，则只能 $r^4\leq 7g^4 $，即并非所有 $r$ 的取值都是合理的。
 
 \subsubsection{(2) 裸电奇点解}
 
@@ -786,7 +817,7 @@ $$
 
 在球对称史瓦西规范度规中，三个独立的标量不变量可由度规函数及其微分表达。
 
-Ricci  scalar
+Ricci 标量
 
 $$
 R
@@ -802,7 +833,7 @@ R
 =-\frac{8\gamma\kappa \eta\tilde{E}^2\left(10+3\eta\tilde{E} \right) }{\left(-2+\eta\tilde{E} \right)^3 }
 $$
 
-Ricci contraction
+Ricci 收缩量
 
 $$
 R_{\mu\nu} R^{\mu\nu}
@@ -855,7 +886,7 @@ $$
 
 \end{itemize}
 
-\section{II. 非线性电动力学与黑洞}
+\section{III. 非线性电动力学与黑洞}
 
 \subsection{1. NLED形式}
 
@@ -975,7 +1006,7 @@ $$
 \mathrm{d}s^2 = -\psi\mathrm{d}t^2 + \psi^{-1} \mathrm{d}r^2 + r^2\left(\mathrm{d}\theta^2+\sin^2\theta\mathrm{d}\phi^2 \right)
 $$
 
-HI发现一种解为
+HI发现一种解为\cite{hoffmann1937choice}
 
 $$
 \psi
@@ -989,7 +1020,7 @@ $$
 =1-\frac{k }{r } + \frac{8\pi\gamma }{r } \int_{0}^{r} \left[r^2\ln\left(\frac{r^4 }{1+r^4 }  \right) \right] \mathrm{d}r
 $$
 
-对 SSS 线元，PT 发现
+对 SSS 线元，PT 发现\cite{pellicer1969nonlinear}
 
 $$
 \psi_{PT}
@@ -1045,6 +1076,7 @@ $$
 这个解在 $r=0$ 处有限。
 
 二者的联系为
+
 $$
 \int_r ^{\infty} \frac{\mathrm{d}s }{\sqrt{s^4+a^4} } + \int_0^r \frac{\mathrm{d}s }{\sqrt{s^4+a^4} } 
 =\frac{1 }{a } \mathrm{K}\left[\frac{1 }{2 }  \right] 
@@ -1052,8 +1084,13 @@ $$
 
 其中，$\mathrm{K}\left[\frac{1 }{2 } \right]$ 是第一类完全椭圆积分。在 $r$ 很大时，解趋于 RN 解；当 BI 模型参数 $b\to\infty$，得到线性电磁场 RN 解；在无电荷极限 $b=0$ 下，得到史瓦西黑洞解。
 
-\subsubsection{(2) BI黑洞中测试粒子的轨迹}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.4\textwidth]{fig/fig6.png}
+    \caption{$bm$ 取不同值时BI度规函数 $\psi$ 与 $u=r/m$ 的关系；$\psi(r_\Delta)=0$ 给出视界的位置}
+\end{figure}
 
+\subsubsection{(2) BI黑洞中测试粒子的轨迹}
 
 测试粒子运动过程中有两个守恒量：能量 $E$ 和角动量 $l$；若把粒子运动限制在赤道面 $\theta=\pi/2$ 上，则可用有效势进行分析。
 
@@ -1079,6 +1116,12 @@ $$
 
 可以发现 $(\mathrm{d}r/\mathrm{d}t)_{\mathrm{photon}}<(\mathrm{d}r/\mathrm{d}t)_{\mathrm{grav}}$，即非线性效应导致光的传播速度小于引力波的传播速度。这可以解释为光子在电介质中传播导致的。
 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{fig/fig7.png}
+    \caption{无质量粒子的有效势；g代表零测地线，ph代表BI光子；取 $g=0.6,b=0.75,l=1$}
+\end{figure}
+
 \subsection{3. NLED黑洞热力学}
 
 考虑静态球对称黑洞，热力学第一定律给出
@@ -1101,7 +1144,7 @@ $$
 
 其中，$V$ 是由视界参数决定的未知势。
 
-Bardeen模型是爱因斯坦场方程与一种特定非线性电动力学耦合的准确解，其拉氏量为
+Bardeen模型\cite{ayon2000bardeen}是爱因斯坦场方程与一种特定非线性电动力学耦合的准确解，其拉氏量为
 
 $$
 \mathcal{L}(F)
@@ -1140,9 +1183,15 @@ $$
 
 注意到，Bardeen 黑洞的视界质量只依赖于视界面积，这是因为磁荷被认为是视界的不变参数。
 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.4\textwidth]{fig/fig8.png}
+    \caption{极端Bardeen黑洞视界质量 $M_\Delta$ 和表面引力 $\kappa$ 与视界半径 $r_\Delta$ 的关系；取 $g^2=16m^2/27 $}
+\end{figure}
+
 \subsection{4. 孤立视界框架和质量关系}
 
-ADM模型中，带毛黑洞(hairy black hole)可以被视为普通黑洞和孤立子的束缚态。下面的公式将有色黑洞解的视界质量与相应理论的孤立子解的ADM质量联系起来
+ADM模型中，带毛黑洞(hairy black hole)可以被视为普通黑洞和孤立子的束缚态。下面的公式将有色黑洞解的视界质量与相应理论的孤立子解的ADM质量联系起来\cite{ashtekar2000isolated}
 
 $$
 M_{\mathrm{sol}}^{(n)} = M_{\mathrm{ADM}}^{(n)} - M_\Delta^{(n)} 
@@ -1162,12 +1211,23 @@ M_{\mathrm{ADM}}^{(b)}(r_\Delta)
 =\frac{r_\Delta }{2 } + \frac{b^2 r_\Delta }{3 } \left(r_\Delta^2 - \sqrt{r_\Delta^4 + a^4} \right) + \frac{2g^2 }{3 } \int_{r_\Delta}^{\infty} \frac{\mathrm{d}s }{\sqrt{a^4+s^4} }
 $$
 
-由于大多数 ACS 特征得到了满足，可以认为，当保持电荷不变而变化 BI 参数 $b$ 时，EBI 理论的静态部分可以用 Ashtekar 等人提出的有色黑洞(colored black hole)的启发式(heuristic)模型来描述。
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{fig/fig9.png}
+    \caption{AMD质量作为视界半径 $r_\Delta$ 的函数；BI参数取 $b=0.7$ 和 $b=0.08$}
+\end{figure}
 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{fig/fig10.png}
+    \caption{视界质量作为视界半径 $r_\Delta$ 的函数；BI参数取 $b=0.5$ 和 $b=1$；注意到 $M_{\Delta}^{\mathrm{RN}}>M_{\Delta}^{\mathrm{Schw}}>M_{\Delta}^{\mathrm{BI}}$}
+\end{figure}
+
+由于大多数 ACS 特征得到了满足，可以认为，当保持电荷不变而变化 BI 参数 $b$ 时，EBI 理论的静态部分可以用 Ashtekar 等人提出的有色黑洞(colored black hole)的启发式(heuristic)模型来描述。
 
 \subsection{5. NLED黑洞的稳定性}
 
-稳定性条件是一些对拉氏量及其微分 $L(F),L_F,L_{FF}$ 的约束。变量替换 $y=\sqrt{2g^2 F}$ 后可表述为
+稳定性条件是一些对拉氏量及其微分 $L(F),L_F,L_{FF}$ 的约束\cite{moreno2003stability}。变量替换 $y=\sqrt{2g^2 F}$ 后可表述为
 $$
 L(y)>0,\quad
 L(y)_{,y}>0,\quad
@@ -1252,9 +1312,11 @@ $$
     本文进一步分析了BI黑洞的稳定性。通过线性扰动理论，作者证明了BI黑洞在满足一定条件下是稳定的。特别是，BI拉格朗日量及其导数满足一系列不等式，确保了黑洞解在外部通信区域（DOC）内的稳定性。
 \end{itemize}
 
-\section{III. f(T)引力框架下的非线性电动力学与广义热力学第二定律}
+\section{IV. f(T)引力框架下的非线性电动力学与广义热力学第二定律}
 
 \subsection{1. f(T)引力和NLED基础}
+
+\subsubsection{(1) 广义Teleparallel引力}
 
 $f(T)$ 引力中的基本元素是四分量场 $h_a(x^\mu)$，其中英文字母标记切空间，希腊字母标记时空。$h_a=h_a^\mu\partial_\mu$，分量满足
 
@@ -1272,17 +1334,13 @@ $$
 S_\rho^{~~\mu\nu} = \frac{1 }{2 } \left(K^{\mu\nu}_{~~~~\rho} + \delta_\rho^\mu T^{\theta\nu}_{~~~~\theta} - \delta_\rho^\nu T^{\theta\mu}_{~~~~\theta} \right),
 $$
 
-其中，$K^{\mu\nu}_{~~~~\rho}=-\frac{1}{2}(T^{\mu\nu}_{~~~~\rho}-T^{\nu\mu}_{~~~~\rho}-T^{\mu\nu}-T_\rho^{~~\mu\nu}) $
-
-$f(T)$ 引力的作用量
+其中，$K^{\mu\nu}_{~~~~\rho}=-\frac{1}{2}(T^{\mu\nu}_{~~~~\rho}-T^{\nu\mu}_{~~~~\rho}-T^{\mu\nu}-T_\rho^{~~\mu\nu}) $。$f(T)$ 引力的作用量
 
 $$
 S = \frac{1}{2\kappa^2}\int \mathrm{d}^4 x [ef(T)+L_m]
 $$
 
-其中，$e=\sqrt{-g},\kappa^2=8\pi G$，$G$ 是引力常量，$L_m$ 是宇宙中物质拉格朗日密度。
-
-对作用量变分可得场方程
+其中，$e=\sqrt{-g},\kappa^2=8\pi G$，$G$ 是引力常量，$L_m$ 是宇宙中物质拉格朗日密度。对作用量变分可得场方程
 
 $$
 \left[e^{-1}\partial_\mu \left(e S_a^{~~\mu\nu} + h_a^\lambda T^\rho_{~~\mu\lambda} S_\rho^{~~\nu\mu} \right) \right] f_T + S_a^{~~\mu\nu} \partial_\mu(T) f_{TT} + \frac{1 }{4 } h_a^\nu f
@@ -1296,9 +1354,7 @@ $$
 =\mathrm{d}t^2 - a^2(t)\left(\mathrm{d}x^2+\mathrm{d}y^2+\mathrm{d}z^2 \right),
 $$
 
-其中，$a$ 是依赖于时间的比例因子，相应 $h_\mu^a=\mathrm{diag}(1,a,a,a)$
-
-modified Friedmann equations 描述了宇宙的演化:
+其中，$a$ 是依赖于时间的尺度因子，相应 $h_\mu^a=\mathrm{diag}(1,a,a,a)$。修改 Friedmann 方程描述了宇宙的演化
 
 $$
 12 H^2 f_T + f = 2\kappa^2 \rho_t,
@@ -1309,6 +1365,8 @@ $$
 $$
 
 其中，$H=\dot{a}/a$ 是哈勃参数，$\rho_t,p_t$ 是宇宙的总能量密度和压力。
+
+\subsubsection{(2) 非线性电动力学}
 
 对任意物理量 $Y$，体积空间平均值定义为
 
@@ -1333,9 +1391,7 @@ $$
 \mathcal{L}=-\frac{1 }{4 } F + \omega F^2 + \eta_0 F^{*2},
 $$
 
-其中，$F=F_{\mu\nu} F^{\mu\nu}=2(B^2-E^2),F^*=F_{\mu\nu}^*F^{\mu\nu}=-4\vec{E}\cdot\vec{B}$，$\omega_0,\eta_0$ 是任意常数。
-
-相应能-动张量
+其中，$F=F_{\mu\nu} F^{\mu\nu}=2(B^2-E^2),F^*=F_{\mu\nu}^*F^{\mu\nu}=-4\vec{E}\cdot\vec{B}$，$\omega_0,\eta_0$ 是任意常数。相应能-动张量
 
 $$
 T_{\mu\nu}
@@ -1380,7 +1436,7 @@ $$
 
 \subsection{2. 宇宙学参数和热力学}
 
-modified Friedmann equations 场方程可写为
+修改 Friedmann 场方程可写为
 
 $$
 \frac{3 H^2 }{\kappa^2 } = \rho_t,\quad
@@ -1489,6 +1545,8 @@ $$
 
 GSLT认为 $(\dot{S}_X+\dot{S}_I+\dot{S}_P)\geq 0$，下面讨论两种常用的宇宙学视界：哈勃视界(Hubble Horizon)和事件视界(Event Horizon)。
 
+\subsubsection{(1) 哈勃视界}
+
 假设FRW宇宙热力学系统的边界被处于平衡状态的表观视界(apparent horizon)占据。对于平坦的 FRW，它退化为半径为 $R_H$ 的哈勃视界
 
 $$
@@ -1528,8 +1586,161 @@ $$
 
 这代表了平衡态事件视界上宇宙中总熵的变化率。
 
+\subsubsection{(2) 事件视界}
+
+事件视界半径
+
+$$
+R_E = a\int_0^{\infty} \frac{\mathrm{d}t }{a } ,\quad
+\dot{R}_E = H R_E - 1.
+$$
+
+把任意视界 $X$ 替换为 $E$ 得
+
+$$
+\begin{aligned}
+    &\frac{\mathrm{d}S_E}{\mathrm{d}t} + \frac{\mathrm{d}S_I}{\mathrm{d}t} + \frac{\mathrm{d}S_P}{\mathrm{d}t} \\
+    =&\frac{\pi}{G} \left(a\int_t^\infty \frac{\mathrm{d}t}{a}\right)\bigg[2\left(\dot{a}\int_t^\infty -1 \right) - 12H\dot{H} \left(a\int_t^\infty \frac{\mathrm{d}t}{a}\right) \\
+    &+8\pi G\times \left(a\int_t^\infty\frac{\mathrm{d}t}{a}\right)^2\left(\left(\dot{a}\int_t^\infty\frac{\mathrm{d}t}{a}-1\right)-H\left(a\int_t^\infty\frac{\mathrm{d}t}{a}\right)\right) \\
+    &\times \left\{\rho_{m0}a^{-3} + \frac{1}{\kappa^2} \left(4\dot{H}T f_{TT} + 2\dot{H}(f_T-1)\right) + \frac{2B_0^2}{3a^4}\left(1-\frac{16\omega_0B_0^2}{a^4}\right) \right\} \bigg]. 
+\end{aligned}
+$$
+
+这代表了平衡态事件视界上宇宙中总熵的变化率。
 
 \subsection{3. f(T)模型的一个例子}
+
+考虑如下形式的尺度因子
+
+$$
+a(t)
+=a_0\left(t_s-t \right)^{-h},\quad
+h>0,\quad t_s\geq t
+$$
+
+哈勃参数 $H$，扭率(torsion)标量 $T$，$\dot{{H}}$ 分别为
+
+$$
+H = \frac{h }{t_s - t } ,\quad
+T = -\frac{6h^2 }{\left(t_s-t \right)^2 } ,\quad
+\dot{H} = \frac{h }{\left(t_s - t \right)^2 }.
+$$
+
+把上式代入修改 Friedmann 方程可得
+
+$$
+\begin{aligned}
+    f(T)
+    =&c_1\left(-\frac{T }{6h^2 }  \right)^{1/2} + \frac{2\kappa^2 \rho_{m0} }{a_0^3\left(3h+1 \right) } \left(-\frac{6h^2 }{T }  \right)^{3h/2} + \frac{\kappa^2 B_0^2 }{a_0^4\left(4h+1 \right) } \left(-\frac{6h^2 }{T }  \right)^{2h} \\
+    &- \frac{8\kappa^2 B_0^4 \omega_0 }{a_0^8 \left(8h+1 \right) } \left(-\frac{6h^2 }{T }  \right)^{4h},
+\end{aligned}
+$$
+
+其中，$c_1$ 由边界条件确定。
+
+取 $z=a_0/a - 1$，两个 EoS 参数
+
+$$
+\omega_t
+=\frac{20\kappa^2 B_0^4 \omega_0 }{9h^2a_0^8 } \left(1+z \right)^{(8h+2)/h} - \frac{\kappa^2 B_0^2 }{18h^2 a_0^4 } (1+z)^{(4h+2)/h} - \frac{2(3h+2) }{3h } ,
+$$
+
+$$
+q_t
+=\frac{10\kappa^2 B_0^4 \omega_0 }{3h^2 a_0^8 } (1+z)^{(8h+2)/h} - \frac{\kappa^2 B_0^2 }{12 h^2 a_0^4 } (1+z)^{(4h+2)/h} - \frac{5h+4 }{2h } ,
+$$
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1.0\textwidth]{fig/fig11.png}
+    \caption{EoS参数 $\omega_t$ 和衰减参数 $q_t$ 与 $z$ 的关系}
+\end{figure}
+
+$$
+\begin{aligned}
+    f_{TT}
+    &=\frac{(1+z)^{4/h} }{36h^4 } \bigg[\frac{3h(3h+2)\kappa^2\rho_{m0} }{2a_0^3(3h+1) }(1+z)^3 + \frac{2h(2h+1)\kappa^2 B_0^2 }{a_0^4(4h+1) } (1+z)^4 \\
+    &- \frac{32h(4h+1)\kappa^2 B_0^4 \omega_0 }{a_0^8 (8h+1) } (1+z)^8 - \frac{c_1 }{4(1+z)^{1/h} }   \bigg].
+\end{aligned}
+$$
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{fig/fig12.png}
+    \caption{$f_{TT}$ 与 $z$ 的关系}
+\end{figure}
+
+$$
+\begin{aligned}
+    &\frac{\mathrm{d}S_H }{\mathrm{d}t } + \frac{\mathrm{d}S_I }{\mathrm{d}t } \\
+    =&-\frac{\pi(1+z)^{3/h} }{Gh^3 } \bigg[\frac{3h(3h+4)\kappa^2\rho_{m0} }{2a_0^3(3h+1) }(1+z)^3 + \frac{4(h+1)\kappa^2 B_0^2 }{3a_0^4(4h+1) } (1+z)^4 \\
+    &- \frac{64h(2h+1)\kappa^2 B_0^4 \omega_0 }{3a_0^8 (8h+1) } (1+z)^8- \frac{c_1 }{4h(1+z)^{1/h} } \bigg] + \frac{2\pi }{G h^3 } (1+h)(1+z)^{1/h}.
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+    &\frac{\mathrm{d}S_E }{\mathrm{d}t } + \frac{\mathrm{d}S_I }{\mathrm{d}t } \\
+    =&-\frac{\pi(1+z)^{3/h} }{Gh(1+h)^2 } \bigg[\frac{(3h+4)\kappa^2\rho_{m0} }{2a_0^3(3h+1) }(1+z)^3 + \frac{4(h+1)\kappa^2 B_0^2 }{3a_0^4(4h+1) } (1+z)^4 \\
+    &- \frac{64(2h+1)\kappa^2 B_0^4 \omega_0 }{3a_0^8 (8h+1) } (1+z)^8 - \frac{c_1 }{4h\kappa^2(1+z)^{1/h} } \bigg] + \frac{2\pi h }{G (1+h)^3 } (1+z)^{1/h}
+\end{aligned}
+$$
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{fig/fig13.png}
+    \caption{$\dot{S}_H+\dot{S}_I$,left for Hubble Horizon,right for Event Horizon}
+\end{figure}
+
+
+$a(t)=a_0(t_s-t)^h$，与之对应的 $f(T)$ 模型
+    
+$$
+\begin{aligned}
+    f(T)
+    &=c_2\left(-\frac{T }{6h^2 }  \right)^{1/2} + \frac{2\kappa^2\rho_{m0} }{a_0^3(1-3h) } \left(-\frac{T }{6h^2 }  \right)^{3h/2} + \frac{\kappa^2 B_0^2 }{a_0^4(1-4h) } \left(-\frac{T }{6h^2 }  \right)^{2h} \\
+    &- \frac{8\kappa^2 B_0^4 \omega_0 }{a_0^8(1-8h) } \left(-\frac{T }{6h^2 }  \right)^{4h},
+\end{aligned}
+$$
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{fig/fig14.png}
+    \caption{另一种尺度因子的 $\omega_t$ 和 $q_t$}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{fig/fig15.png}
+    \caption{另一种尺度因子的 $f_{TT}$}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{fig/fig16.png}
+    \caption{另一种尺度因子的 $\dot{S}_H+\dot{S}_I$,left for Hubble Horizon,right for Event Horizon}
+\end{figure}
+
+\subsection{4. 小结}
+
+本文在包含暗能量、尘埃物质和磁场贡献的 FRW 宇宙中，在 f(T) 引力框架下研究了 NLED。采用平均手段来保留 NLED 中时空的各向同性。在这种情况下，评估了宇宙总能量密度和压力的 EoS 和减速参数。开发了哈勃和事件视界的总熵的时间导数，以使用视界熵和吉布斯方程来研究 GSLT 的合法性(validity)。使用极点和幂律形式的尺度因子构建了 f(T) 模型。讨论了一些特定模型参数的图形行为。文章的结果总结如下：
+
+\begin{itemize}
+    \item 第一个由极点尺度因子构建的 f(T) 模型的宇宙学参数代表一个在 z≤5.6 时加速膨胀的 phamtom dominated 的宇宙。对于更高的 z 值，膨胀率降低，磁场主导扭率贡献，代表减速膨胀的宇宙。
+    \item 作了哈勃和事件视界的总熵的时间导数关于 $z$ 的图，以讨论 GSLT 对满足条件 $f_{TT} \ll 1 $  的模型的合法性。对于这两个视界，GSLT 对 $z >8.2$ 和 $z <0$ 都成立。
+    \item 使用精确幂律比例因子构建第二个 $f(T)$ 模型。$\omega_t$ 和 $q_t$ 关系 $z$ 的关系图表明与第一个模型相同的行为。
+    \item 第二个模型也满足条件 $f_{TT}\ll 1$，以借助热力学第一定律讨论 GSLT。图6显示了哈勃视界总熵的时间导数在 $h = 2,3$ 时 $z$ 的一定范围内的正行为，而 $h = 5$ 表示 GSLT 对所有 $z$ 值的合法性。对于事件视界，GSLT 对所有 $h$ 和 $z$ 值都合法。
+    \item 值得一提的是，仅对于磁宇宙，当 $z > -0.1$ 时，事件视界的总熵的时间变化率保持正值，在此范围之外变为负值。另一方面，在我们的例子中，对于具有幂律比例因子的视界，它对于磁 f(T) 框架中的所有 $z$ 值都保持在正区域。哈勃视界在两种情况下都表现出总熵的时间导数的相似行为。对于更高的红移值，宇宙学参数表明，与磁场相比，扭转贡献变得微弱。它指向宇宙的早期减速阶段。
+\end{itemize}
+
+\section{V. 总结}
+
+本文综合了三篇关于非线性电动力学（NLED）的研究，探讨了其在平坦时空中、与引力耦合的黑洞解以及在f(T)引力理论中的应用。这些研究展示了NLED在解决经典电动力学和广义相对论中奇点问题的潜力，同时也揭示了其在宇宙学中的重要应用前景。
+
+首先，Anjan Kar的研究提出了一种新的NLED模型，该模型在平坦时空中表现出有限的点电荷电场和自能，并在与引力耦合时能够产生正则黑洞或裸奇点解。这一模型在弱场极限下与Born-Infeld电动力学相似，但在强场极限下表现出独特的性质。研究表明，该模型在平坦时空中能够消除点电荷的无限自能问题，并在与引力耦合时产生无奇点的黑洞解。然而，该模型在磁性场的因果性和能量条件方面仍面临一些挑战。
+
+其次，N. Bretón和R. García-Salcedo的研究回顾了NLED在黑洞物理中的应用，特别是Born-Infeld电动力学与引力耦合的解。研究表明，Born-Infeld理论能够产生无奇点的黑洞解，并在某些情况下表现出与Reissner-Nordström解类似的渐近行为。然而，这些解在能量条件和稳定性方面仍存在争议。此外，研究还探讨了NLED黑洞的热力学性质，发现其满足黑洞力学的第一定律，但Smarr公式需要进行修正。
+
+最后，M. Sharif和Shamaila Rani的研究探讨了NLED在f(T)引力理论中的应用，特别是在宇宙加速膨胀和广义第二定律（GSLT）的有效性方面。研究表明，NLED在f(T)引力理论中能够产生与宇宙加速膨胀一致的解，并在某些情况下满足GSLT。通过构造具体的f(T)模型，研究发现NLED在宇宙早期阶段能够避免初始奇点，并在晚期阶段表现出标准的辐射相。
+
+综上所述，NLED在解决经典电动力学和广义相对论中的奇点问题方面表现出巨大潜力，但在引力耦合和宇宙学应用中仍面临诸多挑战。未来的研究需要进一步探索NLED在不同物理背景下的行为，并解决其在能量条件和稳定性方面的潜在问题。
 
 % Put \label in argument of \section for cross-referencing
 %\section{\label{}}
