@@ -1,0 +1,217 @@
+\documentclass{beamer}
+\usetheme[secheader]{Boadilla}
+\usecolortheme{beaver}
+\usefonttheme{professionalfonts}
+
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage{verbatim}
+\usepackage{anyfontsize}
+\usepackage{subcaption} % 子图片
+\usepackage{graphicx} % 图片
+\usepackage[export]{adjustbox}
+\setbeamertemplate{caption}[numbered]
+\newcounter{saveenumi}
+\resetcounteronoverlays{saveenumi}
+\usepackage[multidot]{grffile} % 允许文件名带多个点
+\usepackage{tabularx} % 表格
+\usepackage{tikz}
+\usepackage{ctex}
+\usepackage{multicol}
+
+\title{非线性电动力学与引力耦合}
+\subtitle{兰州大学物理科学与技术学院}
+\author{林照翔}
+\date{2025年2月16日}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{目录}
+\tableofcontents
+\end{frame}
+
+\section{引言}
+\begin{frame}{引言}
+\begin{itemize}
+    \item \textbf{非线性电动力学（NLED）}：
+    \begin{itemize}
+        \item 经典电动力学的扩展，旨在解决麦克斯韦理论中的奇点问题。
+        \item 例如：点电荷的无限自能和奇异场强。
+    \end{itemize}
+    \item \textbf{研究背景}：
+    \begin{itemize}
+        \item 与广义相对论耦合，生成无奇点的黑洞解。
+        \item 在宇宙学中解释宇宙加速膨胀和避免初始奇点。
+    \end{itemize}
+    \item \textbf{研究目标}：
+    \begin{itemize}
+        \item 提出新型 NLED 模型，解决点电荷电场和自能发散问题。
+        \item 研究 NLED 与广义相对论耦合下的正则黑洞解。
+        \item 探讨 NLED 在 f(T) 引力框架下的宇宙学应用，验证广义热力学第二定律（GSLT）。
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+\section{新型NLED模型}
+\begin{frame}{新型NLED模型}
+\begin{itemize}
+    \item \textbf{模型构建}：
+    \[
+    L(F) = \frac{\gamma(3\eta F-1)F}{(1+\eta F)^2}
+    \]
+    \begin{itemize}
+        \item 引入两个有量纲参数 \(\gamma\) 和 \(\eta\)。
+        \item 解决点电荷电场和自能发散问题。
+    \end{itemize}
+    \item \textbf{物理性质}：
+    \begin{itemize}
+        \item 弱场极限下与 Born-Infeld 模型相似。
+        \item 点电荷电场和自能有限：
+        \[
+        E_{\text{max}} = \sqrt{\frac{2}{\eta}}
+        \]
+        \item 真空双折射现象：不同偏振的电磁波有不同的折射率。
+        \item 因果性和幺正性条件：
+        \[
+        L_F \leq 0, \quad L_{FF} \geq 0, \quad L_F + 2FL_{FF} \leq 0
+        \]
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+\section{与广义相对论的耦合}
+\begin{frame}{与广义相对论的耦合}
+\begin{itemize}
+    \item \textbf{正则黑洞解}：
+    \begin{itemize}
+        \item 源场为非线性磁单极子时，生成正则黑洞解。
+        \item 度规函数：
+        \[
+        f(r) = 1 + \frac{c_0}{r} + \frac{\kappa \gamma q_m^2 r^2}{2r^4 + \eta q_m^2}
+        \]
+        \item 满足能量条件，时空无奇点。
+        \item 能量-动量张量：
+        \[
+        T_t^t = T_r^r = \frac{\gamma q_m^2 (3\eta q_m^2 - 2r^4)}{(2r^4 + \eta q_m^2)^2}
+        \]
+    \end{itemize}
+    \item \textbf{裸奇点解}：
+    \begin{itemize}
+        \item 源场为点电荷时，生成裸奇点解。
+        \item 度规函数在 \(r=0\) 处发散，导致时空奇点。
+        \item 能量-动量张量：
+        \[
+        T_t^t = T_r^r = \frac{\gamma E^2 (4 + 3\eta E^2 (8 + \eta E^2))}{(-2 + \eta E^2)^3}
+        \]
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+\section{Born-Infeld电动力学与黑洞}
+\begin{frame}{Born-Infeld电动力学与黑洞}
+\begin{itemize}
+    \item \textbf{BI黑洞解}：
+    \begin{itemize}
+        \item 静态球对称解，避免经典电磁理论中的奇点。
+        \item 度规函数：
+        \[
+        \Psi_{BI}(r) = 1 - \frac{2m}{r} + \frac{2}{3}b^2\left(r^2 - \sqrt{r^4 + a^4}\right) + \frac{4g^2}{3r}G(r)
+        \]
+        \item 热力学性质：满足第一定律，修正 Smarr 公式。
+    \end{itemize}
+    \item \textbf{EBIon解}：
+    \begin{itemize}
+        \item 类粒子解，中心处有限。
+        \item 与黑洞解的联系：
+        \[
+        \int_{r}^{\infty}\frac{ds}{\sqrt{s^4 + a^4}} + \int_{0}^{r}\frac{ds}{\sqrt{s^4 + a^4}} = \frac{1}{a}\text{K}\left[\frac{1}{2}\right]
+        \]
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+\section{NLED在f(T)引力中的应用}
+\begin{frame}{NLED在f(T)引力中的应用}
+\begin{itemize}
+    \item \textbf{f(T)引力框架}：
+    \begin{itemize}
+        \item 修改引力作用，描述宇宙加速膨胀。
+        \item 包含暗能量、尘埃物质和磁场贡献。
+    \end{itemize}
+    \item \textbf{广义热力学第二定律（GSLT）}：
+    \begin{itemize}
+        \item 在哈勃视界和事件视界上验证 GSLT 的有效性。
+        \item 总熵变化率：
+        \[
+        \frac{dS_X}{dt} + \frac{dS_I}{dt} + \frac{dS_P}{dt} \geq 0
+        \]
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+\section{宇宙学模型}
+\begin{frame}{宇宙学模型}
+\begin{itemize}
+    \item \textbf{极点型尺度因子}：
+    \begin{itemize}
+        \item 构建 f(T) 模型，描述宇宙加速膨胀。
+        \item 宇宙学参数（如状态方程参数和减速参数）随红移的变化。
+        \item 例如：
+        \[
+        a(t) = a_0 (t_s - t)^{-h}, \quad h > 0
+        \]
+    \end{itemize}
+    \item \textbf{幂律型尺度因子}：
+    \begin{itemize}
+        \item 构建另一种 f(T) 模型，验证 GSLT 在不同红移范围内的有效性。
+        \item 例如：
+        \[
+        a(t) = a_0 t^h, \quad h > 0
+        \]
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+\section{结论}
+\begin{frame}{结论}
+\begin{itemize}
+    \item \textbf{主要贡献}：
+    \begin{itemize}
+        \item 提出新型 NLED 模型，解决点电荷电场和自能发散问题。
+        \item 生成正则黑洞解，验证其在引力耦合中的物理性质。
+        \item 在 f(T) 引力框架下，验证 NLED 对宇宙加速膨胀和 GSLT 的贡献。
+    \end{itemize}
+    \item \textbf{未来工作}：
+    \begin{itemize}
+        \item 进一步探索 NLED 在更广泛物理背景下的行为。
+        \item 研究双荷配置下的时空解及其在天体物理学中的应用。
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+\section{参考文献}
+\begin{frame}{参考文献}
+\begin{itemize}
+    \item A. Kar, Aspects of a novel nonlinear electrodynamics...
+    \item N. Breton and R. Garcia-Salcedo, Nonlinear electrodynamics and black holes...
+    \item M. Sharif and S. Ranij, Nonlinear electrodynamics in f(t) gravity...
+\end{itemize}
+\end{frame}
+
+\begin{frame}{致谢}
+\begin{center}
+    \Large 感谢兰州大学物理科学与技术学院的支持！
+\end{center}
+\end{frame}
+
+\begin{frame}{问答环节}
+\begin{center}
+    \Large 欢迎提问和讨论！
+\end{center}
+\end{frame}
+
+\end{document}
