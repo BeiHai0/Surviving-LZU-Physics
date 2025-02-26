@@ -4,20 +4,20 @@
 
 > 写出三代轻子及其反粒子的符号、质量、电荷、自旋、各代轻子量子数。
 
-| Lepton name            | Symbol | $M$ | $Q$ | $J$ | $L_e$ | $L_\mu$ | $L_\tau$ |
+|Lepton name| Symbol | $M$ | $Q$ | $J$ | $L_e$ | $L_\mu$ | $L_\tau$ |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| Electron|$e^-$|$0.511 $|$-1$|$1/2$|$+1 $|$0 $|$0 $|
-| anti-Electron          |        |     |     |     |       |         |          |
-| Electron neutrino      |        |     |     |     |       |         |          |
-| anti-Electron neutrino |        |     |     |     |       |         |          |
-| muon                   |        |     |     |     |       |         |          |
-| anti-muon              |        |     |     |     |       |         |          |
-| muon neutrino          |        |     |     |     |       |         |          |
-| anti muon neutrino     |        |     |     |     |       |         |          |
-| tau                    |        |     |     |     |       |         |          |
-| anti-tau               |        |     |     |     |       |         |          |
-| tau neutrino           |        |     |     |     |       |         |          |
-| anti tau neutrino      |        |     |     |     |       |         |          |
+|Electron|$e^-$|$0.511 $|$-1$|$1/2$|$+1 $|$0 $|$0 $|
+|anti-Electron|$e^+ $|$0.511$|$+1 $|$1/2 $|$-1 $|$0 $|$0 $|
+|Electron neutrino|$\nu_e $|$<2\times 10^{-6} $|$0 $|$1/2 $|$+1 $|$0 $|$0 $|
+|anti-Electron neutrino |$\tilde{\nu}_e $|$<2\times 10^{-6} $|$0 $|$1/2 $|$-1 $|$0 $|$0 $|
+|muon|$\mu^- $|$105.66 $|$-1 $|$1/2 $|$0 $|$+1 $|$0 $|
+|anti-muon|$\mu^+ $|$105.66 $|$+1 $|$1/2 $|$0 $|$-1 $|$0 $|
+|muon neutrino|$\nu_\mu $|$<2\times 10^{-6} $|$0 $|$1/2 $|$0 $|$+1 $|$0 $|
+|anti muon neutrino|$\tilde{\nu}_\mu $|$<2\times 10^{-6} $|$0 $|$1/2 $|$0 $|$-1 $|$0 $|
+|tau|$\tau^- $|$1776.86 $|$-1 $|$1/2 $|$0 $|$0 $|$+1 $|
+|anti-tau|$\tau^+ $|$1776.86 $|$+1 $|$1/2 $|$0 $|$0 $|$-1 $|
+|tau neutrino|$\nu_\tau $|$<2\times 10^{-6} $|$0 $|$1/2 $|$0 $|$0 $|$+1 $|
+|anti tau neutrino|$\tilde{\nu}_\tau $|$<2\times 10^{-6} $|$0 $|$1/2 $|$0 $|$0 $|$-1 $|
 
 ## 1-2
 
