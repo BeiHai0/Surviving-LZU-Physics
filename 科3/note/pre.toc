@@ -1,0 +1,8 @@
+\beamer@sectionintoc {1}{引言}{3}{0}{1}
+\beamer@sectionintoc {2}{新型NLED模型}{4}{0}{2}
+\beamer@sectionintoc {3}{与广义相对论的耦合}{5}{0}{3}
+\beamer@sectionintoc {4}{Born-Infeld电动力学与黑洞}{6}{0}{4}
+\beamer@sectionintoc {5}{NLED在f(T)引力中的应用}{7}{0}{5}
+\beamer@sectionintoc {6}{宇宙学模型}{8}{0}{6}
+\beamer@sectionintoc {7}{结论}{9}{0}{7}
+\beamer@sectionintoc {8}{参考文献}{10}{0}{8}

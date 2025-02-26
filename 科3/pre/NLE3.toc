@@ -11,7 +11,7 @@
 \beamer@subsectionintoc {2}{3}{f(T)模型的一个例子}{36}{0}{2}
 \beamer@subsectionintoc {2}{4}{总结}{43}{0}{2}
 \beamer@sectionintoc {3}{Nonlinear electrodynamics and black holes}{44}{0}{3}
-\beamer@subsectionintoc {3}{1}{NLED formalism}{45}{0}{3}
+\beamer@subsectionintoc {3}{1}{NLED 形式}{45}{0}{3}
 \beamer@subsectionintoc {3}{2}{NLED 黑洞}{49}{0}{3}
 \beamer@subsectionintoc {3}{3}{NLED 黑洞热力学}{54}{0}{3}
 \beamer@subsectionintoc {3}{4}{孤立视界框架和质量关系}{57}{0}{3}

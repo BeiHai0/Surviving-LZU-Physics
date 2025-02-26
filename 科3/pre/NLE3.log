@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.11)  26 FEB 2025 17:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.11)  26 FEB 2025 19:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1188,7 +1188,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ] [30
 
 ]
-Overfull \hbox (20.07158pt too wide) detected at line 951
+Overfull \hbox (20.07158pt too wide) detected at line 955
 [][]
  []
 
@@ -1208,7 +1208,7 @@ Overfull \hbox (20.07158pt too wide) detected at line 951
 <img/fig1.png, id=1434, 405.01312pt x 173.64874pt>
 File: img/fig1.png Graphic file (type png)
 <use img/fig1.png>
-Package pdftex.def Info: img/fig1.png  used on input line 1097.
+Package pdftex.def Info: img/fig1.png  used on input line 1107.
 (pdftex.def)             Requested size: 207.41939pt x 88.93329pt.
  [37
 
@@ -1216,7 +1216,7 @@ Package pdftex.def Info: img/fig1.png  used on input line 1097.
 <img/fig2.png, id=1470, 334.75063pt x 175.15437pt>
 File: img/fig2.png Graphic file (type png)
 <use img/fig2.png>
-Package pdftex.def Info: img/fig2.png  used on input line 1113.
+Package pdftex.def Info: img/fig2.png  used on input line 1123.
 (pdftex.def)             Requested size: 276.55743pt x 144.71794pt.
  [38
 
@@ -1226,7 +1226,7 @@ Package pdftex.def Info: img/fig2.png  used on input line 1113.
 <img/fig3.png, id=1535, 394.97563pt x 191.71625pt>
 File: img/fig3.png Graphic file (type png)
 <use img/fig3.png>
-Package pdftex.def Info: img/fig3.png  used on input line 1145.
+Package pdftex.def Info: img/fig3.png  used on input line 1155.
 (pdftex.def)             Requested size: 172.84773pt x 83.89905pt.
  [40
 
@@ -1234,7 +1234,7 @@ Package pdftex.def Info: img/fig3.png  used on input line 1145.
 <img/fig4.png, id=1569, 403.5075pt x 166.12062pt>
 File: img/fig4.png Graphic file (type png)
 <use img/fig4.png>
-Package pdftex.def Info: img/fig4.png  used on input line 1163.
+Package pdftex.def Info: img/fig4.png  used on input line 1173.
 (pdftex.def)             Requested size: 207.41939pt x 85.3921pt.
  [41
 
@@ -1242,15 +1242,15 @@ Package pdftex.def Info: img/fig4.png  used on input line 1163.
 <img/fig5.png, id=1602, 352.81813pt x 163.10938pt>
 File: img/fig5.png Graphic file (type png)
 <use img/fig5.png>
-Package pdftex.def Info: img/fig5.png  used on input line 1179.
+Package pdftex.def Info: img/fig5.png  used on input line 1189.
 (pdftex.def)             Requested size: 172.84773pt x 79.90686pt.
 <img/fig6.png, id=1603, 404.00937pt x 190.21063pt>
 File: img/fig6.png Graphic file (type png)
 <use img/fig6.png>
-Package pdftex.def Info: img/fig6.png  used on input line 1179.
+Package pdftex.def Info: img/fig6.png  used on input line 1189.
 (pdftex.def)             Requested size: 172.84773pt x 81.37683pt.
 
-Overfull \vbox (1.55473pt too high) detected at line 1179
+Overfull \vbox (1.55473pt too high) detected at line 1189
  []
 
 [42
@@ -1285,7 +1285,7 @@ Overfull \vbox (1.55473pt too high) detected at line 1179
 <img/fig7.png, id=2056, 563.60562pt x 313.67188pt>
 File: img/fig7.png Graphic file (type png)
 <use img/fig7.png>
-Package pdftex.def Info: img/fig7.png  used on input line 1505.
+Package pdftex.def Info: img/fig7.png  used on input line 1517.
 (pdftex.def)             Requested size: 172.84773pt x 96.19865pt.
  [56
 
@@ -1295,12 +1295,12 @@ Package pdftex.def Info: img/fig7.png  used on input line 1505.
 <img/fig8.png, id=2120, 577.15625pt x 304.63812pt>
 File: img/fig8.png Graphic file (type png)
 <use img/fig8.png>
-Package pdftex.def Info: img/fig8.png  used on input line 1540.
+Package pdftex.def Info: img/fig8.png  used on input line 1552.
 (pdftex.def)             Requested size: 276.55743pt x 145.97826pt.
  [58
 
  <./img/fig8.png>]
-Overfull \vbox (0.1868pt too high) detected at line 1579
+Overfull \vbox (0.1868pt too high) detected at line 1591
  []
 
 [59
@@ -1325,18 +1325,18 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/07/14>
  ***********
 Package rerunfilecheck Info: File `NLE3.out' has not changed.
-(rerunfilecheck)             Checksum: D6708B6C87A089A776FA6DE5A531FF8E;3253.
+(rerunfilecheck)             Checksum: EA7444678DBBCCD6B0180D10587ADA46;3224.
  ) 
 Here is how much of TeX's memory you used:
- 33385 strings out of 474115
- 657076 string characters out of 5747696
+ 33388 strings out of 474115
+ 657140 string characters out of 5747696
  1963190 words of memory out of 5000000
- 54653 multiletter control sequences out of 15000+600000
+ 54656 multiletter control sequences out of 15000+600000
  626999 words of font info for 250 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,16n,123p,767b,746s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on NLE3.pdf (61 pages, 882591 bytes).
+Output written on NLE3.pdf (61 pages, 883821 bytes).
 PDF statistics:
  2571 PDF objects out of 2984 (max. 8388607)
  2098 compressed objects within 21 object streams
