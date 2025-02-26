@@ -21,6 +21,8 @@
 \usepackage{tikz}
 \usepackage{ctex}
 \usepackage{multicol}
+\usepackage{mathtools} % 提供 \mathcolorbox
+\usepackage{xcolor}    % 提供颜色支持
 \AtBeginSection[]
 {
 	\begin{frame}{Index}
@@ -57,15 +59,11 @@
 
 \section{Aspects of a novel nonlinear electrodynamics in flat spacetime and in a gravity-coupled scenario}
 
-
-
 \subsection{非线性电动力学模型和场方程}
-
-
 
 \begin{frame}{麦克斯韦拉氏量和BI模型拉氏量}
 
-麦克斯韦的拉氏量
+麦克斯韦的拉氏量(真空、无源，三维表述)
 
 $$
 F
@@ -97,7 +95,7 @@ $$
 \end{frame}
 
 \begin{frame}{新 NLE 模型拉氏量}
-作者提出新 NLE 模型的拉氏量
+一种新型 NLE 模型的拉氏量
 
 $$
 L_{\mathrm{general}}(F)
@@ -112,11 +110,13 @@ L_{\mathrm{general}}(F)
 \approx -c\left[F^p + c_1 F^{p+1} +c_2 F^{p+2}  + \mathcal{O}\left(c_3 F^{p+3} \right) \right]
 $$
 
-$p=1 $ 时得到麦克斯韦的拉氏量。通过分析取 $m=1,n=m+1,a=-3b $，得到含有两个参数且遵守麦克斯韦极限的拉氏量：
+$p=1 $ 时得到麦克斯韦的拉氏量。通过后面分析取 $m=1,n=m+1,a=-3b $，得到含有两个参数且遵守麦克斯韦极限的拉氏量：
 
 $$
+\boxed{
 L(F)
 =\frac{\gamma(3\eta F - 1 )F }{(1+\eta F)^2 }
+}
 $$
 
 其中，$\gamma=\beta/\delta $ 和 $\eta $ 是任意参数。
@@ -128,6 +128,7 @@ L(F)
 =\frac{\gamma(3\eta F - 1 )F }{(1+\eta F)^2 } 
 \approx -\gamma F + 5\gamma \eta F^2 -9\gamma \eta^2 F^3 + \gamma\mathcal{O}\left(\eta^3F^4 \right) 
 $$
+
 \end{frame}
 
 \begin{frame}{新 NLE 模型的物理对应}
@@ -138,10 +139,12 @@ $$
 =\gamma\frac{1-7\eta F }{(1+\eta F)^3 } \vec{E}
 $$
 
-$D_i = \varepsilon_i^{~~ j } E_j $
+$D_i = \varepsilon_i^{~~ j } E_j $，介电常数张量
 
 $$
-\varepsilon_{ij} = \gamma \frac{1-7\eta F }{(1+\eta F)^3 }\delta_{ij} 
+\boxed{
+\varepsilon_{ij} = \gamma \frac{1-7\eta F }{(1+\eta F)^3 }\delta_{ij}
+}
 $$
 
 磁场 $\vec{H}=-\partial L/\partial \vec{B} $ 结合拉氏量有
@@ -151,19 +154,19 @@ $$
 =\gamma \frac{1-7\eta F }{(1+\eta F)^3 } \vec{B}
 $$
 
-磁感应强度 $B_i=\mu_i^{~~j}H_j $
-
-磁导率张量的逆 $\left(\mu^{-1} \right)_{ij} $
+磁感应强度 $B_i=\mu_i^{~~j}H_j $，磁导率张量的逆 $\left(\mu^{-1} \right)_{ij} $
 
 $$
+\boxed{
 \left(\mu^{-1} \right)_{ij}
 =\gamma \frac{1-7\eta F }{(1+\eta F)^3 } \delta_{ij}
+}
 $$
 
 可以认为新 NLE 拉氏量由这种特殊的介质生成。
 \end{frame}
 
-\begin{frame}{点电荷电场}
+\begin{frame}{场方程}
     平坦时空中拉氏量给出欧拉-拉格朗日运动方程：
 
     $$
@@ -178,24 +181,26 @@ $$
     =\frac{\gamma(-1+7\eta F) }{(1+\eta F)^3 }
     $$
     
-    $F^{\mu \nu} $ 是麦克斯韦场强张量。
-
-    可以回到无源麦克斯韦方程：
+    $F^{\mu \nu} $ 是麦克斯韦场强张量。可以回到无源麦克斯韦方程：
 
     $$
+    \boxed{
     \nabla\cdot\vec{D} = 0,\quad
-    \frac{\partial \vec{D} }{\partial t } - \nabla\times\vec{H}= \vec{0} 
+    \frac{\partial \vec{D} }{\partial t } - \nabla\times\vec{H}= \vec{0}
+    }
     $$
     
     由 Bianchi identity $\partial_\mu \tilde{F}^{\mu \nu}=0 $，$\tilde{F}^{\mu\nu} $ 是场强张量的对偶，可得
     
     $$
+    \boxed{
     \nabla\cdot\vec{B} = \vec{0},\quad 
-    \frac{\partial \vec{B} }{\partial t } + \nabla\times\vec{E} = \vec{0} 
-    $$    
+    \frac{\partial \vec{B} }{\partial t } + \nabla\times\vec{E} = \vec{0}
+    }
+    $$
 \end{frame}
 
-\begin{frame}
+\begin{frame}{点电荷电场}
     考虑静电极限(electrostatic limit) $\vec{B}=\vec{H}=\vec{0} $，对点电荷
 
     $$
@@ -212,8 +217,10 @@ $$
     结合 $\vec{D},\vec{E} $ 关系和 $F=-E^2/2 $ 可得
     
     $$
+    \boxed{
     E+\frac{7 }{2 } \eta E^3
     =\frac{e }{4\gamma \pi r^2 } \left(1-\frac{\eta  }{2 } E^2 \right)^3 
+    }
     $$
     
     上式限制 $F>-1/\eta $；弱场极限 $\eta F\ll 1 $，$E(r) $ 可按 $\eta $ 展开
@@ -254,18 +261,20 @@ $$
     对于很小的 $r$ 和任意的 $\eta$，电场最大值
     
     $$
+    \boxed{
     E_{\max}
     =\sqrt{\frac{2 }{\eta } }
+    }
     $$
     
-    NLE 模型中电场有限。当 $\eta\to 0 $，电场发散。
+    NLE 模型中\textcolor{red}{电场有限}。当 $\eta\to 0 $，电场发散。
     
 \end{frame}
 
 \subsection{点电荷的能量}
 
 \begin{frame}{点电荷的能量}
-    平坦时空中希尔伯特应力-能量张量(Hilbert stress-energy tensor)是一个对称张量且是不变量，其定义为
+    平坦时空中希尔伯特应力-能量张量(Hilbert stress-energy tensor)是一个对称张量且是洛伦兹不变量，其定义为
 
     $$
     T_{\mu\nu}^H
@@ -273,9 +282,7 @@ $$
     =\eta_{\mu\nu}L(F) - L_FF_\mu^\alpha F_{\nu\alpha}
     $$
 
-    结合新NLE模型 $L(F)=\frac{\gamma(3\eta F-1)F }{(1+\eta F)^2 } $ 可得
-    
-    电能密度
+    结合新NLE模型 $L(F)=\frac{\gamma(3\eta F-1)F }{(1+\eta F)^2 } $ 可得电能密度
     
     $$
     \rho
@@ -298,13 +305,13 @@ $$
     =\frac{e^{3/2} }{\sqrt{4\pi\gamma} } \int_{0}^{\sqrt{\frac{2 }{\eta  } }} \frac{\sqrt{\left(2-\eta E^2 \right)\left[4+3\eta E^2\left(8+\eta E^2 \right) \right]\left[4+\eta E^2\left(52+21\eta E^2 \right) \right]} }{16\sqrt{E}\left(2+7\eta E^2 \right)^{5/2} } \mathrm{d}E
     $$
     
-    总能量有限。当 $\eta\to 0$，点电荷自能发散。
+    \textcolor{red}{总能量有限}。当 $\eta\to 0$，点电荷自能发散。
 \end{frame}
 
 \subsection{真空双折射}
 
 \begin{frame}{真空双折射}
-        考虑平面电磁波 $(\vec{e},\vec{b}) $ 沿 $z $ 轴在两片平行电容板间传播，$x $ 轴方向有匀强电场。外电场 $\bar{\vec{E}}=(\bar{E},0,0) $，总电场 $\vec{E}=\vec{e}+\bar{\vec{E}},\vec{B}=\vec{b} $，设 $\vec{e} $ 远小于 $\bar{\vec{E}} $，拉氏量
+        考虑平面电磁波 $(\vec{e},\vec{b}) $ 沿 $z $ 轴在两片平行电容板间传播，$x $ 轴方向有背景匀强电场。外电场 $\bar{\vec{E}}=(\bar{E},0,0) $，总电场 $\vec{E}=\vec{e}+\bar{\vec{E}},\vec{B}=\vec{b} $，设 $\vec{e} $ 远小于 $\bar{\vec{E}} $，拉氏量
 
     $$
     L\left(\vec{e}+\bar{\vec{E}},\vec{b} \right)

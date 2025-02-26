@@ -113,10 +113,10 @@ $$
 
 自然单位制中取 $c=\varepsilon_0=1 $，于是 $\mu_0 $ 无量纲。
 
-麦克斯韦方程：
+真空麦克斯韦方程：
 
 $$
-\nabla\times\vec{B} = \mu_0\vec{j} + \frac{\partial\vec{D} }{\partial t } \Longrightarrow [B]=[L][\mu_0][j]=[L]^{-2}
+\nabla\times\vec{B} = \mu_0\vec{j} + \mu_0\varepsilon_0\frac{\partial \vec{E} }{\partial t }  \Longrightarrow [B]=[L][\mu_0][j]=[L]^{-2}
 $$
 
 磁矩 $\vec{M} $ 在外磁场 $\vec{B} $ 中的能量 $E $：
