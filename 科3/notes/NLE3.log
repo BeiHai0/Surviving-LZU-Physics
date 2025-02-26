@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.11)  26 FEB 2025 10:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.11)  26 FEB 2025 17:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1149,11 +1149,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] [11
 
-]
-Overfull \vbox (19.22556pt too high) detected at line 387
- []
-
-[12
+] [12
 
 ] [13
 
@@ -1171,11 +1167,7 @@ Overfull \vbox (19.22556pt too high) detected at line 387
 
 ] [20
 
-]
-Overfull \vbox (0.7511pt too high) detected at line 687
- []
-
-[21
+] [21
 
 ] [22
 
@@ -1193,14 +1185,14 @@ Overfull \vbox (0.7511pt too high) detected at line 687
 
 ] [29
 
+] [30
+
 ]
-Overfull \hbox (20.07158pt too wide) detected at line 944
+Overfull \hbox (20.07158pt too wide) detected at line 951
 [][]
  []
 
-[30
-
-] [31
+[31
 
 ] [32
 
@@ -1210,70 +1202,62 @@ Overfull \hbox (20.07158pt too wide) detected at line 944
 
 ] [35
 
+] [36
+
 ]
-<img/fig1.png, id=1403, 405.01312pt x 173.64874pt>
+<img/fig1.png, id=1434, 405.01312pt x 173.64874pt>
 File: img/fig1.png Graphic file (type png)
 <use img/fig1.png>
-Package pdftex.def Info: img/fig1.png  used on input line 1084.
-(pdftex.def)             Requested size: 345.69548pt x 148.2195pt.
-
-Overfull \vbox (0.61513pt too high) detected at line 1084
- []
-
-[36
-
- <./img/fig1.png>]
-<img/fig2.png, id=1438, 334.75063pt x 175.15437pt>
-File: img/fig2.png Graphic file (type png)
-<use img/fig2.png>
-Package pdftex.def Info: img/fig2.png  used on input line 1100.
-(pdftex.def)             Requested size: 276.55743pt x 144.71794pt.
+Package pdftex.def Info: img/fig1.png  used on input line 1097.
+(pdftex.def)             Requested size: 207.41939pt x 88.93329pt.
  [37
 
- <./img/fig2.png>] [38
+ <./img/fig1.png>]
+<img/fig2.png, id=1470, 334.75063pt x 175.15437pt>
+File: img/fig2.png Graphic file (type png)
+<use img/fig2.png>
+Package pdftex.def Info: img/fig2.png  used on input line 1113.
+(pdftex.def)             Requested size: 276.55743pt x 144.71794pt.
+ [38
+
+ <./img/fig2.png>] [39
 
 ]
-<img/fig3.png, id=1504, 394.97563pt x 191.71625pt>
+<img/fig3.png, id=1535, 394.97563pt x 191.71625pt>
 File: img/fig3.png Graphic file (type png)
 <use img/fig3.png>
-Package pdftex.def Info: img/fig3.png  used on input line 1126.
-(pdftex.def)             Requested size: 241.98578pt x 117.45575pt.
-
-Overfull \vbox (6.24315pt too high) detected at line 1126
- []
-
-[39
-
- <./img/fig3.png>]
-<img/fig4.png, id=1538, 403.5075pt x 166.12062pt>
-File: img/fig4.png Graphic file (type png)
-<use img/fig4.png>
-Package pdftex.def Info: img/fig4.png  used on input line 1144.
-(pdftex.def)             Requested size: 241.98578pt x 99.62497pt.
+Package pdftex.def Info: img/fig3.png  used on input line 1145.
+(pdftex.def)             Requested size: 172.84773pt x 83.89905pt.
  [40
 
+ <./img/fig3.png>]
+<img/fig4.png, id=1569, 403.5075pt x 166.12062pt>
+File: img/fig4.png Graphic file (type png)
+<use img/fig4.png>
+Package pdftex.def Info: img/fig4.png  used on input line 1163.
+(pdftex.def)             Requested size: 207.41939pt x 85.3921pt.
+ [41
+
  <./img/fig4.png>]
-<img/fig5.png, id=1570, 352.81813pt x 163.10938pt>
+<img/fig5.png, id=1602, 352.81813pt x 163.10938pt>
 File: img/fig5.png Graphic file (type png)
 <use img/fig5.png>
-Package pdftex.def Info: img/fig5.png  used on input line 1157.
-(pdftex.def)             Requested size: 207.41939pt x 95.89023pt.
-<img/fig6.png, id=1571, 404.00937pt x 190.21063pt>
+Package pdftex.def Info: img/fig5.png  used on input line 1179.
+(pdftex.def)             Requested size: 172.84773pt x 79.90686pt.
+<img/fig6.png, id=1603, 404.00937pt x 190.21063pt>
 File: img/fig6.png Graphic file (type png)
 <use img/fig6.png>
-Package pdftex.def Info: img/fig6.png  used on input line 1157.
-(pdftex.def)             Requested size: 207.41939pt x 97.65627pt.
+Package pdftex.def Info: img/fig6.png  used on input line 1179.
+(pdftex.def)             Requested size: 172.84773pt x 81.37683pt.
 
-Overfull \vbox (2.76758pt too high) detected at line 1157
+Overfull \vbox (1.55473pt too high) detected at line 1179
  []
 
-[41
+[42
 
- <./img/fig5.png> <./img/fig6.png>] [42
+ <./img/fig5.png> <./img/fig6.png>] [43
 
-] (./NLE3.toc) [43
-
-] [44
+] (./NLE3.toc) [44
 
 ] [45
 
@@ -1295,33 +1279,35 @@ Overfull \vbox (2.76758pt too high) detected at line 1157
 
 ] [54
 
+] [55
+
 ]
-<img/fig7.png, id=2024, 563.60562pt x 313.67188pt>
+<img/fig7.png, id=2056, 563.60562pt x 313.67188pt>
 File: img/fig7.png Graphic file (type png)
 <use img/fig7.png>
-Package pdftex.def Info: img/fig7.png  used on input line 1483.
+Package pdftex.def Info: img/fig7.png  used on input line 1505.
 (pdftex.def)             Requested size: 172.84773pt x 96.19865pt.
- [55
+ [56
 
- <./img/fig7.png>] [56
+ <./img/fig7.png>] [57
 
 ]
-<img/fig8.png, id=2089, 577.15625pt x 304.63812pt>
+<img/fig8.png, id=2120, 577.15625pt x 304.63812pt>
 File: img/fig8.png Graphic file (type png)
 <use img/fig8.png>
-Package pdftex.def Info: img/fig8.png  used on input line 1518.
+Package pdftex.def Info: img/fig8.png  used on input line 1540.
 (pdftex.def)             Requested size: 276.55743pt x 145.97826pt.
- [57
+ [58
 
  <./img/fig8.png>]
-Overfull \vbox (0.1868pt too high) detected at line 1557
+Overfull \vbox (0.1868pt too high) detected at line 1579
  []
 
-[58
-
-] [59
+[59
 
 ] [60
+
+] [61
 
 ]
 \tf@nav=\write6
@@ -1339,21 +1325,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/07/14>
  ***********
 Package rerunfilecheck Info: File `NLE3.out' has not changed.
-(rerunfilecheck)             Checksum: 83ADBFB2DFF47FA8120A3C7E0E842157;3253.
+(rerunfilecheck)             Checksum: D6708B6C87A089A776FA6DE5A531FF8E;3253.
  ) 
 Here is how much of TeX's memory you used:
- 33326 strings out of 474115
- 655970 string characters out of 5747696
+ 33385 strings out of 474115
+ 657076 string characters out of 5747696
  1963190 words of memory out of 5000000
- 54608 multiletter control sequences out of 15000+600000
- 625366 words of font info for 248 fonts, out of 8000000 for 9000
+ 54653 multiletter control sequences out of 15000+600000
+ 626999 words of font info for 250 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,16n,123p,767b,746s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on NLE3.pdf (60 pages, 873116 bytes).
+Output written on NLE3.pdf (61 pages, 882591 bytes).
 PDF statistics:
- 2539 PDF objects out of 2984 (max. 8388607)
- 2070 compressed objects within 21 object streams
- 139 named destinations out of 1000 (max. 500000)
+ 2571 PDF objects out of 2984 (max. 8388607)
+ 2098 compressed objects within 21 object streams
+ 141 named destinations out of 1000 (max. 500000)
  571 words of extra memory for PDF output out of 10000 (max. 10000000)
 

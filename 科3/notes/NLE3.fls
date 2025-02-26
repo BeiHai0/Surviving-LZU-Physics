@@ -643,7 +643,9 @@ INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei56.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei5e.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei6b.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei4e.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei74.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei7b.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei6f.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei68.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei67.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei56.tfm
@@ -651,7 +653,6 @@ INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei60.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei6b.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei4e.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei8b.tfm
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei74.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei8b.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei78.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei52.tfm
@@ -668,9 +669,11 @@ INPUT ./NLE3.toc
 INPUT NLE3.toc
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei5f.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei78.tfm
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei7d.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvb7t.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei9b.tfm
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei6f.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/helvetic/phvb7t.vf
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei7d.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei58.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei7b.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei4f.tfm
@@ -709,8 +712,8 @@ INPUT ./img/fig4.png
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei53.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei4e.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei79.tfm
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei6b.tfm
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei4f.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei5c.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei5e.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei5b.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei76.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei79.tfm

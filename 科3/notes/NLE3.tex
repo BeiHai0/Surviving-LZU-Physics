@@ -321,7 +321,7 @@ $$
     忽略高阶项
     
     $$
-    L^{(2)}(\vec{e}+\bar{\vec{E}},\vec{b})
+    L^{(2)}\left(\vec{e}+\bar{\vec{E}},\vec{b}\right)
     =\frac{\gamma\eta\left(5+\frac{7 }{2 } \eta \bar{\vec{E}}^2 \right) }{\left(1-\frac{\eta }{2 } \bar{\vec{E}}^2 \right)^4 }\left(\vec{e}\cdot\bar{\vec{E}} \right)^2 - \frac{1 }{2 } \gamma \frac{\left(1+\frac{7 }{2 } \eta \bar{\vec{E}}^2 \right) }{\left(1-\frac{\eta }{2 } \bar{\vec{E}}^2 \right)^3 }\left(\vec{b}^2-\vec{e}^2 \right) 
     $$
     
@@ -341,12 +341,11 @@ $$
 \end{frame}
 
 \begin{frame}    
-    结合关系 $d_i=\varepsilon_i^j e_j,h_i=\left(\mu^{-1} \right)_i^j b_j $
-    
-    $$
+    结合关系 $d_i=\varepsilon_i^j e_j,h_i=\left(\mu^{-1} \right)_i^j b_j $ 得到
+    $
     \varepsilon_{ij} = \alpha\delta_{ij} + \beta\bar{E}_i\bar{E}_j ,\quad
     \left(\mu^{-1} \right)_{ij} = \alpha\delta_{ij} 
-    $$
+    $
     
     平面波麦克斯韦方程
     
@@ -376,28 +375,31 @@ $$
     \end{bmatrix} 
     $$
     
-    由 $\mathrm{det}(\Lambda)=0 $ 可知电场有两种模式。两种模式定义了色散关系。折射率定义为 $n\equiv k/\omega $，因此有两种不同的折射率
+    由 $\mathrm{det}(\Lambda)=0 $ 可知\textcolor{red}{电场有两种模式}。两种模式定义了色散关系。折射率定义为 $n\equiv k/\omega $，因此有两种不同的折射率
     
     $$
     n_\parallel = \sqrt{1+\frac{\beta }{\alpha } \bar{E}^2},\quad
     n_\perp = 1 
     $$
     
-    不同偏振的电磁波有不同的速度 $v_\parallel=n_\parallel^{-1},v_\perp=1 $，这里平行和垂直极化是相对于背景匀强电场而言的。这种真空双折射现象是由模型的非线性性造成的。当 $\eta\to 0$ 时，$\beta\to 0$，真空双折射现象也消失。
+    \textcolor{red}{不同偏振的电磁波有不同的速度} $v_\parallel=n_\parallel^{-1},v_\perp=1 $，这里平行和垂直极化是相对于背景匀强电场而言的。这种真空双折射现象是由模型的非线性性造成的。当 $\eta\to 0$ 时，$\beta\to 0$，真空双折射现象也消失。
 \end{frame}
 
 \subsection{拉格朗日量的因果性和幺正性条件}
 
 \begin{frame}{拉格朗日量的因果性和幺正性条件}
+    只有当因果性条件和幺正性条件都成立时，NLED 模型才是合理的。
     若拉氏量满足不等式：
 
     $$
+    \boxed{
     L_F \leqslant 0,
     L_{FF}\geqslant 0,
     L_F + 2F L_{FF} \leqslant 0
+    }
     $$
     
-    则群速度不超过真空光速，且动能非负。电场部分取 $B=0 $，拉氏量 $\displaystyle{L(F)=-\frac{\left(aF+1 \right)^m }{\delta(bF+1)^n } \left(\beta F \right)^p }$ ，前两个不等式给出
+    则背景场上元激发的群速度不超过真空光速，且动能非负。电场部分取 $B=0 $，拉氏量 $\displaystyle{L(F)=-\frac{\left(aF+1 \right)^m }{\delta(bF+1)^n } \left(\beta F \right)^p }$ ，前两个不等式给出
     
     $$
     n\geqslant m+1,a\leqslant 0,b\geqslant 0
@@ -409,7 +411,7 @@ $$
     n\geqslant m+1,a\geqslant 0,b\leqslant 0
     $$
     
-    $n=m+1,a=-3b $ 时的因果性和单一性条件
+    $n=m+1,a=-3b $ 时的因果性和幺正性条件
     
     $$
     L_F
@@ -425,7 +427,7 @@ $$
 \end{frame}
 
 \begin{frame}
-    仅电场部分，取 $B=0 $，因果性和单一性条件三个不等式给出
+    仅电场部分，取 $B=0 $，因果性和幺正性条件三个不等式给出
     
     $$
     -\frac{2+7\eta E^2 }{\left(2-\eta E^2 \right)^3 } \leqslant 0,
@@ -434,7 +436,7 @@ $$
     $$
     
     
-    所有情况都有 $E<\sqrt{2/\eta} $，$E_{\max}=\sqrt{\eta/2} $
+    所有情况都有 $E<\sqrt{2/\eta} $，$E_{\max}=\sqrt{\eta/2} $。因此，\textcolor{red}{对于电场所有允许的取值，因果性和幺正性条件都得到满足。}
     
     分析磁场，取 $E=0 $，前两个不等式给出
     
@@ -443,15 +445,13 @@ $$
     \left(5-\frac{7 }{2 } \eta B^2 \right)\geqslant 0
     $$
     
-    可以得到 $F<1/7\eta $
-    
-    第三不等式给出
+    可以得到 $F<1/7\eta $。第三不等式给出
     
     $$
     -2+\eta B^2\left(26-\frac{21 }{2 } \eta B^2 \right)\leqslant 0
     $$
     
-    得到 $(13-2\sqrt{37})/21<\eta F<(13+2\sqrt{37})/21 $
+    得到 $(13-2\sqrt{37})/21<\eta F<(13+2\sqrt{37})/21 $。因此，\textcolor{red}{只有磁场取一定范围内的值时因果性和幺正性条件才得到满足。}
 \end{frame}
 
 \subsection{新 NLE 与广义相对论的耦合}
@@ -567,7 +567,7 @@ $$
     g_{tt}\to -\left(1-c^2r^2 \right),\quad g^{rr} \to \left(1-c^2r^2 \right)\quad \mathrm{as}\quad r\to 0
     $$
     
-    $g_{tt}=0$ 给出无限红移面的位置。若度规参数满足 $0<g<0.5 b_0^2 $，则上面几何代表一系列双视界黑洞；当 $g^2=0.5b_0^2$，得到单视界黑洞；若 $g^2>0.5b_0^2$，则黑洞没有视界。特别地，当 $g^2=0$，黑洞有一个视界。
+    $g_{tt}=0$ 给出黑洞视界的位置。若度规参数满足 $0<g<0.5 b_0^2 $，则上面几何代表一系列双视界黑洞；当 $g^2=0.5b_0^2$，得到单视界黑洞；若 $g^2>0.5b_0^2$，则黑洞没有视界。特别地，当 $g^2=0$，黑洞有一个视界。
 \end{frame}
 
 \begin{frame}{曲率张量和不变量的正则性}
@@ -598,13 +598,13 @@ $$
     R_{22} = R_{33} = \frac{b_0^2 \left(3g^4-r^4 \right) }{\left(r^4+g^4 \right)^2 }
     $$
     
-    当 $r\to 0 $，两个张量的分量都有限；当 $r\to \infty $，所有分量趋于零。
+    当 $r\to 0 $，两个张量的分量都有限；当 $r\to \infty $，所有分量趋于零，这保证时空是渐进平坦的。
 \end{frame}
 
 \begin{frame}
-    三个标量不变量：
+    只有当曲率标量都正则时时空才是正则的。因此考察三个标量不变量：
     
-    Ricci 标量
+    Ricci scalar
     
     $$
     R = g^{\mu\nu}R_{\mu\nu}
@@ -626,7 +626,7 @@ $$
     =\frac{8\left(3g^{16}-10g^{12}r^4+74 g^8 r^8-34g^4r^{12}+7r^{16} \right)b_0^4 }{\left(r^4+g^4 \right)^6 }
     $$
     
-    在 $r\to 0$ 时，三个不变量也都有限。 
+    在 $r\to 0$ 时，三个不变量也都有限。因此\textcolor{red}{上述几何是正则的}。
 \end{frame}
 
 \begin{frame}{能量条件}
@@ -642,18 +642,18 @@ $$
     =-\frac{b_0^2\left(3g^8-12g^4r^4+r^8 \right) }{\kappa \left(r^4+g^4 \right)^3 }
     $$
     
-    NEC (Null Energy Condition) $\rho+\tau \geqslant 0,\rho+p\geqslant 0 $，第一个在 $\rho+\tau=0 $ 时自动满足；
+    零能量条件(Null Energy Condition)要求 $\rho+\tau \geqslant 0,\rho+p\geqslant 0 $，第一个在 $\rho+\tau=0 $ 时自动满足；
     
     $$
     \rho+p
     =\frac{2b_0^2 r^4\left(r^4-7g^4 \right) }{\kappa \left(r^4+g^4 \right)^3 }
     $$
     
-    第二个满足，只能 $r^4\leqslant 7g^4 $
+    若第二个不等式得到满足，则只能 $r^4\leqslant 7g^4 $，即\textcolor{red}{并非所有 $r$ 的取值都是合理的。}
 \end{frame}
 
 \begin{frame}{裸电奇点解}
-    Ricci  标量
+    纯电场解 $B=0,F=-E^2/2 $，类似可计算 Ricci scalar
 
     $$
     R
@@ -666,7 +666,7 @@ $$
     $$
     R
     =-8\kappa \left(L-FL_F \right)
-    =-\frac{8\gamma\kappa \eta\tilde{E}^2\left(10+3\eta\tilde{E} \right) }{\left(-2+\eta\tilde{E} \right)^3 }
+    =-8\gamma\kappa \eta\tilde{E}^2\left(10+3\eta\tilde{E} \right) \bigg/ \left(-2+\eta\tilde{E} \right)^3 
     $$
     
     Ricci contraction
@@ -683,7 +683,7 @@ $$
         &=\frac{16\kappa \gamma^2 \tilde{E}^2 \left\{16+\eta \tilde{E}\left[112+\eta\tilde{E}\left(296+3\eta \tilde{E}\left(20+3\eta\tilde{E} \right) \right) \right] \right\} }{\left(-2+\eta\tilde{E} \right)^6 }
     \end{aligned}
     $$ 
-    在 $\tilde{E}=2/\eta $ 或 $r=0$ 处标量发散，或者说 $r=0$ 是个时空奇点。可以计算，Kretschmann 标量 $R_{\mu\nu\lambda\delta}R^{\mu\nu\lambda\delta}  $ 在 $r=0$ 处也发散。
+    在 $\tilde{E}=2/\eta $ 或 $r=0$ 处三个标量发散，或者说 \textcolor{red}{$r=0$ 是个时空奇点}。可以计算，Kretschmann 标量 $R_{\mu\nu\lambda\delta}R^{\mu\nu\lambda\delta}  $ 在 $r=0$ 处也发散。因此，\textcolor{red}{由拉氏量控制的非线性电单极子与爱因斯坦引力的最小耦合导致了裸电奇点。}
 \end{frame}
 
 \subsection{总结}
@@ -699,7 +699,7 @@ $$
     \item 在外部均匀电场的影响下，模型展示了真空双折射现象，表明其在电磁现象中的新颖性。
 \end{itemize}
 
-因果性和单一性条件：
+因果性和幺正性条件：
 
 \begin{itemize}
     \item 研究表明，在所有背景电场下，模型满足因果性和单一性条件。然而，对于磁场，因果性和单一性条件仅在有限的磁场范围内成立，这表明模型在某些情况下可能存在局限性。
@@ -728,6 +728,13 @@ $$
 \subsection{f(T)引力和NLED基础}
 
 \begin{frame}{f(T)引力基础}
+    $f(T)$ 引力是一种修改引力理论，它是对爱因斯坦广义相对论的推广。与广义相对论基于黎曼几何不同，$f(T)$ 引力基于 \textbf{Teleparallel 几何}（Teleparallel Geometry），并通过修改 \textbf{挠率标量}（Torsion Scalar）$T$ 来构建引力理论。
+
+    在广义相对论中，引力被描述为时空的弯曲，基于黎曼几何，使用 \textbf{曲率标量} $R$ 作为基本量。而在 Teleparallel 引力中，引力被描述为时空的 \textbf{挠率}（Torsion），而不是曲率。Teleparallel 引力的基本量是 \textbf{挠率标量} $T$，它通过 \textbf{魏森博克联络}（Weitzenböck Connection）定义。
+
+\end{frame}
+
+\begin{frame}
 
     $f(T)$ 引力中的基本元素是四分量场 $h_a(x^\mu)$，其中英文字母标记切空间，希腊字母标记时空。$h_a=h_a^\mu\partial_\mu$，分量满足
 
@@ -772,7 +779,7 @@ $$
     =\mathrm{d}t^2 - a^2(t)\left(\mathrm{d}x^2+\mathrm{d}y^2+\mathrm{d}z^2 \right),
     $$
 
-    其中，$a$ 是依赖于时间的比例因子，相应 $h_\mu^a=\mathrm{diag}(1,a,a,a)$。修改 Friedmann 方程描述了宇宙的演化:
+    其中，$a$ 是依赖于时间的尺度因子，表示某时刻相对参考时刻宇宙的线性尺度变化。相应 $h_\mu^a=\mathrm{diag}(1,a,a,a)$。$f(T)$ 引力中，修改 Friedmann 方程描述了均匀且各向同性宇宙的演化:
 
     $$
     12 H^2 f_T + f = 2\kappa^2 \rho_t,
@@ -782,7 +789,7 @@ $$
     48H^2\dot{H} f_{TT} - \left(12 H^2 + 4\dot{H} \right) f_T - f= 2\kappa^2 p_t,
     $$
 
-    其中，$H=\dot{a}/a$ 是哈勃参数，$\rho_t,p_t$ 分别是宇宙的总能量密度和压力。
+    其中，$H=\dot{a}/a$ 是哈勃参数，描述了宇宙的膨胀速度；$\rho_t,p_t$ 分别是宇宙的总能量密度和压力。
 \end{frame}
 
 \begin{frame}{非线性电动力学基础}
@@ -862,7 +869,7 @@ $$
 \subsection{宇宙学参数和热力学}
 
 \begin{frame}{宇宙学参数}
-    modified Friedmann equations 场方程可写为
+    修改 Friedmann 场方程可写为
 
     $$
     \frac{3 H^2 }{\kappa^2 } = \rho_t,\quad
@@ -908,9 +915,9 @@ $$
     B=\frac{B_0}{a^2},
     $$
 
-    其中，$B_0$ 是任意常数。这表明磁场能量密度的演化随宇宙的膨胀而衰减。
+    其中，$B_0$ 是任意常数。这表明\textcolor{red}{磁场能量密度的演化随宇宙的膨胀而衰减。}
 
-    EoS(equation of state)参数
+    状态方程(equation of state, EoS)参数
 
     $$
     \begin{aligned}
@@ -926,7 +933,7 @@ $$
     q = -1 - \frac{\dot{H} }{H^2 } .
     $$
 
-    负的 $q$ 意味着加速状态。
+    负的 $q$ 意味着宇宙膨胀在加速，正的 $q$ 意味着宇宙膨胀在减速。
 
 \end{frame}
 
@@ -946,7 +953,7 @@ $$
 \begin{frame}{广义热力学第二定律(GSLT)}
     GLST说，在视界里和视界上的总熵不随时间减少。
 
-    由热力学第一定律有克劳修斯关系 $-\mathrm{d}E=T_X\mathrm{d}S_X$，其中 $S_X=A/(4G)$ 是 Bekenstein 熵，$A=4\pi R_X^2$ 是视界面积，$X$ 是任意视界，$T_X=1/(2\pi R_X)$ 是霍金温度。Miao 等人发现在 $f(T)$ 引力中热力学第一定律被违背，这导致额外的熵增项 $S_P$；而在 $f_{TT}$ 很小时，热力学第一定律成立，这时熵 $S_X=(Af_T)/(4G)$，而与 $S_P$ 无关。下面采用更一般的方法来研究磁 $f(T)$ 场景下的 GSLT。熵对时间微分
+    由热力学第一定律有克劳修斯关系 $-\mathrm{d}E=T_X\mathrm{d}S_X$，其中 $S_X=A/(4G)$ 是 Bekenstein 熵，$A=4\pi R_X^2$ 是视界面积，$X$ 是任意视界，$T_X=1/(2\pi R_X)$ 是霍金温度。Miao 等人发现在 $f(T)$ 引力中热力学第一定律被违背，这导致额外的熵增项 $S_P$；而在 $f_{TT}$ 很小时，热力学第一定律成立，这时熵 $S_X=(Af_T)/(4G)$，而与 $S_P$ 无关。下面采用更一般的方法来研究磁 $f(T)$ 引力框架下的 GSLT。熵对时间微分
 
     $$
     \frac{\mathrm{d}S_X }{\mathrm{d}t } + \frac{\mathrm{d}S_P }{\mathrm{d}t } = \frac{\pi R_X }{G } \left(2\dot{R}_X f_T + R_X\dot{T} f_{TT} \right).
@@ -1032,7 +1039,7 @@ $$
 \subsection{f(T)模型的一个例子}
 
 \begin{frame}{f(T)模型的一个例子}
-    考虑如下形式的比例因子
+    考虑如下极点形式的尺度因子
 
     $$
     a(t)
@@ -1048,7 +1055,7 @@ $$
     \dot{H} = \frac{h }{\left(t_s - t \right)^2 }.
     $$
 
-    把上式代入修改 Friedmann 方程的第一条可得
+    把上式代入修改 Friedmann 方程可得
 
     $$
     \begin{aligned}
@@ -1077,9 +1084,15 @@ $$
 
     \begin{figure}
         \centering
-        \includegraphics[width=1.0\textwidth]{img/fig1.png}
+        \includegraphics[width=0.6\textwidth]{img/fig1.png}
         \caption{$\omega_t$ 和 $q_t$}
     \end{figure}
+
+    该模型满足在高红移下 $f_T\to 0$ 的条件，符合宇宙加速膨胀的要求。
+
+    对于较小的红移值 $z$，$q_t<0$，宇宙处于加速膨胀状态，这与现实一致，也与原始核合成(primordial nucleosynthesis)和宇宙微波背景约束一致。
+
+
     
 \end{frame}
 
@@ -1107,6 +1120,9 @@ $$
         &- \frac{64h(2h+1)\kappa^2 B_0^4 \omega_0 }{3a_0^8 (8h+1) } (1+z)^8- \frac{c_1 }{4h(1+z)^{1/h} } \bigg] + \frac{2\pi }{G h^3 } (1+h)(1+z)^{1/h}.
     \end{aligned}
     $$
+
+    对于哈勃视界，当 $z>8.2$ 或 $z<0$ 时 GSLT 成立。
+
 \end{frame}
 
 \begin{frame}{Event Horizon}
@@ -1120,14 +1136,17 @@ $$
 
     \begin{figure}
         \centering
-        \includegraphics[width=0.7\textwidth]{img/fig3.png}
+        \includegraphics[width=0.5\textwidth]{img/fig3.png}
         \caption{$\dot{S}_H+\dot{S}_I$,left for Hubble Horizon,right for Event Horizon}
     \end{figure}
+
+    对于事件视界，有同样的结果，当 $z>8.2$ 或 $z<0$ 时 GSLT 成立。
+
 \end{frame}
 
-\begin{frame}{另一种形式的比例因子}
+\begin{frame}{另一种形式的尺度因子}
 
-    $a(t)=a_0(t_s-t)^h$，与之对应的 $f(T)$ 模型
+    构造幂律型尺度因子 $a(t)=a_0(t_s-t)^h$，与之对应的 $f(T)$ 模型
     
     $$
     \begin{aligned}
@@ -1138,22 +1157,25 @@ $$
     $$
     \begin{figure}
         \centering
-        \includegraphics[width=0.7\textwidth]{img/fig4.png}
-        \caption{另一种比例因子的 $\omega_t$ 和 $q_t$}
+        \includegraphics[width=0.6\textwidth]{img/fig4.png}
+        \caption{另一种尺度因子的 $\omega_t$ 和 $q_t$}
     \end{figure}
 \end{frame}
     
 \begin{frame}
     \begin{figure}
         \centering
-        \includegraphics[width=0.6\textwidth]{img/fig5.png}
-        \caption{另一种比例因子的 $f_{TT}$}
+        \includegraphics[width=0.5\textwidth]{img/fig5.png}
+        \caption{另一种尺度因子的 $f_{TT}$}
     \end{figure}
     \begin{figure}
         \centering
-        \includegraphics[width=0.6\textwidth]{img/fig6.png}
-        \caption{另一种比例因子的 $\dot{S}_H+\dot{S}_I$,left for Hubble Horizon,right for Event Horizon}
+        \includegraphics[width=0.5\textwidth]{img/fig6.png}
+        \caption{另一种尺度因子的 $\dot{S}_H+\dot{S}_I$,left for Hubble Horizon,right for Event Horizon}
     \end{figure}
+
+    对于幂律型尺度因子，GSLT 在 Hubble 视界上的有效性取决于参数 $h$ 的取值。对于 $h=5$，GSLT 对所有红移值 $z$ 都成立；而对 $h=2,3$，GSLT 只在特定红移值范围内成立。而对于事件视界，GSLT 对所有的 $h$ 值和红移值 $z$ 都成立。
+
 \end{frame}
 
 \subsection{总结}
