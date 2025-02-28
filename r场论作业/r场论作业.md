@@ -23,6 +23,56 @@
 
 > 判断粒子反应方程能否发生。
 
+### 1-2-1
+
+判断下列过程能否发生，并说明原因；在允许发生的过程中，哪些同位旋不守恒？由此可以得到什么结论？
+
+(1) $p + \bar{p} \to \pi^+ + \pi^0 $
+
+(2) $e^+ + e^- \to \gamma + \gamma $
+
+(3) $\nu_\mu + p \to e^+ + \pi $
+
+(4) $\nu_e + n \to e^- + p $
+
+(5) $n \to p + e^- + \tilde{\nu}_e $
+
+(6) $\mu^- \to e^+ + \tilde{\nu}_e + n_\mu $
+
+(7) $\mu^+ \to e^+ + \tilde{\nu}_e + \nu_\mu $
+
+(8) $\pi^- \to \mu^- + \tilde{\nu}_e $
+
+### 1-2-2
+
+判断下列过程能否发生，并说明原因；在允许发生的过程中，哪种力在起作用？
+
+(1) $\pi^- + p \to \Sigma^+ + K^- $
+
+(2) $K^- + p \to \Omega^- + K^ + K^0 $
+
+(3) $\Omega^- \to \Xi^0 + \pi^- $
+
+(4) $\pi^+ + p \to p + p + \bar{n} $
+
+(5) $\bar{n} \to \bar{p} + e^+ +\nu_e $
+
+(6) $\Lambda^0 \to n +\gamma $
+
+### 1-2-3
+
+欧米伽粒子是通过下列链式反应发现的，在每步反应中，哪种力起作用？请说明原因。
+
+$K^- + p \to \Omega^- + K^+ + K^0 $
+
+$\Omega^- \to \Xi^0 + \pi^- $
+
+$\Lambda^0 \to \pi^- + p $
+
+$\pi^0 \to \gamma + \gamma $
+
+$\gamma \to e^+ + e^- $
+
 ## 1-3
 
 > 夸克组成的强子如何保证强子无色？
