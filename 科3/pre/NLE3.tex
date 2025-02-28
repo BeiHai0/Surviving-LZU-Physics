@@ -33,11 +33,9 @@
 }
 %%%%%%%%%%%%%%%%%%%
 
-%\usepackage{ctex} % xelatex 中文
-
 \title{Nonlinear electrodynamics coupled with gravity } % 标题
-\author[林照翔]{林照翔} % 作者
-\date{} % 如果 Date 参数为空，自动显示当前日期
+%\author{林照翔  \\ 科研与实践III导师：赵力} % 作者
+\date{\today} % 如果 Date 参数为空，自动显示当前日期
 
 \begin{document}
 \setbeamerfont{headline}{size=\Tiny}
@@ -55,7 +53,17 @@
     \end{multicols}
 \end{frame}
 
+\section{Introduction}
 
+\begin{frame}{引言}
+    非线性电动力学（Nonlinear Electrodynamics, NLED）是经典电动力学的一个重要扩展，旨在解决线性麦克斯韦理论中的一些基本问题，例如点电荷的无限自能和奇异场强。自20世纪30年代Born和Infeld提出非线性电动力学模型以来，这一领域经历了多次复兴和发展。近年来，随着对宇宙加速膨胀和黑洞物理的深入研究，NLED在广义相对论和宇宙学中的应用引起了广泛关注。
+
+在广义相对论中，NLED与引力的耦合为解决奇点问题提供了新的思路。例如，Born-Infeld电动力学在与爱因斯坦方程耦合时，能够产生无奇点的黑洞解。这些解被称为“正则黑洞”，在某些情况下表现出与Reissner-Nordström解类似的渐近行为。然而，NLED在引力耦合中的应用仍面临诸多挑战，例如能量条件的违反和解的稳定性问题。
+
+在宇宙学中，NLED的应用主要集中在解释宇宙的加速膨胀和避免初始奇点。研究表明，非线性电磁场可能在宇宙早期阶段发挥重要作用，甚至能够诱导宇宙从收缩状态反弹到膨胀状态。此外，NLED在f(T)引力理论中的应用也显示出其在描述宇宙演化中的潜力。f(T)引力理论通过引入挠率标量T来修改引力作用，为研究宇宙加速膨胀提供了新的框架。
+
+本文探讨了NLED在平坦时空中、与引力耦合的黑洞解以及在f(T)引力理论中的应用。这些研究不仅展示了NLED在解决经典电动力学和广义相对论中奇点问题的潜力，还揭示了其在宇宙学中的重要应用前景。通过对这些研究的分析，我们希望进一步理解NLED在现代物理中的角色，并为未来的研究提供新的方向。
+\end{frame}
 
 \section{Aspects of a novel nonlinear electrodynamics in flat spacetime and in a gravity-coupled scenario}
 
@@ -1094,8 +1102,8 @@ $$
 
     \begin{figure}
         \centering
-        \includegraphics[width=0.6\textwidth]{img/fig1.png}
-        \caption{$\omega_t$ 和 $q_t$}
+        \includegraphics[width=0.6\textwidth]{fig/fig11.png}
+        \caption{$\omega_t$ 和 $q_t$ 与 $z$ 的关系}
     \end{figure}
 
     \textcolor{red}{该模型满足在高红移下 $f_T\to 0$ 的条件，符合宇宙加速膨胀的要求。}
@@ -1117,7 +1125,7 @@ $$
     $$
     \begin{figure}
         \centering
-        \includegraphics[width=0.8\textwidth]{img/fig2.png}
+        \includegraphics[width=0.8\textwidth]{fig/fig12.png}
         \caption{$f_{TT}$}
     \end{figure}   
 \end{frame}
@@ -1146,7 +1154,7 @@ $$
 
     \begin{figure}
         \centering
-        \includegraphics[width=0.5\textwidth]{img/fig3.png}
+        \includegraphics[width=0.5\textwidth]{fig/fig3.png}
         \caption{$\dot{S}_H+\dot{S}_I$,left for Hubble Horizon,right for Event Horizon}
     \end{figure}
 
@@ -1167,7 +1175,7 @@ $$
     $$
     \begin{figure}
         \centering
-        \includegraphics[width=0.6\textwidth]{img/fig4.png}
+        \includegraphics[width=0.6\textwidth]{fig/fig14.png}
         \caption{另一种尺度因子的 $\omega_t$ 和 $q_t$}
     \end{figure}
 \end{frame}
@@ -1175,12 +1183,12 @@ $$
 \begin{frame}
     \begin{figure}
         \centering
-        \includegraphics[width=0.5\textwidth]{img/fig5.png}
+        \includegraphics[width=0.5\textwidth]{fig/fig15.png}
         \caption{另一种尺度因子的 $f_{TT}$}
     \end{figure}
     \begin{figure}
         \centering
-        \includegraphics[width=0.5\textwidth]{img/fig6.png}
+        \includegraphics[width=0.5\textwidth]{fig/fig16.png}
         \caption{另一种尺度因子的 $\dot{S}_H+\dot{S}_I$,left for Hubble Horizon,right for Event Horizon}
     \end{figure}
 
@@ -1511,8 +1519,8 @@ $$
     注意到，Bardeen 黑洞的视界质量只依赖于视界面积，这是因为磁荷被认为是视界的不变参数。
     \begin{figure}
         \centering
-        \includegraphics[width=0.5\textwidth]{img/fig7.png}
-        \caption{$M_\Delta$ 和 $\kappa$}
+        \includegraphics[width=0.5\textwidth]{fig/fig8.png}
+        \caption{极端 Bardeen 黑洞视界质量 $M_\Delta$ 和表面引力 $\kappa$ 与视界半径 $r_\Delta$ 的关系}
       \end{figure}
 \end{frame}
 
@@ -1546,8 +1554,14 @@ $$
 \begin{frame}
     \begin{figure}
         \centering
-        \includegraphics[width=0.8\textwidth]{img/fig8.png}
-        \caption{ADM mass compared with Schw, RN, and BI black holes}
+        \includegraphics[width=0.4\textwidth]{fig/fig9.png}
+        \caption{ADM 质量作为视界半径 $r_\Delta$ 的函数}
+    \end{figure}
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.4\textwidth]{fig/fig10.png}
+        \caption{视界质量作为视界半径 $r_\Delta$ 的函数}
     \end{figure}
 \end{frame}
 
@@ -1613,6 +1627,19 @@ $$
 
     \textcolor{red}{当 $m=0$ 原点处 $N(r)$ 有限。因此，EBI 的黑洞解和类粒子解都是稳定的。}
 
+\end{frame}
+
+\section{Conclusion}
+\begin{frame}{总结}
+    本文探讨了其在平坦时空中、与引力耦合的黑洞解以及在f(T)引力理论中的应用。这些研究展示了NLED在解决经典电动力学和广义相对论中奇点问题的潜力，同时也揭示了其在宇宙学中的重要应用前景。
+
+首先，Anjan Kar的研究提出了一种新的NLED模型，该模型在平坦时空中表现出有限的点电荷电场和自能，并在与引力耦合时能够产生正则黑洞或裸奇点解。这一模型在弱场极限下与Born-Infeld电动力学相似，但在强场极限下表现出独特的性质。研究表明，该模型在平坦时空中能够消除点电荷的无限自能问题，并在与引力耦合时产生无奇点的黑洞解。然而，该模型在磁性场的因果性和能量条件方面仍面临一些挑战。
+
+其次，探讨了NLED在f(T)引力理论中的应用，特别是在宇宙加速膨胀和广义第二定律（GSLT）的有效性方面。研究表明，NLED在f(T)引力理论中能够产生与宇宙加速膨胀一致的解，并在某些情况下满足GSLT。通过构造具体的f(T)模型，研究发现NLED在宇宙早期阶段能够避免初始奇点，并在晚期阶段表现出标准的辐射相。
+
+最后，回顾了NLED在黑洞物理中的应用，特别是Born-Infeld电动力学与引力耦合的解。研究表明，Born-Infeld理论能够产生无奇点的黑洞解，并在某些情况下表现出与Reissner-Nordström解类似的渐近行为。然而，这些解在能量条件和稳定性方面仍存在争议。此外，研究还探讨了NLED黑洞的热力学性质，发现其满足黑洞力学的第一定律，但Smarr公式需要进行修正。
+
+综上所述，NLED在解决经典电动力学和广义相对论中的奇点问题方面表现出巨大潜力，但在引力耦合和宇宙学应用中仍面临诸多挑战。未来的研究需要进一步探索NLED在不同物理背景下的行为，并解决其在能量条件和稳定性方面的潜在问题。
 \end{frame}
     
 \begin{frame}[noframenumbering]

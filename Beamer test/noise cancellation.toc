@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{外差干涉}{2}{0}{1}
+\beamer@sectionintoc {2}{激光频率噪声}{5}{0}{2}
+\beamer@sectionintoc {3}{光纤热噪声}{12}{0}{3}
+\beamer@sectionintoc {4}{实验光路}{14}{0}{4}
