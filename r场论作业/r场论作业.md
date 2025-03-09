@@ -235,4 +235,60 @@ $$
 
 
 
-# 
+# 2
+
+## 2-1
+
+### 2-1-1
+
+> 求广义 Lorentz 变换的逆变换。
+
+### 2-1-2
+
+> 若 $A^{\mathrm{T}}A=I $，证明 $A A^{\mathrm{T}}=I $，从而 $A_{\mu\lambda}A_{\nu\lambda}=\delta_{\mu\nu} $.
+
+### 2-1-3
+
+> 说明在固有 Lorentz 变换下，$a_{\mu\nu} $ 仅与两惯性系之间的相对速度有关。
+
+### 2-1-4
+
+> 什么是 Lorentz 张量？
+
+### 2-1-5
+
+> 证明在广义坐标变换下，$V_\mu^\mu $ 是标量，$V_{\mu\mu} $ 不是。在广义 Lorentz 变换下，$V_{\mu\mu} $ 是标量。
+
+### 2-1-6
+
+> 证明在 $\tau $ 变换下，$\tilde{\phi}'(x')=-\tilde{\phi}(x). $
+
+### 2-1-7
+
+> 证明方程 $A_\mu-\partial_\mu\partial_\nu A_\nu=0 $ 是 Lorentz 协变的。
+
+### 2-1-8
+
+> 讨论 K-G 方程中负几率困难。
+
+### 2-1-9
+
+> 说明 K-G 方程中负几率密度 $\rho=-\mathrm{i}j_4(x) $ 为实数。
+
+## 2-2
+
+> 设 $\phi_{\mu\nu}(z) $ 为二阶反对称张量，则赝张量的定义为 $\tilde{\phi}_{\mu\nu}=\frac{1 }{2! } \varepsilon_{\mu\nu\lambda\rho}\phi_{\lambda\rho} $，证明它具有变换规律 $\tilde{\phi}'_{\mu\nu}(x')=\left|A \right|A_{\mu\alpha}A_{\nu\beta}\tilde{\phi}_{\alpha\beta}(x) $
+
+## 2-3
+
+> 请证明广义洛伦兹变换 $X'=AX+b $ 和庞加莱变换 $X'=aX+b $ 分别构成群。
+
+## 2-4
+
+> 证明闵氏时空 $\left(x^1,x^2,x^3,x^4 \right) $ 坐标系及 $\mathrm{diag}(-1,-1,-1,-1) $ 度规下的 Klein-Gordon 方程 $\displaystyle{\square \phi(x)-\left(\frac{m_0 c }{\hbar }  \right)^2\phi(x)=0 }$  的广义 Lorentz 变换的协变性。
+
+## 2-5
+
+> 证明广义 Lorentz 变换正交关系 $A^\mu_\lambda A^\nu_\lambda=\delta^{\mu\nu} $
+
+
