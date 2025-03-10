@@ -243,9 +243,49 @@ $$
 
 > 求广义 Lorentz 变换的逆变换。
 
+广义洛伦兹变换：
+
+$$
+x'_\mu = A_{\mu\nu} x_\nu  +b_\mu
+$$
+
+两边同乘 $A_{\mu\rho} $，并利用正交关系 $A_{\mu\rho} A_{\mu\nu}=\delta_{\rho\nu} $：
+
+
+$$
+\begin{aligned}
+A_{\mu\rho} x'_\mu
+&=A_{\mu\rho} A_{\mu\nu}x_\nu + A_{\mu\rho}b_\mu \\
+&=\delta_{\rho\nu} x_\nu + A_{\mu\rho}b_\mu \\
+&=x_\rho + A_{\mu\rho}b_\mu
+\end{aligned}
+$$
+
+即有广义洛伦兹变换的逆变换：
+
+$$
+x_\rho = A_{\mu\rho}x'_\mu - A_{\mu\rho}b_\mu
+$$
+
 ### 2-1-2
 
 > 若 $A^{\mathrm{T}}A=I $，证明 $A A^{\mathrm{T}}=I $，从而 $A_{\mu\lambda}A_{\nu\lambda}=\delta_{\mu\nu} $.
+
+$$
+A^{\mathrm{T}}A = I \Longrightarrow A^{\mathrm{T}} = A^{-1}
+$$
+
+因此：
+
+$$
+A A^{\mathrm{T}} = A A^{-1} = I
+$$
+
+从而
+
+$$
+A_{\mu\lambda}A_{\nu\lambda} = \delta_{\mu\nu}
+$$
 
 ### 2-1-3
 
@@ -290,5 +330,54 @@ $$
 ## 2-5
 
 > 证明广义 Lorentz 变换正交关系 $A^\mu_\lambda A^\nu_\lambda=\delta^{\mu\nu} $
+
+广义洛伦兹变换：
+
+$$
+x'^\mu=A^\mu_\nu x^\nu + b^\mu
+$$
+
+两边同乘 $A^\mu_\lambda$：
+
+$$
+A^\mu_\lambda x'^\mu 
+=A^\mu_\lambda A^\mu_\nu x^\nu + A^\mu_\lambda b^\mu
+=\delta_{\lambda\nu} x^\nu + A^\mu_\lambda b^\mu
+=x^\lambda +  A^\mu_\lambda b^\mu
+$$
+
+即：
+
+$$
+x^\lambda = A^\mu_\lambda x'^\mu - A^\mu_\lambda b^\mu
+$$
+
+取微分：
+
+$$
+\mathrm{d}x^\lambda=A^\mu_\lambda\mathrm{d}x'^\mu
+$$
+
+线元：
+
+$$
+\mathrm{d}s^2
+=-\mathrm{d}x^\lambda\mathrm{d}x^\lambda
+=-\left(A^\mu_\lambda\mathrm{d}x'^\mu \right)\left(A^\nu_\lambda \mathrm{d}x'^\nu \right)
+=-A^\mu_\lambda A^\nu_\lambda \mathrm{d}x'^\mu\mathrm{d}x'^\nu
+$$
+
+$$
+\mathrm{d}s'^2
+=-\mathrm{d}x'^\mu\mathrm{d}x'^\mu
+=-\delta^{\mu\nu}\mathrm{d}x'^\mu\mathrm{d}x'^\nu
+$$
+
+由 $\mathrm{d}s^2=\mathrm{d}s'^2 $，对比可得：
+
+$$
+A^\mu_\lambda A^\nu_\lambda = \delta^{\mu\nu}
+$$
+
 
 
