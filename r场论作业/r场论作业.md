@@ -291,9 +291,20 @@ $$
 
 > 说明在固有 Lorentz 变换下，$a_{\mu\nu} $ 仅与两惯性系之间的相对速度有关。
 
+狭义相对性原理给出，物理定律在所有惯性参考系中形式相同，惯性系之间的变换仅由它们的相对运动决定。而两个惯性系之间的相对运动由相对速度唯一确定，因此保持线元 $\mathrm{d}s^2 $ 不变的固有 Lorentz 变换下，$a_{\mu\nu} $ 仅与两惯性系之间的相对速度有关。
+
 ### 2-1-4
 
 > 什么是 Lorentz 张量？
+
+若 $\phi_{\mu\nu\cdots\lambda}(x) $ 在广义洛伦兹变换 $x'^\mu=A^\mu_\nu x^\nu + b^\mu $ 下具有如下的变换规律：
+
+$$
+\phi'_{\mu\nu\cdots\lambda}(x')
+=A^\mu_\alpha A^\nu_\beta\cdots A^\lambda_\gamma\phi_{\alpha\beta\cdot\gamma}(x)
+$$
+
+则称 $\phi_{\mu\nu\cdots\lambda}(x) $ 为 Lorentz 张量。
 
 ### 2-1-5
 
