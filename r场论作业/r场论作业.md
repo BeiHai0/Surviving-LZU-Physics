@@ -284,6 +284,15 @@ $$
 从而
 
 $$
+I_{\mu\nu}
+=\left(A A^{\mathrm{T}} \right)_{\mu\nu}
+=A_{\mu\lambda}\left(A^{\mathrm{T}} \right)_{\lambda\nu}
+=A_{\mu\lambda}A_{\nu\lambda}
+$$
+
+即：
+
+$$
 A_{\mu\lambda}A_{\nu\lambda} = \delta_{\mu\nu}
 $$
 
