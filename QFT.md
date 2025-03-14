@@ -296,7 +296,7 @@ $$
 
 $$
 H_0
-=\frac{1 }{\left(2\pi \right)^3 } \int \mathrm{d}^3\vec{p} \omega_p \left(a_p^\dag a_p + \frac{1 }{2 }  \right) 
+=\int \frac{\mathrm{d}^3\vec{p} }{\left(2\pi \right)^3 }  \omega_p \left(a_p^\dag a_p + \frac{1 }{2 }  \right) 
 $$
 
 $$
@@ -311,6 +311,222 @@ $$
 
 ### 2.3.1 
 
+等时对易关系：
 
+$$
+\left[a_k , a_p^\dag \right] = \left(2\pi \right)^3 \delta^{3}\left(\vec{p}-\vec{k} \right)
+$$
+
+$$
+\left[a_k , a_p \right] = \left[a_k^\dag , a_p^\dag \right] = 0
+$$
+
+$a_p^\dag $ 算符产生动量为 $p $ 的粒子：
+
+$$
+a_p^\dag\ket{0} = \frac{1 }{\sqrt{2\omega_p} } \Ket{\vec{p}},\quad
+a_p\ket{0} = \ket{0}
+$$
+
+厄米共轭：
+
+$$
+\bra{0}a_p = \frac{1 }{\sqrt{2\omega_p} } \bra{\vec{p}},\quad
+\bra{0}a_p^\dag = \bra{0}
+$$
+
+其中 $\ket{\vec{p}} $ 是具有动量 $\vec{p} $ 的单粒子态。
+
+$$
+\braket{0|0}=1
+$$
+
+导致：
+
+$$
+\begin{aligned}
+\Braket{\vec{p}|\vec{k}}
+&=2\sqrt{\omega_p\omega_k}\red{\Braket{0|a_pa_k^\dag|0}} \\
+&=2\sqrt{\omega_p\omega_k}\Braket{0|\left[a_p , a_k^\dag \right] + a_k^\dag a_p|0} \\
+&=2\sqrt{\omega_p\omega_k}\Braket{0|\left(2\pi \right)^3\delta^3\left(\vec{p}-\vec{k} \right) + a_k^\dag a_p|0} \\
+&=2\sqrt{\omega_p\omega_{\blue{k}}}\left(2\pi \right)^3\delta^3\left(\vec{p}-\vec{k} \right) + 2\sqrt{\omega_p\omega_k}\Braket{0|a_k^\dag a_p|0} \\
+&=2\sqrt{\omega_p\omega_{\blue{p}}}\left(2\pi \right)^3\delta^3\left(\vec{p}-\vec{k} \right) \\
+&=2\omega_p\red{\left(2\pi \right)^3 \delta^3\left(\vec{p}-\vec{k} \right)} \\
+\end{aligned}
+$$
+
+单粒子态恒等算符：
+
+$$
+\bold{1}
+=\int\frac{\mathrm{d}^3\vec{p} }{\left(2\pi \right)^3 } \frac{1 }{2\omega_p } \ket{\vec{p}}\bra{\vec{p}}
+$$
+
+检验：
+
+$$
+\begin{aligned}
+\Ket{\vec{k}}
+&=\int\frac{\mathrm{d}^3\vec{p} }{\left(2\pi \right)^3 } \frac{1 }{2\omega_p } \ket{\vec{p}}\Braket{\vec{p}|\vec{k}} \\
+&=\int\frac{\mathrm{d}^3\vec{p} }{\left(2\pi \right)^3 } \frac{1 }{2\omega_p } \ket{\vec{p}}2\omega_p\left(2\pi \right)^3\delta^3\left(\vec{p}-\vec{k} \right) \\
+&=\Ket{\vec{k}}
+\end{aligned}
+$$
+
+量子场：
+
+$$
+\phi_0(\vec{x})
+=\int\frac{\mathrm{d}^3\vec{p} }{\left(2\pi \right)^3 } \frac{1 }{\sqrt{2\omega_p} } \left(a_p\mathrm{e}^{\mathrm{i}\vec{p}\cdot\vec{x}} + a_p^\dag \mathrm{e}^{-\mathrm{i}\vec{p}\cdot\vec{x}} \right)
+$$
+
+下标 $0 $ 代表自由场。$\phi_0(\vec{x}) $ 是厄米算符：
+
+$$
+\phi_0^\dag(\vec{x}) = \phi_(\vec{x})
+$$
+
+计算：
+
+$$
+\begin{aligned}
+\Braket{\vec{p}|\phi_0(\vec{x})|0}
+&=\Braket{0|\sqrt{2\omega_p} a_p \cdot \int\frac{\mathrm{d}^3\vec{k} }{\left(2\pi \right)^3 } \frac{1 }{\sqrt{2\omega_k} } \left(a_k\mathrm{e}^{\mathrm{i}\vec{k}\cdot\vec{x}} + a_k^\dag \mathrm{e}^{-\mathrm{i}\vec{k}\cdot\vec{x}} \right) |0 } \\
+&=\int\frac{\mathrm{d}^3\vec{k} }{\left(2\pi \right)^3 } \sqrt{\frac{\omega_p }{\omega_k } }\left[\mathrm{e}^{\mathrm{i}\vec{k}\cdot\vec{x}}\Braket{0|a_pa_k|0} + \mathrm{e}^{-\mathrm{i}\vec{k}\cdot\vec{x}}\Braket{0|a_pa_k^\dag|0} \right] \\
+&=\int\frac{\mathrm{d}^3\vec{k} }{\left(2\pi \right)^3 } \sqrt{\frac{\omega_p }{\omega_k } }\mathrm{e}^{-\mathrm{i}\vec{k}\cdot\vec{x}}\Braket{0|a_pa_k^\dag|0}  \\
+&=\int\frac{\mathrm{d}^3\vec{k} }{\left(2\pi \right)^3 } \sqrt{\frac{\omega_{\blue{p}} }{\omega_k } }\mathrm{e}^{-\mathrm{i}\vec{k}\cdot\vec{x}}\left(2\pi \right)^3\delta^3\left(\vec{p}-\vec{k} \right)  \\
+&=\int\frac{\mathrm{d}^3\vec{k} }{\left(2\pi \right)^3 } \sqrt{\frac{\omega_{\blue{k}} }{\omega_k } }\mathrm{e}^{-\mathrm{i}\vec{k}\cdot\vec{x}}\left(2\pi \right)^3\delta^3\left(\vec{p}-\vec{k} \right)  \\
+&=\int\mathrm{d}^3\vec{k}\mathrm{e}^{-\mathrm{i}\vec{k}\cdot\vec{x}}\delta^3\left(\vec{p}-\vec{k} \right) \\
+&=\mathrm{e}^{-\mathrm{i}\vec{p}\cdot\vec{x}}
+\end{aligned}
+$$
+
+另一方面，
+
+$$
+\Braket{\vec{p}|\vec{x}} = \mathrm{e}^{-\mathrm{i}\vec{p}\cdot\vec{x}}
+$$
+
+对比可得：
+
+$$
+\phi_0(\vec{x})\ket{0}
+=\ket{\vec{x}}
+$$
+
+即 $\phi_0(\vec{x}) $ 产生了一个位于 $\vec{x} $ 处的粒子。
+
+由于 $\phi_0(\vec{x}) $ 是厄米算符，因此：
+
+$$
+\bra{0}\phi_0(\vec{x}) = \bra{\vec{x}}
+$$
+
+### 2.3.2 时间依赖性
+
+在海森堡绘景中，算符随时间演化。
+
+$$
+a_p(t) = \mathrm{e}^{-\mathrm{i}\omega_p t}a_p,\quad
+a_p^\dag(t) = \mathrm{e}^{\mathrm{i}\omega_p t}a_p^\dag
+$$
+
+其中 $a_p,a_p^\dag $ 不依赖于时间。
+
+量子标量场：
+
+$$
+\phi_0(\vec{x},t)
+=\int \frac{\mathrm{d}^3\vec{p} }{\left(2\pi \right)^3 } \frac{1 }{\sqrt{2\omega_p} } \left(a_p\mathrm{e}^{-\mathrm{i}p\cdot x} + a_p^\dag \mathrm{e}^{\mathrm{i}p\cdot x} \right)
+$$
+
+其中，$p^\mu\equiv \left(\omega_p,\vec{p} \right),\omega_p=\left|\vec{p} \right|,p\cdot x = \omega_p t-\vec{p}\cdot\vec{x} $
+
+$$
+\begin{aligned}
+\left[H_0 , \phi_0(\vec{x},t) \right]
+&=\left[\int \frac{\mathrm{d}^3\vec{p} }{\left(2\pi \right)^3 }  \omega_p \left(a_p^\dag a_p + \frac{1 }{2 }  \right) , \int \frac{\mathrm{d}^3\vec{k} }{\left(2\pi \right)^3 } \frac{1 }{\sqrt{2\omega_k} } \left(a_k\mathrm{e}^{-\mathrm{i}k\cdot x} + a_k^\dag \mathrm{e}^{\mathrm{i}k\cdot x} \right) \right] \\
+&=\int \frac{\mathrm{d}^3\vec{p} }{\left(2\pi \right)^3 } \int \frac{\mathrm{d}^3\vec{k} }{\left(2\pi \right)^3 } \frac{\omega_p }{\sqrt{2\omega_k} } \left[ \blue{\left(a_p^\dag a_p + \frac{1 }{2 }  \right)} , \left(a_k\mathrm{e}^{-\mathrm{i}k\cdot x} + a_k^\dag \mathrm{e}^{\mathrm{i}k\cdot x} \right) \right] \\
+&=\int \frac{\mathrm{d}^3\vec{p} }{\left(2\pi \right)^3 } \int \frac{\mathrm{d}^3\vec{k} }{\left(2\pi \right)^3 } \frac{\omega_p }{\sqrt{2\omega_k} } \left[ \blue{a_p^\dag a_p} , \left(a_k\mathrm{e}^{-\mathrm{i}k\cdot x} + a_k^\dag \mathrm{e}^{\mathrm{i}k\cdot x} \right) \right] \\
+&=\int \frac{\mathrm{d}^3\vec{p} }{\left(2\pi \right)^3 } \int \frac{\mathrm{d}^3\vec{k} }{\left(2\pi \right)^3 } \frac{\omega_p }{\sqrt{2\omega_k} } \left\{\mathrm{e}^{-\mathrm{i}k\cdot x} \left[a_p^\dag a_p , a_k \right] + \mathrm{e}^{\mathrm{i}k\cdot x}\left[a_p^\dag a_p , a_k^\dag \right] \right\} \\
+&=\int \frac{\mathrm{d}^3\vec{p} }{\left(2\pi \right)^3 } \int \frac{\mathrm{d}^3\vec{k} }{\left(2\pi \right)^3 } \frac{\omega_p }{\sqrt{2\omega_k} } \left\{\mathrm{e}^{-\mathrm{i}k\cdot x} \left(a_p^\dag \left[a_p , a_k \right] + \left[a_p^\dag , a_k \right]a_p \right)  + \mathrm{e}^{\mathrm{i}k\cdot x}\left(a_p^\dag\left[a_p , a_k^\dag \right] + \left[a_p^\dag , a_k^\dag \right]a_k^\dag \right) \right\} \\
+&=\int \frac{\mathrm{d}^3\vec{p} }{\left(2\pi \right)^3 } \int \frac{\mathrm{d}^3\vec{k} }{\left(2\pi \right)^3 } \frac{\omega_p }{\sqrt{2\omega_k} } \left\{-\mathrm{e}^{-\mathrm{i}k\cdot x}\left(2\pi \right)^3\delta^3\left(\vec{k}-\vec{p} \right) a_p + \mathrm{e}^{\mathrm{i}k\cdot x} \left(2\pi \right)^3\delta^3\left(\vec{k}-\vec{p} \right)a_p^\dag \right\}  \\
+&=\int \frac{\mathrm{d}^3\vec{p} }{\left(2\pi \right)^3 } \frac{1 }{\sqrt{2\omega_p} } \left\{-\mathrm{e}^{-\mathrm{i}k\cdot x}a_p + \mathrm{e}^{\mathrm{i}k\cdot x}a_p^\dag \right\} \\
+&=-\mathrm{i}\partial_t \phi_0(\vec{x},t)
+\end{aligned}
+$$
+
+对于任何哈密顿量，量子场满足海森堡运动方程：
+
+$$
+\mathrm{i}\partial_t \phi(x) = \left[\phi , H \right]
+$$
+
+二次量子化理论的一次量子化极限来自于单粒子态，在非相对论极限下是合适的。这些态的基：
+
+$$
+\bra{x}=\bra{\vec{x},t}
+$$
+
+$$
+\bra{x}=\bra{0}\phi(\vec{x},t)
+$$
+
+薛定谔绘景下的波函数
+
+$$
+\psi(x)=\braket{x|\psi}
+$$
+
+$$
+\mathrm{i}\partial_t \psi(x)
+=\mathrm{i}\partial_t\braket{0|\phi(\vec{x},t)|\psi}
+=\mathrm{i}\braket{0|\partial_t\phi(\vec{x},t)|\psi}
+$$
+
+对于有质量粒子，自由量子场 $\phi_0(x) $ 满足
+
+$$
+\partial_t^2\phi_0 = \left(\nabla^2-m^2 \right)\phi_0
+$$
+
+有质量情况色散关系
+
+$$
+\omega_p = \sqrt{\vec{p}^2+m^2}
+$$
+
+$$
+\begin{aligned}
+\mathrm{i}\braket{0|\partial_t\phi(\vec{x},t)|\psi}
+&=\Braket{0|\int\frac{\mathrm{d}^3\vec{p} }{\left(2\pi \right)^3 }\frac{\sqrt{\vec{p}^2+m^2} }{\sqrt{2\omega_p} } \left(a_p\mathrm{e}^{-\mathrm{i}k\cdot x} - a_p^\dag\mathrm{e}^{\mathrm{i}k\cdot x} \right)|\psi } \\
+&=\Braket{0|\sqrt{m^2-\nabla^2}\phi_0(x)|\psi}
+\end{aligned}
+$$
+
+$$
+\mathrm{i}\partial_t \psi(x)
+=\sqrt{m^2-\nabla^2} \psi(x)
+=\left[m-\frac{\nabla^2 }{2m } +\mathcal{O}\left(\frac{1 }{m^2 }  \right) \right]\psi(x)
+$$
+
+非相对论极限
+
+$$
+\mathrm{i}\partial_t \psi(x)
+=-\frac{\nabla^2 }{2m } \psi(x)
+$$
+
+### 2.3.3 对易关系
+
+一个场在两个不同点的对易子：
+
+$$
+\begin{aligned}
+\left[\phi(\vec{x}) , \phi(\vec{y}) \right]
+&=\int\frac{\mathrm{d}^3\vec{p} }{\left(2\pi \right)^3 } \int \frac{\mathrm{d}^3\vec{q} }{\left(2\pi \right)^3 } \frac{1 }{\sqrt{2\omega_p 2\omega_q} } \left[\left(a_p\mathrm{e}^{\mathrm{i}\vec{p}\cdot\vec{x}} + a_p^\dag \mathrm{e}^{-\mathrm{i}\vec{p}\cdot\vec{x}} \right) , \left(a_q\mathrm{e}^{\mathrm{i}\vec{q}\cdot\vec{y}} + a_q^\dag \mathrm{e}^{-\mathrm{i}\vec{q}\cdot\vec{y}} \right)  \right] \\
+&=\int \frac{\mathrm{d}^3\vec{p} }{\left(2\pi \right)^3 } \frac{1 }{2\omega_p } \left(\mathrm{e}^{\mathrm{i}\vec{p}\cdot(\vec{x}-\vec{y})} - \mathrm{e}^{-\mathrm{i}\vec{p}\cdot(\vec{x}-\vec{y})} \right)
+\end{aligned}
+$$
 
 
