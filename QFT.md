@@ -529,6 +529,110 @@ $$
 \end{aligned}
 $$
 
+由于 $\omega_p=\sqrt{\vec{p}^2+m^2} $ 在 $\vec{p}\to-\vec{p} $ 下不变，因此：
+
+$$
+\left[\phi(\vec{x}) , \phi(\vec{y}) \right] = 0
+$$
+
+场对时间微分在 $t=0 $ 时刻：
+
+$$
+\pi(\vec{x})
+\equiv \partial_t \phi(x)\bigg|_{t=0}
+=-\mathrm{i}\int \frac{\mathrm{d}^3\vec{p} }{\left(2\pi \right)^3 } \sqrt{\frac{\omega_p }{2 } }\left(a_p\mathrm{e}^{\mathrm{i}\vec{p}\cdot\vec{x}} - a_p^\dag \mathrm{e}^{-\mathrm{i}\vec{p}\cdot\vec{x}} \right)
+$$
+
+计算：
+
+$$
+\begin{aligned}
+[\phi(\vec{x}) , \pi(\vec{y})]
+&=\frac{\mathrm{i} }{2 } \int \frac{\mathrm{d}^3\vec{p} }{\left(2\pi \right)^3 } \left[\mathrm{e}^{\mathrm{i}\vec{p}\cdot(\vec{x}-\vec{y})} + \mathrm{e}^{-\mathrm{i}\vec{p}\cdot(\vec{x}-\vec{y})} \right] \\
+&=\mathrm{i}\delta^3\left(\vec{x}-\vec{y} \right)
+\end{aligned}
+$$
+
+# 3 经典场论
+
+$$
+H = \int\mathrm{d}^3 x \mathcal{H},\quad
+L = \int\mathrm{d}^3 x \mathcal{L}
+$$
+
+哈密顿量（密度）是场和共轭动量的泛函 $\mathcal{H}\left[\phi,\pi \right] $，拉格朗日量（密度）是哈密顿量（密度）的勒让德变换：
+
+$$
+\mathcal{L}\left[\phi,\dot{\phi} \right]
+=\pi\left[\phi,\dot{\phi} \right] \dot{\phi} - \mathcal{H}\left[\phi,\pi\left[\phi,\dot{\phi} \right] \right]
+$$
+
+其中 $\dot{\phi}=\partial_t\phi $，$\pi\left[\phi,\dot{\phi} \right] $ 由 $\partial \mathcal{H}\left[\phi,\pi \right]/\partial\pi = \dot{\phi} $ 隐式定义。
+
+逆变换：
+
+$$
+\mathcal{H}\left[\phi,\pi \right]
+=\pi \dot{\phi}\left[\phi,\pi \right] - \mathcal{L}\left[\phi,\dot{\phi}\left[\phi,\pi \right] \right]
+$$
+
+其中 $\dot{\pi}\left[\phi,\pi \right] $ 由 $\partial\mathcal{L}\left[\phi,\dot{\phi} \right]/\partial\dot{\phi}=\pi $ 隐式定义。
+
+考虑：
+
+$$
+\mathcal{L}
+=\frac{1 }{2 } \left(\partial_\mu\phi \right)\left(\partial_\mu\phi \right) - \mathcal{V}\left[\phi \right]
+=\frac{1 }{2 } \dot{\phi}^2 - \frac{1 }{2 } \left(\nabla\phi \right)^2 - \mathcal{V}\left[\phi \right]
+$$
+
+其中 $\mathcal{V}[\phi] $ 为势（密度）。
+
+$$
+\pi
+=\frac{\partial\mathcal{L} }{\partial\dot{\phi} } 
+=\dot{\phi}
+$$
+
+$$
+\dot{\phi}\left[\phi,\pi \right] = \pi
+$$
+
+$$
+\mathcal{H}
+=\pi\dot{\phi}\left[\phi,\pi \right] - \mathcal{L}\left[\phi,\dot{\phi}\left[\phi,\pi \right] \right]
+=\frac{1 }{2 } \pi^2 + \frac{1 }{2 } \left(\nabla \phi \right)^2 + \mathcal{V}[\phi]
+$$
+
+$$
+\mathcal{H} = \mathcal{K}  +\mathcal{V}
+$$
+
+$$
+\mathcal{L} = \mathcal{K} - \mathcal{V}
+$$
+
+哈密顿量不是洛伦兹不变量。
+
+动能项是双线性的。
+
+相互作用项包含3个及以上的场。
+
+## 3.2 欧拉-拉格朗日方程
+
+作用量：
+
+$$
+S
+=\int \mathrm{d}t L
+=\int\mathrm{d}^4 x \mathcal{L}(x)
+$$
+
+
+
+
+
+
 
 
 
