@@ -350,33 +350,419 @@ $$
 
 > 证明在广义坐标变换下，$V_\mu^\mu $ 是标量，$V_{\mu\mu} $ 不是。在广义 Lorentz 变换下，$V_{\mu\mu} $ 是标量。
 
+在广义坐标变换 $x^\mu\to x'^\mu $ 下，
+
+$$
+V'^\mu_\nu
+=\frac{\partial x'^\mu }{\partial x^\alpha } \frac{\partial x^\beta }{\partial x'^\nu } V^\alpha_\beta
+$$
+
+$$
+V'^\mu_\mu
+=\frac{\partial x'^\mu }{\partial x^\alpha } \frac{\partial x^\beta }{\partial x'^\mu } V^\alpha_\beta
+=\frac{\partial x^\beta }{\partial x^\alpha } V^\alpha_\beta
+=\delta^\beta_\alpha V^\alpha_\beta
+=V^\alpha_\alpha
+$$
+
+即 $V^\mu_\mu $ 是标量。
+
+$$
+V'_{\mu\nu}
+=\frac{\partial x^\alpha }{\partial x'^\mu } \frac{\partial x^\beta }{\partial x'^\nu } V_{\alpha\beta}
+$$
+
+$$
+V'_{\mu\mu}
+=\frac{\partial x^\alpha }{\partial x'^\mu } \frac{\partial x^\beta }{\partial x'^\mu } V_{\alpha\beta}
+\ne V_{\mu\mu}
+$$
+
+即 $V_{\mu\mu} $ 不是标量。
+
+在广义洛伦兹变换 $x^\mu\to x'^\mu=A^\mu_\nu x^\nu + b^\mu $ 下，
+
+$$
+V'_{\mu\mu}
+=\frac{\partial x^\alpha }{\partial x'^\mu } \frac{\partial x^\beta }{\partial x'^\mu } V_{\alpha\beta}
+=A^\mu_\alpha A^\mu_\beta V_{\alpha\beta}
+=\delta_{\alpha\beta}V_{\alpha\beta}
+=V_{\alpha\alpha}
+$$
+
+即 $V_{\mu\mu} $ 是标量。
+
 ### 2-1-6
 
 > 证明在 $\tau $ 变换下，$\tilde{\phi}'(x')=-\tilde{\phi}(x). $
+
+赝标量：
+
+$$
+\tilde{\phi}
+=\frac{1 }{4! } \varepsilon_{\alpha\beta\gamma\delta}\phi_{\alpha\beta\gamma\delta}
+$$
+
+对于广义洛伦兹变换，赝标量的变换规律为：
+
+$$
+\begin{aligned}
+\tilde{\phi}'(x')
+&=\frac{1 }{4! } \varepsilon_{\alpha\beta\gamma\delta}\phi'_{\alpha\beta\gamma\delta} \\
+&=\frac{1 }{4! } \varepsilon_{\alpha\beta\gamma\delta}A_{\alpha\mu}A_{\beta\nu}A_{\gamma\lambda}A_{\delta\rho}\phi_{\mu\nu\lambda\rho} \\
+&=\frac{1 }{4! } \varepsilon_{\mu\nu\lambda\rho}\left|A \right|\phi_{\mu\nu\lambda\rho} \\
+&=\left|A \right|\tilde{\phi}(x)
+\end{aligned}
+$$
+
+特别地，对于 $\tau $ 变换，$\left|\tau \right|=-1 $，因此：
+
+$$
+\tilde{\phi}'(x')
+=\left|\tau \right|\tilde{\phi}(x)
+=-\tilde{\phi}(x)
+$$
 
 ### 2-1-7
 
 > 证明方程 $A_\mu-\partial_\mu\partial_\nu A_\nu=0 $ 是 Lorentz 协变的。
 
+在 $x' $ 系方程为：
+
+$$
+A'_\mu - \partial'_\mu\partial'_\nu A'_\nu = 0
+$$
+
+这里为了避免混乱，把广义洛伦兹变换矩阵记为 $\Lambda_{\alpha\beta} $
+
+$A_\mu,\partial_\mu $ 分别服从矢量变换规律：
+
+$$
+A'_\mu = \Lambda_{\mu\alpha}A_\alpha,\quad
+\partial'_\mu = \Lambda_{\mu\beta}\partial_\beta
+$$
+
+$x' $ 系中的方程可化为：
+
+$$
+\Lambda_{\mu\alpha}A_\alpha-\Lambda_{\mu\beta}\partial_\beta\Lambda_{\nu\gamma}\partial_\gamma\Lambda_{\nu\rho}A_\rho = 0
+$$
+
+即：
+
+$$
+\begin{aligned}
+0
+&=\Lambda_{\mu\alpha}A_\alpha-\Lambda_{\mu\beta}\partial_\beta\Lambda_{\nu\gamma}\partial_\gamma\Lambda_{\nu\rho}A_\rho \\
+&=\Lambda_{\mu\alpha}A_\alpha-\Lambda_{\mu\beta}\delta_{\gamma\rho}\partial_\beta\partial_\gamma A_\rho \\
+&=\Lambda_{\mu\alpha}A_\alpha-\Lambda_{\mu\beta}\partial_\beta\partial_\rho A_\rho \\
+\end{aligned}
+$$
+
+方程左右两边同乘 $\Lambda_{\mu\lambda} $ 得：
+
+$$
+\begin{aligned}
+0
+&=\Lambda_{\mu\lambda}\Lambda_{\mu\alpha}A_\alpha-\Lambda_{\mu\lambda}\Lambda_{\mu\beta}\partial_\beta\partial_\rho A_\rho \\
+&=\delta_{\lambda\alpha}A_\alpha - \delta_{\lambda\beta}\partial_\beta\partial_\rho A_\rho \\
+&=A_\lambda - \partial_\lambda\partial_\rho A_\rho
+\end{aligned}
+$$
+
+可见，在 Lorentz 变换下，方程
+
+$$
+A'_\mu - \partial'_\mu\partial'_\nu A'_\nu = 0
+$$
+
+等价于方程
+
+$$
+A_\lambda - \partial_\lambda\partial_\rho A_\rho = 0
+$$
+
+即方程 $A_\mu-\partial_\mu\partial_\nu A_\nu=0 $ 是 Lorentz 协变的。
+
 ### 2-1-8
 
 > 讨论 K-G 方程中负几率困难。
+
+自然单位制下 K-G 方程为：
+
+$$
+\left(\square-m_0^2 \right)\phi(x) = 0
+$$
+
+复共轭为：
+
+$$
+\left(\square-m_0^2 \right)\phi^*(x) = 0
+$$
+
+第一条方程乘 $\phi^*(x) $ 减去第二条方程乘 $\phi(x) $ 得：
+
+$$
+\phi^*(x)\square\phi(x) - \phi(x)\square\phi^*(x) = 0
+$$
+
+即：
+
+$$
+\phi^*(x)\partial_\mu\partial_\mu\phi(x) - \phi(x)\partial_\mu\partial_\mu\phi^*(x) = 0
+$$
+
+注意到：
+
+$$
+\phi^*(x)\partial_\mu\partial_\mu\phi(x)
+=\partial_\mu\left[\phi^*(x)\partial_\mu\phi(x) \right] - \left[\partial_\mu\phi^*(x) \right]\left[\partial_\mu\phi(x) \right]
+$$
+
+$$
+\phi(x)\partial_\mu\partial_\mu\phi^*(x)
+=\partial_\mu\left[\phi(x)\partial_\mu\phi^*(x) \right] - \left[\partial_\mu\phi(x) \right]\left[\partial_\mu\phi^*(x) \right]
+$$
+
+则方程化为：
+
+$$
+\partial_\mu\left[\phi^*(x)\partial_\mu\phi(x) - \phi(x)\partial_\mu\phi^*(x) \right]
+=0
+$$
+
+定义四维流密度为：
+
+$$
+j_\mu
+=\left(\vec{j} , \mathrm{i}\rho \right)
+=-\frac{\mathrm{i} }{2m } \left[\phi^*(x)\partial_\mu\phi(x) - \phi(x)\partial_\mu\phi^*(x) \right]
+$$
+
+则连续性方程为：
+
+$$
+\partial_\mu j_\mu = 0
+$$
+
+$\vec{j} $ 和 $\rho $ 分别为：
+
+$$
+\vec{j}
+=-\frac{\mathrm{i} }{2m } \left[\phi^*(x)\nabla\phi(x)-\phi(x)\nabla\phi^*(x) \right]
+$$
+
+$$
+\rho
+=\frac{\mathrm{i} }{2m } \left[\phi^*(x)\partial_t\phi(x)-\phi(x)\partial_t\phi^*(x) \right]
+$$
+
+连续性方程可用 $\vec{j},\rho $ 表达为：
+
+$$
+\frac{\partial \rho }{\partial t } + \nabla\cdot\vec{j} = 0
+$$
+
+考虑 K-G 方程的平面波解，设
+
+$$
+\phi(x)
+=\mathrm{e}^{\mathrm{i}(Et-\vec{p}\cdot\vec{x})}
+$$
+
+代入 K-G 方程可得：
+
+$$
+E = \pm\sqrt{\vec{p}^2+m_0^2}
+$$
+
+此时 $\rho $ 为：
+
+$$
+\rho
+=\frac{\mathrm{i} }{2m } \left[\phi^*(x)\partial_t\phi(x)-\phi(x)\partial_t\phi^*(x) \right]
+=-\frac{E }{m_0 } 
+$$
+
+由于 $E = \pm\sqrt{\vec{p}^2+m_0^2} $ 可正可负，因此 $\rho $ 可取负值。
 
 ### 2-1-9
 
 > 说明 K-G 方程中负几率密度 $\rho=-\mathrm{i}j_4(x) $ 为实数。
 
+2-1-8 给出：
+
+$$
+\rho
+=\frac{\mathrm{i} }{2m } \left[\phi^*(x)\partial_t\phi(x)-\phi(x)\partial_t\phi^*(x) \right]
+$$
+
+考虑 K-G 方程的平面波解，则
+
+$$
+\rho
+=\frac{\mathrm{i} }{2m } \left[\phi^*(x)\partial_t\phi(x)-\phi(x)\partial_t\phi^*(x) \right]
+=-\frac{E }{m_0 } 
+$$
+
+由于 $E,m_0 $ 都是实数，则 $\rho $ 也是实数。
+
 ## 2-2
 
 > 设 $\phi_{\mu\nu}(z) $ 为二阶反对称张量，则赝张量的定义为 $\tilde{\phi}_{\mu\nu}=\frac{1 }{2! } \varepsilon_{\mu\nu\lambda\rho}\phi_{\lambda\rho} $，证明它具有变换规律 $\tilde{\phi}'_{\mu\nu}(x')=\left|A \right|A_{\mu\alpha}A_{\nu\beta}\tilde{\phi}_{\alpha\beta}(x) $
+
+$$
+\begin{aligned}
+\tilde{\phi}_{\mu\nu}'(x')
+&=\frac{1 }{2! } \varepsilon_{\mu\nu\lambda\rho}\phi'_{\lambda\rho} \\
+&=\frac{1 }{2! } \varepsilon_{\mu\nu\lambda\rho} A_{\lambda\alpha}A_{\rho\beta}\phi_{\alpha\beta} \\
+&=\frac{1 }{2! } \delta_{\mu\gamma}\delta_{\nu\sigma} \varepsilon_{\gamma\sigma\lambda\rho} A_{\lambda\alpha}A_{\rho\beta}\phi_{\alpha\beta} \\
+&=\frac{1 }{2! } A_{\mu\xi}A_{\gamma\xi}A_{\nu\zeta}A_{\sigma\zeta} \varepsilon_{\gamma\sigma\lambda\rho} A_{\lambda\alpha}A_{\rho\beta}\phi_{\alpha\beta} \\
+&=\frac{1 }{2! } A_{\mu\xi}A_{\nu\zeta}\left(\varepsilon_{\gamma\sigma\lambda\rho}A_{\gamma\xi}A_{\sigma\zeta}  A_{\lambda\alpha}A_{\rho\beta} \right)\phi_{\alpha\beta} \\
+&= A_{\mu\xi}A_{\nu\zeta}\varepsilon_{\xi\zeta\alpha\beta}\left|A \right|\phi_{\alpha\beta} \\
+&=\frac{1 }{2! } \left|A \right| A_{\mu\xi}A_{\nu\zeta} \left(\frac{1 }{2! }\varepsilon_{\xi\zeta\alpha\beta}\phi_{\alpha\beta} \right) \\
+&=\left|A \right| A_{\mu\xi}A_{\nu\zeta} \tilde{\phi}_{\xi\zeta} \\
+&=\left|A \right|A_{\mu\alpha}A_{\nu\beta}\tilde{\phi}_{\alpha\beta}(x)
+\end{aligned}
+$$
 
 ## 2-3
 
 > 请证明广义洛伦兹变换 $X'=AX+b $ 和庞加莱变换 $X'=aX+b $ 分别构成群。
 
+### 广义洛伦兹变换群
+
+$$
+X'=AX+b
+$$
+
+若定义抽象算符 $g(A,b) $ 满足：
+
+$$
+g(A,b) X = AX+b
+$$
+
+则可证明 $g(A,b) $ 具有群的性质：
+
+（1）恒元：
+
+$$
+g(I,0)X=IX=X\Longrightarrow e=g(I,0)
+$$
+
+（2）封闭性：
+
+$$
+g(A',b')g(A,b) X 
+=g(A',b')\left(AX+b \right)
+=A'AX + A'b + b
+=g(A'A,A'b+b) X
+$$
+
+（3）结合律：
+
+$$
+\left[g(A_3,b_3)g(A_2,b_2)\right]g(A_1,b_1) X
+=g(A_3,b_3)\left[g(A_2,b_2)g(A_1,b_1)\right] X
+$$
+
+（4）逆元：
+
+$$
+g\left(A^{-1},-A^{-1}b \right) g(A,b) X
+=g\left(A^{-1},-A^{-1}b \right)\left(AX+b \right)
+=X+A^{-1}b-A^{-1}b
+=X
+$$
+
+$$
+g^{-1}(A,b) = g\left(A^{-1},-A^{-1}b \right)
+$$
+
+### 庞加莱变换群
+
+$$
+X'=aX+b
+$$
+
+若定义抽象算符 $g(a,b) $ 满足：
+
+$$
+g(a,b) X = aX+b
+$$
+
+则可证明 $g(A,b) $ 具有群的性质：
+
+（1）恒元：
+
+$$
+g(I,0)X=IX=X\Longrightarrow e=g(I,0)
+$$
+
+（2）封闭性：
+
+$$
+g(a',b')g(a,b) X 
+=g(a',b')\left(aX+b \right)
+=a'aX + a'b + b
+=g(a'a,a'b+b) X
+$$
+
+（3）结合律：
+
+$$
+\left[g(a_3,b_3)g(a_2,b_2)\right]g(a_1,b_1) X
+=g(a_3,b_3)\left[g(a_2,b_2)g(a_1,b_1)\right] X
+$$
+
+（4）逆元：
+
+$$
+g\left(a^{-1},-a^{-1}b \right) g(a,b) X
+=g\left(a^{-1},-a^{-1}b \right)\left(aX+b \right)
+=X+a^{-1}b-a^{-1}b
+=X
+$$
+
+$$
+g^{-1}(a,b) = g\left(a^{-1},-a^{-1}b \right)
+$$
+
 ## 2-4
 
 > 证明闵氏时空 $\left(x^1,x^2,x^3,x^4 \right) $ 坐标系及 $\mathrm{diag}(-1,-1,-1,-1) $ 度规下的 Klein-Gordon 方程 $\displaystyle{\square \phi(x)-\left(\frac{m_0 c }{\hbar }  \right)^2\phi(x)=0 }$  的广义 Lorentz 变换的协变性。
+
+在自然单位制下，$x' $ 系中 K-G 方程为：
+
+$$
+\square'\phi'(x') - m_0^2\phi'(x') = 0
+$$
+
+注意到：
+
+$$
+\square'
+=\partial'_\mu\partial'_\mu
+=A_{\mu\alpha}\partial_\alpha A_{\mu\beta}\partial_\beta
+=\delta_{\alpha\beta}\partial_\alpha\partial_\beta
+=\partial_\alpha\partial_\alpha
+=\square 
+$$
+
+并要求 $\phi $ 是个标量：
+
+$$
+\phi'(x')
+=\phi(x)
+$$
+
+则 $x' $ 中 K-G 方程等价于：
+
+$$
+\square\phi(x) - m_0^2\phi(x) = 0
+$$
+
+因此 K-G 方程具有广义 Lorentz 变换的协变性。
 
 ## 2-5
 
