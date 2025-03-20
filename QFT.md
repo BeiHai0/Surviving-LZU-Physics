@@ -628,6 +628,100 @@ S
 =\int\mathrm{d}^4 x \mathcal{L}(x)
 $$
 
+$$
+\begin{aligned}
+\delta S
+&=\int\mathrm{d}^4 x\left[\frac{\partial \mathcal{L} }{\partial \phi } \delta\phi + \frac{\partial\mathcal{L} }{\partial\left(\partial_\mu\phi \right) } \delta\left(\partial_\mu\phi \right) \right] \\
+&=\int\mathrm{d}^4 x \left\{\left[\frac{\partial\mathcal{L} }{\partial\phi } -\partial_\mu\frac{\partial\mathcal{L} }{\partial\left(\partial_\mu\phi \right) }  \right]\delta\phi + \partial_\mu\left[\frac{\partial\mathcal{L} }{\partial\left(\partial_\mu\phi \right) } \delta\phi \right] \right\}
+\end{aligned}
+$$
+
+$$
+\frac{\partial\mathcal{L} }{\partial\phi } - \partial_\mu\frac{\partial\mathcal{L} }{\partial\left(\partial_\mu\phi \right) } 
+=0
+$$
+
+若
+
+$$
+\mathcal{L}
+=\frac{1 }{2 } \left(\partial_\mu\phi \right)\left(\partial_\mu\phi \right) - \frac{1 }{2 } m^2\phi^2
+$$
+
+则运动方程为：
+
+$$
+\left(\square + m^2 \right)\phi = 0
+$$
+
+其中
+
+$$
+\square\equiv \partial_\mu^2
+$$
+
+## 3.3 诺特定理
+
+考虑如下拉式量
+
+$$
+\mathcal{L}
+=\left|\partial_\mu\phi \right|^2 - m^2\left|\phi \right|^2
+=\left(\partial_\mu\phi \right)\left(\partial_\mu\phi^* \right) - m^2\phi\phi^*
+$$
+
+此拉式量在变换 $\phi\to \phi'=\mathrm{e}^{-\mathrm{i}\alpha}\phi $ 下不变。这个变换是拉式量的一种对称变换。
+
+假设拉式量具有一种依赖于参量 $\alpha $ 的对称性，即
+
+$$
+0
+=\frac{\delta\mathcal{L} }{\delta \alpha } 
+=\sum_{n}\left\{\left[\frac{\partial\mathcal{L} }{\partial\phi_n } -\partial_\mu\frac{\partial\mathcal{L} }{\partial\left(\partial_\mu\phi_n \right) } \right]\frac{\delta\phi_n }{\delta\alpha }  + \partial_\mu\left[\frac{\partial\mathcal{L} }{\partial\left(\partial_\mu\phi_n \right) } \frac{\delta\phi_n }{\delta\alpha }  \right]  \right\}
+$$
+
+当运动方程得以满足，则上式化简为：
+
+$$
+\partial_\mu J_\mu = 0,\quad
+J_\mu\equiv \sum_{n} \frac{\partial\mathcal{L} }{\partial\left(\partial_\mu\phi_n \right) } \frac{\delta\phi_n }{\delta\alpha } 
+$$
+
+$J_\mu $ 称为诺特流。
+
+满足 $\partial_\mu J_\mu $ 的矢量场 $J_\mu $ 称为守恒流。
+
+总荷 $Q $ 定义为
+
+$$
+Q
+\equiv \int \mathrm{d}^3\vec{x} J_0
+$$
+
+满足
+
+$$
+\partial_t Q
+=\int\mathrm{d}^3\vec{x} \partial_t J_0
+=\int\mathrm{d}^3\vec{x} \nabla\cdot\vec{J}
+=0
+$$
+
+最后一步假设 $\vec{J} $ 在边界上为零。
+
+诺特定理：若拉式量存在一种连续对称性，则存在一种当运动方程得到满足时与对称性相联系的守恒流。
+
+### 3.3.1 能量-动量张量
+
+### 3.3.2 流
+
+## 3.4 库仑定律
+
+### 3.4.1 傅里叶变换
+
+### 3.4.2 库仑势
+
+## 3.5 格林函数
 
 
 
