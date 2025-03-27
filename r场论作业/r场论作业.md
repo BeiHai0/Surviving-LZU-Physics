@@ -816,5 +816,235 @@ $$
 A^\mu_\lambda A^\nu_\lambda = \delta^{\mu\nu}
 $$
 
+# 3
 
+## 3-1
+
+### 3-1-1
+
+> 由 $\gamma_i=-\mathrm{i}\beta\alpha_i \Longrightarrow \alpha_i=\mathrm{i}\beta\gamma_i $
+
+### 3-1-2
+
+> 利用 Pauli 矩阵，写出 Dirac-Pauli 表象中 $\gamma_\mu $ 矩阵以及 $\gamma_5,C=\mathrm{i}\gamma_2\gamma_4 $ 的具体形式。
+
+### 3-1-3
+
+定义
+
+$$
+\sigma_i
+=\begin{bmatrix}
+\sigma^0_i &0 \\
+0 &\sigma^0_i
+\end{bmatrix}
+=\frac{1 }{\mathrm{i} } \varepsilon_{ijk}\gamma_j\gamma_k
+$$
+
+证明：
+
+$$
+\sigma_i\sigma_j + \sigma_j\sigma_i = 2\delta_{ij} I
+$$
+
+$$
+\gamma_i\gamma_j = \sigma_i\sigma_j = \delta_{ij} + \mathrm{i} \varepsilon_{ijk}\sigma_k
+$$
+
+$$
+\sigma_1\sigma_2 = \mathrm{i}\sigma_3
+$$
+
+$$
+\sigma_2\sigma_3 = \mathrm{i}\sigma_1
+$$
+
+$$
+\sigma_3\sigma_1 = \mathrm{i}\sigma_2
+$$
+
+$$
+\vec{\sigma} = -\vec{\alpha}\gamma_5
+$$
+
+### 3-1-4
+
+> 已知 $H=\vec{\alpha}\cdot\vec{p} + \beta m,\vec{L}=\vec{r}\times \vec{p} $，证明：$\left[H,\vec{L} \right] = \mathrm{i}\vec{p}\times \vec{\alpha},\left[H,\vec{\sigma} \right]=2\mathrm{i}\vec{\alpha}\times\vec{p} $
+
+### 3-1-5
+
+> 证明 $\vec{\sigma} $ 的本征值为 $+1,-1 .$
+
+### 3-1-6
+
+> 证明有电磁场存在时，Dirac 方程是 Lorentz 协变的。
+
+### 3-1-7
+
+> 证明 $\bar{\psi}\gamma_\mu\gamma_5\psi $ 是 Lorentz 赝矢量。
+
+### 3-1-8
+
+> 利用 $u_a(\vec{p}) $ 的正交完备性，证明 $u_a(\vec{p}') $ 的正交完备性（空间反射变换）。
+
+### 3-2
+
+> 证明：$\mathrm{Tr}\left(\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho\gamma_5 \right)=4\varepsilon_{\mu\nu\lambda\rho},\mathrm{Tr}\left(\gamma_\mu\gamma_\nu\gamma_5 \right)=0. $
+
+### $\mathrm{Tr}\left(\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho\gamma_5 \right)=4\varepsilon_{\mu\nu\lambda\rho} $
+
+### $\mathrm{Tr}\left(\gamma_\mu\gamma_\nu\gamma_5 \right)=0 $
+
+一方面，求迹有性质 $\mathrm{Tr}(ABC)=\mathrm{Tr}(BCA) $，因此：
+
+$$
+\mathrm{Tr}\left(\gamma_\mu\gamma_\nu\gamma_5 \right)
+=\mathrm{Tr}\left(\gamma_5\gamma_\mu\gamma_\nu \right)
+$$
+
+另一方面，由于 $\gamma_\mu \gamma_5 + \gamma_5 \gamma_\mu = 0 $，因此：
+
+$$
+\mathrm{Tr}\left(\gamma_\mu\gamma_\nu\gamma_5 \right)
+=-\mathrm{Tr}\left(\gamma_\mu\gamma_5\gamma_\nu \right)
+=
+$$
+
+### 3-3
+
+> 已知 $\gamma_5\equiv \gamma_1\gamma_2\gamma_3\gamma_4 $，证明：$\displaystyle{\gamma_5=\frac{1 }{4! } \varepsilon_{\mu\nu\alpha\beta}\gamma_\mu\gamma_\nu\gamma_\alpha\gamma_\beta }$ 
+
+$$
+\gamma_5
+\equiv \gamma_1 \gamma_2 \gamma_3 \gamma_4
+$$
+
+上式两边同乘 $\varepsilon_{\mu\nu\lambda\rho} $：
+
+$$
+\begin{aligned}
+\varepsilon_{\mu\nu\lambda\rho}\gamma_5
+&=\varepsilon_{\mu\nu\lambda\rho} \gamma_1 \gamma_2 \gamma_3 \gamma_4 \\
+&=\gamma_\mu \gamma_\nu \gamma_\lambda \gamma_\rho \\
+\end{aligned}
+$$
+
+上式继续两边同乘 $\varepsilon_{\mu\nu\lambda\rho} $：
+
+$$
+\varepsilon_{\mu\nu\lambda\rho}\varepsilon_{\mu\nu\lambda\rho}\gamma_5
+=\varepsilon_{\mu\nu\lambda\rho} \gamma_\mu \gamma_\nu \gamma_\lambda \gamma_\rho
+$$
+
+利用 $\varepsilon_{\mu\nu\lambda\rho}\varepsilon_{\mu\nu\lambda\rho}=4! $：
+
+$$
+4! \gamma_5
+=\varepsilon_{\mu\nu\lambda\rho} \gamma_\mu \gamma_\nu \gamma_\lambda \gamma_\rho
+$$
+
+即：
+
+$$
+\gamma_5
+=\frac{1 }{4! } \varepsilon_{\mu\nu\lambda\rho}  \gamma_\mu \gamma_\nu \gamma_\lambda \gamma_\rho
+$$
+
+### 3-4
+
+> 证明正反粒子单位旋量正交关系：
+
+$$
+\bar{u}_i(\vec{p})u_j(\vec{p}) = \frac{m }{E } \delta_{ij}
+$$
+
+$$
+\bar{v}_i(\vec{p})v_j(\vec{p}) = -\frac{m }{E } \delta_{ij}
+$$
+
+$$
+\bar{u}_i(\vec{p})v_j(\vec{p}) = 0
+$$
+
+$$
+\bar{v}_j(\vec{p})u_j(\vec{p}) = 0
+$$
+
+### 3-5
+
+证明任何共轭旋量 $\bar{f}=f^\dag(p)\gamma_4 $ 可用 $\bar{u}_i $ 和 $\bar{v}_i $ 展开
+
+$$
+\bar{f}(p)
+=a_i'\bar{u}_i(\vec{p}) + b_i'\bar{v}_i(\vec{p})
+$$
+
+其中
+
+$$
+a_i'=\frac{E }{m } \bar{f}(p)u_i(\vec{p})
+$$
+
+$$
+b_i'=-\frac{E }{m } \bar{f}(p)v_i(\vec{p})
+$$
+
+### 3-6
+
+证明正反粒子单位旋量正交关系
+
+$$
+u_i^\dag(\vec{p})u_j(\vec{p}) = \delta_{ij}
+$$
+
+$$
+v_i^\dag(\vec{p})v_j(\vec{p}) = \delta_{ij}
+$$
+
+$$
+u_i^\dag(\vec{p})v_j(-\vec{p}) = 0
+$$
+
+$$
+v_i^\dag(-\vec{p})u_j(\vec{p}) = 0
+$$
+
+$$
+u_i^\dag(-\vec{p})v_j(\vec{p}) = 0
+$$
+
+$$
+v_i^\dag(\vec{p})u_j(-\vec{p}) = 0
+$$
+
+### 3-7
+
+利用
+
+$$
+\bar{\psi}'\gamma_\alpha\gamma_\beta\cdots\gamma_\gamma\psi'
+=kA_{\alpha\mu}A_{\beta\nu}\cdots A_{\gamma\rho}\bar{\psi}\gamma_\mu\gamma_\nu \cdots \gamma_\rho \psi 
+$$
+
+$$
+k=\left\{
+\begin{aligned}
++1,\Lambda=S,P \\
+-1,\Lambda=T
+\end{aligned}
+\right.
+$$
+
+$$
+\bar{\psi}\gamma_5\psi
+=\frac{1 }{4! } \varepsilon_{\alpha\beta\gamma\delta}\bar{\psi}\gamma_\alpha \gamma_\beta \gamma_\gamma \gamma_\delta \psi
+$$
+
+导出，对于 $S $ 和 $P $ 变换
+
+$\bar{\psi}\gamma_5\psi $ 是赝标量，$\bar{\psi}\gamma_\mu\gamma_5\psi $ 是赝矢量，$\bar{\psi}\gamma_\mu\gamma_\nu\gamma_5\psi $ 是赝张量。
+
+### 3-8
+
+> 假设无质量费米子的波函数为 $\varphi=(1-\gamma_5)\psi $，证明：无质量费米子的自旋方向永远沿运动方向；无质量费米子的自旋方向永远与运动方向相反。
 
