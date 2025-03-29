@@ -824,6 +824,42 @@ $$
 
 > 由 $\gamma_i=-\mathrm{i}\beta\alpha_i \Longrightarrow \alpha_i=\mathrm{i}\beta\gamma_i $
 
+$\alpha_i,\beta $ 满足：
+
+$$
+\alpha_i\alpha_j+\alpha_j\alpha_i = 2\delta_{ij} I,\quad i,j=1,2,3
+$$
+
+$$
+\alpha_i\beta + \beta\alpha_i = 0
+$$
+
+$$
+\beta^2 = I
+$$
+
+考虑：
+
+$$
+\gamma_i=-\mathrm{i}\beta\alpha_i
+$$
+
+上式左乘 $\beta $ 得：
+
+$$
+\beta\gamma_i
+=-\mathrm{i}\beta^2\alpha_i
+=-\mathrm{i}\alpha_i
+$$
+
+因此：
+
+$$
+\alpha_i
+=\frac{\beta\gamma_i }{-\mathrm{i} } 
+=\mathrm{i}\beta\gamma_i
+$$
+
 ### 3-1-2
 
 > 利用 Pauli 矩阵，写出 Dirac-Pauli 表象中 $\gamma_\mu $ 矩阵以及 $\gamma_5,C=\mathrm{i}\gamma_2\gamma_4 $ 的具体形式。
@@ -865,6 +901,14 @@ $$
 
 $$
 \vec{\sigma} = -\vec{\alpha}\gamma_5
+$$
+
+#### 证明
+
+$$
+\begin{aligned}
+
+\end{aligned}
 $$
 
 ### 3-1-4
