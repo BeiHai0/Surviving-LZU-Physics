@@ -824,6 +824,42 @@ $$
 
 > 由 $\gamma_i=-\mathrm{i}\beta\alpha_i \Longrightarrow \alpha_i=\mathrm{i}\beta\gamma_i $
 
+$\alpha_i,\beta $ 满足：
+
+$$
+\alpha_i\alpha_j+\alpha_j\alpha_i = 2\delta_{ij} I,\quad i,j=1,2,3
+$$
+
+$$
+\alpha_i\beta + \beta\alpha_i = 0
+$$
+
+$$
+\beta^2 = I
+$$
+
+考虑：
+
+$$
+\gamma_i=-\mathrm{i}\beta\alpha_i
+$$
+
+上式左乘 $\beta $ 得：
+
+$$
+\beta\gamma_i
+=-\mathrm{i}\beta^2\alpha_i
+=-\mathrm{i}\alpha_i
+$$
+
+因此：
+
+$$
+\alpha_i
+=\frac{\beta\gamma_i }{-\mathrm{i} } 
+=\mathrm{i}\beta\gamma_i
+$$
+
 ### 3-1-2
 
 > 利用 Pauli 矩阵，写出 Dirac-Pauli 表象中 $\gamma_\mu $ 矩阵以及 $\gamma_5,C=\mathrm{i}\gamma_2\gamma_4 $ 的具体形式。
@@ -867,6 +903,14 @@ $$
 \vec{\sigma} = -\vec{\alpha}\gamma_5
 $$
 
+#### 证明
+
+$$
+\begin{aligned}
+
+\end{aligned}
+$$
+
 ### 3-1-4
 
 > 已知 $H=\vec{\alpha}\cdot\vec{p} + \beta m,\vec{L}=\vec{r}\times \vec{p} $，证明：$\left[H,\vec{L} \right] = \mathrm{i}\vec{p}\times \vec{\alpha},\left[H,\vec{\sigma} \right]=2\mathrm{i}\vec{\alpha}\times\vec{p} $
@@ -891,23 +935,50 @@ $$
 
 > 证明：$\mathrm{Tr}\left(\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho\gamma_5 \right)=4\varepsilon_{\mu\nu\lambda\rho},\mathrm{Tr}\left(\gamma_\mu\gamma_\nu\gamma_5 \right)=0. $
 
-### $\mathrm{Tr}\left(\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho\gamma_5 \right)=4\varepsilon_{\mu\nu\lambda\rho} $
-
-### $\mathrm{Tr}\left(\gamma_\mu\gamma_\nu\gamma_5 \right)=0 $
-
-一方面，求迹有性质 $\mathrm{Tr}(ABC)=\mathrm{Tr}(BCA) $，因此：
+### 证明 $\mathrm{Tr}\left(\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho\gamma_5 \right)=4\varepsilon_{\mu\nu\lambda\rho} $
 
 $$
+\begin{aligned}
+\mathrm{Tr}\left(\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho\gamma_5 \right)
+&=\mathrm{Tr}\left(\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho\gamma_1\gamma_2\gamma_3\gamma_4 \right) \\
+&=4\sum_{p} \delta_p \delta_{\nu_1\nu_2}\delta_{\nu_3\nu_4}\delta_{\nu_5\nu_6}\delta_{\nu_7\nu_8} \\
+\end{aligned}
+$$
+
+由于在求和中 $(\nu_1,\nu_2,\nu_3,\nu_4,\nu_5,\nu_6,\nu_7,\nu_8) $ 所有取法中使得 $\delta_{\nu_1\nu_2}\delta_{\nu_3\nu_3}\delta_{\nu_5\nu_6}\delta_{\nu_7\nu_8} $ 不为零的取法只有 $(\nu_1,\nu_2,\nu_3,\nu_4,\nu_5,\nu_6,\nu_7,\nu_8)=(\mu,i_1,\nu,i_2,\lambda,i_3,\rho,i_4) $，其中 $(i_1,i_2,i_3,i_4)\equiv (i) $ 是 $(1,2,3,4) $ 的一个排列。注意到，通过 $4 $ 次置换可以把 $(\mu,i_1,\nu,i_2,\lambda,i_3,\rho,i_4) $ 还原为 $(\mu,\nu,\lambda,\rho,i_1,i_2,i_3,i_4) $，设从 $(i_1,i_2,i_3,i_4) $ 还原到 $(1,2,3,4) $ 需要置换 $m $ 次，则 $\varepsilon_{i_1i_2i_3i_4}=(-1)^m $
+
+于是：
+
+$$
+\begin{aligned}
+\mathrm{Tr}\left(\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho\gamma_5 \right)
+&=\mathrm{Tr}\left(\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho\gamma_1\gamma_2\gamma_3\gamma_4 \right) \\
+&=4\sum_{p} \delta_p \delta_{\nu_1\nu_2}\delta_{\nu_3\nu_4}\delta_{\nu_5\nu_6}\delta_{\nu_7\nu_8} \\
+&=4\sum_{(i)} \varepsilon_{i_1i_2i_3i_4} \delta_{\mu i_1}\delta_{\nu i_2}\delta_{\lambda i_3}\delta_{\rho i_4} \\
+&=4\varepsilon_{i_1i_2i_3i_4} \delta_{\mu i_1}\delta_{\nu i_2}\delta_{\lambda i_3}\delta_{\rho i_4} \\
+&=4\varepsilon_{\mu\nu\lambda\rho}
+\end{aligned}
+$$
+
+### 证明 $\mathrm{Tr}\left(\gamma_\mu\gamma_\nu\gamma_5 \right)=0 $
+
+$$
+\begin{aligned}
 \mathrm{Tr}\left(\gamma_\mu\gamma_\nu\gamma_5 \right)
-=\mathrm{Tr}\left(\gamma_5\gamma_\mu\gamma_\nu \right)
+&=\mathrm{Tr}(\gamma_\mu\gamma_\nu\gamma_1\gamma_2\gamma_3\gamma_4) \\
+&=\sum_{p} \delta_p \delta_{\nu_1\nu_2}\delta_{\nu_3\nu_3}\delta_{\nu_5\nu_6}
+\end{aligned}
 $$
 
-另一方面，由于 $\gamma_\mu \gamma_5 + \gamma_5 \gamma_\mu = 0 $，因此：
+由于在求和中 $(\nu_1,\nu_2,\nu_3,\nu_4,\nu_5,\nu_6) $ 一种可能的取法必定是 $(\mu,\nu,1,2,3,4) $ 的一个排列，而所有排列都有 $\delta_{\nu_1\nu_2}\delta_{\nu_3\nu_3}\delta_{\nu_5\nu_6}=0 $，因此：
 
 $$
+\begin{aligned}
 \mathrm{Tr}\left(\gamma_\mu\gamma_\nu\gamma_5 \right)
-=-\mathrm{Tr}\left(\gamma_\mu\gamma_5\gamma_\nu \right)
-=
+&=\mathrm{Tr}(\gamma_\mu\gamma_\nu\gamma_1\gamma_2\gamma_3\gamma_4) \\
+&=\sum_{p} \delta_p \delta_{\nu_1\nu_2}\delta_{\nu_3\nu_3}\delta_{\nu_5\nu_6} \\
+&=0
+\end{aligned}
 $$
 
 ### 3-3
