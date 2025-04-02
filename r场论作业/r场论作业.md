@@ -874,7 +874,7 @@ $$
 \sigma^0_i &0 \\
 0 &\sigma^0_i
 \end{bmatrix}
-=\frac{1 }{\mathrm{i} } \varepsilon_{ijk}\gamma_j\gamma_k
+=\frac{1 }{2\mathrm{i} } \varepsilon_{ijk}\gamma_j\gamma_k
 $$
 
 证明：
@@ -884,7 +884,7 @@ $$
 $$
 
 $$
-\gamma_i\gamma_j = \sigma_i\sigma_j = \delta_{ij} + \mathrm{i} \varepsilon_{ijk}\sigma_k
+\gamma_i\gamma_j = \sigma_i\sigma_j = \delta_{ij} I +  \mathrm{i} \varepsilon_{ijk}\sigma_k
 $$
 
 $$
@@ -903,11 +903,102 @@ $$
 \vec{\sigma} = -\vec{\alpha}\gamma_5
 $$
 
+#### 证明 $\gamma_i\gamma_j = \sigma_i\sigma_j = \delta_{ij} I +  \mathrm{i} \varepsilon_{ijk}\sigma_k $
+
+二阶泡利矩阵满足：
+
+$$
+\sigma^0_i\sigma^0_j
+=\delta_{ij}I^0 + \mathrm{i} \varepsilon_{ijk}\sigma^0_k
+$$
+
+四阶泡利矩阵：
+
+$$
+\begin{aligned}
+\sigma_i\sigma_j
+&=\begin{bmatrix}
+\sigma^0_i &0 \\
+0 &\sigma^0_i
+\end{bmatrix}
+\begin{bmatrix}
+\sigma^0_j &0 \\
+0 &\sigma^0_j
+\end{bmatrix} \\
+&=\begin{bmatrix}
+\sigma^0_i\sigma^0_j &0 \\
+0 &\sigma^0_i\sigma^0_j
+\end{bmatrix} \\
+&=\begin{bmatrix}
+\delta_{ij}I^0 + \mathrm{i} \varepsilon_{ijk}\sigma^0_k &0 \\
+0 &\delta_{ij}I^0 + \mathrm{i} \varepsilon_{ijk}\sigma^0_k
+\end{bmatrix} \\
+&=\delta_{ij}\begin{bmatrix}
+I^0 &0 \\
+0 &I^0
+\end{bmatrix} + \mathrm{i}\varepsilon_{ijk}
+\begin{bmatrix}
+\sigma^0_k &0 \\
+0 &\sigma^0_k
+\end{bmatrix} \\
+&=\delta_{ij} I + \mathrm{i}\varepsilon_{ijk}\sigma_k
+\end{aligned}
+$$
+
+---
+
+$$
+\sigma_i
+=\frac{1 }{2\mathrm{i} } \varepsilon_{ijk}\gamma_j\gamma_k
+$$
+
+同乘 $\varepsilon_{ilm} $ 并对 $i $ 求和：
+
+$$
+\begin{aligned}
+\varepsilon_{ilm}\sigma_i
+&=\frac{1 }{2\mathrm{i} } \varepsilon_{ilm}\varepsilon_{ijk} \gamma_j\gamma_k \\
+&=\frac{1 }{2\mathrm{i} } \left(\delta_{lj}\delta_{mk} - \delta_{lk}\delta_{mj} \right)\gamma_j\gamma_k \\
+&=\frac{1 }{2\mathrm{i} } \left(\gamma_l\gamma_m - \gamma_m\gamma_l \right)
+\end{aligned}
+$$
+
+即：
+
+$$
+\gamma_l\gamma_m - \gamma_m\gamma_l
+=2\mathrm{i}\varepsilon_{ilm}\sigma_i
+$$
+
+另一方面，利用 $\gamma_\mu $ 矩阵反对易关系
+
+$$
+\gamma_l\gamma_m + \gamma_m\gamma_l = 2\delta_{lm} I
+$$
+
+两式相加可得：
+
+$$
+\gamma_l\gamma_m
+=\delta_{lm} I + \mathrm{i}\varepsilon_{ilm}\sigma_i
+=\delta_{lm} I + \mathrm{i}\varepsilon_{lmi}\sigma_i
+$$
+
+替换哑标得：
+
+$$
+\gamma_i\gamma_j
+=\delta_{ij} I + \mathrm{i}\varepsilon_{ijk}\sigma_k
+$$
+
 #### 证明
 
 $$
 \begin{aligned}
-
+\sigma_i\sigma_j + \sigma_j\sigma_i
+&=- \left(\varepsilon_{ikl}\gamma_k\gamma_l \varepsilon_{jmn}\gamma_m\gamma_n + \varepsilon_{jkl}\gamma_k\gamma_l\varepsilon_{imn}\gamma_m\gamma_n \right) \\
+&=- \left(\varepsilon_{ikl}\varepsilon_{jmn}\gamma_k\gamma_l\gamma_m\gamma_n + \varepsilon_{jkl}\varepsilon_{imn}\gamma_k\gamma_l\gamma_m\gamma_n \right) \\
+&=
 \end{aligned}
 $$
 
@@ -1100,8 +1191,8 @@ $$
 $$
 k=\left\{
 \begin{aligned}
-+1,\Lambda=S,P \\
--1,\Lambda=T
+&+1,\Lambda=S,P \\
+&-1,\Lambda=T
 \end{aligned}
 \right.
 $$
