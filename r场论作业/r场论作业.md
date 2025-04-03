@@ -877,6 +877,16 @@ $$
 =\frac{1 }{2\mathrm{i} } \varepsilon_{ijk}\gamma_j\gamma_k
 $$
 
+其中，$\sigma^0_i $ 具有以下性质：
+
+$$
+\sigma^0_i\sigma^0_j + \sigma^0_j\sigma^0_i = 2\delta_{ij} I^0
+$$
+
+$$
+\sigma^0_i\sigma^0_j = \delta_{ij} I^0 + \mathrm{i}\varepsilon_{ijk}\sigma^0_k
+$$
+
 证明：
 
 $$
@@ -901,6 +911,39 @@ $$
 
 $$
 \vec{\sigma} = -\vec{\alpha}\gamma_5
+$$
+
+#### 证明 $\sigma_i\sigma_j + \sigma_j\sigma_i = 2\delta_{ij} I $
+
+$$
+\begin{aligned}
+\sigma_i\sigma_j + \sigma_j\sigma_i
+&=\begin{bmatrix}
+\sigma^0_i &0 \\
+0 &\sigma^0_i
+\end{bmatrix}
+\begin{bmatrix}
+\sigma^0_j &0 \\
+0 &\sigma^0_j
+\end{bmatrix} + 
+\begin{bmatrix}
+\sigma^0_j &0 \\
+0 &\sigma^0_j
+\end{bmatrix}
+\begin{bmatrix}
+\sigma^0_i &0 \\
+0 &\sigma^0_i
+\end{bmatrix} \\
+&=\begin{bmatrix}
+\sigma^0_i\sigma^0_j + \sigma^0_j\sigma^0_i &0 \\
+0 &\sigma^0_i\sigma^0_j + \sigma^0_j\sigma^0_i
+\end{bmatrix} \\
+&=\begin{bmatrix}
+2\delta_{ij} I^0 &0 \\
+0 &2\delta_{ij}I^0
+\end{bmatrix} \\
+&=2\delta_{ij} 
+\end{aligned}
 $$
 
 #### 证明 $\gamma_i\gamma_j = \sigma_i\sigma_j = \delta_{ij} I +  \mathrm{i} \varepsilon_{ijk}\sigma_k $
@@ -991,20 +1034,219 @@ $$
 =\delta_{ij} I + \mathrm{i}\varepsilon_{ijk}\sigma_k
 $$
 
-#### 证明
+$$
+\gamma_i\gamma_j = \sigma_i\sigma_j = \delta_{ij} I +  \mathrm{i} \varepsilon_{ijk}\sigma_k
+$$
+
+#### 证明 $\sigma_1\sigma_2 = \mathrm{i}\sigma_3,\sigma_2\sigma_3 = \mathrm{i}\sigma_1,\sigma_3\sigma_1 = \mathrm{i}\sigma_2 $
+
+由于 $\sigma_i\sigma_j=\delta_{ij}I+\mathrm{i}\varepsilon_{ijk}\sigma_k $，因此：
+
+$$
+\sigma_1\sigma_2
+=\mathrm{i}\varepsilon_{12k}\sigma_k
+=\mathrm{i}\sigma_3
+$$
+
+$$
+\sigma_2\sigma_3
+=\mathrm{i}\varepsilon_{23k}\sigma_k
+=\mathrm{i}\sigma_1
+$$
+
+$$
+\sigma_3\sigma_1
+=\mathrm{i}\varepsilon_{31k}\sigma_k
+=\mathrm{i}\sigma_2
+$$
+
+#### 证明 $\vec{\sigma} = -\vec{\alpha}\gamma_5 $
+
+$$
+\alpha_i
+=\begin{bmatrix}
+0 &\sigma^0_i \\
+\sigma^0_i &0
+\end{bmatrix},\quad
+\beta
+=\begin{bmatrix}
+I^0 &0 \\
+0 &-I^0
+\end{bmatrix}
+$$
+
+$$
+\alpha_i\alpha_j + \alpha_j\alpha_i = 2\delta_{ij} I,\quad i=1,2,3
+$$
+
+$$
+\alpha_i\beta + \beta\alpha_i = 0
+$$
+
+$$
+\beta^2 = I
+$$
+
+$$
+\gamma_i =  -\mathrm{i}\beta\alpha_i 
+\Longrightarrow \alpha_i=\mathrm{i}\beta\gamma_i,
+\quad i=1,2,3
+$$
+
+$$
+\gamma_4 = \beta
+$$
+
+利用 $\beta=\gamma_4 $ 与 $\gamma_i $ 的反对易关系有：
+
+$$
+-\alpha_i = \mathrm{i}\gamma_i\beta
+\Longrightarrow
+\mathrm{i}\alpha_i = \gamma_i\beta
+$$
+
+于是：
 
 $$
 \begin{aligned}
-\sigma_i\sigma_j + \sigma_j\sigma_i
-&=- \left(\varepsilon_{ikl}\gamma_k\gamma_l \varepsilon_{jmn}\gamma_m\gamma_n + \varepsilon_{jkl}\gamma_k\gamma_l\varepsilon_{imn}\gamma_m\gamma_n \right) \\
-&=- \left(\varepsilon_{ikl}\varepsilon_{jmn}\gamma_k\gamma_l\gamma_m\gamma_n + \varepsilon_{jkl}\varepsilon_{imn}\gamma_k\gamma_l\gamma_m\gamma_n \right) \\
-&=
+-\vec{\alpha}\gamma_5
+&=-\left(\alpha_1\vec{\mathrm{e}}_1 + \alpha_2\vec{\mathrm{e}}_2 + \alpha_3\vec{\mathrm{e}}_3 \right)\gamma_1\gamma_2\gamma_3\gamma_4 \\
+&=-\mathrm{i}\beta\left(\gamma_1\vec{\mathrm{e}}_1 + \gamma_2\vec{\mathrm{e}}_2 + \gamma_3\vec{\mathrm{e}}_3 \right)\gamma_1\gamma_2\gamma_3\beta \\
+&=-\mathrm{i}\beta\left(\gamma_2\gamma_3\vec{\mathrm{e}}_1 - \gamma_1\gamma_3\vec{\mathrm{e}}_2 + \gamma_1\gamma_2\vec{\mathrm{e}}_3 \right)\beta \\
+&=-\mathrm{i}\left(\alpha_2\alpha_3\vec{\mathrm{e}}_1 - \alpha_1\alpha_3\vec{\mathrm{e}}_2 + \alpha_1\alpha_2\vec{\mathrm{e}}_3 \right) \\
+&=-\mathrm{i}\left(\alpha_2\alpha_3\vec{\mathrm{e}}_1 + \alpha_3\alpha_1\vec{\mathrm{e}}_2 + \alpha_1\alpha_2\vec{\mathrm{e}}_3 \right) \\
+&=-\mathrm{i}\left(
+\begin{bmatrix}
+0 &\sigma^0_2 \\
+\sigma^0_2 &0
+\end{bmatrix}
+\begin{bmatrix}
+0 &\sigma^0_3 \\
+\sigma^0_3 &0
+\end{bmatrix} \vec{\mathrm{e}}_1 + 
+\begin{bmatrix}
+0 &\sigma^0_3 \\
+\sigma^0_3 &0
+\end{bmatrix}
+\begin{bmatrix}
+0 &\sigma^0_1 \\
+\sigma^0_1 &0
+\end{bmatrix} \vec{\mathrm{e}}_2 + 
+\begin{bmatrix}
+0 &\sigma^0_1 \\
+\sigma^0_1 &0
+\end{bmatrix}
+\begin{bmatrix}
+0 &\sigma^0_2 \\
+\sigma^0_2 &0
+\end{bmatrix} \vec{\mathrm{e}}_3
+\right) \\
+&=-\mathrm{i}\left(
+\begin{bmatrix}
+\mathrm{i}\sigma^0_1 &0 \\
+0 &\mathrm{i}\sigma^0_1
+\end{bmatrix} \vec{\mathrm{e}}_1 + 
+\begin{bmatrix}
+\mathrm{i}\sigma^0_2 &0 \\
+0 &\mathrm{i}\sigma^0_2
+\end{bmatrix} \vec{\mathrm{e}}_2 + 
+\begin{bmatrix}
+\mathrm{i}\sigma^0_3 &0 \\
+0 &\mathrm{i}\sigma^0_3
+\end{bmatrix} \vec{\mathrm{e}}_3
+\right) \\
+&=\sigma_1\vec{\mathrm{e}}_1 + \sigma_2\vec{\mathrm{e}}_2 + \sigma_3\vec{\mathrm{e}}_3 \\
+&=\vec{\sigma}
 \end{aligned}
 $$
 
 ### 3-1-4
 
 > 已知 $H=\vec{\alpha}\cdot\vec{p} + \beta m,\vec{L}=\vec{r}\times \vec{p} $，证明：$\left[H,\vec{L} \right] = \mathrm{i}\vec{p}\times \vec{\alpha},\left[H,\vec{\sigma} \right]=2\mathrm{i}\vec{\alpha}\times\vec{p} $
+
+$$
+L_i
+=\left(\vec{r}\times\vec{p} \right)_i
+=\varepsilon_{ijk}x_j p_k
+$$
+
+$$
+\begin{aligned}
+\left[H , L_i \right]
+&=\left[\alpha_lp_l+\beta m , \varepsilon_{ijk}x_jp_k \right] \\
+&=\varepsilon_{ijk}\alpha_l\left[p_l , x_j p_k \right] \\
+&=\varepsilon_{ijk}\alpha_l\left(x_j\left[p_l , p_k \right] + \left[p_l , x_j \right]p_k \right) \\
+&=\varepsilon_{ijk}\alpha_l \mathrm{i}\hbar \delta_{lj}p_k \\
+&=\mathrm{i}\hbar\varepsilon_{ijk}\alpha_j p_k \\
+&=\mathrm{i}\hbar\left(\vec{\alpha}\times\vec{p} \right)_i \\
+&=\mathrm{i}\left(\vec{\alpha}\times\vec{p} \right)_i
+\end{aligned}
+$$
+
+因此：
+
+$$
+\left[H , \vec{L} \right] = \mathrm{i}\vec{\alpha}\times\vec{p}
+$$
+
+$$
+\begin{aligned}
+\left[\alpha_i , \alpha_j \right]
+&=\alpha_i\alpha_j-\alpha_j\alpha_i \\
+&=\begin{bmatrix}
+0 &\sigma^0_i \\
+\sigma^0_i &0
+\end{bmatrix}
+\begin{bmatrix}
+0 &\sigma^0_j \\
+\sigma^0_j &0
+\end{bmatrix} - 
+\begin{bmatrix}
+0 &\sigma^0_j \\
+\sigma^0_j &0
+\end{bmatrix}
+\begin{bmatrix}
+0 &\sigma^0_i \\
+\sigma^0_i &0
+\end{bmatrix} \\
+&=\begin{bmatrix}
+\sigma^0_i\sigma^0_j - \sigma^0_j\sigma^0_i &0 \\
+0 &\sigma^0_i\sigma^0_j - \sigma^0_j\sigma^0_i
+\end{bmatrix} \\
+&=2\mathrm{i}\varepsilon_{ijk}\sigma_k
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\left[H , \sigma_i \right]
+&=\left[\alpha_lp_l+\beta m , \frac{1 }{2\mathrm{i} } \varepsilon_{ijk}\gamma_j\gamma_k \right] \\
+&=\frac{1 }{2\mathrm{i} }\varepsilon_{ijk}\left[\alpha_lp_l+\beta m , \gamma_j\gamma_k \right] \\
+&=\frac{1 }{2\mathrm{i} }\varepsilon_{ijk}\left[\alpha_lp_l+\beta m , \left(-\mathrm{i}\beta\alpha_j \right)\left(-\mathrm{i}\beta\alpha_k \right) \right] \\
+&=-\frac{1 }{2\mathrm{i} } \varepsilon_{ijk}\left[\alpha_lp_l+\beta m , \beta\alpha_j\beta\alpha_k \right] \\
+&=\frac{1 }{2\mathrm{i} } \varepsilon_{ijk}\left[\alpha_lp_l+\beta m , \alpha_j\beta\beta\alpha_k \right] \\
+&=\frac{1 }{2\mathrm{i} } \varepsilon_{ijk}\left[\alpha_lp_l+\beta m , \alpha_j\alpha_k \right] \\
+&=\frac{1 }{2\mathrm{i} } \varepsilon_{ijk}\left(\left[\alpha_lp_l , \alpha_j\alpha_k \right] + m\left[\beta , \alpha_j\alpha_k \right] \right) \\
+&=\frac{1 }{2\mathrm{i} } \varepsilon_{ijk}\left\{\alpha_l\left[p_l,\alpha_j\alpha_k \right] + \left[\alpha_l,\alpha_j\alpha_k \right]p_l + m\left(\beta\alpha_j\alpha_k - \alpha_j\alpha_k\beta \right) \right\} \\
+&=\frac{1 }{2\mathrm{i} } \varepsilon_{ijk}\left\{\left(\alpha_j\left[\alpha_l , \alpha_k \right] + \left[\alpha_l , \alpha_j \right]\alpha_k \right)p_l + m\beta\alpha_j\alpha_k - m\beta\alpha_j\alpha_k \right\} \\
+&=\frac{1 }{2\mathrm{i} } \varepsilon_{ijk}\left(2\mathrm{i}\varepsilon_{lkn}\alpha_j\alpha_n + 2\mathrm{i}\varepsilon_{ljq}\alpha_q\alpha_k \right)p_l \\
+&=\left(\varepsilon_{kij}\varepsilon_{knl}\alpha_j\alpha_n + \varepsilon_{jki}\varepsilon_{jql}\alpha_q\alpha_k \right)p_l \\
+&=\left\{\left(\delta_{in}\delta_{jl} - \delta_{il}\delta_{jn} \right)\alpha_j\alpha_n + \left(\delta_{kq}\delta_{il} - \delta_{kl}\delta_{iq} \right)\alpha_q\alpha_k \right\}p_l \\
+&=\left(\alpha_l\alpha_i - \delta_{il}\alpha_n\alpha_n + \delta_{il}\alpha_k\alpha_k - \alpha_i\alpha_l \right)p_l \\
+&=\left[\alpha_l , \alpha_i \right]p_l \\
+&=2\mathrm{i}\varepsilon_{lit}\alpha_t p_l \\
+&=2\mathrm{i}\varepsilon_{itl}\alpha_t p_l \\
+&=2\mathrm{i}\left(\vec{\alpha}\times \vec{p} \right)_i
+\end{aligned}
+$$
+
+因此：
+
+$$
+\left[H , \vec{\sigma} \right]
+=2\mathrm{i}\vec{\alpha}\times\vec{p}
+$$
+
 
 ### 3-1-5
 
