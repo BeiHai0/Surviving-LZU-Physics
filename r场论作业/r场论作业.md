@@ -1162,7 +1162,7 @@ $$
 
 ### 3-1-4
 
-> 已知 $H=\vec{\alpha}\cdot\vec{p} + \beta m,\vec{L}=\vec{r}\times \vec{p} $，证明：$\left[H,\vec{L} \right] = \mathrm{i}\vec{p}\times \vec{\alpha},\left[H,\vec{\sigma} \right]=2\mathrm{i}\vec{\alpha}\times\vec{p} $
+> 已知 $H=\vec{\alpha}\cdot\vec{p} + \beta m,\vec{L}=\vec{r}\times \vec{p} $，证明：$\left[H,\vec{L} \right] = -\mathrm{i}\vec{\alpha}\times \vec{p},\left[H,\vec{\sigma} \right]=2\mathrm{i}\vec{\alpha}\times\vec{p} $
 
 $$
 L_i
@@ -1176,17 +1176,17 @@ $$
 &=\left[\alpha_lp_l+\beta m , \varepsilon_{ijk}x_jp_k \right] \\
 &=\varepsilon_{ijk}\alpha_l\left[p_l , x_j p_k \right] \\
 &=\varepsilon_{ijk}\alpha_l\left(x_j\left[p_l , p_k \right] + \left[p_l , x_j \right]p_k \right) \\
-&=\varepsilon_{ijk}\alpha_l \mathrm{i}\hbar \delta_{lj}p_k \\
-&=\mathrm{i}\hbar\varepsilon_{ijk}\alpha_j p_k \\
-&=\mathrm{i}\hbar\left(\vec{\alpha}\times\vec{p} \right)_i \\
-&=\mathrm{i}\left(\vec{\alpha}\times\vec{p} \right)_i
+&=\varepsilon_{ijk}\alpha_l \left(-\mathrm{i}\hbar \delta_{lj} \right) p_k \\
+&=-\mathrm{i}\hbar\varepsilon_{ijk}\alpha_j p_k \\
+&=-\mathrm{i}\hbar\left(\vec{\alpha}\times\vec{p} \right)_i \\
+&=-\mathrm{i}\left(\vec{\alpha}\times\vec{p} \right)_i
 \end{aligned}
 $$
 
 因此：
 
 $$
-\left[H , \vec{L} \right] = \mathrm{i}\vec{\alpha}\times\vec{p}
+\left[H , \vec{L} \right] = -\mathrm{i}\vec{\alpha}\times\vec{p}
 $$
 
 $$
