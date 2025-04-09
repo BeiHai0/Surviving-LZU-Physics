@@ -864,6 +864,148 @@ $$
 
 > 利用 Pauli 矩阵，写出 Dirac-Pauli 表象中 $\gamma_\mu $ 矩阵以及 $\gamma_5,C=\mathrm{i}\gamma_2\gamma_4 $ 的具体形式。
 
+二阶 Pauli 矩阵：
+
+$$
+\sigma^0_1
+=\begin{bmatrix}
+0 &1 \\
+1 &0
+\end{bmatrix},\quad
+\sigma^0_2
+=\begin{bmatrix}
+0 &-\mathrm{i} \\
+\mathrm{i} &0
+\end{bmatrix},\quad
+\sigma^0_3
+=\begin{bmatrix}
+1 &0 \\
+0 &-1
+\end{bmatrix}
+$$
+
+$$
+\alpha_i
+=\begin{bmatrix}
+0 &\sigma^0_i \\
+\sigma^0_i &0
+\end{bmatrix},\quad
+\beta
+=\begin{bmatrix}
+I^0 &0 \\
+0 &-I^0
+\end{bmatrix}
+$$
+
+$$
+\gamma_i
+\equiv -\mathrm{i}\beta\alpha_i,\quad
+\gamma_4
+\equiv \beta,\quad
+\gamma_5
+\equiv \gamma_1\gamma_2\gamma_3\gamma_4
+$$
+
+$$
+\gamma_i
+=\begin{bmatrix}
+0 &-\mathrm{i}\sigma^0_i \\
+\mathrm{i}\sigma^0_i &0
+\end{bmatrix},\quad
+\gamma_4
+=\begin{bmatrix}
+I^0 &0 \\
+0&-I^0
+\end{bmatrix}
+$$
+
+$$
+C
+=\mathrm{i}\gamma_2\gamma_4
+$$
+
+具体形式为：
+
+$$
+\gamma_1
+=\begin{bmatrix}
+0 &-\mathrm{i}\sigma^0_1 \\
+\mathrm{i}\sigma^0_1 &0
+\end{bmatrix}
+=\begin{bmatrix}
+0 &0 &0 &-\mathrm{i} \\
+0 &0 &-\mathrm{i} &0 \\
+0 &\mathrm{i} &0 &0 \\
+\mathrm{i} &0 &0 &0 \\
+\end{bmatrix}
+$$
+
+$$
+\gamma_2
+=\begin{bmatrix}
+0 &-\mathrm{i}\sigma^0_2 \\
+\mathrm{i}\sigma^0_2 &0
+\end{bmatrix}
+=\begin{bmatrix}
+0 &0 &0 &-1 \\
+0 &0 &1 &0 \\
+0 &1 &0 &0 \\
+-1 &0 &0 &0 \\
+\end{bmatrix}
+$$
+
+$$
+\gamma_3
+=\begin{bmatrix}
+0 &-\mathrm{i}\sigma^0_3 \\
+\mathrm{i}\sigma^0_3 &0
+\end{bmatrix}
+=\begin{bmatrix}
+0 &0 &-\mathrm{i} &0 \\
+0 &0 &0 &\mathrm{i} \\
+\mathrm{i} &0 &0 &0 \\
+0 &-\mathrm{i} &0 &0 \\
+\end{bmatrix}
+$$
+
+$$
+\gamma_4
+=\begin{bmatrix}
+I^0 &0 \\
+0 &-I^0
+\end{bmatrix}
+=\begin{bmatrix}
+1 &0 &0 &0 \\
+0 &1 &0 &0 \\
+0 &0 &-1 &0 \\
+0 &0 &0 &-1 \\
+\end{bmatrix}
+$$
+
+$$
+\gamma_5
+\equiv \gamma_1\gamma_2\gamma_3\gamma_4
+=\begin{bmatrix}
+0 &0 &-1 &0 \\
+0 &0 &0 &-1 \\
+-1 &0 &0 &0 \\
+0 &-1 &0 &0
+\end{bmatrix}
+$$
+
+$$
+\begin{aligned}
+C
+=\mathrm{i}\gamma_2\gamma_4
+=\begin{bmatrix}
+0 &0 &0 &\mathrm{i} \\
+0 &0 &-\mathrm{i} &0 \\
+0 &\mathrm{i} &0 &0 \\
+-\mathrm{i} &0 &0 &0 \\
+\end{bmatrix}
+\end{aligned}
+$$
+
 ### 3-1-3
 
 定义
