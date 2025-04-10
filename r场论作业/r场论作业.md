@@ -1394,13 +1394,136 @@ $$
 
 > 证明 $\vec{\sigma} $ 的本征值为 $+1,-1 .$
 
+利用公式
+
+$$
+\left(\vec{\sigma}\cdot\vec{A} \right)\left(\vec{\sigma}\cdot\vec{B} \right)
+=\vec{A}\cdot\vec{B} + \mathrm{i}\vec{\sigma}\cdot\left(\vec{A}\times\vec{B} \right)
+$$
+
+有：
+
+$$
+\left(\vec{\sigma}\cdot\vec{n} \right)^2
+=\vec{n}\cdot\vec{n} + \mathrm{i}\vec{\sigma}\cdot\left(\vec{n}\times\vec{n} \right)
+=1
+$$
+
+设 $\left(\vec{\sigma}\cdot\vec{n} \right) $ 的本征方程为：
+
+$$
+\left(\vec{\sigma}\cdot\vec{n} \right) u(p)
+=\lambda u(p)
+$$
+
+则：
+
+$$
+\left(\vec{\sigma}\cdot\vec{n} \right)^2 u(p)
+=\lambda^2 u(p)
+$$
+
+又
+
+$$
+\left(\vec{\sigma}\cdot\vec{n} \right)^2 u(p)
+=u(p)
+$$
+
+对比可得 $\left(\vec{\sigma}\cdot\vec{n} \right) $ 的本征值为：
+
+$$
+\lambda = \pm 1
+$$
+
 ### 3-1-6
 
 > 证明有电磁场存在时，Dirac 方程是 Lorentz 协变的。
 
+电磁场存在时 $x' $ 系的 Dirac 方程为：
+
+$$
+\left(\gamma_\mu\partial'_\mu - \mathrm{i}e A'_\mu \gamma_\mu + m \right)\psi'(x')
+=0
+$$
+
+时空坐标进行 Lorentz 变换：
+
+$$
+x_\mu\to x'_\mu = A_{\mu\nu}x_\nu,\quad
+A_{\mu\lambda}x'_\mu
+=x_\lambda
+$$
+
+$x' $ 系的物理量用 $x $ 系的物理量表达：
+
+$$
+\partial'_\mu
+\equiv \frac{\partial }{\partial x'_\mu } 
+=\frac{\partial x_\nu }{\partial x'_\mu } \frac{\partial }{\partial x_\nu } 
+=A_{\mu\nu}\partial_\nu
+$$
+
+$$
+\psi'(x')
+=\Lambda \psi(x)
+$$
+
+$$
+A'_\mu
+=A_{\mu\nu}A_\nu
+$$
+
+则 Dirac 方程化为：
+
+$$
+\begin{aligned}
+0
+&=\left(\gamma_\mu\partial'_\mu - \mathrm{i}e A'_\mu \gamma_\mu + m \right)\psi'(x') \\
+&=\left(\gamma_\mu A_{\mu\nu}\partial_\nu - \mathrm{i}eA_{\mu\nu}A_\nu\gamma_\mu + m \right)\Lambda \psi(x)
+\end{aligned}
+$$
+
+左乘 $\Lambda^{-1} $，并利用
+
+$$
+\Lambda^{-1}\gamma_\mu \Lambda
+=A_{\mu\rho}\gamma_\rho
+$$
+
+可得：
+
+$$
+\begin{aligned}
+0
+&=\Lambda^{-1}\left(\gamma_\mu A_{\mu\nu}\partial_\nu - \mathrm{i}eA_{\mu\nu}A_\nu\gamma_\mu + m \right)\Lambda \psi(x) \\
+&=\left(A_{\mu\rho}\gamma_\rho A_{\mu\nu}\partial_\nu - \mathrm{i}eA_{\mu\nu} A_\nu A_{\mu\rho}\gamma_\rho + m \right)\psi(x) \\
+&=\left(\delta_{\rho\nu}\gamma_\rho\partial_\nu - \mathrm{i}e\delta_{\nu\rho}A_\nu\gamma_\rho + m \right)\psi(x) \\
+&=\left(\gamma_\nu \partial_\nu - \mathrm{i} e A_\rho\gamma_\rho + m \right)\psi(x)
+\end{aligned}
+$$
+
+因此，$x $ 系中的 Dirac 方程为：
+
+$$
+\left(\gamma_\mu \partial_\mu - \mathrm{i} e A_\mu \gamma_\mu + m \right)\psi(x)
+=0
+$$
+
+与 $x' $ 系中的 Dirac 方程
+
+$$
+\left(\gamma_\mu\partial'_\mu - \mathrm{i}e A'_\mu \gamma_\mu + m \right)\psi'(x')
+=0
+$$
+
+对比可知，电磁场存在时 Dirac 方程具有 Lorentz 协变性。
+
 ### 3-1-7
 
 > 证明 $\bar{\psi}\gamma_\mu\gamma_5\psi $ 是 Lorentz 赝矢量。
+
+
 
 ### 3-1-8
 
@@ -1565,11 +1688,38 @@ $$
 
 ### 3-7
 
-利用
-
-$$
+>利用
+>
+>$$
 \bar{\psi}'\gamma_\alpha\gamma_\beta\cdots\gamma_\gamma\psi'
 =kA_{\alpha\mu}A_{\beta\nu}\cdots A_{\gamma\rho}\bar{\psi}\gamma_\mu\gamma_\nu \cdots \gamma_\rho \psi 
+>$$
+>
+>$$
+k=\left\{
+\begin{aligned}
+&+1,\Lambda=S,P \\
+&-1,\Lambda=T
+\end{aligned}
+\right.
+>$$
+>
+>$$
+\bar{\psi}\gamma_5\psi
+=\frac{1 }{4! } \varepsilon_{\alpha\beta\gamma\delta}\bar{\psi}\gamma_\alpha \gamma_\beta \gamma_\gamma \gamma_\delta \psi
+>$$
+>
+>导出，对于 $S $ 和 $P $ 变换
+>
+>$\bar{\psi}\gamma_5\psi $ 是赝标量，$\bar{\psi}\gamma_\mu\gamma_5\psi $ 是赝矢量，$\bar{\psi}\gamma_\mu\gamma_\nu\gamma_5\psi $ 是赝张量。
+
+当时空坐标进行广义洛伦兹变换，$\bar{\psi} $ 和 $\psi $ 的变换规律为：
+
+$$
+\bar{\psi}'
+=k\bar{\psi}\Lambda^{-1},\quad
+\psi'
+=\Lambda\psi
 $$
 
 $$
@@ -1582,13 +1732,68 @@ k=\left\{
 $$
 
 $$
-\bar{\psi}\gamma_5\psi
-=\frac{1 }{4! } \varepsilon_{\alpha\beta\gamma\delta}\bar{\psi}\gamma_\alpha \gamma_\beta \gamma_\gamma \gamma_\delta \psi
+\begin{aligned}
+\bar{\psi}'\gamma_\alpha\gamma_\beta\cdots\gamma_\delta\psi'
+&=k\bar{\psi} \Lambda^{-1}\gamma_\alpha\gamma_\beta\cdots\gamma_\delta \Lambda \psi \\
+&=k\bar{\psi} \Lambda^{-1}\gamma_\alpha \Lambda \Lambda^{-1}\gamma_\beta\Lambda \cdots \Lambda^{-1}\gamma_\delta \Lambda \psi \\
+&=k\bar{\psi} A_{\alpha\mu}\gamma_\mu A_{\beta\nu}\gamma_\nu \cdots A_{\delta\rho}\Lambda_\rho \psi \\
+&=k A_{\alpha\mu}A_{\beta\nu}\cdots A_{\delta\rho} \bar{\psi} \gamma_\mu\gamma_\nu\cdots\gamma_\rho \psi \\
+\end{aligned}
 $$
 
-导出，对于 $S $ 和 $P $ 变换
+特别地，若进行 $S $ 或 $P $ 变换，则 $k=1 $，于是 $\bar{\psi}\gamma_\alpha\gamma_\beta\cdots\gamma_\delta\psi $ 是个张量。
 
-$\bar{\psi}\gamma_5\psi $ 是赝标量，$\bar{\psi}\gamma_\mu\gamma_5\psi $ 是赝矢量，$\bar{\psi}\gamma_\mu\gamma_\nu\gamma_5\psi $ 是赝张量。
+利用
+
+$$
+\Lambda^{-1} \gamma_5 \Lambda
+=\left|A \right|\gamma_5
+$$
+
+则对于 $S $ 和 $P $ 变换，有：
+
+$$
+\begin{aligned}
+\bar{\psi}' \gamma_5 \psi'
+&=k\bar{\psi}\Lambda^{-1} \gamma_5 \Lambda \psi \\
+&=\bar{\psi}\Lambda^{-1} \gamma_5 \Lambda \psi \\
+&=\left|A \right|\bar{\psi} \gamma_5 \psi
+\end{aligned}
+$$
+
+即 $\bar{\psi}\gamma_5\psi $ 服从赝标量的变换规律，因此 $\bar{\psi}\gamma_5\psi $ 是赝标量。
+
+$$
+\begin{aligned}
+\bar{\psi}' \gamma_\mu \gamma_5 \psi'
+&=k \bar{\psi} \Lambda^{-1} \gamma_\mu \gamma_5 \Lambda \psi \\
+&=\bar{\psi} \Lambda^{-1} \gamma_\mu \gamma_5 \Lambda \psi \\
+&=\bar{\psi} \Lambda^{-1} \gamma_\mu \Lambda \Lambda^{-1} \gamma_5 \Lambda \psi \\
+&=\bar{\psi} A_{\mu\nu}\gamma_\nu \left|A \right| \gamma_5 \psi \\
+&=\left|A \right|A_{\mu\nu}\bar{\psi} \gamma_\nu \gamma_5 \psi
+\end{aligned}
+$$
+
+即 $\bar{\psi}\gamma_\mu\gamma_5\psi $ 服从赝矢量的变换规律，因此 $\bar{\psi}\gamma_\mu\gamma_5\psi $ 是赝矢量。
+
+$$
+\begin{aligned}
+\bar{\psi}'\gamma_\mu\gamma_\nu\gamma_5\psi'
+&=k\bar{\psi} \Lambda^{-1} \gamma_\mu \gamma_\nu \gamma_5 \Lambda \psi \\
+&=\bar{\psi} \Lambda^{-1} \gamma_\mu \gamma_\nu \gamma_5 \Lambda \psi \\
+&=\bar{\psi} \Lambda^{-1} \gamma_\mu \Lambda \Lambda^{-1} \gamma_\nu \Lambda \Lambda^{-1} \gamma_5 \Lambda \psi \\
+&=\bar{\psi} A_{\mu\alpha} \gamma_\alpha A_{\nu\beta}\gamma_\beta \left|A \right| \gamma_5 \psi \\
+&=\left|A \right| A_{\mu\alpha} A_{\nu\beta} \bar{\psi} \gamma_\alpha \gamma_\beta \gamma_5 \psi 
+\end{aligned}
+$$
+
+即 $\bar{\psi}\gamma_\mu\gamma_\nu\gamma_5\psi $ 服从赝张量的变换规律，因此 $\bar{\psi}'\gamma_\mu\gamma_\nu\gamma_5\psi' $ 是赝张量。
+
+
+
+
+
+
 
 ### 3-8
 
