@@ -1529,6 +1529,40 @@ $$
 
 > 利用 $u_a(\vec{p}) $ 的正交完备性，证明 $u_a(\vec{p}') $ 的正交完备性（空间反射变换）。
 
+$u_a(\vec{p}) $ 的正交完备性给出：
+
+$$
+u_a^\dag(\vec{p}) u_b(\vec{p}) = \delta_{ab}
+$$
+
+$$
+u_a(\vec{p}) u_a^\dag(\vec{p}) = I
+$$
+
+$u_a(-\vec{p}) $ 的正交性：
+
+$$
+\begin{aligned}
+u_a^\dag(-\vec{p}) u_b(-\vec{p})
+&=\left[\eta_P \gamma_4 u_a(\vec{p}) \right]^\dag \eta_P \gamma_4 u_b(\vec{p}) \\
+&=\eta_P^\dag \eta_P u_a^\dag(\vec{p}) \gamma_4^\dag \gamma_4 u_b(\vec{p}) \\
+&=u_a^\dag(\vec{p}) u_b(\vec{p}) \\
+&=\delta_{ab}
+\end{aligned}
+$$
+
+$u_a(-\vec{p}) $ 的完备性：
+
+$$
+\begin{aligned}
+u_a(-\vec{p}) u_a^\dag(-\vec{p})
+&=\eta_P \gamma_4 u_a(\vec{p}) \left[\eta_P \gamma_4 u_a(\vec{p}) \right]^\dag \\
+&=\eta_P \eta_P^\dag \gamma_4 u_a(\vec{p}) u_a^\dag(\vec{p}) \gamma_4^\dag \\
+&=\gamma_4 I \gamma_4^\dag \\
+&=I
+\end{aligned}
+$$
+
 ### 3-2
 
 > 证明：$\mathrm{Tr}\left(\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho\gamma_5 \right)=4\varepsilon_{\mu\nu\lambda\rho},\mathrm{Tr}\left(\gamma_\mu\gamma_\nu\gamma_5 \right)=0. $
@@ -1684,6 +1718,32 @@ $$
 
 $$
 v_i^\dag(\vec{p})u_j(-\vec{p}) = 0
+$$
+
+证明：
+
+由于 $u_a(\vec{p}),a=1,2,3,4 $ 是力学量完全集 $\left\{H,\vec{\sigma}\cdot\vec{n} \right\} $ 属于不同本征值的本征态，因此它们正交。若进一步要求正交归一，则有：
+
+$$
+u_i^\dag(\vec{p})u_j(\vec{p}) = \delta_{ij}
+$$
+
+$v_a(\vec{p}) $ 的正交性：
+
+$$
+\begin{aligned}
+v_a^\dag v_b
+&=\left(u_a^C \right)^\dag u_b^C \\
+&=\left(C\bar{u}_a^\mathrm{T} \right)^\dag \left(C\bar{u}_b^\mathrm{T} \right) \\
+&=\left(\bar{u}_a^\mathrm{T} \right)^\dag C^\dag C\bar{u}_b^\dag \\
+&=\left(\bar{u}_a^\mathrm{T} \right)^\dag \bar{u}_b^\mathrm{T} \\
+&=\left(\left(u_a^\dag \gamma_4 \right)^\mathrm{T} \right)^\dag \left(u_b^\dag \gamma_4 \right)^\mathrm{T} \\
+&=\left(\gamma_4 u_a \right)^\mathrm{T}\gamma_4^\mathrm{T} \left(u_b^\dag \right)^\mathrm{T} \\
+&=\left(u_b^\dag \gamma_4 \gamma_4 u_a \right)^\mathrm{T} \\
+&=\left(u_b^\dag u_a \right)^\mathrm{T} \\
+&=\delta_{ba} \\
+&=\delta_{ab}
+\end{aligned}
 $$
 
 ### 3-7
