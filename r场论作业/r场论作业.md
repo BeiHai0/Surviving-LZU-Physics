@@ -1673,6 +1673,113 @@ $$
 \bar{v}_j(\vec{p})u_j(\vec{p}) = 0
 $$
 
+当 $i=1,2 $，正反粒子单位旋量满足动量表象 Dirac 方程
+
+$$
+\left(\mathrm{i}\hat{p} + m \right) u_i(\vec{p})
+=0,\quad
+\left(\mathrm{i}\hat{p} - m \right) v_i(\vec{p})
+=0
+$$
+
+可写成：
+
+$$
+\left(\mathrm{i}\vec{\gamma}\cdot\vec{p} - \gamma_4 E + m \right) u_i(\vec{p})
+=0
+$$
+
+$$
+\left(\mathrm{i}\vec{\gamma}\cdot\vec{p} - \gamma_4 E - m \right) v_i(\vec{p})
+=0
+$$
+
+取厄米共轭：
+
+$$
+u_i^\dag(\vec{p}) \left(-\mathrm{i}\vec{\gamma}\cdot\vec{p} - \gamma_4 E + m \right)
+=0
+$$
+
+$$
+v_i^\dag(\vec{p}) \left(-\mathrm{i}\vec{\gamma}\cdot\vec{p} - \gamma_4 E - m \right)
+=0
+$$
+
+因此：
+
+$$
+u_i^\dag(\vec{p})\left(\mathrm{i}\vec{\gamma}\cdot\vec{p} - \gamma_4 E + m \right) u_i(\vec{p})
+=0 \tag{1}
+$$
+
+$$
+v_i^\dag(\vec{p})\left(\mathrm{i}\vec{\gamma}\cdot\vec{p} - \gamma_4 E - m \right) v_i(\vec{p})
+=0 \tag{2}
+$$
+
+$$
+u_i^\dag(\vec{p}) \left(-\mathrm{i}\vec{\gamma}\cdot\vec{p} - \gamma_4 E + m \right)u_j(\vec{p})
+=0 \tag{3}
+$$
+
+$$
+v_i^\dag(\vec{p}) \left(-\mathrm{i}\vec{\gamma}\cdot\vec{p} - \gamma_4 E - m \right)v_j(\vec{p})
+=0 \tag{4}
+$$
+
+$(1),(3) $ 式相加，$(2),(4) $ 式相加，得：
+
+$$
+u_i^\dag(\vec{p})\left(-2E \gamma_4 + 2m \right)u_j(\vec{p})
+=0
+$$
+
+$$
+v_i^\dag(\vec{p})\left(-2E\gamma_4 - 2m \right)v_j(\vec{p})
+=0
+$$
+
+即：
+
+$$
+u_i^\dag(\vec{p})\gamma_4 u_j(\vec{p})
+=\frac{m }{E }  u_i^\dag(\vec{p}) u_j(\vec{p})
+$$
+
+$$
+v_i^\dag(\vec{p})\gamma_4 v_j(\vec{p})
+=-\frac{m }{E }  v_i^\dag(\vec{p}) v_j(\vec{p})
+$$
+
+利用正交性和定义
+
+$$
+\bar{u}_i(\vec{p})
+\equiv u_i^\dag(\vec{p}) \gamma_4,\quad
+\bar{v}_i(\vec{p})
+\equiv v_i^\dag(\vec{p}) \gamma_4
+$$
+
+$$
+u_i^\dag(\vec{p}) u_j(\vec{p})
+=\delta_{ij},\quad
+v_i^\dag(\vec{p}) v_j(\vec{p})
+=\delta_{ij}
+$$
+
+得到：
+
+$$
+\bar{u}_i(\vec{p}) u_j(\vec{p})
+=\frac{m }{E } \delta_{ij}
+$$
+
+$$
+\bar{v}_i(\vec{p}) v_j(\vec{p})
+=-\frac{m }{E } \delta_{ij}
+$$
+
 ### 3-5
 
 证明任何共轭旋量 $\bar{f}=f^\dag(p)\gamma_4 $ 可用 $\bar{u}_i $ 和 $\bar{v}_i $ 展开
@@ -1690,6 +1797,39 @@ $$
 
 $$
 b_i'=-\frac{E }{m } \bar{f}(p)v_i(\vec{p})
+$$
+
+证明：
+
+设 $\bar{f}(p) $ 可展为：
+
+$$
+\bar{f}(p)
+=a_i'\bar{u}_i(\vec{p}) + b_i'\bar{v}_i(\vec{p})
+$$
+
+由
+
+$$
+u_i\bar{u}_i - v_i\bar{v}_i
+=\frac{m }{E } I
+$$
+
+对 $\bar{f}(p) $
+
+$$
+\bar{f}(p)
+=\bar{f}(p) I
+=\frac{E }{m } \bar{f}(p) u_i\bar{u}_i - \frac{E }{m } \bar{f}(p) v_i \bar{v}_i
+$$
+
+对比可得：
+
+$$
+a_i'
+=\frac{E }{m } \bar{f}(p) u_i,\quad
+b_i'
+=-\frac{E }{m } \bar{f}(p) v_i
 $$
 
 ### 3-6
@@ -1725,7 +1865,13 @@ $$
 由于 $u_a(\vec{p}),a=1,2,3,4 $ 是力学量完全集 $\left\{H,\vec{\sigma}\cdot\vec{n} \right\} $ 属于不同本征值的本征态，因此它们正交。若进一步要求正交归一，则有：
 
 $$
-u_i^\dag(\vec{p})u_j(\vec{p}) = \delta_{ij}
+u_a^\dag(\vec{p})u_b(\vec{p}) = \delta_{ab},\quad a,b=1,2,3,4
+$$
+
+因此：
+
+$$
+u_i^\dag(\vec{p})u_j(\vec{p}) = \delta_{ij},\quad i,j=1,2
 $$
 
 $v_a(\vec{p}) $ 的正交性：
@@ -1744,6 +1890,58 @@ v_a^\dag v_b
 &=\delta_{ba} \\
 &=\delta_{ab}
 \end{aligned}
+$$
+
+因此
+
+$$
+v_i^\dag v_j = \delta_{ij},\quad i,j=1,2
+$$
+
+由于：
+
+$$
+v_1(\vec{p})
+=\alpha_1 u_4(-\vec{p})
+$$
+
+$$
+v_2(\vec{p})
+=\alpha_2 u_3(-\vec{p})
+$$
+
+$$
+v_3(\vec{p})
+=\alpha_3 u_2(-\vec{p})
+$$
+
+$$
+v_4(\vec{p})
+=\alpha_4 u_1(-\vec{p})
+$$
+
+$$
+\left|\alpha_a \right| = 1
+$$
+
+因此，由 $u_a(\vec{p}) $ 的正交性可得：
+
+$$
+u_i^\dag(\vec{p})v_j(-\vec{p}) = 0
+$$
+
+$$
+v_i^\dag(-\vec{p})u_j(\vec{p}) = 0
+$$
+
+由 $v_a(\vec{p}) $ 的正交性可得：
+
+$$
+u_i^\dag(-\vec{p})v_j(\vec{p}) = 0
+$$
+
+$$
+v_i^\dag(\vec{p})u_j(-\vec{p}) = 0
 $$
 
 ### 3-7
@@ -1928,3 +2126,38 @@ $$
 
 故 $\varphi $ 仅有两个状态即两个分量。且对 $+E $ 状态，其自旋永远沿 $\vec{p} $ 方向；对 $-E $ 状态，其自旋永远与 $\vec{p} $ 方向相反。
 
+### 3-9
+
+> 已知自由旋量粒子哈密顿算符假设为
+
+$$
+H
+=\vec{\alpha}\cdot\vec{p} + \beta m
+$$
+
+其自旋算符可表示为：
+
+$$
+\sigma_1 = \frac{1 }{\mathrm{i} } \gamma_2 \gamma_3,\quad
+\sigma_2 = \frac{1 }{\mathrm{i} } \gamma_3 \gamma_1,\quad
+\sigma_3 = \frac{1 }{\mathrm{i} } \gamma_1 \gamma_2
+$$
+
+可证明：
+
+$$
+\left(\vec{\sigma}\cdot\vec{n} \right)\left(\vec{\gamma}\cdot\vec{n} \right)
+=\left(\vec{\gamma}\cdot\vec{n} \right)\left(\vec{\sigma}\cdot\vec{n} \right)
+$$
+
+$$
+\left(\vec{\sigma}\cdot\vec{n} \right)\beta
+=\beta\left(\vec{\sigma}\cdot\vec{n} \right)
+$$
+
+$$
+\vec{n}
+\equiv \frac{\vec{p} }{\left|\vec{p} \right| } 
+$$
+
+请证明算符 $\left(\vec{\sigma}\cdot\vec{n} \right) $ 与 $H $ 可以有共同的本征函数。求出每组本征值对应的共同本征函数，并证明它们是正交完备的。
