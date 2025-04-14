@@ -1008,52 +1008,52 @@ $$
 
 ### 3-1-3
 
-定义
-
-$$
+>定义
+>
+>$$
 \sigma_i
 =\begin{bmatrix}
 \sigma^0_i &0 \\
 0 &\sigma^0_i
 \end{bmatrix}
 =\frac{1 }{2\mathrm{i} } \varepsilon_{ijk}\gamma_j\gamma_k
-$$
-
-其中，$\sigma^0_i $ 具有以下性质：
-
-$$
+>$$
+>
+>其中，$\sigma^0_i $ 具有以下性质：
+>
+>$$
 \sigma^0_i\sigma^0_j + \sigma^0_j\sigma^0_i = 2\delta_{ij} I^0
-$$
-
-$$
+>$$
+>
+>$$
 \sigma^0_i\sigma^0_j = \delta_{ij} I^0 + \mathrm{i}\varepsilon_{ijk}\sigma^0_k
-$$
-
-证明：
-
-$$
+>$$
+>
+>证明：
+>
+>$$
 \sigma_i\sigma_j + \sigma_j\sigma_i = 2\delta_{ij} I
-$$
-
-$$
+>$$
+>
+>$$
 \gamma_i\gamma_j = \sigma_i\sigma_j = \delta_{ij} I +  \mathrm{i} \varepsilon_{ijk}\sigma_k
-$$
-
-$$
+>$$
+>
+>$$
 \sigma_1\sigma_2 = \mathrm{i}\sigma_3
-$$
-
-$$
+>$$
+>
+>$$
 \sigma_2\sigma_3 = \mathrm{i}\sigma_1
-$$
-
-$$
+>$$
+>
+>$$
 \sigma_3\sigma_1 = \mathrm{i}\sigma_2
-$$
-
-$$
+>$$
+>
+>$$
 \vec{\sigma} = -\vec{\alpha}\gamma_5
-$$
+>$$
 
 #### 证明 $\sigma_i\sigma_j + \sigma_j\sigma_i = 2\delta_{ij} I $
 
@@ -1084,7 +1084,7 @@ $$
 2\delta_{ij} I^0 &0 \\
 0 &2\delta_{ij}I^0
 \end{bmatrix} \\
-&=2\delta_{ij} 
+&=2\delta_{ij} I
 \end{aligned}
 $$
 
@@ -1218,33 +1218,30 @@ I^0 &0 \\
 $$
 
 $$
-\alpha_i\alpha_j + \alpha_j\alpha_i = 2\delta_{ij} I,\quad i=1,2,3
+\gamma_i
+=-\mathrm{i}\beta\alpha_i 
+=-\mathrm{i}
+\begin{bmatrix}
+I^0 &0 \\
+0 &-I^0
+\end{bmatrix}
+\begin{bmatrix}
+0 &\sigma^0_i \\
+\sigma^0_i &0
+\end{bmatrix}
+=\begin{bmatrix}
+0 &-\mathrm{i}\sigma^0_i \\
+\mathrm{i}\sigma^0_i &0
+\end{bmatrix}
 $$
 
 $$
-\alpha_i\beta + \beta\alpha_i = 0
-$$
-
-$$
-\beta^2 = I
-$$
-
-$$
-\gamma_i =  -\mathrm{i}\beta\alpha_i 
-\Longrightarrow \alpha_i=\mathrm{i}\beta\gamma_i,
-\quad i=1,2,3
-$$
-
-$$
-\gamma_4 = \beta
-$$
-
-利用 $\beta=\gamma_4 $ 与 $\gamma_i $ 的反对易关系有：
-
-$$
--\alpha_i = \mathrm{i}\gamma_i\beta
-\Longrightarrow
-\mathrm{i}\alpha_i = \gamma_i\beta
+\gamma_4
+=\beta
+=\begin{bmatrix}
+I^0 &0 \\
+0 &-I^0
+\end{bmatrix}
 $$
 
 于是：
@@ -1252,52 +1249,48 @@ $$
 $$
 \begin{aligned}
 -\vec{\alpha}\gamma_5
-&=-\left(\alpha_1\vec{\mathrm{e}}_1 + \alpha_2\vec{\mathrm{e}}_2 + \alpha_3\vec{\mathrm{e}}_3 \right)\gamma_1\gamma_2\gamma_3\gamma_4 \\
-&=-\mathrm{i}\beta\left(\gamma_1\vec{\mathrm{e}}_1 + \gamma_2\vec{\mathrm{e}}_2 + \gamma_3\vec{\mathrm{e}}_3 \right)\gamma_1\gamma_2\gamma_3\beta \\
-&=-\mathrm{i}\beta\left(\gamma_2\gamma_3\vec{\mathrm{e}}_1 - \gamma_1\gamma_3\vec{\mathrm{e}}_2 + \gamma_1\gamma_2\vec{\mathrm{e}}_3 \right)\beta \\
-&=-\mathrm{i}\left(\alpha_2\alpha_3\vec{\mathrm{e}}_1 - \alpha_1\alpha_3\vec{\mathrm{e}}_2 + \alpha_1\alpha_2\vec{\mathrm{e}}_3 \right) \\
-&=-\mathrm{i}\left(\alpha_2\alpha_3\vec{\mathrm{e}}_1 + \alpha_3\alpha_1\vec{\mathrm{e}}_2 + \alpha_1\alpha_2\vec{\mathrm{e}}_3 \right) \\
-&=-\mathrm{i}\left(
+&=-\alpha_i\vec{\mathrm{e}}_i \gamma_1\gamma_2\gamma_3\gamma_4 \\
+&=-\alpha_i\vec{\mathrm{e}}_i
 \begin{bmatrix}
-0 &\sigma^0_2 \\
-\sigma^0_2 &0
+0 &-\mathrm{i}\sigma^0_1 \\
+\mathrm{i}\sigma^0_1 &0
 \end{bmatrix}
 \begin{bmatrix}
-0 &\sigma^0_3 \\
-\sigma^0_3 &0
-\end{bmatrix} \vec{\mathrm{e}}_1 + 
-\begin{bmatrix}
-0 &\sigma^0_3 \\
-\sigma^0_3 &0
+0 &-\mathrm{i}\sigma^0_2 \\
+\mathrm{i}\sigma^0_2 &0
 \end{bmatrix}
 \begin{bmatrix}
-0 &\sigma^0_1 \\
-\sigma^0_1 &0
-\end{bmatrix} \vec{\mathrm{e}}_2 + 
-\begin{bmatrix}
-0 &\sigma^0_1 \\
-\sigma^0_1 &0
+0 &-\mathrm{i}\sigma^0_3 \\
+\mathrm{i}\sigma^0_3 &0
 \end{bmatrix}
 \begin{bmatrix}
-0 &\sigma^0_2 \\
-\sigma^0_2 &0
-\end{bmatrix} \vec{\mathrm{e}}_3
-\right) \\
-&=-\mathrm{i}\left(
+I^0 &0 \\
+0 &-I^0
+\end{bmatrix}
+\\
+&=-\alpha_i\vec{\mathrm{e}}_i
 \begin{bmatrix}
-\mathrm{i}\sigma^0_1 &0 \\
-0 &\mathrm{i}\sigma^0_1
-\end{bmatrix} \vec{\mathrm{e}}_1 + 
+0 &\mathrm{i}\sigma^0_1\sigma^0_2\sigma^0_3 \\
+\mathrm{i}\sigma^0_1\sigma^0_2\sigma^0_3 &0
+\end{bmatrix} \\
+&=-\alpha_i\vec{\mathrm{e}}_i
 \begin{bmatrix}
-\mathrm{i}\sigma^0_2 &0 \\
-0 &\mathrm{i}\sigma^0_2
-\end{bmatrix} \vec{\mathrm{e}}_2 + 
+0 &-I^0 \\
+-I^0 &0
+\end{bmatrix} \\
+&=-\begin{bmatrix}
+0 &\sigma^0_i \\
+\sigma^0_i &0
+\end{bmatrix}
 \begin{bmatrix}
-\mathrm{i}\sigma^0_3 &0 \\
-0 &\mathrm{i}\sigma^0_3
-\end{bmatrix} \vec{\mathrm{e}}_3
-\right) \\
-&=\sigma_1\vec{\mathrm{e}}_1 + \sigma_2\vec{\mathrm{e}}_2 + \sigma_3\vec{\mathrm{e}}_3 \\
+0 &-I^0 \\
+-I^0 &0
+\end{bmatrix} \vec{\mathrm{e}}_i \\
+&=\begin{bmatrix}
+\sigma^0_i &0 \\
+0 &\sigma^0_i
+\end{bmatrix} \vec{\mathrm{e}}_i \\
+&=\sigma_i\vec{\mathrm{e}}_i \\
 &=\vec{\sigma}
 \end{aligned}
 $$
@@ -1523,7 +1516,18 @@ $$
 
 > 证明 $\bar{\psi}\gamma_\mu\gamma_5\psi $ 是 Lorentz 赝矢量。
 
+$$
+\begin{aligned}
+\bar{\psi}' \gamma_\mu \gamma_5 \psi'
+&=k \bar{\psi} \Lambda^{-1} \gamma_\mu \gamma_5 \Lambda \psi \\
+&=\bar{\psi} \Lambda^{-1} \gamma_\mu \gamma_5 \Lambda \psi \\
+&=\bar{\psi} \Lambda^{-1} \gamma_\mu \Lambda \Lambda^{-1} \gamma_5 \Lambda \psi \\
+&=\bar{\psi} A_{\mu\nu}\gamma_\nu \left|A \right| \gamma_5 \psi \\
+&=\left|A \right|A_{\mu\nu}\bar{\psi} \gamma_\nu \gamma_5 \psi
+\end{aligned}
+$$
 
+即 $\bar{\psi}\gamma_\mu\gamma_5\psi $ 服从赝矢量的变换规律，因此 $\bar{\psi}\gamma_\mu\gamma_5\psi $ 是赝矢量。
 
 ### 3-1-8
 
@@ -1656,22 +1660,22 @@ $$
 ### 3-4
 
 > 证明正反粒子单位旋量正交关系：
-
-$$
+>
+>$$
 \bar{u}_i(\vec{p})u_j(\vec{p}) = \frac{m }{E } \delta_{ij}
-$$
-
-$$
+>$$
+>
+>$$
 \bar{v}_i(\vec{p})v_j(\vec{p}) = -\frac{m }{E } \delta_{ij}
-$$
-
-$$
+>$$
+>
+>$$
 \bar{u}_i(\vec{p})v_j(\vec{p}) = 0
-$$
-
-$$
+>$$
+>
+>$$
 \bar{v}_j(\vec{p})u_j(\vec{p}) = 0
-$$
+>$$
 
 当 $i=1,2 $，正反粒子单位旋量满足动量表象 Dirac 方程
 
@@ -1782,22 +1786,22 @@ $$
 
 ### 3-5
 
-证明任何共轭旋量 $\bar{f}=f^\dag(p)\gamma_4 $ 可用 $\bar{u}_i $ 和 $\bar{v}_i $ 展开
-
-$$
+>证明任何共轭旋量 $\bar{f}=f^\dag(p)\gamma_4 $ 可用 $\bar{u}_i $ 和 $\bar{v}_i $ 展开
+>
+>$$
 \bar{f}(p)
 =a_i'\bar{u}_i(\vec{p}) + b_i'\bar{v}_i(\vec{p})
-$$
-
-其中
-
-$$
+>$$
+>
+>其中
+>
+>$$
 a_i'=\frac{E }{m } \bar{f}(p)u_i(\vec{p})
-$$
-
-$$
+>$$
+>
+>$$
 b_i'=-\frac{E }{m } \bar{f}(p)v_i(\vec{p})
-$$
+>$$
 
 证明：
 
@@ -1834,31 +1838,31 @@ $$
 
 ### 3-6
 
-证明正反粒子单位旋量正交关系
-
-$$
+>证明正反粒子单位旋量正交关系
+>
+>$$
 u_i^\dag(\vec{p})u_j(\vec{p}) = \delta_{ij}
-$$
-
-$$
+>$$
+>
+>$$
 v_i^\dag(\vec{p})v_j(\vec{p}) = \delta_{ij}
-$$
-
-$$
+>$$
+>
+>$$
 u_i^\dag(\vec{p})v_j(-\vec{p}) = 0
-$$
-
-$$
+>$$
+>
+>$$
 v_i^\dag(-\vec{p})u_j(\vec{p}) = 0
-$$
-
-$$
+>$$
+>
+>$$
 u_i^\dag(-\vec{p})v_j(\vec{p}) = 0
-$$
-
-$$
+>$$
+>
+>$$
 v_i^\dag(\vec{p})u_j(-\vec{p}) = 0
-$$
+>$$
 
 证明：
 
@@ -2161,3 +2165,197 @@ $$
 $$
 
 请证明算符 $\left(\vec{\sigma}\cdot\vec{n} \right) $ 与 $H $ 可以有共同的本征函数。求出每组本征值对应的共同本征函数，并证明它们是正交完备的。
+
+计算对易关系：
+
+$$
+\begin{aligned}
+\left[\alpha_i , \sigma_j \right]
+&=\alpha_i\sigma_j - \sigma_j\alpha_i \\
+&=\begin{bmatrix}
+0 &\sigma^0_i \\
+\sigma^0_i &0
+\end{bmatrix}
+\begin{bmatrix}
+\sigma^0_j &0 \\
+0 &\sigma^0_j
+\end{bmatrix} - 
+\begin{bmatrix}
+\sigma^0_j &0 \\
+0 &\sigma^0_j
+\end{bmatrix}
+\begin{bmatrix}
+0 &\sigma^0_i \\
+\sigma^0_i &0
+\end{bmatrix} \\
+&=\begin{bmatrix}
+0 &\sigma^0_i\sigma^0_j-\sigma^0_i\sigma^0_j \\
+\sigma^0_i\sigma^0_j-\sigma^0_i\sigma^0_j &0
+\end{bmatrix} \\
+&=\begin{bmatrix}
+0 &2\mathrm{i}\varepsilon_{ijk}\sigma^0_k \\
+2\mathrm{i}\varepsilon_{ijk}\sigma^0_k &0
+\end{bmatrix} \\
+&=2\mathrm{i}\varepsilon_{ijk}\sigma_k
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\left[\vec{\alpha}\cdot\vec{n} , \vec{\sigma}\cdot\vec{n} \right]
+&=\left[n_1\alpha_1 + n_2\alpha_2 + n_3\alpha_3 , n_1\sigma_1 + n_2\sigma_2 + n_3\sigma_3\right] \\
+&=n_1n_2\left[\alpha_1 , \sigma_2 \right] + n_1n_3\left[\alpha_1 , \sigma_3 \right] + n_1n_2\left[\alpha_2 , \sigma_1 \right] + n_2n_3\left[\alpha_2 , \sigma_3 \right] + n_1n_3\left[\alpha_3 , \sigma_1 \right] + n_2n_3\left[\alpha_3 , \sigma_2 \right] \\
+&=0
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\left[\beta , \sigma_i \right]
+&=\beta\sigma_i - \sigma_i\beta \\
+&=\begin{bmatrix}
+I^0 &0 \\
+0 &-I^0
+\end{bmatrix}
+\begin{bmatrix}
+\sigma^0_i &0 \\
+0 &\sigma^0_i
+\end{bmatrix} - 
+\begin{bmatrix}
+\sigma^0_i &0 \\
+0 &\sigma^0_i
+\end{bmatrix}
+\begin{bmatrix}
+I^0 &0 \\
+0 &-I^0
+\end{bmatrix} \\
+&=0
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\left[\beta , \vec{\sigma}\cdot\vec{n} \right]
+&=\left[\beta ,n_1\sigma_1 + n_2\sigma_2 + n_3\sigma_3 \right] \\
+&=0
+\end{aligned}
+$$
+
+因此：
+
+$$
+\begin{aligned}
+\left[H , \vec{\sigma}\cdot\vec{n} \right]
+&=\left[\left|\vec{p} \right|\vec{\alpha}\cdot\vec{n} + \beta m , \vec{\sigma}\cdot\vec{n} \right] \\
+&=0
+\end{aligned}
+$$
+
+这表明，$\vec{\sigma}\cdot \vec{n} $ 与 $H $ 可以有共同的本征函数。
+
+对于具有确定四维动量的自由旋量粒子，有
+
+$$
+H(\vec{p})
+=\beta\left(\mathrm{i}\vec{\gamma}\cdot\vec{p} + m \right),\quad
+p_0 = E,\quad p_4=\mathrm{i}E = \mathrm{i}p_0
+$$
+
+由于 $H $ 是厄米的，因此
+
+$$
+\begin{aligned}
+H^2(p)
+&=H^\dag(p) H(p) \\
+&=\left[\beta\left(\mathrm{i}\vec{\gamma}\cdot\vec{p} + m \right) \right]^\dag \left[\beta\left(\mathrm{i}\vec{\gamma}\cdot\vec{p} + m \right) \right] \\
+&=\left(-\mathrm{i}\vec{\gamma}\cdot\vec{p} + m \right)\left(\mathrm{i}\vec{\gamma}\cdot\vec{p} + m \right) \\
+&=\left(\vec{\gamma}\cdot\vec{p} \right)^2 + m^2 \\
+&=\left(\gamma_i p_i \right)\left(\gamma_j p_j \right) + m^2 \\
+&=\frac{1 }{2 } \left(\gamma_i\gamma_j + \gamma_j\gamma_i \right) p_i p_j + m^2 \\
+&=\delta_{ij}p_ip_j + m^2 \\
+&=\vec{p}^2 + m^2
+\end{aligned}
+$$
+
+动量表象 $H $ 本征方程：
+
+$$
+H(p) u(p)
+=p_0 u(p)
+\Longrightarrow
+H^2(p) u(p) = p_0^2 u(p)
+$$
+
+可得：
+
+$$
+p_0 = \pm \sqrt{\vec{p}^2 + m^2}\equiv \pm E,\quad E\equiv \sqrt{\vec{p}^2+m^2}
+$$
+
+设 $\vec{\sigma}\cdot\vec{n} $ 的本征值为 $\lambda $，其本征方程
+
+$$
+\left(\vec{\sigma}\cdot\vec{n} \right) u(p)
+=\lambda u(p)
+$$
+
+注意到
+
+$$
+\begin{aligned}
+\left(\vec{\sigma}\cdot\vec{n} \right)^2
+&=\left(\vec{\sigma}\cdot\vec{n} \right)\left(\vec{\sigma}\cdot\vec{n} \right) \\
+&=\vec{n}\cdot\vec{n} + \mathrm{i}\vec{\sigma}\cdot\left(\vec{n}\times\vec{n} \right) \\
+&=1
+\end{aligned}
+$$
+
+因此：
+
+$$
+\left(\vec{\sigma}\cdot\vec{n} \right)^2 u(p)
+=\lambda^2 u(p)
+$$
+
+$$
+\lambda = \pm 1
+$$
+
+即
+
+$$
+\left(\vec{\sigma}\cdot\vec{n} \right) u(p)
+=\pm u(p)
+$$
+
+根据本征值可将 $\psi(x)=u(p)\mathrm{e}^{\mathrm{i}p\cdot x} $ 划分为以下四种态：
+
+$p_0=+E,\lambda=+1 $ 记为 $u_1(\vec{p}) $
+
+$p_0=+E,\lambda=-1 $ 记为 $u_2(\vec{p}) $
+
+$p_0=-E,\lambda=+1 $ 记为 $u_3(\vec{p}) $
+
+$p_0=-E,\lambda=-1 $ 记为 $u_4(\vec{p}) $
+
+即
+
+$$
+\left(\vec{\sigma}\cdot\vec{n} \right)u_a(\vec{p})
+=\left\{
+\begin{aligned}
++ u_a(\vec{p}),a=1,3 \\
+- u_a(\vec{p}),a=2,4
+\end{aligned}
+\right.
+$$
+
+$$
+H(\vec{p})u_a(\vec{p})
+=\left\{
+\begin{aligned}
++E u_a(\vec{p}),a=1,2 \\
+-Eu_a(\vec{p}),a=3,4
+\end{aligned}
+\right.
+$$
