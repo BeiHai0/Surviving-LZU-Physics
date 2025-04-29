@@ -1,0 +1,99 @@
+\documentclass[10pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{dsfont}
+\usepackage{amsmath, amsthm, amssymb, mathrsfs}
+\usepackage[abbrev,non-sorted-cites]{amsrefs}
+\usepackage[all]{xy}
+\usepackage{CJK}
+\usepackage{grffile}
+\usepackage{graphicx}
+\ProvidesPackage{stackrel}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{definition}[thm]{Definition}
+\newtheorem{rmk}[thm]{Remark}
+\newtheorem{obs}[thm]{Observation}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem{question}[thm]{Question}
+\newtheorem{prob}[thm]{Problem}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+
+\newcommand{\de}{\partial}
+\newcommand{\db}{\overline{\partial}}
+\newcommand{\ov}{\overline}
+\newcommand{\ddbar}{\sqrt{-1}\de\db}
+\newcommand{\vp}{\varphi}
+\newcommand{\ti}{\tilde}
+\newcommand{\ve}{\varepsilon}
+\newcommand{\Ric}{\mathrm{Ric}}
+\newcommand{\tr}[2]{\textrm{tr}_{#1} #2}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+
+
+\begin{document}
+
+%\title{Geometry and Topology Problems}
+
+%\maketitle
+
+%\section*{Individual}
+
+\begin{center}
+S.-T. Yau College Student Mathematics Contests 2019
+
+\vspace{0.1cm}
+
+\Large {\bf Analysis and Differential Equations}
+
+\vspace{0.1cm}
+
+\large {\bf Individual (5 problems)}
+
+\vspace{0.1cm}
+\end{center}
+\begin{enumerate}
+
+
+\item[1)]Let $F \colon \mathbb{R} \to \mathbb{R}$ be a strictly convex function. Let $u \colon [0,1] \to \mathbb{R}$ be a continuous function, with $$\int_0^1 u(x) \, dx = 0.$$ Show that
+$$
+\int_0^1 F(u(x)) \, dx \leq \frac{ F(\|u\|_{\infty}) + F(-\|u\|_{\infty}) }{2}
+$$
+where $\displaystyle{ \|u\|_{\infty} := \sup_{x \in [0,1]} |u(x)|}$. Also determine when equality occurs.
+
+\item[2)]
+Prove that there exists a universal constant $K$,   for  all $C^1$ function $f: \mathbb{R}^2 \rightarrow \mathbb{R}$, if  $f\in L^{1}\left(
+\mathbb{R}^{2}\right) \cap L^2\left( \mathbb{R}^{2}\right) $ and $|\nabla f| \in L^2(\mathbb{R}^2)$, we have the following inequality:
+\[
+\left\Vert f\right\Vert _{L^{2}\left( \mathbb{R}^{2}\right) }^{2}\leq
+K\left\Vert f\right\Vert _{L^{1}\left( \mathbb{R}^{2}\right) }\left\Vert
+\nabla f\right\Vert _{L^{2}\left( \mathbb{R}^{2}\right) }\text{.}
+\]
+Can you provide constant $K$ so that $K<10$? In the problem, all the $L^p$-spaces are defined with respect to the Lebesgue measure.
+
+\item[3)]Let $f: \mathbb{R}^2 \rightarrow \mathbb{R}$ be a harmonic function. Suppose
+
+$$ \lim_{|x| \rightarrow \infty} \frac{|f(x)|}{\ln |x|}=0.$$
+
+Prove or disprove that $f$ is a constant.
+\item[4)](a) Show that there does not exist a holomorphic function $f$ on $\mathbb{C} \setminus \{1, -1\}$ so that $$f'(z) = \frac{1}{(z^2-1)^{2019}} \quad \text{for all $z \in \mathbb{C} \setminus \{1, -1\}$}.$$ \\
+(b) Show that there exist a set $L \subset \mathbb{C}$ and a holomorphic function $F$ on $\mathbb{C} \setminus L$ so that $L$ has Hausdorff dimension 1, and $$F'(z) = \frac{1}{(z^2-1)^{2019}} \quad \text{for all $z \in \mathbb{C} \setminus L$}.$$
+
+\item[5)]
+Let $\Omega \subset \mathbb{R}^2$ be a bounded domain with smooth
+boundary. Prove that, for all $p>1$ and $1\leq q<\infty$, for all
+$f\in L^p(\Omega)$, there exists a unique $u\in H^1_0(\Omega)$, such
+that
+\[\triangle u = |u|^{q-1} u+f  \  \text{in} \ \Omega.\]
+\end{enumerate}
+
+
+
+
+
+
+\end{document}

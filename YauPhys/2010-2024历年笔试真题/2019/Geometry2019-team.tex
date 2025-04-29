@@ -1,0 +1,113 @@
+\documentclass[10pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{dsfont}
+\usepackage{amsmath, amsthm, amssymb, mathrsfs}
+\usepackage[abbrev,non-sorted-cites]{amsrefs}
+\usepackage[all]{xy}
+\usepackage{CJK}
+\usepackage{grffile}
+\usepackage{graphicx}
+\ProvidesPackage{stackrel}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{definition}[thm]{Definition}
+\newtheorem{rmk}[thm]{Remark}
+\newtheorem{obs}[thm]{Observation}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem{question}[thm]{Question}
+\newtheorem{prob}[thm]{Problem}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+
+\newcommand{\de}{\partial}
+\newcommand{\db}{\overline{\partial}}
+\newcommand{\ov}{\overline}
+\newcommand{\ddbar}{\sqrt{-1}\de\db}
+\newcommand{\vp}{\varphi}
+\newcommand{\ti}{\tilde}
+\newcommand{\ve}{\varepsilon}
+\newcommand{\Ric}{\mathrm{Ric}}
+\newcommand{\tr}[2]{\textrm{tr}_{#1} #2}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+
+
+\begin{document}
+
+%\title{Geometry and Topology Problems}
+
+%\maketitle
+
+%\section*{Individual}
+
+
+
+
+
+
+\begin{center}
+S.-T. Yau College Student Mathematics Contests 2019
+
+\vspace{0.1cm}
+
+\Large {\bf Geometry and Topology}
+
+\vspace{0.1cm}
+
+\large {\bf Team (5 problems)}
+
+\vspace{0.1cm}
+\end{center}
+
+\begin{enumerate}
+\item [1)] Is $TS^2$ diffeomorphic to $S^2\times \mathbb{R}^2$? Verify your answer. Here $TS^2$ is the total space of the tangent bundle of $S^2$.
+
+
+
+\item [2)] Solve the problem which Russell Crowe assigns to his students in the movie ``A beautiful mind'' (2001):
+
+$$V=\{F:\mathbb{R}^3\backslash X\to\mathbb{R}^3\ s.t.\ \nabla\times F=0\}$$
+$$W=\{F=\nabla g\}$$
+$$\dim \left(V/W\right)=?$$
+
+First give the general answer for any closed $X\subset\mathbb{R}^3,$ and then specialize it to (a) $X=\{x=y=z=0\}$, (b) $X=\{x=y=0\}$ and (c) $X=\{x=0\}$.
+
+
+\item [3)] Let $T^2=S^1\times S^1$ be the $2$-torus with the standard orientation, and let $F:T^2\to T^2$ be a smooth map of degree $1$ such that $F\circ F=\mathrm{Id}$ and $F$ has no fixed points. Prove that
+the induced map $F^*:H^1(T^2)\to H^1(T^2)$ is the identity.
+
+\item [4)]  Let $U(n)$ be the group of $n\times n$ unitary matrices, and $O(n)$ be the group of $n\times n$ orthogonal matrices. Let $SU(n)=\{A\in U(n)| \det A=1\}$ be the special unitary group and $SO(n)=\{A\in O(n)| \det A=1\}$ be the special orthogonal group. All  $U(n), SU(n), O(n), SO(n)$ are Lie groups with natural manifold structures.
+\begin{enumerate}
+\item [(a)] Compute the dimensions of $SU(n)$ and  $SO(n)$.
+\item [(b)] Compute the fundamental groups of $SU(n)$ and $SO(n)$ ($n\geq 2$).
+\end{enumerate}
+
+\item [5)] Let $(M,g)$ be a compact Riemannian manifold and $R$ be its Riemannian curvature tensor.
+$(M,g)$ will be called \emph{weakly negative} if for any point $p\in M$ and for
+any nonzero vector field $X\in T_pM$, there exists a nonzero vector
+field $Y\in T_pM$ such that $R(X,Y,Y,X)<0$.
+ \begin{itemize}
+
+\item[(a)] Let $X$ be a Killing vector field and
+$f=\frac{1}{2}g(X,X)=\frac{1}{2}|X|^2$. Show that for any vector
+field $V$
+$$\left(\text{Hess} f\right)(V,V)=g(\nabla_V X, \nabla_V
+X)-R(V,X,X,V).$$
+Here the Hessian of $f$ is $\left(\text{Hess} f\right)(Y,Z):=g(\nabla_Y\text{grad}(f),Z)$ for any
+vector fields $Y,Z$, where $\text{grad}(f)$ is the gradient vector of $f$.
+\item[(b)]
+ Prove that if $(M,g)$
+is weakly negative,  then there are no nontrivial Killing vector fields.
+\end{itemize}
+
+
+\end{enumerate}
+
+
+
+
+
+\end{document}

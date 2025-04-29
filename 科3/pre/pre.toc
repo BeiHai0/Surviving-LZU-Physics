@@ -1,0 +1,18 @@
+\beamer@sectionintoc {1}{Aspects of a novel nonlinear electrodynamics in flat spacetime and in a gravity-coupled scenario}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{非线性电动力学模型和场方程}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{点电荷的能量}{10}{0}{1}
+\beamer@subsectionintoc {1}{3}{真空双折射}{11}{0}{1}
+\beamer@subsectionintoc {1}{4}{拉格朗日量的因果性和单一性条件}{13}{0}{1}
+\beamer@subsectionintoc {1}{5}{新 NLE 与广义相对论的耦合}{15}{0}{1}
+\beamer@subsectionintoc {1}{6}{总结}{22}{0}{1}
+\beamer@sectionintoc {2}{Nonlinear Electrodynamics in f(T) Gravity and Generalized Second Law of Thermodynamics}{23}{0}{2}
+\beamer@subsectionintoc {2}{1}{f(T)引力和NLED基础}{24}{0}{2}
+\beamer@subsectionintoc {2}{2}{宇宙学参数和热力学}{28}{0}{2}
+\beamer@subsectionintoc {2}{3}{f(T)模型的一个例子}{35}{0}{2}
+\beamer@subsectionintoc {2}{4}{总结}{42}{0}{2}
+\beamer@sectionintoc {3}{Nonlinear electrodynamics and black holes}{43}{0}{3}
+\beamer@subsectionintoc {3}{1}{NLED formalism}{44}{0}{3}
+\beamer@subsectionintoc {3}{2}{NLED 黑洞}{48}{0}{3}
+\beamer@subsectionintoc {3}{3}{NLED 黑洞热力学}{53}{0}{3}
+\beamer@subsectionintoc {3}{4}{孤立视界框架和质量关系}{56}{0}{3}
+\beamer@subsectionintoc {3}{5}{NLED 黑洞的稳定性}{58}{0}{3}

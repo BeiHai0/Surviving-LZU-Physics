@@ -1,0 +1,138 @@
+\documentclass[10pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{dsfont}
+\usepackage{amsmath, amsthm, amssymb, mathrsfs}
+\usepackage[abbrev,non-sorted-cites]{amsrefs}
+\usepackage[all]{xy}
+\usepackage{CJK}
+\usepackage{grffile}
+\usepackage{graphicx}
+\ProvidesPackage{stackrel}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{definition}[thm]{Definition}
+\newtheorem{rmk}[thm]{Remark}
+\newtheorem{obs}[thm]{Observation}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem{question}[thm]{Question}
+\newtheorem{prob}[thm]{Problem}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+
+\newcommand{\de}{\partial}
+\newcommand{\db}{\overline{\partial}}
+\newcommand{\ov}{\overline}
+\newcommand{\ddbar}{\sqrt{-1}\de\db}
+\newcommand{\vp}{\varphi}
+\newcommand{\ti}{\tilde}
+\newcommand{\ve}{\varepsilon}
+\newcommand{\Ric}{\mathrm{Ric}}
+\newcommand{\tr}[2]{\textrm{tr}_{#1} #2}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+\newcommand{\thalf}{\textstyle{\frac{1}{2}}}
+
+
+\begin{document}
+
+
+
+
+\begin{center}
+S.-T. Yau College Student Mathematics Contests 2019
+
+\vspace{0.1cm}
+
+\Large {\bf Applied and Computational Math}
+
+\vspace{0.1cm}
+
+\large {\bf Team (5 problems)}
+
+\vspace{0.1cm}
+\end{center}
+
+\begin{enumerate}
+\item[1)](10 points)
+
+    Show that the quadrature formula $\displaystyle \int_{-1}^{1} \frac{f(x)}{\sqrt{1 - x^{2}}}dx = \frac{\pi}{n}\sum\limits_{k=0}^{n-1}f\left(\text{cos}\pi\frac{2k+1}{2n}\right) $ is exact for all polynomials of degree up to and including $2n - 1$.
+
+\item[2)](15 pointes)
+    Let $x = (x_0,\ldots,x_{N-1})\in\mathbf{R}^N$, $x\neq0$ and $\hat{x}$ be its discrete Fourier transform, i.e.\
+    $$\hat{x}_w = \frac{1}{\sqrt{N}}\sum_{t=0}^{N-1} x_t\exp(-2\pi i w t/N),~w=0,\ldots,N-1.$$
+    Prove that $\|x\|_0\|\hat{x}\|_0\geq N$ where $\|x\|_0$ denotes the number of nonzero entries in $x$. (Hint: show that $\hat x$ can not have $\|x\|_0$ consecutive zeros.)
+
+\item[3)](20 pointes)
+
+    Let $m\leq n$. Consider the $(n + m) \times (n + m)$ real matrix defined by
+    \begin{equation*}
+    A =  \left[ \begin{matrix} I & X \\ X^{\top} & O \end{matrix} \right],
+    \end{equation*}
+    where $I$ is the $n \times n$ identity matrix, $X$ is a full-rank $n \times m$ matrix, $O$ is the $m \times m$ zero matrix.
+%   , and $m \leq n$.
+    \begin{itemize}
+        \item[(i)] Show that $A$ is nonsingular.
+        \item[(ii)] Find the eigenvalues of $A$, some of which are in terms of the singular values of $X$.
+        \item[(iii)] Under what conditions on $X$ would the iteration
+        \begin{equation*}
+        x_{n+1} = x_{n} - (A x_{n} - b)
+        \end{equation*}
+        converge to the solution of $Ax = b$ for any  $(n + m) \times (n + m)$ real vector b?
+    \end{itemize}
+
+\item[4)](25 pointes)
+
+    Let $f$ be a continuously differentiable convex function
+%   \footnote{For any continuously differentiable convex function $g$ defined on $\mathbf{R}^n$, it holds that  for any $x,y\in\mathbf{R}^n$, $g(x)\ge g(y)+(\nabla g(y))^T(x-y)$. }
+    defined on $\mathbf{R}^n$, i.e., $f:\mathbf{R}^n\to\mathbf{R}$ is continuously differentiable and for any $x,y\in\mathbf{R}^n$ and any $\alpha\in(0,1)$, $f(\alpha x+(1-\alpha)y)\le \alpha f(x)+(1-\alpha) f(y)$.
+    Suppose that the gradient of $f$ is Lipschitz continuous, i.e., there exists a constant $L>0$ such that
+    $$
+    \|\nabla f(x)-\nabla f(y)\|_2\le L \|x-y\|_2.
+    $$
+    Prove the following inequalities:\\
+    $(i).~$
+    $
+    f(y)\le f(x)+(\nabla f(x))^T(y-x)+\frac{L}{2}\|y-x\|^2_2,\quad\forall x,y\in\mathbf{R}^n;
+    $\\
+    $(ii).~$
+    $
+    f(y)\ge f(x)+(\nabla f(x))^T(y-x)+\frac{1}{2L}\|\nabla f(y)-\nabla f(x)\|_2^2,\quad\forall x,y\in\mathbf{R}^n;
+    $\\
+    $(iii).~$
+    $
+    \frac{1}{L}\|\nabla f(y)-\nabla f(x)\|_2^2\le (\nabla f(y)-\nabla f(x))^T(y-x),\quad\forall x,y\in\mathbf{R}^n.
+    $
+
+\item[5)](30 pointes)
+Consider the following problems.
+    \begin{itemize}
+        \item[(i)] Determine the order of St$\ddot{\text{o}}$rmer's method,
+    \begin{equation*}
+    y_{n+2} - 2y_{n+1} + y_{n}
+    = h^{2} f(t_{n+1}, y_{n+1}), \ \ \ \ n\geq 0,
+    \end{equation*}
+    for solving the second order system of ODE's
+    \begin{equation*}
+    y'' = f(t, y), \ \ \ \ t\geq 0,
+    \end{equation*}
+    with the initial conditions $y(0) = y_{0}$ and $y'(0) = y'_{0}$.
+
+    \item[(ii)] Using the second order central differences in space and St$\ddot{\text{o}}$rmer's method in time, construct a scheme to solve the wave equation,
+    \begin{equation*}
+    u_{tt} = u_{xx}.
+    \end{equation*}
+
+    \item[(iii)] Determine the condition for its stability.
+\end{itemize}
+
+
+\end{enumerate}
+
+
+
+
+
+\end{document}

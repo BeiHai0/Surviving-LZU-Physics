@@ -1,0 +1,622 @@
+<!DOCTYPE html><html><head>
+      <title>Spanish</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\lzx\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.13\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<div class="md-toc">
+<div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#基本骨架" class="md-toc-link">
+            <p>基本骨架</p>
+
+          </a></div><details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#语法" class="md-toc-link"><p>语法</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#1" class="md-toc-link">
+            <p>1</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#2" class="md-toc-link">
+            <p>2</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#3" class="md-toc-link">
+            <p>3</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#4" class="md-toc-link">
+            <p>4</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#5" class="md-toc-link">
+            <p>5</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#6" class="md-toc-link">
+            <p>6</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#7" class="md-toc-link">
+            <p>7</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#8" class="md-toc-link">
+            <p>8</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#词汇" class="md-toc-link"><p>词汇</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#1-1" class="md-toc-link">
+            <p>1</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#2-1" class="md-toc-link">
+            <p>2</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#3-1" class="md-toc-link">
+            <p>3</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#4-1" class="md-toc-link">
+            <p>4</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#5-1" class="md-toc-link">
+            <p>5</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#6-1" class="md-toc-link">
+            <p>6</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#7-1" class="md-toc-link">
+            <p>7</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#8-1" class="md-toc-link">
+            <p>8</p>
+
+          </a></div>
+        </div>
+      </details>
+    
+</div>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<h1 id="基本骨架">基本骨架 </h1>
+<h4 id="身份">身份 </h4>
+<p><img src="img/gra_1_3.png" alt=""></p>
+<h4 id="时间">时间 </h4>
+<p>西班牙语有许多时间表达，包括表示时间的词汇、短语和句子。以下是一些常见的时间表达：</p>
+<ol>
+<li>
+<p><strong>基本的时间词汇</strong>：</p>
+<ul>
+<li>hoy: 今天</li>
+<li>mañana: 明天</li>
+<li>ayer: 昨天</li>
+<li>ahora: 现在</li>
+<li>tarde: 晚上/下午</li>
+<li>noche: 夜晚</li>
+<li>semana: 周（星期）</li>
+<li>mes: 月</li>
+<li>año: 年</li>
+<li>hora: 小时</li>
+<li>minuto: 分钟</li>
+<li>segundo: 秒</li>
+</ul>
+</li>
+<li>
+<p><strong>表示时间段的词汇和短语</strong>：</p>
+<ul>
+<li>
+<p>por la mañana: 早上</p>
+</li>
+<li>
+<p>por la tarde: 下午</p>
+</li>
+<li>
+<p>por la noche: 晚上</p>
+</li>
+<li>
+<p>de mañana: 早晨</p>
+</li>
+<li>
+<p>de tarde: 下午</p>
+</li>
+<li>
+<p>de noche: 夜晚</p>
+</li>
+<li>
+<p>a menudo: 经常</p>
+</li>
+<li>
+<p>a veces: 有时</p>
+</li>
+<li>
+<p>todos los días: 每天</p>
+</li>
+<li>
+<p>cada semana: 每周</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>表示日期和时间的短语</strong>：</p>
+<ul>
+<li>¿Qué hora es?: 现在几点了？</li>
+<li>¿A qué hora...?: …几点？</li>
+<li>¿Cuándo...?: 什么时候……？</li>
+<li>el día: 日期</li>
+<li>la fecha: 日期</li>
+<li>el día de la semana: 星期几</li>
+<li>el día del mes: 一个月的几号</li>
+<li>el mes: 月份</li>
+<li>el año: 年份</li>
+</ul>
+</li>
+<li>
+<p><strong>其他常见的时间表达</strong>：</p>
+<ul>
+<li>temprano: 早</li>
+<li>tarde: 晚</li>
+<li>pronto: 很快</li>
+<li>más tarde: 稍后</li>
+<li>de vez en cuando: 有时候</li>
+<li>a tiempo: 准时</li>
+<li>tarde o temprano: 迟早</li>
+<li>desde...hasta...: 从……到……</li>
+</ul>
+</li>
+</ol>
+<h3 id="关系">关系 </h3>
+<h4 id="方位">方位 </h4>
+<ol>
+<li>
+<p>上面 - arriba</p>
+</li>
+<li>
+<p>下面 - abajo</p>
+</li>
+<li>
+<p>前面 - adelante</p>
+</li>
+<li>
+<p>后面 - atrás</p>
+</li>
+<li>
+<p>左边 - izquierda</p>
+</li>
+<li>
+<p>右边 - derecha</p>
+</li>
+<li>
+<p>里面 - dentro</p>
+</li>
+<li>
+<p>外面 - fuera</p>
+</li>
+<li>
+<p>顶部 - parte superior</p>
+</li>
+<li>
+<p>底部 - parte inferior</p>
+</li>
+<li>
+<p>中间 - medio/centro</p>
+</li>
+<li>
+<p>边缘 - borde</p>
+</li>
+<li>
+<p>东 - este</p>
+</li>
+<li>
+<p>南 - sur</p>
+</li>
+<li>
+<p>西 - oeste</p>
+</li>
+<li>
+<p>北 - norte</p>
+</li>
+</ol>
+<h4 id="时间关系">时间关系 </h4>
+<p>之前 - antes</p>
+<p>之后 - después</p>
+<h4 id="比较">比较 </h4>
+<ol>
+<li>
+<p>大于 - mayor que</p>
+</li>
+<li>
+<p>小于 - menor que</p>
+</li>
+<li>
+<p>等于 - igual a</p>
+</li>
+<li>
+<p>大于等于 - mayor o igual que</p>
+</li>
+<li>
+<p>小于等于 - menor o igual que</p>
+</li>
+</ol>
+<h4 id="基数词">基数词 </h4>
+<ol>
+<li>uno</li>
+<li>dos</li>
+<li>tres</li>
+<li>cuatro</li>
+<li>cinco</li>
+<li>seis</li>
+<li>siete</li>
+<li>ocho</li>
+<li>nueve</li>
+<li>diez</li>
+<li>once</li>
+<li>doce</li>
+<li>trece</li>
+<li>catorce</li>
+<li>quince</li>
+<li>dieciséis</li>
+<li>diecisiete</li>
+<li>dieciocho</li>
+<li>diecinueve</li>
+<li>veinte</li>
+<li>veintiuno</li>
+<li>veintidós</li>
+<li>veintitrés</li>
+<li>veinticuatro</li>
+<li>veinticinco</li>
+<li>veintiséis</li>
+<li>veintisiete</li>
+<li>veintiocho</li>
+<li>veintinueve</li>
+<li>treinta</li>
+<li>treinta y uno</li>
+<li>treinta y dos</li>
+<li>treinta y tres</li>
+<li>treinta y cuatro</li>
+<li>treinta y cinco</li>
+<li>treinta y seis</li>
+<li>treinta y siete</li>
+<li>treinta y ocho</li>
+<li>treinta y nueve</li>
+<li>cuarenta</li>
+<li>cuarenta y uno</li>
+<li>cuarenta y dos</li>
+<li>cuarenta y tres</li>
+<li>cuarenta y cuatro</li>
+<li>cuarenta y cinco</li>
+<li>cuarenta y seis</li>
+<li>cuarenta y siete</li>
+<li>cuarenta y ocho</li>
+<li>cuarenta y nueve</li>
+<li>cincuenta</li>
+<li>cincuenta y uno</li>
+<li>cincuenta y dos</li>
+<li>cincuenta y tres</li>
+<li>cincuenta y cuatro</li>
+<li>cincuenta y cinco</li>
+<li>cincuenta y seis</li>
+<li>cincuenta y siete</li>
+<li>cincuenta y ocho</li>
+<li>cincuenta y nueve</li>
+<li>sesenta</li>
+<li>sesenta y uno</li>
+<li>sesenta y dos</li>
+<li>sesenta y tres</li>
+<li>sesenta y cuatro</li>
+<li>sesenta y cinco</li>
+<li>sesenta y seis</li>
+<li>sesenta y siete</li>
+<li>sesenta y ocho</li>
+<li>sesenta y nueve</li>
+<li>setenta</li>
+<li>setenta y uno</li>
+<li>setenta y dos</li>
+<li>setenta y tres</li>
+<li>setenta y cuatro</li>
+<li>setenta y cinco</li>
+<li>setenta y seis</li>
+<li>setenta y siete</li>
+<li>setenta y ocho</li>
+<li>setenta y nueve</li>
+<li>ochenta</li>
+<li>ochenta y uno</li>
+<li>ochenta y dos</li>
+<li>ochenta y tres</li>
+<li>ochenta y cuatro</li>
+<li>ochenta y cinco</li>
+<li>ochenta y seis</li>
+<li>ochenta y siete</li>
+<li>ochenta y ocho</li>
+<li>ochenta y nueve</li>
+<li>noventa</li>
+<li>noventa y uno</li>
+<li>noventa y dos</li>
+<li>noventa y tres</li>
+<li>noventa y cuatro</li>
+<li>noventa y cinco</li>
+<li>noventa y seis</li>
+<li>noventa y siete</li>
+<li>noventa y ocho</li>
+<li>noventa y nueve</li>
+<li>cien</li>
+</ol>
+<h1 id="语法">语法 </h1>
+<p>jugar <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>→</mo><mi>u</mi><mi>e</mi></mrow><annotation encoding="application/x-tex">u \to ue</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">u</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">u</span><span class="mord mathnormal">e</span></span></span></span></p>
+<p>yo juego</p>
+<p>juegas</p>
+<p>juega</p>
+<p>jugamos</p>
+<p>juáis</p>
+<p>juegan</p>
+<hr>
+<p>pedir : e <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\to</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> i</p>
+<p>yo pido</p>
+<p>pides</p>
+<p>pide</p>
+<p>pedimos</p>
+<p>pedís</p>
+<p>piden</p>
+<p>el vaso 杯子</p>
+<p>Doy el vaso a Pepe. 我把杯子给Pepe</p>
+<p>Se lo doy</p>
+<p>Amo a Juan</p>
+<p>Lo amo 我爱他 Le 化：Le amo</p>
+<p>Te amo 我爱你</p>
+<p>Te amamos 我们爱你</p>
+<p>Digo esto a Ana.</p>
+<p>Se lo digo</p>
+<p>Te lo digo 我把它告诉你</p>
+<p>¿Me lo puedes decir ? 你可以把它告诉我吗</p>
+<p>¿Puedes decírmelo ? 你可以把它告诉我吗</p>
+<p>Sí, te lo puedo decir</p>
+<p>Sí, puedo decírtelo</p>
+<p>No, no te lo puedo decir</p>
+<p>No, no puedo decírtelo</p>
+<p>复指现象：</p>
+<p><strong>直接宾语</strong>的完整内容放在谓语动词前面，必须用相应宾格代词重复指出直接宾语</p>
+<p>每天 casa día</p>
+<p>报纸 periódico</p>
+<p>阅读 leer</p>
+<p>Leo estos periódicos cada día</p>
+<p>Estdos periódicos <strong>los</strong> leo cada día</p>
+<p>Amo a Javier</p>
+<p>A Javier <strong>lo/le</strong> amo</p>
+<p><strong>间接宾语</strong></p>
+<p><strong>Le</strong> digo esto a Ana</p>
+<p><strong>Le</strong> doy el vaso a Pepe</p>
+<p>Te doy esto libro</p>
+<p>A ti te lo doy</p>
+<p>¿Me lo puedes dar?</p>
+<p>¿A mí me lo puedes dar?</p>
+<p>No, a ti no puedo dártelo</p>
+<h4 id="动词陈述式现在时变位">动词陈述式现在时变位 </h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center">estudiar(第一变位规则)</th>
+<th style="text-align:center">ser</th>
+<th style="text-align:center">estar</th>
+<th style="text-align:center">tener</th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">yo</td>
+<td style="text-align:center">estudio</td>
+<td style="text-align:center">soy</td>
+<td style="text-align:center">estoy</td>
+<td style="text-align:center">tengo</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">tú</td>
+<td style="text-align:center">estudias</td>
+<td style="text-align:center">eres</td>
+<td style="text-align:center">estás</td>
+<td style="text-align:center">tienes</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">él, ella, usted</td>
+<td style="text-align:center">estudia</td>
+<td style="text-align:center">es</td>
+<td style="text-align:center">está</td>
+<td style="text-align:center">tiene</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">nosotros, nosotras</td>
+<td style="text-align:center">estudiamos</td>
+<td style="text-align:center">somos</td>
+<td style="text-align:center">estamos</td>
+<td style="text-align:center">tenemos</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">vosotros, vosotras</td>
+<td style="text-align:center">estudiáis</td>
+<td style="text-align:center">sois</td>
+<td style="text-align:center">esdáis</td>
+<td style="text-align:center">ten</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">ellos, ellas, ustedes</td>
+<td style="text-align:center">estudian</td>
+<td style="text-align:center">son</td>
+<td style="text-align:center">están</td>
+<td style="text-align:center">tienen</td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="1">1 </h2>
+<p><img src="img/gra_1_1.png" alt=""></p>
+<p><img src="img/gra_1_2.png" alt=""></p>
+<p><img src="img/gra_1_3.png" alt=""></p>
+<p><img src="img/gra_1_4.png" alt=""></p>
+<h2 id="2">2 </h2>
+<p><img src="img/gra_2_1.png" alt=""></p>
+<p><img src="img/gra_2_2.png" alt=""></p>
+<p><img src="img/gra_2_3.png" alt=""></p>
+<p><img src="img/gra_2_4.png" alt=""></p>
+<p><img src="img/gra_2_5.png" alt=""></p>
+<h2 id="3">3 </h2>
+<p><img src="img/gra_3_1.png" alt=""></p>
+<p><img src="img/gra_3_2.png" alt=""></p>
+<p><img src="img/gra_3_3.png" alt=""></p>
+<p><img src="img/gra_3_4.png" alt=""></p>
+<p><img src="img/gra_3_5.png" alt=""></p>
+<p><img src="img/gra_3_6.png" alt=""></p>
+<p><img src="img/gra_3_7.png" alt=""></p>
+<p><img src="img/gra_3_8.png" alt=""></p>
+<p><img src="img/gra_3_9.png" alt=""></p>
+<p><img src="img/gra_3_10.png" alt=""></p>
+<h2 id="4">4 </h2>
+<p><img src="img/gra_4_1.png" alt=""></p>
+<p><img src="img/gra_4_2.png" alt=""></p>
+<p><img src="img/gra_4_3.png" alt=""></p>
+<p><img src="img/gra_4_4.png" alt=""></p>
+<p><img src="img/gra_4_5.png" alt=""></p>
+<p><img src="img/gra_4_6.png" alt=""></p>
+<p><img src="img/gra_4_7.png" alt=""></p>
+<p><img src="img/gra_4_8.png" alt=""></p>
+<p><img src="img/gra_4_9.png" alt=""></p>
+<h2 id="5">5 </h2>
+<p><img src="img/gra_5_1.png" alt=""></p>
+<p><img src="img/gra_5_2.png" alt=""></p>
+<p><img src="img/gra_5_3.png" alt=""></p>
+<p><img src="img/gra_5_4.png" alt=""></p>
+<p><img src="img/gra_5_5.png" alt=""></p>
+<p><img src="img/gra_5_6.png" alt=""></p>
+<p><img src="img/gra_5_7.png" alt=""></p>
+<p><img src="img/gra_5_8.png" alt=""></p>
+<p><img src="img/gra_5_9.png" alt=""></p>
+<p><img src="img/gra_5_10.png" alt=""></p>
+<p><img src="img/gra_5_11.png" alt=""></p>
+<p><img src="img/gra_5_12.png" alt=""></p>
+<h2 id="6">6 </h2>
+<p><img src="img/gra_6_1.png" alt=""></p>
+<p><img src="img/gra_6_2.png" alt=""></p>
+<p><img src="img/gra_6_3.png" alt=""></p>
+<p><img src="img/gra_6_4.png" alt=""></p>
+<p><img src="img/gra_6_5.png" alt=""></p>
+<p><img src="img/gra_6_6.png" alt=""></p>
+<p><img src="img/gra_6_7.png" alt=""></p>
+<p><img src="img/gra_6_8.png" alt=""></p>
+<p><img src="img/gra_6_9.png" alt=""></p>
+<h2 id="7">7 </h2>
+<p><img src="img/gra_7_1.png" alt=""></p>
+<p><img src="img/gra_7_2.png" alt=""></p>
+<p><img src="img/gra_7_3.png" alt=""></p>
+<p><img src="img/gra_7_4.png" alt=""></p>
+<p><img src="img/gra_7_5.png" alt=""></p>
+<p><img src="img/gra_7_6.png" alt=""></p>
+<p><img src="img/gra_7_7.png" alt=""></p>
+<p><img src="img/gra_7_8.png" alt=""></p>
+<p><img src="img/gra_7_9.png" alt=""></p>
+<h2 id="8">8 </h2>
+<p><img src="img/gra_8_1.png" alt=""></p>
+<p><img src="img/gra_8_2.png" alt=""></p>
+<p><img src="img/gra_8_3.png" alt=""></p>
+<p><img src="img/gra_8_4.png" alt=""></p>
+<p><img src="img/gra_8_5.png" alt=""></p>
+<p><img src="img/gra_8_6.png" alt=""></p>
+<h1 id="词汇">词汇 </h1>
+<p>Querer(ie) ' amar/ 喜欢/想要（情态动词）</p>
+<p>Quiero estudiar español</p>
+<h2 id="1-1">1 </h2>
+<p><img src="img/voc_1_1.png" alt=""></p>
+<p><img src="img/voc_1_2.png" alt=""></p>
+<h2 id="2-1">2 </h2>
+<p><img src="img/voc_2_1.png" alt=""></p>
+<h2 id="3-1">3 </h2>
+<p><img src="img/voc_3_1.png" alt=""></p>
+<p><img src="img/voc_3_2.png" alt=""></p>
+<h2 id="4-1">4 </h2>
+<p><img src="img/voc_4_1.png" alt=""></p>
+<p><img src="img/voc_4_2.png" alt=""></p>
+<h2 id="5-1">5 </h2>
+<p><img src="img/voc_5_1.png" alt=""></p>
+<p><img src="img/voc_5_2.png" alt=""></p>
+<h2 id="6-1">6 </h2>
+<p><img src="img/voc_6_1.png" alt=""></p>
+<h2 id="7-1">7 </h2>
+<p><img src="img/voc_7_1.png" alt=""></p>
+<p><img src="img/voc_7_2.png" alt=""></p>
+<h2 id="8-1">8 </h2>
+<p><img src="img/voc_8_1.png" alt=""></p>
+<p><img src="img/voc_8_2.png" alt=""></p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

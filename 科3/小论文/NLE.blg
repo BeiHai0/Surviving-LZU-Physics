@@ -1,0 +1,70 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: NLE.aux
+The style file: apsrev4-2.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: NLENotes.bib
+Database file #2: ref.bib
+control{REVTEX42Control}, control.key{N/A}, control.author{N/A}, control.editor{N/A}, control.title{N/A}, control.pages{N/A}, control.year{N/A}, control.eprint{N/A}, 
+control{apsrev42Control}, control.key{N/A}, control.author{08}, control.editor{1}, control.title{0}, control.pages{0}, control.year{1}, control.eprint{N/A}, 
+Warning--jnrlst (dependency: not reversed) set 1
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+apsrev4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
+Control: key (0) 
+Control: author (8) initials jnrlst
+Control: editor formatted (1) identically to author
+Control: production of article title (0) allowed
+Control: page (0) single
+Control: year (1) truncated
+Control: production of eprint (0) enabled
+You've used 12 entries,
+            6079 wiz_defined-function locations,
+            1706 strings with 16699 characters,
+and the built_in function-call counts, 10672 in all, are:
+= -- 808
+> -- 203
+< -- 81
++ -- 68
+- -- 58
+* -- 1476
+:= -- 1022
+add.period$ -- 10
+call.type$ -- 12
+change.case$ -- 50
+chr.to.int$ -- 22
+cite$ -- 12
+duplicate$ -- 1037
+empty$ -- 733
+format.name$ -- 116
+if$ -- 2125
+int.to.chr$ -- 1
+int.to.str$ -- 19
+missing$ -- 173
+newline$ -- 82
+num.names$ -- 30
+pop$ -- 460
+preamble$ -- 1
+purify$ -- 50
+quote$ -- 0
+skip$ -- 503
+stack$ -- 0
+substring$ -- 254
+swap$ -- 916
+text.length$ -- 19
+text.prefix$ -- 0
+top$ -- 10
+type$ -- 141
+warning$ -- 1
+while$ -- 39
+width$ -- 0
+write$ -- 140
+(There was 1 warning)

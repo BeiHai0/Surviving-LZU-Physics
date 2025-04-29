@@ -1,0 +1,133 @@
+\documentclass[10pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{dsfont}
+\usepackage{amsmath, amsthm, amssymb, mathrsfs}
+\usepackage[abbrev,non-sorted-cites]{amsrefs}
+\usepackage[all]{xy}
+\usepackage{CJK}
+\usepackage{grffile}
+\usepackage{graphicx}
+\ProvidesPackage{stackrel}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{definition}[thm]{Definition}
+\newtheorem{rmk}[thm]{Remark}
+\newtheorem{obs}[thm]{Observation}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem{question}[thm]{Question}
+\newtheorem{prob}[thm]{Problem}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+
+\newcommand{\de}{\partial}
+\newcommand{\db}{\overline{\partial}}
+\newcommand{\ov}{\overline}
+\newcommand{\ddbar}{\sqrt{-1}\de\db}
+\newcommand{\vp}{\varphi}
+\newcommand{\ti}{\tilde}
+\newcommand{\ve}{\varepsilon}
+\newcommand{\Ric}{\mathrm{Ric}}
+\newcommand{\tr}[2]{\textrm{tr}_{#1} #2}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+
+
+\begin{document}
+
+%\title{Geometry and Topology Problems}
+
+%\maketitle
+
+%\section*{Individual}
+
+\begin{center}
+S.-T. Yau College Student Mathematics Contests 2019
+
+\vspace{0.1cm}
+
+\Large {\bf Geometry and Topology}
+
+\vspace{0.1cm}
+
+\large {\bf Individual (5 problems)}
+
+\vspace{0.1cm}
+\end{center}
+
+\begin{enumerate}
+\item [1)]  Let $\text{Conf}_n$ be the following submanifold of $\mathbb C^n$:
+$$
+\text{Conf}_n=\{(z_1,z_2, \cdots, z_n)\in \mathbb C^n| z_i\neq z_j \ \text{for any}\  i\neq j\}.
+$$
+For every pair $(i,j)$ with $i\neq j$, we define the complex valued 1-form
+$$
+\omega_{ij}:= {dz_i-dz_j\over z_i-z_j}.
+$$
+\begin{enumerate}
+\item [(a)] Show that for any $i\neq j$, $\omega_{ij}$ represents a non-zero de Rham cohomology class in $H^1(\text{Conf}_n, \mathbb C)$.
+
+\item [(b)] Show that for any pair-wise distinct indices $i,j,k$,
+$$
+  \omega_{ij}\wedge \omega_{jk}+\omega_{jk}\wedge \omega_{ki}+\omega_{ki}\wedge \omega_{ij}=0.
+$$
+\end{enumerate}
+
+
+
+
+
+\item [2)] Let $M$ be a compact oriented manifold of (real) dimension $4$. Consider the following symmetric bilinear form on  $H^2(M)$
+$$H^2(M)\times H^2(M)\to\mathbb{R},\quad ([\alpha],[\beta])\mapsto\int_M\alpha\wedge\beta.
+$$
+Let $\tau(M)$ be the signature of this bilinear form, i.e. the number of positive eigenvalues minus the number of negative eigenvalues. Compute $\tau(M)$ for $M=S^4, \mathbb{CP}^2$ and $S^2\times S^2$.
+
+\item [3)] Let $X=\mathbb{R}^4/\sim$, where
+      \begin{align*}
+         (x_1,x_2,x_3,x_4)&\sim (x_1,x_2+1,x_3,x_4)\\
+         (x_1,x_2,x_3,x_4)&\sim (x_1,x_2,x_3,x_4+1)\\
+         (x_1,x_2,x_3,x_4)&\sim (x_1+1,x_2,x_3,x_4)\\
+         (x_1,x_2,x_3,x_4)&\sim (x_1,x_2+x_4,x_3+1,x_4)\\
+      \end{align*} Compute $H_1(X, \mathbb Z)$.
+
+
+\item [4)]  Let $E$ be a vector bundle over a smooth manifold
+$M$. Let $\nabla^E$ be a connection $E$ and $R^E\in \Omega^2(M, \text{End}(E))$ be its curvature tensor. For any polynomial $f(x)=a_0+a_1x+a_2 x^2+\cdots+a_nx^n$, we denote
+$$
+f(R^E)=a_0+a_1 R^E+ a_2 (R^E)^2\cdots+a_n (R^E)^n \in \Omega^*(M, \text{End}(E)).
+$$
+Here $(R^E)^k\in \Omega^{2k}(M, \text{End}(E))$ is the $k$-th wedge product on forms combined with matrix multiplications on $\text{End}(E)$.
+\begin{enumerate}
+\item [(a)] Show that the differential form $\text{tr}\left[ f(R^E)\right]\in \Omega^{*}(M)$ is closed
+$$
+  d \text{tr}\left[ f(R^E)\right]=0.
+$$
+Here $\text{tr}$ is the trace on $\text{End}(E)$.
+\item [(b)] Let $\nabla^E$, $\widetilde\nabla^E$ be two connections on $E$ and $R^E$, $\widetilde R^E$ be the corresponding
+curvature tensors.  Show that  there exists a differential form
+$\omega\in\Omega^*(M)$ such that
+$$\text{tr}\left[ f(R^E)\right]-\text{tr} \left[f(\tilde R^E)\right]=d\omega.$$
+\end{enumerate}
+\item [5)]
+\begin{enumerate}
+\item [(a)] Let $u$ be a smooth function over a Riemannian manifold $(M,g)$.  Prove the following Bochner's formula
+$$\frac{1}{2}\Delta|\nabla u|^2=|\nabla\nabla u|^2+\text{Ric}(\nabla u,\nabla u)+g(\nabla\Delta u,\nabla u)$$
+where $\Delta$ is the Laplacian and $|\bullet|^2=g(\bullet,
+\bullet)$.
+
+\item [(b)] Let $(S^2,g)$ be the standard unit sphere and $E$ be a constant. Show that the only smooth positive solution to
+$$\Delta \ln f+Ef^2=1$$ is $f=\frac{1}{A+\phi}$ where $A$ is a
+constant and $\phi$ is some first eigenfunction of $S^2$.
+\end{enumerate}
+
+
+\end{enumerate}
+
+
+
+
+
+
+\end{document}

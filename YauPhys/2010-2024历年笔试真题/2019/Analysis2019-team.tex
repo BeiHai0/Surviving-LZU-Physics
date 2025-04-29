@@ -1,0 +1,97 @@
+\documentclass[10pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{dsfont}
+\usepackage{amsmath, amsthm, amssymb, mathrsfs}
+\usepackage[abbrev,non-sorted-cites]{amsrefs}
+\usepackage[all]{xy}
+\usepackage{CJK}
+\usepackage{grffile}
+\usepackage{graphicx}
+\ProvidesPackage{stackrel}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{definition}[thm]{Definition}
+\newtheorem{rmk}[thm]{Remark}
+\newtheorem{obs}[thm]{Observation}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem{question}[thm]{Question}
+\newtheorem{prob}[thm]{Problem}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+
+\newcommand{\de}{\partial}
+\newcommand{\db}{\overline{\partial}}
+\newcommand{\ov}{\overline}
+\newcommand{\ddbar}{\sqrt{-1}\de\db}
+\newcommand{\vp}{\varphi}
+\newcommand{\ti}{\tilde}
+\newcommand{\ve}{\varepsilon}
+\newcommand{\Ric}{\mathrm{Ric}}
+\newcommand{\tr}[2]{\textrm{tr}_{#1} #2}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+
+
+\begin{document}
+
+%\title{Geometry and Topology Problems}
+
+%\maketitle
+
+%\section*{Individual}
+
+
+
+\begin{center}
+S.-T. Yau College Student Mathematics Contests 2019
+
+\vspace{0.1cm}
+
+\Large {\bf Analysis and Differential Equations}
+
+\vspace{0.1cm}
+
+\large {\bf Team (5 problems)}
+
+\vspace{0.1cm}
+\end{center}
+
+\begin{enumerate}
+\item [1)]
+Show that there is no non-zero $f \in C_0^\infty(\mathbb{R}^2)$~(compactly supported smooth function) so that its Fourier transform $\widehat{f}(\xi)$ is also compactly supported.
+
+
+\item[2)]
+Prove the following classical interior Schauder estimates:
+
+There exists a universal constant $C$, for all smooth compactly supported functions $u, f\in C_0^\infty(\mathbb{R}^3)$ with $\triangle u =f$, we have
+\[\|u\|_{C^{2,\alpha}} \leq C \|f\|_{C^{0,\alpha}} ,\]
+where $0<\alpha<1$ and $\|\cdot\|_{C^{k,\alpha}}$ are H\"{o}lder norms.
+
+\item[3)]
+Let $(X,\mathcal{A},\mu)$ be a probability space and let $T:X\rightarrow X$ be a measurable and measure preserving map, i.e., for all $A\in \mathcal{A}$, we have $\mu\big(T^{-1}(A)\big)=\mu(A)$. For $A,B \in \mathcal{A}$, if $\mu(A-B)=\mu(B-A)=0$, we say that $A=B ~a.e.$
+
+Assume $A\in \mathcal{A}$ such that $T^{-1}(A)=A~a.e.$.Prove that there exists a set $B \in \mathcal{A}$ so that $T^{-1}B=B$ and $A=B~a.e.$
+
+\item[4)]
+
+Is there an entire function $f$ with infinitely many zeroes, so that for every $r \in (0,1)$, there exist constants $A_r, B_r < \infty$ such that $$|f(z)| \leq A_r e^{B_r |z|^r}$$ for every $z \in \mathbb{C}$?
+
+
+\item[5)]Let $u(t,x,y)$ be a smooth real function defined on $\mathbb{R}\times \mathbb{R}^2$ where $t\in \mathbb{R}$ and $(x,y)\in \mathbb{R}^2$. We assume that it solves the following semilinear wave equation:
+\[-\frac{\partial^2}{\partial t^2}u+\triangle u = u^3.\]
+If the supports of the initial data $u(0,x)$ and $\dfrac{\partial u}{\partial t}(0,x)$ are compact, prove that, for all $t_0\in \mathbb{R}$, the supports of  $u(t_0,x)$ and $\dfrac{\partial u}{\partial t}(t_0,x)$ are compact.
+
+
+
+
+\end{enumerate}
+
+
+
+
+
+\end{document}

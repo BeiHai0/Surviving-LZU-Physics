@@ -1,0 +1,105 @@
+\documentclass[10pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{dsfont}
+\usepackage{amsmath, amsthm, amssymb, mathrsfs}
+\usepackage[abbrev,non-sorted-cites]{amsrefs}
+\usepackage[all]{xy}
+\usepackage{CJK}
+\usepackage{grffile}
+\usepackage{graphicx}
+\ProvidesPackage{stackrel}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{definition}[thm]{Definition}
+\newtheorem{rmk}[thm]{Remark}
+\newtheorem{obs}[thm]{Observation}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem{question}[thm]{Question}
+\newtheorem{prob}[thm]{Problem}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+
+\newcommand{\de}{\partial}
+\newcommand{\db}{\overline{\partial}}
+\newcommand{\ov}{\overline}
+\newcommand{\ddbar}{\sqrt{-1}\de\db}
+\newcommand{\vp}{\varphi}
+\newcommand{\ti}{\tilde}
+\newcommand{\ve}{\varepsilon}
+\newcommand{\Ric}{\mathrm{Ric}}
+\newcommand{\tr}[2]{\textrm{tr}_{#1} #2}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+
+
+\begin{document}
+
+%\title{Geometry and Topology Problems}
+
+%\maketitle
+
+%\section*{Individual}
+
+\begin{center}
+S.-T. Yau College Student Mathematics Contests 2019
+
+\vspace{0.1cm}
+
+\Large {\bf Algebra and Number Theory}
+
+\vspace{0.1cm}
+
+\large {\bf Individual (5 problems)}
+
+\vspace{0.1cm}
+\end{center}
+
+\begin{itemize}
+\item[1)]Let $G$ be a finite group. Assume that for any representation $V$ of $G$ over a field of characteristic zero, the character $\chi_{_V}$ takes value in $\mathbb{Q}$.  Assume $g$ is an element in $G$ such that $g^{2019}=1$.
+
+Prove that $g$ and $g^{19}$ are conjugate in $G$.
+
+
+
+\item[2)] Let $p$ be a prime number, and let $\mathbb{F}_p$ be the finite field with $p$ elements.
+Let $F=\mathbb{F}_p(t)$ be the field of rational functions over $\mathbb{F}_p$. Consider all subfields $C$ of $F$ such that $F/C$ is a finite Galois extension.
+
+\begin{enumerate}
+\item Show that among such subfields, there is a smallest one $C_0$, i.e., $C_0$ is contained in any other $C$.
+\item What is the degree of $F/C_0$ ?
+\end{enumerate}
+
+
+
+\item[3)]Let $R\subset R'$ be an integral extension of commutative rings. Let $\mathfrak{p}'$ be a prime ideal of $R'$. Prove that $\mathfrak{p}'$ is a maximal ideal of $R'$ if and only if $\mathfrak{p}'\cap R$ is a maximal ideal of $R$.
+
+
+\item[4)]
+\begin{enumerate}
+\item Prove that $\mathrm{GL}_n(\mathbb{C})$ is path-connected.
+\item Let
+ $$X=\{A\in\mathrm{GL}_n(\mathbb{C})\,|\, A^m=\mathrm{Id}\},$$
+Describe the path-connected component of $X$ and prove your answer.
+\end{enumerate}
+
+
+\item[5)]
+
+
+The Fibonacci sequence is defined by
+$$F_0=0, \quad F_1=1, \quad F_{n+2}=F_{n+1}+F_n.$$
+Let $p$ be a prime number.
+
+\begin{enumerate}
+\item Show that if $p\equiv 1, 4\ (\text{mod }5)$, then $p$ divides $F_{p-1}$.
+\item Let $\mathbb{F}_{p^2}$ be the finite field of $p^2$ elements. Show that the norm map $N:\mathbb{F}^\times_{p^2}\to \mathbb{F}^\times_p$ is surjective, and deduce the cardinality of the kernel of $N$.
+\item Show that if $p\equiv 2, 3\ (\text{mod }5)$, then $p$ divides $F_{p+1}$.
+\end{enumerate}
+\end{itemize}
+
+
+
+\end{document}
