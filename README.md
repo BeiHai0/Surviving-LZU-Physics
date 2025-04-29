@@ -110,6 +110,24 @@ git push origin master
 
 就可以把本地的提交推送到远程仓库了。
 
+ps：若使用两台设备利用 git 同步工作，在一台设备 git pull 前一定记得保存此设备 vscode 的改动并关闭。先
+
+```
+git add .
+```
+
+```
+git commit -m"描述"
+```
+
+再
+
+```
+git pull
+````
+
+不然可能会出很多问题。
+
 # markdown 配置
 
 ## settings.json文件
@@ -474,6 +492,15 @@ git push origin master
 			"\\mathfrak{$1 }$2"
 		],
 		"description":"Lie "
+	},
+
+	"Ket": {
+		//"scope":"markdown",
+		"prefix":".k",
+		"body":[
+			"\\Ket{$1 }$2"
+		],
+		"description":""
 	},
 
 	"": {
