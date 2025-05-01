@@ -2671,6 +2671,51 @@ $$
 
 > 求复标量场 $T_{\mu\nu},L_{[\alpha\beta]\mu},j_\mu $ 以及 $W,G,\vec{L},\rho $
 
+$$
+\mathcal{L}_0
+=-\left(\partial_\alpha\phi^* \right)\left(\partial_\alpha\phi \right) - m^2\phi^*\phi
+$$
+
+$$
+\begin{aligned}
+T_{\mu\nu}
+&=\mathcal{L}_0\delta_{\mu\nu} - \frac{\partial\mathcal{L}_0 }{\partial\left(\partial_\nu\phi \right) }\partial_\mu\phi - \frac{\partial \mathcal{L}_0 }{\partial\left(\partial_\nu\phi^* \right) } \partial_\mu\phi^* \\
+&=\mathcal{L}_0\delta_{\mu\nu} + \partial_\nu\phi^* \partial_\mu\phi + \partial_\nu\phi \partial_\mu\phi^* \\
+&=\left(-\partial_\alpha\phi^* \partial_\alpha\phi  - m^2\phi^*\phi \right)\delta_{\mu\nu} + \partial_\nu\phi^* \partial_\mu\phi + \partial_\nu\phi \partial_\mu\phi^* \\
+\end{aligned}
+$$
+
+$$
+T_{i4}
+=\partial_i \phi \partial_4 \phi^* + \partial_i \phi^* \partial_4 \phi
+$$
+
+$$
+\begin{aligned}
+W
+&=-T_{44} \\
+&=-\left[\left(-\partial_\alpha\phi^* \partial_\alpha\phi  - m^2\phi^*\phi \right)\delta_{44} + \partial_4\phi^* \partial_4\phi + \partial_4\phi \partial_4\phi^* \right] \\
+&=\partial_i \phi^* \partial_i \phi + \partial_4 \phi^* \partial_4 \phi + m^2 \phi^* \phi - \partial_4\phi^* \partial_4\phi - \partial_4\phi \partial_4\phi^* \\
+&=\partial_i \phi^* \partial_i \phi + m^2 \phi^* \phi - \left(\frac{1 }{\mathrm{i} }  \right)^2 \partial_t \phi \partial_t \phi^* \\
+&=\nabla\phi^* \cdot \nabla\phi + \partial_t \phi^* \partial_t \phi + m^2 \phi^* \phi
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+G_i
+&=\frac{1 }{\mathrm{i} } T_{i4} \\
+&=\frac{1 }{\mathrm{i} } \left[\partial_i \phi \partial_4 \phi^* + \partial_i \phi^* \partial_4 \phi \right] \\
+&=-\partial_i \phi^* \partial_t \phi - \partial_i \phi \partial_t \phi^* 
+\end{aligned}
+$$
+
+$$
+\vec{G}
+=G_i \vec{\mathrm{e}}_i
+=-\nabla \phi^* \partial_t \phi - \nabla \phi \partial_t \phi^*
+$$
+
 ### 4-1-5
 
 > 设
