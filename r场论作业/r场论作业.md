@@ -2442,23 +2442,23 @@ $$
 #### 四维时空平移
 
 $$
-x_\mu \to x'_\mu = x_\mu + \varepsilon_\mu,\quad
-\phi_A\to \phi'_A = \phi_A
+x_\mu \to x'_\mu = x_\mu + \alpha_\mu,\quad
+\phi_A(x) \to \phi'_A(x') = \phi_A(x)
 $$
 
 其中，$\varepsilon_\mu $ 是无穷小常数。
 
 $$
-\delta x_\mu = \varepsilon_\mu
+\delta x_\mu
+=x'_\mu - x_\mu
+=\alpha_\mu
 $$
 
 $$
 \begin{aligned}
 \delta \phi_A(x)
-&=\phi'_A(x') - \phi_A(x) \\
-&=\phi_A(x') - \phi_A(x) \\
-&=\phi_A(x+\varepsilon) - \phi_A(x) \\
-&\approx \varepsilon_\mu \partial_\mu\phi_A(x)
+=\phi'_A(x') - \phi_A(x)
+=0
 \end{aligned}
 $$
 
@@ -2466,11 +2466,13 @@ $$
 
 $$
 x_\mu\to x'_\mu = x_\mu,\quad
-\phi_A(x)\to \phi'_A(x) = \mathrm{e}^{\mathrm{i}\alpha}\phi_A(x)
+\phi_A(x)\to \phi'_A(x') = \mathrm{e}^{\mathrm{i}\alpha}\phi_A(x)
 $$
 
 $$
-\delta x_\mu = 0
+\delta x_\mu
+=x'_\mu-x_\mu
+=0
 $$
 
 $$
@@ -2485,23 +2487,23 @@ $$
 #### 无穷小 Lorentz 固有转动
 
 $$
-x_\mu\to x'_\mu = a_{\mu\nu} x_\nu = (\delta_{\mu\nu} + \omega_{\mu\nu})x_\nu,\quad
-\phi_A \to \phi'_A = \phi_A
+x_\mu\to x'_\mu = (\delta_{\mu\nu} + \alpha_{\mu\nu})x_\nu,\quad
+\phi(x) \to \phi'(x') = \phi(x) + \frac{1 }{2 } \alpha_{\mu\nu} I_{\mu\nu} \phi(x)
 $$
+
+其中，$\displaystyle{I_{\mu\nu}=\frac{\partial D(\alpha) }{\partial \alpha_{\mu\nu} }\bigg|_{\alpha=0}  }$，$D(\alpha) $ 为固有 Lorentz 群的某种线性表示。
 
 $$
 \delta x_\mu
 =x'_\mu - x_\mu
-=\omega_{\mu\nu} x_\nu
+=\alpha_{\mu\nu} x_\nu
 $$
 
 $$
 \begin{aligned}
-\delta\phi_A(x)
-&=\phi'_A(x') - \phi_A(x) \\
-&=\phi_A(x+\delta x) - \phi_A(x) \\
-&\approx \delta x_\mu \partial_\mu \phi_A(x) \\
-&=\omega_{\mu\nu} x_\nu \partial_\mu \phi_A(x)
+\delta\phi(x)
+&=\phi'(x') - \phi(x) \\
+&=\frac{1 }{2 } \alpha_{\mu\nu} I_{\mu\nu} \phi(x)
 \end{aligned}
 $$
 
@@ -2714,6 +2716,51 @@ $$
 \vec{G}
 =G_i \vec{\mathrm{e}}_i
 =-\nabla \phi^* \partial_t \phi - \nabla \phi \partial_t \phi^*
+$$
+
+$$
+\begin{aligned}
+L_{[\alpha\beta]\mu}
+&=T_{\alpha\mu} x_\beta - T_{\beta\mu} x_\alpha \\
+&=\left[\left(-\partial_\rho\phi^* \partial_\rho\phi  - m^2\phi^*\phi \right)\delta_{\alpha\mu} + \partial_\mu\phi^* \partial_\alpha\phi + \partial_\mu\phi \partial_\alpha\phi^* \right] x_\beta - \left[\left(-\partial_\rho\phi^* \partial_\rho\phi  - m^2\phi^*\phi \right)\delta_{\beta\mu} + \partial_\mu\phi^* \partial_\beta\phi + \partial_\mu\phi \partial_\beta\phi^* \right] x_\alpha \\
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\vec{l}
+&=\vec{x} \times \vec{G} \\
+&=-\vec{x} \times \left(\nabla \phi^* \partial_t \phi + \nabla \phi \partial_t \phi^* \right)
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\vec{L}
+&=\int \vec{l} \mathrm{d}^3\vec{x} \\
+&=-\int \vec{x} \times \left(\nabla \phi^* \partial_t \phi + \nabla \phi \partial_t \phi^* \right) \mathrm{d}^3\vec{x}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+j_\mu
+&=-\mathrm{i} e \left(\frac{\partial \mathcal{L} }{\partial \partial_\mu \phi_A } \phi_A - \phi_A^* \frac{\partial\mathcal{L} }{\partial \partial_\mu \phi_A^* } \right) \\
+&=\mathrm{i} e \left(\phi\partial_\mu \phi^* - \phi^* \partial_\mu \phi \right)
+\end{aligned}
+$$
+
+$$
+j_4
+\equiv \mathrm{i}\rho
+$$
+
+$$
+\begin{aligned}
+\rho
+&=\frac{1 }{\mathrm{i} } j_4 \\
+&=-\mathrm{i} e \left(\phi\partial_t \phi^* - \phi^* \partial_t \phi \right)
+\end{aligned}
 $$
 
 ### 4-1-5
