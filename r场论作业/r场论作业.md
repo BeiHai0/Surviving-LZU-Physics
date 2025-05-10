@@ -2446,8 +2446,6 @@ x_\mu \to x'_\mu = x_\mu + \alpha_\mu,\quad
 \phi_A(x) \to \phi'_A(x') = \phi_A(x)
 $$
 
-其中，$\varepsilon_\mu $ 是无穷小常数。
-
 $$
 \delta x_\mu
 =x'_\mu - x_\mu
@@ -2658,12 +2656,12 @@ $$
 得到二分量形式 Dirac 方程：
 
 $$
--\mathrm{i}\vec{\sigma}^0\cdot\nabla \chi + \partial_4\varphi + m\varphi
+-\mathrm{i}\vec{\sigma}^0\cdot\nabla \chi - \mathrm{i} \partial_t \varphi + m\varphi
 =0
 $$
 
 $$
-\mathrm{i}\vec{\sigma}^0\cdot\nabla - \partial_4 \chi + m\chi
+\mathrm{i}\vec{\sigma}^0\cdot\nabla \varphi + \mathrm{i} \partial_t \chi + m\chi
 =0
 $$
 
@@ -2675,7 +2673,7 @@ $$
 
 $$
 \mathcal{L}_0
-=-\left(\partial_\alpha\phi^* \right)\left(\partial_\alpha\phi \right) - m^2\phi^*\phi
+=-\partial_\alpha \phi^* \partial_\alpha\phi - m^2\phi^*\phi
 $$
 
 $$
@@ -3384,10 +3382,16 @@ T_{\mu\nu}
 \end{aligned}
 $$
 
-利用运动方程
+利用旋量场及共轭旋量场运动方程
 
 $$
+\gamma_\mu \partial_\mu \psi + m \psi
+=0
+$$
 
+$$
+\partial_\mu \bar{\psi} \gamma_\mu - m\bar{\psi}
+=0
 $$
 
 可计算 $T_{\mu\nu} $ 的散度：
@@ -3395,11 +3399,61 @@ $$
 $$
 \begin{aligned}
 \partial_\nu T_{\mu\nu}
-&=\partial_\nu \left\{\left[-\frac{1 }{2 } \left(\bar{\psi}\gamma_\alpha\partial_\alpha\psi - \partial_\alpha\bar{\psi} \gamma_\alpha\psi \right) - m\bar{\psi}\psi \right] \delta_{\mu\nu} + \frac{1 }{2 } \bar{\psi} \gamma_\nu \partial_\mu \psi - \frac{1 }{2 } \partial_\mu \bar{\psi} \gamma_\nu \psi \right\}
+&=\partial_\nu \left\{\left[-\frac{1 }{2 } \left(\bar{\psi}\gamma_\alpha\partial_\alpha\psi - \partial_\alpha\bar{\psi} \gamma_\alpha\psi \right) - m\bar{\psi}\psi \right] \delta_{\mu\nu} + \frac{1 }{2 } \bar{\psi} \gamma_\nu \partial_\mu \psi - \frac{1 }{2 } \partial_\mu \bar{\psi} \gamma_\nu \psi \right\} \\
+&=-\frac{1 }{2 } \partial_\mu \left(\bar{\psi}\gamma_\alpha \partial_\alpha \psi \right) + \frac{1 }{2 } \partial_\mu \left(\partial_\alpha\bar{\psi} \gamma_\alpha\psi \right) - m\partial_\mu \left(\bar{\psi} \psi \right) + \frac{1 }{2 } \partial_\nu \left(\bar{\psi} \gamma_\nu \partial_\mu \psi \right) - \frac{1 }{2 } \partial_\nu \left(\partial_\mu \bar{\psi} \gamma_\nu \psi \right) \\
+&=\frac{m }{2 } \partial_\mu \left(\bar{\psi} \psi \right) + \frac{m }{2 } \partial_\mu \left(m \bar{\psi} \psi \right)  - m \partial_\mu \left(\bar{\psi} \psi \right) + \frac{1 }{2 } \partial_\nu \bar{\psi} \gamma_\nu \partial_\mu \psi + \frac{1 }{2 } \bar{\psi} \gamma_\nu \partial_\nu \partial_\mu \psi - \frac{1 }{2 } \left(\partial_\nu \partial_\mu \bar{\psi} \right) \gamma_\nu \psi - \frac{1 }{2 } \partial_\mu \bar{\psi} \gamma_\nu \partial_\nu  \psi \\
+&=\frac{1 }{2 } \partial_\nu \bar{\psi} \gamma_\nu \partial_\mu \psi + \frac{1 }{2 } \bar{\psi} \partial_\mu \left(\gamma_\nu \partial_\nu \psi \right) - \frac{1 }{2 } \partial_\mu \left( \partial_\nu \bar{\psi} \gamma_\nu \right) \psi - \frac{1 }{2 } \partial_\mu \bar{\psi} \gamma_\nu \partial_\nu  \psi \\
+&=\frac{1 }{2 } \left( m \bar{\psi} \right) \partial_\mu \psi + \frac{1 }{2 } \bar{\psi} \partial_\mu \left(- m \psi \right) - \frac{1 }{2 } \partial_\mu \left(m \bar{\psi} \right) \psi - \frac{1 }{2 } \partial_\mu \bar{\psi} \left(- m \psi \right) \\
+&=0
 \end{aligned}
 $$
 
 #### 矢量场 $A_\mu(x) $
+
+矢量场拉格朗日密度：
+
+$$
+L
+=-\frac{1 }{4 } F_{\mu\nu} F_{\mu\nu}
+=-\frac{1 }{2 } \partial_\mu A_\nu \partial_\mu A_\nu
+$$
+
+$$
+\frac{\partial L }{\partial \left(\partial_\nu A_\alpha \right) } 
+=- \partial_\nu A_\alpha
+$$
+
+能量动量张量：
+
+$$
+\begin{aligned}
+T_{\mu\nu}
+&=L \delta_{\mu\nu} - \frac{\partial L }{\partial \left(\partial_\nu \phi_A \right) } \partial_\mu \phi_A \\
+&=L \delta_{\mu\nu} - \frac{\partial L }{\partial \left(\partial_\nu A_\alpha \right) } \partial_\mu A_\alpha \\
+&=\left[-\frac{1 }{2 } \partial_\alpha A_\beta \partial_\alpha A_\beta \right] \delta_{\mu\nu} - \left(- \partial_\nu A_\alpha \right) \partial_\mu A_\alpha \\
+&=\left[-\frac{1 }{2 } \partial_\alpha A_\beta \partial_\alpha A_\beta \right] \delta_{\mu\nu} + \partial_\nu A_\alpha \partial_\mu A_\alpha
+\end{aligned}
+$$
+
+利用矢量场运动方程
+
+$$
+\partial_\alpha \partial_\alpha A_\mu
+=0
+$$
+
+可计算 $T_{\mu\nu} $ 的散度：
+
+$$
+\begin{aligned}
+\partial_\nu T_{\mu\nu}
+&=\partial_\nu \left\{\left[-\frac{1 }{2 } \partial_\alpha A_\beta \partial_\alpha A_\beta \right] \delta_{\mu\nu} + \partial_\nu A_\alpha \partial_\mu A_\alpha \right\} \\
+&=-\frac{1 }{2 } \partial_\mu \left(\partial_\alpha A_\beta \partial_\alpha A_\beta \right) + \partial_\nu \left(\partial_\nu A_\alpha \partial_\mu A_\alpha \right) \\
+&=-\frac{1 }{2 } \left(\partial_\mu \partial_\alpha A_\beta \right) \partial_\alpha A_\beta - \frac{1 }{2 } \partial_\alpha A_\beta \left(\partial_\mu \partial_\alpha A_\beta \right) + \left(\partial_\nu \partial_\nu A_\alpha  \right) \partial_\mu A_\alpha + \partial_\nu A_\alpha \left(\partial_\nu \partial_\mu A_\alpha \right) \\
+&=-\partial_\alpha A_\beta \left(\partial_\mu \partial_\alpha A_\beta \right) + \partial_\nu A_\alpha \left(\partial_\mu \partial_\nu A_\alpha \right) \\
+&=0
+\end{aligned}
+$$
 
 ## 4-2 量子场论习题五
 
@@ -3501,48 +3555,155 @@ $$
 ## 4-3
 
 > 由旋量场的三维自旋矢量
-
-$$
+>
+>$$
 \vec{S}
 =\frac{1 }{2 } \int \psi^\dag \vec{\sigma} \psi \mathrm{d}V
-$$
+>$$
+>
+>利用 Dirac 方程
+>
+>$$
+\mathrm{i}\frac{\partial \psi }{\partial t } 
+=\left(-\mathrm{i}\vec{\alpha}\cdot\nabla + \beta m \right) \psi
+>$$
+>
+>求自旋矢量随时间的变化规律
+>
+>$$
+\frac{\partial \vec{S} }{\partial t } 
+=\frac{1 }{2\mathrm{i} } \int \psi^\dag \left[\vec{\sigma} H - H \vec{\sigma} \right] \psi \mathrm{d}V
+>$$
 
-利用 Dirac 方程
+Dirac 方程：
 
 $$
 \mathrm{i}\frac{\partial \psi }{\partial t } 
 =\left(-\mathrm{i}\vec{\alpha}\cdot\nabla + \beta m \right) \psi
+=H \psi
 $$
 
-求自旋矢量随时间的变化规律
+取厄米共轭，并考虑 $H^\dag=H $，有：
 
 $$
-\frac{\partial \vec{S} }{\partial t } 
-=\frac{1 }{2\mathrm{i} } \int \psi^\dag \left[\vec{\sigma} H - H \vec{\sigma} \right] \psi \mathrm{d}V
+-\mathrm{i}\frac{\partial \psi^\dag }{\partial t } 
+=\psi^\dag H^\dag 
+=\psi^\dag H
+$$
+
+于是自旋随时间变化：
+
+$$
+\begin{aligned}
+\frac{\partial \vec{S} }{\partial t }
+&=\frac{\partial }{\partial t } \left[\frac{1 }{2 } \int \psi^\dag \vec{\sigma} \psi \mathrm{d}V \right] \\
+&=\frac{1 }{2 } \int \left[\frac{\partial \psi^\dag }{\partial t } \vec{\sigma} \psi + \psi^\dag \vec{\sigma} \frac{\partial \psi }{\partial t }  \right] \mathrm{d}V \\
+&=\frac{1 }{2 } \int \left[\left(\frac{-\psi^\dag H }{\mathrm{i} }  \right) \vec{\sigma} \psi + \psi^\dag \vec{\sigma} \left(\frac{H \psi }{\mathrm{i} }  \right)  \right] \mathrm{d}V \\
+&=\frac{1 }{2 \mathrm{i} } \int \psi^\dag \left(\vec{\sigma} H - H \vec{\sigma} \right) \psi \mathrm{d}V
+\end{aligned}
 $$
 
 ## 4-4
 
 > 由自由旋量场的拉格朗日密度
-
-$$
+>
+>$$
 \mathcal{L}_0
-=-\frac{1 }{2 } \left[\bar{\psi} \gamma_\alpha \partial_\alpha \psi - \partial_\alpha \bar{\psi} \gamma_\alpha \psi \right] - m\bar{\psi} \psi
-$$
-
-求其能量动量张量、能量密度和动量密度
-
-$$
+=-\frac{1 }{2 } \left(\bar{\psi} \gamma_\alpha \partial_\alpha \psi - \partial_\alpha \bar{\psi} \gamma_\alpha \psi \right) - m\bar{\psi} \psi
+>$$
+>
+>求其能量动量张量、能量密度和动量密度
+>
+>$$
 T_{\mu\nu}
-=\frac{1 }{2 } \left(\bar{\psi} \gamma_\mu \partial_\nu \psi - \partial_\nu \bar{\psi} \gamma_\mu \psi \right)
-$$
-
-$$
+=\red{\frac{1 }{2 } \left(\bar{\psi} \gamma_\nu \partial_\mu \psi - \partial_\mu \bar{\psi} \gamma_\nu \psi \right)}
+>$$
+>
+>$$
 W
 =\frac{1 }{2\mathrm{i} } \left(\partial_t \psi^\dag \psi - \psi^\dag \partial_t \psi \right)
+>$$
+>
+>$$
+G_i
+=\frac{1 }{2\mathrm{i} } \left(\psi^\dag \partial_i \psi - \partial_i \psi^\dag \psi \right)
+>$$
+
+旋量场拉格朗日密度：
+
+$$
+\begin{aligned}
+L
+=-\frac{1 }{2 } \left(\bar{\psi}\gamma_\mu\partial_\mu\psi - \partial_\mu\bar{\psi} \gamma_\mu\psi \right) - m\bar{\psi}\psi
+\end{aligned}
 $$
 
 $$
+\frac{\partial L }{\partial \left(\partial_\nu \psi \right) } 
+=-\frac{1 }{2 } \bar{\psi} \gamma_\nu
+$$
+
+$$
+\frac{\partial L }{\partial \left(\partial_\nu \bar{\psi} \right) } 
+=\frac{1 }{2 } \gamma_\nu \psi
+$$
+
+能量动量张量：
+
+$$
+\begin{aligned}
+T_{\mu\nu}
+&=L \delta_{\mu\nu} - \frac{\partial L }{\partial \left(\partial_\nu \phi_A \right) } \partial_\mu \phi_A \\
+&=L \delta_{\mu\nu} - \frac{\partial L }{\partial \left(\partial_\nu \psi \right) } \partial_\mu \psi - \partial_\mu \bar{\psi} \frac{\partial L }{\partial \left(\partial_\nu \bar{\psi} \right) } \\
+&=\left[-\frac{1 }{2 } \left(\bar{\psi}\gamma_\alpha\partial_\alpha\psi - \partial_\alpha\bar{\psi} \gamma_\alpha\psi \right) - m\bar{\psi}\psi \right] \delta_{\mu\nu} - \left(-\frac{1 }{2 } \bar{\psi} \gamma_\nu \right) \partial_\mu \psi - \partial_\mu \bar{\psi} \left(\frac{1 }{2 } \gamma_\nu \psi \right) \\
+&=\left[-\frac{1 }{2 } \left(\bar{\psi}\gamma_\alpha\partial_\alpha\psi - \partial_\alpha\bar{\psi} \gamma_\alpha\psi \right) - m\bar{\psi}\psi \right] \delta_{\mu\nu} + \frac{1 }{2 } \bar{\psi} \gamma_\nu \partial_\mu \psi - \frac{1 }{2 } \partial_\mu \bar{\psi} \gamma_\nu \psi
+\end{aligned}
+$$
+
+利用旋量场及共轭旋量场运动方程
+
+$$
+\gamma_\mu \partial_\mu \psi + m \psi
+=0
+$$
+
+$$
+\partial_\mu \bar{\psi} \gamma_\mu - m\bar{\psi}
+=0
+$$
+
+进一步有：
+
+$$
+\begin{aligned}
+T_{\mu\nu}
+&=\left[-\frac{1 }{2 } \left(\bar{\psi}\gamma_\alpha\partial_\alpha\psi - \partial_\alpha\bar{\psi} \gamma_\alpha\psi \right) - m\bar{\psi}\psi \right] \delta_{\mu\nu} + \frac{1 }{2 } \bar{\psi} \gamma_\nu \partial_\mu \psi - \frac{1 }{2 } \partial_\mu \bar{\psi} \gamma_\nu \psi \\
+&=\left[\frac{m }{2 } \bar{\psi} \psi + \frac{m }{2 } \bar{\psi} \psi - m \bar{\psi} \psi \right] \delta_{\mu\nu} + \frac{1 }{2 } \left(\bar{\psi} \gamma_\nu \partial_\mu \psi - \partial_\mu \bar{\psi} \gamma_\nu \psi \right) \\
+&=\frac{1 }{2 } \left(\bar{\psi} \gamma_\nu \partial_\mu \psi - \partial_\mu \bar{\psi} \gamma_\nu \psi \right)
+\end{aligned}
+$$
+
+能量密度：
+
+$$
+\begin{aligned}
+W
+&=-T_{44} \\
+&=-\frac{1 }{2 } \left(\bar{\psi} \gamma_4 \partial_4 \psi - \partial_4 \bar{\psi} \gamma_4 \psi \right) \\
+&=-\frac{1 }{2 } \left( -\mathrm{i} \psi^\dag \gamma_4^2 \partial_t \psi + \mathrm{i} \partial_t \psi^\dag \gamma_4^2 \psi \right) \\
+&=\frac{\mathrm{i} }{2 } \left(\psi^\dag \partial_t \psi - \partial_t \psi^\dag \psi \right) \\
+&=\frac{1 }{2\mathrm{i} } \left(\partial_t \psi^\dag \psi - \psi^\dag \partial_t \psi \right)
+\end{aligned}
+$$
+
+动量密度：
+
+$$
+\begin{aligned}
 G_i
-=\frac{1 }{2\mathrm{i} } \left(\psi^\dag \partial_i \psi - \partial_i \psi^\dag \psi \right)
+&=\frac{1 }{\mathrm{i} } T_{i4} \\
+&=\frac{1 }{\mathrm{i} } \cdot \frac{1 }{2 } \left(\bar{\psi} \gamma_4 \partial_i \psi - \partial_i \bar{\psi} \gamma_4 \psi \right) \\
+&=\frac{1 }{2\mathrm{i} } \left(\psi^\dag \gamma_4^2 \partial_i \psi - \partial_i \psi^\dag \gamma_4^2 \psi \right) \\
+&=\frac{1 }{2\mathrm{i} } \left(\psi^\dag \partial_i \psi - \partial_i \psi^\dag \psi \right)
+\end{aligned}
 $$
