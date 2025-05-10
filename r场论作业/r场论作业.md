@@ -3096,25 +3096,310 @@ $$
 （2）
 
 $$
+\begin{aligned}
 L
-=-\frac{1 }{4 } F_{\mu\nu} F_{\mu\nu} - \bar{\psi}\left(\gamma_\mu \partial_\mu + m \right)\psi + \mathrm{i}e\bar{\psi} \gamma_\mu \psi A_\mu
+&=-\frac{1 }{4 } F_{\mu\nu} F_{\mu\nu} - \bar{\psi}\left(\gamma_\mu \partial_\mu + m \right)\psi + \mathrm{i}e\bar{\psi} \gamma_\mu \psi A_\mu \\
+&=-\frac{1 }{2 } \partial_\alpha A_\beta \partial_\alpha A_\beta + \frac{1 }{2 } \partial_\alpha A_\beta \partial_\beta A_\alpha - \bar{\psi}\left(\gamma_\mu \partial_\mu + m \right)\psi + \mathrm{i}e\bar{\psi} \gamma_\mu \psi A_\mu \\
+\end{aligned}
 $$
 
 #### $A_\mu $ 的运动方程
 
+$$
+L
+=-\frac{1 }{2 } \partial_\alpha A_\beta \partial_\alpha A_\beta + \frac{1 }{2 } \partial_\alpha A_\beta \partial_\beta A_\alpha - \bar{\psi}\left(\gamma_\mu \partial_\mu + m \right)\psi + \mathrm{i}e\bar{\psi} \gamma_\mu \psi A_\mu
+$$
+
+$$
+\frac{\partial L }{\partial A_\mu } 
+=\mathrm{i}e\bar{\psi} \gamma_\mu \psi
+$$
+
+$$
+\frac{\partial L }{\partial \left(\partial_\nu A_\mu \right) } 
+=-\partial_\nu A_\mu + \partial_\mu A_\nu
+=F_{\mu\nu}
+$$
+
+代入 E-L 方程
+
+$$
+\frac{\partial L }{\partial A_\mu } - \partial_\nu\frac{\partial L }{\partial \left(\partial_\nu A_\mu \right) } 
+=0
+$$
+
+可得：
+
+$$
+\mathrm{i}e\bar{\psi} \gamma_\mu \psi - \partial_\nu F_{\mu\nu}
+=0
+$$
+
+即：
+
+$$
+\boxed{
+\partial_\nu F_{\mu\nu}
+=\mathrm{i}e\bar{\psi} \gamma_\mu \psi
+}
+$$
+
 #### $\bar{\psi} $ 的运动方程（对 $\psi $ 变分）
+
+$$
+L
+=-\frac{1 }{2 } \partial_\alpha A_\beta \partial_\alpha A_\beta + \frac{1 }{2 } \partial_\alpha A_\beta \partial_\beta A_\alpha - \bar{\psi}\left(\gamma_\mu \partial_\mu + m \right)\psi + \mathrm{i}e\bar{\psi} \gamma_\mu \psi A_\mu
+$$
+
+$$
+\frac{\partial L }{\partial \psi } 
+=-m \bar{\psi} + \mathrm{i}e\bar{\psi} \gamma_\mu A_\mu
+$$
+
+$$
+\frac{\partial L }{\partial \left(\partial_\mu \psi \right) } 
+=-\bar{\psi} \gamma_\mu 
+$$
+
+代入 E-L 方程
+
+$$
+\frac{\partial L }{\partial \psi } - \partial_\mu \frac{\partial L }{\partial \left(\partial_\mu \psi \right) } 
+=0
+$$
+
+可得：
+
+$$
+-m \bar{\psi} + \mathrm{i}e\bar{\psi} \gamma_\mu A_\mu - \partial_\mu\left(-\bar{\psi} \gamma_\mu \right)
+=0
+$$
+
+即：
+
+$$
+\boxed{
+\partial_\mu \bar{\psi} \gamma_\mu - m\bar{\psi} + \mathrm{i}e\bar{\psi} \gamma_\mu A_\mu
+=0
+}
+$$
 
 #### $\psi $ 的运动方程（对 $\bar{\psi} $ 变分）
 
+$$
+L
+=-\frac{1 }{2 } \partial_\alpha A_\beta \partial_\alpha A_\beta + \frac{1 }{2 } \partial_\alpha A_\beta \partial_\beta A_\alpha - \bar{\psi}\left(\gamma_\mu \partial_\mu + m \right)\psi + \mathrm{i}e\bar{\psi} \gamma_\mu \psi A_\mu
+$$
+
+$$
+\frac{\partial L }{\partial \bar{\psi} } 
+=-\gamma_\mu \partial_\mu \psi - m\psi + \mathrm{i}e \gamma_\mu \psi A_\mu
+$$
+
+$$
+\frac{\partial L }{\partial \left(\partial_\mu \bar{\psi} \right) } 
+=0
+$$
+
+代入 E-L 方程
+
+$$
+\frac{\partial L }{\partial \bar{\psi} } - \partial_\mu \frac{\partial L }{\partial \left(\partial_\mu \bar{\psi} \right) } 
+=0
+$$
+
+可得：
+
+$$
+-\gamma_\mu \partial_\mu \psi - m\psi + \mathrm{i}e \gamma_\mu \psi A_\mu
+=0
+$$
+
+即：
+
+$$
+\left(\gamma_\mu \partial_\mu + m \right) \psi
+=\mathrm{i}e \gamma_\mu \psi A_\mu
+$$
+
 #### 能量密度
+
+$$
+L
+=-\frac{1 }{4 } F_{\alpha\beta} F_{\alpha\beta} - \bar{\psi}\left(\gamma_\alpha \partial_\beta + m \right)\psi + \mathrm{i}e\bar{\psi} \gamma_\alpha \psi A_\alpha
+$$
+
+$$
+\frac{\partial L }{\partial \left(\partial_\nu A_\alpha \right) } 
+=-\partial_\nu A_\alpha + \partial_\mu A_\alpha
+=F_{\alpha\nu}
+$$
+
+$$
+\frac{\partial L }{\partial \left(\partial_\nu \psi \right) } 
+=-\bar{\psi} \gamma_\nu 
+$$
+
+$$
+\frac{\partial L }{\partial \left(\partial_\nu \bar{\psi} \right) } 
+=0
+$$
+
+能量动量张量：
+
+$$
+\begin{aligned}
+T_{\mu\nu}
+&=L \delta_{\mu\nu} - \frac{\partial L }{\partial \left(\partial_\nu \phi_A \right) } \partial_\mu \phi_A \\
+&=L \delta_{\mu\nu} - \frac{\partial L }{\partial \left(\partial_\nu A_\alpha \right) } \partial_\mu A_\alpha - \frac{\partial L }{\partial \left(\partial_\nu \psi \right) } \partial_\mu \psi - \frac{\partial L }{\partial \left(\partial_\nu \bar{\psi} \right) } \partial_\mu \bar{\psi} \\
+&=\left[-\frac{1 }{4 } F_{\alpha\beta} F_{\alpha\beta} - \bar{\psi}\left(\gamma_\alpha \partial_\beta + m \right)\psi + \mathrm{i}e\bar{\psi} \gamma_\alpha \psi A_\alpha \right] \delta_{\mu\nu} - \left(-\partial_\nu A_\alpha + \partial_\mu A_\alpha \right) \partial_\mu A_\alpha - \left(-\bar{\psi} \gamma_\nu \right)\partial_\mu \psi \\
+&=\left[-\frac{1 }{4 } F_{\alpha\beta} F_{\alpha\beta} - \bar{\psi}\left(\gamma_\alpha \partial_\beta + m \right)\psi + \mathrm{i}e\bar{\psi} \gamma_\alpha \psi A_\alpha \right] \delta_{\mu\nu} + \left(\partial_\nu A_\alpha - \partial_\mu A_\alpha \right) \partial_\mu A_\alpha + \bar{\psi} \gamma_\nu \partial_\mu \psi
+\end{aligned}
+$$
+
+能量密度：
+
+$$
+\begin{aligned}
+W
+&=-T_{44} \\
+&=\left[\frac{1 }{4 } F_{\alpha\beta} F_{\alpha\beta} + \bar{\psi}\left(\gamma_\alpha \partial_\beta + m \right)\psi - \mathrm{i}e\bar{\psi} \gamma_\alpha \psi A_\alpha \right] - \mathrm{i} \bar{\psi} \gamma_4 \partial_t \psi
+\end{aligned}
+$$
 
 #### 电荷密度
 
+$$
+\frac{\partial L }{\partial \left(\partial_\mu \psi \right) } 
+=-\bar{\psi} \gamma_\mu 
+$$
 
+$$
+\frac{\partial L }{\partial \left(\partial_\mu \bar{\psi} \right) } 
+=0
+$$
+
+电流密度矢量：
+
+$$
+\begin{aligned}
+j_\mu
+&\equiv -\mathrm{i} e \left[\frac{\partial\mathcal{L} }{\partial\left(\partial_\mu\phi_A \right) } \phi_A - \phi_A^*\frac{\partial\mathcal{L} }{\partial\left(\partial_\mu\phi_A^* \right) }  \right] \\
+&=-\mathrm{i} e \left[\frac{\partial L }{\partial \left(\partial_\mu A_\alpha \right) } A_\alpha - A_\alpha^* \frac{\partial L }{\partial \left(\partial_\mu A_\alpha^* \right) } + \frac{\partial L }{\partial\left(\partial_\mu \psi \right) } \psi - \bar{\psi} \frac{\partial L }{\partial \left(\partial_\mu \bar{\psi} \right) }  \right] \\
+&=\mathrm{i} e \bar{\psi} \gamma_\mu \psi
+\end{aligned}
+$$
+
+电荷密度：
+
+$$
+\begin{aligned}
+\rho
+&=\frac{1 }{\mathrm{i} } j_4 \\
+&=e \bar{\psi} \gamma_4 \psi \\
+&=e \psi^\dag \psi
+\end{aligned}
+$$
 
 ### 4-1-7
 
 > 利用 $\phi(x),\psi(x),A_\mu $ 的运动方程，分别验证 $\partial_\mu T_{\mu\nu}=0 $
+
+#### 标量场 $\phi(x) $
+
+标量场拉格朗日密度：
+
+$$
+L
+=-\frac{1 }{2 } \partial_\alpha \phi \partial_\alpha \phi - \frac{1 }{2 } m^2 \phi^2
+$$
+
+$$
+\frac{\partial L }{\partial \left(\partial_\nu \phi \right) } 
+=-\partial_\nu \phi
+$$
+
+能量动量张量：
+
+$$
+\begin{aligned}
+T_{\mu\nu}
+&=L \delta_{\mu\nu} - \frac{\partial L }{\partial \left(\partial_\nu \phi_A \right) } \partial_\mu \phi_A \\
+&=L \delta_{\mu\nu} - \frac{\partial L }{\partial \left(\partial_\nu \phi \right) } \partial_\mu \phi \\
+&=\left(-\frac{1 }{2 } \partial_\alpha \phi \partial_\alpha \phi - \frac{1 }{2 } m^2 \phi^2 \right) \delta_{\mu\nu} - \left(-\partial_\nu \phi \right) \partial_\mu \phi \\
+&=\left(-\frac{1 }{2 } \partial_\alpha \phi \partial_\alpha \phi - \frac{1 }{2 } m^2 \phi^2 \right) \delta_{\mu\nu} + \partial_\nu \phi \partial_\mu \phi \\
+\end{aligned}
+$$
+
+利用运动方程
+
+$$
+\left(\partial_\mu \partial_\mu - m^2 \right) \phi
+=0
+$$
+
+计算 $T_{\mu\nu} $ 的散度：
+
+$$
+\begin{aligned}
+\partial_\nu T_{\mu\nu}
+&=\partial_\nu \left[\left(-\frac{1 }{2 } \partial_\alpha \phi \partial_\alpha \phi - \frac{1 }{2 } m^2 \phi^2 \right) \delta_{\mu\nu} + \partial_\nu \phi \partial_\mu \phi \right] \\
+&=-\frac{1 }{2 } \partial_\mu \left(\partial_\alpha \phi \partial_\alpha \phi \right) - m^2 \phi \partial_\mu \phi  + \partial_\nu \left(\partial_\nu \phi \partial_\mu \phi \right) \\
+&=-\frac{1 }{2 } \partial_\mu \left(\partial_\alpha \phi \partial_\alpha \phi \right) - \left(\partial_\alpha \partial_\alpha \phi \right) \partial_\mu \phi  + \partial_\nu \left(\partial_\nu \phi \partial_\mu \phi \right) \\
+&=-\frac{1 }{2 } \left(\partial_\mu \partial_\alpha \phi \right) \partial_\alpha \phi - \frac{1 }{2 } \partial_\alpha \phi \left(\partial_\mu \partial_\alpha \phi \right) - \left(\partial_\alpha \partial_\alpha \phi \right) \partial_\mu \phi + \left(\partial_\nu \partial_\nu \phi \right) \partial_\mu \phi + \partial_\nu \phi \left(\partial_\nu \partial_\mu \phi \right) \\
+&=0
+\end{aligned}
+$$
+
+#### 旋量场 $\psi(x) $
+
+旋量场拉格朗日密度：
+
+$$
+\begin{aligned}
+L
+=-\frac{1 }{2 } \left(\bar{\psi}\gamma_\mu\partial_\mu\psi - \partial_\mu\bar{\psi} \gamma_\mu\psi \right) - m\bar{\psi}\psi
+\end{aligned}
+$$
+
+$$
+\frac{\partial L }{\partial \left(\partial_\nu \psi \right) } 
+=-\frac{1 }{2 } \bar{\psi} \gamma_\nu
+$$
+
+$$
+\frac{\partial L }{\partial \left(\partial_\nu \bar{\psi} \right) } 
+=\frac{1 }{2 } \gamma_\nu \psi
+$$
+
+能量动量张量：
+
+$$
+\begin{aligned}
+T_{\mu\nu}
+&=L \delta_{\mu\nu} - \frac{\partial L }{\partial \left(\partial_\nu \phi_A \right) } \partial_\mu \phi_A \\
+&=L \delta_{\mu\nu} - \frac{\partial L }{\partial \left(\partial_\nu \psi \right) } \partial_\mu \psi - \partial_\mu \bar{\psi} \frac{\partial L }{\partial \left(\partial_\nu \bar{\psi} \right) } \\
+&=\left[-\frac{1 }{2 } \left(\bar{\psi}\gamma_\alpha\partial_\alpha\psi - \partial_\alpha\bar{\psi} \gamma_\alpha\psi \right) - m\bar{\psi}\psi \right] \delta_{\mu\nu} - \left(-\frac{1 }{2 } \bar{\psi} \gamma_\nu \right) \partial_\mu \psi - \partial_\mu \bar{\psi} \left(\frac{1 }{2 } \gamma_\nu \psi \right) \\
+&=\left[-\frac{1 }{2 } \left(\bar{\psi}\gamma_\alpha\partial_\alpha\psi - \partial_\alpha\bar{\psi} \gamma_\alpha\psi \right) - m\bar{\psi}\psi \right] \delta_{\mu\nu} + \frac{1 }{2 } \bar{\psi} \gamma_\nu \partial_\mu \psi - \frac{1 }{2 } \partial_\mu \bar{\psi} \gamma_\nu \psi
+\end{aligned}
+$$
+
+利用运动方程
+
+$$
+
+$$
+
+可计算 $T_{\mu\nu} $ 的散度：
+
+$$
+\begin{aligned}
+\partial_\nu T_{\mu\nu}
+&=\partial_\nu \left\{\left[-\frac{1 }{2 } \left(\bar{\psi}\gamma_\alpha\partial_\alpha\psi - \partial_\alpha\bar{\psi} \gamma_\alpha\psi \right) - m\bar{\psi}\psi \right] \delta_{\mu\nu} + \frac{1 }{2 } \bar{\psi} \gamma_\nu \partial_\mu \psi - \frac{1 }{2 } \partial_\mu \bar{\psi} \gamma_\nu \psi \right\}
+\end{aligned}
+$$
+
+#### 矢量场 $A_\mu(x) $
 
 ## 4-2 量子场论习题五
 
