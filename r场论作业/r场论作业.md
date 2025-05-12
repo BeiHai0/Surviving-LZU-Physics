@@ -3177,8 +3177,8 @@ $$
 
 $$
 \boxed{
-\partial_\mu \bar{\psi} \gamma_\mu - m\bar{\psi} + \mathrm{i}e\bar{\psi} \gamma_\mu A_\mu
-=0
+\partial_\mu \bar{\psi} \gamma_\mu - m\bar{\psi}
+=-\mathrm{i}e\bar{\psi} \gamma_\mu A_\mu
 }
 $$
 
@@ -3216,8 +3216,10 @@ $$
 即：
 
 $$
+\boxed{
 \left(\gamma_\mu \partial_\mu + m \right) \psi
 =\mathrm{i}e \gamma_\mu \psi A_\mu
+}
 $$
 
 #### 能量密度
