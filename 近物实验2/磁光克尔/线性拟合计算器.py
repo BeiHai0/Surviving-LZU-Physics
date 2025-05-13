@@ -1,31 +1,38 @@
 import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib import rcParams
 
-# y = a x + b
+# 设置中文字体与负号正常显示
+rcParams['font.sans-serif'] = ['SimHei']  # 或 ['Microsoft YaHei']
+rcParams['axes.unicode_minus'] = False
 
-x = np.array([0.99, 1.04, 1.09, 1.14, 1.19, 1.24, 1.29])
-y = np.array([28, 29, 31, 32, 33, 35, 36])
+# 数据
+T = np.array([2940, 2860, 2770, 2720, 2400])
+lambda_max_nm = np.array([966, 1020, 1034, 1086, 1274])
+lambda_max_mm = lambda_max_nm / 1000000
+inv_T = 1 / T
 
-N = np.size(x) # 数据点个数
+# 拟合：强制过原点
+a = np.sum(inv_T * lambda_max_mm) / np.sum(inv_T**2)
 
-t =  2.78# t因子
+# 创建更广范围的 x 值：从 0 到略大于 max(1/T)
+x_fit = np.linspace(0, max(inv_T) * 1.1, 200)
+y_fit = a * x_fit
 
-x_bar = np.mean(x)
-y_bar = np.mean(y)
+# 画图
+plt.figure(figsize=(8, 5))
+plt.scatter(inv_T, lambda_max_mm, color='blue', label='实验数据')
+plt.plot(x_fit, y_fit, color='red', label=f'线性拟合: λ = {a:.3f} × (1/T)')
 
-a = np.sum( (x-x_bar)*(y-y_bar) ) / np.sum( (x-x_bar)**2 ) # 斜率a的估计值
-b = y_bar - a*x_bar # 截距b的估计值
+# 添加坐标轴原点线
+plt.axhline(0, color='gray', linewidth=1)
+plt.axvline(0, color='gray', linewidth=1)
 
-sigma = np.sqrt( 1/(N-2) * np.sum( (y-b-a*x)**2 ) )
-s_x = np.sqrt( 1/N * np.sum( (x-x_bar)**2 ) )
-
-UA_a = t * sigma / np.sqrt(N) / s_x # 斜率a的A类不确定度
-UA_b = t * sigma / np.sqrt(N) * np.sqrt(1 + x_bar**2 / s_x**2) # 截距b的A类不确定度
-
-print("斜率a的估计值:a=",a)
-print("截距b的估计值:b=",b)
-print("斜率a的A类不确定度:UA_a=",UA_a)
-print("截距b的A类不确定度:UA_b=",UA_b)
-
-
-
-
+# 图形标签与说明
+plt.xlabel('1 / T (K$^{-1}$)')
+plt.ylabel('λ_max (mm)')
+plt.title('维恩位移定律线性拟合图（过原点）')
+plt.legend()
+plt.grid(True)
+plt.tight_layout()
+plt.show()
