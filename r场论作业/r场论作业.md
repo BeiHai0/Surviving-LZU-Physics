@@ -3461,22 +3461,179 @@ $$
 
 ### 4-2-1
 
-> 由表象变换 $\psi'=S\psi,\hat{F}=S\hat{F}S^\dag,S S^\dag=I $，证明力学量 $\hat{F} $ 的本征值、平均值和态矢量的内积均为不变量。
+> 由表象变换 $\psi'=S\psi,\hat{F}'=S\hat{F}S^\dag,S S^\dag=I $，证明力学量 $\hat{F} $ 的本征值、平均值和态矢量的内积均为不变量。
+
+#### 本征值不变
+
+设 $\hat{F} $ 的本征方程为：
+
+$$
+\hat{F} \psi_f
+=f \psi_f
+$$
+
+由定义，有：
+
+$$
+\hat{F}'
+\equiv S \hat{F} S^\dag,\quad
+\psi_f'
+\equiv S \psi_f
+$$
+
+对本征方程作如下的变形：
+
+$$
+S \hat{F} S^\dag S \psi_f
+=f S \psi_f
+$$
+
+即：
+
+$$
+\hat{F}' \psi_f' 
+=f \psi_f'
+$$
+
+因此本征值不变。
+
+#### 平均值不变
+
+$\hat{F} $ 在 $\Ket{\psi } $ 态下的平均值：
+
+$$
+\begin{aligned}
+\Braket{\psi|\hat{F}|\psi}
+&=\Braket{\psi|S^\dag S \hat{F} S^\dag S|\psi} \\
+&=\Braket{\psi'|\hat{F}'|\psi'}
+\end{aligned}
+$$
+
+因此平均值不变。
+
+#### 态矢量的内积不变
+
+$$
+\Ket{\alpha' }
+\equiv S \Ket{\alpha },\quad
+\Bra{\alpha'}
+=\bra{\alpha} S^\dag
+$$
+
+$$
+\Ket{\beta' }
+\equiv S \Ket{\beta }
+$$
+
+态矢量内积：
+
+$$
+\begin{aligned}
+\Braket{\alpha|\beta}
+&=\Braket{\alpha|S^\dag S|\beta} \\
+&=\Braket{\alpha'|\beta'}
+\end{aligned}
+$$
+
+因此态矢量的内积不变。
 
 ### 4-2-2
 
 > 证明
-
-$$
+>
+>$$
 \theta_-(-x) = \theta_+(x)
-$$
-
-$$
+>$$
+>
+>$$
 \theta_+(-x) = \theta_-(x)
+>$$
+>
+>$$
+\varepsilon(x) = \theta_+(x) - \theta_-(x)
+>$$
+
+由定义：
+
+$$
+\theta_+(x)
+\equiv \left\{
+\begin{aligned}
+1&,x>0 \\
+0&,x<0
+\end{aligned}
+\right.,\quad
+\theta_-(x)
+\equiv \left\{
+\begin{aligned}
+0&,x>0 \\
+1&,x<0
+\end{aligned}
+\right.,\quad
+\varepsilon(x)
+\equiv \left\{
+\begin{aligned}
+1&,x>0 \\
+-1&,x<0
+\end{aligned}
+\right.
+$$
+
+因此：
+
+$$
+\begin{aligned}
+\theta_-(-x)
+\equiv \left\{
+\begin{aligned}
+0&,-x>0 \\
+1&,-x<0
+\end{aligned}
+\right.
+=\left\{
+\begin{aligned}
+1&,x>0 \\
+0&,x<0
+\end{aligned}
+\right.
+\end{aligned}
+=\theta_+(x)
 $$
 
 $$
-\varepsilon(x) = \theta_+(x) - \theta_-(x)
+\begin{aligned}
+\theta_+(-x)
+\equiv \left\{
+\begin{aligned}
+1&,-x>0 \\
+0&,-x<0
+\end{aligned}
+\right.
+=\left\{
+\begin{aligned}
+0&,x>0 \\
+1&,x<0
+\end{aligned}
+\right.
+\end{aligned}
+=\theta_-(x)
+$$
+
+$$
+\theta_+(x) - \theta_-(x)
+=\left\{
+\begin{aligned}
+1-0&,x>0 \\
+0-1&,x<0
+\end{aligned}
+\right.
+=\left\{
+\begin{aligned}
+1&,x>0 \\
+-1&,x<0
+\end{aligned}
+\right.
+=\varepsilon(x)
 $$
 
 ### 4-2-3
@@ -3486,14 +3643,14 @@ $$
 ### 4-2-4
 
 > 对标量场，由
-
-$$
+>
+>$$
 \vec{p}
 =-\int\nabla\phi\partial_t \phi\mathrm{d}^3\vec{x}
 \Longrightarrow 
 \vec{p}
 =\frac{1 }{2 } \sum_{\vec{k}} \vec{k} \left\{a_{\vec{k}}^{(+)} , a_{\vec{k}}^{(-)} \right\}
-$$
+>$$
 
 ### 4-2-5
 
