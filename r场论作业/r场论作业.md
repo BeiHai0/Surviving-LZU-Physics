@@ -3799,12 +3799,12 @@ $$
 >
 >$$
 \Delta^{(\pm)}\left(\vec{x} , t \right)
-=-\Delta^{(\pm)}\left(-\vec{x} , t \right)
+=\Delta^{(\pm)}\left(-\vec{x} , t \right)
 >$$
 >
 >$$
 \Delta^{(+)}(\vec{x} , t)
-=\Delta^{(-)}(\vec{x} , -t)
+=-\Delta^{(-)}(\vec{x} , -t)
 >$$
 
 $$
@@ -3840,9 +3840,10 @@ $$
 &\equiv \frac{\pm \mathrm{i} }{\left(2\pi \right)^3 } \int \mathrm{d}^4 k \mathrm{e}^{\mp \mathrm{i} k x} \delta\left(k^2+m^2 \right) \theta_+(k_0) \\
 &\equiv \frac{\pm \mathrm{i} }{\left(2\pi \right)^3 } \int \mathrm{d}^3 \vec{k} \int \mathrm{d}k_0 \mathrm{e}^{\mp \mathrm{i} \left(\vec{k}\cdot\vec{x} - k_0 t \right)} \delta \left(\vec{k}^2 + m^2 - k_0^2 \right) \theta_+(k_0) \\
 &\equiv \frac{\pm \mathrm{i} }{\left(2\pi \right)^3 } \int \mathrm{d}^3 \vec{k} \int \mathrm{d}k_0 \mathrm{e}^{\mp \mathrm{i} \left(\vec{k}\cdot\vec{x} - k_0 t \right)} \frac{1 }{2 \varepsilon_{\vec{k}} } \left(\delta\left(k_0+\varepsilon_{\vec{k}} \right) + \delta\left(k_0 - \varepsilon_{\vec{k}} \right) \right)  \theta_+(k_0) \\
-&=\frac{\pm \mathrm{i} }{\left(2\pi \right)^3 } \int \mathrm{d}^3 \vec{k} \mathrm{e}^{\mp \mathrm{i} \left(\vec{k}\cdot\vec{x} - \varepsilon_{\vec{k}} t \right)} \frac{1 }{2 \varepsilon_{\vec{k}} } \\
-&=\frac{\pm \mathrm{i} }{\left(2\pi \right)^3 } \int - \mathrm{d}^3 \vec{k}' \mathrm{e}^{\mp \mathrm{i} \left(\vec{k}'\cdot\left(-\vec{x} \right) - \varepsilon_{\vec{k}'} t \right)} \frac{1 }{2 \varepsilon_{\vec{k}'} } \\
-&=-\Delta^{(\pm)}\left(-\vec{x} , t \right) \\
+&=\frac{\pm \mathrm{i} }{\left(2\pi \right)^3 } \int_{-\infty}^{+\infty} \mathrm{d}^3 \vec{k} \mathrm{e}^{\mp \mathrm{i} \left(\vec{k}\cdot\vec{x} - \varepsilon_{\vec{k}} t \right)} \frac{1 }{2 \varepsilon_{\vec{k}} } \\
+&=\frac{\pm \mathrm{i} }{\left(2\pi \right)^3 } \int_{+\infty}^{-\infty} - \mathrm{d}^3 \vec{k}' \mathrm{e}^{\mp \mathrm{i} \left(\vec{k}'\cdot\left(-\vec{x} \right) - \varepsilon_{\vec{k}'} t \right)} \frac{1 }{2 \varepsilon_{\vec{k}'} } \\
+&=\frac{\pm \mathrm{i} }{\left(2\pi \right)^3 } \int_{-\infty}^{+\infty} \mathrm{d}^3 \vec{k}' \mathrm{e}^{\mp \mathrm{i} \left(\vec{k}'\cdot\left(-\vec{x} \right) - \varepsilon_{\vec{k}'} t \right)} \frac{1 }{2 \varepsilon_{\vec{k}'} } \\
+&=\Delta^{(\pm)}\left(-\vec{x} , t \right) \\
 \end{aligned}
 $$
 
@@ -3856,10 +3857,10 @@ $$
 $$
 \begin{aligned}
 \Delta^{(+)}\left(\vec{x} , t \right)
-&=\frac{+ \mathrm{i} }{\left(2\pi \right)^3 } \int \mathrm{d}^3 \vec{k} \mathrm{e}^{- \mathrm{i} \left(\vec{k}\cdot\vec{x} - \varepsilon_{\vec{k}} t \right)} \frac{1 }{2 \varepsilon_{\vec{k}} } \\
-&=\frac{+ \mathrm{i} }{\left(2\pi \right)^3 } \int -\mathrm{d}^3 \vec{k}' \mathrm{e}^{- \mathrm{i} \left(-\vec{k}'\cdot\vec{x} - \varepsilon_{\vec{k}'} t \right)} \frac{1 }{2 \varepsilon_{\vec{k}'} } \\
-&=\frac{- \mathrm{i} }{\left(2\pi \right)^3 } \int \mathrm{d}^3 \vec{k}' \mathrm{e}^{ \mathrm{i} \left(\vec{k}'\cdot\vec{x} - \varepsilon_{\vec{k}'} (-t) \right)} \frac{1 }{2 \varepsilon_{\vec{k}'} } \\
-&=\Delta^{(-)}\left(\vec{x} , -t \right)
+&=\frac{+ \mathrm{i} }{\left(2\pi \right)^3 } \int_{-\infty}^{+\infty} \mathrm{d}^3 \vec{k} \mathrm{e}^{- \mathrm{i} \left(\vec{k}\cdot\vec{x} - \varepsilon_{\vec{k}} t \right)} \frac{1 }{2 \varepsilon_{\vec{k}} } \\
+&=\frac{+ \mathrm{i} }{\left(2\pi \right)^3 } \int_{+\infty}^{-\infty} -\mathrm{d}^3 \vec{k}' \mathrm{e}^{- \mathrm{i} \left(-\vec{k}'\cdot\vec{x} - \varepsilon_{\vec{k}'} t \right)} \frac{1 }{2 \varepsilon_{\vec{k}'} } \\
+&=-\frac{- \mathrm{i} }{\left(2\pi \right)^3 } \int_{-\infty}^{+\infty} \mathrm{d}^3 \vec{k}' \mathrm{e}^{ \mathrm{i} \left(\vec{k}'\cdot\vec{x} - \varepsilon_{\vec{k}'} (-t) \right)} \frac{1 }{2 \varepsilon_{\vec{k}'} } \\
+&=-\Delta^{(-)}\left(\vec{x} , -t \right)
 \end{aligned}
 $$
 
