@@ -16,5 +16,113 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{bertone2018history}{article}{}
+      \name{author}{2}{}{%
+        {{hash=45173e651a575c22d3d5aeb1decbed73}{%
+           family={Bertone},
+           familyi={B\bibinitperiod},
+           given={Gianfranco},
+           giveni={G\bibinitperiod}}}%
+        {{hash=32d7396024041de7456d6ae92ee17fad}{%
+           family={Hooper},
+           familyi={H\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=45173e651a575c22d3d5aeb1decbed73}{%
+           family={Bertone},
+           familyi={B\bibinitperiod},
+           given={Gianfranco},
+           giveni={G\bibinitperiod}}}%
+        {{hash=32d7396024041de7456d6ae92ee17fad}{%
+           family={Hooper},
+           familyi={H\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{c265ba7f828c750fef0c9bbe6f0d1145}
+      \strng{fullhash}{6a70ae36dbc50992d40c1322c440db1f}
+      \strng{bibnamehash}{6a70ae36dbc50992d40c1322c440db1f}
+      \strng{authorbibnamehash}{6a70ae36dbc50992d40c1322c440db1f}
+      \strng{authornamehash}{c265ba7f828c750fef0c9bbe6f0d1145}
+      \strng{authorfullhash}{6a70ae36dbc50992d40c1322c440db1f}
+      \strng{nameabibnamehash}{6a70ae36dbc50992d40c1322c440db1f}
+      \strng{nameanamehash}{c265ba7f828c750fef0c9bbe6f0d1145}
+      \strng{nameafullhash}{6a70ae36dbc50992d40c1322c440db1f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Reviews of Modern Physics}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{4}
+      \field{title}{History of dark matter}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{90}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{pages}{045002}
+      \range{pages}{1}
+      \keyw{bertone2018history}
+    \endentry
+    \entry{周宇峰2011暗物质问题简介}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5ea994e5c085df65cc72edaf26555f38}{%
+           family={周宇峰},
+           familyi={周\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=5ea994e5c085df65cc72edaf26555f38}{%
+           family={周宇峰},
+           familyi={周\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{5ea994e5c085df65cc72edaf26555f38}
+      \strng{fullhash}{5ea994e5c085df65cc72edaf26555f38}
+      \strng{bibnamehash}{5ea994e5c085df65cc72edaf26555f38}
+      \strng{authorbibnamehash}{5ea994e5c085df65cc72edaf26555f38}
+      \strng{authornamehash}{5ea994e5c085df65cc72edaf26555f38}
+      \strng{authorfullhash}{5ea994e5c085df65cc72edaf26555f38}
+      \strng{nameabibnamehash}{5ea994e5c085df65cc72edaf26555f38}
+      \strng{nameanamehash}{5ea994e5c085df65cc72edaf26555f38}
+      \strng{nameafullhash}{5ea994e5c085df65cc72edaf26555f38}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{物理}
+      \field{langid}{english}
+      \field{languageid}{chinese}
+      \field{lansortorder}{1}
+      \field{number}{03}
+      \field{title}{暗物质问题简介}
+      \field{usera}{J}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{volume}{40}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{pages}{155\bibrangedash 160}
+      \range{pages}{6}
+      \keyw{周宇峰2011暗物质问题简介}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 
