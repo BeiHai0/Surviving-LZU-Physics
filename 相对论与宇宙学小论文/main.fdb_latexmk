@@ -1,34 +1,31 @@
 # Fdb version 4
-["biber main"] 1747964908.05326 "main.bcf" "main.bbl" "main" 1747965872.59788 0
-  "Tex/reference.bib" 1747963454 18529 5fba89c411dfe3edc58b92d8a902079b ""
-  "main.bcf" 1747965865 136422 484dbb018015b208e5c11b210c15f0a2 "xelatex"
+["biber main"] 1748745677.21635 "main.bcf" "main.bbl" "main" 1748746644.13393 0
+  "Tex/reference.bib" 1748745675 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "main.bcf" 1748746639 136111 a5c2849d95499f2be2c4fa7a9fa4e6ec "xelatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["xdvipdfmx"] 1747965865.89657 "main.xdv" "main.pdf" "main" 1747965872.61431 0
-  "main.xdv" 1747965865 173332 2623ac0d25ae64dc9fb81af31c55ebd4 "xelatex"
+["xdvipdfmx"] 1748746639.66857 "main.xdv" "main.pdf" "main" 1748746644.15203 0
+  "main.xdv" 1748746639 154592 02504d4239908c25c5ff54c2cf510f93 "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1747965860.96579 "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/相对论与宇宙学小论文/main.tex" "main.xdv" "main" 1747965872.59821 0
+["xelatex"] 1748746633.03348 "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/相对论与宇宙学小论文/main.tex" "main.xdv" "main" 1748746644.13444 0
   "Img/LZDX.eps" 1747963455 392035 17158893235b56fc26201989edb78728 ""
-  "Img/c01_ReLU.png" 1747963454 27950 3450e31b5d44f3cf5ea9a4ccba5c31e7 ""
-  "Img/c01_classification.png" 1747963454 631561 711fe6c64869d38143d0ae489ab97e8f ""
-  "Img/c01_sigmoid.png" 1747963454 36233 a64d6d0f69efb94954e90c083fa547da ""
-  "Tex/Abstract.tex" 1747965860 2722 14098c673440cbf49de4846f199df310 ""
-  "Tex/Acknowledgement.tex" 1747963454 194 0673544dd39a3a4f6b6d5a368cb9a595 ""
-  "Tex/Chap_Disscusion.tex" 1747963454 211 e1912f9f461250bba0071e066e40b5bf ""
-  "Tex/Chap_Introduction.tex" 1747963454 3170 0380be5f2739d9e073f26aafed95306d ""
-  "Tex/Chap_Method.tex" 1747963454 222 552ebb06a60959ebb23fcec1f5eedc31 ""
-  "Tex/Chap_RelatedWork.tex" 1747963454 222 93a4e95ad626ccf29367c1581bf3fa20 ""
-  "Tex/Chap_Review.tex" 1747963454 229 c7b973f1bdd4e8a9df839ad165f8b342 ""
-  "Tex/Option.tex" 1747963454 6033 f75fe76b6c4ef9162123eba0efeef465 ""
+  "Tex/Abstract.tex" 1748746629 2890 b7b92c6788deb71297aff2cc2c6e49d1 ""
+  "Tex/Acknowledgement.tex" 1748745970 436 ebc2c5daeed5f4e944bb8e6d011afe2c ""
+  "Tex/Chap-1.tex" 1748743034 2869 a2e591f1e977a21c57d3b8395351e198 ""
+  "Tex/Chap-2.tex" 1748744596 4127 2074e0c8343f96a2b291453a3cdf072f ""
+  "Tex/Chap-3.tex" 1748745074 4103 7c96c39be588d745ac223d57b05a8abe ""
+  "Tex/Chap-4.tex" 1748745421 3241 aee3239d98cb201964f2473b5fb8b486 ""
+  "Tex/Chap-5.tex" 1748745609 3355 8c15853b16cba1b454a5250ec820ac65 ""
+  "Tex/Option.tex" 1748744712 6068 e9476c82f0b04cb40ac0ae3cb0a2fbe3 ""
   "Tex/Reference.tex" 1747963454 119 e9020f478ba22104258696a8a6dc6da0 ""
   "Tex/Statement.tex" 1747963454 1836 e36d74869605ced4e9ef741c3e9225e3 ""
-  "Tex/Tableofcontents.tex" 1747963454 43 0e34092bfda72b464da26934e15c5b72 ""
+  "Tex/Tableofcontents.tex" 1748746218 287 49e569a08ba8e3dfa870116e5dd6be6c ""
   "Tex/Titlepage.tex" 1747965450 2917 63bde8e3191112cc1210bf8c815ce311 ""
-  "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/相对论与宇宙学小论文/main.tex" 1747963454 3096 285071dc2d7583c6ac442b8f0351814e ""
+  "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/相对论与宇宙学小论文/main.tex" 1748745443 3056 b2f4944fac2b9cda6b62a14087bb7e14 ""
   "c:/Windows/Fonts/msyh.ttc" 1575709707 19647736 ff2e53a6131130a07589812ea5b5b0d0 ""
   "c:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1736593776 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1736593148 1004 54797486969f23fa377b128694d548df ""
@@ -107,6 +104,7 @@
   "c:/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/english.lbx" 1736593267 39965 48ce9ce3350aba9457f1020b1deba5cf ""
   "c:/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/russian.lbx" 1736593267 45859 11ceb0c84af12b9adde69a2b9fb6e5ba ""
   "c:/texlive/2024/texmf-dist/tex/latex/booktabs/booktabs.sty" 1736593320 6078 f1cb470c9199e7110a27851508ed7a5c ""
+  "c:/texlive/2024/texmf-dist/tex/latex/braket/braket.sty" 1736593326 3601 193635d942bc4777a5acaaeeffdce692 ""
   "c:/texlive/2024/texmf-dist/tex/latex/caption/caption.sty" 1736593349 56128 c2ccf1a29d78c33bc553880402e4fb9a ""
   "c:/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty" 1736593349 72619 ee90b6612147680fd73c3b1406a74245 ""
   "c:/texlive/2024/texmf-dist/tex/latex/cjk/texinput/CJK.sty" 1736593402 33241 3ee25f21824a4a347866900e5037d6f3 ""
@@ -168,11 +166,11 @@
   "c:/texlive/2024/texmf-dist/web2c/texmf.cnf" 1736593107 41649 5d6ae549fbbcb850a863f69aa41f3d10 ""
   "c:/texlive/2024/texmf-var/web2c/xetex/xelatex.fmt" 1736595734 10849599 ed1d0ee42e349112cf84ba812fabefd6 ""
   "c:/texlive/2024/texmf.cnf" 1736595510 713 e69b156964470283e0530f5060668171 ""
-  "main.aux" 1747965865 7093 59c747ca35f99fdc3c30e886aec51751 "xelatex"
-  "main.bbl" 1747964911 170839 fc0439ad7e321d7235157104fec98be5 "biber main"
-  "main.run.xml" 1747965865 2454 ebf3a02cf8de2e9395e7b236379e5fa9 "xelatex"
-  "main.tex" 1747963454 3096 285071dc2d7583c6ac442b8f0351814e ""
-  "main.toc" 1747965865 779 788dfdcbd40c6ef578b0c433e4326be8 "xelatex"
+  "main.aux" 1748746639 2862 b412c83473f72bb1d7243105629ccaf9 "xelatex"
+  "main.bbl" 1748745681 486 ee04f40f768daeed26442158e95aba61 "biber main"
+  "main.run.xml" 1748746639 2454 cb412f8bf841d4a0bd2c7f096895e3ec "xelatex"
+  "main.tex" 1748745443 3056 b2f4944fac2b9cda6b62a14087bb7e14 ""
+  "main.toc" 1748746639 1776 e55b893c1f4968c2b67d7da8e709a01f "xelatex"
   (generated)
   "main.aux"
   "main.bcf"

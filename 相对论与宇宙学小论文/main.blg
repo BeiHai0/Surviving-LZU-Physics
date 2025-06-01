@@ -1,0 +1,15 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'main.blg'
+[344] biber-MSWIN64:340> INFO - === 
+[452] Biber.pm:419> INFO - Reading 'main.bcf'
+[802] Biber.pm:976> INFO - Using all citekeys in bib section 0
+[832] Biber.pm:4419> INFO - Processing section 0
+[853] Biber.pm:4610> INFO - Looking for bibtex file 'Tex/reference.bib' for section 0
+[863] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[864] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[864] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[864] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[864] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[865] bbl.pm:763> INFO - Output to main.bbl
+[865] Biber.pm:131> WARN - Data source 'Tex/reference.bib' is empty, ignoring
+[865] Biber.pm:133> INFO - WARNINGS: 1
