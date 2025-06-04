@@ -122,6 +122,252 @@
       \range{pages}{6}
       \keyw{周宇峰2011暗物质问题简介}
     \endentry
+    \entry{刘佳2009暗物质的理论研究进展}{article}{}
+      \name{author}{1}{}{%
+        {{hash=524f151793c2382f398895a5412188d6}{%
+           family={刘佳},
+           familyi={刘\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=524f151793c2382f398895a5412188d6}{%
+           family={刘佳},
+           familyi={刘\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{524f151793c2382f398895a5412188d6}
+      \strng{fullhash}{524f151793c2382f398895a5412188d6}
+      \strng{bibnamehash}{524f151793c2382f398895a5412188d6}
+      \strng{authorbibnamehash}{524f151793c2382f398895a5412188d6}
+      \strng{authornamehash}{524f151793c2382f398895a5412188d6}
+      \strng{authorfullhash}{524f151793c2382f398895a5412188d6}
+      \strng{nameabibnamehash}{524f151793c2382f398895a5412188d6}
+      \strng{nameanamehash}{524f151793c2382f398895a5412188d6}
+      \strng{nameafullhash}{524f151793c2382f398895a5412188d6}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{物理}
+      \field{langid}{english}
+      \field{languageid}{chinese}
+      \field{lansortorder}{1}
+      \field{number}{12}
+      \field{title}{暗物质的理论研究进展}
+      \field{usera}{J}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{volume}{38}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{pages}{865\bibrangedash 865}
+      \range{pages}{1}
+      \keyw{刘佳2009暗物质的理论研究进展}
+    \endentry
+    \entry{张家铨1984寻找轴子的实验现状}{article}{}
+      \name{author}{1}{}{%
+        {{hash=34bf374d827bb59e40847421118c6ad1}{%
+           family={张家铨},
+           familyi={张\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=34bf374d827bb59e40847421118c6ad1}{%
+           family={张家铨},
+           familyi={张\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{34bf374d827bb59e40847421118c6ad1}
+      \strng{fullhash}{34bf374d827bb59e40847421118c6ad1}
+      \strng{bibnamehash}{34bf374d827bb59e40847421118c6ad1}
+      \strng{authorbibnamehash}{34bf374d827bb59e40847421118c6ad1}
+      \strng{authornamehash}{34bf374d827bb59e40847421118c6ad1}
+      \strng{authorfullhash}{34bf374d827bb59e40847421118c6ad1}
+      \strng{nameabibnamehash}{34bf374d827bb59e40847421118c6ad1}
+      \strng{nameanamehash}{34bf374d827bb59e40847421118c6ad1}
+      \strng{nameafullhash}{34bf374d827bb59e40847421118c6ad1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{物理}
+      \field{langid}{english}
+      \field{languageid}{chinese}
+      \field{lansortorder}{1}
+      \field{number}{6}
+      \field{title}{寻找轴子的实验现状}
+      \field{usera}{J}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{volume}{13}
+      \field{year}{1984}
+      \field{dateera}{ce}
+      \field{pages}{0--0}
+      \range{pages}{-1}
+      \keyw{张家铨1984寻找轴子的实验现状}
+      \warn{\item Range field 'pages' in entry '张家铨1984寻找轴子的实验现状' is malformed, falling back to literal}
+    \endentry
+    \entry{duffy2009axions}{article}{}
+      \name{author}{2}{}{%
+        {{hash=732d97c2a6933b7e65b82e92704a703d}{%
+           family={Duffy},
+           familyi={D\bibinitperiod},
+           given={Leanne\bibnamedelima D},
+           giveni={L\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=a9fb0bcccfac54173c6e50db1e4a0760}{%
+           family={Van\bibnamedelima Bibber},
+           familyi={V\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=732d97c2a6933b7e65b82e92704a703d}{%
+           family={Duffy},
+           familyi={D\bibinitperiod},
+           given={Leanne\bibnamedelima D},
+           giveni={L\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=a9fb0bcccfac54173c6e50db1e4a0760}{%
+           family={Van\bibnamedelima Bibber},
+           familyi={V\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{51f7ec5d37fdab44958d7e167c7dc4e3}
+      \strng{fullhash}{1990c998083162a21c9336a01dbee348}
+      \strng{bibnamehash}{1990c998083162a21c9336a01dbee348}
+      \strng{authorbibnamehash}{1990c998083162a21c9336a01dbee348}
+      \strng{authornamehash}{51f7ec5d37fdab44958d7e167c7dc4e3}
+      \strng{authorfullhash}{1990c998083162a21c9336a01dbee348}
+      \strng{nameabibnamehash}{1990c998083162a21c9336a01dbee348}
+      \strng{nameanamehash}{51f7ec5d37fdab44958d7e167c7dc4e3}
+      \strng{nameafullhash}{1990c998083162a21c9336a01dbee348}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{New Journal of Physics}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{10}
+      \field{title}{Axions as dark matter particles}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{11}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{pages}{105008}
+      \range{pages}{1}
+      \keyw{duffy2009axions}
+    \endentry
+    \entry{marsh2016axion}{article}{}
+      \name{author}{1}{}{%
+        {{hash=e0aff9d929b32dfae1e6a6d8c4c36176}{%
+           family={Marsh},
+           familyi={M\bibinitperiod},
+           given={David\bibnamedelima JE},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=e0aff9d929b32dfae1e6a6d8c4c36176}{%
+           family={Marsh},
+           familyi={M\bibinitperiod},
+           given={David\bibnamedelima JE},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{e0aff9d929b32dfae1e6a6d8c4c36176}
+      \strng{fullhash}{e0aff9d929b32dfae1e6a6d8c4c36176}
+      \strng{bibnamehash}{e0aff9d929b32dfae1e6a6d8c4c36176}
+      \strng{authorbibnamehash}{e0aff9d929b32dfae1e6a6d8c4c36176}
+      \strng{authornamehash}{e0aff9d929b32dfae1e6a6d8c4c36176}
+      \strng{authorfullhash}{e0aff9d929b32dfae1e6a6d8c4c36176}
+      \strng{nameabibnamehash}{e0aff9d929b32dfae1e6a6d8c4c36176}
+      \strng{nameanamehash}{e0aff9d929b32dfae1e6a6d8c4c36176}
+      \strng{nameafullhash}{e0aff9d929b32dfae1e6a6d8c4c36176}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physics Reports}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Axion cosmology}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{643}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{1\bibrangedash 79}
+      \range{pages}{79}
+      \keyw{marsh2016axion}
+    \endentry
+    \entry{毕效军2011暗物质及暗物质粒子探测}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2a5c380fcdb77f05e78e4ace6fe2ccd1}{%
+           family={毕效军},
+           familyi={毕\bibinitperiod}}}%
+        {{hash=e4ad3434dbdd5d303623b408823e58a9}{%
+           family={秦波},
+           familyi={秦\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=2a5c380fcdb77f05e78e4ace6fe2ccd1}{%
+           family={毕效军},
+           familyi={毕\bibinitperiod}}}%
+        {{hash=e4ad3434dbdd5d303623b408823e58a9}{%
+           family={秦波},
+           familyi={秦\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{97f2e5252f328d5d5274df6af0b8d04a}
+      \strng{fullhash}{a6226afafd7383d90aa6e6db681a72fd}
+      \strng{bibnamehash}{a6226afafd7383d90aa6e6db681a72fd}
+      \strng{authorbibnamehash}{a6226afafd7383d90aa6e6db681a72fd}
+      \strng{authornamehash}{97f2e5252f328d5d5274df6af0b8d04a}
+      \strng{authorfullhash}{a6226afafd7383d90aa6e6db681a72fd}
+      \strng{nameabibnamehash}{a6226afafd7383d90aa6e6db681a72fd}
+      \strng{nameanamehash}{97f2e5252f328d5d5274df6af0b8d04a}
+      \strng{nameafullhash}{a6226afafd7383d90aa6e6db681a72fd}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{物理}
+      \field{langid}{english}
+      \field{languageid}{chinese}
+      \field{lansortorder}{1}
+      \field{number}{01}
+      \field{title}{暗物质及暗物质粒子探测}
+      \field{usera}{J}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{13\bibrangedash 17}
+      \range{pages}{5}
+      \keyw{毕效军2011暗物质及暗物质粒子探测}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

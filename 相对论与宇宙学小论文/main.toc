@@ -1,0 +1,28 @@
+\contentsline {section}{{摘~要}}{I}{}%
+\contentsline {section}{{\large Abstract}}{II}{}%
+\contentsline {section}{第一章~~引言}{1}{}%
+\contentsline {section}{第二章~~暗物质存在的观测证据}{2}{}%
+\contentsline {subsection}{\numberline {2.1}星系旋转曲线（Galaxy Rotation Curves）}{2}{}%
+\contentsline {subsection}{\numberline {2.2}引力透镜效应（Gravitational Lensing）}{3}{}%
+\contentsline {subsection}{\numberline {2.3}宇宙微波背景（Cosmic Microwave Background）}{3}{}%
+\contentsline {section}{第三章~~暗物质的候选者}{5}{}%
+\contentsline {subsection}{\numberline {3.1}WIMP：弱相互作用大质量粒子（Weakly Interacting Massive Particles）}{5}{}%
+\contentsline {subsubsection}{\numberline {3.1.1}WIMP“奇迹”}{5}{}%
+\contentsline {subsection}{\numberline {3.2}轴子（Axion）}{7}{}%
+\contentsline {subsubsection}{\numberline {3.2.1}轴子的基本性质}{7}{}%
+\contentsline {subsubsection}{\numberline {3.2.2}轴子作为暗物质粒子候选者}{8}{}%
+\contentsline {subsection}{\numberline {3.3}超对称模型(Supersymmetry Model)}{9}{}%
+\contentsline {subsubsection}{\numberline {3.3.1}标准模型(Standard Model)}{9}{}%
+\contentsline {subsubsection}{\numberline {3.3.2}超对称模型——超出标准模型的新物理模型}{9}{}%
+\contentsline {subsubsection}{\numberline {3.3.3}超对称粒子(Lightest Supersymmetry Particle)作为暗物质候选者}{10}{}%
+\contentsline {subsection}{\numberline {3.4}额外维(Extra Dimensions)}{10}{}%
+\contentsline {section}{第四章~~暗物质探测实验现状}{13}{}%
+\contentsline {subsection}{\numberline {4.1}直接探测实验}{13}{}%
+\contentsline {subsubsection}{\numberline {4.1.1}DAMA 实验组}{13}{}%
+\contentsline {subsection}{\numberline {4.2}间接探测实验}{14}{}%
+\contentsline {subsubsection}{\numberline {4.2.1}PAMELA 实验组}{14}{}%
+\contentsline {subsubsection}{\numberline {4.2.2}ATIC 实验组}{14}{}%
+\contentsline {section}{第五章~~总结与展望}{15}{}%
+\contentsline {section}{参考文献}{16}{}%
+\contentsline {section}{{致\hskip 1em\relax \hskip 1em\relax 谢}}{17}{}%
+\contentsfinish 
