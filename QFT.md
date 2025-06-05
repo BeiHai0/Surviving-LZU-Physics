@@ -723,10 +723,84 @@ $$
 
 ## 3.5 格林函数
 
+---
 
+## The Canonical Commutation Relations
 
+考虑一个依赖于参数 $\varepsilon $ 的变换 $g(\varepsilon) $，其作用于场 $\phi $ 上，得到另一个场 $\phi' $：
 
+$$
+\phi\to \phi'=g(\varepsilon)\phi
+$$
 
+规定当 $\varepsilon\to 0 $ 时 $g(\varepsilon) $ 为无穷小变换（很接近恒等变换 $I $），因此当 $\varepsilon\to 0 $ 时，$g(\varepsilon) $ 形式上可写为：
 
+$$
+g(\varepsilon)
+=I + \varepsilon G,\quad \varepsilon\to 0
+$$
 
+算符 $G $ 就称为生成元。
 
+可以证明，若生成元为
+
+$$
+G
+=-\mathrm{i}\frac{\partial }{\partial \phi } ,
+$$
+
+则场的变换为：
+
+$$
+\phi\to \phi'=g(\varepsilon) \phi=\phi-\mathrm{i}\varepsilon
+$$
+
+---
+
+证明：
+
+$$
+\begin{aligned}
+\phi'
+&=g(\varepsilon) \phi \\
+&=\left(1-\mathrm{i}\varepsilon\frac{\partial }{\partial\phi }  \right)\phi \\
+&=\phi-\mathrm{i}\varepsilon
+\end{aligned}
+$$
+
+---
+
+quantum operator $\longleftrightarrow $ generator of symmetry
+
+conjugate momentum density $\pi $ $\longleftrightarrow $ generator field shifts $-\mathrm{i}\partial/\partial\phi $
+
+$$
+\begin{aligned}
+\left[\phi\left(t,\vec{x} \right) , \pi\left(t,\vec{y} \right) \right] \Ket{\psi }
+&=\left[\phi\left(t,\vec{x} \right) , -\mathrm{i}\frac{\partial }{\partial \phi\left(t,\vec{y} \right) }  \right] \Ket{\psi } \\
+&=\mathrm{i}\delta\left(\vec{x}-\vec{y} \right) \Ket{\psi }
+\end{aligned}
+$$
+
+$$
+\boxed{
+\left[\phi\left(t,\vec{x} \right) , \pi\left(t,\vec{y} \right) \right]
+=\mathrm{i} \delta\left(\vec{x}-\vec{y} \right)
+}
+$$
+
+$$
+\boxed{
+\left[\phi\left(t,\vec{x} \right) , \phi\left(t,\vec{y} \right) \right]
+=0
+}
+$$
+
+$$
+\boxed{
+\left[\pi\left(t,\vec{x} \right) , \pi\left(t,\vec{y} \right) \right]
+=0
+}
+$$
+
+## Field Operators
