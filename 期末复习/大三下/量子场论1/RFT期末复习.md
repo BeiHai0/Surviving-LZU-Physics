@@ -887,6 +887,663 @@ $$
 
 # 3 Clifford代数与 $\gamma $ 矩阵
 
+## Clifford 代数与 $\gamma $ 矩阵
+
+### R场论中的 Clifford 代数
+
+R场论中，Clifford 代数是 $n $ 维复向量空间生成的结合代数。
+
+设 $V $ 是 $n $ 维复向量空间，则由 $V $ 生成的结合代数就是 Clifford 代数，记为 $C_n(V) .$
+
+$V $ 中向量的几何乘积具有以下性质：
+
+$$
+a(bc)
+=(ab)c
+$$
+
+$$
+a(b+c)
+=ab+ac
+$$
+
+$$
+(a+b)c
+=ac+bc
+$$
+
+$$
+\alpha(ab)
+=(\alpha a)b
+=a(\alpha b),\quad \alpha\in \mathbb{F}
+$$
+
+定义内积：
+
+$$
+a\cdot b
+\equiv \frac{1 }{2 } (ab+ba)
+$$
+
+定义外积：
+
+$$
+a \wedge b
+\equiv \frac{1 }{2 } (ab-ba)
+$$
+
+### 由 $V $ 的正交归一基生成 $C_n(V) $ 的基
+
+设 $\left\{e_1,e_2,\cdots,e_n \right\} $ 是 $V $ 的一组正交归一基，即它们的内积满足正交归一性：
+
+$$
+e_\mu \cdot e_\nu
+=\delta_{\mu\nu} \bold{1}
+$$
+
+其中，$\bold{1} $ 是乘法单位元。
+
+根据内积的定义，上式等价于：
+
+$$
+e_\mu e_\nu + e_\nu e_\mu 
+=2\delta_{\mu\nu} \bold{1}
+$$
+
+特别地，当 $\mu\ne \nu $ 时，有：
+
+$$
+e_\mu e_\nu = -e_\nu e_\mu,\quad \mu\ne \nu
+$$
+
+基于 $n $ 维复向量空间 $V $ 的一组基 $\left\{e_\mu \right\} $ 可构造 Clifford 代数 $C_n(V) $ 的一组基二阶反对称张量基 $\left\{e_\mu e_\nu,\mu\ne \nu \right\} .$
+
+类似，$\left\{e_{\mu_1} e_{\mu_2} \cdots e_{\mu_m},\mu_1\ne \mu_2 \ne \cdots \ne \mu_m \right\} $ 也是 $C_n(V) $ 的一组基，直到最高反对称基 $e_1 e_2 \cdots e_n .$
+
+可以证明：
+
+$$
+e_{\mu_1} \wedge e_{\mu_2}
+=e_{\mu_1} e_{\mu_2}
+$$
+
+$$
+e_{\mu_1} \wedge e_{\mu_2} \wedge \cdots \wedge e_{\mu_r}
+=e_{\mu_1} e_{\mu_2} \cdots e_{\mu_r}
+$$
+
+### r-矢量
+
+$$
+A_r
+\equiv a_1 \wedge a_2 \wedge \cdots \wedge a_r,\quad
+a_1,a_2,\cdots,a_r \in V
+$$
+
+若 $a\in V $，则
+
+$$
+a\wedge A_r
+=\frac{1 }{2 } \left[a A_r + (-1)^r A_r a \right]
+$$
+
+$$
+a\cdot A_r
+=\frac{1 }{2 } \left[a A_r - (-1)^r A_r a \right]
+$$
+
+### $C_n(V) $ 中元素的一般形式
+
+$C_n(V) $ 中的元素 $A\in C_n(V) $ 一般可写为：
+
+$$
+A
+=a + a_\mu e_\mu + \frac{1 }{2! } a_{\mu_1\mu_2} e_{\mu_1} \wedge e_{\mu_2} + \cdots + \frac{1 }{n! } a_{\mu_1\mu_2\cdots \mu_n} e_{\mu_1} \wedge e_{\mu_2} \wedge \cdots \wedge e_{\mu_n}
+$$
+
+### Clifford 代数的代数表示
+
+$$
+\Gamma : C_n(V) \to \mathrm{End}(W),\quad
+\mathrm{dim}~V = n,\quad
+\mathrm{dim}~W = d
+$$
+
+其中 $W $ 为复向量空间，$\mathrm{End}(W) $ 为 $W $ 上所有线性变换（可看作矩阵）的全体，满足：
+
+$$
+\Gamma(a + b)
+=\Gamma(a) + \Gamma(b)
+$$
+
+$$
+\Gamma(ab)
+=\Gamma(a) \Gamma(b)
+$$
+
+$$
+\Gamma(\alpha a)
+=\alpha \Gamma(a)
+$$
+
+$$
+\Gamma(\bold{1})
+=I
+$$
+
+> 可见“代数表示”比“群线性表示”多了一个“保持加法”的性质。
+
+可以证明，Clifford 代数 $C_n(V) $ 的矢量基 $\left\{e_1,e_2,\cdots,e_n \right\} $ 可以有 $d\times d $ 矩阵表示 $\left(d=2^{\left[\frac{n }{2 }  \right]} \right) .$
+
+#### $\gamma $ 矩阵作为 Clifford 代数矢量基的代数表示
+
+把 Clifford 代数 $C_n(V) $ 中的矢量基 $\left\{e_\mu,\mu=1,2,\cdots,n \right\} $ 的某个代数表示 $\Gamma(e_\mu) $ 定义为 $\gamma_\mu $ 矩阵，即：
+
+$$
+\gamma_\mu
+\equiv \Gamma(e_\mu),\quad \mu=1,2,\cdots,n
+$$
+
+由于
+
+$$
+e_\mu e_\nu + e_\nu e_\mu 
+=2\delta_{\mu\nu} \bold{1}
+$$
+
+则：
+
+$$
+\Gamma(e_\mu) \Gamma(e_\nu) + \Gamma(e_\nu) \Gamma(e_\mu) = 2\delta_{\mu\nu} \Gamma(\bold{1})
+$$
+
+$$
+\boxed{
+\gamma_\mu \gamma_\nu + \gamma_\nu \gamma_\mu
+=2\delta_{\mu\nu} I
+}
+$$
+
+特别地，当 $\mu=\nu $ 时，有
+
+$$
+\boxed{
+\gamma_\mu^2
+=I
+}
+$$
+
+当 $\mu \ne \nu $ 时，有
+
+$$
+\boxed{
+\mu \ne \nu,\quad
+\gamma_\mu \gamma_\nu
+=-\gamma_\nu \gamma_\mu
+}
+$$
+
+注意到
+
+$$
+\gamma_\mu^\dag \gamma_\nu^\dag + \gamma_\nu^\dag \gamma_\mu^\dag
+=2\delta_{\mu\nu} I
+$$
+
+因此可人为约定 $\gamma $ 矩阵还满足
+
+$$
+\boxed{
+\gamma_\mu^\dag
+=\gamma_\mu
+}
+$$
+
+结合
+
+$$
+\gamma_\mu^2
+=I
+$$
+
+可得
+
+$$
+\boxed{
+\gamma_\mu^\dag
+=\gamma_\mu^{-1} 
+=\gamma_\mu
+}
+$$
+
+### $\gamma $ 矩阵的性质
+
+$$
+\gamma_\mu \gamma_\nu + \gamma_\nu \gamma_\mu
+=2\delta_{\mu\nu}
+$$
+
+特别地
+
+$$
+\gamma_\mu \gamma_\nu
+=-\gamma_\nu \gamma_\mu,\quad \mu\ne \nu
+$$
+
+$$
+\gamma_\mu^2 = I
+$$
+
+
+### R 场论中的 $\gamma $ 矩阵
+
+可以证明，Clifford 代数 $C_n(V) $ 的矢量基 $\left\{e_1,e_2,\cdots,e_n \right\} $ 可以有 $d\times d $ 矩阵表示 $\left(d=2^{\left[\frac{n }{2 }  \right]} \right) .$ 这些表示矩阵称为 $\gamma $ 矩阵，满足正交关系：
+
+$$
+\gamma_\mu\gamma_\nu + \gamma_\nu\gamma_\mu = 2\delta_{\mu\nu} I
+$$
+
+R场论中，时空坐标共 $4 $ 个，因此考虑 $C_4(V) .$
+
+$C_4(V) $ 的四个代数矢量基 $\left\{e_1,e_2,e_3,e_4 \right\} $ 有 $4\times 4$ 矩阵表示 $\left\{\gamma_1,\gamma_2,\gamma_3,\gamma_4 \right\} $，满足：
+
+$$
+\boxed{
+\gamma_\mu\gamma_\nu + \gamma_\nu\gamma_\mu = 2\delta_{\mu\nu} I,\quad \mu,\nu\in \left\{1,2,3,4 \right\}
+}
+$$
+
+并且仍然人为约定
+
+$$
+\boxed{
+\gamma_\mu^\dag
+=\gamma_\mu
+}
+$$
+
+### R场论中 $\gamma $ 矩阵的性质
+
+$\gamma $ 矩阵的定义：
+
+$$
+\boxed{
+\gamma_\mu \gamma_\nu + \gamma_\nu \gamma_\mu
+=2\delta_{\mu\nu} I
+}
+$$
+
+上式的两个直接推论：
+
+$$
+\boxed{
+\gamma_\mu^2 = I
+}
+$$
+
+$$
+\boxed{
+\gamma_\mu \gamma_\nu
+=-\gamma_\nu \gamma_\mu,\quad \mu\ne \nu
+}
+$$
+
+人为约定：
+
+$$
+\boxed{
+\gamma_\mu^\dag
+=\gamma_\mu^{-1} 
+=\gamma_\mu
+}
+$$
+
+### $\gamma_5 $ 矩阵
+
+$\gamma_5 $ 矩阵定义如下：
+
+$$
+\boxed{
+\gamma_5
+\equiv \gamma_1 \gamma_2 \gamma_3 \gamma_4
+}
+$$
+
+$\gamma_5 $ 矩阵也可写为：
+
+$$
+\boxed{
+\gamma_5
+=\frac{1 }{4! } \varepsilon_{\mu\nu\lambda\rho}  \gamma_\mu \gamma_\nu \gamma_\lambda \gamma_\rho
+}
+$$
+
+
+
+$$
+\boxed{
+\gamma_5 \gamma_\mu + \gamma_\mu \gamma_5 = 0,\quad \mu=1,2,3,4
+}
+$$
+
+$$
+\boxed{
+\gamma_5^2 = I
+}
+$$
+
+$$
+\boxed{
+\gamma_5 \gamma_\mu \gamma_5^{-1}
+=-\gamma_\mu
+}
+$$
+
+$$
+\boxed{
+\gamma_5 \gamma_\mu \gamma_\nu \gamma_5^{-1}
+=\gamma_\mu \gamma_\nu
+}
+$$
+
+$$
+\boxed{
+\gamma_5 \gamma_{\mu_1}\cdots\gamma_{\mu_n} \gamma_5^{-1}
+=(-1)^n \gamma_{\mu_1} \cdots \gamma_{\mu_n}
+}
+$$
+
+$$
+\boxed{
+\mathrm{Tr}\left(\gamma_{\mu_1} \cdots \gamma_{\mu_n} \right)
+=(-1)^n \mathrm{Tr}\left(\gamma_{\mu_1} \cdots \gamma_{\mu_n} \right)
+}
+$$
+
+奇数个 $\gamma_\mu $ 矩阵的迹为零。
+
+$$
+\boxed{
+\mathrm{Tr}(\gamma_\mu)=0,\quad \mathrm{Tr}(\gamma_5)=0
+}
+$$
+
+偶数个 $\gamma_\mu $ 矩阵的迹：
+
+$$
+\boxed{
+\mathrm{Tr}\left(\gamma_{\mu_1} \cdots \gamma_{\mu_n} \right)
+=4 \sum_p \delta_p \delta_{\nu_1\nu_2} \delta_{\nu_3\nu_4} \cdots \delta_{\nu_{n-1}\nu_n}
+}
+$$
+
+$$
+\delta_p
+\equiv \left\{
+\begin{aligned}
++1 , \mu_1 \cdots \mu_n 经过偶次置换变为 \nu_1 \cdots \nu_n \\
+-1 , \mu_1 \cdots \mu_n 经过偶次置换变为 \nu_1 \cdots \nu_n
+\end{aligned}
+\right.
+$$
+
+其中，求和对 $\nu_1,\nu_2,\cdots,\nu_n $ 所有可能的取值求和（并非取全排列，共有 $(n-1)!! $ 项），具体解释如下：
+
+用 $(\mu) $ 表示 $(\mu_1,\mu_2,\cdots,\mu_n) $ 有序数对，用 $(\mu)\backslash \mu_i $ 表示有序数对中去掉 $\mu_i $ 变量，即 $(\mu)\backslash \mu_i=(\mu_1,\cdots ,\mu_{i-1},\mu_{i+1},\cdots,\mu_n) $
+
+用 $\nu_i\in (\mu) $ 表示变量 $\nu_i $ 取有序数对 $(\mu) $ 中的某一个变量。
+
+用 $\nu_i = (\mu)_\mathrm{first} $ 表示变量 $\nu_i $ 取有序数对 $(\mu) $ 中的第一个变量。
+
+$\nu_1=(\mu)_\mathrm{first}=\mu_1 $
+
+$\nu_2\in (\mu)\backslash \nu_1 = (\mu)\backslash\mu_1 $ 
+
+$\nu_3=\left((\mu)\backslash\nu_1,\nu_2 \right)_\mathrm{first}  $
+
+$\nu_4\in (\mu)\backslash\nu_1,\nu_2,\nu_3 $
+
+以此类推，最后 $(\nu_1,\nu_2,\cdots,\nu_n) $ 是 $\mu_1,\mu_2,\cdots,\mu_n $ 的一个排列，设 $m $ 为把 $(\nu_1,\nu_2,\cdots,\nu_n) $ 还原为排列 $(\mu_1,\mu_2,\cdots,\mu_n) $ 所需的置换次数，则 $\delta_p=(-1)^m .$
+
+$$
+\boxed{
+\mathrm{Tr}\left(\gamma_\mu\gamma_\nu \right)
+=4\delta_{\mu\nu}
+}
+$$
+
+$$
+\boxed{
+\mathrm{Tr}\left(\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho \right)
+=4\left(\delta_{\mu\nu}\delta_{\lambda\rho} - \delta_{\mu\lambda}\delta_{\rho\nu} + \delta_{\mu\rho}\delta_{\nu\lambda} \right)
+}
+$$
+
+## Lorentz 群的旋量表示
+
+设 $\gamma_\mu $ 矩阵可进行广义齐次 Lorentz 变换：
+
+$$
+\gamma_\mu'
+=A_{\mu\nu} \gamma_\nu
+$$
+
+可以计算得到：
+
+$$
+\gamma_\mu' \gamma_\nu' + \gamma_\nu' \gamma_\mu'
+=2\delta_{\mu\nu} I
+$$
+
+即 $\gamma_\mu' $ 也可作为 $\gamma $ 矩阵。
+
+可以证明，$\gamma_\mu' $ 与 $\gamma_\mu $ 相似，即存在相似变换矩阵 $\Lambda $ 使得：
+
+$$
+\Lambda^{-1} \gamma_\mu \Lambda
+=A_{\mu\nu} \gamma_\nu
+$$
+
+R场论中还进一步规定
+
+$$
+\left|\Lambda \right|
+=1
+$$
+
+$\Lambda $ 决定于 $A $，但多个 $\Lambda $ 与 一个 $A $ 对应。
+
+- $\Lambda $ 与 $A $ 都构成群，两个群准同构；
+
+- $A $ 为广义齐次 Lorentz 变换的变换矩阵；
+
+- $\Lambda $ 为广义齐次 Lorentz 变换群的线性不可约表示，$\Lambda(A) $ 称为 Lorentz 群的旋量表示。
+
+## $\mathrm{SO}(n) $ 群的生成元
+
+### $\mathrm{SO}(n) $ 群的定义
+
+$$
+\mathrm{SO}(n)
+\equiv \left\{A \in \mathrm{GL}(n,\R) | A^\mathrm{T} A = I,\mathrm{det}(A)=1 \right\}
+$$
+
+### 生成元的定义
+
+设 Lie 群的群元 $D(\alpha) $ 由一组参数 $\left\{\alpha_i \right\} $ 描述，且参数取 $\alpha=0 $ 对应群恒元。与参数 $\alpha_i $ 对应的生成元 $I_i $ 定义为：
+
+$$
+I_i
+\equiv \frac{\partial D(\alpha) }{\partial \alpha_i } \bigg|_{\alpha=0}
+$$
+
+### $\mathrm{SO}(n) $ 群的生成元
+
+设 $A\in \mathrm{SO}(n) $ 非常接近单位矩阵，则其可写为：
+
+$$
+A
+=I + \alpha
+$$
+
+由
+
+$$
+A^\mathrm{T} A
+=I
+$$
+
+可知：
+
+$$
+\alpha^\mathrm{T}
+=-\alpha
+$$
+
+即 $\alpha $ 的矩阵元满足：
+
+$$
+\alpha_{ab}
+=-\alpha_{ba}
+$$
+
+选取 $\alpha $ 的矩阵元 $\alpha_{ab} $ 作为 $\mathrm{SO}(n) $ 群的参数。
+
+生成元：
+
+$$
+I_{ab}
+\equiv \frac{\partial A(\alpha) }{\partial \alpha_{ab} } \bigg|_{\alpha=0}
+=\frac{\partial \alpha }{\partial \alpha_{ab} } \bigg|_{\alpha=0}
+$$
+
+生成元的矩阵元：
+
+$$
+\left(I_{ab} \right)_{cd}
+=\frac{\partial \alpha_{cd} }{\partial \alpha_{ab} } \bigg|_{\alpha=0}
+=\delta_{ac}\delta_{bd} - \delta_{ad}\delta_{bc}
+$$
+
+
+一方面，在恒元附近可将 $A $ 展开：
+
+$$
+A(\alpha)
+=I + \frac{1 }{2 }  \frac{\partial A(\alpha) }{\partial \alpha_{ab} } \bigg|_{\alpha=0} \alpha_{ab}
+\equiv I + \frac{1 }{2 } I_{ab} \alpha_{ab}
+$$
+
+另一方面，我们假设
+
+$$
+A(\alpha)
+=I + \alpha
+$$
+
+### $\mathrm{SO}(n) $ 群李代数
+
+$$
+\left(I_{ab} \right)_{cd}
+=\delta_{ac}\delta_{bd} - \delta_{ad}\delta_{bc}
+$$
+
+$$
+I_{\mu\nu}
+=-I_{\nu\mu}
+$$
+
+$$
+\begin{aligned}
+\left[I_{\mu\nu} , I_{\alpha\beta} \right]_{ab}
+&=\left(I_{\mu\nu} \right)_{ac} \left(I_{\alpha\beta} \right)_{cb} - \left(I_{\alpha\beta} \right)_{ac} \left(I_{\mu\nu} \right)_{cb} \\
+&=\left(\delta_{\mu a}\red{\delta_{\nu c}} - \blue{\delta_{\mu c}}\delta_{\nu a} \right) \left(\green{\delta_{\alpha c}}\delta_{\beta b} - \delta_{\alpha b}\purple{\delta_{\beta c}} \right) - \left(\delta_{\alpha a}\purple{\delta_{\beta c}} - \green{\delta_{\alpha c}}\delta_{\beta a} \right)\left(\blue{\delta_{\mu c}}\delta_{\nu b} - \delta_{\mu b}\red{\delta_{\nu c}} \right) \\
+&=\red{\delta_{\nu c}}\green{\delta_{\alpha c}}\left(\delta_{\mu a}\delta_{\beta b} - \delta_{\beta a}\delta_{\mu b} \right) + \red{\delta_{\nu c}}\purple{\delta_{\beta c}}\left(-\delta_{\mu a}\delta_{\alpha b} + \delta_{\alpha a}\delta_{\mu b} \right) + \blue{\delta_{\mu c}}\green{\delta_{\alpha c}}\left(-\delta_{\nu a}\delta_{\beta b} + \delta_{\beta a}\delta_{\nu b} \right) + \blue{\delta_{\mu c}}\purple{\delta_{\beta c}}\left(\delta_{\nu a}\delta_{\alpha b} - \delta_{\alpha a}\delta_{\nu b} \right) \\
+&=\red{\delta_{\nu c}}\green{\delta_{\alpha c}}\left(I_{\mu\beta} \right)_{ab} + \red{\delta_{\nu c}}\purple{\delta_{\beta c}}\left(I_{\alpha\mu} \right)_{ab} + \blue{\delta_{\mu c}}\green{\delta_{\alpha c}}\left(I_{\beta\nu} \right)_{ab} + \blue{\delta_{\mu c}}\purple{\delta_{\beta c}}\left(I_{\nu \alpha} \right)_{ab} \\
+&=\delta_{\nu\alpha} \left(I_{\mu\beta} \right)_{ab} + \delta_{\nu\beta} \left(I_{\alpha\mu} \right)_{ab} + \delta_{\mu\alpha} \left(I_{\beta\nu} \right)_{ab} + \delta_{\mu\beta} \left(I_{\nu \alpha} \right)_{ab} \\
+&=\delta_{\nu\alpha} \left(I_{\mu\beta} \right)_{ab} + \delta_{\nu\beta} \left(-I_{\mu\alpha} \right)_{ab} + \delta_{\mu\alpha} \left(-I_{\nu\beta} \right)_{ab} + \delta_{\mu\beta} \left(I_{\nu \alpha} \right)_{ab} \\
+&=\left(\delta_{\nu\alpha} I_{\mu\beta} + \delta_{\mu\beta}I_{\nu\alpha} - \delta_{\mu\alpha} I_{\nu\beta} - \delta_{\nu\beta} I_{\mu\alpha} \right)_{ab}
+\end{aligned}
+$$
+
+$$
+\left[I_{\mu\nu} , I_{\alpha\beta} \right]
+=\left(\delta_{\nu\alpha} I_{\mu\beta} + \delta_{\mu\beta}I_{\nu\alpha} - \delta_{\mu\alpha} I_{\nu\beta} - \delta_{\nu\beta} I_{\mu\alpha} \right)
+$$
+
+### Lorentz 群旋量表示的生成元
+
+考虑固有 Lorentz 变换
+
+$$
+x'_\mu
+=a_{\mu\nu} x_\nu
+$$
+
+把 $a_{\mu\nu} $ 作如下分解：
+
+$$
+a_{\mu\nu}
+=\delta_{\mu\nu} + \alpha_{\mu\nu},\quad
+$$
+
+则固有 Lorentz 变换可写为：
+
+$$
+x'_\mu
+=a_{\mu\nu} x_\nu
+=\left(\delta_{\mu\nu} + \alpha_{\mu\nu} \right) x_\nu
+=x_\mu + \alpha_{\mu\nu} x_\nu
+$$
+
+在R场论中，固有 Lorentz 变换矩阵群 $\left\{a \right\} $ 的旋量表示 $\Lambda $ 记为 $S $，即：
+
+$$
+S^{-1} \gamma_\mu S
+=a_{\mu\nu} \gamma_\nu
+$$
+
+现在把 $a_{\mu\nu} $ 分解了，此时的 $S $ 依赖于参数 $\alpha_{\mu\nu} $，即：
+
+$$
+S
+=S(\alpha)
+$$
+
+考虑无穷小固有 Lorentz 变换，即 $x'_\mu $ 与 $x_\mu $ 差别很小的固有 Lorentz 变换，这对应于参数 $\alpha_{\mu\nu}\to 0 .$
+
+由正交关系
+
+$$
+a_{\mu \tau} a_{\nu \tau}
+=\delta_{\mu\nu}
+$$
+
+可得
+
+$$
+\left(\delta_{\mu\tau} + \alpha_{\mu\tau} \right)\left(\delta_{\nu\tau} + \alpha_{\nu\tau} \right)
+=\delta_{\mu\nu}
+$$
+
+由于 $\alpha_{\mu\nu}\to 0 $，因此可忽略二阶小量 $\alpha_{\mu\tau}\alpha_{\nu\tau} $，上式化为
+
+$$
+\alpha_{\mu\nu}
+=-\alpha_{\nu\mu},\quad \alpha_{\mu\nu} \to 0
+$$
+
+当 $\alpha_{\mu\nu}\to 0 $ 时，$S(\alpha) $ 可展为
+
+$$
+S(\alpha)
+=S(0) + \frac{1 }{2 } \frac{\partial S(\alpha) }{\partial \alpha_{\mu\nu} } \bigg|_{\alpha=0} \alpha_{\mu\nu}
+$$
+
+> 实际上在无穷小变换情况下，只有 $6 $ 个独立的非零群参数 $\left\{\alpha_{12},\alpha_{13},\alpha_{13},\alpha_{23},\alpha_{24},\alpha_{34} \right\} $，但由于采用爱因斯坦求和，$\mu,\nu $ 都要取遍 $1,2,3,4 $，而 $\displaystyle{\frac{\partial S(\alpha) }{\partial \alpha_{12} } \bigg|_{\alpha=0} \alpha_{12 } = \frac{\partial S(\alpha) }{\partial \alpha_{21} } \bigg|_{\alpha=0} \alpha_{21 } }$，因此即使是一阶项前面也要有 $1/2 $ 因子来去掉求和带来的重复。
+
+
+
 # 4 场方程
 
 ## 达朗贝尔算符

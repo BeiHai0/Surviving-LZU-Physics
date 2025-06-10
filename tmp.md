@@ -169,16 +169,6 @@ $$
 
 ---
 
-## 基本知识
-
-### 代数
-
-### 结合代数
-
-### 代数表示
-
-
-
 ## Clifford 代数
 
 设有域 $\mathbb{F} $ 上的向量空间 $V $，且其上配有二次型
@@ -258,7 +248,7 @@ $$
 
 $$
 e_\mu e_\nu + e_\nu e_\mu 
-=2\delta_{\mu\nu}
+=2\delta_{\mu\nu} \bold{1}
 $$
 
 特别地，当 $\mu\ne \nu $ 时，有：
@@ -267,7 +257,7 @@ $$
 e_\mu e_\nu = -e_\nu e_\mu,\quad \mu\ne \nu
 $$
 
-基于 $n $ 维复向量空间 $V $ 的一组基 $\left\{e_\mu \right\} $ 可构造 Clifford 代数 $C_n(V) $ 的一组基二阶反对称张量基 $\left\{e_\mu e_\nu(\mu\ne \nu) \right\} .$
+基于 $n $ 维复向量空间 $V $ 的一组基 $\left\{e_\mu \right\} $ 可构造 Clifford 代数 $C_n(V) $ 的一组基二阶反对称张量基 $\left\{e_\mu e_\nu,\mu\ne \nu \right\} .$
 
 类似，$\left\{e_{\mu_1} e_{\mu_2} \cdots e_{\mu_m},\mu_1\ne \mu_2 \ne \cdots \ne \mu_m \right\} $ 也是 $C_n(V) $ 的一组基，直到最高反对称基 $e_1 e_2 \cdots e_n .$
 
@@ -303,7 +293,7 @@ a\cdot A_r
 =\frac{1 }{2 } \left[a A_r - (-1)^r A_r a \right]
 $$
 
----
+#### $C_n(V) $ 中元素的一般形式
 
 $C_n(V) $ 中的元素 $A\in C_n(V) $ 一般可写为：
 
