@@ -1510,6 +1510,12 @@ S
 =S(\alpha)
 $$
 
+$$
+S^{-1}(\alpha) \gamma_\mu S(\alpha)
+=(\delta_{\mu\nu} + \alpha_{\mu\nu}) \gamma_\nu
+=\gamma_\mu + \alpha_{\mu\nu} \gamma_\nu
+$$
+
 考虑无穷小固有 Lorentz 变换，即 $x'_\mu $ 与 $x_\mu $ 差别很小的固有 Lorentz 变换，这对应于参数 $\alpha_{\mu\nu}\to 0 .$
 
 由正交关系
@@ -1533,16 +1539,62 @@ $$
 =-\alpha_{\nu\mu},\quad \alpha_{\mu\nu} \to 0
 $$
 
-当 $\alpha_{\mu\nu}\to 0 $ 时，$S(\alpha) $ 可展为
+当 $\alpha\to 0 $ 时，$S(\alpha) $ 可展为
 
 $$
+\begin{aligned}
 S(\alpha)
-=S(0) + \frac{1 }{2 } \frac{\partial S(\alpha) }{\partial \alpha_{\mu\nu} } \bigg|_{\alpha=0} \alpha_{\mu\nu}
+&=S(0) + \frac{1 }{2 } \frac{\partial S(\alpha) }{\partial \alpha_{\mu\nu} } \bigg|_{\alpha=0} \alpha_{\mu\nu} \\
+&=I + \frac{1 }{2 } I_{\mu\nu} \alpha_{\mu\nu},\quad \alpha\to 0
+\end{aligned}
+$$
+
+群论告诉我们
+
+$$
+S^{-1}(\alpha)
+=I - \frac{1 }{2 } I_{\mu\nu} \alpha_{\mu\nu},\quad \alpha\to 0
+$$
+
+把上面两式代入 $S^{-1}(\alpha) \gamma_\mu S(\alpha)=\gamma_\mu + \alpha_{\mu\nu} \gamma_\nu $，忽略二阶小量可得：
+
+$$
+
 $$
 
 > 实际上在无穷小变换情况下，只有 $6 $ 个独立的非零群参数 $\left\{\alpha_{12},\alpha_{13},\alpha_{13},\alpha_{23},\alpha_{24},\alpha_{34} \right\} $，但由于采用爱因斯坦求和，$\mu,\nu $ 都要取遍 $1,2,3,4 $，而 $\displaystyle{\frac{\partial S(\alpha) }{\partial \alpha_{12} } \bigg|_{\alpha=0} \alpha_{12 } = \frac{\partial S(\alpha) }{\partial \alpha_{21} } \bigg|_{\alpha=0} \alpha_{21 } }$，因此即使是一阶项前面也要有 $1/2 $ 因子来去掉求和带来的重复。
 
+$$
+\left[\gamma_\mu , I_{\alpha\beta} \right]
+=\delta_{\mu\alpha}\gamma_\beta - \delta_{\mu\beta}\gamma_\alpha
+$$
 
+设
+
+$$
+I_{\alpha\beta}
+=k \left(\gamma_\alpha\gamma_\beta - \gamma_\beta\gamma_\alpha \right)
+$$
+
+可以解得
+
+$$
+k=\frac{1 }{4 }  
+$$
+
+$$
+I_{\alpha\beta}
+=\frac{1 }{4 } \left(\gamma_\alpha\gamma_\beta - \gamma_\beta\gamma_\alpha \right)
+$$
+
+生成元对易关系为：
+
+$$
+\begin{aligned}
+\left[I_{\mu\nu} , I_{\alpha\beta} \right]
+&=
+\end{aligned}
+$$
 
 # 4 场方程
 
