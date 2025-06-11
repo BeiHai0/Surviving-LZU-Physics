@@ -885,7 +885,7 @@ x'_\mu = A_{\mu\nu} x_\nu + b_\mu,\quad
 }
 $$
 
-# 3 Clifford代数与 $\gamma $ 矩阵
+# 3 Clifford代数、$\gamma $ 矩阵、旋量表示与旋量
 
 ## Clifford 代数与 $\gamma $ 矩阵
 
@@ -1629,6 +1629,434 @@ $$
 &=\left|A \right|\gamma_5
 \end{aligned}
 $$
+
+### 几种特殊的旋量表示 $S,P,T $
+
+广义 Lorentz 变换矩阵 $A $ 的旋量表示 $\Lambda(A) $ 依赖于广义 Lorentz 变换矩阵 $A $，而 $A $ 可按行列式 $\mathrm{det}(A) $ 和 $A_{44} $ 划分成四个分支。
+
+#### $S $ 矩阵
+
+固有 Lorentz 变换矩阵的旋量表示记为 $S $，即：
+
+$$
+S
+\equiv \Lambda(a),\quad
+S=S(a)
+$$
+
+$$
+S^{-1} \gamma_\mu S
+=a_{\mu\nu} \gamma_\nu
+$$
+
+#### $P $ 矩阵
+
+空间反射变换矩阵 $\sigma $ 的旋量表示记为 $P $，即：
+
+$$
+P
+\equiv \Lambda(\sigma),\quad
+P
+=P(\sigma)
+$$
+
+$$
+P^{-1} \gamma_\mu P
+=\sigma_{\mu\nu} \gamma_{\nu}
+$$
+
+特别地
+
+$$
+P^{-1} \gamma_i P
+=\sigma_{i\nu} \gamma_\nu
+=-\gamma_i
+$$
+
+$$
+\boxed{
+\gamma_i P
+=-P \gamma_i
+=0
+}
+$$
+
+以及
+
+$$
+P^{-1} \gamma_4 P
+=\sigma_{4\nu} \gamma_{\nu}
+=\gamma_4
+$$
+
+$$
+\boxed{
+\gamma_4 P
+=P \gamma_4
+}
+$$
+
+可以猜到
+
+$$
+P
+=\eta_P \gamma_4
+$$
+
+若人为要求
+
+$$
+\left|P \right|
+=1
+$$
+
+则
+
+$$
+\boxed{
+P
+=\eta_P \gamma_4,\quad \left|\eta_P \right|=1
+}
+$$
+
+#### $T $ 矩阵
+
+拉卡型时间反演变换矩阵 $\tau $ 的旋量表示记为 $T $ 即：
+
+$$
+T
+\equiv \Lambda(\tau),\quad T=T(\tau)
+$$
+
+由旋量表示地定义，有
+
+$$
+T^{-1} \gamma_\mu T 
+=\tau_{\mu\nu} \gamma_\nu
+$$
+
+特别地
+
+$$
+T^{-1} \gamma_i T 
+=\tau_{i\nu} \gamma_\nu
+=\gamma_i,\quad i=1,2,3
+$$
+
+$$
+T^{-1} \gamma_4 T 
+=\tau_{4\nu} \gamma_\nu
+=-\gamma_4
+$$
+
+即
+
+$$
+\gamma_i T
+=T\gamma_i
+$$
+
+$$
+\gamma_4 T
+=-\gamma_4 T
+$$
+
+可以猜到
+
+$$
+T
+=\eta_T \gamma_1 \gamma_2 \gamma_3
+$$
+
+若人为要求
+
+$$
+\left|T \right|=1
+$$
+
+则
+
+$$
+\boxed{
+T
+=\eta_T \gamma_1 \gamma_2 \gamma_3,\quad
+\left|\eta_T \right|
+=1
+}
+$$
+
+#### $ $
+
+### $\Lambda^\dag $ 的表达式
+
+$A_{ij},A_{44} $ 为实数，$A_{i4},A_{4i} $ 为虚数。
+
+$$
+A_{ij}^*=A_{ij},\quad A_{44}^*=A_{44}
+$$
+
+$$
+A_{i4}^*=-A_{i4},\quad A_{4i}^*=-A_{4i}
+$$
+
+$\gamma_\mu $ 矩阵满足
+
+$$
+\gamma_\mu^\dag
+=\gamma_\mu^{-1}
+=\gamma_\mu
+$$
+
+$\Lambda $ 矩阵的定义：
+
+$$
+\Lambda^{-1} \gamma_\mu \Lambda
+=A_{\mu\nu} \gamma_\nu
+$$
+
+取厄米共轭得
+
+$$
+\Lambda^\dag \gamma_\mu \left(\Lambda^{-1} \right)^\dag
+=A_{\mu\nu}^* \gamma_\nu
+$$
+
+特别地，对于前三个 $\gamma_i $ 矩阵和 $\gamma_4 $ 矩阵要分开讨论：
+
+$$
+\left\{
+\begin{aligned}
+&\Lambda^\dag \gamma_i \left(\Lambda^{-1} \right)^\dag
+=A_{i\nu}^* \gamma_\nu
+=A_{ij}^* \gamma_j + A_{i4}^*\gamma_4
+=A_{ij} \gamma_j - A_{i4} \gamma_4 \\
+&\Lambda^\dag \gamma_4 \left(\Lambda^{-1} \right)^\dag
+=A_{4\nu}^* \gamma_\nu
+=A_{4j}^* \gamma_j + A_{44}^*\gamma_4
+=-A_{4j} \gamma_j + A_{44} \gamma_4
+\end{aligned}
+\right.
+$$
+
+上面两式左、右各乘 $\gamma_4 $：
+
+$$
+\begin{aligned}
+\gamma_4 \Lambda^\dag \gamma_i \left(\Lambda^{-1} \right)^\dag \gamma_4
+&=\gamma_4 \left(A_{ij} \gamma_j - A_{i4} \gamma_4 \right) \gamma_4 \\
+&=A_{ij} \gamma_4 \gamma_{j} \gamma_4 - A_{i4} \gamma_4 \gamma_4 \gamma_4 \\
+&=-A_{ij} \gamma_j \gamma_4^2 - A_{i4} \gamma_4 \\
+&=-A_{ij} \gamma_j - A_{i4} \gamma_4 \\
+&=-A_{i\nu} \gamma_\nu \\
+&=-\Lambda^{-1} \gamma_i \Lambda
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\gamma_4 \Lambda^\dag \gamma_4 \left(\Lambda^{-1} \right)^\dag \gamma_4
+&=\gamma_4 \left(-A_{4j} \gamma_j + A_{44} \gamma_4 \right) \gamma_4 \\
+&=A_{4j} \gamma_j + A_{44} \gamma_4 \\
+&=A_{4\nu} \gamma_\nu \\
+&=\Lambda^{-1} \gamma_4 \Lambda
+\end{aligned}
+$$
+
+对上面两式左乘 $\Lambda $，右乘 $\gamma_4 \Lambda^\dag$：
+
+$$
+\Lambda\left(\gamma_4 \Lambda^\dag \gamma_i \left(\Lambda^{-1} \right)^\dag \gamma_4 \right) \gamma_4 \Lambda^\dag
+=\Lambda \left(-\Lambda^{-1} \gamma_i \Lambda \right) \gamma_4 \Lambda^\dag
+$$
+
+$$
+\Lambda \left(\gamma_4 \Lambda^\dag \gamma_4 \left(\Lambda^{-1} \right)^\dag \gamma_4 \right) \gamma_4 \Lambda^\dag
+=\Lambda \left(\Lambda^{-1} \gamma_4 \Lambda \right) \gamma_4 \Lambda^\dag
+$$
+
+即：
+
+$$
+\Lambda \gamma_4 \Lambda^\dag \gamma_i
+=-\gamma_i \Lambda \gamma_4 \Lambda^\dag
+$$
+
+$$
+\Lambda \gamma_4 \Lambda^\dag \gamma_4
+=\gamma_4 \Lambda \gamma_4 \Lambda^\dag
+$$
+
+加上括号看得更清楚一点：
+
+$$
+\left(\Lambda \gamma_4 \Lambda^\dag \right) \gamma_i
+=-\gamma_i \left(\Lambda \gamma_4 \Lambda^\dag \right)
+$$
+
+$$
+\left(\Lambda \gamma_4 \Lambda^\dag \right) \gamma_4
+=\gamma_4 \left(\Lambda \gamma_4 \Lambda^\dag \right)
+$$
+
+$\left(\Lambda \gamma_4 \Lambda^\dag \right) $ 是一个与 $\gamma_i $ 反对易、与 $\gamma_4 $ 对易的矩阵，可以猜到
+
+$$
+\Lambda \gamma_4 \Lambda^\dag
+=k \gamma_4
+$$
+
+上式左乘 $\gamma_4 \Lambda^{-1} $ 就解出 $\Lambda^\dag $：
+
+$$
+\boxed{
+\Lambda^\dag
+=k \gamma_4 \Lambda^{-1} \gamma_4
+}
+$$
+
+由于 $\Lambda $ 依赖于 Lorentz 变换矩阵 $A $，因此不同的 $A $ 可能给出不同的 $k .$
+
+- 考虑 $A=a $，即固有 Lorentz 群，此时 $\Lambda(A)=\Lambda(a)=S $ 为固有 Lorentz 群的旋量表示，其中包含了恒元。把恒元代入上式
+
+$$
+I^\dag
+=k \gamma_4 I^{-1} \gamma_4
+$$
+
+解得
+
+$$
+k=1
+$$
+
+- 考虑 $A=\sigma a $，此时 $\Lambda(A)=\Lambda(\sigma a)=P $，而 $P=\eta_P \gamma_4,\left|\eta_P \right|=1 $，代入得
+
+$$
+\eta_P^* \gamma_4^\dag
+=k \gamma_4 \eta_P^{-1} \gamma_4^{-1} \gamma_4
+$$
+
+解得
+
+$$
+k
+=\eta_P^* \eta_P
+=\left|\eta_P \right|^2
+=1
+$$
+
+- 考虑 $A=\tau a $，此时 $\Lambda(A)=\Lambda(\tau a)=T $，而 $T=\eta_T \gamma_1\gamma_2\gamma_3,\left|\eta_T \right|=1 $，代入得
+
+$$
+\eta_T^*\left(\gamma_1\gamma_2\gamma_3 \right)^\dag
+=k \eta_T^{-1} \gamma_4 \left( \gamma_1\gamma_2\gamma_3 \right)^{-1} \gamma_4
+$$
+
+解得
+
+$$
+k
+=-\left|\eta_T \right|^2
+=-1
+$$
+
+综上有
+
+$$
+\boxed{
+\Lambda^\dag
+=\left\{
+\begin{aligned}
+&\gamma_4 \Lambda^{-1} \gamma_4 &&,\Lambda = S,P \\
+&-\gamma_4 \Lambda^{-1} \gamma_4 &&,\Lambda = T
+\end{aligned}
+\right.
+}
+$$
+
+## 旋量
+
+### 旋量的定义
+
+设 $\psi(x) $ 为四元单列矩阵函数
+
+$$
+\psi(x)
+=\begin{bmatrix}
+\psi_1(x) \\
+\psi_2(x) \\
+\psi_3(x) \\
+\psi_4(x) \\
+\end{bmatrix}
+$$
+
+当时空坐标进行广义洛伦兹变换 $x'_\mu=A_{\mu\nu} x_\nu + b_\mu $ 时，若 $\psi(x) $ 按照规律
+
+$$
+\psi'(x')
+=\Lambda \psi(x)
+$$
+
+变换，则称 $\psi(x) $ 为四元旋量，简称旋量。其中，$\Lambda=\Lambda(A) $ 是广义 Lorentz 变换矩阵 $A $ 的旋量表示。
+
+### 共轭旋量
+
+定义旋量 $\psi(x) $ 的共轭旋量 $\bar{\psi}(x) $：
+
+$$
+\bar{\psi}(x)
+\equiv \psi^\dag(x) \gamma_4
+$$
+
+由旋量的变换规律
+
+$$
+\psi'(x')
+=\Lambda \psi(x)
+$$
+
+以及 $\Lambda^\dag $ 的表达式
+
+$$
+\Lambda^\dag
+=k \gamma_4 \Lambda^{-1} \gamma_4
+$$
+
+$$
+\Lambda^\dag
+=\left\{
+\begin{aligned}
+&\gamma_4 \Lambda^{-1} \gamma_4 &&,\Lambda = S,P \\
+&-\gamma_4 \Lambda^{-1} \gamma_4 &&,\Lambda = T
+\end{aligned}
+\right.
+$$
+
+可知，$\bar{\psi}(x) $ 的变换规律为：
+
+$$
+\begin{aligned}
+\bar{\psi}'(x')
+&=\psi'^\dag(x')\gamma_4 \\
+&=\left[\Lambda \psi(x) \right]^\dag \gamma_4 \\
+&=\psi^\dag (x) \Lambda^\dag \gamma_4 \\
+&=\psi^\dag (x) \left(k \gamma_4 \Lambda^{-1} \gamma_4 \right) \gamma_4 \\
+&=k \psi^\dag(x) \gamma_4 \Lambda^{-1} \\
+&=k \bar{\psi}(x) \Lambda^{-1}
+\end{aligned}
+$$
+
+$$
+\boxed{
+\bar{\psi}'(x')
+=k\bar{\psi}(x)\Lambda^{-1},\quad
+k=\begin{cases}
++1&,\Lambda=S,P \\
+-1&,\Lambda=T
+\end{cases}
+}
+$$
+
 
 # 4 场方程
 
