@@ -1587,12 +1587,46 @@ I_{\alpha\beta}
 =\frac{1 }{4 } \left(\gamma_\alpha\gamma_\beta - \gamma_\beta\gamma_\alpha \right)
 $$
 
-生成元对易关系为：
+利用公式
+
+$$
+\left[\gamma_\mu , I_{\alpha\beta} \right]
+=\delta_{\mu\alpha}\gamma_\beta - \delta_{\mu\beta}\gamma_\alpha
+$$
+
+可以求得生成元对易关系：
 
 $$
 \begin{aligned}
 \left[I_{\mu\nu} , I_{\alpha\beta} \right]
-&=
+&=\frac{1 }{4 } \left[\gamma_\mu\gamma_\nu - \gamma_\nu\gamma_\mu , I_{\alpha\beta} \right] \\
+&=\frac{1 }{4 } \left(\gamma_\mu \left[\gamma_\nu , I_{\alpha\beta} \right] + \left[\gamma_\mu , I_{\alpha\beta} \right] \gamma_\nu \right) - \frac{1 }{4 } \left(\gamma_\nu \left[\gamma_\mu , I_{\alpha\beta} \right] + \left[\gamma_\nu , I_{\alpha\beta} \right] \gamma_\mu \right) \\
+&=\frac{1 }{4 } \left(\gamma_\mu \left(\delta_{\nu\alpha} \gamma_\beta - \delta_{\nu\beta} \gamma_\alpha \right) + \left(\delta_{\mu\alpha} \gamma_\beta - \delta_{\mu\beta} \gamma_\alpha \right) \gamma_\nu \right) - \frac{1 }{4 } \left(\gamma_\nu \left(\delta_{\mu\alpha} \gamma_\beta - \delta_{\mu\beta} \gamma_\alpha \right) + \left(\delta_{\nu\alpha} \gamma_\beta - \delta_{\nu\beta} \gamma_\alpha \right) \gamma_\mu \right) \\
+&=\frac{1 }{4 } \delta_{\nu\alpha} \left(\gamma_\mu\gamma_\beta - \gamma_\beta\gamma_\mu \right) + \frac{1 }{4 } \delta_{\nu\beta}\left(\gamma_\alpha\gamma_\mu - \gamma_\mu\gamma_\alpha \right) + \frac{1 }{4 } \delta_{\mu\alpha} \left(\gamma_\beta\gamma_\nu - \gamma_\nu\gamma_\beta \right) + \frac{1 }{4 } \delta_{\mu\beta} \left(\gamma_\nu\gamma_\alpha - \gamma_\alpha\gamma_\nu \right) \\
+&=\delta_{\nu\alpha} I_{\mu\beta} + \delta_{\nu\beta} I_{\alpha\mu} + \delta_{\mu\alpha} I_{\beta\nu} + \delta_{\mu\beta} I_{\nu\alpha} \\
+&=-\delta_{\mu\alpha} I_{\nu\beta} + \delta_{\mu\beta} I_{\nu\alpha} + \delta_{\nu\alpha} I_{\mu\beta} - \delta_{\nu\beta} I_{\mu\alpha}
+\end{aligned}
+$$
+
+### $\Lambda $ 与 $\gamma_5 $ 的关系
+
+已经知道
+
+$$
+\Lambda^{-1} \gamma_\mu \Lambda
+=A_{\mu\nu} \gamma_\nu
+$$
+
+可作为 $\Lambda $ 的定义。现在想知道 $\Lambda^{-1} \gamma_5 \Lambda .$ 
+
+$$
+\begin{aligned}
+\Lambda^{-1}\gamma_5\Lambda
+&=\Lambda^{-1}\left(\frac{1 }{4! } \varepsilon_{\mu\nu\lambda\rho}\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho \right)\Lambda \\
+&=\frac{1 }{4! } \varepsilon_{\mu\nu\lambda\rho} \left(\Lambda^{-1}\gamma_\mu\Lambda \right)\left(\Lambda^{-1}\gamma_\nu\Lambda \right)\left(\Lambda^{-1}\gamma_\lambda\Lambda \right)\left(\Lambda^{-1}\gamma_\rho\Lambda \right) \\
+&=\frac{1 }{4! } \varepsilon_{\mu\nu\lambda\rho} \left(A_{\mu\alpha}\gamma_\alpha \right) \left(A_{\mu\beta}\gamma_\beta \right)\left(A_{\mu\sigma}\gamma_\sigma \right)\left(A_{\mu\tau}\gamma_\tau\right) \\
+&=\frac{1 }{4! } \varepsilon_{\alpha\beta\sigma\tau}\left|A \right|\gamma_\alpha\gamma_\beta\gamma_\sigma\gamma_\tau \\
+&=\left|A \right|\gamma_5
 \end{aligned}
 $$
 
