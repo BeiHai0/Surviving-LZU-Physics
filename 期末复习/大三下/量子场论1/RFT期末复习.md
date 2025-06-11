@@ -885,7 +885,7 @@ x'_\mu = A_{\mu\nu} x_\nu + b_\mu,\quad
 }
 $$
 
-# 3 Clifford代数、$\gamma $ 矩阵、旋量表示与旋量
+# 3 Clifford 代数、$\gamma $ 矩阵、旋量表示、旋量与 Dirac 方程
 
 ## Clifford 代数与 $\gamma $ 矩阵
 
@@ -2057,6 +2057,135 @@ k=\begin{cases}
 }
 $$
 
+### 由 $\bar{\psi} $ 和 $\psi $ 组成的张量或赝张量
+
+先回顾一下 $\psi(x) $ 和 $\bar{\psi}(x)\equiv \psi^\dag(x)\gamma_4 $ 的变换规律：
+
+$$
+\boxed{
+\psi'(x')
+=\Lambda \psi(x)
+}
+$$
+
+$$
+\boxed{
+\bar{\psi}'(x')
+=k\bar{\psi}(x)\Lambda^{-1},\quad
+k=\begin{cases}
++1&,\Lambda=S,P \\
+-1&,\Lambda=T
+\end{cases}
+}
+$$
+
+#### $\bar{\psi}(x) \psi(x) $作为标量或赝标量
+
+$$
+\begin{aligned}
+\bar{\psi}'(x') \psi'(x')
+&=\left(k \bar{\psi}(x) \Lambda^{-1} \right) \left(\Lambda \psi(x) \right) \\
+&=k \bar{\psi}(x) \psi(x)
+\end{aligned}
+$$
+
+对于 $S,P $ 变换，$k=+1 $，$\bar{\psi}(x) \psi(x) $ 是标量；
+
+对于 $T $ 变换，$k=-1 $，$\bar{\psi}(x) \psi(x) $ 是赝标量。
+
+#### $\bar{\psi}(x) \gamma_5 \psi(x) $
+
+利用 $\Lambda $ 与 $\gamma_5 $ 的关系
+
+$$
+\Lambda^{-1} \gamma_5 \Lambda
+=\left|A \right|\gamma_5
+$$
+
+可得
+
+$$
+\begin{aligned}
+\bar{\psi}'(x') \gamma_5 \psi'(x')
+&=\left(k \bar{\psi}(x) \Lambda^{-1} \right) \gamma_5 \left(\Lambda \psi(x) \right) \\
+&=k \left|A \right| \bar{\psi}(x) \gamma_5 \psi(x)
+\end{aligned}
+$$
+
+对于 $S,P $ 变换，$k=+1 $，$\bar{\psi}(x) \gamma_5 \psi(x) $ 是赝标量。
+
+#### $\bar{\psi}(x) \gamma_\mu \psi(x) $ 的变换规律
+
+利用 $\Lambda $ 的定义
+
+$$
+\Lambda^{-1} \gamma_\mu \Lambda
+=A_{\mu\nu} \gamma_\nu
+$$
+
+可得
+
+$$
+\begin{aligned}
+\bar{\psi}'(x') \gamma_\mu \psi'(x')
+&=\left(k \bar{\psi}(x) \Lambda^{-1} \right) \gamma_\mu \left(\Lambda \psi(x) \right) \\
+&=k A_{\mu\nu} \bar{\psi}(x) \gamma_\nu \psi(x)
+\end{aligned}
+$$
+
+对于 $S,P $ 变换，$k=+1 $，$\bar{\psi}(x) \gamma_\mu \psi(x) $ 是矢量。
+
+#### $\bar{\psi}(x) \gamma_\mu \gamma_5 \psi(x) $ 的变换规律
+
+利用 $\Lambda $ 的定义以及 $\Lambda $ 与 $\gamma_5 $ 的关系
+
+$$
+\Lambda^{-1} \gamma_\mu \Lambda
+=A_{\mu\nu} \gamma_\nu,\quad
+\Lambda^{-1} \gamma_5 \Lambda
+=\left|A \right|\gamma_5
+$$
+
+可得
+
+$$
+\begin{aligned}
+\bar{\psi}'(x') \gamma_\mu \gamma_5 \psi'(x')
+&=\left(k \bar{\psi}(x) \Lambda^{-1} \right) \gamma_\mu \gamma_5 \left(\Lambda \psi(x) \right) \\
+&=k \bar{\psi}(x) \Lambda^{-1} \gamma_\mu \Lambda \Lambda^{-1} \gamma_5 \Lambda \psi(x) \\
+&=k \left|A \right| A_{\mu\nu} \bar{\psi}(x) \gamma_\nu \gamma_5 \psi(x)
+\end{aligned}
+$$
+
+对于 $S,P $ 变换，$k=+1 $，$\bar{\psi}(x) \gamma_\mu \gamma_5 \psi(x) $ 是赝矢量。
+
+
+
+#### $\bar{\psi}(x)\gamma_{\alpha_1}\gamma_{\alpha_2}\cdots\gamma_{\alpha_n}\psi(x) $ 的变换规律
+
+当四维时空坐标进行广义洛伦兹变换时，
+
+$$
+U_{\alpha_1\alpha_2\cdot \cdots\alpha_n}
+=\bar{\psi}\gamma_{\alpha_1}\gamma_{\alpha_2}\cdots\gamma_{\alpha_n}\psi 
+$$
+
+的变换规律为：
+
+$$
+\begin{aligned}
+U'_{\alpha_1\alpha_2\cdot \cdots\alpha_n}(x')
+&=\bar{\psi}'(x')\gamma_{\alpha_1}\gamma_{\alpha_2}\cdots\gamma_{\alpha_n}\psi'(x') \\
+&=k\bar{\psi}(x) \Lambda^{-1} \gamma_{\alpha_1}\gamma_{\alpha_2}\cdots\gamma_{\alpha_n} \Lambda \psi(x) \\
+&=k\bar{\psi}(x) \left(\Lambda^{-1} \gamma_{\alpha_1} \Lambda \right) \left(\Lambda^{-1} \gamma_{\alpha_2} \Lambda \right) \cdots \left(\Lambda^{-1} \gamma_{\alpha_n} \Lambda \right) \psi(x) \\
+&=k A_{\alpha_1\beta_1} A_{\alpha_2\beta_2} \cdots A_{\alpha_n\beta_n} \bar{\psi}(x) \gamma_{\beta_1}\gamma_{\beta_2}\cdots\gamma_{\beta_n} \psi(x) \\
+&=k A_{\alpha_1\beta_1} A_{\alpha_2\beta_2} \cdots A_{\alpha_n\beta_n} U_{\beta_1\beta_2\cdots\beta_n}(x)
+\end{aligned}
+$$
+
+#### $n $ 阶赝张量 $\bar{\psi}(x)\gamma_{\alpha_1}\gamma_{\alpha_2}\cdots\gamma_{\alpha_n}\gamma_5\psi(x) $
+
+#### 标量 $\bar{\psi}(x) \gamma_\mu\partial_\mu \psi(x) $
 
 # 4 场方程
 
