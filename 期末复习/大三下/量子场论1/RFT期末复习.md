@@ -2159,8 +2159,6 @@ $$
 
 对于 $S,P $ 变换，$k=+1 $，$\bar{\psi}(x) \gamma_\mu \gamma_5 \psi(x) $ 是赝矢量。
 
-
-
 #### $\bar{\psi}(x)\gamma_{\alpha_1}\gamma_{\alpha_2}\cdots\gamma_{\alpha_n}\psi(x) $ 的变换规律
 
 当四维时空坐标进行广义洛伦兹变换时，
@@ -2186,6 +2184,153 @@ $$
 #### $n $ 阶赝张量 $\bar{\psi}(x)\gamma_{\alpha_1}\gamma_{\alpha_2}\cdots\gamma_{\alpha_n}\gamma_5\psi(x) $
 
 #### 标量 $\bar{\psi}(x) \gamma_\mu\partial_\mu \psi(x) $
+
+## Dirac 方程（旋量场方程）
+
+### Dirac 方程（旋量场方程）的导出
+
+一方面，假设自由旋量粒子哈密顿量可写为：
+
+$$
+H = \vec{\alpha}\cdot\hat{\vec{p}} + \beta m_0
+$$
+
+旋量场 $\psi $ 满足薛定谔方程：
+
+$$
+\mathrm{i}\partial_t \psi
+=H \psi
+=\left(\vec{\alpha}\cdot\hat{\vec{p}} + \beta m_0 \right)\psi
+$$
+
+$\mathrm{i}\partial_t $ 两次作用于 $\psi $：
+
+$$
+\begin{aligned}
+-\partial_t^2 \psi(x)
+&=H^2 \psi(x) \\
+&=\left(\vec{\alpha}\cdot\hat{\vec{p}} + \beta m_0 \right)^2\psi(x) \\
+&=\left[\frac{1 }{2 } \left(\alpha_i\alpha_j + \alpha_j\alpha_i \right)\hat{p}_i\hat{p}_j + \left(\alpha_i\beta+\beta\alpha_i \right)\hat{p}_im_0 + \beta^2m_0^2 \right]\psi(x)
+\end{aligned}
+$$
+
+另一方面，假设旋量场 $\psi(x) $ 要满足标量场方程（即旋量的四个分量都要满足标量场方程）：
+
+$$
+\left(\square-m_0^2 \right)\psi(x) = 0 \Longrightarrow
+-\partial_t^2 \psi(x)
+=\left(-\nabla^2+m_0^2 \right)\psi(x)
+=\left(\hat{\vec{p}}^2+m_0^2 \right)\psi(x)
+=\left(\hat{p}_i \hat{p}_i + m_0^2 \right)\psi(x)
+$$
+
+对比
+
+$$
+\left\{
+\begin{aligned}
+&-\partial_t^2 \psi(x)
+=\left[\frac{1 }{2 } \left(\alpha_i\alpha_j + \alpha_j\alpha_i \right)\hat{p}_i\hat{p}_j + \left(\alpha_i\beta+\beta\alpha_i \right)\hat{p}_im_0 + \beta^2m_0^2 \right]\psi(x) \\
+&-\partial_t^2 \psi(x)
+=\left(\hat{p}_i \hat{p}_i + m_0^2 \right)\psi(x)
+\end{aligned}
+\right.
+$$
+
+可得：
+
+$$
+\left\{
+\begin{aligned}
+&\alpha_i\alpha_j + \alpha_j\alpha_i = 2\delta_{ij} I,\quad i,j=1,2,3 \\
+&\alpha_i\beta + \beta\alpha_i = 0 \\
+&\beta^2 = I
+\end{aligned}
+\right.
+$$
+
+定义：
+
+$$
+\gamma_i\equiv -\mathrm{i}\beta \alpha_i,\quad i=1,2,3
+$$
+
+$$
+\gamma_4\equiv \beta
+$$
+
+则上面的定义结合 $\alpha_i,\beta $ 矩阵的性质可得：
+
+$$
+\gamma_\mu\gamma_\nu + \gamma_\nu\gamma_\mu = 2\delta_{\mu\nu} I
+$$
+
+$$
+\gamma_\mu^\dag = \gamma_\mu
+$$
+
+即这样用 $\alpha_i,\beta $ 矩阵定义的 $\gamma $ 矩阵恰好符合 Clifford 代数中 $\gamma $ 矩阵的定义。
+
+定义 Clifford 代数中的梯度算符：
+
+$$
+\hat{\partial}
+\equiv \gamma_\mu\partial_\mu
+$$
+
+利用二阶偏微分可交换的性质，有：
+
+$$
+\begin{aligned}
+\hat{\partial}^2
+&=\gamma_\mu\partial_\mu \gamma_\nu\partial_\nu \\
+&=\frac{1 }{2 } \left(\gamma_\mu \gamma_\nu \partial_\mu \partial_\nu + \gamma_\mu \gamma_\nu \partial_\mu \partial_\nu \right) \\
+&=\frac{1 }{2 } \left(\gamma_\mu \gamma_\nu \partial_\mu \partial_\nu + \gamma_\mu \gamma_\nu \partial_\nu \partial_\mu \right) \\
+交换第二项\mu,\nu指标&=\frac{1 }{2 } \left(\gamma_\mu \gamma_\nu \partial_\mu \partial_\nu + \gamma_\nu \gamma_\mu \partial_\mu \partial_\nu \right) \\
+&=\delta_{\mu\nu} I \partial_\mu \partial_\nu \\
+&=I \partial_\mu \partial_\mu \\
+&\equiv I \square
+\end{aligned}
+$$
+
+因此，旋量场满足的标量场方程
+
+$$
+\left(\square-m_0^2 \right)\psi(x) = 0
+\Longleftrightarrow \left(I \square-m_0^2 \right)\psi(x) = 0
+$$
+
+可以写为：
+
+$$
+\left(\hat{\partial}^2 - m_0^2 \right)\psi(x)
+=0
+$$
+
+因式分解：
+
+$$
+\left(\hat{\partial}-m_0 \right)\left(\hat{\partial}+m_0 \right)\psi(x) = 0
+$$
+
+Dirac 认为
+
+$$
+\left(\hat{\partial}+m_0 \right)\psi(x)
+\equiv \left(\gamma_\mu\partial_\mu + m_0 \right)\psi(x)
+=0
+$$
+
+是旋量场方程。
+
+$$
+\boxed{
+\left(\gamma_\mu\partial_\mu + m_0 \right)\psi(x)
+=0
+}
+$$
+
+### Dirac 方程的共轭方程
 
 # 4 场方程
 
