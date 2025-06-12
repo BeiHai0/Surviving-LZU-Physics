@@ -2680,7 +2680,136 @@ $$
 
 ### 自由旋量粒子的波函数
 
+#### 动量表象中的自由旋量粒子 Dirac 方程
 
+对于自由旋量粒子，其具有确定四维动量 $p_\mu $，其波函数 $\psi $ 应是四维动量算符本征波函数，即 $\psi(x) $ 满足 $\hat{p}_\mu $ 的本征方程：
+
+$$
+\hat{p}_\mu \psi(x)
+\equiv -\mathrm{i}\partial_\mu \psi(x)
+=p_\mu\psi(x)
+$$
+
+容易猜到，上式中自由旋量粒子波函数 $\psi $ 有平面波解：
+
+$$
+\psi(x)
+=u(p)\mathrm{e}^{\mathrm{i}p x}
+$$
+
+$$
+p x
+\equiv p_\mu x_\mu
+=\vec{p}\cdot\vec{x} + p_4 x_4
+=\vec{p}\cdot\vec{x} + \left(\mathrm{i}p_0 \right) \left(\mathrm{i}t \right)
+=\vec{p}\cdot\vec{x} - p_0 t,\quad
+u(p)
+=u(p_1,p_2,p_3,p_4)
+=\begin{bmatrix}
+u_1(p) \\
+u_2(p) \\
+u_3(p) \\
+u_4(p)
+\end{bmatrix}
+$$
+
+自由旋量粒子波函数 $\psi(x) $ 是一种特殊的旋量波函数（具有确定的四维动量），其应当满足 Dirac 方程。将 $\psi(x) $ 的平面波解代入自由旋量场 Dirac 方程 $\left(\gamma_\mu\partial_\mu + m \right)\psi(x) = 0$，可得：
+
+$$
+\left(\mathrm{i}\gamma_\mu p_\mu + m \right)u(p)\mathrm{e}^{\mathrm{i}p x}
+=0
+$$
+
+因此，对任意 $p_\mu $，相应 $u(p) $ 要满足：
+
+$$
+\left(\mathrm{i}\hat{p}+m \right)u(p)
+=0,\quad
+\hat{p}\equiv \gamma_\mu p_\mu
+$$
+
+这是动量表象（以四维动量为变量）中的自由旋量粒子 Dirac 方程。
+
+#### 动量表象 $H $ 的本征方程
+
+动量表象中的 Dirac 方程：
+
+$$
+\left(\mathrm{i}\gamma_i p_i + \mathrm{i}\gamma_4p_4 + m \right)u(p)
+=0
+$$
+
+左乘 $\beta =\gamma_4$：
+
+$$
+\left(\mathrm{i}\beta\vec{\gamma}\cdot\vec{p} + \mathrm{i}p_4 + m\beta \right)u(p)
+=0
+$$
+
+即：
+
+$$
+\beta\left(\mathrm{i}\vec{\gamma}\cdot\vec{p} + m \right)u(p)
+=-\mathrm{i}p_4 u(p)
+$$
+
+对于一个自由旋量粒子，其哈密顿量算符为 $\hat{H}=\vec{\alpha}\cdot\hat{\vec{p}} + \beta m = \mathrm{i}\gamma_4 \vec{\gamma}\cdot\hat{\vec{p}} + \beta m = \beta\left(\mathrm{i}\vec{\gamma}\cdot\hat{\vec{p}} + m \right) .$
+
+由于平面波 $u(p)\mathrm{e}^{\mathrm{i}p x} $ 是四维动量算符的一个本征解，即：
+
+$$
+\hat{p}_\mu \left(u(p)\mathrm{e}^{\mathrm{i}p x} \right)
+=p_\mu \left(u(p)\mathrm{e}^{\mathrm{i}p x} \right)
+$$
+
+$$
+H(\vec{p})
+=\beta\left(\mathrm{i}\vec{\gamma}\cdot\vec{p} + m \right),\quad
+p_0 = E,\quad p_4=\mathrm{i}E = \mathrm{i}p_0
+$$
+
+因此有动量表象 $H $ 本征方程：
+
+$$
+H(p) u(p)
+=p_0 u(p)
+$$
+
+由于 $H $ 是厄米的，因此
+
+$$
+\begin{aligned}
+H^2(p)
+&=H^\dag(p) H(p) \\
+&=\left[\beta\left(\mathrm{i}\vec{\gamma}\cdot\vec{p} + m \right) \right]^\dag \left[\beta\left(\mathrm{i}\vec{\gamma}\cdot\vec{p} + m \right) \right] \\
+&=\left(-\mathrm{i}\vec{\gamma}\cdot\vec{p} + m \right)\left(\mathrm{i}\vec{\gamma}\cdot\vec{p} + m \right) \\
+&=\left(\vec{\gamma}\cdot\vec{p} \right)^2 + m^2 \\
+&=\left(\gamma_i p_i \right)\left(\gamma_j p_j \right) + m^2 \\
+&=\frac{1 }{2 } \left(\gamma_i\gamma_j + \gamma_j\gamma_i \right) p_i p_j + m^2 \\
+&=\delta_{ij}p_ip_j + m^2 \\
+&=\vec{p}^2 + m^2
+\end{aligned}
+$$
+
+因此由
+
+$$
+H^2(p) u(p) = p_0^2 u(p)
+$$
+
+可得：
+
+$$
+p_0 = \pm \sqrt{\vec{p}^2 + m^2}\equiv \pm E,\quad E\equiv \sqrt{\vec{p}^2+m^2}
+$$
+
+即：
+
+$$
+H u(p) = \pm E u(p)
+$$
+
+对于自由旋量粒子，$u(p) $ 对应的波函数有 $\pm E $ 两种能量状态。
 
 # 4 场方程
 
