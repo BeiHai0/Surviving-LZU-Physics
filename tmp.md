@@ -507,7 +507,17 @@ $$
 
 则定理保证 $\gamma'_\mu $ 与 $\gamma_\mu $ 相似，即存在 $\Lambda $ 使得 $\gamma'_\mu=A_{\mu\nu} \gamma_\nu = \Lambda \gamma_\mu \Lambda^{-1} $
 
+---
 
+$$
+\begin{aligned}
+0
+&=A_{\mu\rho}\partial_\rho \bar{\psi}(x) \Lambda^{-1} \gamma_\mu \Lambda - m \bar{\psi}(x) \Lambda^{-1} \Lambda \\
+&=A_{\mu\rho}\partial_\rho \bar{\psi}(x) A_{\mu\nu} \gamma_\nu - m \bar{\psi}(x) \\
+&=\delta_{\rho\nu} \partial_\rho \bar{\psi}(x) \gamma_\nu - m\bar{\psi}(x) \\
+&=\partial_\nu \bar{\psi}(x) \gamma_\nu - m\bar{\psi}(x)
+\end{aligned}
+$$
 
 
 

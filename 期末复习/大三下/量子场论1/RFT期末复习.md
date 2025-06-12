@@ -1929,7 +1929,7 @@ $$
 k=1
 $$
 
-- 考虑 $A=\sigma a $，此时 $\Lambda(A)=\Lambda(\sigma a)=P $，而 $P=\eta_P \gamma_4,\left|\eta_P \right|=1 $，代入得
+- 考虑 $A=\sigma $，此时 $\Lambda(A)=\Lambda(\sigma)=P $，而 $P=\eta_P \gamma_4,\left|\eta_P \right|=1 $，代入得
 
 $$
 \eta_P^* \gamma_4^\dag
@@ -1945,7 +1945,7 @@ k
 =1
 $$
 
-- 考虑 $A=\tau a $，此时 $\Lambda(A)=\Lambda(\tau a)=T $，而 $T=\eta_T \gamma_1\gamma_2\gamma_3,\left|\eta_T \right|=1 $，代入得
+- 考虑 $A=\tau $，此时 $\Lambda(A)=\Lambda(\tau)=T $，而 $T=\eta_T \gamma_1\gamma_2\gamma_3,\left|\eta_T \right|=1 $，代入得
 
 $$
 \eta_T^*\left(\gamma_1\gamma_2\gamma_3 \right)^\dag
@@ -2252,11 +2252,30 @@ $$
 定义：
 
 $$
+\boxed{
 \gamma_i\equiv -\mathrm{i}\beta \alpha_i,\quad i=1,2,3
+}
 $$
 
 $$
+\boxed{
 \gamma_4\equiv \beta
+}
+$$
+
+或者反过来
+
+$$
+\boxed{
+\alpha_i = \mathrm{i} \gamma_4 \gamma_i
+}
+$$
+
+$$
+\boxed{
+\beta
+=\gamma_4
+}
 $$
 
 则上面的定义结合 $\alpha_i,\beta $ 矩阵的性质可得：
@@ -2331,6 +2350,309 @@ $$
 $$
 
 ### Dirac 方程的共轭方程
+
+考虑 Dirac 方程
+
+$$
+\left(\gamma_\mu\partial_\mu + m_0 \right)\psi(x)
+=0
+$$
+
+其可写为
+
+$$
+\gamma_i\partial_i\psi(x) + \gamma_4\partial_4\psi(x) + m_0\psi(x)
+=0
+$$
+
+两边取厄米共轭，考虑到 $x_4=\mathrm{i}t,\left(\partial_4\psi(x) \right)^\dag = -\partial_4\psi^\dag(x) $ 且 $\gamma_\mu $ 是厄米矩阵满足 $\gamma_\mu^\dag=\gamma_\mu $，则有：
+
+$$
+\partial_i\psi^\dag(x) \gamma_i - \partial_4 \psi^\dag(x)\gamma_4 + m_0\psi^\dag(x)
+=0
+$$
+
+上式右乘 $\gamma_4 $，并利用 $\gamma_4 $ 与 $\gamma_i $ 的反对易关系 $\gamma_4\gamma_i + \gamma_i\gamma_4 = 0 $ 得：
+
+$$
+-\partial_i\psi^\dag(x) \gamma_4\gamma_i - \partial_4 \psi^\dag(x)\gamma_4\gamma_4 + m_0\psi^\dag(x)\gamma_4
+=0
+$$
+
+再利用 $\bar{\psi}(x)=\psi^\dag(x)\gamma_4 $ 得：
+
+$$
+-\partial_i\bar{\psi}(x)\gamma_i - \partial_4 \bar{\psi}(x)\gamma_4 + m_0\bar{\psi}(x)
+=0
+$$
+
+即 Dirac 方程的共轭方程：
+
+$$
+\boxed{
+\partial_\mu\bar{\psi}\gamma_\mu - m_0\bar{\psi}
+=0
+}
+$$
+
+### Dirac 方程的协变性
+
+Dirac 方程的协变性就是说，当时空坐标进行广义 Lorentz 变换时，Dirac 方程在变换前后的参考系内具有相同的形式。
+
+考虑时空坐标进行广义 Lorentz 变换，即 $x'_\mu = A_{\mu\nu} x_\nu + b_\mu .$
+
+$x' $ 系的 Dirac 方程为：
+
+$$
+\gamma_\rho\partial_\rho'\psi'(x') + m\psi'(x')
+=0
+$$
+
+把 $x' $ 系的物理量用 $x $ 系的物理量表达：
+
+$$
+\partial_\rho'
+\equiv \frac{\partial }{\partial x'_\rho } 
+=\frac{\partial x_\nu}{\partial x'_\rho } \frac{\partial }{\partial x_\nu } 
+=A_{\rho\nu}\partial_\nu
+$$
+
+$$
+\psi'(x')
+=\Lambda\psi(x)
+$$
+
+因此 $x' $ 系的 Dirac 方程可写为：
+
+$$
+\begin{aligned}
+0
+&=\gamma_\rho\partial_\rho'\psi'(x') + m\psi'(x') \\
+&=\gamma_\rho A_{\rho\nu}\partial_\nu \Lambda \psi(x) + m\Lambda \psi(x) \\
+\end{aligned}
+$$
+
+上式左乘 $\Lambda^{-1} $（注意 $\Lambda $ 依赖于 $A $，但不依赖于时空坐标），并利用 $\Lambda^{-1} \gamma_\rho \Lambda = A_{\rho\alpha} \gamma_\alpha $ 和正交关系 $A_{\rho\alpha}A_{\rho\nu}=\delta_{\alpha\nu} $：
+
+$$
+\begin{aligned}
+0
+&=\Lambda^{-1}\gamma_\rho A_{\rho\nu}\partial_\nu\Lambda \psi(x) + \Lambda^{-1}m\Lambda\psi(x) \\
+&=\Lambda^{-1}\gamma_\rho \Lambda A_{\rho\nu}\partial_\nu \psi(x) + m \psi(x) \\
+&=A_{\rho\alpha}\gamma_\alpha A_{\rho\nu} \partial_\nu\psi(x) + m\psi(x) \\
+&=\delta_{\alpha\nu}\gamma_\alpha \partial_\nu\psi(x) + m\psi(x) \\
+&=\gamma_\nu \partial_\nu \psi(x) + m\psi(x) \\
+\end{aligned}
+$$
+
+可见当波函数 $\psi(x) $ 是一个旋量，服从旋量变换规律时，$x $ 系和 $x' $ 系的 Dirac 方程形式上一致。
+
+### Dirac 共轭方程的协变性
+
+Dirac 共轭方程的协变性就是说，当时空坐标进行**固有 Lorentz 变换**或**空间反射变换**时，Dirac 共轭方程在变换前后的参考系内具有相同的形式。
+
+首先回顾一下共轭旋量的变换规律：
+
+$$
+\bar{\psi}'(x')
+=k\bar{\psi}(x)\Lambda^{-1},\quad
+k=\begin{cases}
++1&,\Lambda=S,P \\
+-1&,\Lambda=T
+\end{cases}
+$$
+
+考虑时空坐标进行固有 Lorentz 变换或空间反射变换，即 $x'_\mu=A_{\mu\nu}x_\nu,A=a,\sigma,\Lambda(a)=S,\Lambda(\sigma)=P $，则此时共轭旋量的变换规律为
+
+$$
+\bar{\psi}'(x')
+=\bar{\psi}(x) \Lambda^{-1}
+$$
+
+$x' $ 系的共轭 Dirac 方程为：
+
+$$
+\partial'_\mu \bar{\psi}'(x') \gamma_\mu - m \bar{\psi}'(x')
+=0
+$$
+
+把 $x' $ 系的物理量用 $x $ 系的物理量表达：
+
+$$
+\partial_\rho'
+\equiv \frac{\partial }{\partial x'_\rho } 
+=\frac{\partial x_\nu}{\partial x'_\rho } \frac{\partial }{\partial x_\nu } 
+=A_{\rho\nu}\partial_\nu
+$$
+
+因此 $x' $ 系的 Dirac 方程可写为：
+
+$$
+\begin{aligned}
+0
+&=\partial'_\mu \bar{\psi}'(x') \gamma_\mu - m \bar{\psi}'(x') \\
+&=A_{\mu\rho}\partial_\rho \bar{\psi}(x) \Lambda^{-1} \gamma_\mu - m \bar{\psi}(x) \Lambda^{-1}
+\end{aligned}
+$$
+
+上式右乘 $\Lambda $，并利用 $\Lambda^{-1} \gamma_\mu \Lambda = A_{\mu\nu}\gamma_\nu $ 和正交关系 $A_{\mu\rho} A_{\mu\nu}=\delta_{\rho\nu} $ 可得：
+
+$$
+\begin{aligned}
+0
+&=A_{\mu\rho}\partial_\rho \bar{\psi}(x) \Lambda^{-1} \gamma_\mu \Lambda - m \bar{\psi}(x) \Lambda^{-1} \Lambda \\
+&=A_{\mu\rho}\partial_\rho \bar{\psi}(x) A_{\mu\nu} \gamma_\nu - m \bar{\psi}(x) \\
+&=\delta_{\rho\nu} \partial_\rho \bar{\psi}(x) \gamma_\nu - m\bar{\psi}(x) \\
+&=\partial_\nu \bar{\psi}(x) \gamma_\nu - m\bar{\psi}(x)
+\end{aligned}
+$$
+
+可见当 $\bar{\psi}(x) $ 是一个共轭旋量，服从共轭旋量变换规律时，$x $ 系和 $x' $ 系的 Dirac 共轭方程形式上一致。
+
+### Dirac 方程描写粒子的自旋为 $1/2 $
+
+> 为了方便，下面算符都略去帽子。
+
+轨道角动量算符：
+
+$$
+L_i
+=\left(\vec{x}\times\vec{p} \right)_i
+=\varepsilon_{ijk}x_j p_k
+$$
+
+自由旋量粒子哈密顿量算符：
+
+$$
+H
+=\vec{\alpha}\cdot\vec{p} + \beta m
+$$
+
+二者对易关系：
+
+$$
+\begin{aligned}
+\left[H , L_i \right]
+&=\left[\alpha_lp_l+\beta m , \varepsilon_{ijk}x_jp_k \right] \\
+&=\varepsilon_{ijk}\alpha_l\left[p_l , x_j p_k \right] \\
+&=\varepsilon_{ijk}\alpha_l\left(x_j\left[p_l , p_k \right] + \left[p_l , x_j \right]p_k \right) \\
+&=\varepsilon_{ijk}\alpha_l \left(-\mathrm{i}\hbar \delta_{lj} \right) p_k \\
+&=-\mathrm{i}\hbar\varepsilon_{ijk}\alpha_j p_k \\
+&=-\mathrm{i}\hbar\left(\vec{\alpha}\times\vec{p} \right)_i \\
+&=-\mathrm{i}\left(\vec{\alpha}\times\vec{p} \right)_i
+\end{aligned}
+$$
+
+因此：
+
+$$
+\left[H , \vec{L} \right] = -\mathrm{i}\vec{\alpha}\times\vec{p}
+$$
+
+这表明，Dirac 方程描述的粒子的轨道角动量不守恒。
+
+定义四阶 $\sigma_i $ 矩阵：
+
+$$
+\sigma_i
+\equiv \frac{1 }{2\mathrm{i} } \varepsilon_{ijk}\gamma_j\gamma_k
+$$
+
+利用
+
+$$
+\boxed{
+\gamma_i\equiv -\mathrm{i}\beta \alpha_i,\quad i=1,2,3
+}
+$$
+
+$$
+\boxed{
+\gamma_4\equiv \beta
+}
+$$
+
+$$
+\boxed{
+\alpha_i = \mathrm{i} \gamma_4 \gamma_i
+}
+$$
+
+$$
+\boxed{
+\beta
+=\gamma_4
+}
+$$
+
+$$
+\gamma_i \gamma_j
+=2\delta_{ij} I - \gamma_j \gamma_i
+$$
+
+$$
+\gamma_4 \gamma_i
+=-\gamma_i \gamma_4
+$$
+
+$$
+\begin{aligned}
+\left[\gamma_4 , \gamma_j \gamma_k \right]
+&=\gamma_4 \gamma_j \gamma_k - \gamma_j \gamma_k \gamma_4 \\
+&=\gamma_4 \gamma_j \gamma_k - \gamma_4 \gamma_j \gamma_k \\
+&=0
+\end{aligned}
+$$
+
+可计算：
+
+$$
+\begin{aligned}
+\left[H , \frac{\sigma_i }{2 }  \right]
+&=\left[\alpha_l p_l + \beta m , \frac{1 }{4\mathrm{i} } \varepsilon_{ijk} \gamma_j \gamma_k \right] \\
+&=\frac{1 }{4\mathrm{i} } \varepsilon_{ijk} \left[\mathrm{i} \gamma_4 \gamma_l p_l + \gamma_4 m , \gamma_j \gamma_k \right] \\
+&=\frac{1 }{4 } \varepsilon_{ijk} \left[\gamma_4 \gamma_l , \gamma_j \gamma_k \right] p_l \\
+&=\frac{1 }{4 } \varepsilon_{ijk}\left(\gamma_4 \gamma_l \gamma_j \gamma_k - \gamma_j \gamma_k \gamma_4 \gamma_l \right) p_l \\
+&=\frac{1 }{4 } \varepsilon_{ijk} \left(\gamma_4 \gamma_l \gamma_j \gamma_k - \gamma_4 \gamma_j \gamma_k \gamma_l \right) p_l \\
+&=\frac{1 }{4 } \varepsilon_{ijk} \gamma_4 \left(\gamma_l \gamma_j \gamma_k - \gamma_j \gamma_k \gamma_l \right) p_l \\
+&=\frac{1 }{4 } \varepsilon_{ijk} \gamma_4 \left(\gamma_l \gamma_j \gamma_k - \gamma_j \left(2\delta_{kl} I - \gamma_l \gamma_k \right) \right) p_l \\
+&=\frac{1 }{4 } \varepsilon_{ijk} \gamma_4 \left(\gamma_l \gamma_j \gamma_k + \gamma_j \gamma_l \gamma_k - 2\delta_{kl} \gamma_j \right) p_l \\
+&=\frac{1 }{4 } \varepsilon_{ijk} \gamma_4 \left(\gamma_l \gamma_j \gamma_k + \left(2\delta_{jl} I - \gamma_l\gamma_j \right) \gamma_k - 2\delta_{kl} \gamma_j \right) p_l \\
+&=\frac{1 }{4 } \varepsilon_{ijk} \gamma_4 \left(2\delta_{jl} \gamma_k - 2\delta_{kl}\gamma_j \right) p_l \\
+&=\frac{1 }{2\mathrm{i} } \varepsilon_{ijk}\left(\delta_{jl} \mathrm{i} \gamma_4 \gamma_k - \delta_{kl} \mathrm{i} \gamma_4 \gamma_j\right) p_l \\
+&=\frac{1 }{2\mathrm{i} } \varepsilon_{ijk} \left(\delta_{jl} \alpha_k - \delta_{kl} \alpha_j \right) p_l \\
+&=\frac{1 }{2\mathrm{i} } \left(\varepsilon_{ilk} \alpha_k - \varepsilon_{ijl} \alpha_j \right) p_l \\
+&=\frac{1 }{2\mathrm{i} } \left(\varepsilon_{ilk} \alpha_k + \varepsilon_{ilj} \alpha_j \right) p_l \\
+&=\frac{1 }{\mathrm{i} } \varepsilon_{ilk} \alpha_k p_l \\
+&=\mathrm{i} \varepsilon_{ikl} \alpha_k p_l \\
+&=\mathrm{i}\left(\vec{\alpha}\times\vec{p} \right)_i
+\end{aligned}
+$$
+
+则：
+
+$$
+\begin{aligned}
+\left[H , L_i + \frac{\sigma_i }{2 }  \right]
+=-\mathrm{i}\left(\vec{\alpha}\times\vec{p} \right)_i + \mathrm{i}\left(\vec{\alpha}\times\vec{p} \right)_i 
+=0
+\end{aligned}
+$$
+
+构造
+
+$$
+\vec{J}\equiv \vec{L} + \frac{\vec{\sigma} }{2 } 
+$$
+
+则：
+
+$$
+\left[H , \vec{J} \right] = 0
+$$
+这表明，Dirac 方程描述的粒子的总角动量 $\vec{J} $ 守恒。
+
+其中的附加项 $\vec{\sigma}/2 $ 解释为粒子的自旋角动量算符。因此旋量波函数描述的粒子自旋为 $\vec{\sigma}/2 $。这种粒子称为旋量粒子。
 
 # 4 场方程
 

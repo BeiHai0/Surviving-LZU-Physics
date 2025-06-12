@@ -1354,24 +1354,24 @@ $$
 
 $$
 \begin{aligned}
-\left[H , \sigma_i \right]
-&=\left[\alpha_lp_l+\beta m , \frac{1 }{2\mathrm{i} } \varepsilon_{ijk}\gamma_j\gamma_k \right] \\
-&=\frac{1 }{2\mathrm{i} }\varepsilon_{ijk}\left[\alpha_lp_l+\beta m , \gamma_j\gamma_k \right] \\
-&=\frac{1 }{2\mathrm{i} }\varepsilon_{ijk}\left[\alpha_lp_l+\beta m , \left(-\mathrm{i}\beta\alpha_j \right)\left(-\mathrm{i}\beta\alpha_k \right) \right] \\
-&=-\frac{1 }{2\mathrm{i} } \varepsilon_{ijk}\left[\alpha_lp_l+\beta m , \beta\alpha_j\beta\alpha_k \right] \\
-&=\frac{1 }{2\mathrm{i} } \varepsilon_{ijk}\left[\alpha_lp_l+\beta m , \alpha_j\beta\beta\alpha_k \right] \\
-&=\frac{1 }{2\mathrm{i} } \varepsilon_{ijk}\left[\alpha_lp_l+\beta m , \alpha_j\alpha_k \right] \\
-&=\frac{1 }{2\mathrm{i} } \varepsilon_{ijk}\left(\left[\alpha_lp_l , \alpha_j\alpha_k \right] + m\left[\beta , \alpha_j\alpha_k \right] \right) \\
-&=\frac{1 }{2\mathrm{i} } \varepsilon_{ijk}\left\{\alpha_l\left[p_l,\alpha_j\alpha_k \right] + \left[\alpha_l,\alpha_j\alpha_k \right]p_l + m\left(\beta\alpha_j\alpha_k - \alpha_j\alpha_k\beta \right) \right\} \\
-&=\frac{1 }{2\mathrm{i} } \varepsilon_{ijk}\left\{\left(\alpha_j\left[\alpha_l , \alpha_k \right] + \left[\alpha_l , \alpha_j \right]\alpha_k \right)p_l + m\beta\alpha_j\alpha_k - m\beta\alpha_j\alpha_k \right\} \\
-&=\frac{1 }{2\mathrm{i} } \varepsilon_{ijk}\left(2\mathrm{i}\varepsilon_{lkn}\alpha_j\alpha_n + 2\mathrm{i}\varepsilon_{ljq}\alpha_q\alpha_k \right)p_l \\
-&=\left(\varepsilon_{kij}\varepsilon_{knl}\alpha_j\alpha_n + \varepsilon_{jki}\varepsilon_{jql}\alpha_q\alpha_k \right)p_l \\
-&=\left\{\left(\delta_{in}\delta_{jl} - \delta_{il}\delta_{jn} \right)\alpha_j\alpha_n + \left(\delta_{kq}\delta_{il} - \delta_{kl}\delta_{iq} \right)\alpha_q\alpha_k \right\}p_l \\
-&=\left(\alpha_l\alpha_i - \delta_{il}\alpha_n\alpha_n + \delta_{il}\alpha_k\alpha_k - \alpha_i\alpha_l \right)p_l \\
-&=\left[\alpha_l , \alpha_i \right]p_l \\
-&=2\mathrm{i}\varepsilon_{lit}\alpha_t p_l \\
-&=2\mathrm{i}\varepsilon_{itl}\alpha_t p_l \\
-&=2\mathrm{i}\left(\vec{\alpha}\times \vec{p} \right)_i
+\left[H , \frac{\sigma_i }{2 }  \right]
+&=\left[\alpha_l p_l + \beta m , \frac{1 }{4\mathrm{i} } \varepsilon_{ijk} \gamma_j \gamma_k \right] \\
+&=\frac{1 }{4\mathrm{i} } \varepsilon_{ijk} \left[\mathrm{i} \gamma_4 \gamma_l p_l + \gamma_4 m , \gamma_j \gamma_k \right] \\
+&=\frac{1 }{4 } \varepsilon_{ijk} \left[\gamma_4 \gamma_l , \gamma_j \gamma_k \right] p_l \\
+&=\frac{1 }{4 } \varepsilon_{ijk}\left(\gamma_4 \gamma_l \gamma_j \gamma_k - \gamma_j \gamma_k \gamma_4 \gamma_l \right) p_l \\
+&=\frac{1 }{4 } \varepsilon_{ijk} \left(\gamma_4 \gamma_l \gamma_j \gamma_k - \gamma_4 \gamma_j \gamma_k \gamma_l \right) p_l \\
+&=\frac{1 }{4 } \varepsilon_{ijk} \gamma_4 \left(\gamma_l \gamma_j \gamma_k - \gamma_j \gamma_k \gamma_l \right) p_l \\
+&=\frac{1 }{4 } \varepsilon_{ijk} \gamma_4 \left(\gamma_l \gamma_j \gamma_k - \gamma_j \left(2\delta_{kl} I - \gamma_l \gamma_k \right) \right) p_l \\
+&=\frac{1 }{4 } \varepsilon_{ijk} \gamma_4 \left(\gamma_l \gamma_j \gamma_k + \gamma_j \gamma_l \gamma_k - 2\delta_{kl} \gamma_j \right) p_l \\
+&=\frac{1 }{4 } \varepsilon_{ijk} \gamma_4 \left(\gamma_l \gamma_j \gamma_k + \left(2\delta_{jl} I - \gamma_l\gamma_j \right) \gamma_k - 2\delta_{kl} \gamma_j \right) p_l \\
+&=\frac{1 }{4 } \varepsilon_{ijk} \gamma_4 \left(2\delta_{jl} \gamma_k - 2\delta_{kl}\gamma_j \right) p_l \\
+&=\frac{1 }{2\mathrm{i} } \varepsilon_{ijk}\left(\delta_{jl} \mathrm{i} \gamma_4 \gamma_k - \delta_{kl} \mathrm{i} \gamma_4 \gamma_j\right) p_l \\
+&=\frac{1 }{2\mathrm{i} } \varepsilon_{ijk} \left(\delta_{jl} \alpha_k - \delta_{kl} \alpha_j \right) p_l \\
+&=\frac{1 }{2\mathrm{i} } \left(\varepsilon_{ilk} \alpha_k - \varepsilon_{ijl} \alpha_j \right) p_l \\
+&=\frac{1 }{2\mathrm{i} } \left(\varepsilon_{ilk} \alpha_k + \varepsilon_{ilj} \alpha_j \right) p_l \\
+&=\frac{1 }{\mathrm{i} } \varepsilon_{ilk} \alpha_k p_l \\
+&=\mathrm{i} \varepsilon_{ikl} \alpha_k p_l \\
+&=\mathrm{i}\left(\vec{\alpha}\times\vec{p} \right)_i
 \end{aligned}
 $$
 
