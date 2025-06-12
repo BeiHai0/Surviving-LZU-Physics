@@ -2654,6 +2654,34 @@ $$
 
 其中的附加项 $\vec{\sigma}/2 $ 解释为粒子的自旋角动量算符。因此旋量波函数描述的粒子自旋为 $\vec{\sigma}/2 $。这种粒子称为旋量粒子。
 
+### 用 $\sigma_i^0 $ 表达 $\alpha_i,\beta,\gamma_\mu $
+
+### 一些对易关系
+
+$$
+\left[\left(\vec{\sigma}\cdot\vec{p} \right) , \left(\vec{\gamma}\cdot\vec{p} \right) \right]
+=0
+$$
+
+$$
+\left[\left(\vec{\sigma}\cdot\vec{p} \right) , \beta
+=0 \right]
+$$
+
+$$
+\left[\hat{H} , \left(\vec{\sigma} \cdot \vec{n} \right) \right]
+=0
+$$
+
+$$
+\left[\hat{H} , \left(\vec{\sigma}\cdot\vec{p} \right) \right]
+=0
+$$
+
+### 自由旋量粒子的波函数
+
+
+
 # 4 场方程
 
 ## 达朗贝尔算符
