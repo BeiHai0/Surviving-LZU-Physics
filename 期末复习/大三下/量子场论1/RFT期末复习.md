@@ -2680,9 +2680,36 @@ $$
 
 ### 自由旋量粒子的波函数
 
-#### 动量表象中的自由旋量粒子 Dirac 方程
+#### 自旋旋量粒子
 
-对于自由旋量粒子，其具有确定四维动量 $p_\mu $，其波函数 $\psi $ 应是四维动量算符本征波函数，即 $\psi(x) $ 满足 $\hat{p}_\mu $ 的本征方程：
+若波函数 $\psi(x) $ 满足 Dirac 方程
+
+$$
+\left(\gamma_\mu\partial_\mu + m_0 \right)\psi(x)
+=0
+$$
+
+则由 $\psi(x) $ 描述的粒子称为**自由旋量粒子**。
+
+#### 四维动量算符及其本征方程
+
+四维动量算符 $\hat{p}_\mu $ 定义为：
+
+$$
+\hat{p}_\mu
+\equiv -\mathrm{i}\partial_\mu
+$$
+
+写成 $3+1 $ 形式即：
+
+$$
+\hat{p}_\mu
+=\left(\hat{\vec{p}} , -\partial_t \right)
+=\left(-\mathrm{i}\nabla , -\partial_t \right),\quad
+\hat{p}_4 = -\partial_t
+$$
+
+考虑四维动量算符的本征方程：
 
 $$
 \hat{p}_\mu \psi(x)
@@ -2690,11 +2717,11 @@ $$
 =p_\mu\psi(x)
 $$
 
-容易猜到，上式中自由旋量粒子波函数 $\psi $ 有平面波解：
+其中，$p_\mu $ 代表本征值，$\psi(x) $ 是本征波函数。容易猜到，上式中波函数 $\psi $ 有平面波解：
 
 $$
 \psi(x)
-=u(p)\mathrm{e}^{\mathrm{i}p x}
+=u(p)\mathrm{e}^{\mathrm{i}p x},\quad \forall p_\mu
 $$
 
 $$
@@ -2703,17 +2730,30 @@ p x
 =\vec{p}\cdot\vec{x} + p_4 x_4
 =\vec{p}\cdot\vec{x} + \left(\mathrm{i}p_0 \right) \left(\mathrm{i}t \right)
 =\vec{p}\cdot\vec{x} - p_0 t,\quad
-u(p)
-=u(p_1,p_2,p_3,p_4)
-=\begin{bmatrix}
-u_1(p) \\
-u_2(p) \\
-u_3(p) \\
-u_4(p)
-\end{bmatrix}
 $$
 
-自由旋量粒子波函数 $\psi(x) $ 是一种特殊的旋量波函数（具有确定的四维动量），其应当满足 Dirac 方程。将 $\psi(x) $ 的平面波解代入自由旋量场 Dirac 方程 $\left(\gamma_\mu\partial_\mu + m \right)\psi(x) = 0$，可得：
+很容易验证上面构造的平面波解 $\psi(x)=u(p)\mathrm{e}^{\mathrm{i}p x} = u(p) \mathrm{e}^{\mathrm{i}\left(\vec{p}\cdot\vec{x} - p_4 x_4 \right)} $ 是四维动量算符的本征波函数，对应本征值恰为构造平面波解用到的四个连续参数 $\left(\vec{p} , p_4 \right) .$
+
+#### 动量表象中的具有确定四维动量自由旋量粒子 Dirac 方程
+
+具有确定四维动量自由旋量粒子，其波函数 $\psi(x) $ 应既是四维动量算符本征波函数，又要满足 Dirac 方程。
+
+$\psi(x) $ 首先要满足 $\hat{p}_\mu $ 的本征方程：
+
+$$
+\hat{p}_\mu \psi(x)
+\equiv -\mathrm{i}\partial_\mu \psi(x)
+=p_\mu\psi(x)
+$$
+
+上面已经讨论过了，$\psi(x) $ 有平面波解：
+
+$$
+\psi(x)
+=u(p)\mathrm{e}^{\mathrm{i}p x}
+$$
+
+$\psi(x) $ 还要满足 Dirac 方程。将 $\psi(x) $ 的平面波解代入自由旋量场 Dirac 方程 $\left(\gamma_\mu\partial_\mu + m \right)\psi(x) = 0$，可得：
 
 $$
 \left(\mathrm{i}\gamma_\mu p_\mu + m \right)u(p)\mathrm{e}^{\mathrm{i}p x}
@@ -2723,14 +2763,26 @@ $$
 因此，对任意 $p_\mu $，相应 $u(p) $ 要满足：
 
 $$
+\boxed{
 \left(\mathrm{i}\hat{p}+m \right)u(p)
 =0,\quad
 \hat{p}\equiv \gamma_\mu p_\mu
+}
 $$
 
-这是动量表象（以四维动量为变量）中的自由旋量粒子 Dirac 方程。
+这是动量表象（以四维动量为变量）中具有确定四维动量自由旋量粒子 Dirac 方程。
 
 #### 动量表象 $H $ 的本征方程
+
+回顾一下，对于一个自由旋量粒子，其哈密顿算符为
+
+
+$$
+\hat{H}
+=\vec{\alpha}\cdot\hat{\vec{p}} + \beta m
+=\mathrm{i}\gamma_4 \vec{\gamma}\cdot\hat{\vec{p}} + \beta m 
+=\beta\left(\mathrm{i}\vec{\gamma}\cdot\hat{\vec{p}} + m \right) 
+$$
 
 动量表象中的 Dirac 方程：
 
@@ -2751,15 +2803,6 @@ $$
 $$
 \beta\left(\mathrm{i}\vec{\gamma}\cdot\vec{p} + m \right)u(p)
 =-\mathrm{i}p_4 u(p)
-$$
-
-对于一个自由旋量粒子，其哈密顿量算符为 $\hat{H}=\vec{\alpha}\cdot\hat{\vec{p}} + \beta m = \mathrm{i}\gamma_4 \vec{\gamma}\cdot\hat{\vec{p}} + \beta m = \beta\left(\mathrm{i}\vec{\gamma}\cdot\hat{\vec{p}} + m \right) .$
-
-由于平面波 $u(p)\mathrm{e}^{\mathrm{i}p x} $ 是四维动量算符的一个本征解，即：
-
-$$
-\hat{p}_\mu \left(u(p)\mathrm{e}^{\mathrm{i}p x} \right)
-=p_\mu \left(u(p)\mathrm{e}^{\mathrm{i}p x} \right)
 $$
 
 $$
