@@ -885,7 +885,57 @@ x'_\mu = A_{\mu\nu} x_\nu + b_\mu,\quad
 }
 $$
 
-# 3 Clifford 代数、$\gamma $ 矩阵、旋量表示、旋量与 Dirac 方程
+# 3 场方程
+
+## 达朗贝尔算符
+
+达朗贝尔算符 $\square $ 定义为：
+
+$$
+\square
+\equiv \partial_\mu \partial_\mu
+=\partial_x^2 + \partial_y^2 + \partial_z^2 - \frac{1 }{c^2 } \partial_t^2
+=\nabla^2 - \frac{1 }{c^2 } \partial_t^2
+$$
+
+## 实标量场方程
+
+$$
+\left(\square - m_0^2 \right)\phi(x)
+=0
+$$
+
+## 复标量场方程
+
+$$
+\left(\square - m_0^2 \right)\phi(x)
+=0
+$$
+
+$$
+\left(\square - m_0^2 \right)\phi^*(x)
+=0
+$$
+
+## 矢量场方程
+
+$$
+\square A_\mu = -\mu_0 j_\mu
+$$
+
+## 旋量场方程
+
+$$
+\left(\gamma_\mu \partial_\mu + m_0 \right)\psi(x)
+=0
+$$
+
+$$
+\partial_\mu \bar{\psi} \gamma_\mu - m_0 \bar{\psi}
+=0
+$$
+
+# 4 Clifford 代数、$\gamma $ 矩阵、旋量表示、旋量与 Dirac 方程
 
 ## Clifford 代数与 $\gamma $ 矩阵
 
@@ -2734,7 +2784,7 @@ $$
 
 很容易验证上面构造的平面波解 $\psi(x)=u(p)\mathrm{e}^{\mathrm{i}p x} = u(p) \mathrm{e}^{\mathrm{i}\left(\vec{p}\cdot\vec{x} - p_4 x_4 \right)} $ 是四维动量算符的本征波函数，对应本征值恰为构造平面波解用到的四个连续参数 $\left(\vec{p} , p_4 \right) .$
 
-#### 动量表象中的具有确定四维动量自由旋量粒子 Dirac 方程
+#### 具有确定四维动量自由旋量粒子动量表象 Dirac 方程
 
 具有确定四维动量自由旋量粒子，其波函数 $\psi(x) $ 应既是四维动量算符本征波函数，又要满足 Dirac 方程。
 
@@ -2770,12 +2820,11 @@ $$
 }
 $$
 
-这是动量表象（以四维动量为变量）中具有确定四维动量自由旋量粒子 Dirac 方程。
+这是具有确定四维动量自由旋量粒子动量表象 Dirac 方程。
 
-#### 动量表象 $H $ 的本征方程
+#### 具有确定三维动量的自由旋量粒子的哈密顿算符
 
-回顾一下，对于一个自由旋量粒子，其哈密顿算符为
-
+回顾一下，对于一个自由旋量粒子，其哈密顿算符为 
 
 $$
 \hat{H}
@@ -2784,7 +2833,23 @@ $$
 =\beta\left(\mathrm{i}\vec{\gamma}\cdot\hat{\vec{p}} + m \right) 
 $$
 
-动量表象中的 Dirac 方程：
+Somehow，R场论认为，一个具有确定动量（三维动量而非四维动量）的自由旋量粒子的哈密顿算符为：
+
+$$
+\hat{H}(\vec{p})
+=\beta\left(\mathrm{i}\vec{\gamma}\cdot\vec{p} + m \right)
+$$
+
+#### 动量表象 $\hat{H}(\vec{p}) $ 的本征方程
+
+具有确定四维动量自由旋量粒子动量表象 Dirac 方程：
+
+$$
+\left(\mathrm{i}\gamma_\mu p_\mu + m \right) u(p)
+=0
+$$
+
+即：
 
 $$
 \left(\mathrm{i}\gamma_i p_i + \mathrm{i}\gamma_4p_4 + m \right)u(p)
@@ -2805,39 +2870,41 @@ $$
 =-\mathrm{i}p_4 u(p)
 $$
 
+再注意到
+
 $$
-H(\vec{p})
+\hat{H}(\vec{p})
 =\beta\left(\mathrm{i}\vec{\gamma}\cdot\vec{p} + m \right),\quad
 p_0 = E,\quad p_4=\mathrm{i}E = \mathrm{i}p_0
 $$
 
-因此有动量表象 $H $ 本征方程：
+因此有动量表象 $\hat{H}(\vec{p}) $ 本征方程：
 
 $$
-H(p) u(p)
+\hat{H}(\vec{p}) u(p)
 =p_0 u(p)
 $$
 
-由于 $H $ 是厄米的，因此
+由于 $\hat{H}(\vec{p}) $ 是厄米的，因此
 
 $$
 \begin{aligned}
-H^2(p)
-&=H^\dag(p) H(p) \\
+\hat{H}^2(\vec{p})
+&=\hat{H}^\dag(\vec{p}) \hat{H}(\vec{p}) \\
 &=\left[\beta\left(\mathrm{i}\vec{\gamma}\cdot\vec{p} + m \right) \right]^\dag \left[\beta\left(\mathrm{i}\vec{\gamma}\cdot\vec{p} + m \right) \right] \\
 &=\left(-\mathrm{i}\vec{\gamma}\cdot\vec{p} + m \right)\left(\mathrm{i}\vec{\gamma}\cdot\vec{p} + m \right) \\
-&=\left(\vec{\gamma}\cdot\vec{p} \right)^2 + m^2 \\
-&=\left(\gamma_i p_i \right)\left(\gamma_j p_j \right) + m^2 \\
-&=\frac{1 }{2 } \left(\gamma_i\gamma_j + \gamma_j\gamma_i \right) p_i p_j + m^2 \\
-&=\delta_{ij}p_ip_j + m^2 \\
-&=\vec{p}^2 + m^2
+&=\left(\vec{\gamma}\cdot\vec{p} \right)^2 + m^2 I \\
+&=\left(\gamma_i p_i \right)\left(\gamma_j p_j \right) + m^2 I \\
+&=\frac{1 }{2 } \left(\gamma_i\gamma_j + \gamma_j\gamma_i \right) p_i p_j + m^2 I \\
+&=\delta_{ij}p_ip_j I + m^2 I \\
+&=\left(\vec{p}^2 + m^2 \right) I
 \end{aligned}
 $$
 
 因此由
 
 $$
-H^2(p) u(p) = p_0^2 u(p)
+\hat{H}^2(\vec{p}) u(p) = p_0^2 u(p)
 $$
 
 可得：
@@ -2849,60 +2916,588 @@ $$
 即：
 
 $$
-H u(p) = \pm E u(p)
+\hat{H}(\vec{p}) u(p) = \pm E u(p)
 $$
 
-对于自由旋量粒子，$u(p) $ 对应的波函数有 $\pm E $ 两种能量状态。
+上式说明，具有确定三维动量自由旋量粒子哈密顿算符 $\hat{H}(\vec{p}) $ 本征值为 $\pm\sqrt{\vec{p}^2+m^2} $，也就是说具有确定三维动量自由旋量粒子有 $+\sqrt{\vec{p}^2+m^2} $ 和 $-\sqrt{\vec{p}^2+m^2} $ 两种能量状态。
 
-# 4 场方程
+#### 具有确定四维动量自由旋量粒子自旋方向
 
-## 达朗贝尔算符
-
-达朗贝尔算符 $\square $ 定义为：
+由于
 
 $$
-\square
-\equiv \partial_\mu \partial_\mu
-=\partial_x^2 + \partial_y^2 + \partial_z^2 - \frac{1 }{c^2 } \partial_t^2
-=\nabla^2 - \frac{1 }{c^2 } \partial_t^2
-$$
-
-## 实标量场方程
-
-$$
-\left(\square - m_0^2 \right)\phi(x)
+\left[\hat{H}(\vec{p}) , \vec{\sigma}\cdot\vec{n} \right]
 =0
 $$
 
-## 复标量场方程
+因此 $\hat{H}(\vec{p}) $ 的本征函数 $u(p) $ 也是 $\vec{\sigma}\cdot\vec{n} $ 的本征函数，设对应的本征值为 $\lambda $，其本征方程为：
 
 $$
-\left(\square - m_0^2 \right)\phi(x)
+\left(\vec{\sigma}\cdot\vec{n} \right) u(p)
+=\lambda u(p)
+$$
+
+注意到
+
+$$
+\begin{aligned}
+\left(\vec{\sigma}\cdot\vec{n} \right)^2
+&=\left(\vec{\sigma}\cdot\vec{n} \right)\left(\vec{\sigma}\cdot\vec{n} \right) \\
+&=\vec{n}\cdot\vec{n} + \mathrm{i}\vec{\sigma}\cdot\left(\vec{n}\times\vec{n} \right) \\
+&=1
+\end{aligned}
+$$
+
+$\vec{\sigma}\cdot\vec{n} $ 两次作用于 $u(p) $：
+
+$$
+\left(\vec{\sigma}\cdot\vec{n} \right)^2 u(p)
+=\lambda^2 u(p)
+$$
+
+结合 $\left(\vec{\sigma}\cdot\vec{n} \right)^2=1 $ 可得本征值的取值：
+
+$$
+\lambda = \pm 1
+$$
+
+即
+
+$$
+\left(\vec{\sigma}\cdot\vec{n} \right) u(p)
+=\pm u(p)
+$$
+
+这就是说，具有确定四维动量的自由旋量粒子的自旋方向只可能与粒子运动方向平行或反平行。
+
+#### 具有确定动量自由旋量粒子的四种独立态状态
+
+由于
+
+$$
+\left[\hat{H}(\vec{p}) , \left(\vec{\sigma}\cdot\vec{n} \right) \right] = 0
+$$
+
+因此二者有共同本征态。上面讨论过，$\hat{H}(\vec{p}) $ 的本征值有 $\pm E $ 两种，$\left(\vec{\sigma}\cdot\vec{n} \right) $ 有 $\pm 1 $ 两种。
+
+根据本征值可将 $\psi(x)=u(p)\mathrm{e}^{\mathrm{i}p x} $ 划分为以下四种态：
+
+$p_0=+E,\lambda=+1 $ 记为 $u_1(\vec{p}) $
+
+$p_0=+E,\lambda=-1 $ 记为 $u_2(\vec{p}) $
+
+$p_0=-E,\lambda=+1 $ 记为 $u_3(\vec{p}) $
+
+$p_0=-E,\lambda=-1 $ 记为 $u_4(\vec{p}) $
+
+即
+
+$$
+\left(\vec{\sigma}\cdot\vec{n} \right)u_a(\vec{p})
+=\left\{
+\begin{aligned}
++ u_a(\vec{p}),a=1,3 \\
+- u_a(\vec{p}),a=2,4
+\end{aligned}
+\right.
+$$
+
+$$
+\hat{H}(\vec{p})u_a(\vec{p})
+=\left\{
+\begin{aligned}
++E u_a(\vec{p}),a=1,2 \\
+-Eu_a(\vec{p}),a=3,4
+\end{aligned}
+\right.
+$$
+
+注意，本征态 $u_a(\vec{p}) $ 的能量本征值 $p_0 $ 由下标 $a $ 决定：
+
+$$
+p_0
+=\left\{
+\begin{aligned}
++E,a=1,2 \\
+-E,a=3,4
+\end{aligned}
+\right.
+$$
+
+#### $u_a(\vec{p}) $ 的具体形式
+
+由于 $u_a(\vec{p}) $ 满足
+
+$$
+\left(\mathrm{i} \hat{p} + m \right) u_a(\vec{p})
+=0
+$$
+
+再注意到
+
+$$
+\left(\mathrm{i} \hat{p} + m \right)\left(\mathrm{i} \hat{p} - m \right)
+=-\left(p^2 + m^2 \right)
+=-\left( \left(\vec{p}^2 - p_0^2 \right) + m^2 \right)
+=-\left(\vec{p}^2 - \left(\vec{p}^2 + m^2 \right) + m^2 \right)
+=0
+$$
+
+因此设 $u_a(\vec{p}) $ 有如下的形式解：
+
+$$
+u_a(\vec{p})
+=k\left(\mathrm{i}\hat{p}-m \right)f_a(\vec{p})
+=k\left(\mathrm{i}\vec{\gamma}\cdot\vec{p}-\beta p_0 - m \right)f_a(\vec{p})
+$$
+
+其中，$k $ 为任意常数，$f_a(\vec{p}) $ 为四元列矩阵。
+
+可证明若 $u_a(\vec{p})=k\left(\mathrm{i}\vec{\gamma}\cdot\vec{p}-\beta p_0 - m \right)f_a(\vec{p}) $ 是 $\hat{H}(\vec{p}),\vec{\sigma}\cdot\vec{n} $ 的共同本征态，则 $f_a(\vec{p}) $ 满足
+
+$$
+\left(\vec{\sigma}\cdot\vec{n} \right)f_a(\vec{p})
+=\left\{
+\begin{aligned}
++f_a(\vec{p})&,a=1,3 \\
+-f_a(\vec{p})&,a=2,4 \\
+\end{aligned}
+\right.
+$$
+
+$$
+\beta f_a(\vec{p})
+=\left\{
+\begin{aligned}
++f_a(\vec{p})&, a=1,2 \\
+-f_a(\vec{p})&, a=3,4 \\
+\end{aligned}
+\right.
+$$
+
+#### $f_a(\vec{p}) $ 的正交完备性
+
+$$
+f_a^\dag(\vec{p})f_b(\vec{p})
+=\delta_{ab}
+$$
+
+$$
+f_a(\vec{p})f_a^\dag(\vec{p})
+=I
+$$
+
+#### 要求 $u_a(\vec{p}) $ 正交
+
+若要求 $u_a(\vec{p}) $ 正交，即：
+
+$$
+u_a^\dag(\vec{p})u_b(\vec{p})
+=\delta_{ab}
+$$
+
+$$
+u_a(\vec{p})
+=k\left[\mathrm{i}\vec{\gamma}\cdot\vec{p}-\left(E+m \right) \right]f_a(\vec{p})
+$$
+
+则可证明：
+
+$$
+k
+=\frac{\alpha }{\sqrt{2E(E+m)} } ,\quad \alpha=\pm1 ,\pm\mathrm{i}
+$$
+
+#### $u_a(\vec{p}) $ 的完备性
+
+利用 $f_a(\vec{p}) $ 的正交性和完备性
+
+$$
+f_a^\dag(\vec{p})f_b(\vec{p})
+=\delta_{ab}
+$$
+
+$$
+\sum_{a=1}^{4} f_a(\vec{p}) f_a^\dag(\vec{p})
+=I
+$$
+
+以及要求 $u_a(\vec{p}) $ 的正交性
+
+$$
+u_b^\dag(\vec{p})u_b(\vec{p})
+=\delta_{ab}
+$$
+
+导出的 $k $ 要满足的方程
+
+$$
+2E(E+m)k^\dag k
+=1
+$$
+
+可以证明 $u_a(\vec{p}) $ 具有完备性：
+
+$$
+\sum_{a=1}^{4} u_a(\vec{p}) u_a^\dag(\vec{p})
+=I
+$$
+
+#### 球面坐标
+
+$\vec{n}\equiv \vec{p}/\left|\vec{p} \right| $，用球面坐标表示 $\vec{\sigma}^0\cdot\vec{n} $ 的本征态：
+
+$$
+\varphi_1(\vec{p})
+=\begin{bmatrix}
+\cos\frac{\theta }{2 } \mathrm{e}^{-\mathrm{i}\phi/2} \\
+\sin\frac{\theta }{2 } \mathrm{e}^{\mathrm{i}\phi/2}
+\end{bmatrix}
+$$
+
+$$
+\varphi_2(\vec{p})
+=\begin{bmatrix}
+-\sin\frac{\theta }{2 } \mathrm{e}^{\mathrm{i}\phi/2} \\
+\cos\frac{\theta }{2 } \mathrm{e}^{\mathrm{i}\phi/2}
+\end{bmatrix}
+$$
+
+$$
+\left(\vec{\sigma}^0\cdot\vec{n} \right)\varphi_1(\vec{p})
+=+\varphi_1(\vec{p})
+$$
+
+$$
+\left(\vec{\sigma}^0\cdot\vec{n} \right)\varphi_2(\vec{p})
+=-\varphi_2(\vec{p})
+$$
+
+正交完备性：
+
+$$
+\varphi_i^\dag(\vec{p})\varphi_j(\vec{p})
+=\delta_{ij},\quad i,j=1,2
+$$
+
+$$
+\sum_{i=1}^{2} \varphi_i(\vec{p})\varphi_i^\dag(\vec{p})
+=I^0
+$$
+
+#### $f_a(\vec{p}) $ 的具体形式
+
+则可证明 $f_a(\vec{p}) $ 具有以下形式：
+
+$$
+f_1(\vec{p})
+=\begin{bmatrix}
+\varphi_1(\vec{p}) \\
+0
+\end{bmatrix},\quad
+f_2(\vec{p})
+=\begin{bmatrix}
+\varphi_2(\vec{p}) \\
+0
+\end{bmatrix},\quad
+f_3(\vec{p})
+=\begin{bmatrix}
+0 \\
+\varphi_1(\vec{p})
+\end{bmatrix},\quad
+f_4(\vec{p})
+=\begin{bmatrix}
+0 \\
+\varphi_2(\vec{p})
+\end{bmatrix},\quad
+$$
+
+#### $u_a(\vec{p}) $ 的具体形式
+
+利用 
+
+$$
+u_a(\vec{p})
+=\sqrt{\frac{E+m }{2E } }
+\begin{bmatrix}
+I^0 &-\frac{\left(\vec{\sigma}^0\cdot\vec{p} \right) }{E+m }  \\
+\frac{\left(\vec{\sigma}^0\cdot\vec{p} \right) }{E+m }  &I^0 \\
+\end{bmatrix} f_a(\vec{p}) \\
+$$
+
+可以得到 $u_a(\vec{p}) $ 的具体形式
+
+$$
+u_1(\vec{p})
+=N\begin{bmatrix}
+\varphi_1(\vec{p}) \\
+\frac{\vec{\sigma}^0\cdot\vec{p} }{E+m } \varphi_1(\vec{p})
+\end{bmatrix},\quad
+u_2(\vec{p})
+=N\begin{bmatrix}
+\varphi_2(\vec{p}) \\
+\frac{\vec{\sigma}^0\cdot\vec{p} }{E+m } \varphi_2(\vec{p})
+\end{bmatrix},\quad
+u_3(\vec{p})
+=N\begin{bmatrix}
+-\frac{\vec{\sigma}^0\cdot\vec{p} }{E+m } \varphi_1(\vec{p}) \\
+\varphi_1(\vec{p}) \\
+\end{bmatrix},\quad
+u_4(\vec{p})
+=N\begin{bmatrix}
+-\frac{\vec{\sigma}^0\cdot\vec{p} }{E+m } \varphi_2(\vec{p}) \\
+\varphi_2(\vec{p}) \\
+\end{bmatrix}
+$$
+
+$$
+N=\sqrt{\frac{E+m }{2E } }
+$$
+
+### 单位旋量 $u_a(\vec{p}) $ 的空间反射态
+
+当时空坐标进行空间反射变换 $\vec{x}'=-\vec{x},t'=t $ 时，旋量场函数的变换规律为：
+
+$$
+\psi'(x')
+=P\psi(x)
+=\eta_{P}\gamma_4\psi(x),\quad
+\eta_P = \pm\mathrm{i},\pm 1
+$$
+
+对于具有确定三维动量、能量和自旋状态的波函数
+
+$$
+\psi_a(x)
+=u_a(\vec{p})\mathrm{e}^{\mathrm{i}(\vec{p}\cdot\vec{x}-p_0 t)}
+$$
+
+在空间反射新坐标系中的波函数为
+
+$$
+\begin{aligned}
+\psi_a'(x')
+&=\eta_P \gamma_4 \psi_a(x) \\
+&=\eta_P \gamma_4 u_a(\vec{p}) \mathrm{e}^{\mathrm{i}(\vec{p}\cdot\vec{x}-p_0 t)} \\
+&=\eta_P \gamma_4 u_a(\vec{p}) \mathrm{e}^{-\mathrm{i}\vec{p}\cdot\vec{x}'-p_0 t'} \\
+&=\eta_P \gamma_4 u_a(\vec{p}) \mathrm{e}^{-\mathrm{i}\vec{p}\cdot\vec{x}'-p_0 t'} \\
+&=\eta_P \gamma_4 u_a(\vec{p}) \mathrm{e}^{\mathrm{i}\left[\left(-\vec{p} \right)\cdot\vec{x}'-p_0 t' \right]}
+\end{aligned}
+$$
+
+在新坐标系中，$\psi_a'(x') $ 沿 $\vec{p}'\equiv -\vec{p} $ 方向传播。
+
+$\eta_P\gamma_4 u_a(\vec{p}) $ 称为单位旋量 $u_a(\vec{p}) $ 的空间反射态，记为 $u_a(-\vec{p}) $
+
+$$
+\boxed{
+u_a(-\vec{p})
+\equiv \eta_P \gamma_4 u_a(\vec{p})
+}
+$$
+
+可以证明，$u_a(-\vec{p}) $ 能量状态与 $u_a(\vec{p}) $ 相同；$u_a(\vec{p}) $ 中自旋与 $\vec{p} $ 的夹角等于 $u_a(-\vec{p}) $ 中自旋与 $\vec{p} $ 的夹角。
+
+### 旋量场的电荷共轭变换（正反粒子变换）
+
+#### 有电磁场存在时的 Dirac 方程
+
+我们知道自由旋量场 Dirac 方程：
+
+$$
+\left(\gamma_\mu \partial_\mu + m \right)\psi(x)
+=0
+$$
+
+当有电磁场存在时，旋量粒子与光子会相互作用，旋量粒子不自由了。为了找到此时的场方程，作如下变换：
+
+$$
+p_\mu\to p_\mu-e A_\mu
+$$
+
+$$
+\partial_\mu\to \partial_\mu-\mathrm{i}e A_\mu\equiv D_\mu
+$$
+
+则 Dirac 方程及其共轭方程化为
+
+$$
+\left(\gamma_\mu D_\mu + m \right)\psi = 0
+$$
+
+$$
+D_\mu^\dag\bar{\psi}\gamma_mu - m\bar{\psi} = 0
+$$
+
+即得到矢量场合旋量场相互作用场方程：
+
+$$
+\left(\gamma_\mu\partial_\mu+m \right)\psi = \mathrm{i}e A_\mu \gamma_\mu \psi
+$$
+
+$$
+\partial_\mu\bar{\psi}\gamma_\mu - m\bar{\psi} = -\mathrm{i}e A_\mu \bar{\psi}\gamma_\mu
+$$
+
+#### 电磁场存在时 Dirac 方程的 Lorentz 协变性
+
+电磁场存在时 $x' $ 系的 Dirac 方程为：
+
+$$
+\left(\gamma_\mu\partial'_\mu - \mathrm{i}e A'_\mu \gamma_\mu + m \right)\psi'(x')
+=0
+$$
+
+时空坐标进行 Lorentz 变换：
+
+$$
+x_\mu\to x'_\mu = A_{\mu\nu}x_\nu,\quad
+A_{\mu\lambda}x'_\mu
+=x_\lambda
+$$
+
+$x' $ 系的物理量用 $x $ 系的物理量表达：
+
+$$
+\partial'_\mu
+\equiv \frac{\partial }{\partial x'_\mu } 
+=\frac{\partial x_\nu }{\partial x'_\mu } \frac{\partial }{\partial x_\nu } 
+=A_{\mu\nu}\partial_\nu
+$$
+
+$$
+\psi'(x')
+=\Lambda \psi(x)
+$$
+
+$$
+A'_\mu
+=A_{\mu\nu}A_\nu
+$$
+
+则 Dirac 方程化为：
+
+$$
+\begin{aligned}
+0
+&=\left(\gamma_\mu\partial'_\mu - \mathrm{i}e A'_\mu \gamma_\mu + m \right)\psi'(x') \\
+&=\left(\gamma_\mu A_{\mu\nu}\partial_\nu - \mathrm{i}eA_{\mu\nu}A_\nu\gamma_\mu + m \right)\Lambda \psi(x)
+\end{aligned}
+$$
+
+左乘 $\Lambda^{-1} $，并利用
+
+$$
+\Lambda^{-1}\gamma_\mu \Lambda
+=A_{\mu\rho}\gamma_\rho
+$$
+
+可得：
+
+$$
+\begin{aligned}
+0
+&=\Lambda^{-1}\left(\gamma_\mu A_{\mu\nu}\partial_\nu - \mathrm{i}eA_{\mu\nu}A_\nu\gamma_\mu + m \right)\Lambda \psi(x) \\
+&=\left(A_{\mu\rho}\gamma_\rho A_{\mu\nu}\partial_\nu - \mathrm{i}eA_{\mu\nu} A_\nu A_{\mu\rho}\gamma_\rho + m \right)\psi(x) \\
+&=\left(\delta_{\rho\nu}\gamma_\rho\partial_\nu - \mathrm{i}e\delta_{\nu\rho}A_\nu\gamma_\rho + m \right)\psi(x) \\
+&=\left(\gamma_\nu \partial_\nu - \mathrm{i} e A_\rho\gamma_\rho + m \right)\psi(x)
+\end{aligned}
+$$
+
+因此，$x $ 系中的 Dirac 方程为：
+
+$$
+\left(\gamma_\mu \partial_\mu - \mathrm{i} e A_\mu \gamma_\mu + m \right)\psi(x)
+=0
+$$
+
+与 $x' $ 系中的 Dirac 方程
+
+$$
+\left(\gamma_\mu\partial'_\mu - \mathrm{i}e A'_\mu \gamma_\mu + m \right)\psi'(x')
+=0
+$$
+
+对比可知，电磁场存在时 Dirac 方程具有 Lorentz 协变性。
+
+### 
+
+#### 正反粒子投影算符
+
+$$
+\Lambda_\pm(p)
+\equiv \pm \frac{1 }{2 m} \left(\mathrm{i}\gamma_\mu p_\mu \pm m \right)
+$$
+
+$$
+\begin{aligned}
+\Lambda_\pm(-p)
+&=\pm \frac{1 }{2 m} \left(-\mathrm{i}\gamma_\mu p_\mu \pm m \right) \\
+&=\mp \frac{1 }{2 m} \left(\mathrm{i}\gamma_\mu p_\mu \pm m \right) \\
+&=\Lambda_\mp(p)
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\Lambda_+(p) \Lambda_-(p)
+&=\frac{1 }{2m } \left(\mathrm{i}\gamma_\mu p_\mu + m  \right) \frac{-1 }{2m } \left(\mathrm{i}\gamma_\nu p_\nu - m \right) \\
+&=\frac{1 }{4m^2 } \left(\gamma_\mu \gamma_\nu p_\mu p_\nu + m^2 \right) \\
+&=0
+\end{aligned}
+$$
+
+$$
+\Lambda_+^2(p)
+=\Lambda_+(p),\quad
+\Lambda_-^2(p)
+=\Lambda_-(p)
+$$
+
+$$
+\Lambda_+(p)
+=1-\Lambda(-p),\quad
+\Lambda(-p)
+=1-\Lambda_+(p)
+$$
+
+$$
+\Lambda_+(p) u_a(\vec{p})
+=0,\quad
+\Lambda_-(p) v_a(\vec{p})
 =0
 $$
 
 $$
-\left(\square - m_0^2 \right)\phi^*(x)
-=0
-$$
-
-## 矢量场方程
-
-$$
-\square A_\mu = -\mu_0 j_\mu
-$$
-
-## 旋量场方程
-
-$$
-\left(\gamma_\mu \partial_\mu + m_0 \right)\psi(x)
+\Lambda_- u_a(\vec{p})
+=u_a(\vec{p}),\quad
+\Lambda_- v_a(\vec{p})
 =0
 $$
 
 $$
-\partial_\mu \bar{\psi} \gamma_\mu - m_0 \bar{\psi}
-=0
+\Lambda_+ u_a(\vec{p})
+=0,\quad
+\Lambda_+ v_a(\vec{p})
+=v_a (\vec{p})
 $$
+
+$\Lambda_+(p) $ 反粒子单位旋量投影算符
+
+$\Lambda_-(p) $ 正粒子单位旋量投影算符
+
+# 5 拉格朗日方程、对称性与守恒律
+
+# 6 规范场理论
+
+# 7 自由场二次量子化
+
+# 8 两个绘景、一个表象
+
+# 9 S 矩阵、跃迁矩阵元、费曼图
+
+# 10 
+
 
 
 

@@ -519,5 +519,361 @@ $$
 \end{aligned}
 $$
 
+### 拉格朗日原理与场的运动方程
+
+引入广义场函数 $\phi_A(x) $，其可以是张量场函数，也可以是旋量场函数，也可以是标量场函数。
+
+场的作用量定义如下：
+
+$$
+I\left[\phi_A(x) \right]
+=\int\limits_{G} \mathcal{L}\left(\phi_A,\partial_\mu\phi_A \right)\mathrm{d}^4x,\quad
+\mathrm{d}^4 x
+=\mathrm{d}x_0\mathrm{d}x_1\mathrm{d}x_2\mathrm{d}x_3,\quad
+x_4
+=\mathrm{i}x_0
+$$
+
+$G $ 是场在四维时空中存在的范围；$\mathcal{L} $ 是场的拉格朗日密度。
+
+Lagrange 原理就是说，场的真实运动规律使作用量 $I $ 取最小值，即：
+
+$$
+\delta I = 0
+$$
+
+利用变分法可得场的运动方程（E-L方程）：
+
+$$
+\boxed{
+\frac{\partial\mathcal{L} }{\partial \phi_A } - \partial_\mu\frac{\partial\mathcal{L} }{\partial \left(\partial_\mu \phi_A \right) } 
+=0
+}
+$$
+
+定义拉格朗日密度对广义场函数的欧拉式 $\left[\mathcal{L} \right]_{\phi_A} $：
+
+$$
+\left[\mathcal{L} \right]_{\phi_A}
+\equiv \frac{\partial\mathcal{L} }{\partial \phi_A } - \partial_\mu\frac{\partial\mathcal{L} }{\partial \left(\partial_\mu \phi_A \right) } 
+$$
+
+则场的运动方程可写为：
+
+$$
+\left[\mathcal{L} \right]_{\phi_A}
+=0
+$$
+
+### 拉格朗日密度满足的条件
+
+$\mathcal{L} $ 是固有洛伦兹变换 $a_{\mu\nu} $ 及其旋量表示 $\Lambda $ 的不变量。这样才能保证场方程对固有洛伦兹变换协变和角动量守恒。
+
+$\mathcal{L} $ 是四维位移变换的不变量，因此 $\mathcal{L} $ 不应显含 $x_\mu $,这样才能保证能量和动量守恒。
+
+$\mathcal{L} $ 必须是 $\phi_A(x) $ 和 $\partial_\mu\phi_A $ 的二次齐式。这样才能保证场的微分方程是线性的，荷守恒定律及电荷数、重子数、轻子数守恒（整体相因子变换下的守恒性）。
+
+$\mathcal{L} $ 是时间反演变换的不变量。在强和电磁作用中还要求 $\mathcal{L} $ 对空间反射变换合电荷共轭变换的不变性。
+
+$\mathcal{L} $ 是规范变换的不变量。整体规范变换的协变性保证荷守恒。局域规范变换的协变性引入相互作用。
+
+### 各种自由场的拉格朗日函数
+
+#### 实标量场
+
+实标量场描述自旋为零、偶宇称、无反粒子的粒子，
+
+$$
+\mathcal{L}_0
+=-\frac{1 }{2 } \left(\partial_\mu \phi \partial_\mu \phi + m^2\phi^2 \right)
+$$
+
+$$
+\frac{\partial \mathcal{L}_0 }{\partial \phi } = -m^2\phi,\quad
+\frac{\partial \mathcal{L}_0 }{\partial\left(\partial_\mu \phi \right) } = -\partial_\mu\phi
+$$
+
+代入E-L方程，得标量场方程：
+
+$$
+\left(\square-m^2 \right)\phi = 0
+$$
+
+#### 复标量场
+
+复标量场描述自旋为零，存在正、反粒子的粒子。
+
+$$
+\mathcal{L}_0
+=-\partial_\mu\phi^* \partial_\mu\phi  - m^2\phi^*\phi
+$$
+
+分别把 $\phi,\phi^* $ 作为变分量代入 E-L 方程，可得复标量场方程：
+
+$$
+\left(\square-m^2 \right)\phi = 0
+$$
+
+$$
+\left(\square-m^2 \right)\phi^* = 0
+$$
+
+#### 赝标量场
+
+赝标量场描述自旋为零、奇宇称的粒子。
+
+$$
+\mathcal{L}_0
+=-\frac{1 }{2 } \left(\partial_\mu\tilde{\phi} \partial_\mu\tilde{\phi} + m^2\tilde{\phi}^2 \right)
+$$
+
+赝标量场方程为：
+
+$$
+\left(\square-m^2 \right)\tilde{\phi} = 0
+$$
+
+#### 旋量场
+
+旋量场描述自旋为 $1/2 $ 的粒子（自旋为 $1/2 $ 粒子总有反粒子存在）。
+
+$$
+\mathcal{L}_0
+=-\frac{1 }{2 } \left(\bar{\psi}\gamma_\mu\partial_\mu\psi - \partial_\mu\bar{\psi} \gamma_\mu\psi \right) - m\bar{\psi}\psi
+=-\frac{1 }{2 } \bar{\psi}\left(\gamma_\mu\partial_\mu\psi + m\psi \right) + \frac{1 }{2 } \left(\partial_\mu\bar{\psi}\gamma_\mu - m\bar{\psi} \right)\psi
+$$
+
+分别把 $\psi,\bar{\psi} $ 作为变分量，代入 E-L 方程可得 Dirac 方程以及共轭 Dirac 方程：
+
+$$
+\left(\gamma_\mu\partial_\mu + m \right)\psi = 0
+$$
+
+$$
+\partial_\mu\bar{\psi}\gamma_\mu - m\bar{\psi} = 0
+$$
+
+#### 矢量场
+
+矢量场描述自旋为 $1 $ 的光子。
+
+$$
+\mathcal{L}_0
+=-\frac{1 }{2 }\partial_\mu A_\nu \partial_\mu A_\nu 
+$$
+
+把 $A_\mu $ 作为变分量代入 E-L 方程，的达朗贝尔方程：
+
+$$
+\square A_\mu = 0
+$$
+
+静止质量不为零的矢量粒子的拉格朗日密度为：
+
+$$
+\mathcal{L}_0
+=-\frac{1 }{2 } \left(\partial_\mu A_\nu \right)\left(\partial_\mu A_\nu \right) - \frac{1 }{2 } m^2 A_\mu A_\mu
+$$
+
+运动方程：
+
+$$
+\left(\square - m^2 \right)A_\mu = 0
+$$
+
+这破坏规范协变性。
+
+---
+
+若令
+
+$$
+\mathcal{L}_0'
+=-\frac{1 }{4 } F_{\mu\nu} F_{\mu\nu},\quad
+F_{\mu\nu}
+=\partial_\mu A_\nu - \partial_\nu A_\mu
+$$
+
+则可得：
+
+$$
+\partial_\nu F_{\mu\nu}
+=0
+$$
+
+---
+
+若 $A_\mu $ 满足 Lorenz 条件
+
+$$
+\partial_\mu A_\mu
+=0
+$$
+
+则
+
+$$
+\mathcal{L}_0'
+=-\frac{1 }{4 } F_{\mu\nu} F_{\mu\nu},\quad
+\mathcal{L}_0
+=-\frac{1 }{2 }\partial_\mu A_\nu \partial_\mu A_\nu 
+$$
+
+等价。
+
+## 2.11 经典场论中的广义守恒定理和诺特定理
+
+### 广义守恒定理1
+
+设 $\theta_{\mu\cdots \nu\lambda}(x) $ 是 $n $ 阶张量函数，且满足：
+
+$$
+\theta_{\mu\cdots \nu\lambda}(x)\bigg|_{\vec{x}\to \infty}
+=0
+$$
+
+若
+
+$$
+\partial_{\lambda}\theta_{\mu\cdots \nu\lambda}
+=0
+$$
+
+则存在一个 $(n-1) $ 阶守恒张量：
+
+$$
+T_{\mu\cdots \nu}(x_4)
+\equiv \frac{1 }{\mathrm{i} } \int\limits_{\vec{x}\in \R^3} \theta_{\mu\cdots \nu 4}(\vec{x},x_4)\mathrm{d}^3\vec{x}
+=\mathrm{const}
+$$
+
+即 $T_{\mu\cdots \nu} $ 不随时间改变。
+
+证明：
+
+由于
+
+$$
+\theta_{\mu\cdots \nu\lambda}(x)\bigg|_{\vec{x}\to \infty}
+=0,\quad
+\partial_{\lambda}\theta_{\mu\cdots \nu\lambda}
+=0
+$$
+
+于是高斯定理给出：
+
+> 怎么用文字描述 $G $
+
+$$
+\begin{aligned}
+0
+&=\int\limits_{G} \partial_\lambda \theta_{\mu\cdots\nu\lambda}\mathrm{d}^4 x \\
+&=\int\limits_{\partial G} \theta_{\mu\cdots\nu\lambda} \mathrm{d}\sigma_\lambda \\
+&=\left(\int\limits_{\Sigma_1}-\int\limits_{\Sigma_2} \right)\theta_{\mu\cdots\nu\lambda}\mathrm{d}\sigma_\lambda
+\end{aligned}
+$$
+
+即：
+
+$$
+\int\limits_{\Sigma_1} \theta_{\mu\cdots\nu\lambda}\mathrm{d}\sigma_\lambda
+=\int\limits_{\Sigma_2} \theta_{\mu\cdots\nu\lambda}\mathrm{d}\sigma_\lambda
+$$
+
+由于 $\Sigma_1,\Sigma_2 $ 是任意选取的，因此
+
+$$
+\int\limits_{\Sigma}\theta_{\mu\cdots\nu\lambda}\mathrm{d}\sigma_\lambda
+=\mathrm{const}
+$$
+
+其中，
+
+$$
+\mathrm{d}\sigma_1
+\equiv\mathrm{d}x_2\mathrm{d}x_3\mathrm{d}x_4
+$$
+
+$$
+\mathrm{d}\sigma_2
+\equiv\mathrm{d}x_1\mathrm{d}x_3\mathrm{d}x_4
+$$
+
+$$
+\mathrm{d}\sigma_3
+\equiv\mathrm{d}x_1\mathrm{d}x_2\mathrm{d}x_4
+$$
+
+$$
+\mathrm{d}\sigma_4
+\equiv\mathrm{d}x_1\mathrm{d}x_2\mathrm{d}x_3
+$$
+
+且选取的 $\Sigma $ 要保证其边界 $\partial\Sigma $ 是三维空间的无穷远面。
+
+特别地，若取 $\Sigma $ 为与 $x_4=\mathrm{i}ct $ 垂直的超平面 $\Sigma^\perp $，且这个超平面与 $x_4 $ 轴的交点为 $x_4 $，即 $\Sigma^\perp $ 是 $t $ 时刻的全空间 $\R^3 $，则在 $\Sigma^\perp $ 上有：
+
+$$
+\mathrm{d}x_4 = 0
+\Longrightarrow
+\mathrm{d}\sigma_1=\mathrm{d}\sigma_2=\mathrm{d}\sigma_3 = 0
+$$
+
+因此有：
+
+$$
+\begin{aligned}
+\mathrm{const}
+&=\int\limits_{\Sigma}\theta_{\mu\cdots\nu\lambda}\mathrm{d}\sigma_\lambda \\
+&=\int\limits_{\Sigma^\perp} \theta_{\mu\cdots\nu\lambda}\mathrm{d}\sigma_\lambda \\
+&=\int\limits_{\Sigma^\perp} \theta_{\mu\cdots \nu 4}\mathrm{d}\sigma_4 \\
+&=\int\limits_{\vec{x}\in \R^3} \theta_{\mu\cdots \nu 4}(\vec{x},x_4) \mathrm{d}x_1\mathrm{d}x_2\mathrm{d}x_3 \\
+&=\int\limits_{\vec{x}\in \R^3} \theta_{\mu\cdots \nu 4}(\vec{x},x_4)\mathrm{d}^3\vec{x}
+\end{aligned}
+$$
+
+于是：
+
+$$
+\begin{aligned}
+T_{\mu\cdots\nu}(x_4)
+\equiv \frac{1 }{\mathrm{i} } \int\limits_{\vec{x}\in \R^3} \theta_{\mu\cdots \nu 4}(\vec{x},x_4)\mathrm{d}^3\vec{x}
+=\mathrm{const}
+\end{aligned}
+$$
 
 
+### 广义守恒定理2
+
+若场的作用量
+
+$$
+I
+=\int\limits_{G} \mathcal{L}\left(\phi_A,\partial_\mu\phi_A \right)\mathrm{d}^4 x
+$$
+
+对微量变换
+
+$$
+x\to x' = x+\delta x,\quad
+\phi_A\to \phi'_A = \phi_A + \delta_0 \phi_A
+$$
+
+$$
+\phi_A(x)\to \phi_A'(x')
+=\phi_A(x) + \delta \phi_A(x)
+$$
+
+保持不变，则存在一个矢量
+
+$$
+\theta_\mu
+=\left(\mathcal{L}\delta_{\mu\nu}-\frac{\partial\mathcal{L} }{\partial\left(\partial_\mu\phi_A \right) } \partial_\nu\phi_A \right)\delta x_\nu + \frac{\partial\mathcal{L} }{\partial\left(\partial_\mu\phi_A \right) } \delta\phi_A
+$$
+
+满足关系式：
+
+$$
+\partial_\mu\theta_\mu + \left[\mathcal{L} \right]_{\phi_A}\delta_0 \phi_A
+=0
+$$
