@@ -1,0 +1,15 @@
+\beamer@sectionintoc {1}{引言}{3}{0}{1}
+\beamer@sectionintoc {2}{暗物质存在的观测证据}{6}{0}{2}
+\beamer@subsectionintoc {2}{1}{星系旋转曲线（Galaxy Rotation Curves）}{7}{0}{2}
+\beamer@subsectionintoc {2}{2}{引力透镜效应（Gravitational Lensing）}{10}{0}{2}
+\beamer@subsectionintoc {2}{3}{宇宙微波背景（Cosmic Microwave Background）}{12}{0}{2}
+\beamer@sectionintoc {3}{暗物质的候选者}{14}{0}{3}
+\beamer@subsectionintoc {3}{1}{WIMP：弱相互作用大质量粒子（Weakly Interacting Massive Particles）}{15}{0}{3}
+\beamer@subsectionintoc {3}{2}{轴子（Axion）}{20}{0}{3}
+\beamer@subsectionintoc {3}{3}{超对称模型 (Supersymmetry Model)}{26}{0}{3}
+\beamer@subsectionintoc {3}{4}{额外维 (Extra Dimensions) }{31}{0}{3}
+\beamer@sectionintoc {4}{暗物质探测实验现状}{35}{0}{4}
+\beamer@subsectionintoc {4}{1}{DAMA 实验组}{37}{0}{4}
+\beamer@subsectionintoc {4}{2}{PAMELA 实验组}{39}{0}{4}
+\beamer@subsectionintoc {4}{3}{ATIC 实验组}{40}{0}{4}
+\beamer@sectionintoc {5}{总结}{41}{0}{5}
