@@ -877,3 +877,1145 @@ $$
 \partial_\mu\theta_\mu + \left[\mathcal{L} \right]_{\phi_A}\delta_0 \phi_A
 =0
 $$
+
+
+# 第4章 场的相互作用和S矩阵
+
+## 4.1 场的相互作用拉格朗日函数
+
+在场的相互作用情况下，总拉格朗日函数 $\mathcal{L} $ 应是自由场拉格朗日函数 $\mathcal{L}_0 $ 与相互作用拉格朗日函数 $\mathcal{L}_i $ 之和：
+
+$$
+\hat{\mathcal{L}}
+=\hat{\mathcal{L}}_0 + \hat{\mathcal{L}_i}
+$$
+
+场的相互作用拉格朗日函数 $\mathcal{L}_i $ 也必须是 Lorentz 变换的不变量。因此有场的相互作用的拉格朗日函数广义形式：
+
+$$
+\hat{\mathcal{L}}_i
+=g \hat{T}^1_{\mu\nu\cdots\lambda}(x) \hat{T}^2_{\mu\nu\cdots\lambda}(x)
+$$
+
+常数 $g $ 称为作用常数，代表两种场相互作用的大小。
+
+$\hat{T}^1_{\mu\nu\cdots\lambda}(x) $ 和 $\hat{T}^2_{\mu\nu\cdots\lambda}(x) $ 为两种不同的场函数组成的同级张量。
+
+### 玻色场与费米场的相互作用
+
+#### 标量场与旋量场的作用
+
+$$
+?\hat{\bar{\psi}}(x) \hat{\psi}(x) \hat{\phi}(x)
+$$
+
+$$
+? \hat{\bar{\psi}}(x) \gamma_\mu \hat{\psi}(x) \partial_\mu \hat{\phi}(x)
+$$
+
+#### 赝标量场与旋量场的作用
+
+赝标耦合：
+
+$$
+? \hat{\bar{\psi}}(x) \gamma_5 \hat{\psi}(x) \hat{\tilde{\phi}}(x)
+$$
+
+赝矢耦合：
+
+$$
+? \hat{\bar{\psi}}(x) \gamma_5 \gamma_\mu \hat{\psi}(x) \partial_\mu \hat{\tilde{\phi}}(x)
+$$
+
+#### 矢量场与旋量场的作用
+
+$$
+? \hat{\bar{\psi}}(x) \gamma_\mu \hat{\psi}(x) \hat{A}_\mu(x)
+$$
+
+$$
+? \hat{\bar{\psi}}(x) \gamma_\mu \gamma_\nu \hat{\psi}(x) \hat{F}_{\mu\nu}
+$$
+
+#### $\pi $ 介子与核子的作用
+
+$$
+? \hat{\bar{\psi}}(x) \gamma_5 \hat{\psi}(x) \hat{\tilde{\phi}}(x)
+$$
+
+$$
+? \hat{\bar{\psi}}(x) \gamma_5 \gamma_\mu \hat{\psi}(x) \partial_\mu \hat{\tilde{\phi}}(x)
+$$
+
+$$
+\hat{\mathcal{L}}_i
+=\mathrm{i} G \hat{\bar{\psi}}(x) \gamma_5 \hat{\psi}(x) \hat{\tilde{\phi}}(x) + \mathrm{i} \frac{g }{\mu } \hat{\bar{\psi}}(x) \gamma_5 \gamma_\mu \hat{\psi}(x) \partial_\mu \hat{\tilde{\phi}}(x)
+$$
+
+$$
+\mu
+=\frac{1 }{\lambda } 
+=\frac{m c }{h } 
+=\frac{m c }{2 \pi \hbar } 
+$$
+
+#### 电子与光子的作用
+
+$$
+? \hat{\bar{\psi}}(x) \gamma_\mu \hat{\psi}(x) \hat{A}_\mu(x)
+$$
+
+$$
+\hat{\mathcal{L}}_i
+=\mathrm{i} e \hat{\bar{\psi}}(x) \gamma_\mu \hat{\psi}(x) \hat{A}_\mu(x)
+$$
+
+#### 费米场与费米场的相互作用
+
+核子 $\beta^- $ 衰变
+
+$$
+n \to p + e^- + \tilde{\nu}_e
+$$
+
+五种形式：
+
+标量耦合
+
+赝标耦合
+
+矢量耦合
+
+赝矢耦合
+
+张量耦合
+
+合写为：
+
+$$
+\hat{\mathcal{L}}_i
+=\sum_{i=1}^{5} C_i \left[\hat{\bar{\psi}}(x) O_i \hat{\psi}(x) \right]\left[\hat{\bar{\psi}}(x) O_i \hat{\psi}(x) \right]
+$$
+
+宇称不守恒
+
+$$
+
+$$
+
+Gellmann & Feynman
+
+$$
+\hat{\mathcal{L}}_i
+=\frac{C }{\sqrt{2} } \left[\hat{\bar{\psi}}(x) \gamma_\mu(1+\gamma_5) \hat{\psi}(x) \right] \left[\hat{\bar{\psi}}(x) \gamma_\mu(1+\gamma_5) \hat{\psi}(x) \right]
+$$
+
+### 玻色场与玻色场的相互作用
+
+$\pi $ 介子与$\pi $ 介子的相互作用
+
+$$
+? \hat{\tilde{\phi}}(x) \hat{\tilde{\phi}}(x) \hat{\tilde{\phi}}(x) \hat{\tilde{\phi}}(x)
+$$
+
+光子与 $\pi $ 介子的相互作用
+
+$$
+? \left[\partial_\mu \hat{\tilde{\phi}}^*(x) \hat{\tilde{\phi}}(x) - \hat{\tilde{\phi}}^*(x) \partial_\mu \hat{\tilde{\phi}}(x) \right] \hat{A}_\mu(x)
+$$
+
+### 场的作用常数问题
+
+场的作用常数也称为荷。
+
+#### 强作用常数
+
+$$
+\frac{G_\pi^2 }{\hbar c } \sim 15
+$$
+
+#### 中作用常数
+
+$$
+\frac{G_K^2 }{\hbar c } \sim 1
+$$
+
+#### 电磁作用常数
+
+$$
+\frac{e^2 }{\hbar c } 
+=\frac{1 }{137 } 
+$$
+
+#### 弱作用常数
+
+$$
+G
+=\frac{10^{-5} }{M_p^2 } 
+$$
+
+## 4.2 场的相互作用运动方程荷相互作用哈密顿量
+
+场相互作用情况下总拉格朗日函数：
+
+$$
+\hat{\mathcal{L}}
+=\hat{\mathcal{L}}_0 + \hat{\mathcal{L}}_i
+$$
+
+把 $\hat{\mathcal{L}} $ 代入 E-L 方程就得到场的运动方程：
+
+$$
+\frac{\partial \hat{\mathcal{L}} }{\partial \hat{\phi}_A(x) } - \partial_\mu \frac{\partial \hat{\mathcal{L}} }{\partial \left(\partial_\mu \hat{\phi}_A(x) \right) } 
+=0
+$$
+
+### 电子与电磁场作用的运动方程
+
+总拉格朗日函数：
+
+$$
+\begin{aligned}
+\mathcal{L}
+&=-\frac{1 }{4 } F_{\mu\nu} F_{\mu\nu} \\
+&- \frac{1 }{2 } \left[\hat{\bar{\psi}}(x) \gamma_\mu \partial_\mu \hat{\psi}(x) - \partial_\mu \hat{\bar{\psi}}(x) \gamma_\mu \hat{\psi}(x) \right] - m \hat{\bar{\psi}}(x) \hat{\psi}(x) \\
+&+ \mathrm{i} e \hat{\bar{\psi}}(x) \gamma_\mu \hat{\psi}(x) \hat{A}_\mu(x)
+\end{aligned}
+$$
+
+对 $\hat{A}_\mu(x),\hat{\bar{\psi}}(x),\hat{\psi}(x) $ 变分，得场方程
+
+$$
+\partial_\nu F_{\mu\nu} = \mathrm{i} e\hat{\bar{\psi}}(x) \gamma_\mu \hat{\psi}(x)
+$$
+
+$$
+\left(\gamma_\mu \partial_\mu + m \right) \hat{\psi}(x)
+=\mathrm{i} e \hat{A}_\mu(x) \gamma_\mu \hat{\psi}(x)
+$$
+
+$$
+\partial_\mu(x) \hat{\bar{\psi}} \gamma_\mu - m \hat{\bar{\psi}}(x)
+=-\mathrm{i} e \hat{A}_\mu(x) \hat{\bar{\psi}}(x) \gamma_\mu 
+$$
+
+四维电流矢量：
+
+$$
+j_\mu
+=\mathrm{i} e \hat{\bar{\psi}}(x) \gamma_\mu \hat{\psi}(x)
+$$
+
+### 核子与介子场作用的运动方程
+
+总拉格朗日函数：
+
+$$
+\begin{aligned}
+\hat{\mathcal{L}}
+&=-\frac{1 }{2 } \left[\partial_\mu \hat{\tilde{\phi}}(x) \partial_\mu \hat{\tilde{\phi}}(x) + m_\pi^2 \hat{\tilde{\phi}}^2(x) \right] \\
+&- \frac{1 }{2 } \left[\hat{\bar{\psi}}(x) \gamma_\mu \partial_\mu \hat{\psi}(x) - \partial_\mu \hat{\bar{\psi}}(x) \gamma_\mu \hat{\psi}(x) \right] - M \hat{\bar{\psi}}(x) \hat{\psi}(x) \\
+&+ \mathrm{i} G \hat{\bar{\psi}}(x) \gamma_5 \hat{\psi}(x) \hat{\tilde{\phi}}(x)
+\end{aligned}
+$$
+
+变分得场方程：
+
+$$
+\left(\square - m_\pi^2 \right) \hat{\tilde{\phi}}(x)
+=-\mathrm{i} G \hat{\bar{\psi}}(x) \gamma_5 \hat{\psi}(x)
+$$
+
+$$
+\left(\gamma_\mu \partial_\mu + M \right) \hat{\psi}(x)
+=\mathrm{i} G \gamma_5 \hat{\psi}(x) \hat{\tilde{\phi}}(x)
+$$
+
+$$
+\partial_\mu \hat{\bar{\psi}}(x) \gamma_\mu - M \hat{\bar{\psi}}(x)
+=-\mathrm{i} G \hat{\tilde{\phi}}(x) \hat{\bar{\psi}}(x) \gamma_5
+$$
+
+### 场相互作用的哈密顿量
+
+场的相互作用情况下的能量-动量张量：
+
+$$
+\hat{T}_{\mu\nu}
+=\hat{\mathcal{L}} \delta_{\mu\nu} - \frac{\partial \hat{\mathcal{L}} }{\partial \left(\partial_\nu \hat{\phi}_A(x) \right) } \partial_\mu \hat{\phi}_A(x)
+$$
+
+由于
+
+$$
+\hat{\mathcal{L}}
+=\hat{\mathcal{L}}_0 + \hat{\mathcal{L}}_i
+$$
+
+于是能量-动量张量也可以分为自由部分 $\hat{T}_{\mu\nu}^{(0)} $ 与相互作用部分 $\hat{T}_{\mu\nu}^{(i)} $：
+
+$$
+\hat{T}_{\mu\nu}^{(0)}
+=\hat{\mathcal{L}}_0 \delta_{\mu\nu} - \frac{\partial \hat{\mathcal{L}}_0 }{\partial \left(\partial_\nu \hat{\phi}_A(x) \right) } \partial_\mu \hat{\phi}_A(x)
+$$
+
+$$
+\hat{T}_{\mu\nu}^{(i)}
+=\hat{\mathcal{L}}_i \delta_{\mu\nu} - \frac{\partial \hat{\mathcal{L}}_i }{\partial \left(\partial_\nu \hat{\phi}_A(x) \right) } \partial_\mu \hat{\phi}_A(x)
+$$
+
+$$
+\hat{T}_{\mu\nu}
+=\hat{T}^{(0)}_{\mu\nu} + \hat{T}^{(i)}_{\mu\nu}
+$$
+
+能量密度也同样可分为自由部分 $\hat{\mathcal{H}}_0 $ 和相互作用部分 $\hat{\mathcal{H}}_i $：
+
+$$
+\hat{\mathcal{H}}_0
+=-\hat{T}^{(0)}_{44}
+$$
+
+$$
+\hat{\mathcal{H}}_i
+=-\hat{T}^{(i)}_{44}
+=-\hat{\mathcal{L}}_i + \frac{\partial \hat{\mathcal{L}}_i }{\partial \partial_t \hat{\phi}_A(x) } \partial_t \hat{\phi}_A(x)
+$$
+
+$$
+\hat{\mathcal{H}}
+=-\hat{T}_{44}
+=-\hat{T}^{(0)}_{44} -\hat{T}^{(i)}_{44}
+=\hat{\mathcal{H}}_0 + \hat{\mathcal{H}}_i
+$$
+
+哈密顿算符 $\hat{H} $ 也可分为自由场哈密顿算符 $\hat{H}_0 $ 和场相互作用哈密顿算符 $\hat{H}_i $：
+
+$$
+\hat{H}_0
+=\int \hat{\mathcal{H}}_0 \mathrm{d}V
+$$
+
+$$
+\hat{H}_i
+=\int \hat{\mathcal{H}}_i \mathrm{d}V
+$$
+
+$$
+\hat{H}
+=\hat{H}_0 + \hat{H}_i
+=\int \hat{\mathcal{H}}_0 \mathrm{d}V + \int \hat{\mathcal{H}}_i \mathrm{d}V
+$$
+
+#### 电子旋量场与电磁场相互作用哈密顿算符
+
+总拉格朗日函数：
+
+$$
+\begin{aligned}
+\mathcal{L}
+&=-\frac{1 }{4 } F_{\mu\nu} F_{\mu\nu} \\
+&- \frac{1 }{2 } \left[\hat{\bar{\psi}}(x) \gamma_\mu \partial_\mu \hat{\psi}(x) - \partial_\mu \hat{\bar{\psi}}(x) \gamma_\mu \hat{\psi}(x) \right] - m \hat{\bar{\psi}}(x) \hat{\psi}(x) \\
+&+ \mathrm{i} e \hat{\bar{\psi}}(x) \gamma_\mu \hat{\psi}(x) \hat{A}_\mu(x)
+\end{aligned}
+$$
+
+相互作用拉格朗日函数：
+
+$$
+\hat{\mathcal{L}}_i
+=\mathrm{i} e \hat{\bar{\psi}}(x) \gamma_\mu \hat{\psi}(x) \hat{A}_\mu(x)
+$$
+
+相互作用能量-动量张量：
+
+$$
+\begin{aligned}
+\hat{T}_{\mu\nu}^{(i)}
+&=\hat{\mathcal{L}}_i \delta_{\mu\nu} - \frac{\partial \hat{\mathcal{L}}_i }{\partial \left(\partial_\nu \hat{\phi}_A(x) \right) } \partial_\mu \hat{\phi}_A(x) \\
+&=\delta_{\mu\nu} \mathrm{i} e \hat{\bar{\psi}}(x) \gamma_\alpha \hat{\psi}(x) \hat{A}_\alpha(x)
+\end{aligned}
+$$
+
+电子旋量场与电磁场相互作用哈密顿算符：
+
+$$
+\begin{aligned}
+\hat{H}_i
+&=-\int \hat{T}^{(i)}_{44} \mathrm{d}V \\
+&=-\mathrm{i} e \int \hat{\bar{\psi}}(x) \gamma_\mu \hat{\psi}(x) \hat{A}_\mu(x) \mathrm{d}V
+\end{aligned}
+$$
+
+#### 核子旋量场与介子场相互作用哈密顿算符
+
+总拉格朗日函数：
+
+$$
+\begin{aligned}
+\hat{\mathcal{L}}
+&=-\frac{1 }{2 } \left[\partial_\mu \hat{\tilde{\phi}}(x) \partial_\mu \hat{\tilde{\phi}}(x) + m_\pi^2 \hat{\tilde{\phi}}^2(x) \right] \\
+&- \frac{1 }{2 } \left[\hat{\bar{\psi}}(x) \gamma_\mu \partial_\mu \hat{\psi}(x) - \partial_\mu \hat{\bar{\psi}}(x) \gamma_\mu \hat{\psi}(x) \right] - M \hat{\bar{\psi}}(x) \hat{\psi}(x) \\
+&+ \mathrm{i} G \hat{\bar{\psi}}(x) \gamma_5 \hat{\psi}(x) \hat{\tilde{\phi}}(x)
+\end{aligned}
+$$
+
+相互作用拉格朗日函数：
+
+$$
+\hat{\mathcal{L}}_i
+=\mathrm{i} G \hat{\bar{\psi}}(x) \gamma_5 \hat{\psi}(x) \hat{\tilde{\phi}}(x)
+$$
+
+相互作用能量-动量张量：
+
+$$
+\begin{aligned}
+\hat{T}_{\mu\nu}^{(i)}
+&=\hat{\mathcal{L}}_i \delta_{\mu\nu} - \frac{\partial \hat{\mathcal{L}}_i }{\partial \left(\partial_\nu \hat{\phi}_A(x) \right) } \partial_\mu \hat{\phi}_A(x) \\
+&=\delta_{\mu\nu} \mathrm{i} G \hat{\bar{\psi}}(x) \gamma_5 \hat{\psi}(x) \hat{\tilde{\phi}}(x)
+\end{aligned}
+$$
+
+核子旋量场与介子场相互作用哈密顿算符
+
+$$
+\begin{aligned}
+\hat{H}_i
+&=-\int \hat{T}^{(i)}_{44} \mathrm{d}V \\
+&=-\mathrm{i} G \int \hat{\bar{\psi}}(x) \gamma_5 \hat{\psi}(x) \hat{\tilde{\phi}}(x) \mathrm{d}V \\
+\end{aligned}
+$$
+
+## 4.3 相互作用绘景
+
+薛定谔绘景中，场相互作用情况下，状态幅度 $\Psi_S $ 随时间的变化规律：
+
+$$
+\mathrm{i} \frac{\partial }{\partial t } \Psi_S
+=\hat{H}_S \Psi_S
+$$
+
+$$
+\hat{H}_S
+=\hat{H}_{S0} + \hat{H}_{Si}
+$$
+
+其中，$\hat{H}_{S0} $ 为薛定谔绘景中自由场哈密顿算符，$\hat{H}_{Si} $ 为场相互作用哈密顿算符。$\hat{H}_{S0} $ 和 $\hat{H}_{Si} $ 都不随时间改变。
+
+设状态幅度 $\Psi_S(t) $ 经过一个幺正绘景变化算符 $\hat{V}(t) \equiv \mathrm{e}^{\mathrm{i}\hat{H}_{S0} t} $ 的作用变化成新的状态幅度 $\Phi_I(t) $:
+
+$$
+\Phi_I(t)
+=\hat{V}(t) \Psi_S(t)
+$$
+
+或：
+
+$$
+\Psi_S(t)
+=\hat{V}^{-1}(t) \Phi_I(t)
+$$
+
+$$
+\hat{V}^\dag \hat{V} = \hat{V} \hat{V}^\dag = I,\quad
+\hat{V}^{-1} = \hat{V}^\dag
+$$
+
+相互作用绘景中的算符 $\hat{F}_I $ 定义为：
+
+$$
+\hat{F}_I(t)
+\equiv \hat{V}(t) \hat{F}_S \hat{V}^\dag(t)
+=\mathrm{e}^{\mathrm{i} H_{S0} t} \hat{F}_S \mathrm{e}^{-\mathrm{i} H_{S0} t}
+$$
+
+$\Phi_I(t) $ 随时间变化规律为：
+
+$$
+\begin{aligned}
+\mathrm{i}\frac{\partial \Phi_I(t) }{\partial t } 
+&=\mathrm{i} \frac{\partial \hat{V}(t) }{\partial t } \Psi_S(t) + \mathrm{i} \hat{V}(t) \frac{\partial \Psi_S(t) }{\partial t } \\
+&=- \hat{V}(t) \hat{H}_{S0} \Psi_S(t) + \hat{V}(t) \hat{H}_{S0} \Psi_S(t) + \hat{V}(t) \hat{H}_{Si} \Psi_S(t) \\
+&=\hat{V}(t) \hat{H}_{Si} \Psi_S(t) \\
+&=\hat{V}(t) \hat{H}_{Si} \hat{V}^\dag(t) \hat{V}(t) \Psi_S(t) \\
+&\equiv \hat{H}_{Ii}(t) \Phi_I(t)
+\end{aligned}
+$$
+
+$$
+\hat{H}_{Ii}(t)
+=\hat{V}(t) \hat{H}_{Si} \hat{V}^{-1}(t)
+$$
+
+$$
+\mathrm{i} \frac{\partial  }{\partial t } \Phi_I(t)
+=\hat{H}_{Ii}(t) \Phi_I(t)
+$$
+
+$\hat{F}_I(t) $ 随时间的变化规律为：
+
+$$
+\hat{F}_I(t)
+=\hat{V}(t) \hat{F}_S \hat{V}^{-1}(t)
+$$
+
+$$
+\frac{\partial \hat{F}_I }{\partial t } 
+=\mathrm{i}\left[\hat{H}_{I0}(t) , \hat{F}_I(t) \right]
+$$
+
+$$
+\hat{H}_{I0}(t)
+=\hat{V}(t) \hat{H}_{S0} \hat{V}^\dag(t)
+$$
+
+### 积分方程
+
+$$
+\Phi_I(t)
+=\Phi_I(t_0) - \mathrm{i} \int_{t_0}^{t} \hat{H}_{Ii}(t_1) \Phi_I(t_1) \mathrm{d}t_1
+$$
+
+## 4.4 $\hat{U}(t,t_0) $ 矩阵及其性质
+
+$\hat{U}(t,t_0) $ 把相互作用绘景中 $t_0 $ 时刻的状态幅度 $\Phi_I(t_0) $ 变为 $t $ 时刻的状态幅度 $\Phi_I(t) $：
+
+$$
+\Phi_I(t)
+=\hat{U}(t,t_0) \Phi_I(t_0)
+$$
+
+把上式代入状态幅度满足的积分方程
+
+$$
+\Phi_I(t)
+=\Phi_I(t_0) - \mathrm{i} \int_{t_0}^{t} \hat{H}_{Ii}(t_1) \Phi_I(t_1) \mathrm{d}t_1
+$$
+
+可得：
+
+$$
+\hat{U}(t,t_0) \Phi_I(t_0)
+=\Phi_I(t_0) - \mathrm{i} \int_{t_0}^{t} \hat{H}_{Ii}(t_1) \hat{U}(t_1,t_0) \Phi_I(t_0) \mathrm{d}t_1
+$$
+
+即：
+
+$$
+\hat{U}(t,t_0) \Phi_I(t_0)
+=\left(I - \mathrm{i} \int_{t_0}^{t} \hat{H}_{Ii}(t_1) \hat{U}(t_1,t_0) \mathrm{d}t_1 \right) \Phi_I(t_0)
+$$
+
+对比得 $\hat{U}(t,t_0) $ 满足的积分方程：
+
+$$
+\hat{U}(t,t_0)
+=I - \mathrm{i} \int_{t_0}^{t} \hat{H}_{Ii}(t_1) \hat{U}(t_1,t_0) \mathrm{d}t_1
+$$
+
+把
+
+$$
+\Phi_I(t)
+=\hat{U}(t,t_0) \Phi_I(t_0)
+$$
+
+代入
+
+$$
+\mathrm{i} \frac{\partial \Phi_I(t) }{\partial t } 
+=\hat{H}_{Ii}(t) \Phi_I(t)
+$$
+
+得到 $\hat{U}(t,t_0) $ 满足的微分方程：
+
+$$
+\mathrm{i} \frac{\partial \hat{U}(t,t_0) }{\partial t } 
+=\hat{H}_{Ii}(t) \hat{U}(t,t_0)
+$$
+
+#### $\hat{U}(t,t_0) $ 的性质
+
+$$
+\hat{U}(t,t) = \hat{U}(t_0,t_0) = I
+$$
+
+$$
+\hat{U}^{-1}(t_1,t_2)
+=\hat{U}(t_2,t_1)
+$$
+
+$$
+\hat{U}^\dag(t_1,t_2) \hat{U}(t_1,t_2)
+=\hat{U}(t_1,t_2) \hat{U}^\dag(t_1,t_2)
+=I
+$$
+
+### 级数解
+
+$$
+\begin{aligned}
+\hat{U}(t,t_0)
+&=I \\
+&+\frac{\left(-\mathrm{i} \right) }{1! } \int_{t_0}^{t} \mathrm{d}t_1 P\left[\hat{H}_{Ii}(t_1) \right] \\
+&+\frac{\left(-\mathrm{i} \right)^2 }{2! } \int_{t_0}^{t} \mathrm{d}t_1 \int_{t_0}^{t} \mathrm{d}t_2 P\left[\hat{H}_{Ii}(t_1) \hat{H}_{Ii}(t_2) \right] \\
+&+\cdots \\
+\end{aligned}
+$$
+
+或简写为：
+
+$$
+\hat{U}(t,t_0)
+=P\left[\mathrm{e}^{-\mathrm{i} \int_{t_0}^{t} \mathrm{d}t' \hat{H}_{Ii}(t')} \right]
+$$
+
+## 4.5 $S $ 矩阵
+
+假设相互作用发生在 $t=0 $ 附近的一段时间。用 $\Phi_i $ 表示初态状态幅度，用 $\Phi_f $ 表示终态状态幅度，则：
+
+$$
+\Phi_i
+=\Phi_I(-\infty)
+$$
+
+$$
+\Phi_f
+=\Phi_I(+\infty)
+$$
+
+另一方面，
+
+$$
+\Phi_I(t_2)
+=\hat{U}(t_2,t_1) \Phi_I(t_1)
+$$
+
+所以：
+
+$$
+\Phi_f 
+=\hat{U}(+\infty,-\infty) \Phi_i
+$$
+
+$S $ 矩阵就定义为使基本粒子系统的状态幅度由初态到终态的演化算符，即：
+
+$$
+\hat{S}
+\equiv \hat{U}(+\infty,-\infty)
+$$
+
+$$
+\Phi_f
+=\hat{S} \Phi_i
+$$
+
+由于 $\hat{U} $ 是幺正的，因此 $\hat{S} $ 也是幺正的：
+
+$$
+\hat{S}^\dag \hat{S} = \hat{S} \hat{S}^\dag = I
+$$
+
+把 $\hat{U}(t,t_0) $ 的级数表达式
+
+$$
+\begin{aligned}
+\hat{U}(t,t_0)
+&=I \\
+&+\frac{\left(-\mathrm{i} \right) }{1! } \int_{t_0}^{t} \mathrm{d}t_1 P\left[\hat{H}_{Ii}(t_1) \right] \\
+&+\frac{\left(-\mathrm{i} \right)^2 }{2! } \int_{t_0}^{t} \mathrm{d}t_1 \int_{t_0}^{t} \mathrm{d}t_2 P\left[\hat{H}_{Ii}(t_1) \hat{H}_{Ii}(t_2) \right] \\
+&+\cdots \\
+\end{aligned}
+$$
+
+中的 $t_0 $ 替换为 $-\infty $，$t $ 替换为 $+\infty $，则得到 $S $ 矩阵的级数表达式：
+
+$$
+\begin{aligned}
+\hat{S}
+&=I \\
+&+\frac{\left(-\mathrm{i} \right) }{1! } \int_{-\infty}^{+\infty} \mathrm{d}t_1 P\left[\hat{H}_{Ii}(t_1) \right] \\
+&+\frac{\left(-\mathrm{i} \right)^2 }{2! } \int_{-\infty}^{+\infty} \mathrm{d}t_1 \int_{-\infty}^{+\infty} \mathrm{d}t_2 P\left[\hat{H}_{Ii}(t_1) \hat{H}_{Ii}(t_2) \right] \\
+&+\cdots \\
+\end{aligned}
+$$
+
+或简写为：
+
+$$
+\hat{S}
+=P\left[\mathrm{e}^{-\mathrm{i} \int_{t_0}^{t} \mathrm{d}t' \hat{H}_{Ii}(t')} \right]
+$$
+
+为了计算方便，定义各级 $S $ 矩阵：
+
+$$
+\hat{S}
+=\sum_{n=0}^{\infty} \hat{S}_n
+$$
+
+$$
+\hat{S}_0
+\equiv I
+$$
+
+$$
+\hat{S}_n
+\equiv \frac{(-\mathrm{i})^n }{n! } \int_{-\infty}^{+\infty} \mathrm{d}t_1 \mathrm{d}t_2 \cdots \mathrm{d}t_n P\left[\hat{H}_{Ii}(t_1) \hat{H}_{Ii}(t_2) \cdots \hat{H}_{Ii}(t_n) \right]
+$$
+
+$\hat{S}_n $ 称为第 $n $ 级 $\hat{S} $ 矩阵。
+
+各阶 $S $ 矩阵都是 Lorentz 协变的，也都满足规范变换的协变性。
+
+### 量子电动力学中的 $S $ 矩阵
+
+电子或正电子与光子相互作用哈密顿算符：
+
+$$
+\hat{H}_{Ii}(t)
+=-\mathrm{i} e \int \hat{\bar{\psi}}(x) \gamma_\mu \hat{\psi}(x) \hat{A}_\mu(x) \mathrm{d}V
+$$
+
+设
+
+$$
+\hat{A}(x)
+\equiv \gamma_\mu \hat{A}_\mu(x)
+$$
+
+则可证明：
+
+$$
+\hat{H}_{Ii}(t)
+=-\mathrm{i} e \int \hat{\bar{\psi}}(x) \hat{A}(x) \hat{\psi}(x)  \mathrm{d}V
+$$
+
+量子电动力学中的 $S $ 矩阵：
+
+$$
+\begin{aligned}
+\hat{S}_n
+&=\frac{\left(-\mathrm{i} \right)^n }{n! } \int_{-\infty}^{+\infty} \mathrm{d}t_1 \cdots \int_{-\infty}^{+\infty} \mathrm{d}t_n P\left[\hat{H}_{Ii}(t_1) \cdots \hat{H}_{Ii}(t_n) \right] \\
+&=\frac{\left(-e \right)^n }{n! } \int_{-\infty}^{+\infty} \mathrm{d}x^1 \cdots \int_{-\infty}^{+\infty} \mathrm{d}x^n P\left[\hat{\bar{\psi}}\left(x^1\right) \hat{A}\left(x^1\right) \hat{\psi}\left(x^1\right) \cdots \hat{\bar{\psi}}\left(x^n\right) \hat{A}\left(x^n\right) \hat{\psi}\left(x^n\right) \right]
+\end{aligned}
+$$
+
+由于积分中 $P $ 乘积中同一个时间坐标的费米场函数是成对的，因此积分中 $P $ 乘积与 $T $ 乘积是等价的。
+
+$$
+\begin{aligned}
+\hat{S}_n
+=\frac{\left(-e \right)^n }{n! } \int_{-\infty}^{+\infty} \mathrm{d}x^1 \cdots \int_{-\infty}^{+\infty} \mathrm{d}x^n T\left[\hat{\bar{\psi}}\left(x^1\right) \hat{A}\left(x^1\right) \hat{\psi}\left(x^1\right) \cdots \hat{\bar{\psi}}\left(x^n\right) \hat{A}\left(x^n\right) \hat{\psi}\left(x^n\right) \right]
+\end{aligned}
+$$
+
+## 4.6 $T $ 乘积展开的 Wick 定理
+
+量子电动力学中 $\hat{S} $ 矩阵的具体形式为：
+
+$$
+\hat{S}
+=\sum_{n=0}^{\infty} \hat{S}_n,\quad \hat{S}_0 = I
+$$
+
+$$
+\begin{aligned}
+\hat{S}_n
+=\frac{\left(-e \right)^n }{n! } \int_{-\infty}^{+\infty} \mathrm{d}x^1 \cdots \int_{-\infty}^{+\infty} \mathrm{d}x^n T\left[\hat{\bar{\psi}}\left(x^1\right) \hat{A}\left(x^1\right) \hat{\psi}\left(x^1\right) \cdots \hat{\bar{\psi}}\left(x^n\right) \hat{A}\left(x^n\right) \hat{\psi}\left(x^n\right) \right]
+\end{aligned}
+$$
+
+要计算 $n $ 阶 $S $ 矩阵 $\hat{S}_n $，则必须要算出积分中的 $T $ 乘积。
+
+### $T $ 乘积展开的 Wick 定理
+
+$n $ 个场算符的 $T $ 乘积，等于这 $n $ 个场算符的 $N $ 乘积与包括了所有可能的各种耦合的 $N $ 乘积之和。
+
+$$
+\begin{aligned}
+T\left[\hat{U}_1 \hat{U}_2 \cdots \hat{U}_n \right]
+&=N\left[\hat{U}_1 \hat{U}_2 \cdots \hat{U}_n \right] \\
+&+\sum_{i\ne j} N\left[\hat{U}_1 \cdots \dot{\hat{U}}_i \cdots \dot{\hat{U}}_j \cdots \hat{U}_n \right] \\
+&+\sum_{i,j,l,m\ne} N\left[\hat{U}_1 \cdots \dot{\hat{U}}_i \cdots \dot{\hat{U}}_j \cdots \ddot{\hat{U}}_l \cdots \ddot{\hat{U}}_m \cdots \hat{U}_n \right] \\
+&+\cdots
+\end{aligned}
+$$
+
+其中，$\hat{U} $ 代表任何一种场函数的产生或消灭算符。
+
+$$
+N\left[\hat{U}_1 \cdots \dot{\hat{U}}_i \cdots \dot{\hat{U}}_j \cdots \hat{U}_n \right]
+\equiv \left(-1 \right)^{\varepsilon_{ij}} \dot{\hat{U}}_i \dot{\hat{U}}_j N\left[\hat{U}_1 \cdots \hat{U}_{i-1} \hat{U}_{i+1} \cdots \hat{U}_{j-1} \hat{U}_{j+1} \cdots \hat{U}_n \right]
+$$
+
+$\varepsilon_{ij} $ 表示将算符 $\hat{U}_i,\hat{U}_j $ 依次置换到所有算符最左边时，所需的费米置换次数。
+
+### QED中的 $\hat{S} $ 矩阵和耦合式
+
+$$
+\dot{\hat{A}}_\mu\left(x^1 \right) \dot{\hat{A}}_\nu\left(x^2 \right)
+=\frac{1 }{2 } D^F\left(x^1-x^2 \right) \delta_{\mu\nu}
+$$
+
+$$
+\dot{\hat{\psi}}_\alpha\left(x^1 \right) \dot{\hat{\bar{\psi}}}_\beta\left(x^2 \right)
+=-\frac{1 }{2 } S^F_{\alpha\beta} \left(x^1-x^2 \right)
+$$
+
+$$
+\dot{\hat{\bar{\psi}}}_\alpha\left(x^1 \right) \dot{\hat{\psi}}_\beta\left(x^2 \right)
+=\frac{1 }{2 } S^F_{\beta\alpha} \left(x^2-x^1 \right)
+$$
+
+$$
+\dot{\hat{\psi}}_\alpha\left(x^1 \right) \dot{\hat{\psi}}_\beta\left(x^2 \right)
+=\dot{\hat{\bar{\psi}}}_\alpha\left(x^1 \right) \dot{\hat{\bar{\psi}}}_\beta\left(x^2 \right)
+=0
+$$
+
+$$
+\dot{\hat{\psi}}_\alpha\left(x^1 \right) \dot{A}_\mu\left(x^2 \right)
+=\dot{\hat{\bar{\psi}}}_\alpha.\left(x^1 \right) \dot{\hat{A}}_\mu\left(x^2 \right)
+=0
+$$
+
+在 QED 中 $\hat{S} $ 矩阵耦合式只需计算以下三种非零耦合情况：
+
+$$
+\dot{\hat{A}}_\mu\left(x^1 \right) \dot{\hat{A}}_\nu\left(x^2 \right)
+=\frac{1 }{2 } D^F\left(x^1-x^2 \right) \delta_{\mu\nu}
+$$
+
+$$
+\dot{\hat{\psi}}_\alpha\left(x^1 \right) \dot{\hat{\bar{\psi}}}_\beta\left(x^2 \right)
+=-\frac{1 }{2 } S^F_{\alpha\beta} \left(x^1-x^2 \right)
+$$
+
+$$
+\dot{\hat{\bar{\psi}}}_\alpha\left(x^1 \right) \dot{\hat{\psi}}_\beta\left(x^2 \right)
+=\frac{1 }{2 } S^F_{\beta\alpha} \left(x^2-x^1 \right)
+$$
+
+另外，在计算 $\hat{S} $ 矩阵时，没必要计算
+
+$$
+\dot{\hat{\bar{\psi}}}_\alpha(x) \dot{\hat{\psi}}_\beta(x)
+=\infty
+$$
+
+这样同一时空点的旋量场的耦合式。
+
+也就是说，$\hat{S} $ 矩阵中四维时空坐标相同的 $\hat{\bar{\psi}}_\alpha(x) $ 和 $\hat{\psi}_\beta(x) $ 可以不考虑。
+
+### QED中 $\hat{S} $ 矩阵的 Wick 展开式
+
+$$
+\dot{\hat{A}}_\mu\left(x^1 \right) \dot{\hat{A}}_\nu\left(x^2 \right)
+=\frac{1 }{2 } D^F\left(x^1-x^2 \right) \delta_{\mu\nu}
+$$
+
+$$
+\dot{\hat{\psi}}_\alpha\left(x^1 \right) \dot{\hat{\bar{\psi}}}_\beta\left(x^2 \right)
+=-\frac{1 }{2 } S^F_{\alpha\beta} \left(x^1-x^2 \right)
+$$
+
+$$
+\dot{\hat{\bar{\psi}}}_\alpha\left(x^1 \right) \dot{\hat{\psi}}_\beta\left(x^2 \right)
+=\frac{1 }{2 } S^F_{\beta\alpha} \left(x^2-x^1 \right)
+$$
+
+除上面之外的耦合式全为零。
+
+$$
+\hat{S}_n
+=\frac{\left(-e \right)^n }{n! } \int_{-\infty}^{+\infty} \mathrm{d}x^1 \cdots \int_{-\infty}^{+\infty} \mathrm{d}x^n T\left[\hat{\bar{\psi}}\left(x^1 \right) \hat{A}\left(x^1 \right) \hat{\psi}\left(x^1 \right) \cdots \hat{\bar{\psi}}\left(x^n \right) \hat{A}\left(x^n \right) \hat{\psi}\left(x^n \right) \right]
+$$
+
+#### 计算 $\hat{S}_0 $
+
+$$
+\hat{S}_0
+=I
+$$
+
+#### 计算 $\hat{S}_1 $
+
+$$
+\begin{aligned}
+T\left[\hat{\bar{\psi}}\left(x^1 \right) \hat{A}\left(x^1 \right) \hat{\psi}\left(x^1 \right) \right]
+&=N\left[\hat{\bar{\psi}}\left(x^1 \right) \hat{A}\left(x^1 \right) \hat{\psi}\left(x^1 \right) \right] \\
+&+\left(-1 \right)^{\varepsilon_{12}} \dot{\hat{\bar{\psi}}}\left(x^1 \right)\dot{\hat{A}}\left(x^1 \right) N\left[\hat{\psi}\left(x^1 \right) \right] \\
+&+\left(-1 \right)^{\varepsilon_{13}} \dot{\hat{\bar{\psi}}}\left(x^1 \right)\dot{\hat{\psi}}\left(x^1 \right) N\left[\hat{A}\left(x^1 \right) \right] \\
+&+\left(-1 \right)^{\varepsilon_{13}} \dot{\hat{A}}\left(x^1 \right)\dot{\hat{\psi}}\left(x^1 \right) N\left[\hat{\bar{\psi}}\left(x^1 \right) \right] \\
+&=N\left[\hat{\bar{\psi}}\left(x^1 \right) \hat{A}\left(x^1 \right) \hat{\psi}\left(x^1 \right) \right]
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\hat{S}_1
+&=-e\int_{-\infty}^{+\infty} \mathrm{d}x^1 T\left[\hat{\bar{\psi}}\left(x^1 \right) \hat{A}\left(x^1 \right) \hat{\psi}\left(x^1 \right) \right] \\
+&=-e\int_{-\infty}^{+\infty} \mathrm{d}x^1 N\left[\hat{\bar{\psi}}\left(x^1 \right) \hat{A}\left(x^1 \right) \hat{\psi}\left(x^1 \right) \right]
+\end{aligned}
+$$
+
+#### 计算 $\hat{S}_2 $
+
+$$
+\hat{S}_2
+=\frac{e^2 }{2 } \int_{-\infty}^{+\infty} \mathrm{d}x^1 \int_{-\infty}^{+\infty} \mathrm{d}x^n T\left[\hat{\bar{\psi}}\left(x^1 \right) \hat{A}\left(x^1 \right) \hat{\psi}\left(x^1 \right) \hat{\bar{\psi}}\left(x^2 \right) \hat{A}\left(x^2 \right) \hat{\psi}\left(x^2 \right) \right]
+$$
+
+> QED Wick 定理不考虑同一时空点的耦合 and 旋量旋量耦合、共轭旋量共轭旋量耦合为零。下面用 Wick 定理计算 $T $ 乘积时就不写耦合为零的项了。
+
+$$
+\begin{aligned}
+&T\left[\hat{\bar{\psi}}\left(x^1 \right) \hat{A}\left(x^1 \right) \hat{\psi}\left(x^1 \right) \hat{\bar{\psi}}\left(x^2 \right) \hat{A}\left(x^2 \right) \hat{\psi}\left(x^2 \right) \right] \\
+=&T\left[\hat{\bar{\psi}}_\alpha\left(x^1 \right) \left(\gamma_\mu \right)_{\alpha\beta} \hat{\psi}_\beta\left(x^1 \right) \hat{A}_\mu\left(x_1 \right) \hat{\bar{\psi}}_\rho\left(x^2 \right) \left(\gamma_\nu \right)_{\rho\lambda} \hat{\psi}_\lambda\left(x^2 \right) \hat{A}_\nu\left(x_1 \right) \right] \\
+=&N\left[\hat{\bar{\psi}}_\alpha\left(x^1 \right) \left(\gamma_\mu \right)_{\alpha\beta} \hat{\psi}_\beta\left(x^1 \right) \hat{A}_\mu\left(x_1 \right) \hat{\bar{\psi}}_\rho\left(x^2 \right) \left(\gamma_\nu \right)_{\rho\lambda} \hat{\psi}_\lambda\left(x^2 \right) \hat{A}_\nu\left(x_1 \right) \right] \\
++&
+\end{aligned}
+$$
+
+## 4.7 $S $ 矩阵的 Feynman 图解
+
+### Feynman 图形规则
+
+用实线代表电子或正电子的运动
+
+用虚线代表光子的运动
+
+$\hat{\psi}(x_1) $ 代表放出正电子或吸收负电子，用入向电子外线表示
+
+$\hat{\bar{\psi}}(x_1) $ 代表放出负电子或吸收正电子，用出向电子外线表示
+
+$A_\mu(x_1) $ 代表光子的放出或吸收，用光子外线表示
+
+耦合式 $\dot{\hat{\psi}}_\alpha(x_1) \dot{\hat{\bar{\psi}}}_\beta(x_2) $ 代表中间态的正负电子，用电子内线表示
+
+耦合式 $\dot{\hat{A}}_\alpha(x_1) \dot{\hat{A}}_\beta(x_2) $ 代表中间态的光子或虚光子，用光子内线表示
+
+$\gamma_i $ 矩阵代表正负电子和光子有一次作用，用顶点图形表示
+
+### QED中的 Feynman 图
+
+一般在 Wick 定理展开式中，有两种或两种以上展开项对应同一种 Feynman 图解。
+
+用 $r $ 代表同一 Feynman 图解所对应的不同形式的 $\hat{S}_n $ 矩阵的展开式的数目。$r $ 称为 Feynman 图解的等值数。
+
+#### $\hat{S}_1 $ 的 Feynman 图解
+
+$$
+\hat{S}_1
+=
+$$
+
+#### $\hat{S}_2 $ 的Feynman 图解
+
+$\hat{S}_2 $
+
+### 
+
+场算符 相应粒子的外线
+
+场算符之间的收缩 传播子 粒子的内线
+
+相互作用哈密顿素服 顶角
+
+## 4.8 Furry 关于电子封闭内线的定理
+
+奇数个电子封闭内线的 Feynman 图对 $\hat{S} $ 矩阵没有任何贡献。
+ 
+## 4.9 $\hat{S} $ 矩阵的矩阵元
+
+为了研究基本粒子反应，采用相互作用绘景的粒子数表象。
+
+QED 中，$\alpha $ 个动量为 $\vec{p}_1,\cdots,\vec{p}_\alpha $，自旋为 $i_1,\cdots,i_\alpha $ 的正负电子和 $r $ 个动量为 $\vec{k}_1,\cdots\vec{k}_r $，极化为 $\mu_1,\cdots,\mu_r $ 的光子系统，在相互作用绘景粒子数表象中的状态幅度可记为：
+
+$$
+\Phi_{\vec{p}_1 i_1,\cdots }
+=\hat{a}_{\vec{p}_1 i_1}^{(+)} \cdots \hat{b}_{\vec{p}_\alpha i_\alpha}^{(+)} \hat{C}_{\vec{k}_1}^{\mu_1 (+)} \cdots \hat{C}_{\vec{k}_r}^{\mu_r (+)} \Phi_0
+$$
+
+### 产生、消灭粒子算符对状态幅度的作用
+
+$$
+\hat{a}_{\vec{p}'i'}^{(+)} \Phi_0
+=\Phi_{\vec{p}'i'}
+$$
+
+利用
+
+$$
+\left[\hat{a}_{\vec{p}i}^{(-)} , \hat{a}_{\vec{p}'i'}^{(+)} \right]
+=\delta_{\vec{p}\vec{p}'} \delta_{i i'},\quad
+\hat{a}_{\vec{p} i}^{(-)} \Phi_0
+=0
+$$
+
+有
+
+$$
+\hat{a}_{\vec{p}i}^{(-)} \Phi_{\vec{p}'i'}
+=\hat{a}_{\vec{p}i}^{(-)} \hat{a}_{\vec{p}'i'}^{(+)} \Phi_0 
+=\left(\left[\hat{a}_{\vec{p}i}^{(-)} , \hat{a}_{\vec{p}'i'}^{(+)} \right] + \hat{a}_{\vec{p}'i'}^{(+)} \hat{a}_{\vec{p}i}^{(-)} \right) \Phi_0
+=\delta_{\vec{p}\vec{p}'}\delta_{i i'} \Phi_0
+$$
+
+同理
+
+$$
+\hat{b}_{\vec{p} i}^{(-)} \Phi_{\vec{p}' i'}
+=\delta_{\vec{p}\vec{p}'}\delta_{i i'} \Phi_0
+$$
+
+$$
+\hat{C}_{\vec{k}}^{\mu(-)} \Phi_{\vec{k}' \mu'}
+=\delta_{\vec{k} \vec{k}'} \delta_{\mu \mu'} \Phi_0
+$$
+
+取厄米共轭有
+
+$$
+\Phi_{\vec{p}' i'}^\dag \hat{a}_{\vec{p} i}^{(+)} 
+=\delta_{\vec{p}\vec{p}'}\delta_{i i'} \Phi_0^\dag
+$$
+
+$$
+
+$$
+
+$$
+
+$$
+
+
+可以推广到 $\alpha $ 个正负电子和 $r $ 个光子系统的情况：
+
+取厄米共轭得：
+
+
+
+### 场算符 $N $ 乘积对本征态矢量的作用
+
+要研究 $\hat{S} $ 在粒子数表象中的矩阵元，就必须讨论场算符的 $N $ 乘积对本征态矢量的作用。
+
+可证明
+
+$$
+\hat{A}_\mu^{(-)}(x) \Phi_{\vec{k} \nu}
+=\frac{1 }{\sqrt{V} } \frac{1 }{\sqrt{2\varepsilon_{\vec{k}}} } e^{\nu}_{\mu} \mathrm{e}^{\mathrm{i}k x} \Phi_0
+$$
+
+$$
+\hat{\psi}^{(-)}(x) \Phi_{\vec{p} i}
+=\frac{1 }{\sqrt{V} } u_i\left(\vec{p} \right) \mathrm{e}^{\mathrm{i} p x} \Phi_0
+$$
+
+$$
+\hat{\bar{\psi}}^{(-)}(x) \Phi_{\vec{p} i}
+=\frac{1 }{\sqrt{V} } \bar{v}_i\left(\vec{p} \right) \mathrm{e}^{\mathrm{i} p x} \Phi_0
+$$
+
+取厄米共轭得：
+
+$$
+\Phi_{\vec{k} \nu}^\dag \hat{A}_\mu^{(+)}(x)
+=\frac{1 }{\sqrt{V} } \frac{1 }{\sqrt{2\varepsilon_{\vec{k}}} } e^{\nu}_{\mu} \mathrm{e}^{-\mathrm{i}k x} \Phi_0^\dag
+$$
+
+$$
+
+$$
+
+$$
+
+$$
+
+令 $\hat{O} $ 为产生和消灭算符的 $N $ 乘积，$\hat{O} $ 算符由确定初态向确定终态跃迁的矩阵元定义为：
+
+$$
+\Phi_f^\dag \hat{O} \Phi_i
+=\Braket{f|\hat{O}|i}
+$$
+
+只有当 $\hat{O} $ 中消灭粒子算符的数目和种类与初态 $\Phi_i $ 的完全相同，且 $\hat{O} $ 中产生粒子算符的数目和种类与终态 $\Phi_f $ 的完全相同，$\Braket{f|\hat{O}|i} $ 才可能不为零。
+
+
+
+### $S $ 矩阵的矩阵元
+
+$S $ 矩阵可分解为 $\hat{S}_n $ 矩阵之和，而 $\hat{S}_n $ 矩阵又可用 Wick 定理展开成数项场算符的 $N $ 乘积对时空坐标的积分。
+
+数项中，有 $r $ 可以用同一 Feynman 图解表示。
+
+$\hat{S}_n $ 中可以用同一 Feynman 图解表达的项记为 $\hat{M}^n $，则：
+
+$$
+\hat{S}_n
+=\sum_{\hat{M}^n} \hat{M}^n
+$$
+
+其中，求和对不同的 Feynman 图进行。
+
+$$
+\begin{aligned}
+\hat{M}^n
+&=\frac{r\left(-e \right)^n }{n! } \int \mathrm{d}x^1 \cdots \mathrm{d}x^n N\left[F\left(\hat{A}_\mu(x),\hat{\bar{\psi}}(x),\hat{\psi}(x),D^F,S^F \right) \right] \\
+&=\frac{r\left(-e \right)^n }{n! } \int \mathrm{d}x^1 \cdots \mathrm{d}x^n \hat{F}_f\left(\hat{A}_\mu^{(+)}(x),\hat{\bar{\psi}}^{(+)},\hat{\psi}^{(+)} \right) \hat{F}_m\left(D_{\mu\nu}^F,S_{\alpha\beta}^F \right) \hat{F}_i\left(\hat{A}_\mu^{(-)}(x),\hat{\bar{\psi}}^{(-)},\hat{\psi}^{(-)} \right)
+\end{aligned}
+$$
+
+$$
+\hat{M}^n
+=\hat{M}^n \left(\alpha_f',r_f';\alpha_i',r_i' \right)
+$$
+
+假设要研究的基本粒子反应的初态为 $\alpha_i $ 个正负电子和 $r_i $ 个光子，终态为 $\alpha_f $ 个正负电子和 $r_f $ 个光子。
+
+$$
+\Phi_f^\dag \hat{S} \Phi_i
+=\sum_{n} \Phi_f^\dag \hat{S}_n \Phi_i
+=\sum_{n} \Phi_f^\dag \sum_{\hat{M}^n} \hat{M}^n \Phi_i
+$$
+
+$$
+\Phi_i
+=\Phi_{\alpha_i r_i},\quad
+\Phi_f
+=\Phi_{\alpha_f r_f}
+$$
+
+代入得：
+
+设 $\hat{M}(\alpha_f,r_f;\alpha_i,r_i) $ 为所有不同级的 $\hat{S}_n $ 矩阵的展开式中具有初态为 $(\alpha_i,r_i) $ 且终态为 $(\alpha_f,r_f) $ 的各项 $\hat{M}^n(\alpha_f,r_f;\alpha_i,r_i) $ 之和，即：
+
+$$
+\hat{M}(\alpha_f,r_f;\alpha_i,r_i)
+=\sum_{n=l}^{\infty} \hat{M}^n(\alpha_f,r_f;\alpha_i,r_i)
+$$
+
+其中，$l $ 代表可能发生上述基本粒子反应的最低阶 $\hat{S}_n $ 矩阵的阶数。
+
+则：
+
+$$
+\Phi_f^\dag \hat{S} \Phi_i
+=\Phi_{\alpha_f r_f}^\dag \hat{M}(\alpha_f,r_f;\alpha_i,r_i) \Phi_{\alpha_i r_i}
+$$
+
+在计算有固定动量和自旋的初态和终态的 $\hat{S} $ 矩阵矩阵元时，只要作替换：
+
+$$
+
+$$
+
+## 4.11 基本粒子反应几率和截面
+
+
+
+
+
+
