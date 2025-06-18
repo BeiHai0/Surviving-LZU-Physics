@@ -73,9 +73,26 @@ $$
 
 > 在美国费⽶实验室的 Tevatron 对撞机上 $p \bar{p} \to W^+ $ 的散射截面是 $\sigma = 10~\mathrm{nb} $，并且实验亮度为 $\mathcal{L}=10^{31}~\mathrm{cm^{-2}s^{-1}} $，请问，⼀年内 $(\sim 10^7~\mathrm{s}) $ 可以产⽣多少个 $W^+ $ 玻色子？
 
+$$
+N
+=\sigma \mathcal{L} t
+$$
 
+其中 $N $ 是某过程产生的事件数；$\sigma $ 是散射截面；$\mathcal{L} $ 是亮度；$t $ 是持续时间。
 
-> 
+$$
+\mathrm{1~b = 10^{-24}~cm^2},\quad
+\mathrm{1~nb = 10^{-9}~b = 10^{-33}~cm^2}
+$$
+
+$$
+\begin{aligned}
+N
+=\sigma \mathcal{L} t
+=\mathrm{\left(10 \times 10^{-33}~cm^2 \right) \times \left(10^{31}~cm^{-2}s^{-1} \right) \times \left(10^7~s \right) }
+=10^6
+\end{aligned}
+$$
 
 ## 4
 
@@ -84,10 +101,18 @@ $$
 规范变换：
 
 $$
-A_\mu\to A_\mu + \partial_\mu \alpha(x)
+A_\mu\to A_\mu + \partial_\mu \alpha
 $$
 
 光子质量项的变换：
+
+$$
+\begin{aligned}
+m_\gamma^2 A_\mu A^\mu
+\to m_\gamma^2 \left(A_\mu + \partial_\mu \alpha \right) \left(A^\mu + \partial^\mu \alpha \right)
+\ne m_\gamma^2 A_\mu A^\mu
+\end{aligned}
+$$
 
 ## 5
 
@@ -99,7 +124,7 @@ $$
 
 ## 7
 
-> 请说明为什么 $\tau^- $ 轻子衰变道 $\tau^- \to \nu_\tau e^- \bar{\nu}_e $ 的分支比是 $20\%. $（提⽰：画出费曼图分析）
+> 请说明为什么 $\tau^- $ 轻子衰变道 $\tau^- \to \nu_\tau e^- \bar{\nu}_e $ 的分支比是 $20\%. $（提示：画出费曼图分析）
 
 ## 8
 
