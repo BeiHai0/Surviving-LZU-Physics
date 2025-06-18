@@ -103,7 +103,7 @@ $$
 规范变换：
 
 $$
-A_\mu\to A_\mu + \partial_\mu \alpha
+A_\mu\to A_\mu - \partial_\mu \alpha
 $$
 
 光子质量项的变换：
@@ -111,7 +111,7 @@ $$
 $$
 \begin{aligned}
 m_\gamma^2 A_\mu A^\mu
-\to m_\gamma^2 \left(A_\mu + \partial_\mu \alpha \right) \left(A^\mu + \partial^\mu \alpha \right)
+\to m_\gamma^2 \left(A_\mu - \partial_\mu \alpha \right) \left(A^\mu - \partial^\mu \alpha \right)
 \ne m_\gamma^2 A_\mu A^\mu
 \end{aligned}
 $$
