@@ -2022,7 +2022,118 @@ $$
 
 ## 4.11 基本粒子反应几率和截面
 
+### $\left|\Braket{f|S|i} \right|^2 $ 的意义
 
+$\left|\Braket{f|S|i} \right|^2\equiv M_{i-f} $ 表示初终态之间的跃迁几率，即基本粒子衰变或反应几率。不同的 $\bra{f} $ 代表不同的反应道。
+
+### 单位时间、单位空间基本粒子反应跃迁几率
+
+单位时空体积初终态跃迁几率为：
+
+$$
+\mathrm{d}\omega
+=\left(\frac{1 }{2\pi }  \right)^4 \left(\prod_i n_i \right) \left|M\left(p^i , p^f \right) \right|^2 \delta\left(p^f - p^i \right) \prod_f \frac{\mathrm{d}^3\vec{p}_f }{\left(2\pi \right)^3 } 
+$$
+
+其中，$n_i $ 为某一种初态粒子单位体积的粒子数 $n_i\equiv N_i/V $
+
+### 基本粒子的反应截面
+
+基本粒子的反应**微分**截面 $\mathrm{d}\sigma$ 定义为单位时间单位体积基本粒子（群）反应的几率除以初态粒子流的强度。
+
+$$
+\mathrm{d}\sigma
+\equiv \frac{\mathrm{d}\omega }{J } 
+$$
+
+在一半的基本粒子反应中，初态只有两种粒子
+
+$$
+J
+=n_1 n_2 v_{12}
+$$
+
+$v_{12} $ 是两种基本粒子相对运动速度。
+
+$$
+\mathrm{d}\sigma
+=\left(\frac{1 }{2\pi }  \right)^4\frac{1 }{v_{12} }  \left|M\left(p^i , p^f \right) \right|^2 \delta\left(p^f - p^i \right) \prod_f \frac{\mathrm{d}^3\vec{p}_f }{\left(2\pi \right)^3 } 
+$$
+
+两个初态粒子相对运动公式：
+
+$$
+v_{12}
+=\frac{1 }{\varepsilon_1 \varepsilon_2 } \sqrt{\left(p^1_\mu p^2_\mu \right)^2 - m_1^2m_2^2}
+$$
+
+初态有两种基本粒子反应的微分截面公式：
+
+$$
+\mathrm{d}\sigma
+=\left(\frac{1 }{2\pi }  \right)^4 \frac{\varepsilon_1 \varepsilon_2 }{F }  \left|M\left(p^i , p^f \right) \right|^2 \delta\left(p^f - p^i \right) \prod_f \frac{\mathrm{d}^3\vec{p}_f }{\left(2\pi \right)^3 } ,\quad
+F
+\equiv \sqrt{\left(p^1_\mu p^2_\mu \right)^2 - m_1^2m_2^2}
+$$
+
+总反应截面公式：
+
+$$
+\begin{aligned}
+\sigma
+=\int \mathrm{d}\sigma
+=\left(\frac{1 }{2\pi }  \right)^4 \int \cdots \int \frac{\varepsilon_1 \varepsilon_2 }{F }  \left|M\left(p^i , p^f \right) \right|^2 \delta\left(p^f - p^i \right) \prod_f \frac{\mathrm{d}^3\vec{p}_f }{\left(2\pi \right)^3 }
+\end{aligned}
+$$
+
+反应的微分截面 $\mathrm{d}\sigma $ 的两个特点：
+
+- $\mathrm{d}\sigma $ 和 $\sigma $ 的量纲为面积；
+
+- $\mathrm{d}\sigma $ 表达式与初态粒子数密度无关。
+
+- 总截面代表反应几率。
+
+### 不稳定基本粒子衰变的平均寿命
+
+单位时间 $1 $ 个基本粒子衰变几率为：
+
+$$
+\lambda
+=\left(\frac{1 }{2\pi }  \right)^4 \left|M\left(p^i , p^f \right) \right|^2 \delta\left(p^f - p^i \right) \prod_f \frac{\mathrm{d}^3\vec{p}_f }{\left(2\pi \right)^3 }
+$$
+
+$\lambda $ 又称为基本粒子的衰变宽度，其倒数称为衰变寿命 $\tau $，即：
+
+$$
+\tau
+\equiv \frac{1 }{\lambda } 
+$$
+
+### 单位时间基本粒子反应的几率
+
+### 在外场作用下基本粒子反应的截面
+
+$$
+\mathrm{d}\sigma
+=\frac{1 }{2\pi } \frac{1 }{s } V^{E_f} \left|M_{i-f}^{(e)} \left(p^f , p^i \right) \right|^2 \delta\left(\varepsilon^f - \varepsilon^i \right) \prod_f \frac{\mathrm{d}^3\vec{p}_f }{\left(2\pi \right)^3 } 
+$$
+
+## 4.12 光子或电子的自旋状态的求和与平均的公式
+
+一般的基本粒子反应中，初态或终态同类的基本粒子的自旋是平均分布的，称为非极化的。
+
+
+
+## 4.13 非相对论情况下 Rutherford 散射问题
+
+## 4.14 光子和电子的散射（Compton 效应）
+
+## 4.15 正负电子对湮灭为两个光子
+
+## 4.16 高能电子对撞
+
+## 4.17 $\mu $ 粒子衰变
 
 
 
