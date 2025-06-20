@@ -169,7 +169,123 @@ U'_{\mu_1\mu_2\cdots \mu_n}
 }
 $$
 
-# 1 广义洛伦兹变换
+# 1 粒子物理与量纲分析
+
+## 粒子物理
+
+### 61种基本粒子
+
+<p align="center">
+  <img src="fig/1.png" alt="" width="50%">
+</p>
+
+只参与弱相互作用和电磁相互作用，不参与强相互作用的费米子称为**轻子**（Lepton）。
+
+|Lepton name| Symbol | $M$ | $Q$ | $J$ | $L_e$ | $L_\mu$ | $L_\tau$ |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|Electron|$e^-$|$0.511 $|$-1$|$1/2$|$+1 $|$0 $|$0 $|
+|anti-Electron|$e^+ $|$0.511$|$+1 $|$1/2 $|$-1 $|$0 $|$0 $|
+|Electron neutrino|$\nu_e $|$<2\times 10^{-6} $|$0 $|$1/2 $|$+1 $|$0 $|$0 $|
+|anti-Electron neutrino |$\tilde{\nu}_e $|$<2\times 10^{-6} $|$0 $|$1/2 $|$-1 $|$0 $|$0 $|
+|muon|$\mu^- $|$105.66 $|$-1 $|$1/2 $|$0 $|$+1 $|$0 $|
+|anti-muon|$\mu^+ $|$105.66 $|$+1 $|$1/2 $|$0 $|$-1 $|$0 $|
+|muon neutrino|$\nu_\mu $|$<2\times 10^{-6} $|$0 $|$1/2 $|$0 $|$+1 $|$0 $|
+|anti muon neutrino|$\tilde{\nu}_\mu $|$<2\times 10^{-6} $|$0 $|$1/2 $|$0 $|$-1 $|$0 $|
+|tau|$\tau^- $|$1776.86 $|$-1 $|$1/2 $|$0 $|$0 $|$+1 $|
+|anti-tau|$\tau^+ $|$1776.86 $|$+1 $|$1/2 $|$0 $|$0 $|$-1 $|
+|tau neutrino|$\nu_\tau $|$<2\times 10^{-6} $|$0 $|$1/2 $|$0 $|$0 $|$+1 $|
+|anti tau neutrino|$\tilde{\nu}_\tau $|$<2\times 10^{-6} $|$0 $|$1/2 $|$0 $|$0 $|$-1 $|
+
+在轻子参与的各类反应中，各类轻子数守恒。
+
+参与强相互作用的粒子称为**强子**。质子和中子都是强子。
+
+自旋为零和整数的强子称为**介子**（Meson），自旋为半整数的强子称为**重子**（Baryon）。
+
+具有奇异量子数的重子称为**超子**（Hyperon）。
+
+重子由三个夸克组成，介子由夸克和反夸克组成。
+
+每种夸克具有色量子数（红、绿、蓝），每种反夸克具有另外三种色量子数（青、洋红、黄）
+
+| Quark flavour | $M$ (MeV) | $Q$ | $J$ | $B$ | $I_3$ | $C$ | $S$ | $T$ | $B'$ |
+|:-------------:|:---------:|:---:|:---:|:---:|:-----:|:---:|:---:|:---:|:----:|
+| $u$           | $2.2$     | $+\frac{2}{3}$ | $\frac{1}{2}$ | $+\frac{1}{3}$ | $+\frac{1}{2}$ | $0$ | $0$ | $0$ | $0$ |
+| $d$           | $4.7$     | $-\frac{1}{3}$ | $\frac{1}{2}$ | $+\frac{1}{3}$ | $-\frac{1}{2}$ | $0$ | $0$ | $0$ | $0$ |
+| $c$           | $1270$    | $+\frac{2}{3}$ | $\frac{1}{2}$ | $+\frac{1}{3}$ | $0$ | $+1$ | $0$ | $0$ | $0$ |
+| $s$           | $96$      | $-\frac{1}{3}$ | $\frac{1}{2}$ | $+\frac{1}{3}$ | $0$ | $0$ | $-1$ | $0$ | $0$ |
+| $t$           | $172760$  | $+\frac{2}{3}$ | $\frac{1}{2}$ | $+\frac{1}{3}$ | $0$ | $0$ | $0$ | $+1$ | $0$ |
+| $b$           | $4180$    | $-\frac{1}{3}$ | $\frac{1}{2}$ | $+\frac{1}{3}$ | $0$ | $0$ | $0$ | $0$ | $-1$ |
+
+| Quark flavour | $M$ (MeV) | $Q$ | $J$ | $B$ | $I_3$ | $C$ | $S$ | $T$ | $B'$ |
+|:-------------:|:---------:|:---:|:---:|:---:|:-----:|:---:|:---:|:---:|:----:|
+| $\bar{u}$     | $2.2$     | $-\frac{2}{3}$ | $\frac{1}{2}$ | $-\frac{1}{3}$ | $-\frac{1}{2}$ | $0$ | $0$ | $0$ | $0$ |
+| $\bar{d}$     | $4.7$     | $+\frac{1}{3}$ | $\frac{1}{2}$ | $-\frac{1}{3}$ | $+\frac{1}{2}$ | $0$ | $0$ | $0$ | $0$ |
+| $\bar{c}$     | $1270$    | $-\frac{2}{3}$ | $\frac{1}{2}$ | $-\frac{1}{3}$ | $0$ | $-1$ | $0$ | $0$ | $0$ |
+| $\bar{s}$     | $96$      | $+\frac{1}{3}$ | $\frac{1}{2}$ | $-\frac{1}{3}$ | $0$ | $0$ | $+1$ | $0$ | $0$ |
+| $\bar{t}$     | $172760$  | $-\frac{2}{3}$ | $\frac{1}{2}$ | $-\frac{1}{3}$ | $0$ | $0$ | $0$ | $-1$ | $0$ |
+| $\bar{b}$     | $4180$    | $+\frac{1}{3}$ | $\frac{1}{2}$ | $-\frac{1}{3}$ | $0$ | $0$ | $0$ | $0$ | $+1$ |
+
+### 守恒定律
+
+存在 $\ell_e,\ell_\mu,\ell_\tau $ 三种轻子数。在轻子参与的各种反应中，各类轻子数分别守恒。
+
+在强子的粒子反应中，电荷 $Q $ 和重子数 $B $ 守恒。
+
+在各种反应中，能量、动量、电荷、角动量守恒。
+
+强相互作用中，能量、动量、电荷、角动量守恒、**同位旋、奇异数、宇称、重子数**守恒。
+
+电磁相互作用中，能量、动量、电荷、角动量守恒、**奇异数、宇称、重子数守恒**；**同位旋不守恒**。
+
+弱相互作用中，电荷、轻子数、重子数、角动量守恒；同位旋不守恒、宇称不守恒、奇异数不守恒、CP不守恒。
+
+### $\mathrm{U}(1) $ 规范理论
+
+QED 是关于带电粒子、光子 $\gamma $ 及其相互作用的量子场论，是 $\mathrm{U}(1) $ 规范场理论，即阿贝尔规范场理论。光子是传递电磁相互作用的规范玻色子。
+
+### $\mathrm{SU}(2)\times\mathrm{U}(1) $ 规范理论
+
+基本粒子衰变是一种弱相互作用。电弱统一理论是 $\mathrm{SU}(2)\times\mathrm{U}(1) $ 规范理论。
+
+电弱统一理论包括：QED 中传递电磁相互作用的光子 $\gamma $；传递弱相互作用的 $W^{\pm},Z^0 $ 三类规范玻色子，称为中间玻色子。
+
+电弱统一理论克服了费米理论（四个费米子直接相互作用）不能重整化的困难，预言了与 $Z^0 $ 对应的中性流，与实验符合得很好。
+
+电弱统一理论中，规范玻色子 $W^{\pm},Z^0 $ 的质量由 Higgs 场真空自发破缺导致。
+
+### $\mathrm{SU}(3) $ 规范理论
+
+QCD 是 $\mathrm{SU(3)_C} $ 非阿贝尔规范理论。
+
+$\mathrm{SU(3)} $ 群的作用以夸克三种颜色为变换对象，并以 $8 $ 种 $J=1 $ 的规范玻色子传递相互作用。在色夸克间传递强相互作用的规范玻色子称为**胶子**。
+
+**夸克禁闭**：自然界不存在自由夸克。
+
+### 标准模型
+
+标准模型是以三代轻子和三代夸克作为基本粒子、以强子的夸克模型和电弱统一理论和 QCD 为基础建立起来的。
+
+## 量纲分析与自然单位制
+
+$$
+[\hbar]
+=\frac{[M] [L]^2 }{[t] } ,\quad
+[c]
+=\frac{[L] }{[t] } ,\quad
+[k_B]
+=\frac{[M] [L]^2}{[t]^2 [T] } ,\quad
+[G]
+=\frac{[L]^3 }{[t]^2 [M] } 
+$$
+
+自然单位制取 $\hbar=c=k_B=1 $，此时：
+
+$$
+[L] = [t] = [M]^{-1} = [T]^{-1}
+$$
+
+# 2 广义洛伦兹变换
 
 ## R场论的四维时空坐标
 
@@ -518,7 +634,7 @@ $$
 
 **不连续分立变换**：$X'=\sigma X,X'=\tau X,X'=\rho X $
 
-# 2 张量、赝张量及其变换规律
+# 3 张量、赝张量及其变换规律
 
 ## Levi-Civita 符号
 
@@ -885,7 +1001,7 @@ x'_\mu = A_{\mu\nu} x_\nu + b_\mu,\quad
 }
 $$
 
-# 3 场方程
+# 4 场方程
 
 ## 达朗贝尔算符
 
@@ -935,7 +1051,7 @@ $$
 =0
 $$
 
-# 4 Clifford 代数、$\gamma $ 矩阵、旋量表示、旋量与 Dirac 方程
+# 5 Clifford 代数、$\gamma $ 矩阵、旋量表示、旋量与 Dirac 方程
 
 ## Clifford 代数与 $\gamma $ 矩阵
 
@@ -2770,7 +2886,7 @@ $$
 其中，$p_\mu $ 代表本征值，$\psi(x) $ 是本征波函数。容易猜到，上式中波函数 $\psi $ 有平面波解：
 
 $$
-\psi(x)
+\psi_p(x)
 =u(p)\mathrm{e}^{\mathrm{i}p x},\quad \forall p_\mu
 $$
 
@@ -2782,7 +2898,7 @@ p x
 =\vec{p}\cdot\vec{x} - p_0 t,\quad
 $$
 
-很容易验证上面构造的平面波解 $\psi(x)=u(p)\mathrm{e}^{\mathrm{i}p x} = u(p) \mathrm{e}^{\mathrm{i}\left(\vec{p}\cdot\vec{x} - p_4 x_4 \right)} $ 是四维动量算符的本征波函数，对应本征值恰为构造平面波解用到的四个连续参数 $\left(\vec{p} , p_4 \right) .$
+很容易验证上面构造的平面波解 $\psi_p(x)=u(p)\mathrm{e}^{\mathrm{i}p x} = u(p) \mathrm{e}^{\mathrm{i}\left(\vec{p}\cdot\vec{x} - p_4 x_4 \right)} $ 是四维动量算符的本征波函数，对应本征值恰为构造平面波解用到的四个连续参数 $\left(\vec{p} , p_4 \right) .$
 
 #### 具有确定四维动量自由旋量粒子动量表象 Dirac 方程
 
@@ -2799,7 +2915,7 @@ $$
 上面已经讨论过了，$\psi(x) $ 有平面波解：
 
 $$
-\psi(x)
+\psi_p(x)
 =u(p)\mathrm{e}^{\mathrm{i}p x}
 $$
 
@@ -3024,236 +3140,6 @@ p_0
 \right.
 $$
 
-#### $u_a(\vec{p}) $ 的具体形式
-
-由于 $u_a(\vec{p}) $ 满足
-
-$$
-\left(\mathrm{i} \hat{p} + m \right) u_a(\vec{p})
-=0
-$$
-
-再注意到
-
-$$
-\left(\mathrm{i} \hat{p} + m \right)\left(\mathrm{i} \hat{p} - m \right)
-=-\left(p^2 + m^2 \right)
-=-\left( \left(\vec{p}^2 - p_0^2 \right) + m^2 \right)
-=-\left(\vec{p}^2 - \left(\vec{p}^2 + m^2 \right) + m^2 \right)
-=0
-$$
-
-因此设 $u_a(\vec{p}) $ 有如下的形式解：
-
-$$
-u_a(\vec{p})
-=k\left(\mathrm{i}\hat{p}-m \right)f_a(\vec{p})
-=k\left(\mathrm{i}\vec{\gamma}\cdot\vec{p}-\beta p_0 - m \right)f_a(\vec{p})
-$$
-
-其中，$k $ 为任意常数，$f_a(\vec{p}) $ 为四元列矩阵。
-
-可证明若 $u_a(\vec{p})=k\left(\mathrm{i}\vec{\gamma}\cdot\vec{p}-\beta p_0 - m \right)f_a(\vec{p}) $ 是 $\hat{H}(\vec{p}),\vec{\sigma}\cdot\vec{n} $ 的共同本征态，则 $f_a(\vec{p}) $ 满足
-
-$$
-\left(\vec{\sigma}\cdot\vec{n} \right)f_a(\vec{p})
-=\left\{
-\begin{aligned}
-+f_a(\vec{p})&,a=1,3 \\
--f_a(\vec{p})&,a=2,4 \\
-\end{aligned}
-\right.
-$$
-
-$$
-\beta f_a(\vec{p})
-=\left\{
-\begin{aligned}
-+f_a(\vec{p})&, a=1,2 \\
--f_a(\vec{p})&, a=3,4 \\
-\end{aligned}
-\right.
-$$
-
-#### $f_a(\vec{p}) $ 的正交完备性
-
-$$
-f_a^\dag(\vec{p})f_b(\vec{p})
-=\delta_{ab}
-$$
-
-$$
-f_a(\vec{p})f_a^\dag(\vec{p})
-=I
-$$
-
-#### 要求 $u_a(\vec{p}) $ 正交
-
-若要求 $u_a(\vec{p}) $ 正交，即：
-
-$$
-u_a^\dag(\vec{p})u_b(\vec{p})
-=\delta_{ab}
-$$
-
-$$
-u_a(\vec{p})
-=k\left[\mathrm{i}\vec{\gamma}\cdot\vec{p}-\left(E+m \right) \right]f_a(\vec{p})
-$$
-
-则可证明：
-
-$$
-k
-=\frac{\alpha }{\sqrt{2E(E+m)} } ,\quad \alpha=\pm1 ,\pm\mathrm{i}
-$$
-
-#### $u_a(\vec{p}) $ 的完备性
-
-利用 $f_a(\vec{p}) $ 的正交性和完备性
-
-$$
-f_a^\dag(\vec{p})f_b(\vec{p})
-=\delta_{ab}
-$$
-
-$$
-\sum_{a=1}^{4} f_a(\vec{p}) f_a^\dag(\vec{p})
-=I
-$$
-
-以及要求 $u_a(\vec{p}) $ 的正交性
-
-$$
-u_b^\dag(\vec{p})u_b(\vec{p})
-=\delta_{ab}
-$$
-
-导出的 $k $ 要满足的方程
-
-$$
-2E(E+m)k^\dag k
-=1
-$$
-
-可以证明 $u_a(\vec{p}) $ 具有完备性：
-
-$$
-\sum_{a=1}^{4} u_a(\vec{p}) u_a^\dag(\vec{p})
-=I
-$$
-
-#### 球面坐标
-
-$\vec{n}\equiv \vec{p}/\left|\vec{p} \right| $，用球面坐标表示 $\vec{\sigma}^0\cdot\vec{n} $ 的本征态：
-
-$$
-\varphi_1(\vec{p})
-=\begin{bmatrix}
-\cos\frac{\theta }{2 } \mathrm{e}^{-\mathrm{i}\phi/2} \\
-\sin\frac{\theta }{2 } \mathrm{e}^{\mathrm{i}\phi/2}
-\end{bmatrix}
-$$
-
-$$
-\varphi_2(\vec{p})
-=\begin{bmatrix}
--\sin\frac{\theta }{2 } \mathrm{e}^{\mathrm{i}\phi/2} \\
-\cos\frac{\theta }{2 } \mathrm{e}^{\mathrm{i}\phi/2}
-\end{bmatrix}
-$$
-
-$$
-\left(\vec{\sigma}^0\cdot\vec{n} \right)\varphi_1(\vec{p})
-=+\varphi_1(\vec{p})
-$$
-
-$$
-\left(\vec{\sigma}^0\cdot\vec{n} \right)\varphi_2(\vec{p})
-=-\varphi_2(\vec{p})
-$$
-
-正交完备性：
-
-$$
-\varphi_i^\dag(\vec{p})\varphi_j(\vec{p})
-=\delta_{ij},\quad i,j=1,2
-$$
-
-$$
-\sum_{i=1}^{2} \varphi_i(\vec{p})\varphi_i^\dag(\vec{p})
-=I^0
-$$
-
-#### $f_a(\vec{p}) $ 的具体形式
-
-则可证明 $f_a(\vec{p}) $ 具有以下形式：
-
-$$
-f_1(\vec{p})
-=\begin{bmatrix}
-\varphi_1(\vec{p}) \\
-0
-\end{bmatrix},\quad
-f_2(\vec{p})
-=\begin{bmatrix}
-\varphi_2(\vec{p}) \\
-0
-\end{bmatrix},\quad
-f_3(\vec{p})
-=\begin{bmatrix}
-0 \\
-\varphi_1(\vec{p})
-\end{bmatrix},\quad
-f_4(\vec{p})
-=\begin{bmatrix}
-0 \\
-\varphi_2(\vec{p})
-\end{bmatrix},\quad
-$$
-
-#### $u_a(\vec{p}) $ 的具体形式
-
-利用 
-
-$$
-u_a(\vec{p})
-=\sqrt{\frac{E+m }{2E } }
-\begin{bmatrix}
-I^0 &-\frac{\left(\vec{\sigma}^0\cdot\vec{p} \right) }{E+m }  \\
-\frac{\left(\vec{\sigma}^0\cdot\vec{p} \right) }{E+m }  &I^0 \\
-\end{bmatrix} f_a(\vec{p}) \\
-$$
-
-可以得到 $u_a(\vec{p}) $ 的具体形式
-
-$$
-u_1(\vec{p})
-=N\begin{bmatrix}
-\varphi_1(\vec{p}) \\
-\frac{\vec{\sigma}^0\cdot\vec{p} }{E+m } \varphi_1(\vec{p})
-\end{bmatrix},\quad
-u_2(\vec{p})
-=N\begin{bmatrix}
-\varphi_2(\vec{p}) \\
-\frac{\vec{\sigma}^0\cdot\vec{p} }{E+m } \varphi_2(\vec{p})
-\end{bmatrix},\quad
-u_3(\vec{p})
-=N\begin{bmatrix}
--\frac{\vec{\sigma}^0\cdot\vec{p} }{E+m } \varphi_1(\vec{p}) \\
-\varphi_1(\vec{p}) \\
-\end{bmatrix},\quad
-u_4(\vec{p})
-=N\begin{bmatrix}
--\frac{\vec{\sigma}^0\cdot\vec{p} }{E+m } \varphi_2(\vec{p}) \\
-\varphi_2(\vec{p}) \\
-\end{bmatrix}
-$$
-
-$$
-N=\sqrt{\frac{E+m }{2E } }
-$$
-
 ### 单位旋量 $u_a(\vec{p}) $ 的空间反射态
 
 当时空坐标进行空间反射变换 $\vec{x}'=-\vec{x},t'=t $ 时，旋量场函数的变换规律为：
@@ -3420,22 +3306,231 @@ $$
 
 对比可知，电磁场存在时 Dirac 方程具有 Lorentz 协变性。
 
-### 
+#### 电荷共轭变换
 
-#### 正反粒子投影算符
+电荷共轭变换把粒子的场函数变为反粒子场函数，把粒子运动方程变为反粒子的运动方程。
+
+经典旋量场的电荷共轭变换定义如下：
 
 $$
+\psi^C(x)
+\equiv C \bar{\psi}^\mathrm{T}(x),\quad
+\bar{\psi}^C(x)
+=\left(\psi^C \right)^\dag \gamma_4
+=\left[C^{-1}\psi(x) \right]^\mathrm{T}
+$$
+
+称为 $\psi(x) $ 和 $\bar{\psi}(x) $ 的电荷共轭函数，其中
+
+$$
+C
+\equiv \mathrm{i}\gamma_2\gamma_4
+=-\begin{bmatrix}
+0 &\sigma^0_2 \\
+\sigma^0_2 &0
+\end{bmatrix}
+$$
+
+由
+
+$$
+-\gamma_\mu^\mathrm{T}
+=C^{-1} \gamma_\mu C,\quad \left|C \right|\ne 0
+$$
+
+定义。
+
+#### $\psi^C $ 和 $\bar{\psi}^C $ 满足的方程
+
+$$
+\gamma_\mu\partial_\mu \psi^C + m\psi^C
+=-\mathrm{i}e A_\mu \gamma_\mu \psi^C
+$$
+
+$$
+\partial_\mu \bar{\psi}^C \gamma_\mu - m\bar{\psi}^C
+=\mathrm{i}e A_\mu \bar{\psi}^C \gamma_\mu
+$$
+
+上两式称为 Dirac 方程的电荷共轭方程。与电磁场存在时的 Dirac 方程
+
+$$
+\left(\gamma_\mu\partial_\mu + m \right)\psi
+=\mathrm{i}e A_\mu \gamma_\mu \psi
+$$
+
+$$
+\partial_\mu\bar{\psi}\gamma_mu - m\bar{\psi}
+=-\mathrm{i}e A_\mu \bar{\psi}\gamma_\mu
+$$
+
+比较，可知经过电荷共轭变换后，方程中电荷改变了正负号。
+
+若 $\psi(x) $ 是描写电子的旋量函数，则 $\psi^C(x) $ 是描述正电子的旋量函数。
+
+若 $\bar{\psi}(x) $ 是描写正电子的旋量函数，则 $\bar{\psi}^C(x) $ 是描述电子的旋量函数。
+
+即若 $\psi(x) $ 和 $\bar{\psi}(x) $ 是描写粒子的旋量函数，则 $\psi^C(x) $ 和 $\bar{\psi}^C $ 是描述反粒子的旋量函数。
+
+#### 反粒子单位旋量 $v_b(\vec{p}) $
+
+对于具有确定能量、动量和自旋态的自由电子，其旋量波函数为
+
+$$
+\psi_b(x)
+=u_b(\vec{p})\mathrm{e}^{\mathrm{i}p x}
+$$
+
+相应共轭旋量波函数为
+
+$$
+\bar{\psi}_b(x)
+\equiv \psi_b^\dag(x) \gamma_4
+=u_b^\dag(\vec{p}) \gamma_4 \mathrm{e}^{-\mathrm{i}p x}
+\equiv \bar{u}_b(\vec{p})\mathrm{e}^{-\mathrm{i}p x},\quad
+\bar{u}_b(\vec{p})
+\equiv u_b^\dag(\vec{p})\gamma_4,\quad b=1,2,3,4
+$$
+
+$\psi_b(x) $ 的电荷共轭函数为
+
+$$
+\psi_b^C(x)
+\equiv C\bar{\psi}_b^\mathrm{T}(x)
+=C \left(\bar{u}_b(\vec{p})\mathrm{e}^{-\mathrm{i}p x} \right)^{\mathrm{T}}
+=C \bar{u}_b^{\mathrm{T}}(\vec{p}) \mathrm{e}^{-\mathrm{i}p x}
+\equiv u_b^C(\vec{p})\mathrm{e}^{-\mathrm{i}p\cdot x}
+$$
+
+$$
+u_b^C(\vec{p})
+\equiv C\bar{u}_b^\mathrm{T}(\vec{p})
+\equiv C \left(u_b^\dag(\vec{p})\gamma_4 \right)^{\mathrm{T}}
+=C \gamma_4^{\mathrm{T}} u_b^*(\vec{p})
+$$
+
+把
+
+$$
+\psi_b^C(x)
+=u_b^C(\vec{p})\mathrm{e}^{-\mathrm{i}p\cdot x}
+$$
+
+代入自由旋量粒子电荷共轭 Dirac 方程
+
+$$
+\gamma_\mu\partial_\mu\psi^C + m\psi^C
+=0
+$$
+
+可得 $u_b^C(\vec{p}) $ 满足的动量表象方程：
+
+$$
+\boxed{
+\left(\mathrm{i}\hat{p}-m \right)u_b^C(\vec{p})
+=0
+}
+$$
+
+$u_b^C(\vec{p})\equiv C\bar{u}_b^\mathrm{T}(\vec{p}) $ 称为**反粒子单位旋量**，通常记为 $v_b(\vec{p}) $，即：
+
+$$
+\boxed{
+v_b(\vec{p})
+\equiv u_b^C(\vec{p})\equiv C\bar{u}_b^\mathrm{T}(\vec{p})
+=C \gamma_4^{\mathrm{T}} u_b^*(\vec{p})
+}
+$$
+
+其满足方程：
+
+$$
+\boxed{
+\left(\mathrm{i}\hat{p}-m \right) v_b(\vec{p})
+=0
+}
+$$
+
+利用 $u_b(\vec{p}) $ 的正交完备性，可证明 $v_b(\vec{p}) $ 也是正交完备的：
+
+$$
+\boxed{
+v_a^\dag v_b = \delta_{ab},\quad a=1,2,3,4
+}
+$$
+
+$$
+\boxed{
+v_a v_a^\dag = I
+}
+$$
+
+#### 单位旋量 $u_a(\vec{p}) $ 和 $v_a(\vec{p}) $ 的一些性质
+
+$\left\{u_a(\vec{p}),a=1,2,3,4 \right\} $ 和 $\left\{v_a(\vec{p}),a=1,2,3,4 \right\} $ 构成旋量空间的两组基底。
+
+可选取
+
+$$
+u_1(\vec{p}),u_2(\vec{p}),v_1(\vec{p}),v_2(\vec{p})
+$$
+
+作为旋量空间的基底，它们满足正反粒子单位旋量动量表象 Dirac 方程：
+
+$$
+\left(\mathrm{i}\hat{p} + m \right) u_i(\vec{p})
+=0,\quad
+\left(\mathrm{i}\hat{p} - m \right) v_i(\vec{p})
+=0,\quad
+i=1,2
+$$
+
+有如下正交关系：
+
+$$
+u_i^\dag(\vec{p})u_j(\vec{p}) = \delta_{ij}
+$$
+
+$$
+v_i^\dag(\vec{p})v_j(\vec{p}) = \delta_{ij}
+$$
+
+$$
+\bar{u}_i(\vec{p}) u_j(\vec{p})
+=\frac{m }{E } \delta_{ij}
+$$
+
+$$
+\bar{v}_i(\vec{p}) v_j(\vec{p})
+=-\frac{m }{E } \delta_{ij}
+$$
+
+#### 正反粒子投影算符 $\Lambda_{\pm}(p) $
+
+正反粒子投影算符 $\Lambda_{\pm}(p) $ 定义如下：
+
+$$
+\boxed{
 \Lambda_\pm(p)
 \equiv \pm \frac{1 }{2 m} \left(\mathrm{i}\gamma_\mu p_\mu \pm m \right)
+}
+$$
+
+有如下的一些性质：
+
+$$
+\boxed{
+\begin{aligned}
+\Lambda_\pm(-p)
+&=\Lambda_\mp(p)
+\end{aligned}
+}
 $$
 
 $$
-\begin{aligned}
-\Lambda_\pm(-p)
-&=\pm \frac{1 }{2 m} \left(-\mathrm{i}\gamma_\mu p_\mu \pm m \right) \\
-&=\mp \frac{1 }{2 m} \left(\mathrm{i}\gamma_\mu p_\mu \pm m \right) \\
-&=\Lambda_\mp(p)
-\end{aligned}
+\boxed{
+\Lambda_+(p) + \Lambda_-(p) = 1
+}
 $$
 
 $$
@@ -3448,53 +3543,504 @@ $$
 $$
 
 $$
+\boxed{
+\Lambda_+(p) \Lambda_-(p) = \Lambda_-(p) \Lambda_+(p) = 0
+}
+$$
+
+$$
+\boxed{
 \Lambda_+^2(p)
 =\Lambda_+(p),\quad
 \Lambda_-^2(p)
 =\Lambda_-(p)
+}
+$$
+
+考虑到 $\left(\mathrm{i}\gamma_\mu \hat{p}_\mu + m \right) u_i(\vec{p}) = 0,\left(\mathrm{i}\gamma_\mu \hat{p}_\mu - m \right) v_i(\vec{p}) = 0 $ 可得：
+
+$$
+\boxed{
+\Lambda_-(p) u_j(\vec{p})
+=u_j(\vec{p}),\quad
+\Lambda_-(p) v_j(\vec{p})
+=0
+}
 $$
 
 $$
-\Lambda_+(p)
-=1-\Lambda(-p),\quad
-\Lambda(-p)
-=1-\Lambda_+(p)
-$$
-
-$$
-\Lambda_+(p) u_a(\vec{p})
+\boxed{
+\Lambda_+(p) u_j(\vec{p})
 =0,\quad
-\Lambda_-(p) v_a(\vec{p})
+\Lambda_+(p) v_j(\vec{p})
+=v_j(\vec{p})
+}
+$$
+
+可见，$\Lambda_+(p) $ 反粒子单位旋量投影算符；$\Lambda_-(p) $ 正粒子单位旋量投影算符。
+
+可以证明，任何旋量 $f(p) $ 可以用 $u_1(\vec{p}),u_2(\vec{p}),v_1(\vec{p}),v_2(\vec{p}) $ 展开：
+
+$$
+f(p)
+=a_i u_i(\vec{p}) + b_i v_i(\vec{p})
+$$
+
+展开系数为：
+
+$$
+a_i = \frac{E }{m } \bar{u}_i(\vec{p}) f(p),\quad
+b_i = -\frac{E }{m } \bar{v}_i(\vec{p}) f(p),\quad
+i=1,2
+$$
+
+投影算符（或动量算符）与单位旋量之间的关系为：
+
+$$
+\boxed{
+u_i(\vec{p}) \bar{u}_i(\vec{p}) = \frac{m }{E } \Lambda_-(p) = -\frac{1 }{2E } \left(\mathrm{i}\gamma_\mu \hat{p}_\mu - m \right) ,\quad
+v_i(\vec{p}) \bar{v}_i(\vec{p}) = -\frac{m }{E } \Lambda_+(p) = -\frac{1 }{2E } \left(\mathrm{i}\gamma_\mu \hat{p}_\mu + m \right)
+}
+$$
+
+# 6 拉格朗日方程、对称性与守恒律
+
+## 场论中的拉格朗日原理
+
+### 拉格朗日原理与场的运动方程
+
+引入广义场函数 $\phi_A(x) $，其可以是张量场函数，也可以是旋量场函数，也可以是标量场函数。
+
+场的作用量定义如下：
+
+$$
+I\left[\phi_A(x) \right]
+=\int\limits_{G} \mathcal{L}\left(\phi_A,\partial_\mu\phi_A \right)\mathrm{d}^4x,\quad
+\mathrm{d}^4 x
+=\mathrm{d}x_0\mathrm{d}x_1\mathrm{d}x_2\mathrm{d}x_3,\quad
+x_4
+=\mathrm{i}x_0
+$$
+
+$G $ 是场在四维时空中存在的范围；$\mathcal{L} $ 是场的拉格朗日密度。
+
+Lagrange 原理就是说，场的真实运动规律使作用量 $I $ 取最小值，即：
+
+$$
+\delta I = 0
+$$
+
+利用变分法可得场的运动方程（E-L方程）：
+
+$$
+\boxed{
+\frac{\partial\mathcal{L} }{\partial \phi_A } - \partial_\mu\frac{\partial\mathcal{L} }{\partial \left(\partial_\mu \phi_A \right) } 
+=0
+}
+$$
+
+定义拉格朗日密度对广义场函数的欧拉式 $\left[\mathcal{L} \right]_{\phi_A} $：
+
+$$
+\left[\mathcal{L} \right]_{\phi_A}
+\equiv \frac{\partial\mathcal{L} }{\partial \phi_A } - \partial_\mu\frac{\partial\mathcal{L} }{\partial \left(\partial_\mu \phi_A \right) } 
+$$
+
+则场的运动方程可写为：
+
+$$
+\left[\mathcal{L} \right]_{\phi_A}
 =0
 $$
 
+### 拉格朗日密度满足的条件
+
+（1）$\mathcal{L} $ 是固有洛伦兹变换 $a_{\mu\nu} $ 及其旋量表示 $\Lambda $ 的不变量。这样才能保证场方程对固有洛伦兹变换协变和角动量守恒。
+
+（2）$\mathcal{L} $ 是四维位移变换的不变量，因此 $\mathcal{L} $ 不应显含 $x_\mu $,这样才能保证能量和动量守恒。
+
+（3）$\mathcal{L} $ 必须是 $\phi_A $ 和 $\partial_\mu\phi_A $ 的二次齐式。这样才能保证场的微分方程是线性的，荷守恒定律及电荷数、重子数、轻子数守恒（整体相因子变换下的守恒性）。
+
+（4）$\mathcal{L} $ 是时间反演变换的不变量。在强和电磁作用中还要求 $\mathcal{L} $ 对空间反射变换合电荷共轭变换的不变性。
+
+（5）$\mathcal{L} $ 是规范变换的不变量。整体规范变换的协变性保证荷守恒。局域规范变换的协变性引入相互作用。
+
+### 各种自由场的拉格朗日函数
+
+#### 实标量场
+
+实标量场描述自旋为零、偶宇称、无反粒子的粒子，
+
 $$
-\Lambda_- u_a(\vec{p})
-=u_a(\vec{p}),\quad
-\Lambda_- v_a(\vec{p})
+\mathcal{L}_0
+=-\frac{1 }{2 } \left(\partial_\mu \phi \partial_\mu \phi + m^2\phi^2 \right)
+$$
+
+$$
+\frac{\partial \mathcal{L}_0 }{\partial \phi } = -m^2\phi,\quad
+\frac{\partial \mathcal{L}_0 }{\partial\left(\partial_\mu \phi \right) } = -\partial_\mu\phi
+$$
+
+代入E-L方程，得标量场方程：
+
+$$
+\left(\square-m^2 \right)\phi = 0
+$$
+
+#### 复标量场
+
+复标量场描述自旋为零，存在正、反粒子的粒子。
+
+$$
+\mathcal{L}_0
+=-\partial_\mu\phi^* \partial_\mu\phi  - m^2\phi^*\phi
+$$
+
+分别把 $\phi,\phi^* $ 作为变分量代入 E-L 方程，可得复标量场方程：
+
+$$
+\left(\square-m^2 \right)\phi = 0
+$$
+
+$$
+\left(\square-m^2 \right)\phi^* = 0
+$$
+
+#### 赝标量场
+
+赝标量场描述自旋为零、奇宇称的粒子。
+
+$$
+\mathcal{L}_0
+=-\frac{1 }{2 } \left(\partial_\mu\tilde{\phi} \partial_\mu\tilde{\phi} + m^2\tilde{\phi}^2 \right)
+$$
+
+赝标量场方程为：
+
+$$
+\left(\square-m^2 \right)\tilde{\phi} = 0
+$$
+
+#### 旋量场
+
+旋量场描述自旋为 $1/2 $ 的粒子（自旋为 $1/2 $ 粒子总有反粒子存在）。
+
+$$
+\mathcal{L}_0
+=-\frac{1 }{2 } \left(\bar{\psi}\gamma_\mu\partial_\mu\psi - \partial_\mu\bar{\psi} \gamma_\mu\psi \right) - m\bar{\psi}\psi
+=-\frac{1 }{2 } \bar{\psi}\left(\gamma_\mu\partial_\mu\psi + m\psi \right) + \frac{1 }{2 } \left(\partial_\mu\bar{\psi}\gamma_\mu - m\bar{\psi} \right)\psi
+$$
+
+分别把 $\psi,\bar{\psi} $ 作为变分量，代入 E-L 方程可得 Dirac 方程以及共轭 Dirac 方程：
+
+$$
+\left(\gamma_\mu\partial_\mu + m \right)\psi = 0
+$$
+
+$$
+\partial_\mu\bar{\psi}\gamma_\mu - m\bar{\psi} = 0
+$$
+
+#### 矢量场
+
+矢量场描述自旋为 $1 $ 的光子。
+
+$$
+\mathcal{L}_0
+=-\frac{1 }{2 }\partial_\mu A_\nu \partial_\mu A_\nu 
+$$
+
+把 $A_\mu $ 作为变分量代入 E-L 方程，的达朗贝尔方程：
+
+$$
+\square A_\mu = 0
+$$
+
+静止质量不为零的矢量粒子的拉格朗日密度为：
+
+$$
+\mathcal{L}_0
+=-\frac{1 }{2 } \left(\partial_\mu A_\nu \right)\left(\partial_\mu A_\nu \right) - \frac{1 }{2 } m^2 A_\mu A_\mu
+$$
+
+运动方程：
+
+$$
+\left(\square - m^2 \right)A_\mu = 0
+$$
+
+这破坏规范协变性。
+
+---
+
+若令
+
+$$
+\mathcal{L}_0'
+=-\frac{1 }{4 } F_{\mu\nu} F_{\mu\nu},\quad
+F_{\mu\nu}
+=\partial_\mu A_\nu - \partial_\nu A_\mu
+$$
+
+则可得：
+
+$$
+\partial_\nu F_{\mu\nu}
 =0
 $$
 
+---
+
+若 $A_\mu $ 满足 Lorenz 条件
+
 $$
-\Lambda_+ u_a(\vec{p})
+\partial_\mu A_\mu
+=0
+$$
+
+则
+
+$$
+\mathcal{L}_0'
+=-\frac{1 }{4 } F_{\mu\nu} F_{\mu\nu},\quad
+\mathcal{L}_0
+=-\frac{1 }{2 }\partial_\mu A_\nu \partial_\mu A_\nu 
+$$
+
+等价。
+
+## 对称性与守恒律
+
+### 广义守恒定理1
+
+设 $\theta_{\mu\cdots \nu\lambda}(x) $ 是 $n $ 阶张量函数，且满足：
+
+$$
+\theta_{\mu\cdots \nu\lambda}(x)\bigg|_{\vec{x}\to \infty}
+=0
+$$
+
+若
+
+$$
+\partial_{\lambda}\theta_{\mu\cdots \nu\lambda}
+=0
+$$
+
+则存在一个 $(n-1) $ 阶守恒张量：
+
+$$
+T_{\mu\cdots \nu}(x_4)
+\equiv \frac{1 }{\mathrm{i} } \int\limits_{\vec{x}\in \R^3} \theta_{\mu\cdots \nu 4}(\vec{x},x_4)\mathrm{d}^3\vec{x}
+=\mathrm{const}
+$$
+
+即 $T_{\mu\cdots \nu} $ 不随时间改变。
+
+### 广义守恒定理2
+
+若场的作用量
+
+$$
+I
+=\int\limits_{G} \mathcal{L}\left(\phi_A,\partial_\mu\phi_A \right)\mathrm{d}^4 x
+$$
+
+对微量变换
+
+$$
+x\to x' = x+\delta x,\quad
+\phi_A\to \phi'_A = \phi_A + \delta_0 \phi_A
+$$
+
+$$
+\phi_A(x)\to \phi_A'(x')
+=\phi_A(x) + \delta \phi_A(x)
+$$
+
+保持不变，则存在一个矢量
+
+$$
+\theta_\mu
+=\left(\mathcal{L}\delta_{\mu\nu}-\frac{\partial\mathcal{L} }{\partial\left(\partial_\mu\phi_A \right) } \partial_\nu\phi_A \right)\delta x_\nu + \frac{\partial\mathcal{L} }{\partial\left(\partial_\mu\phi_A \right) } \delta\phi_A
+$$
+
+满足关系式：
+
+$$
+\partial_\mu\theta_\mu + \left[\mathcal{L} \right]_{\phi_A}\delta_0 \phi_A
+=0
+$$
+
+### 诺特定理
+
+设坐标和广义场函数的变换依赖于连续变化的参数 $\alpha=\left\{\alpha_{i\cdots k} \right\} $，即
+
+$$
+x'=x'(x,\alpha),\quad
+\phi'_A(x')=\phi'_A(x,\alpha)\equiv \Phi_A(x,\alpha),\quad
+$$
+
+且满足
+
+$$
+x'(x,0) = x,\quad
+\Phi_A(x,0) = \phi_A(x)
+$$
+
+若作用量 $I $ 对这个依赖于连续参数 $\alpha $ 的变换不变，且广义场函数满足欧拉方程 $\left[\mathcal{L} \right]_{\phi_A}=0 $，也即满足最小作用量原理时，则存在守恒定律
+
+$$
+\partial_\mu \theta_{i\cdots k \mu}
 =0,\quad
-\Lambda_+ v_a(\vec{p})
-=v_a (\vec{p})
+\theta_{i\cdots k \mu}
+\equiv \left[\mathcal{L}\frac{\partial x'_\mu }{\partial \alpha_{i\cdots k} } - \frac{\partial \mathcal{L} }{\partial\left(\partial_\mu \phi_A \right) } \partial_\nu \phi_A \frac{\partial x'_\nu }{\partial \alpha_{i\cdots k} } + \frac{\partial \mathcal{L} }{\partial\left(\partial_\mu \phi_A \right) } \frac{\partial \Phi_A }{\partial \alpha_{i\cdots k} }  \right]\bigg|_{\alpha=0}
 $$
 
-$\Lambda_+(p) $ 反粒子单位旋量投影算符
+和守恒张量
 
-$\Lambda_-(p) $ 正粒子单位旋量投影算符
+$$
+T_{i\cdots k}
+=\frac{1 }{\mathrm{i} } \int \theta_{i\cdots k4}\mathrm{d}V
+$$
 
-# 5 拉格朗日方程、对称性与守恒律
+且 $T_{i\cdots k} $ 的指标与 $\alpha_{i\cdots k} $ 的指标一致。
 
-# 6 规范场理论
+#### 能量动量张量和能量动量守恒
 
-# 7 自由场二次量子化
+考虑四维时空平移变换：
 
-# 8 两个绘景、一个表象
+$$
+x'_\mu(x,\alpha) = x_\mu + \alpha_\mu,\quad
+\phi_A'(x,\alpha) = \phi_A(x)
+$$
 
-# 9 S 矩阵、跃迁矩阵元、费曼图
+根据诺特定理，若场的作用量对四维时空平移变化保持不变，则存在连续方程和守恒张量。下面来找连续方程和守恒张量。
+
+计算变换后坐标对参数的偏导、变换后广义场函数对参数的偏导在参数为零处的取值：
+
+$$
+\frac{\partial x'_\mu(x,\alpha) }{\partial \alpha_\nu } 
+=\delta_{\mu\nu},\quad
+\frac{\partial \phi'_A(x,\alpha) }{\partial \alpha_\nu } 
+=0
+$$
+
+诺特定理中定义的量
+
+$$
+\begin{aligned}
+\theta_{i\cdots k \mu}
+&\equiv \left[\mathcal{L}\frac{\partial x'_\mu }{\partial \alpha_{i\cdots k} } - \frac{\partial \mathcal{L} }{\partial\left(\partial_\mu \phi_A \right) } \partial_\beta \phi_A \frac{\partial x'_\beta }{\partial \alpha_{i\cdots k} } + \frac{\partial \mathcal{L} }{\partial\left(\partial_\mu \phi_A \right) } \frac{\partial \phi_A' }{\partial \alpha_{i\cdots k} }  \right]\bigg|_{\alpha=0} \\
+\end{aligned}
+$$
+
+在这里（四个参数 $\alpha_\nu $）表现为：
+
+$$
+\begin{aligned}
+\theta_{\nu \mu}
+&=\left[\mathcal{L}\frac{\partial x'_\mu }{\partial \alpha_{\nu} } - \frac{\partial \mathcal{L} }{\partial\left(\partial_\mu \phi_A \right) } \partial_\beta \phi_A \frac{\partial x'_\beta }{\partial \alpha_{\nu} } + \frac{\partial \mathcal{L} }{\partial\left(\partial_\mu \phi_A \right) } \frac{\partial \phi_A' }{\partial \alpha_{\nu} }  \right]\bigg|_{\alpha=0} \\
+&=\mathcal{L}
+\end{aligned}
+$$
+
+#### 角动量张量和角动量守恒
+
+#### 相因子变换、电流密度矢量和电荷守恒
+
+考虑相因子变换:
+
+$$
+x'_\mu(x,\alpha) = x_\mu,\quad
+\phi'_A(x,\alpha) = \mathrm{e}^{\mathrm{i}\alpha}\phi_A(x),\quad
+\phi_A^{*'}(x,\alpha) = \mathrm{e}^{-\mathrm{i}\alpha} \phi_A^*(x)
+$$
+
+根据诺特定理，若场的作用量对相因子变化保持不变，则存在连续方程和守恒张量。下面来找连续方程和守恒张量。
+
+计算变换后坐标对参数的偏导、变换后广义场函数对参数的偏导在参数为零处的取值：
+
+$$
+\frac{\partial x'(x,\alpha) }{\partial\alpha }
+=0,\quad
+\frac{\partial \phi_A'(x,\alpha) }{\partial\alpha } \bigg|_{\alpha=0}
+=\mathrm{i}\phi_A(x),\quad
+\frac{\partial \phi_A^{*'}(x,\alpha) }{\partial \alpha} \bigg|_{\alpha=0}
+=-\mathrm{i}\phi_A^*(x)
+$$
+
+诺特定理中定义的量
+
+$$
+\begin{aligned}
+\theta_{i\cdots k \mu}
+&\equiv \left[\mathcal{L}\frac{\partial x'_\mu }{\partial \alpha_{i\cdots k} } - \frac{\partial \mathcal{L} }{\partial\left(\partial_\mu \phi_A \right) } \partial_\nu \phi_A \frac{\partial x'_\nu }{\partial \alpha_{i\cdots k} } + \frac{\partial \mathcal{L} }{\partial\left(\partial_\mu \phi_A \right) } \frac{\partial \phi_A' }{\partial \alpha_{i\cdots k} }  \right]\bigg|_{\alpha=0} \\
+\end{aligned}
+$$
+
+在这里（一个参数 $\alpha $）表现为：
+
+$$
+\begin{aligned}
+\theta_{\mu}
+&=\left[\mathcal{L}\frac{\partial x'_\mu }{\partial \alpha } - \frac{\partial \mathcal{L} }{\partial\left(\partial_\mu \phi_A \right) } \partial_\nu \phi_A \frac{\partial x'_\nu }{\partial \alpha } + \frac{\partial \mathcal{L} }{\partial\left(\partial_\mu \phi_A \right) } \frac{\partial \phi_A' }{\partial \alpha }  \right]\bigg|_{\alpha=0} \\
+&=\left[\frac{\partial\mathcal{L} }{\partial\left(\partial_\mu \phi_A \right) } \frac{\partial \phi_A'(x,\alpha) }{\partial\alpha } + \frac{\partial \phi_A^{*'}(x,\alpha) }{\partial\alpha } \frac{\partial\mathcal{L} }{\partial\left(\partial_\mu \phi_A^* \right) }  \right]\bigg|_{\alpha=0} \\
+&=\mathrm{i}\alpha\left[\frac{\partial\mathcal{L} }{\partial\left(\partial_\mu \phi_A \right) } \phi_A - \phi_A^* \frac{\partial\mathcal{L} }{\partial\left(\partial_\mu \phi_A^* \right) } \right]
+\end{aligned}
+$$
+
+诺特定理中的连续方程
+
+$$
+\partial_\mu \theta_{i\cdots k\mu} = 0
+$$
+
+在这里表现为：
+
+$$
+\partial_\mu \theta_\mu = 0
+$$
+
+定义四维电流密度 $j_\mu $：
+
+$$
+j_\mu
+\equiv -e \theta_\mu
+=-\mathrm{i} e \left[\frac{\partial\mathcal{L} }{\partial\left(\partial_\mu\phi_A \right) } \phi_A - \phi_A^*\frac{\partial\mathcal{L} }{\partial\left(\partial_\mu\phi_A^* \right) }  \right]
+$$
+
+则 $j_\mu $ 满足连续方程：
+
+$$
+\partial_\mu j_\mu = 0,\quad
+\nabla\cdot\vec{j} + \frac{\partial \rho }{\partial t } 
+=0
+$$
+
+诺特定理中的守恒张量
+
+$$
+T_{i\cdots k}
+=\frac{1 }{\mathrm{i} } \int \theta_{i\cdots k4}\mathrm{d}V
+$$
+
+在这里表现为电荷 $Q $：
+
+$$
+Q
+=\frac{1 }{\mathrm{i} } \int j_4 \mathrm{d}V
+=\int \rho\mathrm{d}V,\quad
+\frac{\mathrm{d}Q }{\mathrm{d}t } = 0
+$$
+
+# 7 规范场理论
+
+# 8 自由场二次量子化
+
+# 9 两个绘景、一个表象
+
+# 10 S 矩阵、跃迁矩阵元、费曼图
 
 # 10 
 

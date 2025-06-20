@@ -906,10 +906,7 @@ $\hat{T}^1_{\mu\nu\cdots\lambda}(x) $ 和 $\hat{T}^2_{\mu\nu\cdots\lambda}(x) $ 
 #### 标量场与旋量场的作用
 
 $$
-?\hat{\bar{\psi}}(x) \hat{\psi}(x) \hat{\phi}(x)
-$$
-
-$$
+?\hat{\bar{\psi}}(x) \hat{\psi}(x) \hat{\phi}(x),\quad
 ? \hat{\bar{\psi}}(x) \gamma_\mu \hat{\psi}(x) \partial_\mu \hat{\phi}(x)
 $$
 
@@ -930,20 +927,14 @@ $$
 #### 矢量场与旋量场的作用
 
 $$
-? \hat{\bar{\psi}}(x) \gamma_\mu \hat{\psi}(x) \hat{A}_\mu(x)
-$$
-
-$$
+? \hat{\bar{\psi}}(x) \gamma_\mu \hat{\psi}(x) \hat{A}_\mu(x),\quad
 ? \hat{\bar{\psi}}(x) \gamma_\mu \gamma_\nu \hat{\psi}(x) \hat{F}_{\mu\nu}
 $$
 
 #### $\pi $ 介子与核子的作用
 
 $$
-? \hat{\bar{\psi}}(x) \gamma_5 \hat{\psi}(x) \hat{\tilde{\phi}}(x)
-$$
-
-$$
+? \hat{\bar{\psi}}(x) \gamma_5 \hat{\psi}(x) \hat{\tilde{\phi}}(x),\quad
 ? \hat{\bar{\psi}}(x) \gamma_5 \gamma_\mu \hat{\psi}(x) \partial_\mu \hat{\tilde{\phi}}(x)
 $$
 
@@ -972,38 +963,26 @@ $$
 
 #### 费米场与费米场的相互作用
 
-核子 $\beta^- $ 衰变
+核子 $\beta^- $ 衰变：
 
 $$
 n \to p + e^- + \tilde{\nu}_e
 $$
 
-五种形式：
+$\mu^{\pm} $ 轻子衰变：
+$$
+\mu^+ \to e^+ + \nu_e + \tilde{\nu}_e,\quad
+\mu^- \to e^- + \tilde{\nu}_e + \nu_\mu
+$$
 
-标量耦合
-
-赝标耦合
-
-矢量耦合
-
-赝矢耦合
-
-张量耦合
-
-合写为：
+五种形式：标量耦合、赝标耦合、矢量耦合、赝矢耦合、张量耦合，合写为：
 
 $$
 \hat{\mathcal{L}}_i
 =\sum_{i=1}^{5} C_i \left[\hat{\bar{\psi}}(x) O_i \hat{\psi}(x) \right]\left[\hat{\bar{\psi}}(x) O_i \hat{\psi}(x) \right]
 $$
 
-宇称不守恒
-
-$$
-
-$$
-
-Gellmann & Feynman
+Gellmann & Feynman：
 
 $$
 \hat{\mathcal{L}}_i
@@ -1012,13 +991,13 @@ $$
 
 ### 玻色场与玻色场的相互作用
 
-$\pi $ 介子与$\pi $ 介子的相互作用
+$\pi $ 介子与$\pi $ 介子的相互作用：
 
 $$
 ? \hat{\tilde{\phi}}(x) \hat{\tilde{\phi}}(x) \hat{\tilde{\phi}}(x) \hat{\tilde{\phi}}(x)
 $$
 
-光子与 $\pi $ 介子的相互作用
+光子与 $\pi $ 介子的相互作用：
 
 $$
 ? \left[\partial_\mu \hat{\tilde{\phi}}^*(x) \hat{\tilde{\phi}}(x) - \hat{\tilde{\phi}}^*(x) \partial_\mu \hat{\tilde{\phi}}(x) \right] \hat{A}_\mu(x)
@@ -1083,7 +1062,7 @@ $$
 \end{aligned}
 $$
 
-对 $\hat{A}_\mu(x),\hat{\bar{\psi}}(x),\hat{\psi}(x) $ 变分，得场方程
+对 $\hat{A}_\mu(x),\hat{\bar{\psi}}(x),\hat{\psi}(x) $ 变分，得场方程：
 
 $$
 \partial_\nu F_{\mu\nu} = \mathrm{i} e\hat{\bar{\psi}}(x) \gamma_\mu \hat{\psi}(x)
@@ -2123,17 +2102,289 @@ $$
 
 一般的基本粒子反应中，初态或终态同类的基本粒子的自旋是平均分布的，称为非极化的。
 
+### 对电子和正电子终态的自旋求和
+
+初态有两种基本粒子反应的微分截面公式：
+
+$$
+\mathrm{d}\sigma
+=\left(\frac{1 }{2\pi }  \right)^4 \frac{\varepsilon_1 \varepsilon_2 }{F }  \left|M\left(p^i , p^f \right) \right|^2 \delta\left(p^f - p^i \right) \prod_f \frac{\mathrm{d}^3\vec{p}_f }{\left(2\pi \right)^3 } ,\quad
+F
+\equiv \sqrt{\left(p^1_\mu p^2_\mu \right)^2 - m_1^2m_2^2}
+$$
+
+总反应截面公式：
+
+$$
+\begin{aligned}
+\sigma
+=\int \mathrm{d}\sigma
+=\left(\frac{1 }{2\pi }  \right)^4 \int \cdots \int \frac{\varepsilon_1 \varepsilon_2 }{F }  \left|M\left(p^i , p^f \right) \right|^2 \delta\left(p^f - p^i \right) \prod_f \frac{\mathrm{d}^3\vec{p}_f }{\left(2\pi \right)^3 }
+\end{aligned}
+$$
+
+通常反应中，首先以初、终态各为一电子的情形为例，此时
+
+$$
+M\left(p^i , p^f \right)
+=\bar{u}_f\left(\vec{p}_1 \right) \hat{O} u_i\left(\vec{p}_2 \right)
+$$
+
+其中 $\hat{O} $ 是矩阵函数。
+
+$$
+\begin{aligned}
+M^\dag\left(p^i,p^f \right)
+&=M^*\left(p^i,p^f \right)
+\end{aligned}
+$$
+
+设
+
+$$
+\hat{\bar{O}}
+=\gamma_4 \hat{O}^\dag \gamma_4
+$$
+
+则
+
+$$
+\begin{aligned}
+\left|M\left(p^i,p^f \right) \right|^2
+&=\bar{u}_i\left(\vec{p}_2 \right) \hat{\bar{O}} u_f\left(\vec{p}_1 \right) \bar{u}_f\left(\vec{p}_1 \right) \hat{O} u_i\left(\vec{p}_2 \right),\quad i,f 不求和
+\end{aligned}
+$$
+
+对终态自旋求和
+
+$$
+\sum_{f=1}^{2} \left|M\left(p^i,p^f \right) \right|^2
+=\sum_{f=1}^{2} \bar{u}_i\left(\vec{p}_2 \right) \hat{\bar{O}} u_f\left(\vec{p}_1 \right) \bar{u}_f\left(\vec{p}_1 \right) \hat{O} u_i\left(\vec{p}_2 \right)
+$$
+
+又由
+
+$$
+\sum_{f=1}^{2} u_f\left(\vec{p}_1 \right) \bar{u}_f\left(\vec{p}_1 \right)
+=\frac{m }{E_1 } \Lambda_-\left(p_1 \right) 
+=-\frac{1 }{2E_1 } \left(\mathrm{i}\hat{p}_1 - m \right)
+$$
+
+则终态求和为
+
+$$
+\sum_{f=1}^{2} \left|M\left(p^i,p^f \right) \right|^2
+=\frac{m }{E_1 } \bar{u}_i \left(\vec{p}_2 \right) \hat{\bar{O}} \Lambda_-\left(p_1 \right) \hat{O} u_i\left(\vec{p}_2 \right)
+$$
+
+### 对电子或正电子终态自旋求和并对初态自旋平均
+
+### 对光子的极化求和
+
+### 例子
+
+求 $B\to f + \tilde{f} $ 寿命。已知：$B $ 是自旋为零、质量为 $M $ 的玻色子；$f,\tilde{f} $ 是自旋为 $1/2 $、质量为 $m $ 的正反费米子。相互作用哈密顿量为
+
+$$
+\hat{\mathcal{H}}_i
+=\mathrm{i} g \hat{\phi}(x) \hat{\bar{\psi}}(x) \hat{\psi}(x)
+$$
+
+求 $B $ 粒子衰变为正反费米子 $f,\tilde{f} $ 的寿命。
+
+（1）根据反应式画出相应费曼图（仅考虑一阶图），写出 $\lambda $ 表达式。
+
+$$
+\hat{S}_1
+=-\mathrm{i}\int \mathrm{d}^4 x N\left[\hat{\mathcal{H}}_I(x) \right]
+=g \int \mathrm{d}^4 x N\left[\hat{\bar{\psi}}(x) \hat{\psi}(x) \phi(x) \right]
+$$
+
+衰变初、终态
+
+$$
+\Ket{B }
+=\Ket{\vec{k} },\quad
+\Ket{f,\tilde{f} }
+=\Ket{\vec{p}_1 , i ; \vec{p}_2 , j }
+$$
+
+相应 $\hat{M}_{i-f}^{(1)} $ 为
+
+$$
+\hat{M}_{i-f}^{(1)}
+=g \int \mathrm{d}^4 x \Braket{f , \tilde{f} | \hat{\bar{\psi}}^{(+)}(x) \hat{\psi}^{(+)}(x) \hat{\phi}^{(-)}(x) | B }
+$$
+
+$$
+\hat{\phi}^{(-)}(x)
+\to \frac{1 }{\sqrt{V} } \frac{1 }{\sqrt{2 \varepsilon_{\vec{k}}} } \mathrm{e}^{\mathrm{i}kx},\quad
+\hat{\bar{\psi}}^{(+)}(x)
+\to \frac{1 }{\sqrt{V} } \bar{u}_i\left(\vec{p}_1 \right) \mathrm{e}^{-\mathrm{i}p_1 x},\quad
+\hat{\psi}^{(+)}(x)
+\to \frac{1 }{\sqrt{V} } v_j\left(\vec{p}_2 \right) \mathrm{e}^{-\mathrm{i}p_2 x}
+$$
+
+代入得
+
+$$
+\begin{aligned}
+\hat{M}_{i-f}^{(1)}
+=g \left(2\pi \right)^4 \delta\left(p_1+p_2-k \right) \left(\frac{1 }{\sqrt{V} }  \right)^3 \frac{1 }{\sqrt{2 \varepsilon_{\vec{k}}} } \bar{u}_i(\vec{p}_1) v_j(\vec{p}_2)
+\end{aligned}
+$$
+
+$$
+M\left(p^i , p^f \right)
+=\left(2\pi \right)^4 g \frac{1 }{\sqrt{2\varepsilon_{\vec{k}}} } \bar{u}_i(\vec{p}_1) v_j(\vec{p}_2)
+$$
+
+代入
+
+$$
+\lambda
+=\left(\frac{1 }{2\pi }  \right)^4 \left|M\left(p^i , p^f \right) \right|^2 \delta\left(p^f - p^i \right) \prod_f \frac{\mathrm{d}^3\vec{p}_f }{\left(2\pi \right)^3 }
+$$
+
+得到极化态衰变宽度
+
+$$
+\begin{aligned}
+\lambda
+=\left(\frac{g }{2\pi }  \right)^2 \int \frac{1 }{2\varepsilon_{\vec{k}} } \left|\bar{u}_i(\vec{p}_1) v_j(\vec{p}_2) \right|^2 \delta(p_1+p_2-k) \mathrm{d}^3\vec{p}_1 \mathrm{d}^3\vec{p}_2
+\end{aligned}
+$$
+
+（2）终态自旋求和
+
+$$
+\begin{aligned}
+\sum_{i=1}^{2} \sum_{j=1}^{2} \left|\bar{u}_i(\vec{p}_1) v_j(\vec{p}_2) \right|^2
+&=\sum_{i,j} \mathrm{Tr}\left[u_i(\vec{p}_1) \bar{u}_i(\vec{p}_1) v_j(\vec{p}_2) \bar{v}_j(\vec{p}_2) \right] \\
+&=-\frac{1 }{E_1 E_2 } \left[\left(p_1 p_2 \right) + m^2 \right]
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\lambda
+=-\left(\frac{g }{2\pi }  \right)^2 \int \frac{m^2 + \left(p_1 p_2 \right) }{2 \varepsilon_{\vec{k}} E_1 E_2 } \delta(p_1+p_2-k) \mathrm{d}^3\vec{p}_1 \mathrm{d}^3\vec{p}_2
+\end{aligned}
+$$
+
+（3）对终态动量积分
+
+取初态为质心系
+
+$$
+\vec{k} = 0,\quad \varepsilon_{\vec{k}} = M
+$$
+
+$$
+\delta(p_1 + p_2 - k)
+=\delta(\vec{p}_1 + \vec{p}_2) \delta(E_1+E_2-M)
+$$
+
+对 $\vec{p}_1 $ 积分，考虑到 $\delta(\vec{p}_1+\vec{p}_2) $ 函数，只需要把被积函数中除 $\delta(\vec{p}_1+\vec{p}_2) $ 函数外的项中 $\vec{p}_1 $ 全替换成 $-\vec{p}_2 $ 即可：
+
+$$
+\vec{p}_1 \to -\vec{p}_2,\quad
+E_1 = \sqrt{\vec{p}_1^2 + m^2} \to \sqrt{\vec{p}_2^2 + m^2} = E_2 \equiv E,\quad
+\left(p_1 p_2 \right) = \vec{p}_1 \cdot \vec{p}_2 - E_1 E_2 \to -\vec{p}_2^2 - E^2 = m^2 - 2E^2
+$$
+
+$$
+\begin{aligned}
+\lambda
+&=-\left(\frac{g }{2\pi }  \right)^2 \int \frac{m^2 + \left(p_1 p_2 \right) }{2 \varepsilon_{\vec{k}} E_1 E_2 } \delta(p_1+p_2-k) \mathrm{d}^3\vec{p}_1 \mathrm{d}^3\vec{p}_2 \\
+&=-\left(\frac{g }{2\pi }  \right)^2 \int \frac{m^2 - E^2 }{M E^2 } \delta(2E-M) \mathrm{d}^3\vec{p}_2 \\
+\end{aligned}
+$$
+
+再考虑对 $\vec{p}_2 $ 的积分，利用球坐标
+
+$$
+E^2 = \left|\vec{p}_2 \right|^2 + m^2\quad
+2 E \mathrm{d}E = 2\left|\vec{p}_2 \right|\mathrm{d}\left|\vec{p}_2 \right|,\quad
+\left|\vec{p}_2 \right|^2\mathrm{d}\left|\vec{p}_2 \right|
+=\left|\vec{p}_2 \right| E \mathrm{d}E
+=\sqrt{E^2-m^2} E\mathrm{d}E
+$$
+
+$$
+\begin{aligned}
+\mathrm{d}^3\vec{p}_2
+=\left|\vec{p}_2  \right|^2 \mathrm{d}\left|\vec{p}_2 \right|\mathrm{d}\Omega
+=\sqrt{E^2-m^2} E \mathrm{d}E \mathrm{d}\Omega
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\lambda
+&=-\left(\frac{g }{2\pi }  \right)^2 \int \frac{m^2 - E^2 }{M E^2 } \delta(2E-M) \mathrm{d}^3\vec{p}_2 \\
+&=-\left(\frac{g }{2\pi }  \right)^2 \int \frac{m^2 - E^2 }{M E^2 } \cdot \frac{1 }{2 }  \delta(E-M/2) \sqrt{E^2-m^2} E\mathrm{d}E \\
+&=\frac{g^2 }{8\pi M^2 } \left(M^2 - 4m^2 \right)^{3/2}
+\end{aligned}
+$$
+
+对应衰变寿命为
+
+$$
+\tau
+=\frac{8\pi M^2 }{g^2 } \left(M^2-4m^2 \right)^{-3/2}
+$$
+
+
+
 
 
 ## 4.13 非相对论情况下 Rutherford 散射问题
 
 ## 4.14 光子和电子的散射（Compton 效应）
 
+设动量为 $h\nu_0/c $ 的光子与质量为 $m $ 的静止于 $O $ 点质量为 $m $ 的电子相撞，其结果：电子以速度 $v $ 向 $\varphi $ 角方向运动，光子以动量 $h\nu/c $ 向 $\theta $ 方向偏转。
+
+### Compton 效应的 $M_{i-f}^{(2)} $ 矩阵元素
+
+反应式：
+
+$$
+e^- + \gamma \to e^- + \gamma
+$$
+
+最低阶费曼图有两张。
+
+### 截面
+
+### 光子角分布公式
+
+### 总截面
+
+
+
 ## 4.15 正负电子对湮灭为两个光子
+
+$$
+e^+ + e^- \to \gamma + \gamma'
+$$
+
+
 
 ## 4.16 高能电子对撞
 
 ## 4.17 $\mu $ 粒子衰变
+
+$$
+\mu^- \to e^- + \nu_\mu + \bar{\nu}_e,\quad
+\mu^+ \to e^+ + \nu_e + \bar{\nu}_\mu
+$$
+
+### 弱相互作用哈密顿量和 $\lambda $ 的计算公式
+
+### 平均求和
+
+### 终态动量积分
 
 
 
