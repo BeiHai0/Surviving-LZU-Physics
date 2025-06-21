@@ -2042,7 +2042,70 @@ $$
 
 要研究 $\hat{S} $ 在粒子数表象中的矩阵元，就必须讨论场算符的 $N $ 乘积对本征态矢量的作用。
 
-可证明
+已知
+
+$$
+\hat{A}_\mu^{(+)}(x)
+=\frac{1 }{\sqrt{V} } \sum_{\vec{k},\nu} \frac{1 }{\sqrt{2\varepsilon_{\vec{k}}} } e_\mu^\nu \hat{C}_{\vec{k}}^{\nu(+)} \mathrm{e}^{-\mathrm{i}k x}
+$$
+
+$$
+\hat{A}_\mu^{(-)}(x)
+=\frac{1 }{\sqrt{V} } \sum_{\vec{k},\nu} \frac{1 }{\sqrt{2\varepsilon_{\vec{k}}} } e_\mu^\nu \hat{C}_{\vec{k}}^{\nu(-)} \mathrm{e}^{+\mathrm{i}k x}
+$$
+
+$$
+\hat{\psi}^{(+)}(x)
+=\frac{1 }{\sqrt{V} } \sum_{\vec{p},i} \hat{b}_{\vec{p} i}^{(+)} v_i(\vec{p}) \mathrm{e}^{-\mathrm{i}px}
+$$
+
+$$
+\hat{\psi}^{(-)}(x)
+=\frac{1 }{\sqrt{V} } \sum_{\vec{p},i} \hat{a}_{\vec{p}i}^{(-)} u_i(\vec{p}) \mathrm{e}^{\mathrm{i}p x}
+$$
+
+$$
+\hat{\bar{\psi}}^{(+)}(x)
+=\frac{1 }{\sqrt{V} } \sum_{\vec{p},i} \hat{a}_{\vec{p} i}^{(+)} \bar{u}_i(\vec{p}) \mathrm{e}^{-\mathrm{i}p x}
+$$
+
+$$
+\hat{\bar{\psi}}^{(-)}(x)
+=\frac{1 }{\sqrt{V} } \sum_{\vec{p},i} \hat{b}_{\vec{p}i}^{(-)} \bar{v}_i(\vec{p}) \mathrm{e}^{\mathrm{i}p x}
+$$
+
+我们需要的是 $\hat{A}_\mu^{(-)}(x) , \hat{\psi}^{(-)}(x) , \hat{\bar{\psi}}^{(-)}(x) $ 从左边作用于粒子数表象单粒子本征态的结果。
+
+注意到：
+
+$$
+\begin{aligned}
+\hat{A}_\mu^{(+)}(x) \Phi_{\vec{k} \nu}
+&=\left(\frac{1 }{\sqrt{V} } \sum_{\vec{k}',\nu'} \frac{1 }{\sqrt{2\varepsilon_{\vec{k}'}} } e_\mu^{\nu'} \hat{C}_{\vec{k}'}^{\nu'(-)} \mathrm{e}^{+\mathrm{i}k' x} \right) \Phi_{\vec{k} \nu} \\
+&=\left(\frac{1 }{\sqrt{V} } \sum_{\vec{k}',\nu'} \frac{1 }{\sqrt{2\varepsilon_{\vec{k}'}} } e_\mu^{\nu'} \delta_{\vec{k},\vec{k}'} \delta_{\nu,\nu'} \mathrm{e}^{+\mathrm{i}k' x} \right) \Phi_{0} \\
+&=\frac{1 }{\sqrt{V} } \frac{1 }{\sqrt{2\varepsilon_{\vec{k}}} } e_\mu^\nu \mathrm{e}^{+\mathrm{i}k x} \Phi_0
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\hat{\psi}^{(-)}(x) \Phi_{\vec{p} i}
+&=\left(\frac{1 }{\sqrt{V} } \sum_{\vec{p}',i'} \hat{a}_{\vec{p}'i'}^{(-)} u_{i'}(\vec{p}') \mathrm{e}^{\mathrm{i}p' x} \right) \Phi_{\vec{p} i} \\
+&=\left(\frac{1 }{\sqrt{V} } \sum_{\vec{p}',i'} \delta_{\vec{p},\vec{p}'} \delta_{i,i'} u_{i'}(\vec{p}') \mathrm{e}^{\mathrm{i}p' x} \right) \Phi_{0} \\
+&=\frac{1 }{\sqrt{V} } u_i(\vec{p}) \mathrm{e}^{\mathrm{i}p x} \Phi_0
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\hat{\bar{\psi}}^{(-)}(x) \Phi_{\vec{p} i}
+&=\left(\frac{1 }{\sqrt{V} } \sum_{\vec{p}',i'} \hat{b}_{\vec{p}'i'}^{(-)} \bar{v}_{i'}(\vec{p}) \mathrm{e}^{\mathrm{i}p' x} \right) \Phi_{\vec{p} i} \\
+&=\left(\frac{1 }{\sqrt{V} } \sum_{\vec{p}',i'}\delta_{\vec{p},\vec{p}'} \delta_{i,i'} \bar{v}_{i'}(\vec{p}) \mathrm{e}^{\mathrm{i}p' x} \right) \Phi_{0} \\
+&=\frac{1 }{\sqrt{V} } \bar{v}_i(\vec{p}) \mathrm{e}^{\mathrm{i}p x}
+\end{aligned}
+$$
+
+总之：
 
 $$
 \hat{A}_\mu^{(-)}(x) \Phi_{\vec{k} \nu}
@@ -2067,29 +2130,31 @@ $$
 $$
 
 $$
-
+\Phi_{\vec{p} i}^\dag \hat{\psi}^{(+)}(x)
+=\frac{1 }{\sqrt{V} } v_i(\vec{p}) \mathrm{e}^{-\mathrm{i}p x}\Phi_0^\dag
 $$
 
 $$
-
+\Phi_{\vec{p} i}^\dag \hat{\bar{\psi}}^{(+)}(x)
+=\frac{1 }{\sqrt{V} } \bar{u}_i(\vec{p}) \mathrm{e}^{-\mathrm{i}p x}\Phi_0^\dag
 $$
 
-令 $\hat{O} $ 为产生和消灭算符的 $N $ 乘积，$\hat{O} $ 算符由确定初态向确定终态跃迁的矩阵元定义为：
+令 $\hat{O} $ 为产生和消灭算符的 $N $ 乘积，粒子数表象下 $\hat{O} $ 算符由确定初态向确定终态跃迁的矩阵元定义为：
 
 $$
 \Phi_f^\dag \hat{O} \Phi_i
 =\Braket{f|\hat{O}|i}
 $$
 
+其中 $\ket{i},\ket{f} $ 都是粒子数算符本征态。
+
 只有当 $\hat{O} $ 中消灭粒子算符的数目和种类与初态 $\Phi_i $ 的完全相同，且 $\hat{O} $ 中产生粒子算符的数目和种类与终态 $\Phi_f $ 的完全相同，$\Braket{f|\hat{O}|i} $ 才可能不为零。
-
-
 
 ### $S $ 矩阵的矩阵元
 
 $S $ 矩阵可分解为 $\hat{S}_n $ 矩阵之和，而 $\hat{S}_n $ 矩阵又可用 Wick 定理展开成数项场算符的 $N $ 乘积对时空坐标的积分。
 
-数项中，有 $r $ 可以用同一 Feynman 图解表示。
+这些项中，有 $r $ 可以用同一 Feynman 图解表示。
 
 $\hat{S}_n $ 中可以用同一 Feynman 图解表达的项记为 $\hat{M}^n $，则：
 
