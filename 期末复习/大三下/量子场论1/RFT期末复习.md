@@ -3888,7 +3888,7 @@ x'(x,0) = x,\quad
 \Phi_A(x,0) = \phi_A(x)
 $$
 
-若作用量 $I $ 对这个依赖于连续参数 $\alpha $ 的变换不变，且广义场函数满足欧拉方程 $\left[\mathcal{L} \right]_{\phi_A}=0 $，也即满足最小作用量原理时，则存在守恒定律
+若作用量 $I $ 对这个依赖于连续参数 $\alpha $ 的变换不变，且广义场函数满足欧拉方程 $\left[\mathcal{L} \right]_{\phi_A}=0 $，也即满足最小作用量原理时，则存在守恒定律（连续方程）
 
 $$
 \partial_\mu \theta_{i\cdots k \mu}
@@ -3908,7 +3908,7 @@ $$
 
 #### 能量动量张量和能量动量守恒
 
-考虑四维时空平移变换：
+考虑坐标进行四维时空平移变换：
 
 $$
 x'_\mu(x,\alpha) = x_\mu + \alpha_\mu,\quad
@@ -3920,9 +3920,9 @@ $$
 计算变换后坐标对参数的偏导、变换后广义场函数对参数的偏导在参数为零处的取值：
 
 $$
-\frac{\partial x'_\mu(x,\alpha) }{\partial \alpha_\nu } 
+\frac{\partial x'_\mu(x,\alpha) }{\partial \alpha_\nu } \bigg|_{\alpha=0}
 =\delta_{\mu\nu},\quad
-\frac{\partial \phi'_A(x,\alpha) }{\partial \alpha_\nu } 
+\frac{\partial \phi'_A(x,\alpha) }{\partial \alpha_\nu } \bigg|_{\alpha=0}
 =0
 $$
 
@@ -3941,15 +3941,231 @@ $$
 \begin{aligned}
 \theta_{\nu \mu}
 &=\left[\mathcal{L}\frac{\partial x'_\mu }{\partial \alpha_{\nu} } - \frac{\partial \mathcal{L} }{\partial\left(\partial_\mu \phi_A \right) } \partial_\beta \phi_A \frac{\partial x'_\beta }{\partial \alpha_{\nu} } + \frac{\partial \mathcal{L} }{\partial\left(\partial_\mu \phi_A \right) } \frac{\partial \phi_A' }{\partial \alpha_{\nu} }  \right]\bigg|_{\alpha=0} \\
-&=\mathcal{L}
+&=\mathcal{L} \delta_{\mu\nu} - \frac{\partial \mathcal{L} }{\partial\left(\partial_\mu \phi_A \right) } \partial_\nu \phi_A
 \end{aligned}
+$$
+
+交换 $\mu,\nu $ 指标得到：
+
+$$
+\theta_{\mu\nu}
+=\mathcal{L} \delta_{\mu\nu} - \frac{\partial \mathcal{L} }{\partial\left(\partial_\nu \phi_A \right) } \partial_\mu \phi_A
+$$
+
+定义场的能量动量张量 $T_{\mu\nu} $：
+
+$$
+T_{\mu\nu}
+\equiv \mathcal{L} \delta_{\mu\nu} - \frac{\partial \mathcal{L} }{\partial\left(\partial_\nu \phi_A \right) } \partial_\mu \phi_A
+$$
+
+诺特定理中的连续方程
+
+$$
+\partial_\mu \theta_{i\cdots k\mu} = 0
+$$
+
+在这里表现为：
+
+$$
+\partial_\nu T_{\mu\nu}
+=0
+$$
+
+诺特定理中的守恒张量
+
+$$
+T_{i\cdots k}
+=\frac{1 }{\mathrm{i} } \int \theta_{i\cdots k4}\mathrm{d}V
+$$
+
+在这里表现为：
+
+$$
+p_\mu
+\equiv \frac{1 }{\mathrm{i} } \int T_{\mu4}\mathrm{d}V,\quad
+\frac{\mathrm{d}p_\mu }{\mathrm{d}t }
+=0
+$$
+
+$$
+p_i
+\equiv \frac{1 }{\mathrm{i} } \int T_{i4}\mathrm{d}V,\quad
+p_4
+\equiv \frac{1 }{\mathrm{i} } \int T_{44}\mathrm{d}V
+=\mathrm{i} \frac{E }{c } 
+$$
+
+$p_i $ 称为三维空间场的动量，$E $ 称为场的能量。
+
+$$
+E
+=-\int T_{44} \mathrm{d}V
 $$
 
 #### 角动量张量和角动量守恒
 
+考虑坐标进行固有 Lorentz 变换，广义场函数（标量场、矢量场或旋量场）也进行相应变换：
+
+$$
+x'_\mu(x,\alpha) = a_{\mu \nu} x_\nu = (\delta_{\mu\nu} + \alpha_{\mu\nu}) x_\nu,\quad
+\phi'(x,\alpha) = D(\alpha) \phi(x)
+$$
+
+其中，对于标量场，$\phi(x) $ 是标量，$D(\alpha) $ 是 $1 $；对于矢量场，$\phi(x) $ 是矢量场列矢量，$D(\alpha) $ 是固有 Lorentz 变换矩阵；对于旋量场，$\phi(x) $ 是旋量列矢量，$D(\alpha) $ 是固有 Lorentz 变换的旋量表示 $S .$
+
+根据诺特定理，若场的作用量对坐标的固有 Lorentz 变换和广义场函数相应变换保持不变，则存在连续方程和守恒张量。下面来找连续方程和守恒张量。
+
+为简单，考虑坐标和广义场函数的无穷小变换，即：
+
+$$
+\alpha_{\mu\nu} \to 0,\quad
+x'_\mu(x,\alpha) = (\delta_{\mu\nu} + \alpha_{\mu\nu}) x_\nu = x_\mu + \alpha_{\mu\nu} x_\nu 
+$$
+
+$$
+\phi'(x,\alpha) = \phi(x) + \frac{1 }{2 } I_{\mu\nu} \alpha_{\mu\nu} \phi(x),\quad
+I_{\mu\nu} \equiv \frac{\partial D(\alpha) }{\partial \alpha_{\mu\nu} } \bigg|_{\alpha=0}
+$$
+
+$$
+\phi_A'(x,\alpha) = \phi_A(x) + \frac{1 }{2 } \left(I_{\mu\nu} \right)_{AB} \alpha_{\mu\nu} \phi_B(x)
+$$
+
+容易证明，无穷小变换情况下，$\alpha_{\mu\nu}=-\alpha_{\nu\mu},I_{\mu\nu}=-I_{\nu\mu} $，这就导致了 $1/2 $ 因子。
+
+计算变换后坐标对参数的偏导、变换后广义场函数对参数的偏导在参数为零处的取值：
+
+$$
+\frac{\partial x'_\mu(x,\alpha) }{\partial\alpha_{\lambda\rho} } \bigg|_{\alpha=0}
+=\left(\delta_{\mu\lambda}\delta_{\nu\rho} - \delta_{\mu\rho}\delta_{\nu\lambda} \right)x_\nu
+=\delta_{\mu\lambda}x_\rho - \delta_{\mu\rho}x_\lambda
+$$
+
+$$
+\frac{\partial \phi'(x,\alpha) }{\partial \alpha_{\lambda\rho} } \bigg|_{\alpha=0}
+=I_{\lambda\rho} \phi(x)
+\equiv D_{\lambda\rho}
+$$
+
+$$
+\frac{\partial \phi_A'(x,\alpha) }{\partial \alpha_{\lambda\rho} } \bigg|_{\alpha=0}
+=\left(I_{\lambda\rho} \right)_{AB} \phi_B(x)
+\equiv \left(D_{\lambda\rho} \right)_A
+$$
+
+诺特定理中定义的量
+
+$$
+\begin{aligned}
+\theta_{i\cdots k \mu}
+&\equiv \left[\mathcal{L}\frac{\partial x'_\mu }{\partial \alpha_{i\cdots k} } - \frac{\partial \mathcal{L} }{\partial\left(\partial_\mu \phi_A \right) } \partial_\nu \phi_A \frac{\partial x'_\nu }{\partial \alpha_{i\cdots k} } + \frac{\partial \mathcal{L} }{\partial\left(\partial_\mu \phi_A \right) } \frac{\partial \phi_A' }{\partial \alpha_{i\cdots k} }  \right]\bigg|_{\alpha=0} \\
+\end{aligned}
+$$
+
+在这里（参数 $\alpha_{\mu\nu} $）表现为：
+
+$$
+\begin{aligned}
+\theta_{\lambda\rho\mu}
+&=\left[\mathcal{L}\frac{\partial x'_\mu }{\partial \alpha_{\lambda\rho} } - \frac{\partial \mathcal{L} }{\partial\left(\partial_\mu \phi_A \right) } \partial_\nu \phi_A \frac{\partial x'_\nu }{\partial \alpha_{\lambda\rho} } + \frac{\partial \mathcal{L} }{\partial\left(\partial_\mu \phi_A \right) } \frac{\partial \phi_A' }{\partial \alpha_{\lambda\rho} }  \right]\bigg|_{\alpha=0} \\
+&=\mathcal{L}(\delta_{\mu\lambda}x_\rho - \delta_{\mu\rho}x_\lambda) - \frac{\partial \mathcal{L} }{\partial\left(\partial_\mu \phi_A \right) } \partial_\nu \phi_A(\delta_{\nu\lambda}x_\rho - \delta_{\nu\rho}x_\lambda) + \frac{\partial\mathcal{L} }{\partial\left(\partial_\mu\phi_A \right) } \left(D_{\lambda\rho} \right)_A \\
+&=\mathcal{L}(\delta_{\mu\lambda}x_\rho - \delta_{\mu\rho}x_\lambda) - \frac{\partial \mathcal{L} }{\partial\left(\partial_\mu \phi_A \right) } (x_\rho \partial_\lambda \phi_A - x_\lambda \partial_\rho \phi_A) + \frac{\partial\mathcal{L} }{\partial\left(\partial_\mu\phi_A \right) } \left(D_{\lambda\rho} \right)_A \\
+&=\left(\mathcal{L}\delta_{\mu\lambda} - \frac{\partial \mathcal{L} }{\partial\left(\partial_\mu \phi_A \right) } \partial_\lambda \phi_A \right) x_\rho - \left(\mathcal{L}\delta_{\mu\rho} - \frac{\partial \mathcal{L} }{\partial\left(\partial_\mu \phi_A \right) } \partial_\rho \phi_A \right) x_\lambda + \frac{\partial\mathcal{L} }{\partial\left(\partial_\mu\phi_A \right) } \left(D_{\lambda\rho} \right)_A \\
+&\equiv T_{\lambda\mu} x_\rho - T_{\rho\mu} x_\lambda + \frac{\partial\mathcal{L} }{\partial\left(\partial_\mu\phi_A \right) } \left(D_{\lambda\rho} \right)_A \\
+\end{aligned}
+$$
+
+换个指标：
+
+$$
+\theta_{[\mu\nu]\alpha}
+=T_{\mu\alpha} x_\nu - T_{\nu\alpha} x_\mu + \frac{\partial\mathcal{L} }{\partial\left(\partial_\alpha\phi_A \right) } \left(D_{\mu\nu} \right)_A
+$$
+
+场的总动量矩张量 $J_{[\mu\nu]\alpha} $ 定义为：
+
+$$
+J_{[\mu\nu]\alpha}
+\equiv T_{\mu\alpha} x_\nu - T_{\nu\alpha} x_\mu + \frac{\partial\mathcal{L} }{\partial\left(\partial_\alpha\phi_A \right) } \left(D_{\mu\nu} \right)_A
+$$
+
+定义场的三阶轨道动量矩张量 $L_{[\mu\nu]\alpha} $：
+
+$$
+L_{[\mu\nu]\alpha}
+\equiv T_{\mu\alpha} x_\nu - T_{\nu\alpha} x_\mu
+$$
+
+定义场的三阶自旋张量 $S_{[\mu\nu]\alpha} $：
+
+$$
+S_{[\mu\nu]\alpha}
+\equiv \frac{\partial\mathcal{L} }{\partial\left(\partial_\alpha\phi_A \right) } \left(D_{\mu\nu} \right)_A
+$$
+
+则：
+
+$$
+J_{[\mu\nu]\alpha}
+=L_{[\mu\nu]\alpha} + S_{[\mu\nu]\alpha}
+$$
+
+诺特定理中的连续方程
+
+$$
+\partial_\mu \theta_{i\cdots k\mu} = 0
+$$
+
+在这里表现为：
+
+$$
+\partial_\alpha J_{[\mu\nu]\alpha}
+=0
+$$
+
+诺特定理中的守恒张量
+
+$$
+T_{i\cdots k}
+=\frac{1 }{\mathrm{i} } \int \theta_{i\cdots k4}\mathrm{d}V
+$$
+
+在这里表现为：
+
+$$
+J_{\mu\nu}
+\equiv \frac{1 }{\mathrm{i} } \int J_{[\mu\nu]4}\mathrm{d}V,\quad
+\frac{\mathrm{d}J_{\mu\nu } }{\mathrm{d}t } 
+=0
+$$
+
+其中 $J_{\mu\nu} $ 称为二阶动量矩张量。
+
+定义场的二阶轨道动量矩张量：
+
+$$
+L_{\mu\nu}
+\equiv \frac{1 }{\mathrm{i} } \int L_{[\mu\nu]4}\mathrm{d}V
+$$
+
+定义场的二阶自旋张量：
+
+$$
+S_{\mu\nu}
+\equiv \frac{1 }{\mathrm{i} } \int S_{[\mu\nu]4}\mathrm{d}V
+$$
+
+则守恒量 $J_{\mu\nu} $ 可写为：
+
+$$
+J_{\mu\nu}
+=L_{\mu\nu} + S_{\mu\nu}
+$$
+
 #### 相因子变换、电流密度矢量和电荷守恒
 
-考虑相因子变换:
+考虑广义场函数进行相因子变换:
 
 $$
 x'_\mu(x,\alpha) = x_\mu,\quad
@@ -3962,7 +4178,7 @@ $$
 计算变换后坐标对参数的偏导、变换后广义场函数对参数的偏导在参数为零处的取值：
 
 $$
-\frac{\partial x'(x,\alpha) }{\partial\alpha }
+\frac{\partial x'_\mu(x,\alpha) }{\partial\alpha } \bigg|_{\alpha=0}
 =0,\quad
 \frac{\partial \phi_A'(x,\alpha) }{\partial\alpha } \bigg|_{\alpha=0}
 =\mathrm{i}\phi_A(x),\quad
@@ -4007,7 +4223,8 @@ $$
 $$
 j_\mu
 \equiv -e \theta_\mu
-=-\mathrm{i} e \left[\frac{\partial\mathcal{L} }{\partial\left(\partial_\mu\phi_A \right) } \phi_A - \phi_A^*\frac{\partial\mathcal{L} }{\partial\left(\partial_\mu\phi_A^* \right) }  \right]
+=-\mathrm{i} e \left[\frac{\partial\mathcal{L} }{\partial\left(\partial_\mu\phi_A \right) } \phi_A - \phi_A^*\frac{\partial\mathcal{L} }{\partial\left(\partial_\mu\phi_A^* \right) }  \right],\quad
+j_\mu = \left(\vec{j} , \mathrm{i}\rho \right)
 $$
 
 则 $j_\mu $ 满足连续方程：
@@ -4036,7 +4253,153 @@ $$
 
 # 7 规范场理论
 
+## 规范变换
+
+设 $H $ 是一个以 $\alpha $ 为参数的 $r $ 阶李群，$S(\alpha) $ 是 $H $ 的不可约线性表示，某广义场函数 $\phi $ 为 $S(\alpha) $ 的变换对象。
+
+若 $\alpha $ 是局域的，则变换
+
+$$
+\phi'(x)
+\equiv S(\alpha(x)) \phi(x)
+$$
+
+称为广义场函数 $\phi $ 对于李群 $H $ 的规范变换。
+
+由于 $S(\alpha(x)) $ 是局域的，因此
+
+$$
+\partial_\mu \phi'(x)
+\ne S(\alpha(x)) \partial_\mu \phi(x)
+$$
+
+这就无法保证拉格朗日函数的规范不变性。
+
+假设存在一种微商运算 $\nabla_\mu $，使得 $\nabla_\mu \phi(x) $ 是规范协变量，即：
+
+$$
+\nabla'_\mu \phi'(x)
+=S(x) \nabla_\mu \phi(x)
+$$
+
+设：
+
+$$
+\nabla_\mu \phi
+=\partial_\mu \phi - \omega_\mu \phi
+$$
+
+可以证明，$\omega_\mu $ 的变换规律为：
+
+$$
+\omega_\mu'
+=S \omega_\mu S^{-1} + \left(\partial_\mu S \right)S^{-1}
+$$
+
+矩阵函数 $\omega_\mu $ 称为联络矩阵。
+
+## 伴随协变张量 $F_{\mu\nu} $ 及其性质
+
+设 $F_{\mu\nu} $ 满足
+
+$$
+\left(\nabla_\mu \nabla_\nu - \nabla_\nu \nabla_\mu \right)\phi(x)
+=-F_{\mu\nu} \phi(x)
+$$
+
+可证明
+
+$$
+F_{\mu\nu}
+=\partial_\mu \omega_\nu - \partial_\nu \omega_\mu - \left[\omega_\mu , \omega_\nu \right]
+$$
+
+其变换规律为
+
+$$
+F'_{\mu\nu}
+=S F_{\mu\nu} S^{-1}
+$$
+
+这说明 $F_{\mu\nu} $ 是规范协变量，且
+
+$$
+\mathrm{Tr}\left(F'_{\mu\nu} F'_{\mu\nu} \right)
+=\mathrm{Tr}\left(F_{\mu\nu} F_{\mu\nu} \right)
+$$
+
+是规范不变量，同时也是 Lorentz 不变量，可用于构造规范场的拉格朗日函数。
+
 # 8 自由场二次量子化
+
+## 量子场论基本假设
+
+（1）二次量子化状态由态矢量（状态幅度）$\Psi $ 或 $\Ket{\Psi } $ 完全描述
+
+（2）
+
+$$
+\Braket{\alpha_1\Phi_1+\alpha_2\Phi_2|\Psi}
+=\alpha_1^*\braket{\Phi_1|\Psi} + \alpha_2^*\braket{\Phi_2|\Psi}
+$$
+
+$$
+\braket{\Phi|\Psi}^\dag
+=\braket{\Psi|\Phi}
+$$
+
+$$
+\braket{\Psi|\Psi} \geqslant 0
+$$
+
+（3）所有经典场的物理量都对应于 Hilbert 空间的一个线性厄米算符 $\hat{T}_{\mu\cdots\nu\lambda} $，其观测平均值为：
+
+$$
+\Braket{\Psi|\hat{T}_{\mu\cdots \nu\lambda}|\Psi}
+$$
+
+（4）二次量子化中的态矢量 $\Psi $ 满足薛定谔方程
+
+$$
+\mathrm{i}\partial_t \Psi
+=\hat{H} \Psi
+$$
+
+$\hat{H} $ 是经典场的能量算符。
+
+## 二次量子化 SOP
+
+（1）将场函数进行 Fourier 分解（三维积分分解、四维积分分解或级数分解），把场函数算符化为场算符。场算符可表达为无数产生、消灭算符的线性叠加；
+
+（2）把经典场的哈密顿量算符化为哈密顿算符，哈密顿算符可由产生、消灭算符表达。利用海森堡方程求解哈密顿算符与产生、消灭算符对易关系；
+
+（3）给出对易关系和粒子数表象；
+
+（4）给出各种物理量算符的二次量子化结果。
+
+## 实标量场量子化
+
+$$
+\hat{\phi}(x)
+=\hat{\phi}^{(+)}(x) + \hat{\phi}^{(-)}(x)
+$$
+
+$$
+\hat{\phi}^{(+)}(x)
+=\left(\frac{1 }{2\pi }  \right)^{3/2} \int \mathrm{e}^{-\mathrm{i}k x}\frac{1 }{\sqrt{2\varepsilon_{\vec{k}}} } \hat{\phi}^{(+)}\left(\vec{k} \right) \mathrm{d}^3\vec{k}
+$$
+
+$$
+\hat{\phi}^{(-)}(x)
+=\left(\frac{1 }{2\pi }  \right)^{3/2} \int \mathrm{e}^{+\mathrm{i}k x}\frac{1 }{\sqrt{2\varepsilon_{\vec{k}}} } \hat{\phi}^{(-)}\left(\vec{k} \right) \mathrm{d}^3\vec{k}
+$$
+
+
+## 矢量场量子化
+
+## 旋量场量子化
+
+
 
 # 9 两个绘景、一个表象
 
