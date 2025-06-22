@@ -2154,7 +2154,7 @@ $$
 
 $S $ 矩阵可分解为 $\hat{S}_n $ 矩阵之和，而 $\hat{S}_n $ 矩阵又可用 Wick 定理展开成数项场算符的 $N $ 乘积对时空坐标的积分。
 
-这些项中，有 $r $ 可以用同一 Feynman 图解表示。
+这些项中，有 $r $ 项可以用同一 Feynman 图解表示。
 
 $\hat{S}_n $ 中可以用同一 Feynman 图解表达的项记为 $\hat{M}^n $，则：
 
@@ -2173,12 +2173,14 @@ $$
 \end{aligned}
 $$
 
+设 $\hat{F}_i $ 中消灭正负电子的算符数为 $\alpha_i' $，消灭光子的算符数为 $r_i' $；$\hat{F}_f $ 中产生正负电子的算符数为 $\alpha_f' $，产生光子的算符数为 $r_f'$，则 $\hat{M}^n $ 可写为：
+
 $$
 \hat{M}^n
 =\hat{M}^n \left(\alpha_f',r_f';\alpha_i',r_i' \right)
 $$
 
-假设要研究的基本粒子反应的初态为 $\alpha_i $ 个正负电子和 $r_i $ 个光子，终态为 $\alpha_f $ 个正负电子和 $r_f $ 个光子。
+为了计算粒子数表象 $\hat{S} $ 矩阵元，假设要研究的基本粒子反应的初态为 $\alpha_i $ 个正负电子和 $r_i $ 个光子，终态为 $\alpha_f $ 个正负电子和 $r_f $ 个光子。
 
 $$
 \Phi_f^\dag \hat{S} \Phi_i
@@ -2193,7 +2195,7 @@ $$
 =\Phi_{\alpha_f r_f}
 $$
 
-代入得：
+可以知道，只有当 $\alpha_f'=\alpha_f,r_f'=r_f,\alpha_i'=\alpha_i,r_i'=r_i $ 时 $\Phi_{\alpha_f r_f}^\dag \hat{M}^n\left(\alpha_f',r_f';\alpha_i',r_i' \right) \Phi_{\alpha_i r_i} $ 才可能不为零。
 
 设 $\hat{M}(\alpha_f,r_f;\alpha_i,r_i) $ 为所有不同级的 $\hat{S}_n $ 矩阵的展开式中具有初态为 $(\alpha_i,r_i) $ 且终态为 $(\alpha_f,r_f) $ 的各项 $\hat{M}^n(\alpha_f,r_f;\alpha_i,r_i) $ 之和，即：
 
@@ -2204,7 +2206,7 @@ $$
 
 其中，$l $ 代表可能发生上述基本粒子反应的最低阶 $\hat{S}_n $ 矩阵的阶数。
 
-则：
+则 $\hat{S} $ 矩阵元可写为：
 
 $$
 \Phi_f^\dag \hat{S} \Phi_i
@@ -2219,7 +2221,7 @@ $$
 
 ## 4.10 动量表象 S 矩阵元
 
-假设所研究得正负电子和光子反应的 Feynman 图中有：$n $ 个顶点（即 $n $ 阶 S 矩阵）、$E_e $ 个正负电子外线、$E_\gamma $ 个光子外线、$I_e $ 个正负电子内线、$I_\gamma $ 个光子外线、$S $ 个电磁场外线，则：
+假设所研究的正负电子和光子反应的 Feynman 图中有：$n $ 个顶点（即 $n $ 阶 S 矩阵）、$E_e $ 个正负电子外线、$E_\gamma $ 个光子外线、$I_e $ 个正负电子内线、$I_\gamma $ 个光子外线、$S $ 个电磁场外线，则：
 
 外线总数 $E=E_e+E_\gamma $
 
