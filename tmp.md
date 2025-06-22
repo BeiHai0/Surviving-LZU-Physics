@@ -2215,10 +2215,6 @@ $$
 
 在计算有固定动量和自旋的初态和终态的 $\hat{S} $ 矩阵矩阵元时，只要作替换：
 
-$$
-
-$$
-
 ## 4.10 动量表象 S 矩阵元
 
 假设所研究的正负电子和光子反应的 Feynman 图中有：$n $ 个顶点（即 $n $ 阶 S 矩阵）、$E_e $ 个正负电子外线、$E_\gamma $ 个光子外线、$I_e $ 个正负电子内线、$I_\gamma $ 个光子外线、$S $ 个电磁场外线，则：
@@ -2227,6 +2223,88 @@ $$
 
 内线总数 $I=I_e+I_\gamma $
 
+### 动量表象 Feynman 图解规则
+
+$n $ 个顶点对应 $\displaystyle{ \left(2\pi \right)^4 \prod_{i=1}^{n} \delta\left(\sum p \right)_i}$ 
+
+$E_e $ 个正负电子外线对应 $E_e $ 个 $u_i(\vec{p}),\bar{u}_i(\vec{p}),v_i(\vec{p}),\bar{v}_i(\vec{p}) $，系数为 $\displaystyle{\left(\frac{1 }{\sqrt{V} }  \right)^{E_e} }$ 
+
+$E_\gamma $ 个光子外线对应着 $E_\gamma $ 个 $\displaystyle{\frac{1 }{\sqrt{2\varepsilon_{\vec{k}}} } \hat{e}^\nu = \frac{1 }{\sqrt{2\varepsilon_{\vec{k}}} } e^\nu_\mu \gamma_\mu }$，系数为 $\displaystyle{\left(\frac{1 }{\sqrt{V} }  \right)^{E_\gamma} }$ 
+
+$I_e $ 个正负电子内线对应着 $I_e $ 个 $\displaystyle{\frac{\mathrm{i}\hat{p } - m }{p^2 + m^2 }  }$，系数为 $\displaystyle{\left[\frac{\mathrm{i} }{(2\pi)^4 }  \right]^{I_e} }$，对 $\displaystyle{\prod_{I_e} \mathrm{d}p }$ 积分
+
+$I_\gamma $ 个光子内线对应着 $I_\gamma $ 个 $\displaystyle{\gamma_\mu \frac{1 }{k^2 } \gamma_\mu  }$，系数为 $\displaystyle{\left[\frac{-\mathrm{i} }{(2\pi)^4 }  \right]^{I_\gamma} }$，对 $\displaystyle{\prod_{I_\gamma} \mathrm{d}k }$ 积分
+
+$l $ 个电子封闭内线贡献一个因子 $(-1)^l $
+
+$S $ 个外场线对应着 $S $ 个 $\hat{a}=a_\mu(q) \gamma_\mu $，系数为 $\displaystyle{\left[\frac{1 }{(2\pi)^4 }  \right]^{S} }$，对 $\displaystyle{\prod_{S} \mathrm{d}q }$ 积分
+
+|Feynman图解中的要素|Feynman图|$M_{i-f}^n $矩阵元中的因子|
+|:---:|:---:|:---:|
+|自旋为 $i $ 的电子初态外线||$u_i(\vec{p}) $|
+|自旋为 $i $ 的电子终态外线||$\bar{u}_i(\vec{p}) $|
+|自旋为 $i $ 的正电子初态外线||$\bar{v}_i(\vec{p}) $|
+|自旋为 $i $ 的正电子终态外线||$v_i(\vec{p}) $|
+|积化为 $\hat{e}^\nu $ 的光子初态终态外线||$\hat{e}^\nu/\sqrt{2\varepsilon_{\vec{k}}}=e^\nu_\mu\gamma_\mu/\sqrt{2\varepsilon_{\vec{k}}}  $|
+|电子或正电子内线||$\frac{\mathrm{i}\hat{p}-m }{p^2+m^2 }  $|
+|光子内线||$\gamma_\mu\cdots \frac{1 }{k^2 } \cdots \gamma_\mu $|
+|每个顶点有两根正负电子线和一根光子线||$\delta(p_2\pm k - p_1) $ 出向粒子动量为正，入向粒子动量为负|
+|电子或正电子封闭内线||$\frac{\mathrm{i}\hat{p}-m }{p^2+m^2 }  $ 与 $\hat{e}^\nu $ 间隔乘积之迹|
+|外场线||$\hat{a}(q)=a_\mu(q)\gamma_\mu $|
+
+规定 Feynman 图解中时间坐标方向为从左到右。
+
+### Compton 效应
+
+Compton 效应：电子先吸收一个光子，变为中间态，然后又放出一个光子；或电子先放出一个光子，变为中间态，又吸收一个光子。
+
+$$
+e^- + \gamma \to e^- + \gamma
+$$
+
+用 $(k_1,\sigma),(k_2,\lambda) $ 表征光子动量和极化，用 $(\vec{p}_1,i),(\vec{p}_2,j) $ 表征电子的动量和自旋。
+
+最低阶 Feynman 图（$n=2 $）有两张。
+
+$n=2,r=2,I_e=1,I_\gamma=0,I=I_e+I_\gamma=1,S=0,l=0,E=E_e+E_\gamma=4 $
+
+$$
+M_{i-f}^n
+=B_{i-f}^n \underbrace{\int \cdots \int }_{I_e+I_\gamma+S} \prod_{I_e} \mathrm{d}p \prod_{I_\gamma} \mathrm{d}k \prod_{S}\mathrm{d}q \left\{\cdots \right\}
+$$
+
+$$
+\begin{aligned}
+B_{i-f}^n
+&=\left(\frac{1 }{\sqrt{V} }  \right)^E \frac{r }{n! } (-e)^n (-1)^l (\mathrm{i})^{I_e-I_\gamma} (2\pi)^{4(n-I-S)} \\
+&=\mathrm{i}\frac{e^2 }{V^2 } (2\pi)^4
+\end{aligned}
+$$
+
+可以写出图一的贡献：
+
+$$
+\begin{aligned}
+\hat{M}_{i-f}^2
+&=\mathrm{i}\frac{e^2 }{V^2 } (2\pi)^4 \int \left(\mathrm{d}p \right) \delta\left(p-p_1-k_1 \right) \delta\left(p_2+k_2-p \right) \bar{u}_j(\vec{p}_2)  \frac{\hat{e}^\lambda }{\sqrt{2\varepsilon_{\vec{k}_2}} }  \frac{\mathrm{i}\hat{p} - m }{\hat{p}^2 + m^2 } \frac{\hat{e}^\sigma }{\sqrt{2\varepsilon_{\vec{k}_1}} }  u_i(\vec{p}_1) \\
+&=\mathrm{i}\frac{e^2 }{V^2 } (2\pi)^4 \delta\left(p_2+k_2-p_1-k_1 \right) \bar{u}_j(\vec{p}_2)  \frac{\hat{e}^\lambda }{\sqrt{2\varepsilon_{\vec{k}_2}} }  \frac{\mathrm{i}\left(\hat{p}_1 + \hat{k}_1 \right) - m }{\left(\hat{p}_1+\hat{k}_1 \right)^2 + m^2 } \frac{\hat{e}^\sigma }{\sqrt{2\varepsilon_{\vec{k}_1}} }  u_i(\vec{p}_1) \\
+\end{aligned}
+$$
+
+可以写出图二的贡献：
+
+$$
+\begin{aligned}
+\hat{M}_{i-f}^{'2}
+&=\mathrm{i}\frac{e^2 }{V^2 } (2\pi)^4 \int \left(\mathrm{d}p \right) \delta\left(p+k_2-p_1 \right) \delta\left(p_2-p-k_1 \right) \bar{u}_j(\vec{p}_2)  \frac{\hat{e}^\sigma }{\sqrt{2\varepsilon_{\vec{k}_1}} }  \frac{\mathrm{i}\hat{p} - m }{\hat{p}^2 + m^2 } \frac{\hat{e}^\lambda }{\sqrt{2\varepsilon_{\vec{k}_2}} }  u_i(\vec{p}_1) \\
+&=\mathrm{i}\frac{e^2 }{V^2 } (2\pi)^4 \delta\left(p_2-k_1+k_2-p_1 \right) \bar{u}_j(\vec{p}_2)  \frac{\hat{e}^\sigma }{\sqrt{2\varepsilon_{\vec{k}_1}} }  \frac{\mathrm{i}\left(\hat{p}_1-\hat{k}_2 \right) - m }{\left(\hat{p}_1-\hat{k}_2 \right)^2 + m^2 } \frac{\hat{e}^\lambda }{\sqrt{2\varepsilon_{\vec{k}_2}} }  u_i(\vec{p}_1) \\
+\end{aligned}
+$$
+
+总的 $M_{i-f}^2 $ 矩阵元是二者之和。
+
+
+
 ## 4.11 基本粒子反应几率和截面
 
 ### $\left|\Braket{f|S|i} \right|^2 $ 的意义
@@ -2234,6 +2312,23 @@ $$
 $\left|\Braket{f|S|i} \right|^2\equiv M_{i-f} $ 表示初终态之间的跃迁几率，即基本粒子衰变或反应几率。不同的 $\bra{f} $ 代表不同的反应道。
 
 ### 单位时间、单位空间基本粒子反应跃迁几率
+
+$M_{i-f} $ 矩阵一般可写成如下形式：
+
+$$
+M_{i-f}
+=\left(\frac{1 }{\sqrt{V} }  \right)^E \delta\left(p^f-p^i \right) M\left(p^f,p^i \right)
+$$
+
+其中 $p^f $ 是末态总动量，$p^i $ 是初态总动量，$E=E_e+E_\gamma=E_i+E_f $
+
+用 $\Gamma $ 表示单位时间单位空间反应的几率，设 $\Omega=T V $ 为基本粒子进行反应的四维空间体积，则
+
+$$
+\Gamma
+\equiv \lim_{\Omega\to\infty} \frac{\left|M_{i-f} \right|^2_{\Omega} }{\Omega }
+= \left(\frac{1 }{2\pi }  \right)^4 \left(\frac{1 }{V }  \right)^{E_i+E_f} \left|M\left(p^f,p^i \right) \right|^2 \delta\left(p^f-p^i \right)
+$$
 
 单位时空体积初终态跃迁几率为：
 
@@ -2299,7 +2394,7 @@ $$
 
 - $\mathrm{d}\sigma $ 表达式与初态粒子数密度无关。
 
-- 总截面代表反应几率。
+- 总截面 $\sigma $ 代表反应几率。
 
 ### 不稳定基本粒子衰变的平均寿命
 
@@ -2329,6 +2424,10 @@ $$
 ## 4.12 光子或电子的自旋状态的求和与平均的公式
 
 一般的基本粒子反应中，初态或终态同类的基本粒子的自旋是平均分布的，称为非极化的。
+
+若终态基本粒子非极化，则反应几率或截面要对**终态**基本粒子自旋求**和**；
+
+若初态基本粒子非极化，则反应几率或截面要对**初态**基本粒子自旋求**平均**。
 
 ### 对电子和正电子终态的自旋求和
 
@@ -2401,11 +2500,41 @@ $$
 则终态求和为
 
 $$
+\boxed{
 \sum_{f=1}^{2} \left|M\left(p^i,p^f \right) \right|^2
 =\frac{m }{E_1 } \bar{u}_i \left(\vec{p}_2 \right) \hat{\bar{O}} \Lambda_-\left(p_1 \right) \hat{O} u_i\left(\vec{p}_2 \right)
+}
 $$
 
 ### 对电子或正电子终态自旋求和并对初态自旋平均
+
+接着对初态自旋求平均。
+
+$$
+\begin{aligned}
+\frac{1 }{2 } \sum_{i=1}^{2} \left(\sum_{f=1}^{2} \left|M\left(p^i,p^f \right) \right|^2 \right)
+&=\frac{1 }{2 } \sum_{i=1}^{2} \frac{m }{E_1 } \bar{u}_i \left(\vec{p}_2 \right) \hat{\bar{O}} \Lambda_-\left(p_1 \right) \hat{O} u_i\left(\vec{p}_2 \right) \\
+&=\frac{1 }{2 } \frac{m^2 }{E_1 E_2 } \mathrm{Tr}\left[\Lambda_-(p_2) \hat{\bar{O}} \Lambda-(p_1) \hat{O} \right]
+\end{aligned}
+$$
+
+总之，要利用
+
+$$
+\sum_i u_i(\vec{p}) \bar{u}_i(\vec{p})
+=\frac{m }{E } \Lambda_-(p)
+=-\frac{1 }{2E } \left(\mathrm{i}\hat{p} - m \right)
+$$
+
+$$
+\sum_i v_i(\vec{p}) \bar{v}_i(\vec{p})
+=-\frac{m }{E } \Lambda_+(p)
+=-\frac{1 }{2E } \left(\mathrm{i}\hat{p} + m \right)
+$$
+
+最后把旋量场粒子非极化态问题转化为 $\gamma_\mu $ 矩阵求迹问题。
+
+### 常用 $\gamma_\mu $ 矩阵求迹公式
 
 ### 对光子的极化求和
 
