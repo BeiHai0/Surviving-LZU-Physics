@@ -878,7 +878,6 @@ $$
 =0
 $$
 
-
 # 第4章 场的相互作用和S矩阵
 
 ## 4.1 场的相互作用拉格朗日函数
@@ -2287,7 +2286,7 @@ $$
 \begin{aligned}
 \hat{M}_{i-f}^2
 &=\mathrm{i}\frac{e^2 }{V^2 } (2\pi)^4 \int \left(\mathrm{d}p \right) \delta\left(p-p_1-k_1 \right) \delta\left(p_2+k_2-p \right) \bar{u}_j(\vec{p}_2)  \frac{\hat{e}^\lambda }{\sqrt{2\varepsilon_{\vec{k}_2}} }  \frac{\mathrm{i}\hat{p} - m }{\hat{p}^2 + m^2 } \frac{\hat{e}^\sigma }{\sqrt{2\varepsilon_{\vec{k}_1}} }  u_i(\vec{p}_1) \\
-&=\mathrm{i}\frac{e^2 }{V^2 } (2\pi)^4 \delta\left(p_2+k_2-p_1-k_1 \right) \bar{u}_j(\vec{p}_2)  \frac{\hat{e}^\lambda }{\sqrt{2\varepsilon_{\vec{k}_2}} }  \frac{\mathrm{i}\left(\hat{p}_1 + \hat{k}_1 \right) - m }{\left(\hat{p}_1+\hat{k}_1 \right)^2 + m^2 } \frac{\hat{e}^\sigma }{\sqrt{2\varepsilon_{\vec{k}_1}} }  u_i(\vec{p}_1) \\
+&=\mathrm{i}\frac{e^2 }{V^2 } (2\pi)^4 \delta\left(p_2+k_2-p_1-k_1 \right) \bar{u}_j(\vec{p}_2)  \frac{\hat{e}^\lambda }{\sqrt{2\varepsilon_{\vec{k}_2}} }  \frac{\mathrm{i}\left(\hat{p}_1 + \hat{k}_1 \right) - m }{\left(p_1+k_1 \right)^2 + m^2 } \frac{\hat{e}^\sigma }{\sqrt{2\varepsilon_{\vec{k}_1}} }  u_i(\vec{p}_1) \\
 \end{aligned}
 $$
 
@@ -2297,7 +2296,7 @@ $$
 \begin{aligned}
 \hat{M}_{i-f}^{'2}
 &=\mathrm{i}\frac{e^2 }{V^2 } (2\pi)^4 \int \left(\mathrm{d}p \right) \delta\left(p+k_2-p_1 \right) \delta\left(p_2-p-k_1 \right) \bar{u}_j(\vec{p}_2)  \frac{\hat{e}^\sigma }{\sqrt{2\varepsilon_{\vec{k}_1}} }  \frac{\mathrm{i}\hat{p} - m }{\hat{p}^2 + m^2 } \frac{\hat{e}^\lambda }{\sqrt{2\varepsilon_{\vec{k}_2}} }  u_i(\vec{p}_1) \\
-&=\mathrm{i}\frac{e^2 }{V^2 } (2\pi)^4 \delta\left(p_2-k_1+k_2-p_1 \right) \bar{u}_j(\vec{p}_2)  \frac{\hat{e}^\sigma }{\sqrt{2\varepsilon_{\vec{k}_1}} }  \frac{\mathrm{i}\left(\hat{p}_1-\hat{k}_2 \right) - m }{\left(\hat{p}_1-\hat{k}_2 \right)^2 + m^2 } \frac{\hat{e}^\lambda }{\sqrt{2\varepsilon_{\vec{k}_2}} }  u_i(\vec{p}_1) \\
+&=\mathrm{i}\frac{e^2 }{V^2 } (2\pi)^4 \delta\left(p_2-k_1+k_2-p_1 \right) \bar{u}_j(\vec{p}_2)  \frac{\hat{e}^\sigma }{\sqrt{2\varepsilon_{\vec{k}_1}} }  \frac{\mathrm{i}\left(\hat{p}_1-\hat{k}_2 \right) - m }{\left(p_1-k_2 \right)^2 + m^2 } \frac{\hat{e}^\lambda }{\sqrt{2\varepsilon_{\vec{k}_2}} }  u_i(\vec{p}_1) \\
 \end{aligned}
 $$
 
@@ -2692,10 +2691,6 @@ $$
 =\frac{8\pi M^2 }{g^2 } \left(M^2-4m^2 \right)^{-3/2}
 $$
 
-
-
-
-
 ## 4.13 非相对论情况下 Rutherford 散射问题
 
 ## 4.14 光子和电子的散射（Compton 效应）
@@ -2712,23 +2707,27 @@ $$
 
 最低阶费曼图有两张。
 
-### 截面
-
-### 光子角分布公式
-
-### 总截面
-
-
-
 ## 4.15 正负电子对湮灭为两个光子
 
 $$
 e^+ + e^- \to \gamma + \gamma'
 $$
 
-
-
 ## 4.16 高能电子对撞
+
+$$
+e^- + e^+ \to f + \tilde{f}
+$$
+
+其中 $f,\tilde{f} $ 是正反费米子对。
+
+### 夸克禁闭
+
+单个夸克和胶子无法被孤立观测，只能被束缚在强子的复合态。实验中迄今未发现独立夸克态的存在。
+
+### 渐进自由
+
+按照 QCD，当强子中夸克能量很高时，夸克之间的强作用很小，可以认为是自由的，这种现象称为**渐进自由**。
 
 ## 4.17 $\mu $ 粒子衰变
 
@@ -2737,12 +2736,176 @@ $$
 \mu^+ \to e^+ + \nu_e + \bar{\nu}_\mu
 $$
 
-### 弱相互作用哈密顿量和 $\lambda $ 的计算公式
+按 Weinberg-Salam 理论，对 $\mu $ 粒子衰变有贡献的相互作用项是轻子-$W $ 耦合项。
 
-### 平均求和
-
-### 终态动量积分
+在低能近似下，四费米子直接相互作用，即 $V-A $ 型相互作用与 W-S 理论在计算 $\mu $ 粒子衰变上没差别。
 
 
 
 
+# 7 规范场理论
+
+## 规范变换
+
+设 $H $ 是一个以 $\alpha $ 为参数的 $r $ 阶李群，$S(\alpha) $ 是 $H $ 的不可约线性表示，某广义场函数 $\phi $ 为 $S(\alpha) $ 的变换对象。
+
+若 $\alpha $ 是局域的，则变换
+
+$$
+\phi'(x)
+\equiv S(\alpha(x)) \phi(x)
+$$
+
+称为广义场函数 $\phi $ 对于李群 $H $ 的规范变换。
+
+由于 $S(\alpha(x)) $ 是局域的，因此
+
+$$
+\partial_\mu \phi'(x)
+\ne S(\alpha(x)) \partial_\mu \phi(x)
+$$
+
+这就无法保证拉格朗日函数的规范不变性。
+
+假设存在一种微商运算 $\nabla_\mu $，使得 $\nabla_\mu \phi(x) $ 是规范协变量，即：
+
+$$
+\nabla'_\mu \phi'(x)
+=S(x) \nabla_\mu \phi(x)
+$$
+
+$$
+\begin{aligned}
+\left[\nabla_\mu'\phi'(x) \right]^\dag \left[\nabla'_\mu\phi'(x) \right]
+=\left[\nabla_\mu \phi(x) \right]^\dag S^\dag(x) S(x) \left[\nabla_\mu \phi(x) \right]
+=\left[\nabla_\mu \phi(x) \right]\left[\nabla_\mu\phi(x) \right]
+\end{aligned}
+$$
+
+上式说明，由这种协变量收缩而成的量是规范不变量，用它构造拉格朗日函数可以保证拉格朗日函数的规范不变性。
+
+设：
+
+$$
+\nabla_\mu \phi
+=\partial_\mu \phi - \omega_\mu \phi
+$$
+
+下面证明，$\omega_\mu $ 的变换规律为：
+
+$$
+\omega_\mu'
+=S \omega_\mu S^{-1} + \left(\partial_\mu S \right)S^{-1}
+$$
+
+证明：
+
+$$
+\begin{aligned}
+\nabla'_\mu\phi'(x)
+&=\partial_\mu \phi' - \omega_\mu' \phi' \\
+&=\partial_\mu\left(S \phi \right) - \omega'_\mu S\phi \\
+&=\red{S\partial_\mu\phi + \left(\partial_\mu S \right)\phi - \omega'_\mu S\phi} \\
+&\equiv S \nabla_\mu \phi \\
+&=\red{S\partial_\mu \phi - S\omega_\mu \phi}
+\end{aligned}
+$$
+
+可得
+
+$$
+\omega'_\mu S \phi
+=S \omega_\mu \phi + \left(\partial_\mu S \right)\phi
+=S \omega_\mu S^{-1} S \phi + \left(\partial_\mu S \right)S^{-1} S \phi
+$$
+
+于是
+
+$$
+\boxed{
+\omega'_\mu
+=S \omega_\mu S^{-1} + \left(\partial_\mu S \right) S^{-1}
+}
+$$
+
+矩阵函数 $\omega_\mu $ 称为**联络矩阵**。
+
+## 伴随协变张量 $F_{\mu\nu} $ 及其性质
+
+设 $F_{\mu\nu} $ 满足
+
+$$
+\left(\nabla_\mu \nabla_\nu - \nabla_\nu \nabla_\mu \right)\phi(x)
+=-F_{\mu\nu} \phi(x)
+$$
+
+可证明
+
+$$
+F_{\mu\nu}
+=\partial_\mu \omega_\nu - \partial_\nu \omega_\mu - \left[\omega_\mu , \omega_\nu \right]
+$$
+
+证明：
+
+$$
+\begin{aligned}
+\left(\nabla_\mu\nabla_\nu - \nabla_\nu\nabla_\mu \right)\phi(x)
+&=\left[\left(\partial_\mu - \omega_\mu \right)\left(\partial_\nu - \omega_\nu \right) - \left(\partial_\nu - \omega_\nu \right)\left(\partial_\mu - \omega_\mu \right) \right]\phi(x) \\
+&=\left[-\partial_\mu \omega_\nu -\omega_\mu \partial_\nu + \partial_\nu \omega_\mu + \omega_\nu\partial_\mu + \omega_\mu\omega_\nu - \omega_\nu\omega_\mu \right]\phi(x) \\
+&=-\partial_\mu\left(\omega_\nu \phi(x) \right) - \omega_\mu\partial_\nu\phi(x) + \partial_\nu\left(\omega_\mu\phi(x) \right) + \omega_\nu\partial_\mu\left(\phi(x) \right) + \left[\omega_\mu , \omega_\nu \right]\phi(x) \\
+&=-\left(\partial_\mu \omega_\nu \right)\phi(x) + \left(\partial_\nu \omega_\mu \right)\phi(x) + \left[\omega_\mu , \omega_\nu \right]\phi(x) \\ \\
+&=-\left\{\left(\partial_\mu \omega_\nu \right) - \left(\partial_\nu \omega_\mu \right) - \left[\omega_\mu , \omega_\nu \right] \right\} \phi(x)
+\end{aligned}
+$$
+
+对比可得：
+
+$$
+F_{\mu\nu}
+=\left(\partial_\mu\omega_\nu \right) - \left(\partial_\nu\omega_\mu \right) - \left[\omega_\mu , \omega_\nu \right] 
+$$
+
+其变换规律为
+
+$$
+F'_{\mu\nu}
+=S F_{\mu\nu} S^{-1}
+$$
+
+证明：
+
+$$
+\omega'_\mu
+=S \omega_\mu S^{-1} + \left(\partial_\mu S \right)S^{-1}
+$$
+
+$$
+\begin{aligned}
+F'_{\mu\nu}
+&=\left(\partial_\mu\omega_\nu' \right) - \left(\partial_\nu\omega_\mu' \right) - \left[\omega_\mu' , \omega_\nu' \right] \\
+&=\partial_\mu\left(S\omega_\nu S^{-1} + \left(\partial_\nu S \right) S^{-1} \right) - \partial_\nu\left(S\omega_\mu S^{-1} + \left(\partial_\mu S \right) S^{-1} \right) - \left[ S\omega_\nu S^{-1} + \left(\partial_\nu S \right) S^{-1} , S\omega_\mu S^{-1} + \left(\partial_\mu S \right) S^{-1} \right] \\
+&=S \left\{\left(\partial_\mu\omega_\nu \right) - \left(\partial_\nu\omega_\mu \right) - \left[\omega_\mu , \omega_\nu \right] \right\} S^{-1} \\
+&=S F_{\mu\nu} S^{-1}
+\end{aligned}
+$$
+
+这说明 $F_{\mu\nu} $ 是规范协变量，且
+
+$$
+\mathrm{Tr}\left(F'_{\mu\nu} F'_{\mu\nu} \right)
+=\mathrm{Tr}\left(F_{\mu\nu} F_{\mu\nu} \right)
+$$
+
+是规范不变量，同时也是 Lorentz 不变量，可用于构造规范场的拉格朗日函数。
+
+证明：
+
+$$
+\begin{aligned}
+\mathrm{Tr}\left(F'_{\mu\nu} F'_{\mu\nu} \right)
+&=\mathrm{Tr}\left(S F_{\mu\nu} S^{-1} SF_{\mu\nu} S^{-1} \right) \\
+&=\mathrm{Tr}\left(S F_{\mu\nu} F_{\mu\nu} S^{-1} \right) \\
+&=\mathrm{Tr}\left(F_{\mu\nu} F_{\mu\nu} \right)
+\end{aligned}
+$$

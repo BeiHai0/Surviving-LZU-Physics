@@ -1482,3 +1482,1015 @@ $$
 \dot{\hat{U}}_\alpha\left(x^1 \right)\dot{\hat{\bar{U}}}_\beta\left(x^2 \right)
 =\frac{1 }{2 } Q_{\alpha\beta}^F\left(x^1-x^2 \right)
 $$
+
+# -1 速查速记
+
+## 场的相互作用和 $\hat{S} $ 矩阵
+
+### 场的相互作用拉格朗日函数
+
+在场的相互作用情况下，总拉格朗日函数 $\mathcal{L} $ 应是自由场拉格朗日函数 $\mathcal{L}_0 $ 与相互作用拉格朗日函数 $\mathcal{L}_i $ 之和：
+
+$$
+\hat{\mathcal{L}}
+=\hat{\mathcal{L}}_0 + \hat{\mathcal{L}_i}
+$$
+
+场的相互作用拉格朗日函数 $\mathcal{L}_i $ 也必须是 Lorentz 变换的不变量。因此有场的相互作用的拉格朗日函数广义形式：
+
+$$
+\hat{\mathcal{L}}_i
+=g \hat{T}^1_{\mu\nu\cdots\lambda}(x) \hat{T}^2_{\mu\nu\cdots\lambda}(x)
+$$
+
+常数 $g $ 称为作用常数，代表两种场相互作用的大小。
+
+$\hat{T}^1_{\mu\nu\cdots\lambda}(x) $ 和 $\hat{T}^2_{\mu\nu\cdots\lambda}(x) $ 为两种不同的场函数组成的同级张量。
+
+### 场的相互作用运动方程荷相互作用哈密顿量
+
+场相互作用情况下总拉格朗日函数：
+
+$$
+\hat{\mathcal{L}}
+=\hat{\mathcal{L}}_0 + \hat{\mathcal{L}}_i
+$$
+
+把 $\hat{\mathcal{L}} $ 代入 E-L 方程就得到场的运动方程：
+
+$$
+\frac{\partial \hat{\mathcal{L}} }{\partial \hat{\phi}_A(x) } - \partial_\mu \frac{\partial \hat{\mathcal{L}} }{\partial \left(\partial_\mu \hat{\phi}_A(x) \right) } 
+=0
+$$
+
+#### 电子与电磁场作用的运动方程
+
+总拉格朗日函数：
+
+$$
+\begin{aligned}
+\mathcal{L}
+&=-\frac{1 }{4 } F_{\mu\nu} F_{\mu\nu} \\
+&- \frac{1 }{2 } \left[\hat{\bar{\psi}}(x) \gamma_\mu \partial_\mu \hat{\psi}(x) - \partial_\mu \hat{\bar{\psi}}(x) \gamma_\mu \hat{\psi}(x) \right] - m \hat{\bar{\psi}}(x) \hat{\psi}(x) \\
+&+ \mathrm{i} e \hat{\bar{\psi}}(x) \gamma_\mu \hat{\psi}(x) \hat{A}_\mu(x)
+\end{aligned}
+$$
+
+对 $\hat{A}_\mu(x),\hat{\bar{\psi}}(x),\hat{\psi}(x) $ 变分，得场方程：
+
+$$
+\partial_\nu F_{\mu\nu} = \mathrm{i} e\hat{\bar{\psi}}(x) \gamma_\mu \hat{\psi}(x)
+$$
+
+$$
+\left(\gamma_\mu \partial_\mu + m \right) \hat{\psi}(x)
+=\mathrm{i} e \hat{A}_\mu(x) \gamma_\mu \hat{\psi}(x)
+$$
+
+$$
+\partial_\mu(x) \hat{\bar{\psi}} \gamma_\mu - m \hat{\bar{\psi}}(x)
+=-\mathrm{i} e \hat{A}_\mu(x) \hat{\bar{\psi}}(x) \gamma_\mu 
+$$
+
+四维电流矢量：
+
+$$
+j_\mu
+=\mathrm{i} e \hat{\bar{\psi}}(x) \gamma_\mu \hat{\psi}(x)
+$$
+
+### 场相互作用的哈密顿量
+
+#### 电子旋量场与电磁场相互作用哈密顿算符
+
+$$
+\boxed{
+\hat{H}_i
+=-\mathrm{i} e \int \hat{\bar{\psi}}(x) \gamma_\mu \hat{\psi}(x) \hat{A}_\mu(x) \mathrm{d}V
+}
+$$
+
+### 相互作用绘景
+
+#### 薛定谔绘景
+
+$$
+\mathrm{i} \frac{\partial }{\partial t } \Psi_S
+=\hat{H}_S \Psi_S
+$$
+
+$$
+\hat{H}_S
+=\hat{H}_{S0} + \hat{H}_{Si}
+$$
+
+### 海森堡绘景
+
+$$
+\Psi_H
+=\Psi_S(0),\quad
+\hat{F}_H
+\equiv \mathrm{e}^{\mathrm{i}\hat{H}_S t} \hat{F}_S \mathrm{e}^{-\mathrm{i}\hat{H}_S t}
+$$
+
+$$
+\hat{H}_H
+=\hat{H}_S
+\equiv \hat{H}
+$$
+
+$$
+\frac{\partial \Psi_H }{\partial t } = 0
+$$
+
+$$
+\frac{\partial \hat{F}_H }{\partial t } = \mathrm{i}\left[\hat{H} , \hat{F}_H \right]
+$$
+
+### 相互作用绘景
+
+$$
+\Phi_I(t)
+\equiv \mathrm{e}^{\mathrm{i}\hat{H}_{S0}t} \Psi_S
+$$
+
+$$
+\hat{F}_I(t)
+\equiv \mathrm{e}^{\mathrm{i} \hat{H}_{S0} t} \hat{F}_S \mathrm{e}^{-\mathrm{i} \hat{H}_{S0} t}
+$$
+
+$$
+\mathrm{i} \frac{\partial  }{\partial t } \Phi_I(t)
+=\hat{H}_{Ii}(t) \Phi_I(t)
+$$
+
+$$
+\frac{\partial \hat{F}_I }{\partial t } 
+=\mathrm{i}\left[\hat{H}_{I0}(t) , \hat{F}_I(t) \right]
+$$
+
+### $\hat{U}(t,t_0) $ 矩阵及其性质
+
+$$
+\Phi_I(t)
+=\hat{U}(t,t_0) \Phi_I(t_0)
+$$
+
+$$
+\boxed{
+\mathrm{i} \frac{\partial \hat{U}(t,t_0) }{\partial t } 
+=\hat{H}_{Ii}(t) \hat{U}(t,t_0)
+}
+$$
+
+#### $\hat{U}(t,t_0) $ 的性质
+
+$$
+\hat{U}(t,t) = \hat{U}(t_0,t_0) = I
+$$
+
+$$
+\hat{U}^{-1}(t_1,t_2)
+=\hat{U}(t_2,t_1)
+$$
+
+$$
+\hat{U}^\dag(t_1,t_2) \hat{U}(t_1,t_2)
+=\hat{U}(t_1,t_2) \hat{U}^\dag(t_1,t_2)
+=I
+$$
+
+$$
+\hat{U}(t_1,t_3)
+=\hat{U}(t_1,t_2) \hat{U}(t_2,t_3)
+$$
+
+#### $\hat{U}(t,t_0) $ 矩阵级数解
+
+$$
+\begin{aligned}
+\hat{U}(t,t_0)
+&=I \\
+&+\frac{\left(-\mathrm{i} \right) }{1! } \int_{t_0}^{t} \mathrm{d}t_1 P\left[\hat{H}_{Ii}(t_1) \right] \\
+&+\frac{\left(-\mathrm{i} \right)^2 }{2! } \int_{t_0}^{t} \mathrm{d}t_1 \int_{t_0}^{t} \mathrm{d}t_2 P\left[\hat{H}_{Ii}(t_1) \hat{H}_{Ii}(t_2) \right] \\
+&+\cdots \\
+\end{aligned}
+$$
+
+或简写为：
+
+$$
+\hat{U}(t,t_0)
+=P\left[\mathrm{e}^{-\mathrm{i} \int_{t_0}^{t} \mathrm{d}t' \hat{H}_{Ii}(t')} \right]
+$$
+
+## $S $ 矩阵及其在 QED 中的形式
+
+$$
+\boxed{
+\hat{S}
+\equiv \hat{U}(+\infty,-\infty)
+}
+$$
+
+$$
+\boxed{
+\Phi_f
+=\hat{S} \Phi_i
+}
+$$
+
+$$
+\hat{S}^\dag \hat{S} = \hat{S} \hat{S}^\dag = I
+$$
+
+$$
+\begin{aligned}
+\hat{S}
+&=I \\
+&+\frac{\left(-\mathrm{i} \right) }{1! } \int_{-\infty}^{+\infty} \mathrm{d}t_1 P\left[\hat{H}_{Ii}(t_1) \right] \\
+&+\frac{\left(-\mathrm{i} \right)^2 }{2! } \int_{-\infty}^{+\infty} \mathrm{d}t_1 \int_{-\infty}^{+\infty} \mathrm{d}t_2 P\left[\hat{H}_{Ii}(t_1) \hat{H}_{Ii}(t_2) \right] \\
+&+\cdots \\
+\end{aligned}
+$$
+
+或简写为：
+
+$$
+\hat{S}
+=P\left[\mathrm{e}^{-\mathrm{i} \int_{-\infty}^{+\infty} \mathrm{d}t' \hat{H}_{Ii}(t')} \right]
+$$
+
+$$
+\hat{S}
+=\sum_{n=0}^{\infty} \hat{S}_n
+$$
+
+$$
+\hat{S}_0
+\equiv I
+$$
+
+$$
+\boxed{
+\hat{S}_n
+\equiv \frac{(-\mathrm{i})^n }{n! } \int_{-\infty}^{+\infty} \mathrm{d}t_1 \mathrm{d}t_2 \cdots \mathrm{d}t_n P\left[\hat{H}_{Ii}(t_1) \hat{H}_{Ii}(t_2) \cdots \hat{H}_{Ii}(t_n) \right]
+}
+$$
+
+### 量子电动力学中的 $S $ 矩阵
+
+电子或正电子与光子相互作用哈密顿算符：
+
+$$
+\hat{H}_{Ii}(t)
+=-\mathrm{i} e \int \hat{\bar{\psi}}(x) \gamma_\mu \hat{\psi}(x) \hat{A}_\mu(x) \mathrm{d}V
+$$
+
+
+
+$$
+\begin{aligned}
+\hat{S}_n
+&=\frac{\left(-\mathrm{i} \right)^n }{n! } \int_{-\infty}^{+\infty} \mathrm{d}t_1 \cdots \int_{-\infty}^{+\infty} \mathrm{d}t_n P\left[\hat{H}_{Ii}(t_1) \cdots \hat{H}_{Ii}(t_n) \right] \\
+&=\frac{\left(-e \right)^n }{n! } \int_{-\infty}^{+\infty} \mathrm{d}x^1 \cdots \int_{-\infty}^{+\infty} \mathrm{d}x^n P\left[\hat{\bar{\psi}}\left(x^1\right) \hat{A}\left(x^1\right) \hat{\psi}\left(x^1\right) \cdots \hat{\bar{\psi}}\left(x^n\right) \hat{A}\left(x^n\right) \hat{\psi}\left(x^n\right) \right]
+\end{aligned}
+$$
+
+$$
+\boxed{
+\begin{aligned}
+\hat{S}_n
+=\frac{\left(-e \right)^n }{n! } \int_{-\infty}^{+\infty} \mathrm{d}x^1 \cdots \int_{-\infty}^{+\infty} \mathrm{d}x^n T\left[\hat{\bar{\psi}}\left(x^1\right) \hat{A}\left(x^1\right) \hat{\psi}\left(x^1\right) \cdots \hat{\bar{\psi}}\left(x^n\right) \hat{A}\left(x^n\right) \hat{\psi}\left(x^n\right) \right]
+\end{aligned}
+}
+$$
+
+### $T $ 乘积展开的 Wick 定理
+
+$n $ 个场算符的 $T $ 乘积，等于这 $n $ 个场算符的 $N $ 乘积与包括了所有可能的各种耦合的 $N $ 乘积之和。
+
+$$
+\begin{aligned}
+T\left[\hat{U}_1 \hat{U}_2 \cdots \hat{U}_n \right]
+&=N\left[\hat{U}_1 \hat{U}_2 \cdots \hat{U}_n \right] \\
+&+\sum_{i\ne j} N\left[\hat{U}_1 \cdots \dot{\hat{U}}_i \cdots \dot{\hat{U}}_j \cdots \hat{U}_n \right] \\
+&+\sum_{i,j,l,m\ne} N\left[\hat{U}_1 \cdots \dot{\hat{U}}_i \cdots \dot{\hat{U}}_j \cdots \ddot{\hat{U}}_l \cdots \ddot{\hat{U}}_m \cdots \hat{U}_n \right] \\
+&+\cdots
+\end{aligned}
+$$
+
+其中，$\hat{U} $ 代表任何一种场函数的产生或消灭算符。
+
+$\varepsilon_{ij} $ 表示将算符 $\hat{U}_i,\hat{U}_j $ 依次置换到所有算符最左边时，所需的费米置换次数。
+
+### QED中的 $\hat{S} $ 矩阵和耦合式
+
+$$
+\dot{\hat{A}}_\mu\left(x^1 \right) \dot{\hat{A}}_\nu\left(x^2 \right)
+=\frac{1 }{2 } D^F\left(x^1-x^2 \right) \delta_{\mu\nu}
+$$
+
+$$
+\dot{\hat{\psi}}_\alpha\left(x^1 \right) \dot{\hat{\bar{\psi}}}_\beta\left(x^2 \right)
+=-\frac{1 }{2 } S^F_{\alpha\beta} \left(x^1-x^2 \right)
+$$
+
+$$
+\dot{\hat{\bar{\psi}}}_\alpha\left(x^1 \right) \dot{\hat{\psi}}_\beta\left(x^2 \right)
+=\frac{1 }{2 } S^F_{\beta\alpha} \left(x^2-x^1 \right)
+$$
+
+$$
+\dot{\hat{\psi}}_\alpha\left(x^1 \right) \dot{\hat{\psi}}_\beta\left(x^2 \right)
+=\dot{\hat{\bar{\psi}}}_\alpha\left(x^1 \right) \dot{\hat{\bar{\psi}}}_\beta\left(x^2 \right)
+=0
+$$
+
+$$
+\dot{\hat{\psi}}_\alpha\left(x^1 \right) \dot{A}_\mu\left(x^2 \right)
+=\dot{\hat{\bar{\psi}}}_\alpha.\left(x^1 \right) \dot{\hat{A}}_\mu\left(x^2 \right)
+=0
+$$
+
+### QED中 $\hat{S} $ 矩阵的 Wick 展开式
+
+$$
+\hat{S}_n
+=\frac{\left(-e \right)^n }{n! } \int_{-\infty}^{+\infty} \mathrm{d}x^1 \cdots \int_{-\infty}^{+\infty} \mathrm{d}x^n T\left[\hat{\bar{\psi}}\left(x^1 \right) \hat{A}\left(x^1 \right) \hat{\psi}\left(x^1 \right) \cdots \hat{\bar{\psi}}\left(x^n \right) \hat{A}\left(x^n \right) \hat{\psi}\left(x^n \right) \right]
+$$
+
+#### 计算 $\hat{S}_0 $
+
+$$
+\hat{S}_0
+=I
+$$
+
+#### 计算 $\hat{S}_1 $
+
+$$
+\begin{aligned}
+T\left[\hat{\bar{\psi}}\left(x^1 \right) \hat{A}\left(x^1 \right) \hat{\psi}\left(x^1 \right) \right]
+&=N\left[\hat{\bar{\psi}}\left(x^1 \right) \hat{A}\left(x^1 \right) \hat{\psi}\left(x^1 \right) \right] \\
+&+\left(-1 \right)^{\varepsilon_{12}} \dot{\hat{\bar{\psi}}}\left(x^1 \right)\dot{\hat{A}}\left(x^1 \right) N\left[\hat{\psi}\left(x^1 \right) \right] \\
+&+\left(-1 \right)^{\varepsilon_{13}} \dot{\hat{\bar{\psi}}}\left(x^1 \right)\dot{\hat{\psi}}\left(x^1 \right) N\left[\hat{A}\left(x^1 \right) \right] \\
+&+\left(-1 \right)^{\varepsilon_{13}} \dot{\hat{A}}\left(x^1 \right)\dot{\hat{\psi}}\left(x^1 \right) N\left[\hat{\bar{\psi}}\left(x^1 \right) \right] \\
+&=N\left[\hat{\bar{\psi}}\left(x^1 \right) \hat{A}\left(x^1 \right) \hat{\psi}\left(x^1 \right) \right]
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\hat{S}_1
+&=-e\int_{-\infty}^{+\infty} \mathrm{d}x^1 T\left[\hat{\bar{\psi}}\left(x^1 \right) \hat{A}\left(x^1 \right) \hat{\psi}\left(x^1 \right) \right] \\
+&=-e\int_{-\infty}^{+\infty} \mathrm{d}x^1 N\left[\hat{\bar{\psi}}\left(x^1 \right) \hat{A}\left(x^1 \right) \hat{\psi}\left(x^1 \right) \right]
+\end{aligned}
+$$
+
+#### 计算 $\hat{S}_2 $
+
+$$
+\hat{S}_2
+=\frac{e^2 }{2 } \int_{-\infty}^{+\infty} \mathrm{d}x^1 \int_{-\infty}^{+\infty} \mathrm{d}x^2 T\left[\hat{\bar{\psi}}\left(x^1 \right) \hat{A}\left(x^1 \right) \hat{\psi}\left(x^1 \right) \hat{\bar{\psi}}\left(x^2 \right) \hat{A}\left(x^2 \right) \hat{\psi}\left(x^2 \right) \right]
+$$
+
+> QED Wick 定理不考虑同一时空点的耦合 and 旋量旋量耦合、共轭旋量共轭旋量耦合为零。下面用 Wick 定理计算 $T $ 乘积时就不写耦合为零的项了。
+
+$$
+\begin{aligned}
+&T\left[\hat{\bar{\psi}}\left(x^1 \right) \hat{A}\left(x^1 \right) \hat{\psi}\left(x^1 \right) \hat{\bar{\psi}}\left(x^2 \right) \hat{A}\left(x^2 \right) \hat{\psi}\left(x^2 \right) \right] \\
+=&T\left[\hat{\bar{\psi}}_\alpha\left(x^1 \right) \left(\gamma_\mu \right)_{\alpha\beta} \hat{\psi}_\beta\left(x^1 \right) \hat{A}_\mu\left(x_1 \right) \hat{\bar{\psi}}_\rho\left(x^2 \right) \left(\gamma_\nu \right)_{\rho\lambda} \hat{\psi}_\lambda\left(x^2 \right) \hat{A}_\nu\left(x_2 \right) \right] \\
+=&N\left[\hat{\bar{\psi}}_\alpha\left(x^1 \right) \left(\gamma_\mu \right)_{\alpha\beta} \hat{\psi}_\beta\left(x^1 \right) \hat{A}_\mu\left(x_1 \right) \hat{\bar{\psi}}_\rho\left(x^2 \right) \left(\gamma_\nu \right)_{\rho\lambda} \hat{\psi}_\lambda\left(x^2 \right) \hat{A}_\nu\left(x_2 \right) \right] \\
++&N\left[\hat{\bar{\psi}}_\alpha\left(x^1 \right) \left(\gamma_\mu \right)_{\alpha\beta} \hat{\psi}_\beta\left(x^1 \right) \dot{\hat{A}}_\mu\left(x_1 \right) \hat{\bar{\psi}}_\rho\left(x^2 \right) \left(\gamma_\nu \right)_{\rho\lambda} \hat{\psi}_\lambda\left(x^2 \right) \dot{\hat{A}}_\nu\left(x_2 \right) \right] \\
++&N\left[\hat{\bar{\psi}}_\alpha\left(x^1 \right) \left(\gamma_\mu \right)_{\alpha\beta} \dot{\hat{\psi}}_\beta\left(x^1 \right) \hat{A}_\mu\left(x_1 \right) \dot{\hat{\bar{\psi}}}_\rho\left(x^2 \right) \left(\gamma_\nu \right)_{\rho\lambda} \hat{\psi}_\lambda\left(x^2 \right) \hat{A}_\nu\left(x_2 \right) \right] \\
++&N\left[\dot{\hat{\bar{\psi}}}_\alpha\left(x^1 \right) \left(\gamma_\mu \right)_{\alpha\beta} \hat{\psi}_\beta\left(x^1 \right) \hat{A}_\mu\left(x_1 \right) \hat{\bar{\psi}}_\rho\left(x^2 \right) \left(\gamma_\nu \right)_{\rho\lambda} \dot{\hat{\psi}}_\lambda\left(x^2 \right) \hat{A}_\nu\left(x_2 \right) \right] \\
++&N\left[\dot{\hat{\bar{\psi}}}_\alpha\left(x^1 \right) \left(\gamma_\mu \right)_{\alpha\beta} \ddot{\hat{\psi}}_\beta\left(x^1 \right) \hat{A}_\mu\left(x_1 \right) \ddot{\hat{\bar{\psi}}}_\rho\left(x^2 \right) \left(\gamma_\nu \right)_{\rho\lambda} \dot{\hat{\psi}}_\lambda\left(x^2 \right) \hat{A}_\nu\left(x_2 \right) \right] \\
++&N\left[\hat{\bar{\psi}}_\alpha\left(x^1 \right) \left(\gamma_\mu \right)_{\alpha\beta} \dot{\hat{\psi}}_\beta\left(x^1 \right) \ddot{\hat{A}}_\mu\left(x_1 \right) \dot{\hat{\bar{\psi}}}_\rho\left(x^2 \right) \left(\gamma_\nu \right)_{\rho\lambda} \hat{\psi}_\lambda\left(x^2 \right) \ddot{\hat{A}}_\nu\left(x_2 \right) \right] \\
++&N\left[\dot{\hat{\bar{\psi}}}_\alpha\left(x^1 \right) \left(\gamma_\mu \right)_{\alpha\beta} \hat{\psi}_\beta\left(x^1 \right) \ddot{\hat{A}}_\mu\left(x_1 \right) \hat{\bar{\psi}}_\rho\left(x^2 \right) \left(\gamma_\nu \right)_{\rho\lambda} \dot{\hat{\psi}}_\lambda\left(x^2 \right) \ddot{\hat{A}}_\nu\left(x_2 \right) \right] \\
++&N\left[\dot{\hat{\bar{\psi}}}_\alpha\left(x^1 \right) \left(\gamma_\mu \right)_{\alpha\beta} \dddot{\hat{\psi}}_\beta\left(x^1 \right) \ddot{\hat{A}}_\mu\left(x_1 \right) \dddot{\hat{\bar{\psi}}}_\rho\left(x^2 \right) \left(\gamma_\nu \right)_{\rho\lambda} \dot{\hat{\psi}}_\lambda\left(x^2 \right) \ddot{\hat{A}}_\nu\left(x_2 \right) \right] \\
+\end{aligned}
+$$
+
+接下来利用
+
+$$
+N\left[\hat{U}_1 \cdots \dot{\hat{U}}_i \cdots \dot{\hat{U}}_j \cdots \hat{U}_n \right]
+\equiv \left(-1 \right)^{\varepsilon_{ij}} \dot{\hat{U}}_i \dot{\hat{U}}_j N\left[\hat{U}_1 \cdots \hat{U}_{i-1} \hat{U}_{i+1} \cdots \hat{U}_{j-1} \hat{U}_{j+1} \cdots \hat{U}_n \right]
+$$
+
+$$
+\dot{\hat{A}}_\mu\left(x^1 \right) \dot{\hat{A}}_\nu\left(x^2 \right)
+=\frac{1 }{2 } D^F\left(x^1-x^2 \right) \delta_{\mu\nu}
+$$
+
+$$
+\dot{\hat{\psi}}_\alpha\left(x^1 \right) \dot{\hat{\bar{\psi}}}_\beta\left(x^2 \right)
+=-\frac{1 }{2 } S^F_{\alpha\beta} \left(x^1-x^2 \right)
+$$
+
+$$
+\dot{\hat{\bar{\psi}}}_\alpha\left(x^1 \right) \dot{\hat{\psi}}_\beta\left(x^2 \right)
+=\frac{1 }{2 } S^F_{\beta\alpha} \left(x^2-x^1 \right)
+$$
+
+可进一步计算 $T $ 乘积：
+
+$$
+\begin{aligned}
+&T\left[\hat{\bar{\psi}}\left(x^1 \right) \hat{A}\left(x^1 \right) \hat{\psi}\left(x^1 \right) \hat{\bar{\psi}}\left(x^2 \right) \hat{A}\left(x^2 \right) \hat{\psi}\left(x^2 \right) \right] \\
+=&N\left[\hat{\bar{\psi}}_\alpha\left(x^1 \right) \left(\gamma_\mu \right)_{\alpha\beta} \hat{\psi}_\beta\left(x^1 \right) \hat{A}_\mu\left(x_1 \right) \hat{\bar{\psi}}_\rho\left(x^2 \right) \left(\gamma_\nu \right)_{\rho\lambda} \hat{\psi}_\lambda\left(x^2 \right) \hat{A}_\nu\left(x_2 \right) \right] \\
++&\frac{1 }{2 } D^F\left(x^1-x^2 \right) \delta_{\mu\nu} N\left[\hat{\bar{\psi}}_\alpha\left(x^1 \right) \left(\gamma_\mu \right)_{\alpha\beta} \hat{\psi}_\beta\left(x^1 \right) \hat{\bar{\psi}}_\rho\left(x^2 \right) \left(\gamma_\nu \right)_{\rho\lambda} \hat{\psi}_\lambda\left(x^2 \right) \right] \\
+-&\frac{1 }{2 } S_{\beta\rho}^F\left(x^1-x^2 \right) N\left[\hat{\bar{\psi}}_\alpha\left(x^1 \right) \left(\gamma_\mu \right)_{\alpha\beta} \hat{A}_\mu\left(x_1 \right) \left(\gamma_\nu \right)_{\rho\lambda} \hat{\psi}_\lambda\left(x^2 \right) \hat{A}_\nu\left(x_2 \right) \right] \\
++&\cdots
+\end{aligned}
+$$
+
+### $S $ 矩阵的 Feynman 图解
+
+#### QED Feynman 图形规则
+
+$\hat{\psi}^{(+)}(x) $ 对应 $\hat{b}_i^{(+)}(\vec{p}) $，即对应产生正电子算符；
+
+$\hat{\psi}^{(-)}(x) $ 对应 $\hat{a}_i^{(-)}(\vec{p}) $，即对应消灭负电子算符；
+
+$\hat{\bar{\psi}}^{(+)}(x) $ 对应 $\hat{a}_i^{(+)}(\vec{p}) $，即对应产生负电子算符；
+
+$\hat{\bar{\psi}}^{(-)}(x) $ 对应 $\hat{b}_i^{(-)}(\vec{p}) $，即对应消灭正电子算符。
+
+用实线代表电子或正电子的运动；
+
+用虚线代表光子的运动；
+
+$\hat{\psi}(x_1) $ 即 $\hat{\psi}^{(+)}(x) $ 或 $\hat{\psi}^{(-)}(x) $ 代表产生正电子或消灭负电子，用入向电子外线表示；
+
+$\hat{\bar{\psi}}(x_1) $ 即 $\hat{\bar{\psi}}^{(+)}(x) $ 或 $\hat{\bar{\psi}}^{(-)}(x) $ 代表产生负电子或消灭正电子，用出向电子外线表示；
+
+$A_\mu(x_1) $ 代表光子的放出或吸收，用光子外线表示；
+
+耦合式 $\dot{\hat{\psi}}_\alpha(x_1) \dot{\hat{\bar{\psi}}}_\beta(x_2) = -\frac{1 }{2 } \hat{S}_{\alpha\beta}^F (x_1-x_2) $ 代表中间态的正负电子，用电子内线表示；
+
+耦合式 $\dot{\hat{A}}_\alpha(x_1) \dot{\hat{A}}_\beta(x_2)=\frac{1 }{2 } D^(x_1-x_2)\delta_{\alpha\beta} $ 代表中间态的光子或虚光子，用光子内线表示；
+
+$\gamma_i $ 矩阵代表正负电子和光子有一次作用，用顶点图形表示。
+
+#### QED 中的 Feynman 图
+
+一般在 Wick 定理展开式中，有两种或两种以上展开项对应同一种 Feynman 图解。
+
+用 $r $ 代表同一 Feynman 图解所对应的不同形式的 $\hat{S}_n $ 矩阵的展开式的数目。$r $ 称为 Feynman 图解的等值数。
+
+#### $\hat{S}_1 $ 的 Feynman 图解
+
+$$
+\hat{S}_1
+=
+$$
+
+#### $\hat{S}_2 $ 的 Feynman 图解
+
+$\hat{S}_2 $
+
+### $\hat{S}_3 $ 的 Feynman 图解
+
+## Furry 关于电子封闭内线的定理
+
+奇数个电子封闭内线的 Feynman 图对 $\hat{S} $ 矩阵没有任何贡献。
+
+### 粒子数表象下 $\hat{S} $ 矩阵的矩阵元
+
+#### 产生、消灭粒子算符对状态幅度的作用
+
+$$
+\hat{a}_{\vec{p}i}^{(-)} \Phi_{\vec{p}'i'}
+=\delta_{\vec{p}\vec{p}'}\delta_{i i'} \Phi_0
+$$
+
+$$
+\hat{b}_{\vec{p} i}^{(-)} \Phi_{\vec{p}' i'}
+=\delta_{\vec{p}\vec{p}'}\delta_{i i'} \Phi_0
+$$
+
+$$
+\hat{C}_{\vec{k}}^{\mu(-)} \Phi_{\vec{k}' \mu'}
+=\delta_{\vec{k} \vec{k}'} \delta_{\mu \mu'} \Phi_0
+$$
+
+取厄米共轭有：
+
+$$
+\Phi_{\vec{p}' i'}^\dag \hat{a}_{\vec{p} i}^{(+)} 
+=\delta_{\vec{p}\vec{p}'}\delta_{i i'} \Phi_0^\dag
+$$
+
+$$
+\Phi_{\vec{p}' i'}^\dag \hat{b}_{\vec{p} i}^{(+)} 
+=\delta_{\vec{p}\vec{p}'}\delta_{i i'} \Phi_0^\dag
+$$
+
+$$
+\Phi_{\vec{k}' \mu'}^\dag \hat{C}_{\vec{k}}^{\mu(+)} 
+=\delta_{\vec{k}\vec{k}'}\delta_{\mu \mu'} \Phi_0^\dag
+$$
+
+
+### $M_{i-f} $ 作为粒子数表象 $\hat{S} $ 矩阵矩阵元
+
+总而言之，$M_{i-f} $ 就是粒子数表象 $\hat{S} $ 矩阵元。
+
+### 动量表象 S 矩阵元
+
+假设所研究的正负电子和光子反应的 Feynman 图中有：$n $ 个顶点（即 $n $ 阶 S 矩阵）、$E_e $ 个正负电子外线、$E_\gamma $ 个光子外线、$I_e $ 个正负电子内线、$I_\gamma $ 个光子外线、$S $ 个电磁场外线，则：
+
+外线总数 $E=E_e+E_\gamma $
+
+内线总数 $I=I_e+I_\gamma $
+
+#### 动量表象 Feynman 图解规则
+
+$n $ 个顶点对应 $\displaystyle{ \left(2\pi \right)^4 \prod_{i=1}^{n} \delta\left(\sum p \right)_i}$ 
+
+$E_e $ 个正负电子外线对应 $E_e $ 个 $u_i(\vec{p}),\bar{u}_i(\vec{p}),v_i(\vec{p}),\bar{v}_i(\vec{p}) $，系数为 $\displaystyle{\left(\frac{1 }{\sqrt{V} }  \right)^{E_e} }$ 
+
+$E_\gamma $ 个光子外线对应着 $E_\gamma $ 个 $\displaystyle{\frac{1 }{\sqrt{2\varepsilon_{\vec{k}}} } \hat{e}^\nu = \frac{1 }{\sqrt{2\varepsilon_{\vec{k}}} } e^\nu_\mu \gamma_\mu }$，系数为 $\displaystyle{\left(\frac{1 }{\sqrt{V} }  \right)^{E_\gamma} }$ 
+
+$I_e $ 个正负电子内线对应着 $I_e $ 个 $\displaystyle{\frac{\mathrm{i}\hat{p } - m }{p^2 + m^2 }  }$，系数为 $\displaystyle{\left[\frac{\mathrm{i} }{(2\pi)^4 }  \right]^{I_e} }$，对 $\displaystyle{\prod_{I_e} \mathrm{d}p }$ 积分
+
+$I_\gamma $ 个光子内线对应着 $I_\gamma $ 个 $\displaystyle{\gamma_\mu \frac{1 }{k^2 } \gamma_\mu  }$，系数为 $\displaystyle{\left[\frac{-\mathrm{i} }{(2\pi)^4 }  \right]^{I_\gamma} }$，对 $\displaystyle{\prod_{I_\gamma} \mathrm{d}k }$ 积分
+
+$l $ 个电子封闭内线贡献一个因子 $(-1)^l $
+
+$S $ 个外场线对应着 $S $ 个 $\hat{a}=a_\mu(q) \gamma_\mu $，系数为 $\displaystyle{\left[\frac{1 }{(2\pi)^4 }  \right]^{S} }$，对 $\displaystyle{\prod_{S} \mathrm{d}q }$ 积分
+
+|Feynman图解中的要素|Feynman图|$M_{i-f}^n $矩阵元中的因子|
+|:---:|:---:|:---:|
+|自旋为 $i $ 的电子初态外线||$u_i(\vec{p}) $|
+|自旋为 $i $ 的电子终态外线||$\bar{u}_i(\vec{p}) $|
+|自旋为 $i $ 的正电子初态外线||$\bar{v}_i(\vec{p}) $|
+|自旋为 $i $ 的正电子终态外线||$v_i(\vec{p}) $|
+|积化为 $\hat{e}^\nu $ 的光子初态终态外线||$\hat{e}^\nu/\sqrt{2\varepsilon_{\vec{k}}}=e^\nu_\mu\gamma_\mu/\sqrt{2\varepsilon_{\vec{k}}}  $|
+|电子或正电子内线||$\frac{\mathrm{i}\hat{p}-m }{p^2+m^2 }  $|
+|光子内线||$\gamma_\mu\cdots \frac{1 }{k^2 } \cdots \gamma_\mu $|
+|每个顶点有两根正负电子线和一根光子线||$\delta(p_2\pm k - p_1) $ 出向粒子动量为正，入向粒子动量为负|
+|电子或正电子封闭内线||$\frac{\mathrm{i}\hat{p}-m }{p^2+m^2 }  $ 与 $\hat{e}^\nu $ 间隔乘积之迹|
+|外场线||$\hat{a}(q)=a_\mu(q)\gamma_\mu $|
+
+规定 Feynman 图解中时间坐标方向为从左到右。
+
+#### Compton 效应
+
+Compton 效应：电子先吸收一个光子，变为中间态，然后又放出一个光子；或电子先放出一个光子，变为中间态，又吸收一个光子。
+
+$$
+e^- + \gamma \to e^- + \gamma
+$$
+
+用 $(k_1,\sigma),(k_2,\lambda) $ 表征光子动量和极化，用 $(\vec{p}_1,i),(\vec{p}_2,j) $ 表征电子的动量和自旋。
+
+最低阶 Feynman 图（$n=2 $）有两张。
+
+$n=2,r=2,I_e=1,I_\gamma=0,I=I_e+I_\gamma=1,S=0,l=0,E=E_e+E_\gamma=4 $
+
+$$
+M_{i-f}^n
+=B_{i-f}^n \underbrace{\int \cdots \int }_{I_e+I_\gamma+S} \prod_{I_e} \mathrm{d}p \prod_{I_\gamma} \mathrm{d}k \prod_{S}\mathrm{d}q \left\{\cdots \right\}
+$$
+
+$$
+\begin{aligned}
+B_{i-f}^n
+&=\left(\frac{1 }{\sqrt{V} }  \right)^E \frac{r }{n! } (-e)^n (-1)^l (\mathrm{i})^{I_e-I_\gamma} (2\pi)^{4(n-I-S)} \\
+&=\mathrm{i}\frac{e^2 }{V^2 } (2\pi)^4
+\end{aligned}
+$$
+
+可以写出图一的贡献：
+
+$$
+\begin{aligned}
+\hat{M}_{i-f}^2
+&=\mathrm{i}\frac{e^2 }{V^2 } (2\pi)^4 \int \left(\mathrm{d}p \right) \delta\left(p-p_1-k_1 \right) \delta\left(p_2+k_2-p \right) \bar{u}_j(\vec{p}_2)  \frac{\hat{e}^\lambda }{\sqrt{2\varepsilon_{\vec{k}_2}} }  \frac{\mathrm{i}\hat{p} - m }{\hat{p}^2 + m^2 } \frac{\hat{e}^\sigma }{\sqrt{2\varepsilon_{\vec{k}_1}} }  u_i(\vec{p}_1) \\
+&=\mathrm{i}\frac{e^2 }{V^2 } (2\pi)^4 \delta\left(p_2+k_2-p_1-k_1 \right) \bar{u}_j(\vec{p}_2)  \frac{\hat{e}^\lambda }{\sqrt{2\varepsilon_{\vec{k}_2}} }  \frac{\mathrm{i}\left(\hat{p}_1 + \hat{k}_1 \right) - m }{\left(p_1+k_1 \right)^2 + m^2 } \frac{\hat{e}^\sigma }{\sqrt{2\varepsilon_{\vec{k}_1}} }  u_i(\vec{p}_1) \\
+\end{aligned}
+$$
+
+可以写出图二的贡献：
+
+$$
+\begin{aligned}
+\hat{M}_{i-f}^{'2}
+&=\mathrm{i}\frac{e^2 }{V^2 } (2\pi)^4 \int \left(\mathrm{d}p \right) \delta\left(p+k_2-p_1 \right) \delta\left(p_2-p-k_1 \right) \bar{u}_j(\vec{p}_2)  \frac{\hat{e}^\sigma }{\sqrt{2\varepsilon_{\vec{k}_1}} }  \frac{\mathrm{i}\hat{p} - m }{\hat{p}^2 + m^2 } \frac{\hat{e}^\lambda }{\sqrt{2\varepsilon_{\vec{k}_2}} }  u_i(\vec{p}_1) \\
+&=\mathrm{i}\frac{e^2 }{V^2 } (2\pi)^4 \delta\left(p_2-k_1+k_2-p_1 \right) \bar{u}_j(\vec{p}_2)  \frac{\hat{e}^\sigma }{\sqrt{2\varepsilon_{\vec{k}_1}} }  \frac{\mathrm{i}\left(\hat{p}_1-\hat{k}_2 \right) - m }{\left(p_1-k_2 \right)^2 + m^2 } \frac{\hat{e}^\lambda }{\sqrt{2\varepsilon_{\vec{k}_2}} }  u_i(\vec{p}_1) \\
+\end{aligned}
+$$
+
+总的 $M_{i-f}^2 $ 矩阵元是二者之和。
+
+
+
+### 基本粒子反应几率和截面
+
+#### 单位时间、单位空间基本粒子反应跃迁几率
+
+$M_{i-f} $ 矩阵一般可写成如下形式：
+
+$$
+M_{i-f}
+=\left(\frac{1 }{\sqrt{V} }  \right)^E \delta\left(p^f-p^i \right) M\left(p^f,p^i \right)
+$$
+
+其中 $p^f $ 是末态总动量，$p^i $ 是初态总动量，$E=E_e+E_\gamma=E_i+E_f $
+
+用 $\Gamma $ 表示单位时间单位空间反应的几率，设 $\Omega=T V $ 为基本粒子进行反应的四维空间体积，则
+
+$$
+\Gamma
+\equiv \lim_{\Omega\to\infty} \frac{\left|M_{i-f} \right|^2_{\Omega} }{\Omega }
+= \left(\frac{1 }{2\pi }  \right)^4 \left(\frac{1 }{V }  \right)^{E_i+E_f} \left|M\left(p^f,p^i \right) \right|^2 \delta\left(p^f-p^i \right)
+$$
+
+单位时空体积初终态跃迁几率为：
+
+$$
+\mathrm{d}\omega
+=\left(\frac{1 }{2\pi }  \right)^4 \left(\prod_i n_i \right) \left|M\left(p^i , p^f \right) \right|^2 \delta\left(p^f - p^i \right) \prod_f \frac{\mathrm{d}^3\vec{p}_f }{\left(2\pi \right)^3 } 
+$$
+
+其中，$n_i $ 为某一种初态粒子单位体积的粒子数 $n_i\equiv N_i/V $
+
+#### 基本粒子的反应截面
+
+基本粒子的反应**微分**截面 $\mathrm{d}\sigma$ 定义为单位时间单位体积基本粒子（群）反应的几率除以初态粒子流的强度。
+
+$$
+\mathrm{d}\sigma
+\equiv \frac{\mathrm{d}\omega }{J } 
+$$
+
+初态有两种基本粒子反应的微分截面公式：
+
+$$
+\mathrm{d}\sigma
+=\left(\frac{1 }{2\pi }  \right)^4 \frac{\varepsilon_1 \varepsilon_2 }{F }  \left|M\left(p^i , p^f \right) \right|^2 \delta\left(p^f - p^i \right) \prod_f \frac{\mathrm{d}^3\vec{p}_f }{\left(2\pi \right)^3 } ,\quad
+F
+\equiv \sqrt{\left(p^1_\mu p^2_\mu \right)^2 - m_1^2m_2^2}
+$$
+
+总反应截面公式：
+
+$$
+\begin{aligned}
+\sigma
+=\int \mathrm{d}\sigma
+=\left(\frac{1 }{2\pi }  \right)^4 \int \cdots \int \frac{\varepsilon_1 \varepsilon_2 }{F }  \left|M\left(p^i , p^f \right) \right|^2 \delta\left(p^f - p^i \right) \prod_f \frac{\mathrm{d}^3\vec{p}_f }{\left(2\pi \right)^3 }
+\end{aligned}
+$$
+
+反应的微分截面 $\mathrm{d}\sigma $ 的两个特点：
+
+- $\mathrm{d}\sigma $ 和 $\sigma $ 的量纲为面积；
+
+- $\mathrm{d}\sigma $ 表达式与初态粒子数密度无关。
+
+- 总截面 $\sigma $ 代表反应几率。
+
+### 不稳定基本粒子衰变的平均寿命
+
+单位时间 $1 $ 个基本粒子衰变几率为：
+
+$$
+\lambda
+=\left(\frac{1 }{2\pi }  \right)^4 \left|M\left(p^i , p^f \right) \right|^2 \delta\left(p^f - p^i \right) \prod_f \frac{\mathrm{d}^3\vec{p}_f }{\left(2\pi \right)^3 }
+$$
+
+$\lambda $ 又称为基本粒子的衰变宽度，其倒数称为衰变寿命 $\tau $，即：
+
+$$
+\tau
+\equiv \frac{1 }{\lambda } 
+$$
+
+## 4.12 光子或电子的自旋状态的求和与平均的公式
+
+一般的基本粒子反应中，初态或终态同类的基本粒子的自旋是平均分布的，称为非极化的。
+
+若终态基本粒子非极化，则反应几率或截面要对**终态**基本粒子自旋求**和**；
+
+若初态基本粒子非极化，则反应几率或截面要对**初态**基本粒子自旋求**平均**。
+
+### 对电子和正电子终态的自旋求和
+
+初态有两种基本粒子反应的微分截面公式：
+
+$$
+\mathrm{d}\sigma
+=\left(\frac{1 }{2\pi }  \right)^4 \frac{\varepsilon_1 \varepsilon_2 }{F }  \left|M\left(p^i , p^f \right) \right|^2 \delta\left(p^f - p^i \right) \prod_f \frac{\mathrm{d}^3\vec{p}_f }{\left(2\pi \right)^3 } ,\quad
+F
+\equiv \sqrt{\left(p^1_\mu p^2_\mu \right)^2 - m_1^2m_2^2}
+$$
+
+总反应截面公式：
+
+$$
+\begin{aligned}
+\sigma
+=\int \mathrm{d}\sigma
+=\left(\frac{1 }{2\pi }  \right)^4 \int \cdots \int \frac{\varepsilon_1 \varepsilon_2 }{F }  \left|M\left(p^i , p^f \right) \right|^2 \delta\left(p^f - p^i \right) \prod_f \frac{\mathrm{d}^3\vec{p}_f }{\left(2\pi \right)^3 }
+\end{aligned}
+$$
+
+通常反应中，首先以初、终态各为一电子的情形为例，此时
+
+$$
+M\left(p^i , p^f \right)
+=\bar{u}_f\left(\vec{p}_1 \right) \hat{O} u_i\left(\vec{p}_2 \right)
+$$
+
+其中 $\hat{O} $ 是矩阵函数。
+
+$$
+\begin{aligned}
+M^\dag\left(p^i,p^f \right)
+&=M^*\left(p^i,p^f \right)
+\end{aligned}
+$$
+
+设
+
+$$
+\hat{\bar{O}}
+=\gamma_4 \hat{O}^\dag \gamma_4
+$$
+
+则
+
+$$
+\begin{aligned}
+\left|M\left(p^i,p^f \right) \right|^2
+&=\bar{u}_i\left(\vec{p}_2 \right) \hat{\bar{O}} u_f\left(\vec{p}_1 \right) \bar{u}_f\left(\vec{p}_1 \right) \hat{O} u_i\left(\vec{p}_2 \right),\quad i,f 不求和
+\end{aligned}
+$$
+
+对终态自旋求和
+
+$$
+\sum_{f=1}^{2} \left|M\left(p^i,p^f \right) \right|^2
+=\sum_{f=1}^{2} \bar{u}_i\left(\vec{p}_2 \right) \hat{\bar{O}} u_f\left(\vec{p}_1 \right) \bar{u}_f\left(\vec{p}_1 \right) \hat{O} u_i\left(\vec{p}_2 \right)
+$$
+
+又由
+
+$$
+\sum_{f=1}^{2} u_f\left(\vec{p}_1 \right) \bar{u}_f\left(\vec{p}_1 \right)
+=\frac{m }{E_1 } \Lambda_-\left(p_1 \right) 
+=-\frac{1 }{2E_1 } \left(\mathrm{i}\hat{p}_1 - m \right)
+$$
+
+则终态求和为
+
+$$
+\boxed{
+\sum_{f=1}^{2} \left|M\left(p^i,p^f \right) \right|^2
+=\frac{m }{E_1 } \bar{u}_i \left(\vec{p}_2 \right) \hat{\bar{O}} \Lambda_-\left(p_1 \right) \hat{O} u_i\left(\vec{p}_2 \right)
+}
+$$
+
+### 对电子或正电子终态自旋求和并对初态自旋平均
+
+接着对初态自旋求平均。
+
+$$
+\begin{aligned}
+\frac{1 }{2 } \sum_{i=1}^{2} \left(\sum_{f=1}^{2} \left|M\left(p^i,p^f \right) \right|^2 \right)
+&=\frac{1 }{2 } \sum_{i=1}^{2} \frac{m }{E_1 } \bar{u}_i \left(\vec{p}_2 \right) \hat{\bar{O}} \Lambda_-\left(p_1 \right) \hat{O} u_i\left(\vec{p}_2 \right) \\
+&=\frac{1 }{2 } \frac{m^2 }{E_1 E_2 } \mathrm{Tr}\left[\Lambda_-(p_2) \hat{\bar{O}} \Lambda-(p_1) \hat{O} \right]
+\end{aligned}
+$$
+
+总之，要利用
+
+$$
+\sum_i u_i(\vec{p}) \bar{u}_i(\vec{p})
+=\frac{m }{E } \Lambda_-(p)
+=-\frac{1 }{2E } \left(\mathrm{i}\hat{p} - m \right)
+$$
+
+$$
+\sum_i v_i(\vec{p}) \bar{v}_i(\vec{p})
+=-\frac{m }{E } \Lambda_+(p)
+=-\frac{1 }{2E } \left(\mathrm{i}\hat{p} + m \right)
+$$
+
+最后把旋量场粒子非极化态问题转化为 $\gamma_\mu $ 矩阵求迹问题。
+
+### 常用 $\gamma_\mu $ 矩阵求迹公式
+
+### 对光子的极化求和
+
+### 例子
+
+求 $B\to f + \tilde{f} $ 寿命。已知：$B $ 是自旋为零、质量为 $M $ 的玻色子；$f,\tilde{f} $ 是自旋为 $1/2 $、质量为 $m $ 的正反费米子。相互作用哈密顿量为
+
+$$
+\hat{\mathcal{H}}_i
+=\mathrm{i} g \hat{\phi}(x) \hat{\bar{\psi}}(x) \hat{\psi}(x)
+$$
+
+求 $B $ 粒子衰变为正反费米子 $f,\tilde{f} $ 的寿命。
+
+（1）根据反应式画出相应费曼图（仅考虑一阶图），写出 $\lambda $ 表达式。
+
+$$
+\hat{S}_1
+=-\mathrm{i}\int \mathrm{d}^4 x N\left[\hat{\mathcal{H}}_I(x) \right]
+=g \int \mathrm{d}^4 x N\left[\hat{\bar{\psi}}(x) \hat{\psi}(x) \phi(x) \right]
+$$
+
+衰变初、终态
+
+$$
+\Ket{B }
+=\Ket{\vec{k} },\quad
+\Ket{f,\tilde{f} }
+=\Ket{\vec{p}_1 , i ; \vec{p}_2 , j }
+$$
+
+相应 $\hat{M}_{i-f}^{(1)} $ 为
+
+$$
+\hat{M}_{i-f}^{(1)}
+=g \int \mathrm{d}^4 x \Braket{f , \tilde{f} | \hat{\bar{\psi}}^{(+)}(x) \hat{\psi}^{(+)}(x) \hat{\phi}^{(-)}(x) | B }
+$$
+
+$$
+\hat{\phi}^{(-)}(x)
+\to \frac{1 }{\sqrt{V} } \frac{1 }{\sqrt{2 \varepsilon_{\vec{k}}} } \mathrm{e}^{\mathrm{i}kx},\quad
+\hat{\bar{\psi}}^{(+)}(x)
+\to \frac{1 }{\sqrt{V} } \bar{u}_i\left(\vec{p}_1 \right) \mathrm{e}^{-\mathrm{i}p_1 x},\quad
+\hat{\psi}^{(+)}(x)
+\to \frac{1 }{\sqrt{V} } v_j\left(\vec{p}_2 \right) \mathrm{e}^{-\mathrm{i}p_2 x}
+$$
+
+代入得
+
+$$
+\begin{aligned}
+\hat{M}_{i-f}^{(1)}
+=g \left(2\pi \right)^4 \delta\left(p_1+p_2-k \right) \left(\frac{1 }{\sqrt{V} }  \right)^3 \frac{1 }{\sqrt{2 \varepsilon_{\vec{k}}} } \bar{u}_i(\vec{p}_1) v_j(\vec{p}_2)
+\end{aligned}
+$$
+
+$$
+M\left(p^i , p^f \right)
+=\left(2\pi \right)^4 g \frac{1 }{\sqrt{2\varepsilon_{\vec{k}}} } \bar{u}_i(\vec{p}_1) v_j(\vec{p}_2)
+$$
+
+代入
+
+$$
+\lambda
+=\left(\frac{1 }{2\pi }  \right)^4 \left|M\left(p^i , p^f \right) \right|^2 \delta\left(p^f - p^i \right) \prod_f \frac{\mathrm{d}^3\vec{p}_f }{\left(2\pi \right)^3 }
+$$
+
+得到极化态衰变宽度
+
+$$
+\begin{aligned}
+\lambda
+=\left(\frac{g }{2\pi }  \right)^2 \int \frac{1 }{2\varepsilon_{\vec{k}} } \left|\bar{u}_i(\vec{p}_1) v_j(\vec{p}_2) \right|^2 \delta(p_1+p_2-k) \mathrm{d}^3\vec{p}_1 \mathrm{d}^3\vec{p}_2
+\end{aligned}
+$$
+
+（2）终态自旋求和
+
+$$
+\begin{aligned}
+\sum_{i=1}^{2} \sum_{j=1}^{2} \left|\bar{u}_i(\vec{p}_1) v_j(\vec{p}_2) \right|^2
+&=\sum_{i,j} \mathrm{Tr}\left[u_i(\vec{p}_1) \bar{u}_i(\vec{p}_1) v_j(\vec{p}_2) \bar{v}_j(\vec{p}_2) \right] \\
+&=-\frac{1 }{E_1 E_2 } \left[\left(p_1 p_2 \right) + m^2 \right]
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\lambda
+=-\left(\frac{g }{2\pi }  \right)^2 \int \frac{m^2 + \left(p_1 p_2 \right) }{2 \varepsilon_{\vec{k}} E_1 E_2 } \delta(p_1+p_2-k) \mathrm{d}^3\vec{p}_1 \mathrm{d}^3\vec{p}_2
+\end{aligned}
+$$
+
+（3）对终态动量积分
+
+取初态为质心系
+
+$$
+\vec{k} = 0,\quad \varepsilon_{\vec{k}} = M
+$$
+
+$$
+\delta(p_1 + p_2 - k)
+=\delta(\vec{p}_1 + \vec{p}_2) \delta(E_1+E_2-M)
+$$
+
+对 $\vec{p}_1 $ 积分，考虑到 $\delta(\vec{p}_1+\vec{p}_2) $ 函数，只需要把被积函数中除 $\delta(\vec{p}_1+\vec{p}_2) $ 函数外的项中 $\vec{p}_1 $ 全替换成 $-\vec{p}_2 $ 即可：
+
+$$
+\vec{p}_1 \to -\vec{p}_2,\quad
+E_1 = \sqrt{\vec{p}_1^2 + m^2} \to \sqrt{\vec{p}_2^2 + m^2} = E_2 \equiv E,\quad
+\left(p_1 p_2 \right) = \vec{p}_1 \cdot \vec{p}_2 - E_1 E_2 \to -\vec{p}_2^2 - E^2 = m^2 - 2E^2
+$$
+
+$$
+\begin{aligned}
+\lambda
+&=-\left(\frac{g }{2\pi }  \right)^2 \int \frac{m^2 + \left(p_1 p_2 \right) }{2 \varepsilon_{\vec{k}} E_1 E_2 } \delta(p_1+p_2-k) \mathrm{d}^3\vec{p}_1 \mathrm{d}^3\vec{p}_2 \\
+&=-\left(\frac{g }{2\pi }  \right)^2 \int \frac{m^2 - E^2 }{M E^2 } \delta(2E-M) \mathrm{d}^3\vec{p}_2 \\
+\end{aligned}
+$$
+
+再考虑对 $\vec{p}_2 $ 的积分，利用球坐标
+
+$$
+E^2 = \left|\vec{p}_2 \right|^2 + m^2\quad
+2 E \mathrm{d}E = 2\left|\vec{p}_2 \right|\mathrm{d}\left|\vec{p}_2 \right|,\quad
+\left|\vec{p}_2 \right|^2\mathrm{d}\left|\vec{p}_2 \right|
+=\left|\vec{p}_2 \right| E \mathrm{d}E
+=\sqrt{E^2-m^2} E\mathrm{d}E
+$$
+
+$$
+\begin{aligned}
+\mathrm{d}^3\vec{p}_2
+=\left|\vec{p}_2  \right|^2 \mathrm{d}\left|\vec{p}_2 \right|\mathrm{d}\Omega
+=\sqrt{E^2-m^2} E \mathrm{d}E \mathrm{d}\Omega
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\lambda
+&=-\left(\frac{g }{2\pi }  \right)^2 \int \frac{m^2 - E^2 }{M E^2 } \delta(2E-M) \mathrm{d}^3\vec{p}_2 \\
+&=-\left(\frac{g }{2\pi }  \right)^2 \int \frac{m^2 - E^2 }{M E^2 } \cdot \frac{1 }{2 }  \delta(E-M/2) \sqrt{E^2-m^2} E\mathrm{d}E \\
+&=\frac{g^2 }{8\pi M^2 } \left(M^2 - 4m^2 \right)^{3/2}
+\end{aligned}
+$$
+
+对应衰变寿命为
+
+$$
+\tau
+=\frac{8\pi M^2 }{g^2 } \left(M^2-4m^2 \right)^{-3/2}
+$$
+
+## 4.13 非相对论情况下 Rutherford 散射问题
+
+## 4.14 光子和电子的散射（Compton 效应）
+
+设动量为 $h\nu_0/c $ 的光子与质量为 $m $ 的静止于 $O $ 点质量为 $m $ 的电子相撞，其结果：电子以速度 $v $ 向 $\varphi $ 角方向运动，光子以动量 $h\nu/c $ 向 $\theta $ 方向偏转。
+
+### Compton 效应的 $M_{i-f}^{(2)} $ 矩阵元素
+
+反应式：
+
+$$
+e^- + \gamma \to e^- + \gamma
+$$
+
+最低阶费曼图有两张。
+
+## 4.15 正负电子对湮灭为两个光子
+
+$$
+e^+ + e^- \to \gamma + \gamma'
+$$
+
+## 4.16 高能电子对撞
+
+$$
+e^- + e^+ \to f + \tilde{f}
+$$
+
+其中 $f,\tilde{f} $ 是正反费米子对。
+
+### 夸克禁闭
+
+单个夸克和胶子无法被孤立观测，只能被束缚在强子的复合态。实验中迄今未发现独立夸克态的存在。
+
+### 渐进自由
+
+按照 QCD，当强子中夸克能量很高时，夸克之间的强作用很小，可以认为是自由的，这种现象称为**渐进自由**。
+
+## 4.17 $\mu $ 粒子衰变
+
+$$
+\mu^- \to e^- + \nu_\mu + \bar{\nu}_e,\quad
+\mu^+ \to e^+ + \nu_e + \bar{\nu}_\mu
+$$
+
+按 Weinberg-Salam 理论，对 $\mu $ 粒子衰变有贡献的相互作用项是轻子-$W $ 耦合项。
+
+在低能近似下，四费米子直接相互作用，即 $V-A $ 型相互作用与 W-S 理论在计算 $\mu $ 粒子衰变上没差别。
+
+
+
+
+
