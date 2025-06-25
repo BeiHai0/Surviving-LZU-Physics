@@ -1,3 +1,5 @@
+[TOC]
+
 # 0 记号约定
 
 ## 爱因斯坦求和约定
@@ -4218,7 +4220,7 @@ $$
 \theta_{\mu}
 &=\left[\mathcal{L}\frac{\partial x'_\mu }{\partial \alpha } - \frac{\partial \mathcal{L} }{\partial\left(\partial_\mu \phi_A \right) } \partial_\nu \phi_A \frac{\partial x'_\nu }{\partial \alpha } + \frac{\partial \mathcal{L} }{\partial\left(\partial_\mu \phi_A \right) } \frac{\partial \phi_A' }{\partial \alpha }  \right]\bigg|_{\alpha=0} \\
 &=\left[\frac{\partial\mathcal{L} }{\partial\left(\partial_\mu \phi_A \right) } \frac{\partial \phi_A'(x,\alpha) }{\partial\alpha } + \frac{\partial \phi_A^{*'}(x,\alpha) }{\partial\alpha } \frac{\partial\mathcal{L} }{\partial\left(\partial_\mu \phi_A^* \right) }  \right]\bigg|_{\alpha=0} \\
-&=\mathrm{i}\alpha\left[\frac{\partial\mathcal{L} }{\partial\left(\partial_\mu \phi_A \right) } \phi_A - \phi_A^* \frac{\partial\mathcal{L} }{\partial\left(\partial_\mu \phi_A^* \right) } \right]
+&=\mathrm{i}\left[\frac{\partial\mathcal{L} }{\partial\left(\partial_\mu \phi_A \right) } \phi_A - \phi_A^* \frac{\partial\mathcal{L} }{\partial\left(\partial_\mu \phi_A^* \right) } \right]
 \end{aligned}
 $$
 
@@ -4867,7 +4869,7 @@ $$
 
 $$
 \hat{\vec{\vec{S}}}
-=\frac{\mathrm{i} }{2 } \sum_{\vec{k}} \vec{k} \left[\hat{\vec{C}}_{\vec{k}}^{(-)} \times \hat{\vec{C}}_{\vec{k}}^{(+)} - \hat{\vec{C}}_{\vec{k}}^{(+)} \times \hat{\vec{C}}_{\vec{k}}^{(-)}\right]
+=\frac{\mathrm{i} }{2 } \sum_{\vec{k}} \left[\hat{\vec{C}}_{\vec{k}}^{(-)} \times \hat{\vec{C}}_{\vec{k}}^{(+)} - \hat{\vec{C}}_{\vec{k}}^{(+)} \times \hat{\vec{C}}_{\vec{k}}^{(-)}\right]
 $$
 
 ### 算符对易关系
@@ -5011,7 +5013,7 @@ $$
 
 $$
 \hat{S}^3
-=\mathrm{i}\left[\hat{C}^{(-)1}\left(\vec{k} \right) \hat{C}^{(-)2}\left(\vec{k} \right) - \hat{C}^{(+)1}\left(\vec{k} \right) \hat{C}^{(-)2}\left(\vec{k} \right) \right]
+=\mathrm{i}\left[\hat{C}^{(-)1}\left(\vec{k} \right) \hat{C}^{(+)2}\left(\vec{k} \right) - \hat{C}^{(+)1}\left(\vec{k} \right) \hat{C}^{(-)2}\left(\vec{k} \right) \right]
 $$
 
 ### 粒子数表象
@@ -6798,7 +6800,7 @@ $$
 
 总而言之，$M_{i-f} $ 就是粒子数表象矩阵元。
 
-## 4.10 动量表象 S 矩阵元
+## 动量表象 S 矩阵元
 
 假设所研究的正负电子和光子反应的 Feynman 图中有：$n $ 个顶点（即 $n $ 阶 S 矩阵）、$E_e $ 个正负电子外线、$E_\gamma $ 个光子外线、$I_e $ 个正负电子内线、$I_\gamma $ 个光子外线、$S $ 个电磁场外线，则：
 
@@ -7004,7 +7006,7 @@ $$
 =\frac{1 }{2\pi } \frac{1 }{s } V^{E_f} \left|M_{i-f}^{(e)} \left(p^f , p^i \right) \right|^2 \delta\left(\varepsilon^f - \varepsilon^i \right) \prod_f \frac{\mathrm{d}^3\vec{p}_f }{\left(2\pi \right)^3 } 
 $$
 
-## 4.12 光子或电子的自旋状态的求和与平均的公式
+## 光子或电子的自旋状态的求和与平均的公式
 
 一般的基本粒子反应中，初态或终态同类的基本粒子的自旋是平均分布的，称为非极化的。
 
@@ -7275,9 +7277,7 @@ $$
 =\frac{8\pi M^2 }{g^2 } \left(M^2-4m^2 \right)^{-3/2}
 $$
 
-## 4.13 非相对论情况下 Rutherford 散射问题
-
-## 4.14 光子和电子的散射（Compton 效应）
+## 光子和电子的散射（Compton 效应）
 
 设动量为 $h\nu_0/c $ 的光子与质量为 $m $ 的静止于 $O $ 点质量为 $m $ 的电子相撞，其结果：电子以速度 $v $ 向 $\varphi $ 角方向运动，光子以动量 $h\nu/c $ 向 $\theta $ 方向偏转。
 
