@@ -1,17 +1,90 @@
-
 [toc]
 
 | | | | | | | | 
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | | | | | | | |
 
-# 基本骨架
+# 西语基本骨架
 
-#### 身份
+## 身份
+
+> 你、我、他、她、它。
 
 ![](img/gra_1_3.png)
 
-#### 时间
+## 时间
+
+> 年月周日、昨今明后。
+
+### 年月周日
+
+年  año  
+
+月  mes  
+
+周 / 星期  semana  
+
+日 / 天  día  
+
+### 昨今明后
+
+昨天  ayer  
+
+今天  hoy  
+
+明天  mañana  
+
+后天  pasado mañana  
+
+前天  anteayer（也可说 antes de ayer）  
+
+### 星期几
+
+星期一  lunes  
+
+星期二  martes  
+
+星期三  miércoles  
+
+星期四  jueves  
+
+星期五  viernes  
+
+星期六  sábado  
+
+星期日  domingo  
+
+注意：西班牙语中星期几单词通常不用大写。  
+
+### 补充表达
+
+一年  un año  
+
+一个月  un mes  
+
+一周  una semana  
+
+一天  un día  
+
+今年  este año  
+
+这个月  este mes  
+
+这周  esta semana  
+
+今天  hoy  
+
+明年  el próximo año  
+
+下个月  el próximo mes  
+
+下周  la próxima semana  
+
+去年  el año pasado  
+
+上个月  el mes pasado  
+
+上周  la semana pasada  
 
 西班牙语有许多时间表达，包括表示时间的词汇、短语和句子。以下是一些常见的时间表达：
 
@@ -62,61 +135,130 @@
    - tarde o temprano: 迟早
    - desde...hasta...: 从……到……
 
-### 关系
+## 关系
 
-#### 方位
+> 上下、前后、左右、内外、东南西北、之前之后、大于小于等于类似于
 
-1. 上面 - arriba
+## 方位
+上  arriba  
 
-2. 下面 - abajo
+下  abajo  
 
-3. 前面 - adelante
+前  delante  
 
-4. 后面 - atrás
+后  detrás  
 
-5. 左边 - izquierda
+左  izquierda  
 
-6. 右边 - derecha
+右  derecha  
 
-7. 里面 - dentro
+内  dentro  
 
-8. 外面 - fuera
+外  fuera  
 
-9. 顶部 - parte superior
+东  este  
 
-10. 底部 - parte inferior
+南  sur  
 
-11. 中间 - medio/centro
+西  oeste  
 
-12. 边缘 - borde
+北  norte  
 
-13. 东 - este
+之前  antes  
 
-14. 南 - sur
+之后  después  
 
-15. 西 - oeste
+以前  anteriormente  
 
-16. 北 - norte
+以后  posteriormente  
 
-#### 时间关系
+大于  mayor que  
 
-之前 - antes
+小于  menor que  
 
-之后 - después
+等于  igual a  
 
-#### 比较
+类似于  parecido a / similar a  
 
-1. 大于 - mayor que
+## 动作
 
-2. 小于 - menor que
+> 行走坐卧、推拉扔接、收送受拒、买卖借赠、攻受战逃、跳飞游爬、夸骂骗诱、爱恨怨怒。
 
-3. 等于 - igual a
+行  andar / caminar  
 
-4. 大于等于 - mayor o igual que
+走  caminar  
 
-5. 小于等于 - menor o igual que
+坐  sentarse  
 
-#### 基数词
+卧（躺） acostarse  
+
+推  empujar  
+
+拉  tirar  
+
+扔  lanzar / tirar  
+
+接  coger / recibir  
+
+收  recibir  
+
+送  enviar / mandar  
+
+受  aceptar / recibir  
+
+拒  rechazar / rehusar  
+
+买  comprar  
+
+卖  vender  
+
+借（借入） pedir prestado  
+
+借（借出） prestar  
+
+赠  regalar  
+
+攻  atacar  
+
+受  sufrir / recibir  
+
+战  luchar / combatir  
+
+逃  huir / escapar  
+
+跳  saltar  
+
+飞  volar  
+
+游  nadar  
+
+爬  trepar / escalar / gatear（匍匐爬）  
+
+夸  alabar / elogiar  
+
+骂  insultar  
+
+骗  engañar  
+
+诱  seducir / tentar  
+
+爱  amar / querer  
+
+恨  odiar  
+
+怨  resentirse / guardar rencor  
+
+怒  enojarse / enfadarse  
+
+## 物件
+
+> 每天、每周、每月都会提到的物件。
+
+## 基本语法结构
+
+> 着了过，被动，祈使，虚拟，倒装……
+
+## 基数词
 
 1. uno
 2. dos
