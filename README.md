@@ -1,10 +1,12 @@
 希望可以帮到大家。
 
-# Licence
+# License
 
 Surviving-LZU-Physics by BeiHai0 is marked with CC0 1.0 Universal 
 
 https://creativecommons.org/publicdomain/zero/1.0/deed.en
+
+
 
 # 必备软件
 
