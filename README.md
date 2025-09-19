@@ -6,13 +6,9 @@ Surviving-LZU-Physics by BeiHai0 is marked with CC0 1.0 Universal
 
 https://creativecommons.org/publicdomain/zero/1.0/deed.en
 
-
-
 # 必备软件
 
 - [Chrome](https://www.google.cn/intl/zh-CN/chrome/)
-
-- 科学上网工具（可以请教身边的同学）
 
 - [VScode](https://code.visualstudio.com/)
 
@@ -24,15 +20,13 @@ https://creativecommons.org/publicdomain/zero/1.0/deed.en
 
 - [Anaconda](https://www.anaconda.com/download/success)
 
-- [Office](http://msweb.lzu.edu.cn/download/office2021.html)
-
-## git 配置
+# git 配置
 
 > 假设你已经有了远程库，但想在新电脑的某个文件夹中（以桌面为例）继续写东西并推送到远程库。
 
 - 桌面空白处鼠标右键
 
-- Open Git Bash here
+- `Open Git Bash here`
 
 - 此时会打开 git bash，输入：
 
@@ -70,11 +64,11 @@ ssh-keygen -t rsa -b 4096 -C "Your Email"
 
 这样就生成了 SSH 密钥。
 
-- 此电脑 $\to $ OS(C:) $\to  $ 用户 $\to $ 你的用户名 $\to $ .ssh 文件夹 $\to $ id_rsa PUB 文件 $\to $ 右击，打开方式选择“记事本打开” $\to $ 键盘上 Ctrl + A，Ctrl + C 复制
+- 此电脑 $\to$ OS(C:) $\to$ 用户 $\to$ 你的用户名 $\to$ .ssh 文件夹 $\to$ id_rsa PUB 文件 $\to$ 右击，打开方式选择“记事本打开” $\to$ 键盘上 `Ctrl + A`，`Ctrl + C` 复制
 
 - 到 github 官网找到你的远程仓库。
 
-- Setting $\to $ Deploy Keys $\to $ Add deploy key
+- Setting $\to$ Deploy Keys $\to$ Add deploy key
 
 - "Title" 自己取，在 "Key" 中键盘上按 Ctrl + V 把你刚刚复制的东西粘贴进去。
 
@@ -84,9 +78,9 @@ ssh-keygen -t rsa -b 4096 -C "Your Email"
 
 这样就可以往远程仓库推送东西了。
 
-- 点击 <>Code
+- 点击 `<>Code`
 
-- 点击绿色的 <>Code
+- 点击绿色的 `<>Code`
 
 - 把你的远程仓库的 SSH 地址复制到剪贴板中
 
@@ -104,9 +98,7 @@ git clone YourURL
 
 ```
 git add .
-
 git commit -m"描述"
-
 git push origin master
 ```
 
@@ -161,15 +153,25 @@ git pull
 }
 ```
 
+## 快捷键
+
+### 多行行首添加光标
+
+- 用鼠标选择内容；
+
+- `Alt + Shift + I` 在所选内容的行尾添加光标；
+
+- `Home` 直到所有光标都移至行首。
+
 ## snippets
 
 - 打开VScode
 
 - 点击左下角齿轮图标
 
-- Snippets
+- `Snippets`
 
-- New Global Snippets Profile
+- `New Global Snippets Profile`
 
 ## 个人惯用 markdown snippets
 
