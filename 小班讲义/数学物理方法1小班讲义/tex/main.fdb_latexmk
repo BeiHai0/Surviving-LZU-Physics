@@ -1,20 +1,20 @@
 # Fdb version 4
-["bibtex main"] 1760954560.39552 "main.aux" "main.bbl" "main" 1760956697.70723 0
+["bibtex main"] 1761036845.85557 "main.aux" "main.bbl" "main" 1761036955.51045 0
   "./references.bib" 1760937166 155 3512daddf25f7c3dc654d2181738d036 ""
   "c:/texlive/2024/texmf-dist/bibtex/bst/base/plain.bst" 1736593294 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "main.aux" 1760956695 3359 b75d8ba5f56a1ef4fe5fce32f730bc16 "xelatex"
+  "main.aux" 1761036953 5352 6e092029f358f115f2c0be3d9df4c98c "xelatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["xdvipdfmx"] 1760956696.62885 "main.xdv" "main.pdf" "main" 1760956697.71866 0
-  "main.xdv" 1760956695 52584 ae52ace783c57b595a06a17166bf2e2b "xelatex"
+["xdvipdfmx"] 1761036954.47836 "main.xdv" "main.pdf" "main" 1761036955.52156 0
+  "main.xdv" 1761036953 187964 b3dd92e0415c5fd5b0b404090a0957e6 "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1760956692.89846 "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/小班讲义/数学物理方法1小班讲义/tex/main.tex" "main.xdv" "main" 1760956697.70751 0
+["xelatex"] 1761036950.68324 "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/小班讲义/数学物理方法1小班讲义/tex/main.tex" "main.xdv" "main" 1761036955.51081 0
   "appendices.tex" 1760936648 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/小班讲义/数学物理方法1小班讲义/tex/main.tex" 1760956570 971 fae9d7455904eff924b1606fcd71891c ""
+  "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/小班讲义/数学物理方法1小班讲义/tex/main.tex" 1761022719 971 fae9d7455904eff924b1606fcd71891c ""
   "c:/Windows/Fonts/msyh.ttc" 1575709707 19647736 ff2e53a6131130a07589812ea5b5b0d0 ""
   "c:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1736593776 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1736595491 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
@@ -133,6 +133,7 @@
   "c:/texlive/2024/texmf-dist/tex/latex/base/fix-cm.sty" 1736594094 14741 8b0de6b00fb0a5eac1dbb1bd11363c83 ""
   "c:/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty" 1736594094 5119 a04a8b68ab4f6ce800a41f7f8012a10e ""
   "c:/texlive/2024/texmf-dist/tex/latex/base/ts1enc.def" 1736594094 8090 f16408278fc28f119d5a6757c212f57e ""
+  "c:/texlive/2024/texmf-dist/tex/latex/braket/braket.sty" 1736593326 3601 193635d942bc4777a5acaaeeffdce692 ""
   "c:/texlive/2024/texmf-dist/tex/latex/caption/caption.sty" 1736593349 56128 c2ccf1a29d78c33bc553880402e4fb9a ""
   "c:/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty" 1736593349 72619 ee90b6612147680fd73c3b1406a74245 ""
   "c:/texlive/2024/texmf-dist/tex/latex/caption/subcaption.sty" 1736593349 12494 0c0cdb824278a4d51cefeb2e79901315 ""
@@ -233,16 +234,16 @@
   "c:/texlive/2024/texmf-dist/web2c/texmf.cnf" 1736593107 41649 5d6ae549fbbcb850a863f69aa41f3d10 ""
   "c:/texlive/2024/texmf-var/web2c/xetex/xelatex.fmt" 1736595734 10849599 ed1d0ee42e349112cf84ba812fabefd6 ""
   "c:/texlive/2024/texmf.cnf" 1736595510 713 e69b156964470283e0530f5060668171 ""
-  "chapters/ch1_vector-analysis.tex" 1760954246 1445 34ed4d804ff4be30a7cee9ba4ae6abc4 ""
+  "chapters/ch1_vector-analysis.tex" 1761036949 28962 be7bc85b89d5105e6f5a9892570bcf84 ""
   "chapters/ch2_vector-analysis-in-curvilinear-coordinates.tex" 1760956692 123 7a7ec3620a6d0458bd7b53829378dbbd ""
   "frontmatter/preface.tex" 1760942030 766 e6ad30e5ffa685a5ce24478d7991e5c7 ""
   "frontmatter/titlepage.tex" 1760940625 288 3088e89db773129123e12b98036c3715 ""
-  "main.aux" 1760956695 3359 b75d8ba5f56a1ef4fe5fce32f730bc16 "xelatex"
-  "main.bbl" 1760954560 186 c58a11757c22479adb62e73380ccc412 "bibtex main"
-  "main.out" 1760956695 2848 54bde6cf473f077577660c099c359c65 "xelatex"
-  "main.tex" 1760956570 971 fae9d7455904eff924b1606fcd71891c ""
-  "main.toc" 1760956695 2103 c2d132253768d29cf04ef912ec6e0489 "xelatex"
-  "preamble.tex" 1760954553 1963 6a41d3f6cac358f70da19991e1b58319 ""
+  "main.aux" 1761036953 5352 6e092029f358f115f2c0be3d9df4c98c "xelatex"
+  "main.bbl" 1761036846 186 c58a11757c22479adb62e73380ccc412 "bibtex main"
+  "main.out" 1761036953 4610 c4445b9c30d143f8ec54d35e44518c89 "xelatex"
+  "main.tex" 1761022719 971 fae9d7455904eff924b1606fcd71891c ""
+  "main.toc" 1761036953 3521 fae0d3e722ce550e7a0fbc06e7deb913 "xelatex"
+  "preamble.tex" 1761032462 2043 1a22ad52b3c110aa317e921a378c6cfa ""
   (generated)
   "main.aux"
   "main.log"

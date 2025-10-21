@@ -6,23 +6,294 @@
 
 \subsection{爱因斯坦求和约定}
 
+爱因斯坦求和约定就是说，在同一代数项中见到两个重复指标 $i$ 就自动进行求和（除非特别指出该重复指标不求和），我们称求和指标 $i$ 为“哑标”。
+
+比如，$\mathbb{R}^3 $ 空间中的向量 $\vec{A}\in \mathbb{R}^3 $ 在直角坐标下可表示为
+
+\begin{equation}
+\vec{A}
+=A_1\vec{\mathrm{e}}_1+A_2\vec{\mathrm{e}}_2+A_3\vec{\mathrm{e}}_3
+\equiv \sum_{i} A_i \vec{\mathrm{e}}_i,
+\end{equation}
+
+其中，$\vec{\mathrm{e}}_1,\vec{\mathrm{e}}_2,\vec{\mathrm{e}}_3 $ 分别是 $x,y,z $ 轴正方向上的单位向量。
+
+可利用爱因斯坦求和约定将 $\vec{A}\in \mathbb{R}^3 $ 简写为
+
+\begin{equation}
+\vec{A}
+=\sum_{i} A_i \vec{\mathrm{e}}_i
+\to
+\vec{A}
+=A_i \vec{\mathrm{e}}_i,
+\end{equation}
+
+这样就省去了写求和符号 $\displaystyle{\sum_i }$  的工作。 
+
 \subsection{\texorpdfstring{Kronecher delta 符号 $\delta_{ij} $}{Kronecher delta 符号 }}
+
+\begin{equation}
+\delta_{ij}
+\equiv\begin{cases}
+1&,i=j \\
+0&,i\ne j
+\end{cases}.
+\end{equation}
 
 \subsection{\texorpdfstring{三阶 Levi-Citita 符号 $\varepsilon_{ijk} $}{三阶 Levi-Citita 符号 }}
 
+\begin{equation}
+\varepsilon_{ijk}
+\equiv\begin{cases}
+1&,ijk=123,231,312,\text{即相邻两指标经过偶次对换能还原到}123 \\
+-1&,ijk=132,213,321,\text{即相邻两指标经过奇次对换能还原到}123 \\
+0&,ijk\text{中有相同指标} \\
+\end{cases}.
+\end{equation}
+
+可以利用 $\varepsilon_{ijk} $ 表示任何一个三阶行列式：
+
+\begin{equation}
+\begin{vmatrix}
+a_1 &a_2 &a_3 \\
+b_1 &b_2 &b_3 \\
+c_1 &c_2 &c_3
+\end{vmatrix}
+=\varepsilon_{ijk} a_i b_j c_k.
+\end{equation}
+
 \subsection{一些简单算例}
+
+\begin{example}
+一些简单算例
+\begin{itemize}
+\item $\vec{\mathrm{e}}_i\cdot\vec{\mathrm{e}}_j=\delta_{ij} $,
+\item $\vec{\mathrm{e}}_i\times\vec{\mathrm{e}}_j=\varepsilon_{ijk}\vec{\mathrm{e}}_k $,
+\item $A_{i}\delta_{ij}=A_j $,
+\item $\vec{A}\cdot\vec{B}=A_i B_i $,
+\begin{proof}
+\begin{equation}
+\vec{A}\cdot\vec{B}
+=(A_i\vec{\mathrm{e}}_i)\cdot (B_j\vec{\mathrm{e}}_j)
+=A_i B_j\vec{\mathrm{e}}_i\cdot \vec{\mathrm{e}}_j
+=A_i B_j \delta_{ij}
+=A_i B_i
+\end{equation}
+\end{proof}
+
+\item $\vec{A}\times\vec{B}=\varepsilon_{ijk}\vec{\mathrm{e}}_i A_j B_k $,
+\begin{proof}
+\begin{equation}
+\vec{A}\times\vec{B}
+=\begin{vmatrix}
+\vec{\mathrm{e}}_1 &\vec{\mathrm{e}}_2 &\vec{\mathrm{e}}_3 \\
+A_1 &A_2 &A_3 \\
+B_1 &B_2 &B_3
+\end{vmatrix}
+=\varepsilon_{ijk} \vec{\mathrm{e}}_i A_j B_k
+\end{equation}
+\end{proof}
+\end{itemize}
+\end{example}
 
 \subsection{\texorpdfstring{$\nabla$算子}{nabla算子}}
 
+$\nabla $ 算子（nabla 算子，或 del 算子）定义为
+
+\begin{equation}
+\nabla
+\equiv \vec{\mathrm{e}}_i\partial_i,
+\end{equation}
+
+其中，$\partial_i $ 的定义为
+
+\begin{equation}
+\partial_i\equiv \frac{\partial }{\partial x_i}.
+\end{equation}
+
 \subsection{标量场的梯度、方向导数、梯度定理}
+
+\subsubsection{标量场梯度的定义}
+
+设 $\psi(\vec{x}) $ 是标量场，$\psi(\vec{x}) $ 的梯度，记为 $\mathrm{grad}~\psi(\vec{x}) $，由下式定义
+
+\begin{equation}
+\mathrm{grad}~\psi(\vec{x})\cdot\mathrm{d}\vec{x}
+=\mathrm{d}\psi(\vec{x}),
+\end{equation}
+
+其中，$\mathrm{d}\vec{x} $ 是位矢 $\vec{x} $ 的任意微小变化，$\mathrm{d}\psi(\vec{x}) $ 是标量场 $\psi(\vec{x}) $ 因位矢 $\vec{x} $ 变化 $\mathrm{d}\vec{x} $ 而引起的相应的变化。具体来说，$\mathrm{d}\psi(\vec{x}) $ 的定义为
+
+\begin{equation}
+\mathrm{d}\psi(\vec{x})
+\equiv \psi(\vec{x}+\mathrm{d}\vec{x})-\psi(\vec{x}).
+\end{equation}
+
+可以证明，标量场的梯度 $\mathrm{grad}~\psi(\vec{x}) $ 可以用 $\nabla $ 算子表达为
+
+\begin{equation}
+\mathrm{grad}~\psi(\vec{x})
+=\nabla \psi(\vec{x}).
+\end{equation}
+
+为了书写方便，以后就用 $\nabla \psi(\vec{x}) $ 指代标量场 $\psi(\vec{x}) $ 的梯度。
+
+\subsubsection{方向导数的定义}
+
+标量场 $\psi $ 在 $\vec{x} $ 点处沿 $\vec{v} $ 方向的方向导数，记为 $\displaystyle{\frac{\partial \psi(\vec{x}) }{\partial l }\bigg|_{\vec{v}}  }$，定义为
+
+\begin{equation}
+\left. \frac{\partial \psi(\vec{x}) }{\partial l }\right|_{\vec{v}}
+\equiv \lim_{t\to 0^+} \frac{\psi(\vec{x} + t\vec{v}) - \psi(\vec{x}) }{tv }.
+\end{equation}
+
+从方向导数的定义可以看出，方向导数描述的是标量场沿某一方向变化的快慢。
+
+特别地，标量场 $\psi $ 在曲面 $\Sigma $ 上的 $\vec{x} $ 点处沿曲面上 $\vec{x} $ 点的外法向的方向导数简记为 $\displaystyle{\left. \frac{\partial\psi(\vec{x}) }{\partial n }\right|_{\Sigma}. }$ 
+
+\subsubsection{标量场梯度与方向导数的关系}
+
+标量场的梯度的定义：
+
+\begin{equation}
+\nabla\psi(\vec{x})\cdot\mathrm{d}\vec{x}
+=\mathrm{d}\psi(\vec{x}),
+\end{equation}
+
+设 $\mathrm{d}\vec{x} = \vec{n} \mathrm{d}x $，其中 $\vec{n} $ 是与 $\mathrm{d}\vec{x} $ 同向的单位向量，则有
+
+\begin{equation}
+[\nabla\psi(\vec{x})] \cdot \vec{n} \mathrm{d}x
+=\mathrm{d}\psi(\vec{x}),
+\end{equation}
+
+即
+
+\begin{equation}
+[\nabla\psi(\vec{x})] \cdot \vec{n}
+=\frac{\mathrm{d}\psi(\vec{x}) }{\mathrm{d}x }
+=\frac{\psi(\vec{x}+\mathrm{d}\vec{x}) - \psi(\vec{x}) }{\mathrm{d}x }
+=\frac{\partial \psi(\vec{x}) }{\partial l }\bigg|_{\vec{n}}.
+\end{equation}
+
+这就是说，标量场 $\psi(\vec{x}) $ 的梯度 $\nabla\psi(\vec{x}) $ 在某一方向 $\vec{n} $ 上的投影 $[\nabla\psi(\vec{x})]\cdot\vec{n} $ 恰等于标量场沿这一方向 $\vec{n} $ 的方向导数 $\displaystyle{\frac{\partial \psi(\vec{x}) }{\partial l }\bigg|_{\vec{n}}  }$。
+
+\subsubsection{标量场梯度的意义}
+
+考虑标量场梯度与方向导数的关系
+
+\begin{equation}
+[\nabla\psi(\vec{x})] \cdot \vec{n}
+=\frac{\partial \psi(\vec{x}) }{\partial l }\bigg|_{\vec{n}},
+\end{equation}
+
+有：
+
+\begin{equation}
+\frac{\partial \psi(\vec{x}) }{\partial l }\bigg|_{\vec{n}}
+=[\nabla\psi(\vec{x})] \cdot \vec{n}
+=\left|\nabla\psi(\vec{x}) \right| \left|\vec{n} \right| \cos\Braket{\nabla\psi(\vec{x}) , \vec{n} }
+=\left|\nabla\psi(\vec{x}) \right| \cos\Braket{\nabla\psi(\vec{x}) , \vec{n} },
+\end{equation}
+
+上式中，$\vec{n} $ 为方向任意的单位向量。
+
+对于确定的场点 $\vec{x} $，$\psi(\vec{x}) $ 和 $\nabla\psi(\vec{x}) $ 也是确定的，则 $\left|\nabla \psi(\vec{x}) \right| $ 是确定的。
+
+现在我们想看看 $\psi(\vec{x}) $ 沿哪个方向的变化速度最快，也就是看 $\psi(\vec{x}) $ 在哪个方向上的方向导数最大。
+
+显然，在固定场点 $\vec{x} $ 的情况下，当 $\vec{n} $ 与 $\nabla \psi(\vec{x}) $ 同向时，也即 $\vec{n}=\nabla\psi(\vec{x})/\left|\nabla\psi(\vec{x}) \right| $ 时，$\psi(\vec{x}) $ 在 $\vec{n} $ 方向上的方向导数 $\displaystyle{\frac{\partial \psi(\vec{x}) }{\partial l }\bigg|_{\vec{n}} }$ 最大，这个最大的方向导数为
+
+$$
+\frac{\partial \psi(\vec{x}) }{\partial l }\bigg|_{\vec{n}=\nabla\psi(\vec{x})/\left|\nabla\psi(\vec{x}) \right|}
+=\left|\nabla\psi(\vec{x}) \right| \cos\Braket{\nabla\psi(\vec{x}) , \vec{n} }
+=\left|\nabla\psi(\vec{x}) \right|.
+$$
+
+也就是说，标量场 $\psi(\vec{x}) $ 的梯度 $\nabla \psi(\vec{x}) $ 的方向就是标量场 $\psi(\vec{x}) $ 方向导数最大的方向；标量场梯度 $\nabla \psi(\vec{x}) $ 的大小 $\left|\nabla \psi(\vec{x}) \right| $ 就是最大方向导数。
+
+\subsubsection{梯度定理}
+
+\begin{theorem}
+设 $\psi(\vec{x}) $ 是标量场，$C $ 是连结 $\vec{p},\vec{q}\in \mathbb{R}^3 $ 的任一曲线，则有
+
+\begin{equation}
+\psi\left(\vec{p} \right) - \psi\left(\vec{q} \right)
+=\int\limits_{\vec{x}\in C[\vec{q}\to \vec{p}]} \nabla \psi(\vec{x}) \cdot \mathrm{d}\vec{x}.
+\end{equation}
+\end{theorem}
+
+证明思路也很简单，把曲线 $C $ 分成很多小的有向线元，对每一段有向线元都使用梯度的定义，最后把结果加起来就得证。
 
 \subsection{矢量场的散度、高斯定理}
 
+\subsubsection{矢量场散度的定义}
+
+矢量场 $\vec{A} $ 的散度，记为 $\mathrm{div}~\vec{A} $，定义为
+
+\begin{equation}
+\mathrm{div}~\vec{A}
+\equiv \lim_{V\to 0^+} \frac{1 }{V } \oint\limits_{\partial V^+} \vec{A}\cdot\mathrm{d}\vec{S}.
+\end{equation}
+
+可以证明，矢量场 $\vec{A} $ 的散度 $\mathrm{div}~\vec{A} $ 可以用 $\nabla $ 算子表达为
+
+\begin{equation}
+\mathrm{div}~\vec{A}
+=\nabla \cdot \vec{A}
+\end{equation}
+
+为了书写方便，以后就用 $\nabla \cdot \vec{A} $ 指代矢量场 $\vec{A} $ 的散度。
+
+\subsubsection{高斯定理}
+
+\begin{theorem}
+设 $\vec{A}(\vec{x}) $ 是矢量场，$V $ 是 $\mathbb{R}^3 $ 中的封闭体，则有
+\begin{equation}
+\oint\limits_{\partial V^+} \vec{A}\cdot\mathrm{d}\vec{S}
+=\int\limits_{V} \left(\nabla\cdot\vec{A}\right)\mathrm{d}V.
+\end{equation}
+\end{theorem}
+
+证明的思路也很简单，把区域 $V $ 分成很多小体积元，对每个体积元都使用矢量场散度的定义，最后把结果加起来就得证。
+
 \subsection{矢量场的旋度、斯托克斯定理}
 
-\subsection{直角坐标系下的梯度、散度、旋度}
+\subsubsection{矢量场的旋度}
 
+矢量场 $\vec{A} $ 的旋度，记为 $\mathrm{curl}~\vec{A} $，由下式定义：
 
+\begin{equation}
+\left(\mathrm{curl}~\vec{A} \right)\cdot \vec{n}
+=\lim_{\sigma\to 0^+} \frac{1 }{\sigma } \oint\limits_{\partial \sigma^+} \vec{A}\cdot\mathrm{d}\vec{l},
+\end{equation}
+
+其中，$\sigma $ 是与 $\vec{n} $ 垂直的面元。$\vec{n} $ 与 $\partial\sigma $ 的正绕行方向满足右手定则。
+
+可以证明，矢量场 $\vec{A} $ 的旋度 $\mathrm{curl}~\vec{A} $ 可以用 $\nabla $ 算子表达为
+
+\begin{equation}
+\mathrm{curl}~\vec{A}
+=\nabla \times \vec{A}.
+\end{equation}
+
+为了书写方便，以后就用 $\nabla \times \vec{A} $ 指代矢量场 $\vec{A} $ 的旋度。
+
+\subsubsection{斯托克斯定理}
+
+\begin{theorem}
+设 $\vec{A}(\vec{x}) $ 是矢量场，$\Sigma $ 是 $\mathbb{R}^3 $ 中的封闭曲面，则有
+
+\begin{equation}
+\oint\limits_{\partial\Sigma^+}\vec{A}\cdot\mathrm{d}\vec{l}
+=\int\limits_{\Sigma} \left(\nabla\times\vec{A}\right)\cdot\mathrm{d}\vec{S},
+\end{equation}
+
+其中，曲面 $\Sigma $ 的取向与 $\partial\Sigma $ 的正绕行方向满足右手定则。
+
+\end{theorem}
+
+证明的思路也很简单，把曲面 $\Sigma $ 分成很多小面元，对每个面元都使用矢量场旋度的定义，最后把结果加起来就得证。
 
 %----------------------------------------
 
@@ -30,17 +301,535 @@
 
 \subsection{分析工具}
 
+\begin{equation}
+\left\{
+\begin{aligned}
+&\vec{\mathrm{e}}_i\cdot\vec{\mathrm{e}}_j=\delta_{ij} \\
+&\vec{\mathrm{e}}_i\times\vec{\mathrm{e}}_j=\varepsilon_{ijk}\vec{\mathrm{e}}_k \\
+&\vec{A} = A_i\vec{\mathrm{e}}_i \\
+&A_{i}\delta_{ij}=A_j \\
+&\vec{A}\cdot\vec{B}=A_i B_i \\
+&\vec{A}\times\vec{B}=\varepsilon_{ijk}\vec{\mathrm{e}}_i A_j B_k \\
+&\left(\vec{A}\times\vec{B}\right)_l = \varepsilon_{ljk} A_j B_k \\
+&\nabla = \vec{\mathrm{e}}_i\partial_i \\
+&\nabla\cdot\vec{A}=\partial_i A_i \\
+&\nabla\times\vec{A} = \varepsilon_{ijk} \vec{\mathrm{e}}_i \partial_j A_k \\
+&\partial_i \psi = (\nabla\psi)_i \\
+&\nabla^2 \equiv \nabla\cdot \nabla = \partial_i \partial_i \\
+&\nabla^2\psi\equiv \nabla\cdot(\nabla\psi)=\partial_i\partial_i \psi \\
+&\nabla^2\vec{A}\equiv \left(\nabla^2 A_i\right)\vec{\mathrm{e}}_i \\
+&\varepsilon_{ijk} = \varepsilon_{jki} = \varepsilon_{kij} \\
+&\varepsilon_{\textcolor{red}{i}jk}\varepsilon_{\textcolor{red}{i}lm} = \delta_{jl}\delta_{km} - \delta_{jm}\delta_{kl} \\
+&\partial_i x_j = \delta_{ij}
+\end{aligned}
+\right.
+\end{equation}
+
 \subsection{\texorpdfstring{$\mathbb{R}^3 $空间重要微分恒等式及其证明}{R3空间重要微分恒等式及其证明}}
 
 \subsubsection{\texorpdfstring{与$\vec{x}$有关的公式}{与x有关的公式}}
 
+\begin{example}
+\begin{equation}
+\nabla\cdot\vec{x}
+=3.
+\end{equation}
+\end{example}
+
+\begin{proof}
+\begin{equation}
+\nabla\cdot\vec{x}
+=\partial_i x_i
+=\delta_{ii}
+=3.
+\end{equation}
+\end{proof}
+
+\begin{example}
+\begin{equation}
+\nabla\times\vec{x}
+=\vec{0}.
+\end{equation}
+\end{example}
+
+\begin{proof}
+\begin{equation}
+\nabla\times\vec{x}
+=\varepsilon_{ijk}\vec{\mathrm{e}}_i\partial_j x_k
+=\varepsilon_{ijk}\vec{\mathrm{e}}_i \delta_{jk}
+=\varepsilon_{ikk}\vec{\mathrm{e}}_i
+=\vec{0}.
+\end{equation}
+\end{proof}
+
+
+
 \subsubsection{从左往右证的公式}
+
+\begin{example}
+\begin{equation}
+\nabla(\varphi\psi)
+=\varphi\nabla\psi+\psi\nabla\varphi.
+\end{equation}
+\end{example}
+
+\begin{proof}
+\begin{equation}
+\begin{split}
+\nabla(\varphi\psi)
+&=\vec{\mathrm{e}}_i\partial_i(\varphi\psi) \\
+&=\vec{\mathrm{e}}_i\varphi\partial_i\psi + \vec{\mathrm{e}}_i\psi\partial_i\varphi \\
+&=\varphi\vec{\mathrm{e}}_i\partial_i\psi + \psi\vec{\mathrm{e}}_i\partial_i\varphi \\
+&=\varphi\nabla\psi + \psi\nabla\varphi.
+\end{split}
+\end{equation}
+\end{proof}
+
+\begin{example}
+\begin{equation}
+\nabla\cdot\left(\varphi\vec{A}\right)
+=\vec{A}\cdot(\nabla\varphi) + \varphi\nabla\cdot\vec{A}.
+\end{equation}
+\end{example}
+
+\begin{proof}
+\begin{equation}
+\begin{split}
+\nabla\cdot\left(\varphi\vec{A}\right)
+&=\partial_i\left(\varphi \vec{A}\right)_i \\
+&=\partial_i\left(\varphi A_i\right) \\
+&=A_i\partial_i \varphi + \varphi\partial_i A_i \\
+&=\left(\vec{A}\cdot\nabla\right)\varphi + \varphi\nabla\cdot\vec{A}.
+\end{split}
+\end{equation}
+\end{proof}
+
+\begin{example}
+\begin{equation}
+\nabla\times\left(\varphi\vec{A}\right)
+=(\nabla\varphi)\times\vec{A} + \varphi \nabla\times\vec{A}.
+\end{equation}
+\end{example}
+
+\begin{proof}
+\begin{equation}
+\begin{split}
+\nabla\times(\varphi\vec{A})
+&=\varepsilon_{ijk}\vec{\mathrm{e}}_i\partial_j \left(\varphi\vec{A}\right)_k \\
+&=\varepsilon_{ijk}\vec{\mathrm{e}}_i \partial_j(\varphi A_k) \\
+&=\varepsilon_{ijk}\vec{\mathrm{e}}_i (A_k\partial_j \varphi + \varphi\partial_j A_k) \\
+&=\varepsilon_{ijk} \vec{\mathrm{e}}_i(\nabla\varphi)_j A_k + \varphi \varepsilon_{ijk} \vec{\mathrm{e}}_i \partial_j A_k \\
+&=(\nabla\varphi)\times \vec{A} + \varphi \nabla\times\vec{A} .
+\end{split}
+\end{equation}
+\end{proof}
+
+\begin{example}
+\begin{equation}
+\nabla\cdot \left(\vec{A}\times\vec{B} \right)
+=\vec{B}\cdot\left(\nabla\times\vec{A}\right)-\vec{A}\cdot\left(\nabla\times\vec{B}\right).
+\end{equation}
+\end{example}
+
+\begin{proof}
+\begin{equation}
+\begin{split}
+\nabla\cdot \left(\vec{A}\times\vec{B} \right)
+&=\partial_i \left(\vec{A}\times\vec{B}\right)_i \\
+&=\partial_i (\varepsilon_{ijk} A_j B_k) \\
+&=\varepsilon_{ijk}\partial_i ( A_j B_k) \\
+&=\varepsilon_{ijk} B_k\partial_i A_j + \varepsilon_{ijk} A_j \partial_i B_k \\
+&=B_k \varepsilon_{kij} \partial_i A_j - A_j \varepsilon_{jik} \partial_i B_k \\
+&=B_k \left(\nabla\times \vec{A}\right)_k - A_j \left(\nabla\times \vec{B}\right)_j \\
+&=\vec{B}\cdot\left(\nabla\times \vec{A}\right) - \vec{A}\cdot\left(\nabla\times\vec{B}\right).
+\end{split}
+\end{equation}
+\end{proof}
+
+\begin{example}
+\begin{equation}
+\nabla\times\left(\vec{A}\times\vec{B}\right)
+=\left(\vec{B}\cdot\nabla\right)\vec{A} - \left(\vec{A}\cdot\nabla\right) \vec{B} + \vec{A}\left(\nabla\cdot\vec{B}\right) - \vec{B}\left(\nabla\cdot\vec{A}\right).
+\end{equation}
+\end{example}
+
+\begin{proof}
+\begin{equation}
+\begin{split}
+\nabla\times\left(\vec{A}\times\vec{B}\right)
+&=\varepsilon_{ijk} \vec{\mathrm{e}}_i \partial_j \left(\vec{A}\times\vec{B}\right)_k \\
+&=\varepsilon_{ijk} \vec{\mathrm{e}}_i \partial_j \varepsilon_{klm} A_l B_m \\
+&=\varepsilon_{kij} \varepsilon_{klm} \vec{\mathrm{e}}_i \partial_j (A_l B_m) \\
+&=(\delta_{il}\delta_{jm}-\delta_{im}\delta_{jl}) \vec{\mathrm{e}}_i (B_m\partial_j A_l + A_l\partial_j B_m) \\
+&=\vec{\mathrm{e}}_l B_j\partial_j A_l + \vec{\mathrm{e}}_l A_l \partial_m B_m - \vec{\mathrm{e}}_m B_m \partial_l A_l - \vec{\mathrm{e}}_m A_j\partial_j B_m \\
+&= B_j\partial_j A_l\vec{\mathrm{e}}_l + \vec{\mathrm{e}}_l A_l \partial_m B_m - \vec{\mathrm{e}}_m B_m \partial_l A_l -  A_j\partial_j B_m \vec{\mathrm{e}}_m \\
+&=\left(\vec{B}\cdot\nabla\right)\vec{A} + \vec{A}\left(\nabla\cdot\vec{B}\right) - \vec{B}\left(\nabla\cdot\vec{A}\right) - \left(\vec{A}\cdot\nabla\right) \vec{B} \\
+&=\left(\vec{B}\cdot\nabla\right)\vec{A} - \left(\vec{A}\cdot\nabla\right) \vec{B} + \vec{A}\left(\nabla\cdot\vec{B}\right) - \vec{B}\left(\nabla\cdot\vec{A}\right).
+\end{split}
+\end{equation}
+\end{proof}
+
+\begin{example}
+\begin{equation}
+\nabla\times\left(\nabla\times\vec{A}\right)
+=\nabla\left(\nabla\cdot\vec{A}\right)-\nabla^2 \vec{A}.
+\end{equation}
+\end{example}
+
+\begin{proof}
+\begin{equation}
+\begin{split}
+\nabla\times\left(\nabla\times\vec{A}\right)
+&=\varepsilon_{ijk} \vec{\mathrm{e}}_i\partial_j \left(\nabla\times\vec{A}\right)_k \\
+&=\varepsilon_{ijk} \vec{\mathrm{e}}_i \partial_j \varepsilon_{klm} \partial_l A_m \\
+&=\varepsilon_{kij}\varepsilon_{klm} \vec{\mathrm{e}}_i\partial_j\partial_l A_m \\
+&=(\delta_{il}\delta_{jm}-\delta_{im}\delta_{jl}) \vec{\mathrm{e}}_i \partial_j \partial_l A_m \\
+&=\vec{\mathrm{e}}_l\partial_m \partial_l A_m - \vec{\mathrm{e}}_m\partial_l \partial_l A_m \\
+&=\vec{\mathrm{e}}_l\partial_l\partial_m A_m -\partial_l\partial_l A_m\vec{\mathrm{e}}_m \\
+&=\nabla\left(\nabla\cdot\vec{A}\right) - \nabla^2\vec{A}.
+\end{split}
+\end{equation}
+\end{proof}
 
 \subsubsection{需要注意力的公式}
 
+\begin{example}
+\begin{equation}
+\nabla\times(\nabla \varphi)
+=\vec{0}.
+\end{equation}
+\end{example}
+
+\begin{proof}
+
+\begin{equation}
+\begin{split}
+\nabla\times(\nabla \varphi)
+&=\varepsilon_{ijk} \vec{\mathrm{e}}_i\partial_j (\nabla\varphi)_k \\
+&=\vec{\mathrm{e}}_i\varepsilon_{ijk} \partial_j\partial_k\varphi,
+\end{split}
+\end{equation}
+
+由于我们只考虑性质比较好的函数，于是 $\partial_j \partial_k\varphi=\partial_k\partial_j\varphi $，再结合 $\varepsilon_{ijk}=-\varepsilon_{ikj} $，有
+
+\begin{equation}
+\begin{split}
+\vec{\mathrm{e}}_i\varepsilon_{ijk}\partial_j\partial_k\varphi
+&=-\vec{\mathrm{e}}_i\varepsilon_{ikj}\partial_k\partial_j\varphi \\
+&=-\vec{\mathrm{e}}_i\varepsilon_{ijk}\partial_j\partial_k\varphi.
+\end{split}
+\end{equation}
+
+最后一步是因为 $j,k $ 都是用于求和的哑标，因此可以作替换 $j \leftrightarrow k $ 。上式说明：
+
+\begin{equation}
+\vec{\mathrm{e}}_i\varepsilon_{ijk}\partial_j\partial_k\varphi
+=\vec{0}.
+\end{equation}
+
+于是
+
+\begin{equation}
+\begin{split}
+\nabla\times(\nabla \varphi)
+=\vec{\mathrm{e}}_i\varepsilon_{ijk}\partial_j\partial_k\varphi
+=\vec{0}.
+\end{split}
+\end{equation}
+
+\end{proof}
+
+\begin{example}
+\begin{equation}
+\nabla\cdot\left(\nabla\times \vec{A}\right)
+=0.
+\end{equation}
+\end{example}
+
+\begin{proof}
+
+\begin{equation}
+\begin{split}
+\nabla\cdot\left(\nabla\times \vec{A}\right)
+&=\partial_i \left(\nabla\times\vec{A}\right)_i \\
+&=\partial_i \varepsilon_{ijk} \partial_j A_k \\
+&=\varepsilon_{ijk}\partial_i\partial_j A_k,
+\end{split}
+\end{equation}
+
+注意到
+
+\begin{equation}
+\begin{split}
+\varepsilon_{ijk}\partial_i\partial_j A_k
+&=-\varepsilon_{jik}\partial_j\partial_i A_k \\
+&=-\varepsilon_{ijk}\partial_i\partial_j A_k,
+\end{split}
+\end{equation}
+
+于是
+
+\begin{equation}
+\varepsilon_{ijk}\partial_i\partial_j A_k
+=0,
+\end{equation}
+
+这就是说：
+
+\begin{equation}
+\nabla\cdot\left(\nabla\times \vec{A}\right)
+=\varepsilon_{ijk}\partial_i\partial_j A_k
+=0.
+\end{equation}
+\end{proof}
+
 \subsubsection{从右往左证的公式}
 
+\begin{example}
+\begin{equation}
+\nabla\left(\vec{A}\cdot\vec{B}\right)
+=\left(\vec{B}\cdot \nabla\right)\vec{A}+\left(\vec{A}\cdot\nabla\right)\vec{B}+\vec{B}\times\left(\nabla\times\vec{A}\right)+\vec{A}\times\left(\nabla\times\vec{B}\right).
+\end{equation}
+\end{example}
+
+\begin{proof}
+\begin{equation}
+\begin{split}
+&\nabla\left(\vec{A}\cdot\vec{B}\right)=\left(\vec{B}\cdot \nabla\right)\vec{A}+\left(\vec{A}\cdot\nabla\right)\vec{B}+\vec{B}\times\left(\nabla\times\vec{A}\right)+\vec{A}\times\left(\nabla\times\vec{B}\right) \\
+=&B_i\partial_i A_j \vec{\mathrm{e}}_j + A_i\partial_i B_j\vec{\mathrm{e}}_j + \varepsilon_{ijk}\vec{\mathrm{e}}_iB_j\left(\nabla\times\vec{A}\right)_k + \varepsilon_{ijk} \vec{\mathrm{e}}_i A_j\left(\nabla\times\vec{B}\right)_k \\
+=&B_i\partial_i A_j \vec{\mathrm{e}}_j + A_i\partial_i B_j\vec{\mathrm{e}}_j + \varepsilon_{ijk}\vec{\mathrm{e}}_iB_j\varepsilon_{klm}\partial_l A_m + \varepsilon_{ijk} \vec{\mathrm{e}}_i A_j\varepsilon_{klm}\partial_l B_m \\
+=&B_i\partial_i A_j \vec{\mathrm{e}}_j + A_i\partial_i B_j\vec{\mathrm{e}}_j + \varepsilon_{kij}\varepsilon_{klm}\vec{\mathrm{e}}_iB_j\partial_l A_m + \varepsilon_{kij}\varepsilon_{klm} \vec{\mathrm{e}}_i A_j\partial_l B_m \\
+=&B_i\partial_i A_j \vec{\mathrm{e}}_j + A_i\partial_i B_j\vec{\mathrm{e}}_j + (\delta_{il}\delta_{jm}-\delta_{im}\delta_{jl})\vec{\mathrm{e}}_iB_j\partial_l A_m + (\delta_{il}\delta_{jm}-\delta_{im}\delta_{jl}) \vec{\mathrm{e}}_i A_j\partial_l B_m \\
+=&B_i\partial_i A_j \vec{\mathrm{e}}_j + A_i\partial_i B_j\vec{\mathrm{e}}_j + \vec{\mathrm{e}}_l B_m\partial_l A_m -\vec{\mathrm{e}}_m B_l\partial_l A_m + \vec{\mathrm{e}}_l A_m\partial_l B_m - \vec{\mathrm{e}}_m A_l\partial_l B_m \\
+=&B_i\partial_i A_j \vec{\mathrm{e}}_j + A_i\partial_i B_j\vec{\mathrm{e}}_j +  B_m\vec{\mathrm{e}}_l\partial_l A_m -B_l\partial_l A_m \vec{\mathrm{e}}_m + A_m\vec{\mathrm{e}}_l \partial_l B_m -  A_l\partial_l B_m \vec{\mathrm{e}}_m \\
+=&B_m\vec{\mathrm{e}}_l\partial_l A_m + A_m\vec{\mathrm{e}}_l \partial_l B_m \\
+=&B_m\nabla A_m + A_m \nabla B_m \\
+=&\nabla(A_m B_m) \\
+=&\nabla\left(\vec{A}\cdot\vec{B}\right)
+\end{split}
+\end{equation}
+\end{proof}
+
 \subsection{\texorpdfstring{$\mathbb{R}^3 $空间重要积分恒等式及其证明}{R3空间重要积分恒等式及其证明}}
+
+\subsubsection{高斯定理}
+
+\begin{theorem}
+设 $\vec{A}(\vec{x}) $ 是矢量场，$V $ 是 $\mathbb{R}^3 $ 中的封闭体，则有
+\begin{equation}
+\oint\limits_{\partial V^+} \vec{A}\cdot\mathrm{d}\vec{S}
+=\int\limits_{V} \left(\nabla\cdot\vec{A}\right)\mathrm{d}V.
+\end{equation}
+\end{theorem}
+
+\subsubsection{斯托克斯定理}
+
+\begin{theorem}
+设 $\vec{A}(\vec{x}) $ 是矢量场，$\Sigma $ 是 $\mathbb{R}^3 $ 中的封闭曲面，则有
+
+\begin{equation}
+\oint\limits_{\partial\Sigma^+}\vec{A}\cdot\mathrm{d}\vec{l}
+=\int\limits_{\Sigma} \left(\nabla\times\vec{A}\right)\cdot\mathrm{d}\vec{S},
+\end{equation}
+
+其中，曲面 $\Sigma $ 的取向与 $\partial\Sigma $ 的正绕行方向满足右手定则。
+
+\end{theorem}
+
+\subsubsection{格林第一恒等式}
+
+\begin{example}
+\begin{equation}
+\oint\limits_{\partial\Omega^+} \psi\nabla\phi\cdot\mathrm{d}\vec{S}
+=\int\limits_{\Omega} \left(\psi\nabla^2\phi + \nabla\phi\cdot \nabla\psi \right)\mathrm{d}V.
+\end{equation}
+\end{example}
+
+\begin{proof}
+
+注意到
+
+\begin{equation}
+\begin{split}
+\nabla\cdot(\psi\nabla\phi)
+&=\partial_i(\psi\nabla\phi)_i \\
+&=\partial_i(\psi\partial_i\phi) \\
+&=(\partial_i \phi)(\partial_i\psi) + \psi\partial_i\partial_i\phi \\
+&=(\nabla\phi)_i(\nabla\psi)_i + \psi\nabla^2\phi \\
+&=(\nabla\phi)\cdot(\nabla\psi) + \psi\nabla^2\phi,
+\end{split}
+\end{equation}
+
+于是由高斯定理，有
+
+\begin{equation}
+\begin{split}
+\oint\limits_{\partial\Omega^+} \psi\nabla\phi\cdot\mathrm{d}\vec{S}
+&=\int\limits_{\Omega} \nabla\cdot(\psi\nabla\phi)\mathrm{d}V \\
+&=\int\limits_{\Omega} \left[(\nabla\phi)\cdot(\nabla\psi) + \psi\nabla^2\phi \right]\mathrm{d}V \\
+&=\int\limits_{\Omega} \left[\psi\nabla^2\phi + (\nabla\phi)\cdot(\nabla\psi) \right]\mathrm{d}V .
+\end{split}
+\end{equation}
+
+\end{proof}
+
+\subsubsection{格林第二恒等式}
+
+\begin{example}
+\begin{equation}
+\oint\limits_{\partial\Omega^+}\left(\psi\nabla\phi-\phi\nabla\psi \right)\cdot\mathrm{d}\vec{S} =\int\limits_{\Omega} \left(\psi\nabla^2\phi-\phi\nabla^2\psi\right)\mathrm{d}V.
+\end{equation}
+\end{example}
+
+\begin{proof}
+
+利用 $\nabla\cdot\left(\varphi\vec{A}\right)=\vec{A}\cdot(\nabla\varphi) + \varphi\nabla\cdot\vec{A} $ 有
+
+\begin{equation}
+\begin{split}
+\nabla\cdot(\psi\nabla\phi-\phi\nabla\psi)
+&=\nabla\phi\cdot\nabla\psi + \psi\nabla\cdot(\nabla\phi) - \left(\nabla\psi\cdot\nabla\phi + \phi\nabla\cdot(\nabla\psi) \right) \\
+&=\psi\nabla^2\phi-\phi\nabla^2\psi,
+\end{split}
+\end{equation}
+
+于是由高斯定理可得
+
+\begin{equation}
+\begin{split}
+\oint\limits_{\partial\Omega^+}\left(\psi\nabla\phi-\phi\nabla\psi \right)\cdot\mathrm{d}\vec{S}
+&=\int\limits_{\Omega} \nabla\cdot(\psi\nabla\phi-\phi\nabla\psi) \mathrm{d}V \\
+&=\int\limits_{\Omega} \left(\psi\nabla^2\phi-\phi\nabla^2\psi\right) \mathrm{d}V.
+\end{split}
+\end{equation}
+
+\end{proof}
+
+\subsubsection{高斯定理的一个推论}
+
+\begin{example}
+\begin{equation}
+\oint\limits_{\partial V^+} \psi \mathrm{d}\vec{S}
+=\int\limits_{V} \nabla \psi \mathrm{d}V.
+\end{equation}
+\end{example}
+
+\begin{proof}
+
+对任意标量场 $\psi(\vec{x}) $ 和任意常矢量 $\vec{a} $，构造矢量场
+
+\begin{equation}
+\vec{A}(\vec{x})
+\equiv \psi (\vec{x}) \vec{a},
+\end{equation}
+
+这个特殊的矢量场 $\vec{A} $ 应当满足高斯定理：
+
+\begin{equation}
+\oint\limits_{\partial V^+} \vec{A}\cdot\mathrm{d}\vec{S}
+=\int\limits_{V} (\nabla\cdot\vec{A})\mathrm{d}V.
+\end{equation}
+
+等式左边
+
+\begin{equation}
+\begin{split}
+\oint\limits_{\partial V^+} \vec{A}\cdot\mathrm{d}\vec{S}
+=\oint\limits_{\partial V^+} \left(\psi \vec{a} \right) \cdot \mathrm{d}\vec{S}
+=\vec{a} \cdot \oint\limits_{\partial V^+} \psi \mathrm{d}\vec{S}.
+\end{split}
+\end{equation}
+
+等式右边
+
+\begin{equation}
+\begin{split}
+\int\limits_{V} \left(\nabla\cdot\vec{A}\right)\mathrm{d}V
+&=\int\limits_{V} \left[\nabla\cdot\left(\psi \vec{a} \right)\right]\mathrm{d}V \\
+&=\int\limits_{V} \left[ \left(\nabla \psi \right) \cdot \vec{a} + \psi \nabla \cdot \vec{a} \right] \mathrm{d}V \\
+&=\int\limits_{V} \left(\nabla \psi \right) \cdot \vec{a} \mathrm{d}V \\
+&=\vec{a} \cdot \int\limits_{V} \nabla \psi \mathrm{d}V,
+\end{split}
+\end{equation}
+
+于是
+
+\begin{equation}
+\vec{a} \cdot \oint\limits_{\partial V^+} \psi \mathrm{d}\vec{S}
+=\vec{a} \cdot \int\limits_{V} \nabla \psi \mathrm{d}V,
+\end{equation}
+
+由 $\vec{a} $ 的任意性就得到
+
+\begin{equation}
+\oint\limits_{\partial V^+} \psi \mathrm{d}\vec{S} = \int\limits_{V} \nabla \psi \mathrm{d}V.
+\end{equation}
+
+\end{proof}
+
+\subsubsection{斯托克斯定理的一个推论}
+
+\begin{example}
+\begin{equation}
+\oint\limits_{\partial S } \psi \mathrm{d}\vec{l}
+=-\int\limits_{S} \nabla\psi\times\mathrm{d}\vec{S}.
+\end{equation}
+\end{example}
+
+\begin{proof}
+
+对任意标量场 $\psi(\vec{x}) $ 和任意常矢量 $\vec{a} $，构造矢量场
+
+\begin{equation}
+\vec{A}(\vec{x})
+\equiv \psi (\vec{x}) \vec{a},
+\end{equation}
+
+这个特殊的矢量场 $\vec{A} $ 应当满足斯托克斯定理：
+
+\begin{equation}
+\oint\limits_{\partial S} \vec{A}\cdot\mathrm{d}\vec{l}
+=\int\limits_{S} \left(\nabla \times \vec{A} \right) \cdot \mathrm{d}\vec{S}.
+\end{equation}
+
+等式左边
+
+\begin{equation}
+\begin{split}
+\oint\limits_{\partial S} \vec{A}\cdot\mathrm{d}\vec{l}
+&=\oint\limits_{\partial S} \left(\psi \vec{a} \right)\cdot\mathrm{d}\vec{l} \\
+&=\vec{a} \cdot \oint\limits_{\partial S} \psi \mathrm{d}\vec{l},
+\end{split}
+\end{equation}
+
+等式右边
+
+\begin{equation}
+\begin{split}
+\int\limits_{S} \left(\nabla \times \vec{A} \right) \cdot \mathrm{d}\vec{S}
+&=\int\limits_{S} \left[\nabla \times \left(\psi \vec{a} \right) \right] \cdot \mathrm{d}\vec{S} \\
+&=\int\limits_{S} \left[\left(\nabla \psi \right) \times \vec{a} + \psi \nabla \times \vec{a} \right] \cdot \mathrm{d}\vec{S} \\
+&=\int\limits_{S} \left[\left(\nabla \psi \right) \times \vec{a} \right] \cdot \mathrm{d}\vec{S} \\
+&=\int\limits_{S} \left[\mathrm{d}\vec{S} \times \left(\nabla \psi \right) \right] \cdot \vec{a} \\
+&=-\vec{a} \cdot \int\limits_{S} \nabla \psi \times \mathrm{d}\vec{S},
+\end{split}
+\end{equation}
+
+于是
+
+\begin{equation}
+\vec{a} \cdot \oint\limits_{\partial S} \psi \mathrm{d}\vec{l}
+=-\vec{a} \cdot \int\limits_{S} \nabla \psi \times \mathrm{d}\vec{S},
+\end{equation}
+
+由 $\vec{a} $ 的任意性就得到
+
+\begin{equation}
+\oint\limits_{\partial S} \psi \mathrm{d}\vec{l}
+=-\int\limits_{S} \nabla \psi \times \mathrm{d}\vec{S}.
+\end{equation}
+
+\end{proof}
 
 
 

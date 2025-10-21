@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.11)  20 OCT 2025 18:38
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.11)  21 OCT 2025 16:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -345,6 +345,23 @@ Package bm Info: No bold for \U/msb/m/n, using \pmb.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 ) (c:/texlive/2024/texmf-dist/tex/latex/physics/physics.sty
 Package: physics 
+) (c:/texlive/2024/texmf-dist/tex/latex/braket/braket.sty) (c:/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+ (c:/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 274.
+ (c:/texlive/2024/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
+) (c:/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
 ) (c:/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
  (c:/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty
@@ -355,9 +372,7 @@ Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 107.
- (c:/texlive/2024/texmf-dist/tex/latex/graphics-def/xetex.def
-File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
-))
+)
 \Gin@req@height=\dimen258
 \Gin@req@width=\dimen259
 ) (c:/texlive/2024/texmf-dist/tex/latex/caption/subcaption.sty
@@ -585,22 +600,7 @@ File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfsyssoftpath@bigbuffer@items=\count341
 ) (c:/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)) (c:/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
- (c:/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: xetex.def on input line 274.
- (c:/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
-Package xcolor Info: Model `RGB' extended on input line 1366.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
-) (c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+)) (c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
  (c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen289
@@ -1003,29 +1003,25 @@ Package fontspec Info: Font family 'FangSong(0)' created for font 'FangSong'
 
 ) [2
 
-] (./main.toc)
+] (./main.toc [3
+
+])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [3
-
-] [4
-
-] (./chapters/ch1_vector-analysis.tex
+ [4] (./chapters/ch1_vector-analysis.tex
 第一章
-) (./chapters/ch2_vector-analysis-in-curvilinear-coordinates.tex
+[1
+
+
+] [2] [3] [4] [5] [6] [7] [8] [9]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [1
-
-]
-Overfull \vbox (12.16219pt too high) has occurred while \output is active []
-
- [2]
+ [10] [11] [12] [13] [14]) (./chapters/ch2_vector-analysis-in-curvilinear-coordinates.tex [15]
 第二章
-) (./appendices.tex) [3
+) (./appendices.tex) [16
 
-] (./main.bbl) [4
+] (./main.bbl) [17
 
 
 ] (./main.aux)
@@ -1034,15 +1030,15 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 54BDE6CF473F077577660C099C359C65;2848.
+(rerunfilecheck)             Checksum: C4445B9C30D143F8EC54D35E44518C89;4610.
  ) 
 Here is how much of TeX's memory you used:
- 36598 strings out of 474772
- 802690 string characters out of 5761268
- 1932842 words of memory out of 5000000
- 58132 multiletter control sequences out of 15000+600000
- 580526 words of font info for 149 fonts, out of 8000000 for 9000
+ 36841 strings out of 474772
+ 812687 string characters out of 5761268
+ 1942842 words of memory out of 5000000
+ 58369 multiletter control sequences out of 15000+600000
+ 580542 words of font info for 151 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 96i,14n,102p,1286b,363s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 96i,18n,102p,1286b,663s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (8 pages, 52584 bytes).
+Output written on main.xdv (21 pages, 187964 bytes).
