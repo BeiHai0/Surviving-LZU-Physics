@@ -463,6 +463,11 @@ INPUT ./chapters/ch2_vector-analysis-in-curvilinear-coordinates.tex
 INPUT ./chapters/ch2_vector-analysis-in-curvilinear-coordinates.tex
 INPUT ./chapters/ch2_vector-analysis-in-curvilinear-coordinates.tex
 INPUT chapters/ch2_vector-analysis-in-curvilinear-coordinates.tex
+INPUT ./chapters/ch3_linear-space.tex
+INPUT ./chapters/ch3_linear-space.tex
+INPUT ./chapters/ch3_linear-space.tex
+INPUT ./chapters/ch3_linear-space.tex
+INPUT chapters/ch3_linear-space.tex
 INPUT ./appendices.tex
 INPUT ./appendices.tex
 INPUT ./appendices.tex
