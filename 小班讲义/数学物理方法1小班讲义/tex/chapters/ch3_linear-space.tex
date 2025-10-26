@@ -77,7 +77,7 @@ O \psi \in L.
 
 \begin{equation}
 \left[A , B \right]
-\equiv AB - .
+\equiv AB - BA.
 \end{equation}
 
 \subsection{对算符的运算}
@@ -347,6 +347,55 @@ A \psi_2 = \lambda_2 \psi_2.
 \end{proof}
 
 \section{例题}
+
+\subsection{完备性关系}
+
+\begin{example}
+
+设一组基矢 $\left\{\Ket{n } \right\} $ 构成 Hilbert 空间中的完备基，推导完备性关系
+
+\begin{equation}
+\sum_n \Ket{n } \Bra{n } = I.
+\end{equation}
+
+\end{example}
+
+\begin{proof}
+
+完备基就是说，$\forall \Ket{\psi } \in \mathcal{H} $，$\ket{\psi} $ 可写成 $\left\{\Ket{n } \right\} $ 线性叠加的形式
+
+\begin{equation}
+\Ket{\psi }
+=\sum_n c_n \Ket{n },
+\end{equation}
+
+上式两边左乘 $\Bra{n' } $，并利用正交性关系 $\Braket{n'|n }=\delta_{n,n'} $ 有
+
+\begin{equation}
+\Braket{n'|\psi }
+=\sum_{n} c_n \Braket{n'|n }
+=\sum_{n} c_n \delta_{n,n'}
+=c_{n'},
+\end{equation}
+
+于是
+
+\begin{equation}
+\Ket{\psi }
+=\sum_n c_n \Ket{n }
+=\sum_n \Braket{n | \psi } \Ket{n }
+=\sum_n \Ket{n } \Braket{n | \psi }
+=\left(\sum_n \Ket{n } \Bra{n } \right) \Ket{\psi },
+\end{equation}
+
+前后对比得
+
+\begin{equation}
+\sum_n \Ket{n }\Bra{n }
+=I.
+\end{equation}
+
+\end{proof}
 
 \subsection{纯态下可观测量期望值}
 
