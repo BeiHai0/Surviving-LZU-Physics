@@ -1,2 +1,578 @@
 \chapter{线性空间}
 
+\section{Hilbert空间}
+
+\subsection{内积空间的定义}
+
+设 $L $ 是一个域 $\mathbb{F} $ 上的线性空间。在 $L $ 上定义一个映射
+
+\begin{equation}
+\Braket{\cdot , \cdot } : L\times  L\to \mathbb{F},
+\end{equation}
+
+若这个映射满足以下三个条件
+
+(1)共轭对称：
+
+\begin{equation}
+\forall \psi,\phi\in L,\quad
+\Braket{\psi,\phi } = \Braket{\phi,\psi }^*,
+\end{equation}
+
+(2)对第二个元素是线性的，对第一个元素是反线性的：
+
+\begin{equation}
+\forall a\in \mathbb{F},\quad \psi,\phi\in L,\quad
+\Braket{\psi , a\phi } = a\Braket{\psi , \phi },\quad
+\Braket{a \psi , \phi } = a^* \Braket{\psi , \phi },
+\end{equation}
+
+(3)非负性：
+
+\begin{equation}
+\forall \psi \in L,\quad
+\Braket{\psi | \psi } \geqslant 0,
+\end{equation}
+
+则称 $L $ 是一个内积空间。映射 $\Braket{\cdot , \cdot } $ 称为内积。
+
+\subsection{Hilbert空间的定义}
+
+完备的内积空间称为 Hilbert 空间。一般用 $\mathcal{H} $ 表示希尔伯特空间。
+
+在量子力学中，一般用 $\Ket{\psi }\in \mathcal{H} $ 表示 Hilbert 空间中的向量。
+
+\section{线性空间上的各种算符}
+
+\subsection{算符的定义}
+
+线性空间 $L $ 上的算符 $O $ 是一个从 $L $ 到 $L $ 的映射
+
+\begin{equation}
+O : L \to L.
+\end{equation}
+
+因此有
+
+\begin{equation}
+\forall \psi \in L,\quad
+O \psi \in L.
+\end{equation}
+
+\subsection{算符之间的运算}
+
+\subsubsection{算符加法}
+
+\begin{equation}
+(A+B) \psi = A \psi + B \psi.
+\end{equation}
+
+\subsubsection{算符乘法}
+
+\begin{equation}
+(AB) \psi = A(B \psi).
+\end{equation}
+
+\subsubsection{算符的对易括号}
+
+\begin{equation}
+\left[A , B \right]
+\equiv AB - .
+\end{equation}
+
+\subsection{对算符的运算}
+
+\subsubsection{线性算符}
+
+若算符 $O $ 满足
+
+\begin{equation}
+\forall \psi,\phi \in L,\quad\forall a,b\in \mathbb{F},\quad
+O(a \psi + b \phi)
+=a O \psi + b O \phi,
+\end{equation}
+
+则称 $O $ 为线性算符。
+
+\subsubsection{线性算符的转置}
+
+设 $O $ 是 $L $ 上的线性算符，则 $O $ 的转置 $O^\mathrm{T} $ 由下式定义
+
+\begin{equation}
+\forall \psi,\phi \in L,\quad
+\Braket{\phi , O^\mathrm{T} \psi }
+=\Braket{\psi , O \phi }.
+\end{equation}
+
+可以证明
+
+\begin{equation}
+\left(A B \right)^\mathrm{T}
+=B^\mathrm{T} A^\mathrm{T}.
+\end{equation}
+
+\subsubsection{线性算符的复共轭}
+
+设 $O $ 是 $L $ 上的线性算符，则 $O $ 的复共轭算符，记为 $O^* $，由下式定义
+
+\begin{equation}
+\forall \psi,\phi\in L,\quad
+\Braket{\phi , O^* \psi }
+=\Braket{\phi , O \psi }^*.
+\end{equation}
+
+\subsubsection{线性算符的伴随算符}
+
+设 $O $ 是 $L $ 上的线性算符，则 $O $ 的伴随算符，记为 $O^\dag $，由下式定义
+
+\begin{equation}
+\forall \psi,\phi\in L,\quad
+\Braket{\phi , O^\dag \psi }
+=\Braket{O \phi , \psi }.
+\end{equation}
+
+注意到
+
+\begin{equation}
+\Braket{O \phi , \psi }
+=\left(\Braket{O \phi , \psi }^* \right)^*
+=\Braket{\psi , O \phi }^*
+=\Braket{\phi , O^\mathrm{T} \psi }^*
+=\Braket{\phi , \left(O^\mathrm{T} \right)^* \psi },
+\end{equation}
+
+即
+
+\begin{equation}
+\Braket{\phi , O^\dag \psi }
+=\Braket{\phi , \left(O^\mathrm{T} \right)^* \psi },
+\end{equation}
+
+对比得
+
+\begin{equation}
+O^\dag = \left(O^\mathrm{T} \right)^*.
+\end{equation}
+
+可以证明
+
+\begin{equation}
+\left(A B \right)^\dag
+=B^\dag A^\dag.
+\end{equation}
+
+\subsection{线性空间上的一些特殊算符}
+
+\subsubsection{对称算符与反对称算符}
+
+对称算符：若线性算符 $O $ 满足
+
+\begin{equation}
+O^\mathrm{T} = O,
+\end{equation}
+
+则称 $O $ 为对称算符。
+
+反对称算符：若线性算符 $O $ 满足
+
+\begin{equation}
+O^\mathrm{T} = -O,
+\end{equation}
+
+则称 $O $ 为反对称算符。
+
+\subsubsection{自伴算符（厄米算符）}
+
+若线性算符 $O $ 满足
+
+\begin{equation}
+O^\dag = O,
+\end{equation}
+
+则称 $O $ 为自伴算符或厄米算符。
+
+\subsubsection{幺正算符}
+
+对于线性算符 $U $，若其满足
+
+\begin{equation}
+U^\dag U = U U^\dag = I,
+\end{equation}
+
+则称 $U $ 为幺正算符。
+
+\section{线性算符的本征值和本征向量}
+
+形如
+
+\begin{equation}
+A \psi = \lambda \psi,\quad \lambda \in \mathbb{F}, \psi \in L,
+\end{equation}
+
+的方程称为线性算符 $A $ 的本征方程。$\lambda $ 称为 $A $ 的本征值，$\psi $ 称为 $A $ 的本征向量。
+
+若某个本征值 $\lambda_i $ 对应着 $n $ 个线性独立的 $\psi_{i j},j=1,2,\cdots,n $，则称本征值 $\lambda_i $ 是 $n $ 重简并的。
+
+\section{一些定理}
+
+\begin{theorem}
+厄米算符本征值为实数。
+\end{theorem}
+
+\begin{proof}
+
+设 $A $ 是厄米算符，本征方程
+
+\begin{equation}
+A \psi = \lambda \psi,\quad A^\dag = A.
+\end{equation}
+
+一方面
+
+\begin{equation}
+\Braket{\psi , A \psi }
+=\Braket{\psi , \lambda \psi }
+=\lambda \Braket{\psi , \psi },
+\end{equation}
+
+另一方面
+
+\begin{equation}
+\Braket{\psi , A \psi }
+=\Braket{\psi , A^\dag \psi }
+=\Braket{A \psi , \psi }
+=\Braket{\lambda \psi , \psi }
+=\lambda^*\Braket{\psi , \psi },
+\end{equation}
+
+对比得
+
+\begin{equation}
+\lambda^* = \lambda.
+\end{equation}
+
+\end{proof}
+
+\begin{theorem}
+属于厄米算符不同本征值的本征向量是正交的。
+\end{theorem}
+
+\begin{proof}
+    
+设厄米算符 $A $ 的本征向量 $\psi_1,\psi_2 $ 分别对应本征值 $\lambda_1,\lambda_2,\lambda_1\ne\lambda_2 $，则有
+
+\begin{equation}
+A \psi_1 = \lambda_1 \psi_1,\quad
+A \psi_2 = \lambda_2 \psi_2.
+\end{equation}
+
+一方面
+
+\begin{equation}
+\Braket{\psi_2 , A \psi_1}
+=\Braket{\psi_2 , \lambda_1 \psi_1}
+=\lambda_1 \Braket{\psi_2 , \psi_1},
+\end{equation}
+
+另一方面
+
+\begin{equation}
+\Braket{\psi_2 , A \psi_1}
+=\Braket{\psi_2 , A^\dag \psi_1}
+=\Braket{A \psi_2 , \psi_1}
+=\Braket{\lambda_2 \psi_2 , \psi_1}
+=\lambda_2^* \Braket{\psi_2 , \psi_1}
+=\lambda_2 \Braket{\psi_2 , \psi_1},
+\end{equation}
+
+作差得
+
+\begin{equation}
+\left(\lambda_1 - \lambda_2 \right) \Braket{\psi_2 , \psi_1}
+=0.
+\end{equation}
+
+由于 $\lambda_1 \ne \lambda_2 $，于是
+
+\begin{equation}
+\Braket{\psi_2 , \psi_1} = 0.
+\end{equation}
+
+\end{proof}
+
+\begin{theorem}
+若 $U $ 为幺正算符，则有
+
+\begin{equation}
+\forall \psi,\phi\in L,\quad
+\Braket{U \psi , U\phi }
+=\Braket{\psi , \phi } .
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+
+\begin{equation}
+\Braket{U \psi , U\phi }
+=\Braket{\psi , U^\dag U\phi }
+=\Braket{\psi , I\phi }
+=\Braket{\psi , \phi }.
+\end{equation}
+
+\end{proof}
+
+\begin{theorem}
+复内积空间 $L $ 中的线性算符 $A $ 为厄米算符的充要条件是 $\forall \phi\in L, \Braket{\phi , A \phi}\in \mathbb{R} .$
+\end{theorem}
+
+\begin{proof}
+
+若 $A $ 为厄米算符，即 $A^\dag=A $ 则
+
+\begin{equation}
+\Braket{\phi , A \phi}
+=\Braket{\phi , A^\dag \phi}
+=\Braket{A \phi , \phi}
+=\Braket{\phi , A \phi}^*.
+\end{equation}
+
+前后对比得
+
+\begin{equation}
+\Braket{\phi , A \phi}\in \mathbb{R}.
+\end{equation}
+
+把上面过程反过来就能证明必要性。
+
+\end{proof}
+
+\section{例题}
+
+\subsection{纯态下可观测量期望值}
+
+\begin{example}
+
+假设体系处在纯态 $\Ket{\psi } $，若对体系的可观测物理量 $O $ 进行测量，证明测量期望值 $\Braket{O} $ 可表达为
+
+\begin{equation}
+\Braket{O}
+=\Braket{\psi | O | \psi}.
+\end{equation}
+
+\end{example}
+
+\begin{proof}
+
+考虑本征值离散情况，本征方程为
+
+\begin{equation}
+O \Ket{n } = o_n \Ket{n }.
+\end{equation}
+
+利用正交性关系和完备性关系
+
+\begin{equation}
+\Braket{n | n' } = \delta_{n,n'},\quad
+\sum_n \Ket{n }\Bra{n} = I,
+\end{equation}
+
+有
+
+\begin{equation}
+\begin{split}
+O
+&=I O I \\
+&=\left(\sum_n \Ket{n }\Bra{n } \right) O \left(\sum_{n'} \Ket{n' }\Bra{n' } \right) \\
+&=\sum_{n,n'} \Braket{n | O | n' } \Ket{n }\Bra{n' } \\
+&=\sum_{n,n'} \Braket{n | o_{n'} | n' } \Ket{n }\Bra{n' } \\
+&=\sum_{n,n'} o_{n'} \Braket{n | n' } \Ket{n }\Bra{n' } \\
+&=\sum_{n,n'} o_{n'} \delta_{n,n'} \Ket{n }\Bra{n' } \\
+&=\sum_{n} o_{n} \Ket{n }\Bra{n }.
+\end{split}
+\end{equation}
+
+量子力学告诉我们，在 $\Ket{\psi } $ 态下对可观测量 $O $ 进行测量，测得 $o_n $ 的概率为 $\left|\Braket{n | \psi} \right|^2 $，于是期望值
+
+\begin{equation}
+\begin{split}
+\Braket{O}
+&\equiv \sum_n o_n \left|\Braket{n | \psi} \right|^2 \\
+&=\sum_n o_n \Braket{n | \psi}^* \Braket{n | \psi} \\
+&=\sum_n o_n \Braket{\psi | n} \Braket{n | \psi} \\
+&=\Bra{\psi} \left(\sum_n o_n \ket{n} \bra{n} \right) \Ket{\psi } \\
+&=\Braket{\psi | O | \psi}.
+\end{split}
+\end{equation}
+
+\end{proof}
+
+\subsection{混合态下可观测量期望值}
+
+\begin{example}
+
+已知若体系以 $p_i $ 的概率处于纯态 $\Ket{\psi_i } $，则体系的状态可用密度矩阵
+
+\begin{equation}
+\rho
+\equiv \sum_i p_i \Ket{\psi_i }\Bra{\psi_i},
+\end{equation}
+
+来描述。证明在上述状态下对可观测量 $O $ 进行测量，测量期望值 $\Braket{O} $ 可写为
+
+\begin{equation}
+\Braket{O}
+=\mathrm{Tr}\left(\rho O \right),
+\end{equation}
+
+其中，求迹操作 $\mathrm{Tr}(\cdot) $ 的定义为：设 $\left\{\Ket{j } \right\} $ 是任意一组正交完备基，则
+
+\begin{equation}
+\mathrm{Tr}\left(O \right)
+\equiv \sum_{j} \Braket{j | O | j}.
+\end{equation}
+
+\end{example}
+
+\begin{proof}
+
+考虑本征值离散情况，本征方程
+
+\begin{equation}
+O \Ket{n } = o_n \Ket{n }.
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\Braket{O}
+&\equiv \sum_i p_i \sum_n o_n \left|\Braket{n | \psi_i } \right|^2 \\
+&=\sum_i p_i \sum_n o_n \Braket{n | \psi_i } \Braket{n | \psi_i }^* \\
+&=\sum_i p_i \sum_n o_n \Braket{n | \psi_i } \Braket{\psi_i | n } \\
+&=\sum_i \sum_n o_n p_i \Braket{n | \psi_i } \Braket{\psi_i | n } \\
+&=\sum_n \sum_i o_n p_i \Braket{n | \psi_i } \Braket{\psi_i | n } \\
+&=\sum_n o_n \Bra{n} \left(\sum_i p_i \Ket{\psi_i }\Bra{\psi_i} \right) \Ket{n } \\
+&=\sum_n o_n \Bra{n} \rho \Ket{n } \\
+&=\sum_n \Bra{n} \rho o_n \Ket{n } \\
+&=\sum_n \Bra{n} \rho O \Ket{n } \\
+&=\mathrm{Tr}\left(\rho O \right).
+\end{split}
+\end{equation}
+
+\end{proof}
+
+\subsection{不确定性关系}
+
+\begin{example}
+
+利用 Schwarz 不等式
+
+\begin{equation}
+\forall \Ket{\alpha},\Ket{\beta} \in \mathcal{H},\quad
+\Braket{\alpha | \alpha} \Braket{\beta | \beta} \geqslant \left|\Braket{\alpha | \beta} \right|^2,
+\end{equation}
+
+以及不等式
+
+\begin{equation}
+\forall z \in \mathbb{C},\quad \left|z \right|^2 \geqslant \left|\mathrm{Im}(z) \right|^2,
+\end{equation}
+
+推导不确定性关系
+
+\begin{equation}
+\forall \ket{\psi} \in \mathcal{H},\quad
+\Delta A \Delta B
+\geqslant \frac{1 }{2 } \left|\Braket{\left[A , B \right]} \right|,
+\end{equation}
+
+其中 $A,B $ 是厄米算符，
+
+\begin{equation}
+\Braket{O} = \Braket{\psi | O | \psi},\quad
+\Delta O \equiv \sqrt{\Braket{\left(O - \Braket{O} \right)^2}}.
+\end{equation}
+
+\end{example}
+
+\begin{proof}
+
+注意到对于厄米算符 $O $，有
+
+\begin{equation}
+\begin{split}
+\forall \Ket{\psi}\in \mathcal{H},\quad
+\Delta O
+&\equiv \sqrt{\Braket{\left(O - \Braket{O} \right)^2}} \\
+&=\sqrt{\Braket{ \left(O - \Braket{O} \right) \left(O - \Braket{O} \right) }} \\
+&=\sqrt{\Braket{ O^2 - 2\Braket{O} O + \Braket{O}^2 }} \\
+&=\sqrt{\Braket{O^2} - 2\Braket{O}\Braket{O} + \Braket{O}^2} \\
+&=\sqrt{\Braket{O^2} -\Braket{O}^2},
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\Braket{\psi | \left(O - \Braket{O} \right)^\dag \left(O - \Braket{O} \right) | \psi }
+&=\Braket{\psi | \left(O^\dag - \Braket{O}^* \right) \left(O - \Braket{O} \right) | \psi } \\
+&=\Braket{\psi | \left(O - \Braket{O} \right) \left(O - \Braket{O} \right) | \psi } \\
+&=\Braket{\psi | \left(O - \Braket{O} \right)^2 | \psi },
+\end{split}
+\end{equation}
+
+令 $\ket{\alpha} = \left(A - \Braket{A} \right) \ket{\psi},\ket{\beta} = \left(B - \Braket{B} \right) \ket{\psi} $，则
+
+\begin{equation}
+\begin{split}
+\Braket{\alpha | \alpha }
+=\Braket{\psi | \left(A - \Braket{A } \right)^2 | \psi }
+=\Braket{\left(A - \Braket{A } \right)^2 }
+=\left(\Delta A \right)^2 \\
+\Braket{\beta | \beta }
+=\Braket{\psi | \left(B - \Braket{B } \right)^2 | \psi }
+=\Braket{\left(B - \Braket{B } \right)^2 }
+=\left(\Delta B \right)^2,
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\Braket{\alpha | \beta }
+&=\Braket{\psi | \left(A^\dag-\Braket{A }^* \right) \left(B-\Braket{B } \right) | \psi } \\
+&=\Braket{\psi | \left(A-\Braket{A } \right) \left(B-\Braket{B } \right) | \psi } \\
+&=\Braket{\psi | AB - \Braket{A }B - \Braket{B }A + \Braket{A }\Braket{B } | \psi } \\
+&=\Braket{AB } - \Braket{A }\Braket{B } - \Braket{B }\Braket{A } + \Braket{A }\Braket{B } \\
+&=\Braket{AB } - \Braket{A }\Braket{B },
+\end{split}
+\end{equation}
+
+\begin{equation}
+\Braket{\beta | \alpha }
+=\Braket{BA } - \Braket{B }\Braket{A },
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\left|\Braket{\alpha | \beta } \right|^2
+&\geqslant \left|\mathrm{Im}\Braket{\alpha | \beta } \right|^2 \\
+&=\left|\frac{1 }{2\mathrm{i} } \left(\Braket{\alpha | \beta } - \Braket{\alpha | \beta }^* \right) \right|^2 \\
+&=\left|\frac{1 }{2\mathrm{i} } \left(\Braket{\alpha | \beta } - \Braket{\beta | \alpha } \right) \right|^2 \\
+&=\frac{1 }{4 } \left|\Braket{AB } - \Braket{BA } \right|^2 \\
+&=\frac{1 }{4 } \left|\Braket{AB-BA } \right|^2 \\
+&=\frac{1 }{4 } \left|\Braket{\left[A , B \right] } \right|^2,
+\end{split}
+\end{equation}
+
+代入 Schwarz 不等式 $\Braket{\alpha | \alpha} \Braket{\beta | \beta} \geqslant \left|\Braket{\alpha | \beta} \right|^2\geqslant \left|\mathrm{Im}\Braket{\alpha | \beta } \right|^2 $，有
+
+\begin{equation}
+\left(\Delta A \right)^2 \left(\Delta B \right)^2
+\geqslant \frac{1 }{4 } \left|\Braket{\left[A , B \right] } \right|^2,
+\end{equation}
+
+即
+
+\begin{equation}
+\Delta A \Delta B
+\geqslant \frac{1 }{2 } \left|\Braket{\left[A , B \right]} \right|.
+\end{equation}
+
+\end{proof}
