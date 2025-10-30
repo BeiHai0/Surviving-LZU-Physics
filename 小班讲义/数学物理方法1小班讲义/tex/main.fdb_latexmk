@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex 数理方法小班讲义"] 1761466345.74593 "数理方法小班讲义.aux" "数理方法小班讲义.bbl" "数理方法小班讲义" 1761481176.8069 0
+["bibtex main"] 1761480793.29561 "main.aux" "main.bbl" "main" 1761480801.34823 2
   "./references.bib" 1760962972 155 3512daddf25f7c3dc654d2181738d036 ""
   "c:/texlive/2024/texmf-dist/bibtex/bst/base/plain.bst" 1732424613 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "数理方法小班讲义.aux" 1761481174 10279 7cdc1dbc571f42ad3d6c6f57147e1ca9 "pdflatex"
+  "main.aux" 1761480799 10234 da9c94be95b28f7264ad6a0016070f73 "pdflatex"
   (generated)
-  "数理方法小班讲义.bbl"
-  "数理方法小班讲义.blg"
+  "main.bbl"
+  "main.blg"
   (rewritten before read)
-["pdflatex"] 1761481171.82339 "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/小班讲义/数学物理方法1小班讲义/tex/数理方法小班讲义.tex" "数理方法小班讲义.pdf" "数理方法小班讲义" 1761481176.8076 2
+["pdflatex"] 1761480794.7567 "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/小班讲义/数学物理方法1小班讲义/tex/main.tex" "main.pdf" "main" 1761480801.34905 2
   "appendices.tex" 1760962972 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/小班讲义/数学物理方法1小班讲义/tex/数理方法小班讲义.tex" 1761481098 1006 c0c36e73986c1567bb033c769b36ec3b ""
+  "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/小班讲义/数学物理方法1小班讲义/tex/main.tex" 1761475247 1006 c0c36e73986c1567bb033c769b36ec3b ""
   "c:/Windows/Fonts/msyh.ttc" 1739420619 19704352 1e10e74402e59d54499af795caf0b135 ""
   "c:/Windows/Fonts/simhei.ttf" 1571147160 9753388 6abc0fcfbaa40600f9cecca3afeb3aa7 ""
   "c:/Windows/Fonts/simkai.ttf" 1571147160 11787328 76179557c160634a761c845ea111c893 ""
@@ -436,19 +436,19 @@
   "c:/texlive/2024/texmf.cnf" 1732426721 713 e69b156964470283e0530f5060668171 ""
   "chapters/ch1_vector-analysis.tex" 1761048436 28962 be7bc85b89d5105e6f5a9892570bcf84 ""
   "chapters/ch2_vector-analysis-in-curvilinear-coordinates.tex" 1761375092 1950 2dd6c8cd59de267b13b9441095d90527 ""
-  "chapters/ch3_linear-space.tex" 1761481098 14244 ced3b4ae30fa68c6339a8895f55a7d15 ""
+  "chapters/ch3_linear-space.tex" 1761474978 14246 eb5d5fa406f54f885a0957a31f4c68fe ""
   "frontmatter/preface.tex" 1760962972 766 e6ad30e5ffa685a5ce24478d7991e5c7 ""
   "frontmatter/titlepage.tex" 1760962972 288 3088e89db773129123e12b98036c3715 ""
+  "main.aux" 1761480799 10234 da9c94be95b28f7264ad6a0016070f73 "pdflatex"
+  "main.bbl" 1761480793 49 0eba253fc001332e731e8aba3f23127b "bibtex main"
+  "main.out" 1761480799 8663 20ff8a4bea399e1bb5e2d933a6d3b9a7 "pdflatex"
+  "main.tex" 1761475247 1006 c0c36e73986c1567bb033c769b36ec3b ""
+  "main.toc" 1761480799 6723 3377a0f84ac05b54530acc5779d6c7cc "pdflatex"
   "preamble.tex" 1761048436 2043 1a22ad52b3c110aa317e921a378c6cfa ""
-  "数理方法小班讲义.aux" 1761481174 10279 7cdc1dbc571f42ad3d6c6f57147e1ca9 "pdflatex"
-  "数理方法小班讲义.bbl" 1761481098 194 c58a11757c22479adb62e73380ccc412 "bibtex 数理方法小班讲义"
-  "数理方法小班讲义.out" 1761481174 8663 20ff8a4bea399e1bb5e2d933a6d3b9a7 "pdflatex"
-  "数理方法小班讲义.tex" 1761481098 1006 c0c36e73986c1567bb033c769b36ec3b ""
-  "数理方法小班讲义.toc" 1761481174 6723 3377a0f84ac05b54530acc5779d6c7cc "pdflatex"
   (generated)
-  "数理方法小班讲义.aux"
-  "数理方法小班讲义.log"
-  "数理方法小班讲义.out"
-  "数理方法小班讲义.pdf"
-  "数理方法小班讲义.toc"
+  "main.aux"
+  "main.log"
+  "main.out"
+  "main.pdf"
+  "main.toc"
   (rewritten before read)
