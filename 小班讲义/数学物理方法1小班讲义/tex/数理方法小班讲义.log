@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.24)  26 OCT 2025 20:19
+=======
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.11)  26 OCT 2025 20:35
+>>>>>>> 753aea3cbcdc02d77487d06b441e07a792c27660
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1027,6 +1031,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 第三章
 [18
 
+<<<<<<< HEAD
 ] [19] [20] [21] [22]
 Overfull \hbox (5.75868pt too wide) in paragraph at lines 394--395
 []\C70/rm/m/n/12/91 � \C70/rm/m/n/12/5b P \C70/rm/m/n/12/52 � \C70/rm/m/n/12/5b f \C70/rm/m/n/12/54 J \C70/rm/m/n/12/8b � \C70/rm/m/n/12/62 ^^Q \C70/rm/m/n/12/4e �|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/57 ( $[]$ \C70/rm/m/n/12/60 ^^A \C70/rm/m/n/12/4e  \C70/rm/m/n/12/5b � \C70/rm/m/n/12/53 � \C70/rm/m/n/12/89 � \C70/rm/m/n/12/6d K \C70/rm/m/n/12/91 � $\OML/cmm/m/it/12 O$ \C70/rm/m/n/12/8f � \C70/rm/m/n/12/88 L \C70/rm/m/n/12/6d K \C70/rm/m/n/12/91 �|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/6d K \C70/rm/m/n/12/5f � $\OML/cmm/m/it/12 o[]$ \C70/rm/m/n/12/76 � \C70/rm/m/n/12/69 � \C70/rm/m/n/12/73 � \C70/rm/m/n/12/4e : $[][]$|\C70/rm/m/n/12/ff ^^L|
@@ -1034,8 +1039,12 @@ Overfull \hbox (5.75868pt too wide) in paragraph at lines 394--395
 
 [23]
 Underfull \vbox (badness 10000) has occurred while \output is active []
+=======
+] [19] [20] [21] [22] [23] [24] [25]
+Underfull \vbox (badness 1406) has occurred while \output is active []
+>>>>>>> 753aea3cbcdc02d77487d06b441e07a792c27660
 
- [24] [25] [26]) (./appendices.tex) [27] (./数理方法小班讲义.bbl) [28
+ [26]) (./appendices.tex) [27] (./数理方法小班讲义.bbl) [28
 
 
 ] (./数理方法小班讲义.aux
@@ -1052,6 +1061,7 @@ not appear between \csname and \endcsname.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/07/14>
  ***********
+<<<<<<< HEAD
 
 
 LaTeX Warning: There were undefined references.
@@ -1084,3 +1094,18 @@ PDF statistics:
  273 named destinations out of 1000 (max. 500000)
  421 words of extra memory for PDF output out of 10000 (max. 10000000)
 
+=======
+Package rerunfilecheck Info: File `数理方法小班讲义.out' has not changed.
+(rerunfilecheck)             Checksum: 5B16620DDFA05BDD6680E26189EDE7B8;8765.
+ ) 
+Here is how much of TeX's memory you used:
+ 36905 strings out of 474772
+ 815617 string characters out of 5761268
+ 1942842 words of memory out of 5000000
+ 58430 multiletter control sequences out of 15000+600000
+ 580542 words of font info for 151 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 96i,20n,102p,1290b,663s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on 数理方法小班讲义.xdv (34 pages, 305180 bytes).
+>>>>>>> 753aea3cbcdc02d77487d06b441e07a792c27660
