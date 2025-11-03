@@ -1,0 +1,296 @@
+\chapter{复变函数}
+
+\section{复变函数的概念}
+
+\subsection{复变函数的定义}
+
+复变函数 $f $ 是黎曼面 $\mathbb{C}^\mathrm{R} $ 到复平面 $\mathbb{C} $ 的映射。
+
+\section{解析函数}
+
+\subsection{复变函数的连续性}
+
+设复变函数 $f(z)$ 在 $z_0$ 点及其邻域内有定义。当自变量 $z$ 以任何路径趋于 $z_0$ 时，都有
+
+\begin{equation}
+\lim_{z\to z_0} f(z)
+=f(z_0),
+\end{equation}
+
+则称 $f(z)$ 在 $z_0$ 点连续。
+
+若 $f(z)$ 在区域 $\Omega$ 内的所有点都连续，则称 $f(z)$ 在 $\Omega$ 内连续。
+
+\subsection{复变函数的导数}
+
+设 $z_0 $ 是复变函数 $f(z) $ 定义域 $\Omega $ 内的一点。当 $z$ 以任何路径趋于 $z_0$ 时，即 $\Delta z=z-z_0$ 以任何方式趋于 $0$ 时，若极限
+
+\begin{equation}
+\lim_{\Delta z\to 0}\frac{f(z_0+\Delta z)-f(z_0)}{\Delta z}
+\end{equation}
+
+存在且唯一，则称 $f(z)$ 在 $z_0$ 点可导，$f(z)$ 在 $z_0$ 点的导数记为 $f'(z_0).$
+
+\subsection{柯西-黎曼条件}
+
+\begin{theorem}
+
+设复变函数 $f(z)=u(x,y)+\mathrm{i}v(x,y)$，若 $f(z)$ 在 $z$ 点可导，则必定有：
+
+\begin{equation}
+\frac{\partial u}{\partial x}
+=\frac{\partial v}{\partial y},\quad
+\frac{\partial u}{\partial y}
+=-\frac{\partial v}{\partial x}.
+\end{equation}
+
+上面两条等式称为柯西-黎曼条件(C-R条件)。
+
+\end{theorem}
+
+\begin{proof}
+
+设 $z=x+\mathrm{i} y,f(z)=u(x,y)+\mathrm{i}v(x,y)$，则:
+
+\begin{equation}
+\lim_{\Delta z\to 0} \frac{f(z+\Delta z)-f(z)}{\Delta z}
+=\lim_{\Delta z\to 0}\frac{\Delta u+\mathrm{i}\Delta v}{\Delta x+\mathrm{i}\Delta y}.
+\end{equation}
+
+由于 $f(z)$ 在 $z$ 点可导，故极限
+
+\begin{equation}
+\lim_{\Delta z\to 0} \frac{f(z+\Delta z)-f(z)}{\Delta z}
+\end{equation}
+
+存在且与 $\Delta z$ 趋于 $0$ 的方式无关。
+
+特别地，
+
+(1)令
+
+\begin{equation}
+\mathrm{i}\Delta y=0,\quad \Delta x\to 0,
+\end{equation}
+
+此时
+
+\begin{equation}
+\lim_{\Delta z\to 0}\frac{\Delta u+\mathrm{i}\Delta v}{\Delta x+\mathrm{i}\Delta y}
+=\lim_{\Delta x\to 0}\frac{\Delta u+\mathrm{i}\Delta v}{\Delta x}
+=\frac{\partial u}{\partial x}+\mathrm{i}\frac{\partial v}{\partial x}.
+\end{equation}
+
+(2)令
+
+\begin{equation}
+\Delta x=0,\quad\mathrm{i}\Delta y\to 0,
+\end{equation}
+
+此时
+
+\begin{equation}
+\lim_{\Delta z\to 0}\frac{\Delta u+\mathrm{i}\Delta v}{\Delta x+\mathrm{i}\Delta y}
+=-\mathrm{i}\frac{\partial u}{\partial y}+\frac{\partial v}{\partial y}.
+\end{equation}
+
+由于 $f(z)$ 在 $z_0$ 点可导，则这两个导数值应该相等，对比实部和虚部就得到
+
+\begin{equation}
+\frac{\partial u}{\partial x}
+=\frac{\partial v}{\partial y},\quad
+\frac{\partial u}{\partial y}
+=-\frac{\partial v}{\partial x}.
+\end{equation}
+
+\end{proof}
+
+C-R 条件是 $f(z) $ 在 $z $ 点可导的必要条件，但不是充分条件。也就是说，可导必定满足 C-R 条件，但满足 C-R 条件不一定可导。
+
+\subsection{解析函数的定义}
+
+若复变函数 $f(z)$ 在 $z_0$ 的邻域内每一点都可导，则称 $f(z)$ 在 $z_0$ 点是解析的。
+
+若复变函数 $f(z)$ 在 $\Omega$ 内每一点都可导，则称 $f(z)$ 在 $\Omega$ 内是解析的，或称为全纯的。
+
+\subsection{例题}
+
+\begin{example}
+    
+已知解析函数 $f(z)=u+\mathrm{i}v $ 的实部 $u=x^3-3xy^2 $，求该解析函数。
+
+\end{example}
+
+\begin{solution}
+    
+解析函数应满足柯西-黎曼条件：
+
+\begin{equation}
+\frac{\partial u}{\partial x}
+=\frac{\partial v}{\partial y},\quad
+\frac{\partial u}{\partial y}
+=-\frac{\partial v}{\partial x},
+\end{equation}
+
+\begin{equation}
+\frac{\partial v}{\partial y}
+=\frac{\partial u }{\partial x } 
+=3x^2-3y^2,\quad
+\frac{\partial v}{\partial x}
+=-\frac{\partial u }{\partial y } 
+=6xy,
+\end{equation}
+
+\begin{equation}
+\mathrm{d}v(x,y)
+=\frac{\partial v }{\partial x }\mathrm{d}x + \frac{\partial v }{\partial y } \mathrm{d}y
+=6xy\mathrm{d}x+\left(3x^2-3y^2\right)\mathrm{d}y.
+\end{equation}
+
+选择积分路径为：$\underbrace{(0,0)\to(x_0,0)}_{C_1},\underbrace{(x_0,0)\to(x_0,y_0)}_{C_2}$，在路径 $C_1 $ 上有 $y=0,\mathrm{d}y=0 $，在路径 $C_2 $ 上有 $x=x_0,\mathrm{d}x=0 $，两边积分：
+
+\begin{equation}
+\begin{split}
+v(x_0,y_0)-v(0,0)
+&=\int\limits_{C_1} 6xy\mathrm{d}x + \left(3x^2-3y^2\right)\mathrm{d}y + \int\limits_{C_2}6xy\mathrm{d}x + \left(3x^2-3y^2\right)\mathrm{d}y \\
+&=0+\int_{y=0}^{y=y_0}\left(3x_0^2-3y^2\right)\mathrm{d}y \\
+&=3x_0^2 y_0-y_0^3.
+\end{split}
+\end{equation}
+
+令 $v(0,0)=C$，则：
+
+\begin{equation}
+v(x,y)
+=3x^2y-y^3+v(0,0)
+=3x^2y-y^3+C,
+\end{equation}
+
+于是：
+
+\begin{equation}
+\begin{split}
+f(z)
+&=u(x,y)+\mathrm{i}v(x,y) \\
+&=x^3-3xy^2+\mathrm{i}\left(3x^2 y-y^3+C\right).
+\end{split}
+\end{equation}
+
+\end{solution}
+
+\begin{example}
+    
+已知解析函数 $f(z)=u + \mathrm{i} v $ 的虚部 $\displaystyle{v=\frac{y }{x^2+y^2 }  }$，求该解析函数。
+
+\end{example}
+
+\begin{solution}
+
+先计算偏微分：
+
+\begin{equation}
+\frac{\partial v}{\partial x}
+=\frac{-2xy}{\left(x^2+y^2\right)^2},\quad
+\frac{\partial v}{\partial y}
+=\frac{x^2-y^2}{\left(x^2+y^2\right)^2},
+\end{equation}
+
+函数解析，故满足 C-R 条件，即满足：
+
+\begin{equation}
+\frac{\partial u}{\partial x}
+=\frac{\partial v }{\partial y } 
+=\frac{x^2-y^2}{\left(x^2+y^2\right)^2},
+\end{equation}
+
+\begin{equation}
+\frac{\partial u}{\partial y}
+=-\frac{\partial v }{\partial x } 
+=\frac{2xy}{\left(x^2+y^2\right)^2},
+\end{equation}
+
+于是：
+
+\begin{equation}
+\mathrm{d}u
+=\frac{\partial u }{\partial x } \mathrm{d}x + \frac{\partial u }{\partial y } \mathrm{d}y
+=\frac{x^2-y^2}{\left(x^2+y^2\right)^2}\mathrm{d}x+\frac{2xy}{\left(x^2+y^2\right)^2}\mathrm{d}y,
+\end{equation}
+
+看到 $\left(x^2+y^2 \right) $，很自然想到极坐标变换：
+
+\begin{equation}
+\left\{
+\begin{aligned}
+&x=\rho\cos\varphi \\
+&y=\rho\sin\varphi
+\end{aligned}
+\right.
+\Longrightarrow
+\left\{
+\begin{aligned}
+&\mathrm{d}x = \frac{\partial x }{\partial \rho } \mathrm{d}\rho + \frac{\partial x }{\partial \varphi } \mathrm{d}\varphi = \cos\varphi\mathrm{d}\rho - \rho \sin\varphi \mathrm{d}\varphi \\
+&\mathrm{d}y = \frac{\partial y }{\partial \rho } \mathrm{d}\rho + \frac{\partial y }{\partial \varphi } \mathrm{d}\varphi = \sin\varphi \mathrm{d}\rho + \rho\cos\varphi \mathrm{d}\varphi
+\end{aligned}
+\right. ,
+\end{equation}
+
+于是：
+
+\begin{equation}
+\begin{split}
+\mathrm{d}u
+&=\frac{x^2-y^2}{\left(x^2+y^2\right)^2}\mathrm{d}x+\frac{2xy}{\left(x^2+y^2\right)^2}\mathrm{d}y \\
+&=\frac{\cos\varphi }{\rho^2 } \mathrm{d}\rho + \frac{\sin\varphi }{\rho } \mathrm{d}\varphi \\
+&=\mathrm{d}\left(\frac{-\cos\varphi }{\rho }  \right),
+\end{split}
+\end{equation}
+
+于是：
+
+\begin{equation}
+u
+=\frac{-\cos\varphi }{\rho } + C
+=-\frac{x }{x^2+y^2 } + C,
+\end{equation}
+
+综上，
+
+\begin{equation}
+\begin{split}
+f(z)
+&=u + \mathrm{i} v \\
+&=\left(-\frac{x }{x^2+y^2 } + C \right) + \mathrm{i}\left(\frac{y }{x^2+y^2 } \right).
+\end{split}
+\end{equation}
+
+\end{solution}
+
+\section{复变函数积分}
+
+\subsection{复变函数积分的定义}
+
+\subsection{柯西积分定理}
+
+\subsection{柯西积分公式}
+
+\subsection{解析函数高阶导数的积分表达式}
+
+\section{复变函数的级数展开}
+
+\subsection{复变函数项级数}
+
+\subsection{解析函数的泰勒展开}
+
+\subsection{解析函数的洛朗展开}
+
+\section{留数定理及其在实积分中的应用}
+
+\subsection{留数定理}
+
+\subsection{留数的一般求法}
+
+\subsection{留数定理在实积分中的应用}
+
+
+

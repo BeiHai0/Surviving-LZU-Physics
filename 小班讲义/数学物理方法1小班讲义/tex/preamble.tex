@@ -36,12 +36,17 @@
 \fancyhead[RE]{\leftmark} % 偶数页页眉显示章名
 \fancyhead[LO]{\rightmark} % 奇数页页眉显示节名
 
-% ===== 定理和例题环境 =====
+% ===== 定理和例题等环境 =====
+\theoremstyle{plain} % plain 风格：标题加粗，正文斜体
 \newtheorem{theorem}{定理}[chapter]
 \newtheorem{definition}{定义}[chapter]
 \newtheorem{corollary}[theorem]{推论}
 \newtheorem{example}{例}[chapter]
+
+% ===== 证明和解等环境 =====
+\theoremstyle{definition}  % definition 风格：标题加粗，正文直立
 \newtheorem{exercise}{习题}[chapter]
+\newtheorem{solution}{解}[chapter]
 
 % ===== 彩色框 =====
 \usepackage[most]{tcolorbox}
