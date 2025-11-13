@@ -399,7 +399,8 @@ $$
 &=\partial_i\left(\varphi \vec{A}\right)_i \\
 &=\partial_i\left(\varphi A_i\right) \\
 &=A_i\partial_i \varphi + \varphi\partial_i A_i \\
-&=\left(\vec{A}\cdot\nabla\right)\varphi + \varphi\nabla\cdot\vec{A}.
+&=A_i\left(\nabla \varphi \right)_i + \varphi\partial_i A_i \\
+&=\vec{A} \cdot \left(\nabla \varphi \right) + \varphi\nabla\cdot\vec{A}.
 \end{split}
 \end{equation}
 \end{proof}
@@ -588,7 +589,7 @@ $$
 \begin{example}
 \begin{equation}
 \nabla\left(\vec{A}\cdot\vec{B}\right)
-=\left(\vec{B}\cdot \nabla\right)\vec{A}+\left(\vec{A}\cdot\nabla\right)\vec{B}+\vec{B}\times\left(\nabla\times\vec{A}\right)+\vec{A}\times\left(\nabla\times\vec{B}\right).
+=\left(\vec{B}\cdot \nabla\right)\vec{A} + \left(\vec{A}\cdot\nabla\right)\vec{B} + \vec{B}\times\left(\nabla\times\vec{A}\right) + \vec{A}\times\left(\nabla\times\vec{B}\right).
 \end{equation}
 \end{example}
 
@@ -596,12 +597,13 @@ $$
 \begin{equation}
 \begin{split}
 &\nabla\left(\vec{A}\cdot\vec{B}\right)=\left(\vec{B}\cdot \nabla\right)\vec{A}+\left(\vec{A}\cdot\nabla\right)\vec{B}+\vec{B}\times\left(\nabla\times\vec{A}\right)+\vec{A}\times\left(\nabla\times\vec{B}\right) \\
-=&B_i\partial_i A_j \vec{\mathrm{e}}_j + A_i\partial_i B_j\vec{\mathrm{e}}_j + \varepsilon_{ijk}\vec{\mathrm{e}}_iB_j\left(\nabla\times\vec{A}\right)_k + \varepsilon_{ijk} \vec{\mathrm{e}}_i A_j\left(\nabla\times\vec{B}\right)_k \\
-=&B_i\partial_i A_j \vec{\mathrm{e}}_j + A_i\partial_i B_j\vec{\mathrm{e}}_j + \varepsilon_{ijk}\vec{\mathrm{e}}_iB_j\varepsilon_{klm}\partial_l A_m + \varepsilon_{ijk} \vec{\mathrm{e}}_i A_j\varepsilon_{klm}\partial_l B_m \\
-=&B_i\partial_i A_j \vec{\mathrm{e}}_j + A_i\partial_i B_j\vec{\mathrm{e}}_j + \varepsilon_{kij}\varepsilon_{klm}\vec{\mathrm{e}}_iB_j\partial_l A_m + \varepsilon_{kij}\varepsilon_{klm} \vec{\mathrm{e}}_i A_j\partial_l B_m \\
-=&B_i\partial_i A_j \vec{\mathrm{e}}_j + A_i\partial_i B_j\vec{\mathrm{e}}_j + (\delta_{il}\delta_{jm}-\delta_{im}\delta_{jl})\vec{\mathrm{e}}_iB_j\partial_l A_m + (\delta_{il}\delta_{jm}-\delta_{im}\delta_{jl}) \vec{\mathrm{e}}_i A_j\partial_l B_m \\
-=&B_i\partial_i A_j \vec{\mathrm{e}}_j + A_i\partial_i B_j\vec{\mathrm{e}}_j + \vec{\mathrm{e}}_l B_m\partial_l A_m -\vec{\mathrm{e}}_m B_l\partial_l A_m + \vec{\mathrm{e}}_l A_m\partial_l B_m - \vec{\mathrm{e}}_m A_l\partial_l B_m \\
-=&B_i\partial_i A_j \vec{\mathrm{e}}_j + A_i\partial_i B_j\vec{\mathrm{e}}_j +  B_m\vec{\mathrm{e}}_l\partial_l A_m -B_l\partial_l A_m \vec{\mathrm{e}}_m + A_m\vec{\mathrm{e}}_l \partial_l B_m -  A_l\partial_l B_m \vec{\mathrm{e}}_m \\
+=&\left(\vec{B}\cdot \nabla\right)\vec{A} + \left(\vec{A}\cdot\nabla\right)\vec{B} + \varepsilon_{ijk}\vec{\mathrm{e}}_iB_j\left(\nabla\times\vec{A}\right)_k + \varepsilon_{ijk} \vec{\mathrm{e}}_i A_j\left(\nabla\times\vec{B}\right)_k \\
+=&\left(\vec{B}\cdot \nabla\right)\vec{A} + \left(\vec{A}\cdot\nabla\right)\vec{B} + \varepsilon_{ijk}\vec{\mathrm{e}}_iB_j\varepsilon_{klm}\partial_l A_m + \varepsilon_{ijk} \vec{\mathrm{e}}_i A_j\varepsilon_{klm}\partial_l B_m \\
+=&\left(\vec{B}\cdot \nabla\right)\vec{A} + \left(\vec{A}\cdot\nabla\right)\vec{B} + \varepsilon_{kij}\varepsilon_{klm}\vec{\mathrm{e}}_iB_j\partial_l A_m + \varepsilon_{kij}\varepsilon_{klm} \vec{\mathrm{e}}_i A_j\partial_l B_m \\
+=&\left(\vec{B}\cdot \nabla\right)\vec{A} + \left(\vec{A}\cdot\nabla\right)\vec{B} + (\delta_{il}\delta_{jm}-\delta_{im}\delta_{jl})\vec{\mathrm{e}}_iB_j\partial_l A_m + (\delta_{il}\delta_{jm}-\delta_{im}\delta_{jl}) \vec{\mathrm{e}}_i A_j\partial_l B_m \\
+=&\left(\vec{B}\cdot \nabla\right)\vec{A} + \left(\vec{A}\cdot\nabla\right)\vec{B} + \vec{\mathrm{e}}_l B_m\partial_l A_m -\vec{\mathrm{e}}_m B_l\partial_l A_m + \vec{\mathrm{e}}_l A_m\partial_l B_m - \vec{\mathrm{e}}_m A_l\partial_l B_m \\
+=&\left(\vec{B}\cdot \nabla\right)\vec{A} + \left(\vec{A}\cdot\nabla\right)\vec{B} +  B_m\vec{\mathrm{e}}_l\partial_l A_m -B_l\partial_l A_m \vec{\mathrm{e}}_m + A_m\vec{\mathrm{e}}_l \partial_l B_m -  A_l\partial_l B_m \vec{\mathrm{e}}_m \\
+=&\left(\vec{B}\cdot \nabla\right)\vec{A} + \left(\vec{A}\cdot\nabla\right)\vec{B} +  B_m\vec{\mathrm{e}}_l\partial_l A_m - \left(\vec{B}\cdot\nabla \right)\vec{A} + A_m\vec{\mathrm{e}}_l \partial_l B_m -  \left(\vec{A}\cdot\nabla \right)\vec{B} \\
 =&B_m\vec{\mathrm{e}}_l\partial_l A_m + A_m\vec{\mathrm{e}}_l \partial_l B_m \\
 =&B_m\nabla A_m + A_m \nabla B_m \\
 =&\nabla(A_m B_m) \\

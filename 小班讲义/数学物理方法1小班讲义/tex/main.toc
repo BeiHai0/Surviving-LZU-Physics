@@ -27,7 +27,11 @@
 \contentsline {subsection}{\numberline {1.2.3}$\mathbb {R}^3 $空间重要积分恒等式及其证明}{11}{subsection.1.2.3}%
 \contentsline {subsubsection}{\numberline {1.2.3.1}高斯定理}{11}{subsubsection.1.2.3.1}%
 \contentsline {subsubsection}{\numberline {1.2.3.2}斯托克斯定理}{11}{subsubsection.1.2.3.2}%
+<<<<<<< HEAD
 \contentsline {subsubsection}{\numberline {1.2.3.3}格林第一恒等式}{11}{subsubsection.1.2.3.3}%
+=======
+\contentsline {subsubsection}{\numberline {1.2.3.3}格林第一恒等式}{12}{subsubsection.1.2.3.3}%
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 \contentsline {subsubsection}{\numberline {1.2.3.4}格林第二恒等式}{12}{subsubsection.1.2.3.4}%
 \contentsline {subsubsection}{\numberline {1.2.3.5}高斯定理的一个推论}{13}{subsubsection.1.2.3.5}%
 \contentsline {subsubsection}{\numberline {1.2.3.6}斯托克斯定理的一个推论}{14}{subsubsection.1.2.3.6}%
@@ -63,6 +67,48 @@
 \contentsline {section}{\numberline {3.3}线性算符的本征值和本征向量}{21}{section.3.3}%
 \contentsline {section}{\numberline {3.4}一些定理}{21}{section.3.4}%
 \contentsline {section}{\numberline {3.5}例题}{23}{section.3.5}%
+<<<<<<< HEAD
 \contentsline {subsection}{\numberline {3.5.1}纯态下可观测量期望值}{23}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}混合态下可观测量期望值}{24}{subsection.3.5.2}%
 \contentsline {subsection}{\numberline {3.5.3}不确定性关系}{25}{subsection.3.5.3}%
+=======
+\contentsline {subsection}{\numberline {3.5.1}完备性关系}{23}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}纯态下可观测量期望值}{23}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}混合态下可观测量期望值}{25}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}不确定性关系}{26}{subsection.3.5.4}%
+\contentsline {chapter}{\numberline {第四章\hspace {.3em}}复变函数}{28}{chapter.4}%
+\contentsline {section}{\numberline {4.1}复变函数的概念}{28}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}复变函数的定义}{28}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}解析函数}{28}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}复变函数的连续性}{28}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}复变函数的导数}{28}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}柯西-黎曼条件}{28}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}解析函数的定义}{29}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}例题}{30}{subsection.4.2.5}%
+\contentsline {section}{\numberline {4.3}复变函数积分}{31}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}复变函数积分的定义}{31}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}柯西积分定理}{32}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}单连通区域柯西积分定理}{32}{subsubsection.4.3.2.1}%
+\contentsline {subsubsection}{\numberline {4.3.2.2}多连通区域柯西积分定理}{32}{subsubsection.4.3.2.2}%
+\contentsline {subsection}{\numberline {4.3.3}柯西积分公式}{32}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}解析函数高阶导数的积分表达式}{32}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}复变函数的级数展开}{33}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}解析函数的泰勒展开}{33}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}解析函数的洛朗展开}{33}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}复变函数的零点}{33}{subsubsection.4.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.4.2.2}复变函数的奇点}{33}{subsubsection.4.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.3}奇点的分类}{33}{subsubsection.4.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.4.2.4}解析函数的洛朗展开}{34}{subsubsection.4.4.2.4}%
+\contentsline {subsection}{\numberline {4.4.3}例题}{34}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.5}留数定理及其应用}{36}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}留数的定义}{36}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}留数的求法}{36}{subsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.1}定义法}{36}{subsubsection.4.5.2.1}%
+\contentsline {subsubsection}{\numberline {4.5.2.2}极限法}{37}{subsubsection.4.5.2.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.3}特殊情况}{37}{subsubsection.4.5.2.3}%
+\contentsline {subsection}{\numberline {4.5.3}留数定理}{37}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}利用留数定理求无穷级数}{37}{subsection.4.5.4}%
+\contentsline {subsubsection}{\numberline {4.5.4.1}所需函数}{37}{subsubsection.4.5.4.1}%
+\contentsline {subsubsection}{\numberline {4.5.4.2}例题}{37}{subsubsection.4.5.4.2}%
+\contentsline {subsection}{\numberline {4.5.5}留数定理在实积分中的应用}{40}{subsection.4.5.5}%
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f

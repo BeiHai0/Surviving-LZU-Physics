@@ -1,4 +1,16 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.24)  26 OCT 2025 20:13
+=======
+<<<<<<<< HEAD:小班讲义/数学物理方法1小班讲义/tex/数理方法小班讲义.log
+<<<<<<< HEAD
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.24)  26 OCT 2025 20:19
+=======
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.11)  26 OCT 2025 20:35
+>>>>>>> 753aea3cbcdc02d77487d06b441e07a792c27660
+========
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.11)  8 NOV 2025 18:38
+>>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f:小班讲义/数学物理方法1小班讲义/tex/main.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -181,7 +193,11 @@ File: ctex-name-utf8.cfg 2022/07/14 v2.5.10 Caption with encoding UTF-8 (CTEX)
 File: ctex-fontset-windows.def 2022/07/14 v2.5.10 Windows fonts definition (CTEX)
 )) (c:/texlive/2024/texmf-dist/tex/latex/ctex/config/ctex.cfg
 File: ctex.cfg 2022/07/14 v2.5.10 Configuration file (CTEX)
+<<<<<<< HEAD
 ) (./preamble.tex (c:/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty
+=======
+) (./preamble/preamble.tex (c:/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (c:/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
@@ -344,7 +360,21 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+<<<<<<< HEAD
 ) (c:/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
+=======
+) (c:/texlive/2024/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks30
+\pgfutil@tempdima=\dimen258
+\pgfutil@tempdimb=\dimen259
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box58
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/texlive/2024/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
  (c:/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
@@ -355,14 +385,251 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 )
+<<<<<<< HEAD
 \Gin@req@height=\dimen171
 \Gin@req@width=\dimen172
+=======
+<<<<<<<< HEAD:小班讲义/数学物理方法1小班讲义/tex/数理方法小班讲义.log
+\Gin@req@height=\dimen171
+\Gin@req@width=\dimen172
+========
+\Gin@req@height=\dimen260
+\Gin@req@width=\dimen261
+) (c:/texlive/2024/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks31
+\pgfkeys@temptoks=\toks32
+ (c:/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks33
+))
+\pgf@x=\dimen262
+\pgf@y=\dimen263
+\pgf@xa=\dimen264
+\pgf@ya=\dimen265
+\pgf@xb=\dimen266
+\pgf@yb=\dimen267
+\pgf@xc=\dimen268
+\pgf@yc=\dimen269
+\pgf@xd=\dimen270
+\pgf@yd=\dimen271
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count311
+\c@pgf@countb=\count312
+\c@pgf@countc=\count313
+\c@pgf@countd=\count314
+\t@pgf@toka=\toks34
+\t@pgf@tokb=\toks35
+\t@pgf@tokc=\toks36
+\pgf@sys@id@count=\count315
+ (c:/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-xetex.def
+ (c:/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
+File: pgfsys-xetex.def 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)
+\pgfsys@objnum=\count316
+))) (c:/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count317
+\pgfsyssoftpath@bigbuffer@items=\count318
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen272
+\pgfmath@count=\count319
+\pgfmath@box=\box59
+\pgfmath@toks=\toks37
+\pgfmath@stack@operand=\toks38
+\pgfmath@stack@operation=\toks39
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count320
+)) (c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen273
+\pgf@picmaxx=\dimen274
+\pgf@picminy=\dimen275
+\pgf@picmaxy=\dimen276
+\pgf@pathminx=\dimen277
+\pgf@pathmaxx=\dimen278
+\pgf@pathminy=\dimen279
+\pgf@pathmaxy=\dimen280
+\pgf@xx=\dimen281
+\pgf@xy=\dimen282
+\pgf@yx=\dimen283
+\pgf@yy=\dimen284
+\pgf@zx=\dimen285
+\pgf@zy=\dimen286
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen287
+\pgf@path@lasty=\dimen288
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen289
+\pgf@shorten@start@additional=\dimen290
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box60
+\pgf@hbox=\box61
+\pgf@layerbox@main=\box62
+\pgf@picture@serial@count=\count321
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen291
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen292
+\pgf@pt@y=\dimen293
+\pgf@pt@temp=\dimen294
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen295
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen296
+\pgf@sys@shading@range@num=\count322
+\pgf@shadingcount=\count323
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box63
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (c:/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box64
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2024/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen297
+\pgf@nodesepend=\dimen298
+) (c:/texlive/2024/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (c:/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/texlive/2024/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen299
+\pgffor@skip=\dimen300
+\pgffor@stack=\toks40
+\pgffor@toks=\toks41
+)) (c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count324
+\pgfplotmarksize=\dimen301
+)
+\tikz@lastx=\dimen302
+\tikz@lasty=\dimen303
+\tikz@lastxsaved=\dimen304
+\tikz@lastysaved=\dimen305
+\tikz@lastmovetox=\dimen306
+\tikz@lastmovetoy=\dimen307
+\tikzleveldistance=\dimen308
+\tikzsiblingdistance=\dimen309
+\tikz@figbox=\box65
+\tikz@figbox@bg=\box66
+\tikz@tempbox=\box67
+\tikz@tempbox@bg=\box68
+\tikztreelevel=\count325
+\tikznumberofchildren=\count326
+\tikznumberofcurrentchild=\count327
+\tikz@fig@count=\count328
+ (c:/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count329
+\pgfmatrixcurrentcolumn=\count330
+\pgf@matrix@numberofcolumns=\count331
+)
+\tikz@expandcount=\count332
+ (c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (c:/texlive/2024/texmf-dist/tex/latex/pgfplots/pgfplots.sty (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+ (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks42
+\t@pgfplots@tokb=\toks43
+\t@pgfplots@tokc=\toks44
+\pgfplots@tmpa=\dimen310
+\c@pgfplots@coordindex=\count333
+\c@pgfplots@scanlineindex=\count334
+ (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex (c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
+Package pgfplots: loading complementary utilities for your pgf version...
+\t@pgf@toka=\toks45
+\t@pgf@tokb=\toks46
+\t@pgf@tokc=\toks47
+(c:/texlive/2024/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count335
+) (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count336
+\t@pgfplotstable@a=\toks48
+) (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count337
+ (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-xetex.def (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-dvipdfmx.def
+\c@pgfplotslibrarysurf@streamlen=\count338
+)))) (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex) (c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (c:/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen311
+\pgfdecoratedremainingdistance=\dimen312
+\pgfdecoratedinputsegmentcompleteddistance=\dimen313
+\pgfdecoratedinputsegmentremainingdistance=\dimen314
+\pgf@decorate@distancetomove=\dimen315
+\pgf@decorate@repeatstate=\count339
+\pgfdecorationsegmentamplitude=\dimen316
+\pgfdecorationsegmentlength=\dimen317
+)
+\tikz@lib@dec@box=\box69
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (c:/texlive/2024/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count340
+\pgfplots@xmin@reg=\dimen318
+\pgfplots@xmax@reg=\dimen319
+\pgfplots@ymin@reg=\dimen320
+\pgfplots@ymax@reg=\dimen321
+\pgfplots@zmin@reg=\dimen322
+\pgfplots@zmax@reg=\dimen323
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.markings.code.tex (c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.markings.code.tex)) (c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowinset=\dimen324
+\pgfarrowlength=\dimen325
+\pgfarrowwidth=\dimen326
+\pgfarrowlinewidth=\dimen327
+>>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f:小班讲义/数学物理方法1小班讲义/tex/main.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 ) (c:/texlive/2024/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
  (c:/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
  (c:/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:小班讲义/数学物理方法1小班讲义/tex/数理方法小班讲义.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 \caption@tempdima=\dimen173
 \captionmargin=\dimen174
 \caption@leftmargin=\dimen175
@@ -387,6 +654,35 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box57
 \@float@everytoks=\toks33
 \@floatcapt=\box58
+<<<<<<< HEAD
+=======
+========
+\caption@tempdima=\dimen328
+\captionmargin=\dimen329
+\caption@leftmargin=\dimen330
+\caption@rightmargin=\dimen331
+\caption@width=\dimen332
+\caption@indent=\dimen333
+\caption@parindent=\dimen334
+\caption@hangindent=\dimen335
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count341
+\c@continuedfloat=\count342
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count343
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count344
+) (c:/texlive/2024/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count345
+\float@exts=\toks49
+\float@box=\box70
+\@float@everytoks=\toks50
+\@floatcapt=\box71
+>>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f:小班讲义/数学物理方法1小班讲义/tex/main.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 ) (c:/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
  (c:/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
@@ -418,6 +714,10 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
  (c:/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:小班讲义/数学物理方法1小班讲义/tex/数理方法小班讲义.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 \c@section@level=\count298
 ) (c:/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
@@ -426,6 +726,19 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \@linkdim=\dimen181
 \Hy@linkcounter=\count300
 \Hy@pagecounter=\count301
+<<<<<<< HEAD
+=======
+========
+\c@section@level=\count346
+) (c:/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count347
+)
+\@linkdim=\dimen336
+\Hy@linkcounter=\count348
+\Hy@pagecounter=\count349
+>>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f:小班讲义/数学物理方法1小班讲义/tex/main.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
  (c:/texlive/2024/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -433,7 +746,15 @@ Now handling font encoding PD1 ...
 ) (c:/texlive/2024/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
+<<<<<<< HEAD
 \Hy@SavedSpaceFactor=\count302
+=======
+<<<<<<<< HEAD:小班讲义/数学物理方法1小班讲义/tex/数理方法小班讲义.log
+\Hy@SavedSpaceFactor=\count302
+========
+\Hy@SavedSpaceFactor=\count350
+>>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f:小班讲义/数学物理方法1小班讲义/tex/main.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
  (c:/texlive/2024/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -447,21 +768,49 @@ Package hyperref Info: Plain pages OFF on input line 4194.
 Package hyperref Info: Backreferencing OFF on input line 4199.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4446.
+<<<<<<< HEAD
 \c@Hy@tempcnt=\count303
+=======
+<<<<<<<< HEAD:小班讲义/数学物理方法1小班讲义/tex/数理方法小班讲义.log
+\c@Hy@tempcnt=\count303
+========
+\c@Hy@tempcnt=\count351
+>>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f:小班讲义/数学物理方法1小班讲义/tex/main.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
  (c:/texlive/2024/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4784.
+<<<<<<< HEAD
 \XeTeXLinkMargin=\dimen182
+=======
+<<<<<<<< HEAD:小班讲义/数学物理方法1小班讲义/tex/数理方法小班讲义.log
+\XeTeXLinkMargin=\dimen182
+========
+\XeTeXLinkMargin=\dimen337
+>>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f:小班讲义/数学物理方法1小班讲义/tex/main.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
  (c:/texlive/2024/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (c:/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
+<<<<<<< HEAD
 \Fld@menulength=\count304
 \Field@Width=\dimen183
 \Fld@charsize=\dimen184
+=======
+<<<<<<<< HEAD:小班讲义/数学物理方法1小班讲义/tex/数理方法小班讲义.log
+\Fld@menulength=\count304
+\Field@Width=\dimen183
+\Fld@charsize=\dimen184
+========
+\Fld@menulength=\count352
+\Field@Width=\dimen338
+\Fld@charsize=\dimen339
+>>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f:小班讲义/数学物理方法1小班讲义/tex/main.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 Package hyperref Info: Hyper figures OFF on input line 6063.
 Package hyperref Info: Link nesting OFF on input line 6068.
 Package hyperref Info: Hyper index ON on input line 6071.
@@ -473,6 +822,10 @@ Package hyperref Info: PDF/A mode OFF on input line 6093.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:小班讲义/数学物理方法1小班讲义/tex/数理方法小班讲义.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 \Hy@abspage=\count305
 \c@Item=\count306
 \c@Hfootnote=\count307
@@ -480,6 +833,28 @@ package with kernel methods
 Package hyperref Info: Driver (autodetected): hpdftex.
  (c:/texlive/2024/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2024-01-20 v7.01h Hyperref driver for pdfTeX
+<<<<<<< HEAD
+=======
+========
+\Hy@abspage=\count353
+\c@Item=\count354
+\c@Hfootnote=\count355
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+ (c:/texlive/2024/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2024-01-20 v7.01h Hyperref driver for XeTeX
+ (c:/texlive/2024/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+)
+\pdfm@box=\box72
+\c@Hy@AnnotLevel=\count356
+\HyField@AnnotCount=\count357
+\Fld@listcount=\count358
+\c@bookmark@seq@number=\count359
+ (c:/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+>>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f:小班讲义/数学物理方法1小班讲义/tex/main.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
  (c:/texlive/2024/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
@@ -495,9 +870,16 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip62
 )
+<<<<<<< HEAD
 Package hyperref Info: Option `colorlinks' set `true' on input line 20.
  (c:/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2023/10/27 v2.16 Sectioning titles
+=======
+Package hyperref Info: Option `colorlinks' set `true' on input line 23.
+ (c:/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2023/10/27 v2.16 Sectioning titles
+<<<<<<<< HEAD:小班讲义/数学物理方法1小班讲义/tex/数理方法小班讲义.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 \ttl@box=\box59
 \beforetitleunit=\skip63
 \aftertitleunit=\skip64
@@ -507,6 +889,20 @@ Package: titlesec 2023/10/27 v2.16 Sectioning titles
 \titlewidth=\dimen187
 \titlewidthlast=\dimen188
 \titlewidthfirst=\dimen189
+<<<<<<< HEAD
+=======
+========
+\ttl@box=\box73
+\beforetitleunit=\skip71
+\aftertitleunit=\skip72
+\ttl@plus=\dimen340
+\ttl@minus=\dimen341
+\ttl@toksa=\toks51
+\titlewidth=\dimen342
+\titlewidthlast=\dimen343
+\titlewidthfirst=\dimen344
+>>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f:小班讲义/数学物理方法1小班讲义/tex/main.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 ) (c:/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@headwidth=\skip65
@@ -519,6 +915,10 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@O@olf=\skip72
 \f@nch@O@orf=\skip73
 )
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:小班讲义/数学物理方法1小班讲义/tex/数理方法小班讲义.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 \c@theorem=\count310
 \c@definition=\count311
 \c@example=\count312
@@ -668,12 +1068,32 @@ Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks45
 \verbatim@line=\toks46
+<<<<<<< HEAD
+=======
+========
+\c@theorem=\count360
+\c@definition=\count361
+\c@example=\count362
+\c@exercise=\count363
+\c@solution=\count364
+ (c:/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2024/01/10 version 6.2.0 text color boxes
+ (c:/texlive/2024/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks52
+\verbatim@line=\toks53
+>>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f:小班讲义/数学物理方法1小班讲义/tex/main.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 \verbatim@in@stream=\read3
 ) (c:/texlive/2024/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
  (c:/texlive/2024/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:小班讲义/数学物理方法1小班讲义/tex/数理方法小班讲义.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 \tcb@titlebox=\box67
 \tcb@upperbox=\box68
 \tcb@lowerbox=\box69
@@ -734,12 +1154,47 @@ File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))) (c:/texlive/2024/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty
+<<<<<<< HEAD
+=======
+========
+\tcb@titlebox=\box74
+\tcb@upperbox=\box75
+\tcb@lowerbox=\box76
+\tcb@phantombox=\box77
+\c@tcbbreakpart=\count365
+\c@tcblayer=\count366
+\c@tcolorbox@number=\count367
+\l__tcobox_tmpa_box=\box78
+\l__tcobox_tmpa_dim=\dimen345
+\tcb@temp=\box79
+\tcb@temp=\box80
+\tcb@temp=\box81
+\tcb@temp=\box82
+ (c:/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '6.2.0'
+\c@tcbrastercolumn=\count368
+\c@tcbrasterrow=\count369
+\c@tcbrasternum=\count370
+\c@tcbraster=\count371
+) (c:/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '6.2.0'
+(c:/texlive/2024/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty
+>>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f:小班讲义/数学物理方法1小班讲义/tex/main.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
  (c:/texlive/2024/texmf-dist/tex/latex/tikzfill/tikzfill-common.sty
 Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
 ) (c:/texlive/2024/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.code.tex
 File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
+<<<<<<< HEAD
 \l__tikzfill_img_box=\box80
+=======
+<<<<<<<< HEAD:小班讲义/数学物理方法1小班讲义/tex/数理方法小班讲义.log
+\l__tikzfill_img_box=\box80
+========
+\l__tikzfill_img_box=\box83
+>>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f:小班讲义/数学物理方法1小班讲义/tex/main.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 )) (c:/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
 Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.2.0'
 )) (c:/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
@@ -747,25 +1202,55 @@ Library (tcolorbox): 'tcbbreakable.code.tex' version '6.2.0'
 (c:/texlive/2024/texmf-dist/tex/latex/pdfcol/pdfcol.sty
 Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
 )
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:小班讲义/数学物理方法1小班讲义/tex/数理方法小班讲义.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
 \tcb@testbox=\box81
 \tcb@totalupperbox=\box82
 \tcb@totallowerbox=\box83
+<<<<<<< HEAD
+=======
+========
+Package pdfcol Info: pdfTeX's color stacks are not available.
+\tcb@testbox=\box84
+\tcb@totalupperbox=\box85
+\tcb@totallowerbox=\box86
+>>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f:小班讲义/数学物理方法1小班讲义/tex/main.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 ) (c:/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbhooks.code.tex
 Library (tcolorbox): 'tcbhooks.code.tex' version '6.2.0'
 ) (c:/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbtheorems.code.tex
 Library (tcolorbox): 'tcbtheorems.code.tex' version '6.2.0'
 ) (c:/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
 Library (tcolorbox): 'tcbfitting.code.tex' version '6.2.0'
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:小班讲义/数学物理方法1小班讲义/tex/数理方法小班讲义.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 \tcbfitdim=\dimen297
 \tcb@lowerfitdim=\dimen298
 \tcb@upperfitdim=\dimen299
 \tcb@cur@hbadness=\count342
+<<<<<<< HEAD
+=======
+========
+\tcbfitdim=\dimen346
+\tcb@lowerfitdim=\dimen347
+\tcb@upperfitdim=\dimen348
+\tcb@cur@hbadness=\count372
+>>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f:小班讲义/数学物理方法1小班讲义/tex/main.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 ) (c:/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcblistingsutf8.code.tex
 Library (tcolorbox): 'tcblistingsutf8.code.tex' version '6.2.0'
 (c:/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
 Library (tcolorbox): 'tcblistings.code.tex' version '6.2.0'
 (c:/texlive/2024/texmf-dist/tex/latex/listings/listings.sty
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:小班讲义/数学物理方法1小班讲义/tex/数理方法小班讲义.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 \lst@mode=\count343
 \lst@gtempboxa=\box84
 \lst@token=\toks49
@@ -778,28 +1263,82 @@ Library (tcolorbox): 'tcblistings.code.tex' version '6.2.0'
 \lst@newlines=\count347
 \lst@lineno=\count348
 \lst@maxwidth=\dimen303
+<<<<<<< HEAD
+=======
+========
+\lst@mode=\count373
+\lst@gtempboxa=\box87
+\lst@token=\toks54
+\lst@length=\count374
+\lst@currlwidth=\dimen349
+\lst@column=\count375
+\lst@pos=\count376
+\lst@lostspace=\dimen350
+\lst@width=\dimen351
+\lst@newlines=\count377
+\lst@lineno=\count378
+\lst@maxwidth=\dimen352
+>>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f:小班讲义/数学物理方法1小班讲义/tex/main.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
  (c:/texlive/2024/texmf-dist/tex/latex/listings/lstpatch.sty
 File: lstpatch.sty 2024/02/21 1.10 (Carsten Heinz)
 ) (c:/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
+<<<<<<< HEAD
 \c@lstnumber=\count349
 \lst@skipnumbers=\count350
 \lst@framebox=\box85
+=======
+<<<<<<<< HEAD:小班讲义/数学物理方法1小班讲义/tex/数理方法小班讲义.log
+\c@lstnumber=\count349
+\lst@skipnumbers=\count350
+\lst@framebox=\box85
+========
+\c@lstnumber=\count379
+\lst@skipnumbers=\count380
+\lst@framebox=\box88
+>>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f:小班讲义/数学物理方法1小班讲义/tex/main.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 ) (c:/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2024/02/21 1.10 listings configuration
 ))
 Package: listings 2024/02/21 1.10 (Carsten Heinz)
+<<<<<<< HEAD
  (c:/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcblistingscore.code.tex
+=======
+<<<<<<<< HEAD:小班讲义/数学物理方法1小班讲义/tex/数理方法小班讲义.log
+ (c:/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcblistingscore.code.tex
+========
+ (c:/texlive/2024/texmf-dist/tex/xelatex/xecjk/xeCJK-listings.sty
+Package: xeCJK-listings 2022/08/05 v3.9.1 xeCJK patch file for listings
+\l__xeCJK_listings_max_char_int=\count381
+\l__xeCJK_listings_flag_int=\count382
+) (c:/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcblistingscore.code.tex
+>>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f:小班讲义/数学物理方法1小班讲义/tex/main.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 Library (tcolorbox): 'tcblistingscore.code.tex' version '6.2.0'
 (c:/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbprocessing.code.tex
 Library (tcolorbox): 'tcbprocessing.code.tex' version '6.2.0'
 )
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:小班讲义/数学物理方法1小班讲义/tex/数理方法小班讲义.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 \c@tcblisting=\count351
 )) (c:/texlive/2024/texmf-dist/tex/latex/listingsutf8/listingsutf8.sty
 Package: listingsutf8 2019-12-10 v1.5 Allow UTF-8 in listings input (HO)
  (c:/texlive/2024/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 ))) (c:/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbexternal.code.tex
+<<<<<<< HEAD
+=======
+========
+\c@tcblisting=\count383
+))
+Package tcolorbox Info: Library `listingsutf8' is compatible with pdftex only. Library `listings` is loaded instead. on input line 29.
+) (c:/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbexternal.code.tex
+>>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f:小班讲义/数学物理方法1小班讲义/tex/main.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 Library (tcolorbox): 'tcbexternal.code.tex' version '6.2.0'
 ) (c:/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbmagazine.code.tex
 Library (tcolorbox): 'tcbmagazine.code.tex' version '6.2.0'
@@ -813,14 +1352,28 @@ File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
 Library (tcolorbox): 'tcbposter.code.tex' version '6.2.0'
 )) (c:/texlive/2024/texmf-dist/tex/latex/marginnote/marginnote.sty
 Package: marginnote 2018/08/09 1.4b non floating margin notes for LaTeX
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:小班讲义/数学物理方法1小班讲义/tex/数理方法小班讲义.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 \c@mn@abspage=\count352
 )) (c:/texlive/2024/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (c:/texlive/2024/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 )
+<<<<<<< HEAD
 No file main.aux.
 \openout1 = `main.aux'.
+=======
+No file 数理方法小班讲义.aux.
+\openout1 = `数理方法小班讲义.aux'.
+========
+\c@mn@abspage=\count384
+)) (./main.aux)
+\openout1 = `main.aux'.
+>>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f:小班讲义/数学物理方法1小班讲义/tex/main.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
@@ -938,6 +1491,10 @@ LaTeX Font Info:    ... okay on input line 5.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:小班讲义/数学物理方法1小班讲义/tex/数理方法小班讲义.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 (c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count353
@@ -957,16 +1514,38 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (c:/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
+<<<<<<< HEAD
+=======
+========
+Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
+
+>>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f:小班讲义/数学物理方法1小班讲义/tex/main.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 5.
+<<<<<<< HEAD
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
 \c@lstlisting=\count359
+=======
+<<<<<<<< HEAD:小班讲义/数学物理方法1小班讲义/tex/数理方法小班讲义.log
+========
+(./main.out) (./main.out)
+>>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f:小班讲义/数学物理方法1小班讲义/tex/main.log
+\@outlinefile=\write4
+\openout4 = `main.out'.
+
+<<<<<<<< HEAD:小班讲义/数学物理方法1小班讲义/tex/数理方法小班讲义.log
+\c@lstlisting=\count359
+========
+\c@lstlisting=\count385
+>>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f:小班讲义/数学物理方法1小班讲义/tex/main.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
  (./frontmatter/titlepage.tex)
 LaTeX Font Info:    Trying to load font information for C70+rm on input line 10.
  (c:/texlive/2024/texmf-dist/tex/latex/ctex/fd/c70rm.fd
@@ -1001,11 +1580,26 @@ LaTeX Warning: Citation `\CTEX@char@nnn {230}{157}{168}\CTEX@char@nnn {229}{173}
 
 ) [2
 
+<<<<<<< HEAD
 ]
 No file main.toc.
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
+=======
+<<<<<<<< HEAD:小班讲义/数学物理方法1小班讲义/tex/数理方法小班讲义.log
+]
+No file 数理方法小班讲义.toc.
+========
+] (./main.toc [3
+
+] [4] [5])
+>>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f:小班讲义/数学物理方法1小班讲义/tex/main.log
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+<<<<<<<< HEAD:小班讲义/数学物理方法1小班讲义/tex/数理方法小班讲义.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 [3
 
 ] [4
@@ -1017,9 +1611,26 @@ No file main.toc.
 ] [2{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [3]
 Package CJKpunct Info: use punctuation spaces for family 'zhkai' with punctstyle (quanjiao) on input line 218.
  [4] [5] [6] [7] [8] [9]
+<<<<<<< HEAD
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10] [11] [12] [13] [14]) (./chapters/ch2_vector-analysis-in-curvilinear-coordinates.tex [15]
+=======
+========
+ [6] (./chapters/ch1_vector-analysis.tex
+第一章
+[1
+
+
+] [2] [3] [4] [5] [6] [7] [8] [9]
+>>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f:小班讲义/数学物理方法1小班讲义/tex/main.log
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10] [11] [12] [13]
+Underfull \vbox (badness 3168) has occurred while \output is active []
+
+ [14]) (./chapters/ch2_vector-analysis-in-curvilinear-coordinates.tex [15]
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 第二章
 [16
 
@@ -1027,6 +1638,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 第三章
 [18
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 ] [19] [20] [21] [22]
 Overfull \hbox (5.75868pt too wide) in paragraph at lines 394--395
 []\C70/rm/m/n/12/91 � \C70/rm/m/n/12/5b P \C70/rm/m/n/12/52 � \C70/rm/m/n/12/5b f \C70/rm/m/n/12/54 J \C70/rm/m/n/12/8b � \C70/rm/m/n/12/62 ^^Q \C70/rm/m/n/12/4e �|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/57 ( $[]$ \C70/rm/m/n/12/60 ^^A \C70/rm/m/n/12/4e  \C70/rm/m/n/12/5b � \C70/rm/m/n/12/53 � \C70/rm/m/n/12/89 � \C70/rm/m/n/12/6d K \C70/rm/m/n/12/91 � $\OML/cmm/m/it/12 O$ \C70/rm/m/n/12/8f � \C70/rm/m/n/12/88 L \C70/rm/m/n/12/6d K \C70/rm/m/n/12/91 �|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/6d K \C70/rm/m/n/12/5f � $\OML/cmm/m/it/12 o[]$ \C70/rm/m/n/12/76 � \C70/rm/m/n/12/69 � \C70/rm/m/n/12/73 � \C70/rm/m/n/12/4e : $[][]$|\C70/rm/m/n/12/ff ^^L|
@@ -1034,6 +1649,7 @@ Overfull \hbox (5.75868pt too wide) in paragraph at lines 394--395
 
 [23]
 Underfull \vbox (badness 10000) has occurred while \output is active []
+<<<<<<< HEAD
 
  [24] [25] [26]) (./appendices.tex) [27] (./main.bbl
 
@@ -1043,24 +1659,75 @@ LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
 
 ] (./main.aux)
+=======
+=======
+] [19] [20] [21] [22] [23] [24] [25]
+Underfull \vbox (badness 1406) has occurred while \output is active []
+>>>>>>> 753aea3cbcdc02d77487d06b441e07a792c27660
+
+ [26]) (./chapters/ch4_complex-function.tex [27]
+第四章
+[28
+
+] [29] [30] [31] [32] [33] [34] [35] [36]
+NOTE: coordinate (2Y2.0e0],4Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y2.0e0],4Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[37] [38]) (./appendices.tex) [39] [40] (./main.bbl) [41
+
+
+<<<<<<<< HEAD:小班讲义/数学物理方法1小班讲义/tex/数理方法小班讲义.log
+] (./数理方法小班讲义.aux
+./数理方法小班讲义.aux:82: Missing \endcsname inserted.
+<to be read again> 
+                   \tex_indent:D 
+l.82 \bibcite{杨孔庆2012数学物理方法}{1}
+                                                 
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+)
+========
+] (./main.aux)
+>>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f:小班讲义/数学物理方法1小班讲义/tex/main.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/07/14>
  ***********
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:小班讲义/数学物理方法1小班讲义/tex/数理方法小班讲义.log
+<<<<<<< HEAD
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 
 
 LaTeX Warning: There were undefined references.
 
 
+<<<<<<< HEAD
 Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
+=======
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `数理方法小班讲义.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `数理方法小班讲义.out':
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 (rerunfilecheck)             Before: <no file>
 (rerunfilecheck)             After:  20FF8A4BEA399E1BB5E2D933A6D3B9A7;8663.
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  36915 strings out of 474115
  732586 string characters out of 5747695
  1953190 words of memory out of 5000000
@@ -1076,3 +1743,43 @@ PDF statistics:
  272 named destinations out of 1000 (max. 500000)
  421 words of extra memory for PDF output out of 10000 (max. 10000000)
 
+=======
+ 36919 strings out of 474115
+ 733105 string characters out of 5747695
+ 1953190 words of memory out of 5000000
+ 57928 multiletter control sequences out of 15000+600000
+ 661739 words of font info for 416 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 98i,20n,102p,1352b,654s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on 数理方法小班讲义.pdf (32 pages, 834086 bytes).
+PDF statistics:
+ 1326 PDF objects out of 1440 (max. 8388607)
+ 986 compressed objects within 10 object streams
+ 273 named destinations out of 1000 (max. 500000)
+ 421 words of extra memory for PDF output out of 10000 (max. 10000000)
+
+=======
+Package rerunfilecheck Info: File `数理方法小班讲义.out' has not changed.
+(rerunfilecheck)             Checksum: 5B16620DDFA05BDD6680E26189EDE7B8;8765.
+========
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: AC4E164A6E63F8838FC1E46F9E9F0706;12866.
+>>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f:小班讲义/数学物理方法1小班讲义/tex/main.log
+ ) 
+Here is how much of TeX's memory you used:
+ 47811 strings out of 474772
+ 1180349 string characters out of 5761268
+ 1945842 words of memory out of 5000000
+ 69183 multiletter control sequences out of 15000+600000
+ 580542 words of font info for 151 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 107i,20n,110p,1295b,2110s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+<<<<<<<< HEAD:小班讲义/数学物理方法1小班讲义/tex/数理方法小班讲义.log
+Output written on 数理方法小班讲义.xdv (34 pages, 305180 bytes).
+>>>>>>> 753aea3cbcdc02d77487d06b441e07a792c27660
+========
+Output written on main.xdv (47 pages, 478704 bytes).
+>>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f:小班讲义/数学物理方法1小班讲义/tex/main.log
+>>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
