@@ -27,11 +27,7 @@
 \contentsline {subsection}{\numberline {1.2.3}$\mathbb {R}^3 $空间重要积分恒等式及其证明}{11}{subsection.1.2.3}%
 \contentsline {subsubsection}{\numberline {1.2.3.1}高斯定理}{11}{subsubsection.1.2.3.1}%
 \contentsline {subsubsection}{\numberline {1.2.3.2}斯托克斯定理}{11}{subsubsection.1.2.3.2}%
-<<<<<<< HEAD
-\contentsline {subsubsection}{\numberline {1.2.3.3}格林第一恒等式}{11}{subsubsection.1.2.3.3}%
-=======
 \contentsline {subsubsection}{\numberline {1.2.3.3}格林第一恒等式}{12}{subsubsection.1.2.3.3}%
->>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
 \contentsline {subsubsection}{\numberline {1.2.3.4}格林第二恒等式}{12}{subsubsection.1.2.3.4}%
 \contentsline {subsubsection}{\numberline {1.2.3.5}高斯定理的一个推论}{13}{subsubsection.1.2.3.5}%
 \contentsline {subsubsection}{\numberline {1.2.3.6}斯托克斯定理的一个推论}{14}{subsubsection.1.2.3.6}%
@@ -67,11 +63,6 @@
 \contentsline {section}{\numberline {3.3}线性算符的本征值和本征向量}{21}{section.3.3}%
 \contentsline {section}{\numberline {3.4}一些定理}{21}{section.3.4}%
 \contentsline {section}{\numberline {3.5}例题}{23}{section.3.5}%
-<<<<<<< HEAD
-\contentsline {subsection}{\numberline {3.5.1}纯态下可观测量期望值}{23}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}混合态下可观测量期望值}{24}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}不确定性关系}{25}{subsection.3.5.3}%
-=======
 \contentsline {subsection}{\numberline {3.5.1}完备性关系}{23}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}纯态下可观测量期望值}{23}{subsection.3.5.2}%
 \contentsline {subsection}{\numberline {3.5.3}混合态下可观测量期望值}{25}{subsection.3.5.3}%
@@ -111,4 +102,3 @@
 \contentsline {subsubsection}{\numberline {4.5.4.1}所需函数}{37}{subsubsection.4.5.4.1}%
 \contentsline {subsubsection}{\numberline {4.5.4.2}例题}{37}{subsubsection.4.5.4.2}%
 \contentsline {subsection}{\numberline {4.5.5}留数定理在实积分中的应用}{40}{subsection.4.5.5}%
->>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
