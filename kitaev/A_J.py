@@ -5,7 +5,7 @@ def index(i, j):
 
 def kitaev_honeycomb_A(N1, N2, Jx, Jy, Jz, bc1, bc2):
     N = N1 * N2 # 总 unit cell 数
-    M = np.zeros((N, N), dtype=float)
+    M = np.zeros((N, N), dtype=float) # A 的右上角block
     
     def index(i, j):
         return i + j * N1

@@ -1,6 +1,6 @@
 import numpy as np
 
-def kitaev_A3(N1, N2, kappa=1, bc1="PBC", bc2="PBC"):
+def kitaev_A3(N1, N2, kappa, bc1, bc2):
     N = N1 * N2 # 总unit cell数
     A3 = np.zeros((2 * N, 2 * N))
     left_dash_arrow_matrix = np.zeros((2 * N, 2 * N))
@@ -20,7 +20,7 @@ def kitaev_A3(N1, N2, kappa=1, bc1="PBC", bc2="PBC"):
     
     for n2 in range(N2):
         for n1 in range(N1):
-            j = index(n1, n2, 0)
+            j = index(n1, n2, 0) # A子格
             
             plus_a1_n1 = (n1 + 1) % N1
             plus_a1_n2 = n2
