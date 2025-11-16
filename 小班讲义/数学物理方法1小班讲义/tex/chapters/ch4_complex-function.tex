@@ -556,11 +556,68 @@ f(z_0)
 =2\pi\mathrm{i}\sum\limits_{j=1}^{k} \mathrm{Res} f(z_j).
 \end{equation}
 
+\subsubsection{例题}
+
+\begin{example}
+    
+计算回路积分 $\displaystyle{I=\oint\limits_{l^+} \frac{\mathrm{d}z}{(z^2+1)(z-1)^2} }$，其中回路 $l$ 的方程为 $x^2+y^2-2x-2y=0.$
+
+\end{example}
+
+\begin{solution}
+    
+令 $\displaystyle{f(z)=\frac{1}{(z^2+1)(z-1)^2}=\frac{1}{(z+\mathrm{i})(z-\mathrm{i})(z-1)^2}  }$,
+
+在回路 $\displaystyle{l:(x-1)^2+(y-1)^2=\left(\sqrt{2} \right)^2 }$ 内的孤立奇点有：$z_1=\mathrm{i},z_2=1$，$z_1$ 为一阶极点，$z_2$ 为二阶极点。
+
+下面利用极限法计算 $f(z) $ 在回路 $l $ 内孤立奇点处的留数。
+
+$f(z) $ 在一阶极点 $z_1=\mathrm{i} $ 处的留数：
+
+\begin{equation}
+\begin{split}
+\mathrm{Res} f(z_1)
+&=\frac{1}{0!}\lim_{z\to z_1}\frac{\mathrm{d}^0}{\mathrm{d}z^0} \left[(z-z_1)\cdot f(z) \right] \\
+&=\lim_{z\to \mathrm{i}} (z-\mathrm{i})\cdot\frac{1}{(z+\mathrm{i})(z-\mathrm{i})(z-1)^2} \\
+&=\lim_{z\to \mathrm{i}} \frac{1 }{(z+\mathrm{i})(z-1)^2 }  \\
+&=\frac{1 }{2\mathrm{i}(\mathrm{i}-1)^2 }  \\
+&=\frac{1}{4},
+\end{split}
+\end{equation}
+
+$f(z) $ 在二阶极点 $z_2=1 $ 处的留数：
+
+\begin{equation}
+\begin{split}
+\mathrm{Res}f(z_2)
+&=\frac{1}{1!}\lim_{z\to z_2} \frac{\mathrm{d}^1}{\mathrm{d}z^1}\left[(z-z_2)^2\cdot f(z)\right] \\
+&=\lim_{z\to 1} \frac{\mathrm{d}}{\mathrm{d}z}\left[(z-1)^2\cdot \frac{1}{(z+\mathrm{i})(z-\mathrm{i})(z-1)^2} \right] \\
+&=\lim_{z\to 1} \frac{\mathrm{d} }{\mathrm{d}z } \left(\frac{1 }{z^2+1 } \right) \\
+&=\lim_{z\to 1} \frac{\mathrm{d} }{\mathrm{d}z } \left(\frac{1 }{z^2+1 } \right) \\
+&=\lim_{z\to 1} \frac{-2z }{\left(z^2+1 \right)^2 }  \\
+&=-\frac{1}{2},
+\end{split}
+\end{equation}
+
+由留数定理，有：
+
+\begin{equation}
+\begin{split}
+I
+&=\oint\limits_{l^+} \frac{\mathrm{d}z}{(z^2+1)(z-1)^2} \\
+&=2\pi\mathrm{i}\left[\mathrm{Res}f(z_1)+\mathrm{Res}f(z_2)\right] \\
+&=2\pi\mathrm{i}\left(\frac{1 }{4 } - \frac{1 }{2 } \right) \\ 
+&=-\frac{\pi}{2} \mathrm{i}.
+\end{split}
+\end{equation}
+
+\end{solution}
+
 \subsection{利用留数定理求无穷级数}
 
 \subsubsection{所需函数}
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}
 \begin{axis}[
@@ -590,7 +647,7 @@ f(z_0)
 \label{fig:cotplot}
 \end{figure}
 
-\subsubsection{例题}
+\subsubsection{例题**}
 
 \begin{example}
     
@@ -766,5 +823,345 @@ f(z) = \frac{h(x) }{g(x) },
 
 \subsection{留数定理在实积分中的应用}
 
+\subsubsection{计算一类被积函数为有理三角函数式的实积分}
 
+考虑如下形式的积分：
 
+\begin{equation}
+I
+=\int_{0}^{2\pi} f(\cos\theta,\sin\theta)\mathrm{d}\theta,
+\end{equation}
+
+其中，$f(\cos\theta,\sin\theta) $ 为不包含有孤立奇点 $\cos\theta $ 和 $\sin\theta $ 的有理函数。
+
+计算此类积分，利用欧拉公式换元，将实积分转换为复平面单位圆上的复积分，最后利用留数定理计算积分。
+
+令 $z=\mathrm{e}^{\mathrm{i}\theta} $，有：
+
+\begin{equation}
+z
+=\cos\theta+\mathrm{i}\sin\theta,\quad
+z^{-1}
+=\mathrm{e}^{-\mathrm{i}\theta}
+=\cos\theta-\mathrm{i}\sin\theta 
+\end{equation}
+
+于是：
+
+\begin{equation}
+\cos\theta = \frac{z+z^{-1} }{2 },\quad
+\sin\theta = \frac{z-z^{-1} }{2\mathrm{i} },  
+\end{equation}
+
+\begin{equation}
+\mathrm{d}z
+=\mathrm{i}\mathrm{e}^{\mathrm{i}\theta}\mathrm{d}\theta
+=\mathrm{i}z\mathrm{d}\theta,
+\end{equation}
+
+\begin{equation}
+\mathrm{d}\theta
+=\frac{\mathrm{d}z }{\mathrm{i}z },
+\end{equation}
+
+于是：
+
+\begin{equation}
+\begin{split}
+I
+&=\int_{0}^{2\pi} f(\cos\theta,\sin\theta)\mathrm{d}\theta \\
+&=\oint\limits_{C^+} f\left(\frac{z+z^{-1} }{2 },\frac{z-z^{-1} }{2\mathrm{i} } \right) \frac{1 }{\mathrm{i}z }\mathrm{d}z 
+\end{split}
+\end{equation}
+
+\subsubsection{例题}
+
+\begin{example}
+    
+计算定积分 $\displaystyle{I=\int_{0}^{2\pi} \frac{\mathrm{d}\theta }{1+\varepsilon\cos\theta }  }$，其中 $0<\varepsilon<1 $.
+
+\end{example}
+
+\begin{solution}
+    
+令：
+
+\begin{equation}
+z = \mathrm{e}^{\mathrm{i}\theta},\quad
+z^{-1} = \mathrm{e}^{-\mathrm{i}\theta},\quad
+\mathrm{d}z = \mathrm{i}\mathrm{e}^{\mathrm{i}\theta} \mathrm{d}\theta \Longrightarrow \mathrm{d}\theta = \frac{\mathrm{d}z }{\mathrm{i}\mathrm{e}^{\mathrm{i}\theta} } = \frac{\mathrm{d}z }{\mathrm{i}z },\quad
+\cos\theta = \frac{1 }{2 }\left(z+z^{-1} \right),
+\end{equation}
+
+于是待求积分 $I $ 可表示为：
+
+\begin{equation}
+\begin{split}
+I
+&=\int_{0}^{2\pi}\frac{\mathrm{d}\theta}{1+\varepsilon\cos\theta} \\
+&=\frac{2}{\mathrm{i}}\oint\limits_{C^+} \frac{1}{\varepsilon z^2+2z+\varepsilon}\mathrm{d}z,
+\end{split}
+\end{equation}
+
+其中，$C$ 是复平面上以原点为圆心的单位圆。
+
+令 $\displaystyle{f(z)=\frac{1}{\varepsilon z^2+2z+\varepsilon} }$ ，利用求根公式，可得被积函数的两个一阶极点：
+
+\begin{equation}
+z_1
+=\frac{-1+\sqrt{1-\varepsilon^2}}{\varepsilon},\quad
+z_2
+=\frac{-1-\sqrt{1-\varepsilon^2}}{\varepsilon}.
+\end{equation}
+
+利用因式分解，被积函数 $f(z)$ 可写为：
+
+\begin{equation}
+f(z)
+=\frac{1}{\varepsilon(z-z_1)(z-z_2)},
+\end{equation}
+
+其中，只有 $z_1$ 在积分回路 $C $ 内。
+
+计算 $f(z) $ 在回路内一阶极点 $z_1 $ 处的留数：
+
+\begin{equation}
+\begin{split}
+\mathrm{Res}f(z_1)
+&=\frac{1}{0!}\lim_{z\to z_1} \frac{\mathrm{d}^0}{\mathrm{d}z^0} (z-z_1)f(z) \\
+&=\lim_{z\to z_1} \frac{1}{\varepsilon(z-z_2)} \\
+&=\frac{1}{\varepsilon(z_1-z_2)} \\
+&=\frac{1}{2\sqrt{1-\varepsilon^2}},
+\end{split}
+\end{equation}
+
+由留数定理，有：
+
+\begin{equation}
+\begin{split}
+\oint\limits_{C^+} \frac{1}{\varepsilon z^2+2z+\varepsilon}\mathrm{d}z
+&=2\pi\mathrm{i}\mathrm{Res}f(z_1) \\
+&=2\pi\mathrm{i}\cdot\frac{1}{2\sqrt{1-\varepsilon^2}} \\
+&=\frac{\pi\mathrm{i}}{\sqrt{1-\varepsilon^2}},
+\end{split}
+\end{equation}
+
+于是待求积分 $I $ 为：
+
+\begin{equation}
+\begin{split}
+I
+&=\frac{2}{\mathrm{i}}\oint\limits_{C^+} \frac{1}{\varepsilon z^2+2z+\varepsilon}\mathrm{d}z \\
+&=\frac{2}{\mathrm{i}}\cdot\frac{\pi \mathrm{i}}{\sqrt{1-\varepsilon^2}} \\
+&=\frac{2\pi}{\sqrt{1-\varepsilon^2}}.
+\end{split}
+\end{equation}
+
+\end{solution}
+
+\begin{example}
+    
+计算定积分：$\displaystyle{I=\int_{0}^{2\pi} \frac{1}{3-2\cos\theta+\sin\theta}\mathrm{d}\theta }$.
+
+\end{example}
+
+\begin{solution}
+
+令：
+    
+\begin{equation}
+z = \mathrm{e}^{\mathrm{i}\theta},\quad
+z^{-1} = \mathrm{e}^{-\mathrm{i}\theta},\quad
+\mathrm{d}z = \mathrm{i}\mathrm{e}^{\mathrm{i}\theta} \mathrm{d}\theta,
+\end{equation}
+
+\begin{equation}
+\mathrm{d}\theta = \frac{\mathrm{d}z }{\mathrm{i}\mathrm{e}^{\mathrm{i}\theta} } = \frac{\mathrm{d}z }{\mathrm{i}z },\quad
+\cos\theta = \frac{1 }{2 }\left(z+z^{-1} \right),\quad
+\sin\theta = \frac{1 }{2\mathrm{i} } \left(z-z^{-1} \right).
+\end{equation}
+
+设 $C$ 是复平面上的单位圆，则待求积分 $I $ 可表达为：
+
+\begin{equation}
+\begin{split}
+I
+&=\int_{0}^{2\pi} \frac{1}{3-2\cos\theta+\sin\theta}\mathrm{d}\theta \\
+&=2\oint\limits_{C^+} \frac{\mathrm{d}z}{(1-2\mathrm{i})z^2+6\mathrm{i}z-1-2\mathrm{i}}.
+\end{split}
+\end{equation}
+
+令 $\displaystyle{f(z)=\frac{1}{(1-2\mathrm{i})z^2+6\mathrm{i}z-1-2\mathrm{i}} }$ ，$f(z) $ 有两个一阶极点 $z_1=2-\mathrm{i},z_2=\frac{2}{5}-\frac{1}{5}\mathrm{i} $，只有 $z_2$ 在单位圆 $C$ 内。
+
+由于 $z_1,z_2$ 是 $(1-2\mathrm{i})z^2+6\mathrm{i}z-1-2\mathrm{i}=0$ 的两根，于是 $f(z)$ 可表达为：
+
+\begin{equation}
+f(z)
+=\frac{1}{(1-2\mathrm{i})(z-z_1)(z-z_2)}.
+\end{equation}
+
+计算 $f(z)$ 在 $z_2$ 处的留数：
+
+\begin{equation}
+\begin{split}
+\mathrm{Res} f(z_2)
+&=\frac{1}{0!}\lim_{z\to z_2} \frac{\mathrm{d}^0}{\mathrm{d}z^0} (z-z_2)f(z) \\
+&=\lim_{z\to z_2} \frac{1 }{(1-2\mathrm{i})(z-z_1) }  \\
+&=\frac{1}{(1-2\mathrm{i})(z_2-z_1)} \\
+&=\frac{1}{4\mathrm{i}},
+\end{split}
+\end{equation}
+
+由留数定理，有：
+
+\begin{equation}
+\begin{split}
+\oint\limits_{C^+} f(z) \mathrm{d}z
+&=\oint\limits_{C^+} \frac{\mathrm{d}z}{(1-2\mathrm{i})z^2+6\mathrm{i}z-1-2\mathrm{i}} \\
+&=2\pi\mathrm{i}\mathrm{Res} f(z_2) \\
+&=\frac{\pi}{2},
+\end{split}
+\end{equation}
+
+于是：
+
+\begin{equation}
+\begin{split}
+I
+&=2\oint\limits_{C^+} \frac{\mathrm{d}z}{(1-2\mathrm{i})z^2+6\mathrm{i}z-1-2\mathrm{i}} \\
+&=2\cdot\frac{\pi}{2} \\
+&=\pi.
+\end{split}
+\end{equation}
+
+\end{solution}
+
+\subsubsection{多值函数的积分}
+
+\subsubsection{例题**}
+
+\begin{example}
+    
+计算 $\displaystyle{I=\int_0^{+\infty} \frac{\ln x }{\left(1+x^2 \right)^2 } \mathrm{d}x }$. 
+
+\end{example}
+
+\begin{solution}
+    
+若把 $\ln z $ 看成复平面到复平面的映射，则这个映射是多值的。为了消除多值性，我们把 $\ln z $ 看成黎曼面到复平面的映射。
+
+考虑如下的 keyhole 围道：
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[scale = 0.8, >={Kite[inset=0pt,length=0.32cm,bend]},
+    decoration={markings,
+    mark= at position .1 with {\arrow{>}},
+    mark= at position .32 with {\arrow{>}},
+    mark= at position .55 with {\arrow{>}},
+    % mark= at position 0.86 with {\arrow{>}},
+    }
+]
+    \def\gap{0.3}
+    \def\bigradius{3.5}
+    \def\littleradius{0.5}
+
+    % contour
+\filldraw[postaction = {decorate}, thick ,fill=gray!40] 
+let 
+    \n1 = {asin(\gap/2/\bigradius)},
+    \n2 = {asin(\gap/2/\littleradius)}
+in
+    (0+\n1:\bigradius) node[above right]{$R$}  arc (0+\n1:360-\n1:\bigradius) node[below left]{$C_{R}$} -- (0-\n2:\littleradius) arc (360-\n2:0+\n2:\littleradius) node[above right]{$\delta$} -- cycle;
+
+    \draw[thick,->] (300:\littleradius) arc (300:130:\littleradius) node[above]{$C_{\delta}$};
+    
+    % axes
+    \draw[-Latex] (-1.5*\bigradius,0) -- (1.5*\bigradius,0) node[below]{$\Re$} ;
+    \draw[-Latex] (0,-1.2*\bigradius) -- (0,1.2*\bigradius) node[right]{$\Im$};
+\end{tikzpicture}
+\caption{keyhole围道}
+\end{figure}
+
+实轴上方的路径记为 $C_1 $，下方的路径记为 $C_2 $。
+
+构造如下的函数：
+
+\begin{equation}
+f(z)
+=\frac{\ln^2 z }{\left(1+z^2 \right)^2 }
+=\frac{\ln^2 z }{(z+\mathrm{i})^2\left(z-\mathrm{i} \right)^2 } ,\quad \arg z \in (0,2\pi),\text{而非}\quad
+f(z)
+=\frac{\ln z }{\left(1+z^2 \right)^2 }.
+\end{equation}
+
+当 $\delta\to 0^+,R\to +\infty $ 时，$f(z) $ 在围道内的奇点为 $z_1=\mathrm{i},z_2=-\mathrm{i} $，其中 $z_1,z_2 $ 都是二阶极点。
+
+计算 $f(z) $ 在 $z_1=\mathrm{i} $ 处的留数：
+
+\begin{equation}
+\begin{split}
+\mathrm{Res}f(z_1)
+&=\frac{1 }{1! } \lim_{z\to z_1} \frac{\mathrm{d}^1 }{\mathrm{d}z^1 } \left[(z-z_1)^2 f(z) \right] \\
+&=\frac{-4\pi + \pi^2 \mathrm{i} }{16 },
+\end{split}
+\end{equation}
+
+计算 $f(z) $ 在 $z_2=-\mathrm{i} $ 处的留数：
+
+\begin{equation}
+\begin{split}
+\mathrm{Res}f(z_2)
+&=\frac{1 }{1! } \lim_{z\to z_2} \frac{\mathrm{d}^1 }{\mathrm{d}z^1 } \left[(z-z_2)^2 f(z) \right] \\
+&=\frac{12\pi - 9 \pi^2 \mathrm{i} }{16 },
+\end{split}
+\end{equation}
+
+由留数定理，有：
+
+\begin{equation}
+\lim_{\delta\to 0^+,R\to +\infty} \left(\int\limits_{C_R} + \int\limits_{C_\delta} + \int\limits_{C_1} + \int\limits_{C_2} \right) f(z)\mathrm{d}z
+=2\pi \mathrm{i} \left(\mathrm{Res}f(z_1) + \mathrm{Res}f(z_2) \right),
+\end{equation}
+
+可以证明，当 $\delta\to 0^+,R\to +\infty $ 时，大圆弧和小圆弧上的积分为零。
+
+并且，沿 $C_1 $ 的积分与沿 $C_2 $ 的积分有关系，具体如下：
+
+\begin{equation}
+\begin{split}
+\lim_{\delta\to 0^+,R\to +\infty} \int\limits_{z'\in C_2} f(z') \mathrm{d}z'
+&=\lim_{\delta\to 0^+,R\to +\infty} \int\limits_{z\in C_1} f\left(z \mathrm{e}^{\mathrm{i} 2\pi} \right) (-\mathrm{d}z) \\
+&=\lim_{\delta\to 0^+,R\to +\infty} -\int\limits_{z\in C_1} \frac{\ln^2\left(z \mathrm{e}^{\mathrm{i}2\pi} \right) }{\left(1+z^2 \right)^2 } \mathrm{d}z \\
+&=\lim_{\delta\to 0^+,R\to +\infty} -\int\limits_{z\in C_1} \frac{\left(\ln z + \mathrm{i}2\pi \right)^2 }{\left(1+z^2 \right)^2 } \mathrm{d}z \\
+&=\lim_{\delta\to 0^+,R\to +\infty} \int\limits_{z\in C_1} \frac{-\ln^2 z -4\pi \mathrm{i} \ln z + 4\pi^2 }{\left(1+z^2 \right)^2 } \mathrm{d}z,
+\end{split}
+\end{equation}
+
+于是
+
+\begin{equation}
+\begin{split}
+\lim_{\delta\to 0^+,R\to +\infty} \left(\int\limits_{C_1} + \int\limits_{C_2} \right) f(z) \mathrm{d}z
+&=\lim_{\delta\to 0^+,R\to +\infty} -4\pi \mathrm{i} \int\limits_{C_1} \frac{\ln z }{\left(1+z^2 \right)^2 }\mathrm{d}z + 4\pi^2 \int\limits_{C_1} \frac{1 }{\left(1+z^2 \right)^2 } \mathrm{d}z \\
+&=-4\pi \mathrm{i} I + 4\pi^2 A. 
+\end{split}
+\end{equation}
+
+其中 $I,A $ 都是实数。
+
+把所有计算结果代入留数定理，有：
+
+\begin{equation}
+-4\pi \mathrm{i} I + 4\pi^2 A
+=\pi^3 + \pi^2 \mathrm{i}.
+\end{equation}
+
+对比实部和虚部，就得到：
+
+\begin{equation}
+I
+=-\frac{\pi }{4 }.
+\end{equation}
+    
+\end{solution}

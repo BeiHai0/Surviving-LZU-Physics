@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.11)  14 NOV 2025 18:44
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.11)  16 NOV 2025 19:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -602,26 +602,44 @@ Package pgfplots: loading complementary utilities for your pgf version...
 File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.markings.code.tex (c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.markings.code.tex)) (c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+))) (c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybending.code.tex
+File: tikzlibrarybending.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmodulebending.code.tex
+File: pgfmodulebending.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmodulenonlineartransformations.code.tex
+File: pgfmodulenonlineartransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgftransformnonlinearflatness=\dimen324
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibrarycurvilinear.code.tex
+File: pgflibrarycurvilinear.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@curvilinear@time@a=\dimen325
+\pgf@curvilinear@length@a=\dimen326
+\pgf@curvilinear@length@b=\dimen327
+\pgf@curvilinear@length@c=\dimen328
+\pgf@curvilinear@length@d=\dimen329
+)
+\pgf@arrows@the@rigidity=\dimen330
+)) (c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.markings.code.tex (c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.markings.code.tex)) (c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowinset=\dimen324
-\pgfarrowlength=\dimen325
-\pgfarrowwidth=\dimen326
-\pgfarrowlinewidth=\dimen327
+\pgfarrowinset=\dimen331
+\pgfarrowlength=\dimen332
+\pgfarrowwidth=\dimen333
+\pgfarrowlinewidth=\dimen334
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (c:/texlive/2024/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
  (c:/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
  (c:/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen328
-\captionmargin=\dimen329
-\caption@leftmargin=\dimen330
-\caption@rightmargin=\dimen331
-\caption@width=\dimen332
-\caption@indent=\dimen333
-\caption@parindent=\dimen334
-\caption@hangindent=\dimen335
+\caption@tempdima=\dimen335
+\captionmargin=\dimen336
+\caption@leftmargin=\dimen337
+\caption@rightmargin=\dimen338
+\caption@width=\dimen339
+\caption@indent=\dimen340
+\caption@parindent=\dimen341
+\caption@hangindent=\dimen342
 Package caption Info: Standard document class detected.
 )
 \c@caption@flags=\count341
@@ -674,7 +692,7 @@ Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count347
 )
-\@linkdim=\dimen336
+\@linkdim=\dimen343
 \Hy@linkcounter=\count348
 \Hy@pagecounter=\count349
  (c:/texlive/2024/texmf-dist/tex/latex/hyperref/pd1enc.def
@@ -700,15 +718,15 @@ Package hyperref Info: Bookmarks ON on input line 4446.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4784.
-\XeTeXLinkMargin=\dimen337
+\XeTeXLinkMargin=\dimen344
  (c:/texlive/2024/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (c:/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count352
-\Field@Width=\dimen338
-\Fld@charsize=\dimen339
+\Field@Width=\dimen345
+\Fld@charsize=\dimen346
 Package hyperref Info: Hyper figures OFF on input line 6063.
 Package hyperref Info: Link nesting OFF on input line 6068.
 Package hyperref Info: Hyper index ON on input line 6071.
@@ -747,18 +765,18 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip70
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 23.
+Package hyperref Info: Option `colorlinks' set `true' on input line 22.
  (c:/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2023/10/27 v2.16 Sectioning titles
 \ttl@box=\box73
 \beforetitleunit=\skip71
 \aftertitleunit=\skip72
-\ttl@plus=\dimen340
-\ttl@minus=\dimen341
+\ttl@plus=\dimen347
+\ttl@minus=\dimen348
 \ttl@toksa=\toks51
-\titlewidth=\dimen342
-\titlewidthlast=\dimen343
-\titlewidthfirst=\dimen344
+\titlewidth=\dimen349
+\titlewidthlast=\dimen350
+\titlewidthfirst=\dimen351
 ) (c:/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@headwidth=\skip73
@@ -796,7 +814,7 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \c@tcblayer=\count366
 \c@tcolorbox@number=\count367
 \l__tcobox_tmpa_box=\box78
-\l__tcobox_tmpa_dim=\dimen345
+\l__tcobox_tmpa_dim=\dimen352
 \tcb@temp=\box79
 \tcb@temp=\box80
 \tcb@temp=\box81
@@ -834,9 +852,9 @@ Library (tcolorbox): 'tcbhooks.code.tex' version '6.2.0'
 Library (tcolorbox): 'tcbtheorems.code.tex' version '6.2.0'
 ) (c:/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
 Library (tcolorbox): 'tcbfitting.code.tex' version '6.2.0'
-\tcbfitdim=\dimen346
-\tcb@lowerfitdim=\dimen347
-\tcb@upperfitdim=\dimen348
+\tcbfitdim=\dimen353
+\tcb@lowerfitdim=\dimen354
+\tcb@upperfitdim=\dimen355
 \tcb@cur@hbadness=\count372
 ) (c:/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcblistingsutf8.code.tex
 Library (tcolorbox): 'tcblistingsutf8.code.tex' version '6.2.0'
@@ -847,14 +865,14 @@ Library (tcolorbox): 'tcblistings.code.tex' version '6.2.0'
 \lst@gtempboxa=\box87
 \lst@token=\toks54
 \lst@length=\count374
-\lst@currlwidth=\dimen349
+\lst@currlwidth=\dimen356
 \lst@column=\count375
 \lst@pos=\count376
-\lst@lostspace=\dimen350
-\lst@width=\dimen351
+\lst@lostspace=\dimen357
+\lst@width=\dimen358
 \lst@newlines=\count377
 \lst@lineno=\count378
-\lst@maxwidth=\dimen352
+\lst@maxwidth=\dimen359
  (c:/texlive/2024/texmf-dist/tex/latex/listings/lstpatch.sty
 File: lstpatch.sty 2024/02/21 1.10 (Carsten Heinz)
 ) (c:/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
@@ -1090,10 +1108,32 @@ Underfull \vbox (badness 1406) has occurred while \output is active []
 第四章
 [28
 
-] [29] [30] [31] [32] [33] [34] [35] [36]
+] [29] [30] [31] [32] [33] [34] [35] [36] [37]
 NOTE: coordinate (2Y2.0e0],4Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
 NOTE: coordinate (1Y2.0e0],4Y0.0e0]) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-[37] [38]) (./appendices.tex) [39] [40] (./main.bbl) [41
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[39] [40] [41] [42] [43]
+Underfull \vbox (badness 2717) has occurred while \output is active []
+
+ [44] [45]) (./chapters/ch5_fourier.tex [46]
+第五章
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [47
+
+]
+Overfull \hbox (16.2866pt too wide) detected at line 68
+[]
+ []
+
+[48]) (./chapters/ch6_laplace.tex) (./chapters/ch7_delta.tex) (./appendices.tex) [49] [50] (./main.bbl) [51
 
 
 ] (./main.aux)
@@ -1102,15 +1142,15 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: AC4E164A6E63F8838FC1E46F9E9F0706;12866.
+(rerunfilecheck)             Checksum: 771B35EF05C48930E3A7691E43418234;14683.
  ) 
 Here is how much of TeX's memory you used:
- 47813 strings out of 474772
- 1180432 string characters out of 5761268
- 1946842 words of memory out of 5000000
- 69185 multiletter control sequences out of 15000+600000
+ 48143 strings out of 474772
+ 1188779 string characters out of 5761268
+ 1947842 words of memory out of 5000000
+ 69491 multiletter control sequences out of 15000+600000
  580542 words of font info for 151 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,20n,110p,1295b,2110s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,20n,110p,1295b,2109s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (47 pages, 479036 bytes).
+Output written on main.xdv (57 pages, 577856 bytes).

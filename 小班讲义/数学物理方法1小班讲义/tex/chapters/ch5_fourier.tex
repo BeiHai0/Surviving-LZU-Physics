@@ -1,0 +1,148 @@
+\chapter{傅里叶变换}
+
+\section{傅里叶级数}
+
+\subsection{周期函数作为Hilbert空间的元素}
+
+设 $\mathcal{H}$ 是一个希尔伯特空间，其元素是周期为 $2l$ 的单变量函数，$\forall f_1,f_2\in \mathcal{H}$，$\mathcal{H}$ 上两个元素的内积，记为 $\braket{f_1,f_2} $，定义为：
+
+\begin{equation}
+\Braket{f_1 , f_2 }
+\equiv \int_{x=-l}^{x=l} f_1^*(x)f_2(x)\mathrm{d}x,
+\end{equation}
+
+其中，$x $ 是参数，而内积与参数无关。为了指明参数，也可将内积写为：
+
+\begin{equation}
+\braket{f_1(x),f_2(x)}
+\equiv \int_{x=-l}^{x=l} f_1^*(x)f_2(x)\mathrm{d}x.
+\end{equation}
+
+若 $f(x) $ 是实函数，则内积可简化为：
+
+\begin{equation}
+\Braket{f_1 , f_2 }
+\equiv \int_{x=-l}^{x=l} f_1(x)f_2(x)\mathrm{d}x.
+\end{equation}
+
+\subsection{周期函数的三角函数基傅里叶级数}
+
+可以验证以下结论：
+
+\begin{equation}
+\left\{
+\begin{aligned}
+&\int_{x=-l}^{x=l} \frac{1}{\sqrt{2l}}\cdot\frac{1}{\sqrt{2l}}\mathrm{d}x
+=1 \\
+&\int_{x=-l}^{x=l} \frac{1}{\sqrt{2l}}\cdot\frac{1}{\sqrt{l}}\sin \frac{n\pi}{l}x\mathrm{d}x
+=0 \\
+&\int_{x=-l}^{x=l} \frac{1}{\sqrt{2l}}\cdot\frac{1}{\sqrt{l}}\cos \frac{m\pi}{l} x\mathrm{d}x
+=0 \\
+&\int_{x=-l}^{x=l}\frac{1}{\sqrt{l}} \sin\frac{n\pi}{l} x\cdot\frac{1}{\sqrt{l}} \sin\frac{m\pi}{l} x\mathrm{d}x
+=\delta_{n,m},\quad n=1,2,\cdots,m=0,1,2,\cdots \\
+&\int_{x=-l}^{x=l}\frac{1}{\sqrt{l}} \sin\frac{n\pi}{l} x\cdot\frac{1}{\sqrt{l}} \cos\frac{m\pi}{l} x\mathrm{d}x
+=0,\quad n=1,2,\cdots,m=0,1,2,\cdots \\
+&\int_{x=-l}^{x=l}\frac{1}{\sqrt{l}} \cos\frac{n\pi}{l} x\cdot\frac{1}{\sqrt{l}} \cos\frac{m\pi}{l} x\mathrm{d}x
+=\delta_{n,m},\quad n,m=0,1,2,\cdots
+\end{aligned}
+\right.
+\end{equation}
+
+可以证明，函数系 $\displaystyle{\left\{\frac{1}{\sqrt{2l}},\quad \frac{1}{\sqrt{l}}\sin\frac{n\pi}{l} x,\quad \frac{1}{\sqrt{l}}\cos\frac{m\pi}{l} x;\quad n,m=1,2,\cdots\right\} }$  是一个完备的正交归一函数族，任意一个周期为 $2l$ 的，满足狄利克雷条件的函数 $f(x)$ 可写成这些基函数的线性组合，即 $f(x) $ 可展成三角函数基的傅里叶级数：
+
+\begin{equation}
+f(x)
+=a_0\cdot\frac{1}{\sqrt{2l}}+\sum_{k=1}^{\infty} \left(a_k\cdot\frac{1}{\sqrt{l}}\cos\frac{k\pi}{l} x+b_k\cdot\frac{1}{\sqrt{l}}\sin\frac{k\pi}{l} x \right)
+\end{equation}
+
+为求出线性组合的系数，只需要利用“这组基是正交归一完备的”这一性质，比如：
+
+\begin{equation}
+\begin{split}
+\Braket{\frac{1 }{\sqrt{l} } \cos\frac{k'\pi }{l } x , f(x)}
+&=\Braket{\frac{1 }{\sqrt{l} } \cos\frac{k'\pi }{l } x , a_0\cdot\frac{1}{\sqrt{2l}}+\sum_{k=1}^{\infty} \left(a_k\cdot\frac{1}{\sqrt{l}}\cos\frac{k\pi}{l} x+b_k\cdot\frac{1}{\sqrt{l}}\sin\frac{k\pi}{l} x \right)} \\
+&=\sum_{k=1}^{\infty} a_k\Braket{\frac{1 }{\sqrt{l} } \cos\frac{k'\pi }{l } x , \frac{1}{\sqrt{l}}\cos\frac{k\pi}{l} x} \\
+&=\sum_{k=1}^{\infty} a_k \delta_{k',k} \\
+&=a_{k'}
+\end{split}
+\end{equation}
+
+总之：
+
+\begin{equation}
+a_0
+=\Braket{\frac{1}{\sqrt{2l}},f(x)}
+=\int_{-l}^{l} \frac{1}{\sqrt{2l}}\cdot f(x)\mathrm{d}x
+=\frac{1}{\sqrt{2l}}\int_{-l}^{l} f(x)\mathrm{d}x,
+\end{equation}
+
+\begin{equation}
+a_k
+=\Braket{\frac{1}{\sqrt{l}}\cos\frac{k\pi}{l} x,f(x)}
+=\int_{x=-l}^{x=l}\frac{1}{\sqrt{l}}\cos\frac{k\pi}{l} x\cdot f(x)\mathrm{d}x
+=\frac{1}{\sqrt{l}}\int_{x=-l}^{x=l} f(x)\cos\frac{k\pi}{l} x\mathrm{d}x,
+\end{equation}
+
+\begin{equation}
+b_k
+=\Braket{\frac{1}{\sqrt{l}}\sin\frac{k\pi}{l} x,f(x)}
+=\int_{x=-l}^{x=l}\frac{1}{\sqrt{l}}\sin\frac{k\pi}{l} x\cdot f(x)\mathrm{d}x
+=\frac{1}{\sqrt{l}}\int_{x=-l}^{x=l} f(x)\sin\frac{k\pi}{l} x\mathrm{d}x.
+\end{equation}
+
+\subsection{周期函数的 e 指数基傅里叶级数展开}
+
+注意到：
+
+\begin{equation}
+\frac{1}{2\pi}\int_{-\pi}^{\pi} \mathrm{e}^{\mathrm{i}(m-n)x}\mathrm{d}x
+=\delta_{m,n},
+\end{equation}
+
+可以证明，函数系 $\displaystyle{\left\{\frac{1}{\sqrt{2\pi}}\mathrm{e}^{\mathrm{i}m x},m\in \mathbb{Z} \right\} }$  可作为以 $2\pi$ 为周期的函数为元素的希尔伯特空间 $\mathcal{H}$ 中的一组正交完备归一基矢，以 $2\pi$ 为周期的函数 $f$ 在这组基矢上的展开式为：
+
+\begin{equation}
+f(x)
+=\sum_{m=-\infty}^{\infty} C_m\cdot\frac{1}{\sqrt{2\pi}}\mathrm{e}^{\mathrm{i}mx} .
+\end{equation}
+
+利用正交归一条件
+
+\begin{equation}
+\begin{split}
+\Braket{\frac{1 }{\sqrt{2\pi} }\mathrm{e}^{\mathrm{i}n x}, \frac{1 }{\sqrt{2\pi} } \mathrm{e}^{\mathrm{i}m x} }
+&\equiv \int_{-\infty}^{+\infty} \left(\frac{1 }{\sqrt{2\pi} }\mathrm{e}^{\mathrm{i}n x} \right)^* \cdot \left(\frac{1 }{\sqrt{2\pi} } \mathrm{e}^{\mathrm{i}m x} \right)\mathrm{d}x \\
+&=\frac{1 }{2\pi } \int_{-\infty}^{+\infty} \mathrm{e}^{\mathrm{i}(m-n)x}\mathrm{d}x \\
+&=\delta_{m,n},
+\end{split}
+\end{equation}
+
+内积可得系数：
+
+\begin{equation}
+\begin{split}
+\Braket{\frac{1 }{\sqrt{2\pi} } \mathrm{e}^{\mathrm{i}n x}, f(x)}
+&=\Braket{\frac{1 }{\sqrt{2\pi} } \mathrm{e}^{\mathrm{i}n x}, \sum_{m=-\infty}^{\infty} C_m\cdot\frac{1}{\sqrt{2\pi}}\mathrm{e}^{\mathrm{i}m x} } \\
+&=\sum_{m=-\infty}^{\infty} C_m \Braket{\frac{1 }{\sqrt{2\pi} }\mathrm{e}^{\mathrm{i}n x}, \frac{1 }{\sqrt{2\pi} } \mathrm{e}^{\mathrm{i}m x} } \\
+&=\sum_{m=-\infty}^{\infty} C_m\delta_{m,n} \\
+&=C_n,
+\end{split}
+\end{equation}
+
+即系数 $C_m $ 可通过内积求得：
+
+\begin{equation}
+\begin{split}
+C_m
+=\Braket{\frac{1}{\sqrt{2\pi}} \mathrm{e}^{\mathrm{i}mx},f(x)}
+=\int_{-\pi}^{\pi}\left(\frac{1}{\sqrt{2\pi}} \mathrm{e} ^{\mathrm{i}mx}\right)^*\cdot f(x)\mathrm{d}x
+=\frac{1}{\sqrt{2\pi}} \int_{-\pi}^{\pi} f(x) \mathrm{e}^{-\mathrm{i}mx}\mathrm{d}x.
+\end{split}
+\end{equation}
+
+\section{傅里叶变换}
+
+\section{傅里叶变换的基本性质}
+
+\section{例题}
+

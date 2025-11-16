@@ -1,20 +1,20 @@
 # Fdb version 4
-["bibtex main"] 1763116972.0526 "main.aux" "main.bbl" "main" 1763117094.25863 0
+["bibtex main"] 1763293384.75093 "main.aux" "main.bbl" "main" 1763293391.49806 0
   "./references/references.bib" 1763116965 155 3512daddf25f7c3dc654d2181738d036 ""
   "c:/texlive/2024/texmf-dist/bibtex/bst/base/plain.bst" 1736593294 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "main.aux" 1763117091 15528 521a829f33f3fe88e60bad67e1b6151e "xelatex"
+  "main.aux" 1763293389 17646 f7a61bbdae0465b18aab6fd469942ad9 "xelatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["xdvipdfmx"] 1763117092.8941 "main.xdv" "main.pdf" "main" 1763117094.27724 0
-  "main.xdv" 1763117091 479036 051bd000420ccafc2e0397e965eba66e "xelatex"
+["xdvipdfmx"] 1763293390.46413 "main.xdv" "main.pdf" "main" 1763293391.5121 0
+  "main.xdv" 1763293389 577856 68e095501e01dd46517e6706b5cbca0f "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1763117087.76832 "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/小班讲义/数学物理方法1小班讲义/tex/main.tex" "main.xdv" "main" 1763117094.25902 0
+["xelatex"] 1763293385.31505 "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/小班讲义/数学物理方法1小班讲义/tex/main.tex" "main.xdv" "main" 1763293391.49835 0
   "appendices.tex" 1760936648 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/小班讲义/数学物理方法1小班讲义/tex/main.tex" 1763116989 1071 c7a984ac6ed3fbb804fe12c98d4f7fde ""
+  "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/小班讲义/数学物理方法1小班讲义/tex/main.tex" 1763293354 1169 391211ebcd8e5caab7f299a16dbdde3e ""
   "c:/Windows/Fonts/msyh.ttc" 1575709707 19647736 ff2e53a6131130a07589812ea5b5b0d0 ""
   "c:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1736593776 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1736595491 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
@@ -75,6 +75,8 @@
   "c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex" 1736594580 35249 abd4adf948f960299a4b3d27c5dddf46 ""
   "c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex" 1736594580 22012 81b34a0aa8fa1a6158cc6220b00e4f10 ""
   "c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex" 1736594580 8893 e851de2175338fdf7c17f3e091d94618 ""
+  "c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybending.code.tex" 1736594580 345 9efe6b557b64ab0401dc06a4ef8ca04c ""
+  "c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex" 1736594580 15929 463535aa2c4268fead6674a75c0e8266 ""
   "c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex" 1736594580 5628 dc0ee4ba7f3e40acae5600067ce833de ""
   "c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.markings.code.tex" 1736594580 788 fb28645a91ec7448ebe79bee60965a88 ""
   "c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex" 1736594580 321 cdd11262840e01e25374a2d458f15e99 ""
@@ -87,6 +89,7 @@
   "c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex" 1736594580 8843 5533436db3e30fbad1e0440db6027dac ""
   "c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex" 1736594580 7474 f05a7223b140f230922562ac6a9fede5 ""
   "c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex" 1736594580 58801 1e750fb0692eb99aaac45698bbec96b1 ""
+  "c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibrarycurvilinear.code.tex" 1736594580 14117 ce877c5ca2b43f31c2cd81e74cc26bd9 ""
   "c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex" 1736594580 2563 d5b174eb7709fd6bdcc2f70953dbdf8e ""
   "c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex" 1736594580 85938 8e4ba97c5906e1c0d158aea81fe29af7 ""
   "c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex" 1736594580 32995 ac577023e12c0e4bd8aa420b2e852d1a ""
@@ -106,8 +109,10 @@
   "c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex" 1736594580 92405 f515f31275db273f97b9d8f52e1b0736 ""
   "c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex" 1736594580 37466 97b0a1ba732e306a1a2034f5a73e239f ""
   "c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex" 1736594580 8471 c2883569d03f69e8e1cabfef4999cfd7 ""
+  "c:/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmodulebending.code.tex" 1736594580 10901 2a1622fae7fe4eb4574c13e264019b2f ""
   "c:/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex" 1736594580 71742 3da44a8be6626eef1c400c68776c7a0f ""
   "c:/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex" 1736594580 21211 1e73ec76bd73964d84197cc3d2685b01 ""
+  "c:/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmodulenonlineartransformations.code.tex" 1736594580 12243 a8b138086af750a4e0d253790eb930d8 ""
   "c:/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex" 1736594580 16121 346f9013d34804439f7436ff6786cef7 ""
   "c:/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex" 1736594580 44792 271e2e1934f34c759f4dedb1e14a5015 ""
   "c:/texlive/2024/texmf-dist/tex/generic/pgf/pgf.revision.tex" 1736594580 114 e6d443369d0673933b38834bf99e422d ""
@@ -283,16 +288,19 @@
   "c:/texlive/2024/texmf.cnf" 1736595510 713 e69b156964470283e0530f5060668171 ""
   "chapters/ch1_vector-analysis.tex" 1762144569 29322 5daeddc3774df250cb6208f521310ce6 ""
   "chapters/ch2_vector-analysis-in-curvilinear-coordinates.tex" 1761199677 1950 2dd6c8cd59de267b13b9441095d90527 ""
-  "chapters/ch3_linear-space.tex" 1761482149 15248 3d315bdaf6bb1aa4fc943358afa07ad9 ""
-  "chapters/ch4_complex-function.tex" 1763117086 23451 521cd63c1080486b6e37397390d0a60b ""
+  "chapters/ch3_linear-space.tex" 1763289149 15249 346e0acb66e47122e959f29ee08c788e ""
+  "chapters/ch4_complex-function.tex" 1763288642 35941 77f0ec8ba9acd3bd7ab2b962ef43446a ""
+  "chapters/ch5_fourier.tex" 1763293053 5823 762df7faa0cab73b4360d813f8ecf48d ""
+  "chapters/ch6_laplace.tex" 1763291200 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "chapters/ch7_delta.tex" 1763293381 26 4f3b049053d3075a71e8c607a30ff82d ""
   "frontmatter/preface.tex" 1760942030 766 e6ad30e5ffa685a5ce24478d7991e5c7 ""
   "frontmatter/titlepage.tex" 1760940625 288 3088e89db773129123e12b98036c3715 ""
-  "main.aux" 1763117091 15528 521a829f33f3fe88e60bad67e1b6151e "xelatex"
-  "main.bbl" 1763116972 186 c58a11757c22479adb62e73380ccc412 "bibtex main"
-  "main.out" 1763117091 12866 ac4e164a6e63f8838fc1e46f9e9f0706 "xelatex"
-  "main.tex" 1763116989 1071 c7a984ac6ed3fbb804fe12c98d4f7fde ""
-  "main.toc" 1763117091 10062 aae663e5e1ca6257dff12717c90bdaa4 "xelatex"
-  "preamble/preamble.tex" 1762592698 2456 6a5b193573a04f05ed9ed206f8b59775 ""
+  "main.aux" 1763293389 17646 f7a61bbdae0465b18aab6fd469942ad9 "xelatex"
+  "main.bbl" 1763293385 186 c58a11757c22479adb62e73380ccc412 "bibtex main"
+  "main.out" 1763293389 14683 771b35ef05c48930e3a7691e43418234 "xelatex"
+  "main.tex" 1763293354 1169 391211ebcd8e5caab7f299a16dbdde3e ""
+  "main.toc" 1763293389 11394 df78cad16ddaa47685091de14e1c796b "xelatex"
+  "preamble/preamble.tex" 1763285786 2424 7367c493f7c08b68cb20036ce74711fb ""
   (generated)
   "main.aux"
   "main.log"
