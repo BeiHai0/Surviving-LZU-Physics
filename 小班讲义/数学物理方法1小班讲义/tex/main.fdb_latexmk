@@ -1,18 +1,18 @@
 # Fdb version 4
-["bibtex main"] 1763293384.75093 "main.aux" "main.bbl" "main" 1763293391.49806 0
+["bibtex main"] 1763882512.05079 "main.aux" "main.bbl" "main" 1763882574.04815 0
   "./references/references.bib" 1763116965 155 3512daddf25f7c3dc654d2181738d036 ""
   "c:/texlive/2024/texmf-dist/bibtex/bst/base/plain.bst" 1736593294 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "main.aux" 1763293389 17646 f7a61bbdae0465b18aab6fd469942ad9 "xelatex"
+  "main.aux" 1763882571 20512 f8a45c92d567042edaa7582570abac19 "xelatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["xdvipdfmx"] 1763293390.46413 "main.xdv" "main.pdf" "main" 1763293391.5121 0
-  "main.xdv" 1763293389 577856 68e095501e01dd46517e6706b5cbca0f "xelatex"
+["xdvipdfmx"] 1763882572.87656 "main.xdv" "main.pdf" "main" 1763882574.06233 0
+  "main.xdv" 1763882571 666016 dc8242d8bf01ff49c90e78a09f39659e "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1763293385.31505 "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/小班讲义/数学物理方法1小班讲义/tex/main.tex" "main.xdv" "main" 1763293391.49835 0
+["xelatex"] 1763882567.0993 "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/小班讲义/数学物理方法1小班讲义/tex/main.tex" "main.xdv" "main" 1763882574.04846 0
   "appendices.tex" 1760936648 0 d41d8cd98f00b204e9800998ecf8427e ""
   "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/小班讲义/数学物理方法1小班讲义/tex/main.tex" 1763293354 1169 391211ebcd8e5caab7f299a16dbdde3e ""
   "c:/Windows/Fonts/msyh.ttc" 1575709707 19647736 ff2e53a6131130a07589812ea5b5b0d0 ""
@@ -290,16 +290,16 @@
   "chapters/ch2_vector-analysis-in-curvilinear-coordinates.tex" 1761199677 1950 2dd6c8cd59de267b13b9441095d90527 ""
   "chapters/ch3_linear-space.tex" 1763289149 15249 346e0acb66e47122e959f29ee08c788e ""
   "chapters/ch4_complex-function.tex" 1763288642 35941 77f0ec8ba9acd3bd7ab2b962ef43446a ""
-  "chapters/ch5_fourier.tex" 1763293053 5823 762df7faa0cab73b4360d813f8ecf48d ""
-  "chapters/ch6_laplace.tex" 1763291200 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "chapters/ch7_delta.tex" 1763293381 26 4f3b049053d3075a71e8c607a30ff82d ""
+  "chapters/ch5_fourier.tex" 1763802091 9790 1cc935a040cdf7f1c7f4ce69413055e1 ""
+  "chapters/ch6_laplace.tex" 1763878579 4929 74d278f6c52b9b6c4a85ed2218f341dd ""
+  "chapters/ch7_delta.tex" 1763882566 7285 e9095d894f3e3ec043ec500f07791270 ""
   "frontmatter/preface.tex" 1760942030 766 e6ad30e5ffa685a5ce24478d7991e5c7 ""
   "frontmatter/titlepage.tex" 1760940625 288 3088e89db773129123e12b98036c3715 ""
-  "main.aux" 1763293389 17646 f7a61bbdae0465b18aab6fd469942ad9 "xelatex"
-  "main.bbl" 1763293385 186 c58a11757c22479adb62e73380ccc412 "bibtex main"
-  "main.out" 1763293389 14683 771b35ef05c48930e3a7691e43418234 "xelatex"
+  "main.aux" 1763882571 20512 f8a45c92d567042edaa7582570abac19 "xelatex"
+  "main.bbl" 1763882512 186 c58a11757c22479adb62e73380ccc412 "bibtex main"
+  "main.out" 1763882571 17006 c1adac66745ba96f2dd1b4685a24e645 "xelatex"
   "main.tex" 1763293354 1169 391211ebcd8e5caab7f299a16dbdde3e ""
-  "main.toc" 1763293389 11394 df78cad16ddaa47685091de14e1c796b "xelatex"
+  "main.toc" 1763882571 13245 278d1ba528a9903a56bcfa795df6797a "xelatex"
   "preamble/preamble.tex" 1763285786 2424 7367c493f7c08b68cb20036ce74711fb ""
   (generated)
   "main.aux"

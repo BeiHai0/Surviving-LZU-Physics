@@ -140,9 +140,83 @@ C_m
 \end{split}
 \end{equation}
 
+一般地，周期为 $2l $ 的周期函数 $f(x) $ 可在非归一的 $\mathrm{e} $ 指数基 $\left\{\mathrm{e}^{\mathrm{i}m \pi x / l},m\in \mathbb{Z} \right\} $ 上展开：
+
+\begin{equation}
+f(x)
+=\sum_{m=-\infty}^{\infty} C_m \mathrm{e}^{\mathrm{i} m \pi x / l },
+\end{equation}
+
+为了求出展开系数，上式两边同乘 $\mathrm{e}^{-\mathrm{i} m' \pi x / l } $，并对 $x $ 从 $-l $ 到 $l $ 积分：
+
+\begin{equation}
+\begin{split}
+\int_{-l}^{l} f(x) \mathrm{e}^{-\mathrm{i} m' \pi x / l } \mathrm{d}x
+&=\int_{-l}^{l} \left(\sum_{m=-\infty}^{\infty} C_m \mathrm{e}^{\mathrm{i} m \pi x / l } \right) \mathrm{e}^{-\mathrm{i} m' \pi x / l } \mathrm{d}x \\
+&=\sum_{m=-\infty}^{\infty} C_m \int_{-l}^{l} \mathrm{e}^{\mathrm{i}\left(m - m' \right)\pi x/l} \mathrm{d}x \\
+&=\sum_{m=-\infty}^{\infty} C_m \cdot 2l \delta_{m,m'} \\
+&=2l C_{m'}.
+\end{split}
+\end{equation}
+
+于是得到系数 $C_{m} $ 的表达式：
+
+\begin{equation}
+C_{m}
+=\frac{1 }{2l } \int_{-l}^{l} f(x) \mathrm{e}^{-\mathrm{i} m \pi x / l } \mathrm{d}x.
+\end{equation}
+
 \section{傅里叶变换}
 
-\section{傅里叶变换的基本性质}
+对于一个非周期函数 $f(x) $，我们可以认为其为周期无穷大的周期函数。
 
-\section{例题}
+先考虑一个周期为 $2l $ 的周期函数，其可在 $\mathrm{e} $ 指数基下展成如下的傅里叶级数：
+
+\begin{equation}
+\begin{split}
+f(x)
+&=\sum_{m=-\infty}^{\infty} C_m \mathrm{e}^{\mathrm{i}m\pi x/l} \\
+&=\sum_{m=-\infty}^{\infty} \left(\frac{1 }{2l } \int_{x'=-l}^{x'=l} f(x') \mathrm{e}^{-\mathrm{i} m \pi x' / l } \mathrm{d}x' \right) \mathrm{e}^{\mathrm{i}m\pi x/l} \\
+\end{split}
+\end{equation}
+
+令 $k=m\pi /l $，则 $m $ 遍历 $\mathbb{Z}\equiv \left\{0,\pm 1,\pm 2,\cdots \right\} $ 等价于 $k $ 遍历 $\frac{\pi }{l } \mathbb{Z}\equiv \left\{0,\pm \frac{\pi }{l }, \pm \frac{2\pi }{l },\cdots   \right\}  $，且 $\Delta m =1 $ 对应 $\Delta k= \frac{\pi }{l }  $ 于是上式对 $m $ 的求和可改写为：
+
+\begin{equation}
+\begin{split}
+f(x)
+&=\sum_{m=-\infty}^{\infty} \left(\frac{1 }{2l } \int_{x'=-l}^{x'=l} f(x') \mathrm{e}^{-\mathrm{i} m \pi x' / l } \mathrm{d}x' \right) \mathrm{e}^{\mathrm{i}m\pi x/l} \\
+&=\sum_{k\in \frac{\pi }{l } \mathbb{Z} } \left(\frac{1 }{2l } \int_{x'=-l}^{x'=l} f(x') \mathrm{e}^{-\mathrm{i} k x' } \mathrm{d}x' \right) \mathrm{e}^{\mathrm{i} k x} \\
+&=\sum_{k\in \frac{\pi }{l } \mathbb{Z} } \left(\frac{1 }{2l\cdot \Delta k } \int_{x'=-l}^{x'=l} f(x') \mathrm{e}^{-\mathrm{i} k x' } \mathrm{d}x' \right) \mathrm{e}^{\mathrm{i} k x} \Delta k \\
+&=\frac{1 }{2\pi }  \sum_{k\in \frac{\pi }{l } \mathbb{Z} } \left( \int_{x'=-l}^{x'=l} f(x') \mathrm{e}^{-\mathrm{i} k x' } \mathrm{d}x' \right) \mathrm{e}^{\mathrm{i} k x} \Delta k \\
+\end{split}
+\end{equation}
+
+现在令 $l\to +\infty $，相当于说 $f(x) $ 不是周期函数。此时 $\Delta k \to 0 $,
+
+\begin{equation}
+\lim_{l\to +\infty} \left( \int_{x'=-l}^{x'=l} f(x') \mathrm{e}^{-\mathrm{i} k x' } \mathrm{d}x' \right)
+=\int_{-\infty}^{+\infty} f(x') \mathrm{e}^{-\mathrm{i} k x' } \mathrm{d}x'
+\end{equation}
+
+定义函数 $f(x) $ 的傅里叶变换 $\tilde{f}(k) $ 为：
+
+\begin{equation}
+\tilde{f}(k)
+\equiv \int_{-\infty}^{+\infty} f(x) \mathrm{e}^{-\mathrm{i} k x } \mathrm{d}x
+\end{equation}
+
+进而有
+
+\begin{equation}
+\begin{split}
+f(x)
+&=\lim_{l\to +\infty} \left[\frac{1 }{2\pi }  \sum_{k\in \frac{\pi }{l } \mathbb{Z} } \left( \int_{x'=-l}^{x'=l} f(x') \mathrm{e}^{-\mathrm{i} k x' } \mathrm{d}x' \right) \mathrm{e}^{\mathrm{i} k x} \Delta k \right] \\
+&=\lim_{l\to +\infty} \left[\frac{1 }{2\pi }  \sum_{k\in \frac{\pi }{l } \mathbb{Z} } \tilde{f}(k) \mathrm{e}^{\mathrm{i} k x} \Delta k \right] \\
+&=\frac{1 }{2\pi } \int_{k=-\infty}^{k=+\infty} \tilde{f}(k) \mathrm{e}^{\mathrm{i}kx}\mathrm{d}k
+\end{split}
+\end{equation}
+
+上面这种把 $f(x) $ 展开成不同频率的平面波 $\mathrm{e}^{\mathrm{i} kx} $ 的方法称为傅里叶积分展开。波矢为 $k $ 的平面波前面的展开系数 $\tilde{f}(k) $ 就称为 $f(x) $ 的傅里叶变换。
+
 

@@ -1,0 +1,218 @@
+\chapter{拉普拉斯变换}
+
+\section{拉普拉斯变换的定义}
+
+对于定义在实数 $t\in[0,+\infty)$ 上的实函数或复函数 $f(t)$，$f(t)$ 的拉普拉斯变换，记为 $F(p) $，由下式定义：
+
+\begin{equation}
+F(p)
+\equiv \int_{t=0}^{t=+\infty} f(t)\mathrm{e}^{-p t} \mathrm{d}t,
+\end{equation}
+
+其中，$p=s+\mathrm{i}\sigma,s\in \mathbb{R},\sigma\in \mathbb{R},\mathrm{e}^{-pt}$ 称为拉普拉斯变换核，$F(p) $ 称为像函数，也记为：
+
+\begin{equation}
+F(p) \risingdotseq f(t),\quad f(t) \fallingdotseq F(p).
+\end{equation}
+
+\section{拉普拉斯变换的基本性质}
+
+\subsection{线性定理}
+
+设 $f_1(t)\fallingdotseq F_1(p),f_2(t)\fallingdotseq F_2(p),\alpha_1,\alpha_2\in \mathbb{C}$，则：
+
+\begin{equation}
+\alpha_1 f_1(t)+\alpha_2 f_2(t)
+\fallingdotseq \alpha_1F_1(p)+\alpha_2F_2(p).
+\end{equation}
+
+\subsection{延迟定理}
+
+定义阶跃函数 $H $:
+
+\begin{equation}
+H(t)
+\equiv\begin{cases}
+1&,t>0 \\
+0&,t\leqslant 0
+\end{cases},
+\end{equation}
+
+设 $f(t)\fallingdotseq F_(p),\tau>0 $，则：
+
+\begin{equation}
+f(t-\tau)H(t-\tau)\fallingdotseq \mathrm{e}^{-p\tau}F(p).
+\end{equation}
+
+\subsection{位移定理}
+
+设 $f(t)\fallingdotseq F(p),\lambda\in\mathbb{C} $，则：
+
+\begin{equation}
+\mathrm{e}^{-\lambda t}f(t)
+\fallingdotseq F(p+\lambda).
+\end{equation}
+
+\subsection{标度变换定理}
+
+设 $f(t)\fallingdotseq F(p),a>0 $，则：
+
+\begin{equation}
+f(at)
+\fallingdotseq \frac{1}{a}F\left(\frac{p}{a}\right),\quad a>0.
+\end{equation}
+
+\subsection{卷积定理}
+
+定义卷积：
+
+\begin{equation}
+f_1(t)*f_2(t)
+\equiv \int_{\tau=0}^{\tau=t} f_1(\tau)f_2(t-\tau)\mathrm{d}\tau,
+\end{equation}
+
+设 $f_1(t)\fallingdotseq F_1(p),f_2(t)\fallingdotseq F_2(p) $，则：
+
+\begin{equation}
+f_1(t)*f_2(t)
+\fallingdotseq F_1(p)F_2(p).
+\end{equation}
+
+\subsection{微分定理}
+
+设 $f(t)\fallingdotseq F(p) $，则：
+
+\begin{equation}
+f^{(n)}(t)
+\fallingdotseq p^n F(p)-p^{n-1}f^{(0)}(0)-p^{n-2}f^{(1)}(0)-\cdots-p^{1}f^{(n-2)}(0)-p^{0}f^{(n-1)}(0).
+\end{equation}
+
+特别地：
+
+\begin{equation}
+f^{(1)}(t)
+\fallingdotseq p^1 F(p)-p^0 f^{(0)}(0),
+\end{equation}
+
+也即：
+
+\begin{equation}
+f'(t)
+\fallingdotseq p F(p) - f(0).
+\end{equation}
+
+\begin{equation}
+f^{(2)}(t)
+\fallingdotseq p^2 F(p)-p^1f^{(0)}(0)-p^0f^{(1)}(0),
+\end{equation}
+
+也即：
+
+\begin{equation}
+f''(t)
+\fallingdotseq p^2 F(p) - p f(0) - f'(0).
+\end{equation}
+
+\section{常用拉普拉斯变换及反演}
+
+\begin{equation}
+\begin{split}
+\left\{
+\begin{aligned}
+&\frac{1}{p}
+\risingdotseq 1,\quad
+\frac{1}{p^2}
+\risingdotseq t,\quad
+\frac{n!}{p^{n+1}}
+\risingdotseq t^n \\[1mm]
+&\frac{1}{p-\alpha}
+\risingdotseq \mathrm{e}^{\alpha t},\quad
+\frac{n!}{(p-n)^{n+1}}
+\risingdotseq t^n\mathrm{e}^{\alpha t} \\[1mm]
+&\frac{\alpha}{p^2+\alpha^2}
+\risingdotseq \sin\alpha t,\quad
+\frac{p}{p^2+\alpha^2}
+\risingdotseq \cos\alpha t \\[1mm]
+&\frac{\alpha}{p^2-\alpha^2}
+\risingdotseq \sinh\alpha t,\quad
+\frac{p}{p^2-\alpha^2}
+\risingdotseq \cosh\alpha t.
+\end{aligned}
+\right.
+\end{split}
+\end{equation}
+
+\section{拉普拉斯变换的应用}
+
+\subsection{例题}
+
+\begin{example}
+
+用拉普拉斯变换解下列 $RL $ 串联电路方程，其中 $L,R,E $ 为常数：
+
+\begin{equation}
+\left\{
+\begin{aligned}
+&L\frac{\mathrm{d}i(t) }{\mathrm{d}t } + R i(t) = E, \\
+&i(0) = 0.
+\end{aligned}
+\right.
+\end{equation}
+
+\end{example}
+
+\begin{solution}
+    
+设 $i(t)\fallingdotseq F(p) $，微分定理给出：
+
+\begin{equation}
+\frac{\mathrm{d}i(t) }{\mathrm{d}t }
+\fallingdotseq p^1 F(p) - p^0 i^{(0)}(0)
+=pF(p) - i(0)
+=pF(p),
+\end{equation}
+
+常用拉普拉斯变换：
+
+\begin{equation}
+1\fallingdotseq \frac{1 }{p },\quad \mathrm{Re}~p>0
+\end{equation}
+
+对方程 $\displaystyle{L\frac{\mathrm{d}i(t) }{\mathrm{d}t } = +R i(t) = E }$ 两边同时作拉普拉斯变换，得：
+
+\begin{equation}
+L p F(p) + R F(p) = \frac{E }{p }.
+\end{equation}
+
+可以解出 $F(p) $：
+
+\begin{equation}
+\begin{split}
+F(p)
+&=\frac{E }{Lp^2 + Rp } \\
+&=\frac{E }{L }\frac{1 }{p( p + R/L) } \\
+&=\frac{E }{L } \frac{L }{R }  \left(\frac{1 }{p } - \frac{1 }{p + R/L }  \right) \\
+&=\frac{E }{R } \left(\frac{1 }{p } - \frac{1 }{p - (-R/L)}  \right).
+\end{split}
+\end{equation}
+
+常用拉普拉斯变换的反演：
+
+\begin{equation}
+\frac{1 }{p-\alpha } \risingdotseq \mathrm{e}^{\alpha t},
+\end{equation}
+
+于是：
+
+\begin{equation}
+\frac{1 }{p } \risingdotseq 1,\quad \frac{1 }{p - (-R/L) } \risingdotseq \mathrm{e}^{-\frac{R }{L } t}.
+\end{equation}
+
+对方程 $\displaystyle{F(p) = \frac{E }{R } \left(\frac{1 }{p } - \frac{1 }{p+R/L } \right) }$ 两边同时作拉普拉斯逆变换，得：
+
+\begin{equation}
+i(t)
+=\frac{E }{R } \left(1-\mathrm{e}^{-\frac{R }{L } t} \right).
+\end{equation}
+
+\end{solution}

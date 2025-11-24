@@ -51,7 +51,7 @@ def kitaev_A3(N1, N2, kappa, bc1, bc2):
     A3 = 2 * kappa * (left_dash_arrow_matrix - left_dash_arrow_matrix.T)
     return A3
             
-N1, N2, kappa = 3, 3, 1
+N1, N2, kappa = 2, 2, 1
 
 A3_PP = kitaev_A3(N1, N2, kappa, "PBC", "PBC")
 A3_AP = kitaev_A3(N1, N2, kappa, "APBC", "PBC")    

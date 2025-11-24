@@ -1,2 +1,239 @@
-\section{Delta 函数}
+\chapter{\texorpdfstring{$\delta$函数}{delta函数}}
 
+\section{\texorpdfstring{$\delta$函数的定义}{delta函数的定义}}
+
+$\delta$ 函数是一个定义在 $\mathbb{R}$ 上的广义函数，其满足：
+
+\begin{equation}
+\delta(x-x_0)
+=\begin{cases}
+0&,x\ne x_0 \\
++\infty&, x=x_0 
+\end{cases},\quad
+\text{且}
+\int_a^b\delta (x-x_0)\mathrm{d}x
+=\begin{cases}
+1&,x_0\in(a,b) \\
+0&,x_0\notin (a,b)
+\end{cases}
+\end{equation}
+
+\section{\texorpdfstring{$\delta$函数的性质}{delta函数的性质}}
+
+\begin{enumerate}
+\item 设 $f(x)$ 为连续函数，则：
+
+\begin{equation}
+\int_{-\infty}^{+\infty} f(x)\delta(x-x_0) \mathrm{d}x
+=f(x_0).
+\end{equation}
+
+\item $\delta(x)$ 是偶函数：
+
+\begin{equation}
+\delta(-x)
+=\delta(x).
+\end{equation}
+
+\item 
+
+\begin{equation}
+f(x)\delta(x-x_0)
+=f(x_0)\delta(x-x_0).
+\end{equation}
+
+\item 
+
+\begin{equation}
+x\delta(x)
+=0.
+\end{equation}
+
+\item 
+
+\begin{equation}
+\int_{-\infty}^{+\infty} \delta(x-x_2)\delta(x-x_1)\mathrm{d}x
+=\delta(x_1-x_2).
+\end{equation}
+
+\item 设 $\{x_i\}$ 为 $\varphi(x)$ 的单根，即 $\varphi(x_i)=0 $ 且 $\varphi'(x_i)\ne 0 $，则：
+
+\begin{equation}
+\delta(\varphi(x))
+=\sum_{i}\frac{1}{|\varphi'(x_i)|}\delta(x-x_i).
+\end{equation}
+
+\end{enumerate}
+
+\section{\texorpdfstring{三维$\delta$函数}{三维delta函数}}
+
+\section{\texorpdfstring{三维$\delta$函数的定义}{三维delta函数的定义}}
+
+\begin{equation}
+\delta\left(\vec{r}-\vec{r}_0\right)
+=\begin{cases}
+0&,\vec{r}\ne\vec{r}_0 \\
++\infty&,\vec{r}=\vec{r}_0
+\end{cases},\quad \text{且}
+\int\limits_{V}\delta(\vec{r}-\vec{r}_0)\mathrm{d}^3\vec{r}
+=1,\quad
+\vec{r}_0\in V.
+\end{equation}
+
+\subsection{三维直角坐标系}
+
+\begin{equation}
+\mathrm{d}^3\vec{r}
+=\mathrm{d}x\mathrm{d}y\mathrm{d}z,
+\end{equation}
+
+\begin{equation}
+\delta(\vec{r}-\vec{r}_0)
+=\delta(x-x_0)\delta(y-y_0)\delta(z-z_0).
+\end{equation}
+
+\subsection{三维球坐标系}
+
+\begin{equation}
+\mathrm{d}^3\vec{r}
+=r^2\sin\theta\mathrm{d}r\mathrm{d}\theta\mathrm{d}\varphi,
+\end{equation}
+
+\begin{equation}
+\delta(\vec{r}-\vec{r}_0)
+=\frac{1}{r^2\sin\theta}\delta(r-r_0)\delta(\theta-\theta_0)\delta(\varphi-\varphi_0).
+\end{equation}
+
+\subsection{三维柱坐标系}
+
+\begin{equation}
+\mathrm{d}^3\vec{r}
+=\rho\mathrm{d}\rho\mathrm{d}\varphi\mathrm{d}z,
+\end{equation}
+
+\begin{equation}
+\delta(\vec{r}-\vec{r}_0)
+=\frac{1}{\rho}\delta(\rho-\rho_0)\delta(\varphi-\varphi_0)\delta(z-z_0).
+\end{equation}
+
+\section{\texorpdfstring{$\delta$函数的傅里叶积分展开}{delta函数傅里叶积分展开}}
+
+\subsection{一维情况}
+
+设 $\delta(x-x_0) $ 的傅里叶积分展开为：
+
+\begin{equation}
+\delta(x-x_0)
+=\frac{1 }{2\pi } \int_{k=-\infty}^{k=+\infty} C(k)\mathrm{e}^{\mathrm{i}kx}\mathrm{d}k,
+\end{equation}
+
+其中 $C(k) $ 就是 $\delta(x-x_0) $ 的傅里叶变换。$C(k) $ 由下式给出：
+
+\begin{equation}
+C(k)
+=\int_{k=-\infty}^{k=+\infty}\delta(x-x_0)\mathrm{e}^{-\mathrm{i}kx}\mathrm{d}x
+=\mathrm{e}^{-\mathrm{i}kx_0}.
+\end{equation}
+
+代回 $\delta(x-x_0) $ 的傅里叶积分展式，得到：
+
+\begin{equation}
+\begin{split}
+\delta(x-x_0)
+&=\frac{1 }{2\pi } \int_{k=-\infty}^{k=+\infty} C(k)\mathrm{e}^{\mathrm{i}kx}\mathrm{d}k \\
+&=\frac{1 }{2\pi } \int_{k=-\infty}^{k=+\infty} \mathrm{e}^{-\mathrm{i}kx_0} \mathrm{e}^{\mathrm{i}kx}\mathrm{d}k \\
+&=\frac{1 }{2\pi } \int_{k=-\infty}^{k=+\infty} \mathrm{e}^{\mathrm{i}k(x-x_0)}\mathrm{d}k.
+\end{split}
+\end{equation}
+
+\subsection{三维情况}
+
+\begin{equation}
+\begin{split}
+&\delta(\vec{r}-\vec{r}_0) \\
+=&\delta(x-x_0)\delta(y-y_0)\delta(z-z_0) \\
+=&\left(\frac{1}{2\pi}\int_{k_x=-\infty}^{k_x=+\infty} \mathrm{e}^{\mathrm{i}k_x(x-x_0)}\mathrm{d}k_x \right)\left(\frac{1}{2\pi}\int_{k_y=-\infty}^{k_y=+\infty} \mathrm{e}^{\mathrm{i}k_y(y-y_0)}\mathrm{d}k_y \right)\left(\frac{1}{2\pi}\int_{k_z=-\infty}^{k_z=+\infty} \mathrm{e}^{\mathrm{i}k_z(z-z_0)}\mathrm{d}k_z \right) \\
+=&\frac{1 }{\left(2\pi \right)^3 } \int_{k_x=-\infty}^{k_x=+\infty} \int_{k_y=-\infty}^{k_y=+\infty} \int_{k_z=-\infty}^{k_z=+\infty} \mathrm{e}^{\mathrm{i}k_x(x-x_0)} \mathrm{e}^{\mathrm{i}k_y(y-y_0)} \mathrm{e}^{\mathrm{i}k_z(z-z_0)} \mathrm{d}k_x \mathrm{d}k_y \mathrm{d}k_z \\
+=&\frac{1 }{\left(2\pi \right)^3 } \int\limits_{\vec{k}\in \mathbb{R}^3} \mathrm{e}^{\mathrm{i}\vec{k}\cdot(\vec{r}-\vec{r}_0)}\mathrm{d}^3\vec{k}.
+\end{split}
+\end{equation}
+
+\section{例题}
+
+\begin{example}
+    
+证明：$\displaystyle{\delta(\vec{r})=-\frac{1}{4\pi}\nabla^2\frac{1}{r} }$. 
+
+\end{example}
+
+\begin{solution}
+    
+对于标量函数 $f(r) $，有：
+
+\begin{equation}
+\begin{split}
+\nabla f(r)
+&=\vec{\mathrm{e}}_i \partial_i f(r)
+=\vec{\mathrm{e}}_i \frac{\mathrm{d} f(r) }{\mathrm{d} r } \frac{\partial r }{\partial x_i } 
+=f'(r) \vec{\mathrm{e}}_i \partial_i r
+=f'(r) \nabla r \\
+&=f'(r) \vec{\mathrm{e}}_i \partial_i \sqrt{x_j x_j} \\
+&=f'(r) \vec{\mathrm{e}}_i \frac{1 }{2 } (x_j x_j)^{-1/2} \partial_i (x_j x_j) \\
+&=f'(r) \vec{\mathrm{e}}_i \frac{1 }{2 } (x_j x_j)^{-1/2} 2 x_j \partial_i x_j \\
+&=f'(r) \vec{\mathrm{e}}_i (x_j x_j)^{-1/2} x_j \delta_{ij} \\
+&=f'(r) \vec{\mathrm{e}}_i (x_j x_j)^{-1/2} x_i \\
+&=f'(r) \vec{\mathrm{e}}_i x_i (x_j x_j)^{-1/2} \\
+&=f'(r) \vec{r} / r.
+\end{split}
+\end{equation}
+
+对于矢量场 $\vec{A} $ 和标量场 $\phi $，有：
+
+\begin{equation}
+\begin{split}
+\nabla \cdot \left(\phi \vec{A} \right)
+&=\partial_i \left(\phi A_i \right)
+=A_i \partial_i \phi + \phi \partial_i A_i
+=A_i \left(\nabla \phi \right)_i + \phi \partial_i A_i \\
+&=\vec{A} \cdot \left(\nabla \phi \right) + \phi \nabla \cdot \vec{A}
+\end{split}
+\end{equation}
+
+当 $\vec{r}\ne \vec{0} $，有：
+
+\begin{equation}
+\nabla \frac{1 }{r }
+=-\frac{1 }{r^2 } \nabla r
+=-\frac{1 }{r^2 } \frac{\vec{r} }{r } 
+=-\frac{\vec{r} }{r^3 }.
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\nabla^2\frac{1 }{r } 
+&=\nabla\cdot\left(\nabla\frac{1 }{r }  \right) \\
+&=\nabla\cdot\left(-\frac{\vec{r} }{r^3 }  \right) \\
+&=-\left(\vec{r}\cdot\nabla\frac{1 }{r^3 } + \frac{1 }{r^3 } \nabla\cdot\vec{r} \right) \\
+&=-\left(\vec{r}\cdot \left(-3r^{-4} \nabla r  \right) + \frac{1 }{r^3 } \cdot 3 \right) \\
+&=-\left(\vec{r}\cdot \left(-3r^{-4} \frac{\vec{r} }{r }  \right) + \frac{1 }{r^3 } \cdot 3 \right) \\
+&=0.
+\end{split}
+\end{equation}
+
+$\displaystyle{\nabla^2\frac{1}{r} }$ 在 $\vec{r}=\vec{0} $ 处无定义，但可人为定义其在 $\vec{0} $ 处的函数值为 $+\infty .$
+
+取以坐标原点为球心，半径为 $R $ 的一个球体 $V $，计算体积分：
+
+\begin{equation}
+\begin{split}
+\int\limits_{\vec{r}\in V} -\frac{1}{4\pi}\nabla^2\frac{1}{r} \mathrm{d}^3\vec{r} 
+&=-\frac{1 }{4\pi } \int\limits_{\vec{r}\in V} \nabla\cdot\left(\nabla\frac{1 }{r }  \right)\mathrm{d}^3\vec{r} \\
+&=-\frac{1 }{4\pi } \oint\limits_{\partial V^+} \nabla\frac{1 }{r } \cdot\mathrm{d}\vec{S} \\
+&=-\frac{1 }{4\pi } \oint\limits_{\partial V^+} -\frac{\vec{r} }{r^3 }  \cdot\mathrm{d}\vec{S} \\
+&=\frac{1 }{4\pi }\cdot \frac{1 }{R^2 }  \oint\limits_{\partial V^+} \mathrm{d}S \\
+&=\frac{1 }{4\pi R^2 } \cdot 4\pi R^2 \\
+&=1.
+\end{split}
+\end{equation}
+
+\end{solution}
