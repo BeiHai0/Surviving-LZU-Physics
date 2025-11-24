@@ -1,10 +1,9 @@
-<<<<<<< HEAD
 # 1
 
 $$
 \Ket{\sigma_1,\cdots,\sigma_N} \mapsto ?
 $$
-=======
+
 ### single spin vs. single two-modes fermion
 
 $$
@@ -231,7 +230,223 @@ $$
 \end{equation}
 $$
 
+--- 
+
+### Abrikosov Pseudo-Fermion Representation
+
+从自旋-1/2到 2-模式复费米子体系的映射：
+
+$$
+\begin{equation}
+\Ket{\uparrow } \mapsto f^\dag_{\uparrow} \Ket{0 },\quad
+\Ket{\downarrow } \mapsto f^\dag_{\downarrow} \Ket{0 }.
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\Gamma : \sigma^\alpha \mapsto \sum_{ab} f^\dag_a \sigma^\alpha_{ab} f_b,
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\left\{
+\begin{aligned}
+&\sigma^x \mapsto f^\dag_\uparrow f_\downarrow + f^\dag_\downarrow f_\uparrow, \\
+&\sigma^y \mapsto \mathrm{i}\left(-f^\dag_\uparrow f_\downarrow + f^\dag_\downarrow f_\uparrow \right), \\
+&\sigma^z \mapsto f^\dag_\uparrow f_\uparrow - f^\dag_\downarrow f_\downarrow, \\
+&f^\dag_\uparrow f_\uparrow + f^\dag_\downarrow f_\downarrow = 1.
+\end{aligned}
+\right.
+\end{equation}
+$$
+
+指定第一种复费米子模式为 $f_\uparrow,f^\dag_\uparrow $，第二种复费米子模式为 $f_\downarrow,f^\dag_\downarrow $，则
 
 
 
->>>>>>> a2ffad8ff65f7c19648c7da41b1c52257a03b89f
+在单占据子空间
+
+$$
+\begin{equation}
+\sum_a f^\dag_a f_a = 1
+\end{equation}
+$$
+
+保持算符乘法和自旋-1/2李代数：
+
+$$
+\begin{equation}
+\Gamma\left(\sigma^\alpha \sigma^\beta \right)
+=\Gamma\left(\sigma^\alpha \right) \Gamma\left(\sigma^\beta \right),
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\left[\sigma^\alpha , \sigma^\beta \right] = 2\mathrm{i} \varepsilon^{\alpha\beta\gamma} \sigma^\gamma,\quad
+\left[\Gamma\left(\sigma^\alpha \right) , \Gamma\left(\sigma^\beta \right) \right] = 2 \mathrm{i} \varepsilon^{\alpha\beta\gamma} \Gamma\left(\sigma^\gamma \right).
+\end{equation}
+$$
+
+### Majorana Representation of Complex Fermion
+
+设 $c,c^\dag $ 分别是某种费米子模式的湮灭、产生算符，利用它们可构造出两个 Majorana 算符：
+
+$$
+\begin{equation}
+\gamma_1 \equiv c + c^\dag,\quad
+\gamma_2 \equiv -\mathrm{i}\left(c - c^\dag \right),
+\end{equation}
+$$
+
+或者说复费米子算符可由 Majorana 算符表示：
+
+$$
+\begin{equation}
+c = \frac{1 }{2 } \left(\gamma_1 + \mathrm{i} \gamma_2 \right),\quad
+c^\dag = \frac{1 }{2 } \left(\gamma_1 - \mathrm{i} \gamma_2 \right).
+\end{equation}
+$$
+
+利用复费米子反对易关系
+
+$$
+\begin{equation}
+\left\{c , c^\dag \right\} = 1,\quad
+\left\{c , c \right\} = \left\{c^\dag , c^\dag \right\} = 0,
+\end{equation}
+$$
+
+可以得到 Majorana 算符反对易关系：
+
+$$
+\begin{equation}
+\left\{\gamma_1 , \gamma_2 \right\} = 0,\quad
+\left\{\gamma_1 , \gamma_1 \right\} = 2,\quad
+\left\{\gamma_2 , \gamma_2 \right\} = 2,
+\end{equation}
+$$
+
+或统一写为：
+
+$$
+\begin{equation}
+\left\{\gamma_i , \gamma_j \right\} = 2\delta_{ij},\quad ij\in \left\{1,2 \right\}.
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\gamma_1^2 = \gamma_2^2 = 1,\quad
+\gamma_1^\dag = \gamma_1,\quad
+\gamma_2^\dag = \gamma_2.
+\end{equation}
+$$
+
+### 从 spin-1/2 到 2-模式复费米子再到 Majorana 费米子
+
+$$
+\begin{equation}
+\left\{
+\begin{aligned}
+&\sigma^x \mapsto f^\dag_\uparrow f_\downarrow + f^\dag_\downarrow f_\uparrow, \\
+&\sigma^y \mapsto \mathrm{i}\left(-f^\dag_\uparrow f_\downarrow + f^\dag_\downarrow f_\uparrow \right), \\
+&\sigma^z \mapsto f^\dag_\uparrow f_\uparrow - f^\dag_\downarrow f_\downarrow, \\
+&f^\dag_\uparrow f_\uparrow + f^\dag_\downarrow f_\downarrow = 1.
+\end{aligned}
+\right.
+\end{equation}
+$$
+
+用复费米子算符构造如下的 Majorana 算符：
+
+$$
+\begin{equation}
+\gamma_{\uparrow,1} = f_{\uparrow} + f^\dag_{\uparrow},\quad
+\gamma_{\uparrow,2} = -\mathrm{i}\left(f_{\uparrow} - f^\dag_{\uparrow} \right),
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\gamma_{\downarrow,1} = f_{\downarrow} + f^\dag_{\downarrow},\quad
+\gamma_{\downarrow,2} = -\mathrm{i}\left(f_{\downarrow} - f^\dag_{\downarrow} \right).
+\end{equation}
+$$
+
+则
+
+$$
+\begin{equation}
+\sigma^x
+\mapsto f^\dag_\uparrow f_\downarrow + f^\dag_\downarrow f_\uparrow
+=\mathrm{i} \gamma_{\uparrow,1} \gamma_{\downarrow,2},
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\sigma^y
+\mapsto -\mathrm{i}\left(f^\dag_\uparrow f_\downarrow - f^\dag_\downarrow f_\uparrow \right)
+=-\mathrm{i} \gamma_{\uparrow,1} \gamma_{\downarrow,1},
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\sigma^z
+\mapsto f^\dag_\uparrow f_\uparrow - f^\dag_\downarrow f_\downarrow
+=\mathrm{i} \gamma_{\uparrow,1} \gamma_{\uparrow,2}.
+\end{equation}
+$$
+
+单占据条件 $f^\dag_\uparrow f_\uparrow + f^\dag_\downarrow f_\downarrow = 1 $ 化为：
+
+$$
+\begin{equation}
+\gamma_{\uparrow,1} \gamma_{\uparrow,2} + \gamma_{\downarrow,1} \gamma_{\downarrow,2}
+=0
+\end{equation}
+$$
+
+观察到 $\gamma_{\uparrow,1} $ 比较特殊，若令：
+
+$$
+\gamma_{\uparrow,1} = c,\quad
+\gamma_{\downarrow,2} = -b^x,\quad
+\gamma_{\downarrow,1} = b^y,\quad
+\gamma_{\uparrow,2} = -b^z,
+$$
+
+则有
+
+$$
+\begin{equation}
+\sigma^x \mapsto -\mathrm{i} b^x c,
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\sigma^y \mapsto -\mathrm{i} b^y c,
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\sigma^z \mapsto -\mathrm{i} b^z c
+\end{equation}
+$$
+
+单占据条件化为
+
+$$
+\begin{equation}
+c b^x b^y b^z = 1.
+\end{equation}
+$$
+
+### 用 Majorana 算符表达 Kitaev Honeycomb 模型哈密顿量
+
