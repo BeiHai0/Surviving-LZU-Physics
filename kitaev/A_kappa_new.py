@@ -12,7 +12,7 @@ def u_matrix(N1, N2, bc1="PBC", bc2="PBC"):
     if bc2 == "PBC":
         sign2 = 1
     elif bc2 == "APBC":
-        sign2 = -1
+        sign2 = -1    
     
     def index(n1, n2, sub):
         return n1 + n2 * N1 + N1 * N2 * sub # A子格对应 sub=0,B子格对应 sub=1
