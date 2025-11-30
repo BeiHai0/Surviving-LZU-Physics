@@ -1,20 +1,20 @@
 # Fdb version 4
-["bibtex main"] 1763882512.05079 "main.aux" "main.bbl" "main" 1763882574.04815 0
+["bibtex main"] 1764475929.63148 "main.aux" "main.bbl" "main" 1764476097.51354 0
   "./references/references.bib" 1763116965 155 3512daddf25f7c3dc654d2181738d036 ""
   "c:/texlive/2024/texmf-dist/bibtex/bst/base/plain.bst" 1736593294 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "main.aux" 1763882571 20512 f8a45c92d567042edaa7582570abac19 "xelatex"
+  "main.aux" 1764476094 25318 8b68dfe395fa222e7b04faa2ac36b6f0 "xelatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["xdvipdfmx"] 1763882572.87656 "main.xdv" "main.pdf" "main" 1763882574.06233 0
-  "main.xdv" 1763882571 666016 dc8242d8bf01ff49c90e78a09f39659e "xelatex"
+["xdvipdfmx"] 1764476096.36405 "main.xdv" "main.pdf" "main" 1764476097.5286 0
+  "main.xdv" 1764476094 764760 c0dee2beb18b2ad4afc2e3ed5b11cd08 "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1763882567.0993 "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/小班讲义/数学物理方法1小班讲义/tex/main.tex" "main.xdv" "main" 1763882574.04846 0
+["xelatex"] 1764476090.64949 "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/小班讲义/数学物理方法1小班讲义/tex/main.tex" "main.xdv" "main" 1764476097.51383 0
   "appendices.tex" 1760936648 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/小班讲义/数学物理方法1小班讲义/tex/main.tex" 1763293354 1169 391211ebcd8e5caab7f299a16dbdde3e ""
+  "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/小班讲义/数学物理方法1小班讲义/tex/main.tex" 1764464036 1300 b20a3b06b7332b27ec44cc536503f664 ""
   "c:/Windows/Fonts/msyh.ttc" 1575709707 19647736 ff2e53a6131130a07589812ea5b5b0d0 ""
   "c:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1736593776 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1736595491 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
@@ -286,6 +286,7 @@
   "c:/texlive/2024/texmf-dist/web2c/texmf.cnf" 1736593107 41649 5d6ae549fbbcb850a863f69aa41f3d10 ""
   "c:/texlive/2024/texmf-var/web2c/xetex/xelatex.fmt" 1736595734 10849599 ed1d0ee42e349112cf84ba812fabefd6 ""
   "c:/texlive/2024/texmf.cnf" 1736595510 713 e69b156964470283e0530f5060668171 ""
+  "chapters/ch10_cylindrical-functions.tex" 1764463961 0 d41d8cd98f00b204e9800998ecf8427e ""
   "chapters/ch1_vector-analysis.tex" 1762144569 29322 5daeddc3774df250cb6208f521310ce6 ""
   "chapters/ch2_vector-analysis-in-curvilinear-coordinates.tex" 1761199677 1950 2dd6c8cd59de267b13b9441095d90527 ""
   "chapters/ch3_linear-space.tex" 1763289149 15249 346e0acb66e47122e959f29ee08c788e ""
@@ -293,13 +294,15 @@
   "chapters/ch5_fourier.tex" 1763802091 9790 1cc935a040cdf7f1c7f4ce69413055e1 ""
   "chapters/ch6_laplace.tex" 1763878579 4929 74d278f6c52b9b6c4a85ed2218f341dd ""
   "chapters/ch7_delta.tex" 1763882566 7285 e9095d894f3e3ec043ec500f07791270 ""
+  "chapters/ch8_equations.tex" 1764476089 12368 47f26d39a377711abf75749a4eb376fc ""
+  "chapters/ch9_spherical-harmonics.tex" 1764463877 0 d41d8cd98f00b204e9800998ecf8427e ""
   "frontmatter/preface.tex" 1760942030 766 e6ad30e5ffa685a5ce24478d7991e5c7 ""
   "frontmatter/titlepage.tex" 1760940625 288 3088e89db773129123e12b98036c3715 ""
-  "main.aux" 1763882571 20512 f8a45c92d567042edaa7582570abac19 "xelatex"
-  "main.bbl" 1763882512 186 c58a11757c22479adb62e73380ccc412 "bibtex main"
-  "main.out" 1763882571 17006 c1adac66745ba96f2dd1b4685a24e645 "xelatex"
-  "main.tex" 1763293354 1169 391211ebcd8e5caab7f299a16dbdde3e ""
-  "main.toc" 1763882571 13245 278d1ba528a9903a56bcfa795df6797a "xelatex"
+  "main.aux" 1764476094 25318 8b68dfe395fa222e7b04faa2ac36b6f0 "xelatex"
+  "main.bbl" 1764475930 186 c58a11757c22479adb62e73380ccc412 "bibtex main"
+  "main.out" 1764476094 21532 0f6ec58ba0f622e3bedd62afc25f4611 "xelatex"
+  "main.tex" 1764464036 1300 b20a3b06b7332b27ec44cc536503f664 ""
+  "main.toc" 1764476094 16565 feb39fdb41f1860a47a7af9100da03e7 "xelatex"
   "preamble/preamble.tex" 1763285786 2424 7367c493f7c08b68cb20036ce74711fb ""
   (generated)
   "main.aux"

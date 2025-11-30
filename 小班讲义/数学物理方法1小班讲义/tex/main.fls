@@ -556,6 +556,15 @@ INPUT chapters/ch6_laplace.tex
 INPUT ./chapters/ch7_delta.tex
 INPUT ./chapters/ch7_delta.tex
 INPUT chapters/ch7_delta.tex
+INPUT ./chapters/ch8_equations.tex
+INPUT ./chapters/ch8_equations.tex
+INPUT chapters/ch8_equations.tex
+INPUT ./chapters/ch9_spherical-harmonics.tex
+INPUT ./chapters/ch9_spherical-harmonics.tex
+INPUT chapters/ch9_spherical-harmonics.tex
+INPUT ./chapters/ch10_cylindrical-functions.tex
+INPUT ./chapters/ch10_cylindrical-functions.tex
+INPUT chapters/ch10_cylindrical-functions.tex
 INPUT ./appendices.tex
 INPUT ./appendices.tex
 INPUT ./appendices.tex

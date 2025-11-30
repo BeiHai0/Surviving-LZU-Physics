@@ -1,0 +1,414 @@
+\chapter{数学物理方程与分离变量法}
+
+\section{波动方程、输运方程、泊松方程的标准形式}
+
+\subsection{波动方程的标准形式}
+
+\begin{equation}
+u_{tt}-a^2\nabla^2 u(\vec{r},t)
+=f(\vec{r},t).
+\end{equation}
+
+\subsection{输运方程（抛物方程）的标准形式}
+
+\begin{equation}
+u_{t}-a^2\nabla^2 u(\vec{r},t)
+=f(\vec{r},t).
+\end{equation}
+
+\subsection{泊松方程（椭圆方程）的标准形式}
+
+\begin{equation}
+\nabla^2 u(\vec{r})
+=f(\vec{r}).
+\end{equation}
+
+\subsection{拉普拉斯方程的标准形式}
+
+\begin{equation}
+\nabla^2 u(\vec{r})
+=0.
+\end{equation}
+
+\section{定解条件}
+
+定解条件是一个方程有确定解所要满足的条件。
+
+定解条件包括初始条件和边界条件。
+
+\subsection{初始条件}
+
+初始条件指场量 $u(\vec{r},t) $ 和其关于时间的一阶导数 $u_t(\vec{r},t) $ 在初始时刻，也即 $t=0 $ 时所要满足的条件。
+
+\subsubsection{波动方程的初始条件}
+
+由于波动方程 $u_{tt}-a^2\nabla^2 u(\vec{r},t)=f(\vec{r},t) $ 中有场量对时间的二阶导 $u_{tt} $，因此要想让波动方程有确定解，既需要场量 $u(\vec{r},t) $ 在初始时刻的空间分布，也需要场量对时间的一阶导在初始时刻的空间分布。
+
+因此，波动方程的初始条件为：
+
+\begin{equation}
+\left\{
+\begin{aligned}
+\left. u(\vec{r},t)\right|_{t=0}=\varphi(\vec{r}) \\
+\left. u_t(\vec{r},t)\right|_{t=0}=\nu(\vec{r})
+\end{aligned}
+\right..
+\end{equation}
+
+\subsubsection{输运方程的初始条件}
+
+由于输运方程 $u_{t}-a^2\nabla^2 u(\vec{r},t)=f(\vec{r},t) $ 中有场量对时间的一阶导 $u_{tt} $，因此要想让输运方程有确定解，只需要场量在初始时刻的空间分布，\textbf{或者}场量对时间的一阶导在初始时刻的空间分布。
+
+因此，输运方程的初始条件为：
+
+\begin{equation}
+\left. u(\vec{r},t) \right|_{t=0} = \varphi(\vec{r}),\quad \text{or} \quad
+\left. u_t(\vec{r},t) \right|_{t=0} = \nu(\vec{r}).  
+\end{equation}
+
+\subsubsection{泊松方程的初始条件}
+
+由于泊松方程 $\nabla^2 u(\vec{r})=f(\vec{r}) $ 不含时间，因此泊松方程不需要初始条件。
+
+\subsection{边界条件}
+
+边界条件指场量在边界上所要满足的条件。
+
+\subsubsection{第一类边界条件}
+
+第一类边界条件是场量 $u(\vec{r},t)$ 在边界 $\partial \Omega$ 处的取值所要满足的条件：
+
+\begin{equation}
+\left. u(\vec{r},t) \right|_{\vec{r}\in \partial\Omega} 
+=g(\vec{r},t).
+\end{equation}
+
+若 $g(\vec{r},t)=0$，则得到第一类齐次边界条件：
+
+\begin{equation}
+\left. u(\vec{r},t) \right|_{\vec{r}\in \partial\Omega} 
+=0.
+\end{equation}
+
+\subsubsection{第二类边界条件}
+
+第二类边界条件是边界上场量沿边界的外法线的方向导数所要满足的关系：
+
+\begin{equation}
+\left. \frac{\partial u(\vec{r},t)}{\partial n} \right|_{\vec{r}\in \partial \Omega}
+=g(\vec{r},t).
+\end{equation}
+
+若 $g(\vec{r},t)=0$，则得到第二类齐次边界条件：
+
+\begin{equation}
+\left. \frac{\partial u(\vec{r},t)}{\partial n} \right|_{\vec{r}\in \partial \Omega}
+=0.
+\end{equation}
+
+\subsubsection{第三类边界条件}
+
+把第一类边界条件和第二类边界条件进行线性组合就得到第三类边界条件：
+
+\begin{equation}
+\left. \left(\alpha u(\vec{r},t)+\beta\frac{\partial u(\vec{r},t)}{\partial n} \right) \right|_{\vec{r}\in \partial \Omega} 
+=g(\vec{r},t).
+\end{equation}
+
+若 $g(\vec{r},t)=0 $，则得到第三类齐次边界条件：
+
+\begin{equation}
+\left. \left(\alpha u(\vec{r},t)+\beta\frac{\partial u(\vec{r},t)}{\partial n} \right) \right|_{\vec{r}\in \partial \Omega} 
+=0.
+\end{equation}
+
+\subsubsection{自然边界条件}
+
+所要求解的场量 $u$ 在考虑的区域 $\Omega$ 及其边界 $\partial \Omega$ 上，都是有界的，不发散的，即：
+
+\begin{equation}
+|u|<+\infty.
+\end{equation}
+
+\subsubsection{周期性边界条件}
+
+场量 $u(\vec{r},t) $ 具有空间周期性。
+
+\subsubsection{衔接条件}
+
+若研究的区域 $\Omega $ 可分成几个性质不同的子区域，则在相邻子区域的边界上要求用特殊的衔接条件。
+
+\subsection{定解条件}
+
+\subsubsection{波动方程定解条件}
+
+\begin{equation}
+\left\{
+\begin{aligned}
+&u_{tt}(\vec{r},t)-a^2\nabla^2 u = f(\vec{r},t) \\
+&\left. u(\vec{r},t) \right|_{t=0} = \varphi(\vec{r}) \\
+&\left. u_t(\vec{r},t) \right|_{t=0} = \nu(\vec{r}) \\
+&\left[\alpha u(\vec{r},t)+\beta\frac{\partial u(\vec{r},t) }{\partial n } \right]_{\vec{r}\in\partial \Omega} = \left. g(\vec{r},t) \right|_{\vec{r}\in \partial \Omega}
+\end{aligned}
+\right.
+\end{equation}
+
+\subsubsection{输运方程定解条件}
+
+\begin{equation}
+\left\{
+\begin{aligned}
+&u_{t}(\vec{r},t)-a^2\nabla^2 u = f(\vec{r},t) \\
+&\left. u(\vec{r},t) \right|_{t=0} = \varphi(\vec{r}), \quad \mathrm{or} \quad \left. u_t(\vec{r},t) \right|_{t=0} = \nu(\vec{r}) \\
+&\left[\alpha u(\vec{r},t)+\beta\frac{\partial u(\vec{r},t) }{\partial n } \right]_{\vec{r}\in\partial \Omega} = \left. g(\vec{r},t) \right|_{\vec{r}\in \partial \Omega}
+\end{aligned}
+\right.
+\end{equation}
+
+\subsubsection{泊松方程定解条件}
+
+\begin{equation}
+\left\{
+\begin{aligned}
+&\nabla^2 u(\vec{r}) = f(\vec{r}) \\
+&\left[\alpha u(\vec{r})+\beta\frac{\partial u(\vec{r}) }{\partial n } \right]_{\vec{r}\in\partial \Omega} = \left. g(\vec{r}) \right|_{\vec{r}\in \partial \Omega}
+\end{aligned}
+\right.
+\end{equation}
+
+\section{分离变量法}
+
+\subsection{Sturm-Liouville本征值问题}
+
+\subsubsection{Sturm-Liouville方程}
+
+如下带有参数 $\lambda $ 的二阶常微分方程称为Sturm-Liouville方程(S-L)方程：
+
+\begin{equation}
+\frac{\mathrm{d} }{\mathrm{d}x }\left[k(x) y'(x) \right] - q(x) y(x) + \lambda \rho(x) y(x)
+=0. 
+\end{equation}
+
+其中 $\lambda $ 称为本征参数（或本征值），$\rho(x) $ 称为权重函数。
+
+若定义线性算子
+
+\begin{equation}
+L
+\equiv -\frac{\mathrm{d} }{\mathrm{d}x } \left[k(x) \frac{\mathrm{d} }{\mathrm{d}x } \right] + q(x),
+\end{equation}
+
+则 S-L 方程可写为
+
+\begin{equation}
+L y(x) = \lambda \rho(x) y(x).
+\end{equation}
+
+\subsubsection{S-L方程本征函数的一般性质}
+
+可以证明，在三类齐次边界条件或自然边界条件或周期性边界条件下，且约定 $k(x) \geqslant 0,q(x)\geqslant 0,\rho(x)>0 $ 的情况下，S-L方程存在无穷多组本征解，即存在一系列本征值 $\lambda_n $ 和本征函数 $y_n(x) $ 满足S-L方程：
+
+\begin{equation}
+\frac{\mathrm{d} }{\mathrm{d}x }\left[k(x) y'_n(x) \right] - q(x) y_n(x) + \lambda_n \rho(x) y_n(x)
+=0,\quad,x\in\left[a,b \right],\quad n=1,2,\cdots,\infty
+\end{equation}
+
+这些本征解有一些一般的性质。
+
+\subsubsection{S-L方程本征解的带权正交性}
+
+设 $\lambda_n\ne \lambda_m $，二者分别对应本征函数 $y_n(x),y_m(x) $，即：
+
+\begin{equation}
+\left\{
+\begin{aligned}
+&\frac{\mathrm{d} }{\mathrm{d}x }\left[k(x) y'_n(x) \right] - q(x) y_n(x) + \lambda_n \rho(x) y_n(x)
+=0, \\
+&\frac{\mathrm{d} }{\mathrm{d}x }\left[k(x) y'_m(x) \right] - q(x) y_m(x) + \lambda_m \rho(x) y_m(x)
+=0, \\
+&y_n \ne y_m.
+\end{aligned}
+\right.
+\end{equation}
+
+可以证明，$y_n(x),y_m(x) $ 以权重 $\rho(x) $ 正交，即：
+
+\begin{equation}
+\int_a^b \rho(x) y_n(x) y_m^*(x) \mathrm{d}x
+=0. 
+\end{equation}
+
+\subsubsection{S-L方程本征值的性质}
+
+可以证明，S-L问题有无穷多非负本征值，所有本征值组成一个单调递增以无穷远点为凝聚点的序列。
+
+\subsubsection{S-L方程函数的完备性与广义Fourier展开}
+
+可以证明，所有的本征函数 $\left\{y_n(x) \right\} $ 构成一个完备的带权正交函数系，任何定义在 $x\in\left[a,b \right] $ 上的满足Direchlet条件的函数 $f(x) $ 可以其上进行广义Fourier展开：
+
+\begin{equation}
+f(x)
+=\sum_{n=1}^{\infty} C_n y_n(x),
+\end{equation}
+
+为了求出系数 $C_n $，上式两边同乘 $\rho(x) y_m^*(x) $ 并积分，利用本征函数带权正交性就有：
+
+\begin{equation}
+\begin{split}
+\int_a^b f(x) \rho(x) y_m^*(x) \mathrm{d}x
+&=\sum_{n=1}^{\infty} C_n \int_a^b \rho(x) y_n(x) y_m^*(x) \mathrm{d}x \\
+&=C_m \int_a^b \rho(x) y_m(x) y_m^*(x) \mathrm{d}x \\
+&=C_m \int_a^b \rho(x) \left|y_m(x) \right|^2 \mathrm{d}x
+\end{split}
+\end{equation}
+
+于是有：
+
+\begin{equation}
+C_m
+=\dfrac{1 }{\int_a^b \rho(x) \left|y_m(x) \right|^2 \mathrm{d}x } \int_a^b f(x) \rho(x) y_m^*(x) \mathrm{d}x.
+\end{equation}
+
+\subsection{例题}
+
+\subsubsection{例1}
+
+\begin{example}
+    
+求解四边固定，$x,y $ 方向上边长分别为 $l,d $ 的矩形薄膜的本征振动（即求本征振动频率和本征振动函数）。
+
+\end{example}
+
+\begin{solution}
+    
+矩形薄膜的振动满足二维波动方程。这里采用直角坐标，结合“四周固定”这一边界条件，可得定解问题：
+
+\begin{equation}
+\left\{
+\begin{aligned}
+&\frac{\partial^2 u(x,y,t) }{\partial t^2 } - a^2\left[\frac{\partial^2 u(x,y,t) }{\partial x^2 } + \frac{\partial^2 u(x,y,t) }{\partial y^2 }  \right] = 0, \\
+&\left. u \right|_{x=0} = \left. u \right|_{x=l} = 0, \\
+&\left. u \right|_{y=0} = \left. u \right|_{y=d} = 0. \\
+\end{aligned}
+\right.
+\end{equation}
+
+设 $u(x,y,t) $ 可分离变量：
+
+\begin{equation}
+u(x,y,t) = U(x,y)T(t) = X(x)Y(y)T(t),
+\end{equation}
+
+代入波动方程可得：
+
+\begin{equation}
+X(x)Y(y)T''(t) - a^2\left[Y(y)T(t)X''(x) + X(x)T(t)Y''(y) \right]
+=0.
+\end{equation}
+
+上式两边同时除以 $X(x)Y(y)T(t) $ 得：
+
+\begin{equation}
+\frac{T''(t) }{T(t) } - a^2\left[\frac{X''(x) }{X(x) } + \frac{Y''(y) }{Y(y) }  \right]
+=0. \label{eq:rect-sep}
+\end{equation}
+
+观察可知，必定有：
+
+\begin{equation}
+\frac{T''(t) }{T(t) } = -\omega^2,\quad
+\frac{X''(x) }{X(x) } = -k_x^2,\quad
+\frac{Y''(y) }{Y(y) } = -k_y^2.
+\end{equation}
+
+将上式代入\eqref{eq:rect-sep}，可知 $\omega,k_x,k_y $ 满足：
+
+\begin{equation}
+\omega^2 = a^2\left(k_x^2+k_y^2 \right).
+\end{equation}
+
+下面解 $X(x),Y(y),T(t) $ 所要满足的方程。
+
+\begin{equation}
+\frac{X''(x) }{X(x) } = -k_x^2
+\Longrightarrow X(x) = A\cos(k_x x) + B\sin(k_x x).
+\end{equation}
+
+结合边界条件 $\displaystyle{u\big|_{x=0} = u\big|_{x=l} = 0 }$  可得：
+
+\begin{equation}
+A = 0,\quad
+k_x^{(n)} = \frac{n\pi }{l },\quad n=1,2,\cdots.
+\end{equation}
+
+因此，$X(x) $ 的本征函数为：
+
+\begin{equation}
+X^{(n)}
+=B^{(n)} \sin\left(\frac{n\pi }{l } x \right).
+\end{equation}
+
+\begin{equation}
+\frac{Y''(y) }{Y(y) } = -k_y^2
+\Longrightarrow Y(y) = C\cos(k_y y)+D\sin(k_y y).
+\end{equation}
+
+结合边界条件 $\displaystyle{u\big|_{y=0} = u\big|_{y=d} = 0 }$  可得：
+
+\begin{equation}
+C = 0,\quad
+k_y^{(m)} = \frac{m\pi }{d },\quad m=1,2,\cdots.
+\end{equation}
+
+因此，$Y(y) $ 的本征函数为：
+
+\begin{equation}
+Y^{(m)}
+=D^{(m)} \sin\left(\frac{m\pi }{d } y \right).
+\end{equation}
+
+由 $U(x,y)=X(x)Y(y) $ 可知，本征振动函数为：
+
+\begin{equation}
+\begin{split}
+U^{(nm)}(x,y)
+&=X^{(n)}(x)Y^{(m)}(y) \\
+&=B^{(n)}D^{(m)} \sin\left(\frac{n\pi }{l } x \right) \sin\left(\frac{m\pi }{d } y \right) \\
+&\equiv E^{(nm)} \sin\left(\frac{n\pi }{l } x \right) \sin\left(\frac{m\pi }{d } y \right),\quad E^{(nm)}\equiv B^{(n)}D^{(m)},\quad n,m=1,2,\cdots.
+\end{split}
+\end{equation}
+
+由 $\omega^2=a^2\left(k_x^2+k_y^2 \right) $ 可知，本征振动频率为：
+
+\begin{equation}
+\begin{split}
+\omega^{(nm)}
+&=a\sqrt{\left(k_x^{(n)} \right)^2 + \left(k_y^{(m)} \right)^2} \\
+&=a\sqrt{\left(\frac{n\pi }{l }  \right)^2 + \left(\frac{m\pi }{d }  \right)^2},\quad n,m=1,2,\cdots
+\end{split}
+\end{equation}
+
+\end{solution}
+
+\subsubsection{例2}
+
+\begin{example}
+
+求定解问题：
+    
+\begin{equation}
+\left\{
+\begin{aligned}
+&u_{tt}-a^2u_{xx}=0 \\
+&\left. u_{x} \right|_{x=0}=0 \\
+&\left. u_{x} \right|_{x=l}=0 \\
+&\left. u_{x} \right|_{t=0}=\cos\left(\frac{\pi x}{l}\right)+0.3\cos\left(\frac{3\pi x }{l }  \right) \\
+&\left. u_{x} \right|_{t=0}=0
+\end{aligned}
+\right.
+\end{equation}
+
+\end{example}
+
+\section{曲线坐标系下的分离变量}
+

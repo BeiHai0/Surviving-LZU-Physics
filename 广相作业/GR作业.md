@@ -319,3 +319,125 @@ $$
 \nabla_\lambda f_{\mu\nu} = 0
 \end{align}
 $$
+
+# 2
+
+## 2.1
+
+> 已知 $\mathrm{d}s^2=g_{\mu\nu} \mathrm{d}x^\mu \mathrm{d}x^\nu=-\mathrm{d}\tau^2 $，从变分原理 $\displaystyle{\delta \int_A^B \mathrm{d}s=0 }$ 或 $\displaystyle{\delta\int_A^B \left(\mathrm{d}\tau/\mathrm{d}\lambda \right)^2 \mathrm{d}\lambda=0 }$ 求出“短”程线方程。
+
+段先生书上已经有对线长变分求短程线的过程，也就是从
+
+$$
+\begin{equation}
+\delta \int_{\lambda_1}^{\lambda_2} \sqrt{-g_{\mu\nu} \dot{x}^\mu \dot{x}^{\nu}} \mathrm{d}\lambda
+=0
+\end{equation}
+$$
+
+出发找到 $x^\mu(\lambda) $ 要满足的方程。
+
+这里
+
+$$
+\begin{equation}
+\mathrm{d}\tau
+=\sqrt{-g_{\mu\nu}\mathrm{d}x^\mu\mathrm{d}x^\nu}
+=\sqrt{-g_{\mu\nu} \dot{x}^\mu \dot{x}^{\nu}}\mathrm{d}\lambda,
+\end{equation}
+$$
+
+也就是从
+
+$$
+\begin{equation}
+\delta \int_{\lambda_1}^{\lambda_2} -g_{\mu\nu} \dot{x}^\mu \dot{x}^{\nu} \mathrm{d}\lambda
+=0
+\end{equation}
+$$
+
+出发推导短程线方程。也即
+
+$$
+\begin{equation}
+\int_{\lambda_1}^{\lambda_2} \delta(-g_{\mu\nu} \dot{x}^\mu \dot{x}^{\nu}) \mathrm{d}\lambda
+=0
+\end{equation}
+$$
+
+令：
+
+$$
+\begin{equation}
+F(x,\dot{x}) 
+=-g_{\mu\nu} \dot{x}^\mu \dot{x}^\nu,
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{split}
+\delta F
+&=-\delta\left(g_{\mu\nu} \dot{x}^\mu \dot{x}^\nu \right) \\
+&=-\left[\dot{x}^\mu \dot{x}^\nu \delta g_{\mu\nu} + g_{\mu\nu} \dot{x}^\nu \delta\dot{x}^\mu + g_{\mu\nu} \dot{x}^\mu \delta \dot{x}^\nu \right] \\
+&=-\left[\dot{x}^\mu \dot{x}^\nu \partial_\alpha g_{\mu\nu} \delta x^\alpha + g_{\mu\nu} \dot{x}^\nu \frac{\mathrm{d} }{\mathrm{d}\lambda } \delta x^\mu + g_{\mu\nu} \dot{x}^\mu \frac{\mathrm{d} }{\mathrm{d}\lambda } \delta x^\nu \right] \\
+&=-\left[\dot{x}^\mu \dot{x}^\nu \partial_\alpha g_{\mu\nu} \delta x^\alpha + g_{\alpha\nu} \dot{x}^\nu \frac{\mathrm{d} }{\mathrm{d}\lambda } \delta x^\alpha + g_{\mu\alpha} \dot{x}^\mu \frac{\mathrm{d} }{\mathrm{d}\lambda } \delta x^\alpha \right] \\
+&=-\left\{\dot{x}^\mu \dot{x}^\nu \partial_\alpha g_{\mu\nu} \delta x^\alpha + \frac{\mathrm{d} }{\mathrm{d}\lambda } \left[\left(g_{\alpha\nu} \dot{x}^\nu + g_{\mu\alpha} \dot{x}^\mu \right) \delta x^\alpha \right] - \delta x^\alpha \frac{\mathrm{d} }{\mathrm{d}\lambda } \left(g_{\alpha\nu} \dot{x}^\nu + g_{\mu\alpha} \dot{x}^\mu \right) \right\} \\
+&=-\frac{\mathrm{d} }{\mathrm{d}\lambda } \left[\left(g_{\alpha\nu} \dot{x}^\nu + g_{\mu\alpha} \dot{x}^\mu \right) \delta x^\alpha \right] + \delta x^\alpha \left[\left(\dot{x}^\nu \partial_\beta g_{\alpha\nu} \dot{x}^\beta + g_{\alpha\nu} \ddot{x}^\nu + \dot{x}^\mu \partial_\beta g_{\mu\alpha} \dot{x}^\beta + g_{\mu\alpha} \ddot{x}^\mu \right) - \dot{x}^\mu \dot{x}^\nu \partial_\alpha g_{\mu\nu} \right] \\
+&=-\frac{\mathrm{d} }{\mathrm{d}\lambda } \left[\left(g_{\alpha\nu} \dot{x}^\nu + g_{\mu\alpha} \dot{x}^\mu \right) \delta x^\alpha \right] + \delta x^\alpha \left[\left(\dot{x}^\nu \partial_\mu g_{\alpha\nu} \dot{x}^\mu + g_{\alpha\mu} \ddot{x}^\mu + \dot{x}^\mu \partial_\nu g_{\mu\alpha} \dot{x}^\nu + g_{\alpha\mu} \ddot{x}^\mu \right) - \dot{x}^\mu \dot{x}^\nu \partial_\alpha g_{\mu\nu} \right] \\
+&=-\frac{\mathrm{d} }{\mathrm{d}\lambda } \left[\left(g_{\alpha\nu} \dot{x}^\nu + g_{\mu\alpha} \dot{x}^\mu \right) \delta x^\alpha \right] + \delta x^\alpha \left[\dot{x}^\mu \dot{x}^\nu\left(\partial_\mu g_{\alpha\nu} + \partial_\nu g_{\alpha\mu} - \partial_\alpha g_{\mu\nu} \right) + 2g_{\alpha\mu} \ddot{x}^\mu \right] \\
+\end{split}
+\end{equation}
+$$
+
+由 $\displaystyle{\int_{\lambda_1}^{\lambda} \delta F \mathrm{d}\lambda }$ 可得
+
+$$
+\begin{equation}
+\dot{x}^\mu \dot{x}^\nu\left(\partial_\mu g_{\alpha\nu} + \partial_\nu g_{\alpha\mu} - \partial_\alpha g_{\mu\nu} \right) + 2g_{\alpha\mu} \ddot{x}^\mu
+=0
+\end{equation}
+$$
+
+上式两边同乘 $g_{\lambda \alpha} $ 可得
+
+$$
+\begin{equation}
+\Gamma^\lambda_{\mu\nu} \dot{x}^\mu \dot{x}^\nu + \ddot{x}^\lambda
+=0
+\end{equation}
+$$
+
+也即短程线方程：
+
+$$
+\begin{equation}
+\frac{\mathrm{d}^2 x^\lambda }{\mathrm{d}\lambda^2 } + \Gamma^\lambda_{\mu\nu} \frac{\mathrm{d}x^\mu }{\mathrm{d}\lambda } \frac{\mathrm{d}x^\nu }{\mathrm{d}\lambda } 
+=0.
+\end{equation}
+$$
+
+
+
+
+## 2.2
+
+> 已知 $\nabla_\nu A_\mu = \partial_\nu A_\mu - \Gamma^\lambda_{\nu \mu} A_\lambda $，利用标量微分关系 $\nabla_\nu U=\partial_\nu U $ 以及莱布尼茨法则证明 $\nabla_\nu B^\mu = \partial_\nu B^\mu + \Gamma^\mu_{\nu \lambda} B^\lambda .$
+
+## 2.3
+
+> 一个嵌入三维欧氏空间的普通球面，选用球极坐标，其线元为 $\mathrm{d}s^2 = a^2 \mathrm{d}\theta^2 + a^2 \sin^2\theta \mathrm{d}\phi^2 $，求：(1) $g^{\nu\mu} $；(2) 全部非零克氏符 $\Gamma^\lambda_{\mu\nu} $；(3) 全部非零 $R^\nu_{\mu\sigma\lambda},R_{\mu\nu},R $；(4) 写出该度规表示的球面空间的测地线方程。
+
+## 2.4
+
+> 由协变矢量双重协变微商非对称部分 $\phi_{\lambda;[\mu;\nu]} $ 推导曲率张量与挠率张量 $\nabla_\nu \nabla_\mu \phi_\lambda - \nabla_\mu \nabla_\nu \phi_\lambda = R^\sigma_{\lambda\mu\nu} \phi_\sigma - T^\alpha_{\mu\nu} \nabla_\alpha \phi_\lambda .$
+
+## 2.5
+
+> 试求出适用任意时轴正交时空、任意观者的光速表达式，并由此验证广义相对论中的光速不变原理。提示：利用类光线元，并只考虑光线沿径向传播的简单情形。
+
+
+
+
+
+
