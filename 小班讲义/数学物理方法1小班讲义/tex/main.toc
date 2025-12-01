@@ -169,4 +169,5 @@
 \contentsline {subsection}{\numberline {8.3.2}例题}{66}{subsection.8.3.2}%
 \contentsline {subsubsection}{\numberline {8.3.2.1}例1}{66}{subsubsection.8.3.2.1}%
 \contentsline {subsubsection}{\numberline {8.3.2.2}例2}{67}{subsubsection.8.3.2.2}%
-\contentsline {section}{\numberline {8.4}曲线坐标系下的分离变量}{67}{section.8.4}%
+\contentsline {subsubsection}{\numberline {8.3.2.3}例3}{70}{subsubsection.8.3.2.3}%
+\contentsline {section}{\numberline {8.4}曲线坐标系下的分离变量}{76}{section.8.4}%

@@ -424,13 +424,238 @@ $$
 
 > 已知 $\nabla_\nu A_\mu = \partial_\nu A_\mu - \Gamma^\lambda_{\nu \mu} A_\lambda $，利用标量微分关系 $\nabla_\nu U=\partial_\nu U $ 以及莱布尼茨法则证明 $\nabla_\nu B^\mu = \partial_\nu B^\mu + \Gamma^\mu_{\nu \lambda} B^\lambda .$
 
+一方面，协变微商满足莱布尼兹法则：
+
+$$
+\begin{equation}
+\begin{split}
+\nabla_\nu\left(A_\mu B^\mu \right)
+&=B^\mu \nabla_\nu A_\mu + A_\mu \nabla_\nu B^\mu \\
+&=B^\mu\left(\partial_\nu A_\mu - \Gamma_{\nu\mu}^\lambda A_\lambda \right) + A_\mu \nabla_\nu B^\mu \\
+&=B^\mu \partial_\nu A_\mu - B^\mu \Gamma_{\nu\mu}^\lambda A_\lambda + A_\mu \nabla_\nu B^\mu \\
+\end{split}
+\end{equation}
+$$
+
+另一方面，$A_\mu B^\mu $ 是标量，其协变微商等于普通偏微分：
+
+$$
+\begin{equation}
+\begin{split}
+\nabla_\nu\left(A_\mu B^\mu \right)
+&=\partial_\nu \left( A_\mu B^\mu\right) \\
+&=B^\mu \partial_\nu A_\mu + A_\mu \partial_\nu B^\mu \\
+\end{split}
+\end{equation}
+$$
+
+对比可得：
+
+$$
+\begin{equation}
+\begin{split}
+A_\mu \nabla_\nu B^\mu
+&=A_\mu \partial_\nu B^\mu + B^\mu \Gamma_{\nu\mu}^\lambda A_\lambda \\
+&=A_\mu \partial_\nu B^\mu + A_\lambda \Gamma_{\nu\mu}^\lambda B^\mu \\
+&=A_\mu \partial_\nu B^\mu + A_\mu \Gamma_{\nu\lambda}^\mu B^\lambda \\
+\end{split}
+\end{equation}
+$$
+
+从而得到：
+
+$$
+\begin{equation}
+\nabla_\nu B^\mu
+=\partial_\nu B^\mu + \Gamma^\mu_{\nu\lambda} B^\lambda
+\end{equation}
+$$
+
 ## 2.3
 
 > 一个嵌入三维欧氏空间的普通球面，选用球极坐标，其线元为 $\mathrm{d}s^2 = a^2 \mathrm{d}\theta^2 + a^2 \sin^2\theta \mathrm{d}\phi^2 $，求：(1) $g^{\nu\mu} $；(2) 全部非零克氏符 $\Gamma^\lambda_{\mu\nu} $；(3) 全部非零 $R^\nu_{\mu\sigma\lambda},R_{\mu\nu},R $；(4) 写出该度规表示的球面空间的测地线方程。
 
+取 $\left(x^1, x^2 \right) = \left(\theta, \phi \right) $，根据线元
+
+$$
+\begin{equation}
+\mathrm{d}s^2
+=g_{\mu\nu}\mathrm{d}x^\mu\mathrm{d}x^\nu
+=a^2 \mathrm{d}\theta^2 + a^2 \sin^2\theta \mathrm{d}\phi^2
+\end{equation}
+$$
+
+可得度规
+
+$$
+\begin{equation}
+g_{11}=a^2,\quad
+g_{12}=g_{21}=0,\quad
+g_{22}=a^2\sin^2\theta,
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\left[g_{\mu\nu} \right]
+=\begin{bmatrix}
+a^2 &0 \\
+0 &a^2\sin^2\theta
+\end{bmatrix}
+\end{equation}
+$$
+
+以及逆度规
+
+$$
+\begin{equation}
+\left[g^{\mu\nu} \right]
+=\begin{bmatrix}
+\frac{1 }{a^2 } &0 \\
+0 &\frac{1 }{a^2\sin^2\theta } 
+\end{bmatrix}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+g^{11}=\frac{1 }{a^2 } ,\quad
+g^{12}=g^{21}=0,\quad
+g^{22}=\frac{1 }{a^2\sin^2\theta } ,
+\end{equation}
+$$
+
+由度规 $g_{\mu\nu} $ 以及逆度规 $g^{\mu\nu} $ 可得克氏符：
+
+$$
+\begin{equation}
+\Gamma_{\mu\nu}^\lambda
+=\frac{1 }{2 } g^{\lambda\sigma}\left(\partial_\mu g_{\sigma\nu} + \partial_\nu g_{\sigma \mu} - \partial_\sigma g_{\mu\nu} \right),
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{split}
+\Gamma_{\mu\nu}^1
+&=\frac{1 }{2 } g^{1\sigma}\left(\partial_\mu g_{\sigma\nu} + \partial_\nu g_{\sigma \mu} - \partial_\sigma g_{\mu\nu} \right) \\
+&=\frac{1 }{2 } g^{11}\left(\partial_\mu g_{1\nu} + \partial_\nu g_{1 \mu} - \partial_1 g_{\mu\nu} \right) \\
+&=\frac{1 }{2a^2 } \left(-\partial_1 g_{\mu\nu} \right) \\
+&=-\frac{1 }{2a^2 } \partial_1 g_{\mu\nu}
+\end{split}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\Gamma^1_{11} = \Gamma^1_{12} = \Gamma^1_{21} = 0,
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\Gamma^1_{22}
+=-\frac{1 }{2a^2 } \partial_1 g_{22}
+=-\frac{1 }{2a^2 } \partial_\theta \left(a^2\sin^2\theta \right)
+=-\sin\theta\cos\theta,
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{split}
+\Gamma^2_{\mu\nu}
+&=\frac{1 }{2 } g^{2\sigma}\left(\partial_\mu g_{\sigma\nu} + \partial_\nu g_{\sigma \mu} - \partial_\sigma g_{\mu\nu} \right) \\
+&=\frac{1 }{2 } g^{22}\left(\partial_\mu g_{2\nu} + \partial_\nu g_{2 \mu} - \partial_2 g_{\mu\nu} \right) \\
+&=\frac{1 }{2 } g^{22}\left(\partial_\mu g_{2\nu} + \partial_\nu g_{2 \mu} \right) \\
+&=\frac{1 }{2a^2\sin^2\theta } \left(\partial_\mu g_{2\nu} + \partial_\nu g_{2 \mu} \right) \\
+\end{split}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\Gamma^2_{11} = \Gamma^2_{22} = 0,
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{split}
+\Gamma^2_{12}
+=\Gamma^2_{21}
+=\frac{1 }{2a^2\sin^2\theta } \left(\partial_1 g_{22} + \partial_2 g_{2 1} \right) 
+=\frac{1 }{2a^2\sin^2\theta } \partial_\theta \left(a^2 \sin^2\theta \right)
+=\frac{\cos\theta }{\sin\theta } 
+=\cot\theta
+\end{split}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+R_{\sigma\mu\nu}^\lambda
+=\partial_\mu \Gamma_{\nu\sigma}^\lambda - \partial_\nu \Gamma_{\mu\sigma}^\lambda + \Gamma_{\mu\alpha}^\lambda \Gamma_{\nu\sigma}^\alpha - \Gamma_{\nu\alpha}^\lambda \Gamma_{\mu\sigma}^\alpha
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{split}
+R^1_{212}
+=\partial_1 \Gamma_{22}^1 - \partial_2 \Gamma_{12}^1 + \Gamma_{1\alpha}^1 \Gamma_{22}^\alpha - \Gamma_{2\alpha}^1 \Gamma_{12}^\alpha
+=\sin^2\theta
+\end{split}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+R^1_{221}
+=-R^1_{212}
+=-\sin^2\theta
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{split}
+R^2_{121}
+=
+\end{split}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{split}
+R_{\mu\nu}
+=R^{\lambda}_{\mu\lambda\nu}
+=R^1_{\mu 1 \nu} + R^2_{\mu 2 \nu}
+=R^1_{\mu 1 \nu}
+\end{split}
+\end{equation}
+$$
+
 ## 2.4
 
-> 由协变矢量双重协变微商非对称部分 $\phi_{\lambda;[\mu;\nu]} $ 推导曲率张量与挠率张量 $\nabla_\nu \nabla_\mu \phi_\lambda - \nabla_\mu \nabla_\nu \phi_\lambda = R^\sigma_{\lambda\mu\nu} \phi_\sigma - T^\alpha_{\mu\nu} \nabla_\alpha \phi_\lambda .$
+> 由协变矢量双重协变微商非对称部分 $\phi_{\lambda;[\mu;\nu]} $ 推导曲率张量与挠率张量 $\nabla_\mu \nabla_\nu \phi_\lambda - \nabla_\nu \nabla_\mu \phi_\lambda = -R^\sigma_{\lambda\mu\nu} \phi_\sigma - T^\alpha_{\mu\nu} \nabla_\alpha \phi_\lambda .$
+
+$$
+\begin{equation}
+\begin{split}
+\nabla_\mu \nabla_\nu \phi_\lambda - \mu \leftrightarrow \nu
+&=\nabla_\mu \left(\nabla_\nu \phi_\lambda \right) - \mu \leftrightarrow \nu \\
+&=\partial_\mu \left(\nabla_\nu \phi_\lambda \right) - \Gamma_{\mu\nu}^\alpha \nabla_\alpha \phi_\lambda - \Gamma_{\mu\lambda}^\alpha \nabla_\nu \phi_\alpha - \mu \leftrightarrow \nu \\
+&=\partial_\mu \left(\partial_\nu \phi_\lambda - \Gamma_{\nu\lambda}^\alpha \phi_\alpha \right) - \Gamma_{\mu\nu}^\alpha \nabla_\alpha \phi_\lambda - \Gamma_{\mu\lambda}^\alpha \left(\partial_\nu \phi_\alpha - \Gamma_{\nu\alpha}^\beta \phi_\beta \right) - \mu \leftrightarrow \nu \\
+&=\partial_\mu \partial_\nu \phi_\lambda - \left(\partial_\mu \Gamma_{\nu\lambda}^\alpha \right) \phi_\alpha - \Gamma_{\nu\lambda}^\alpha \partial_\mu \phi_\alpha - \Gamma_{\mu\lambda}^\alpha \partial_\nu \phi_\alpha + \Gamma_{\mu\lambda}^\alpha \Gamma_{\nu\alpha}^\beta \phi_\beta - \Gamma_{\mu\nu}^\alpha \nabla_\alpha \phi_\lambda - \mu \leftrightarrow \nu  \\
+&=-\left(\partial_\mu \Gamma_{\nu\lambda}^\alpha - \partial_\nu \Gamma_{\mu\lambda}^\alpha\right)\phi_\alpha + \Gamma_{\mu\lambda}^\alpha \Gamma_{\nu\alpha}^\beta \phi_\beta - \Gamma_{\nu\lambda}^\alpha \Gamma_{\mu\alpha}^\beta \phi_\beta - \left(\Gamma_{\mu\nu}^\alpha - \Gamma_{\nu\mu}^\alpha \right)\nabla_\alpha \phi_\lambda \\
+&=-\left(\partial_\mu \Gamma_{\nu\lambda}^\beta - \partial_\nu \Gamma_{\mu\lambda}^\beta\right)\phi_\beta + \Gamma_{\mu\lambda}^\alpha \Gamma_{\nu\alpha}^\beta \phi_\beta - \Gamma_{\nu\lambda}^\alpha \Gamma_{\mu\alpha}^\beta \phi_\beta - \left(\Gamma_{\mu\nu}^\alpha - \Gamma_{\nu\mu}^\alpha \right)\nabla_\alpha \phi_\lambda \\
+&=-\left(\partial_\mu \Gamma_{\nu\lambda}^\beta - \partial_\nu \Gamma_{\mu\lambda}^\beta + \Gamma_{\nu\lambda}^\alpha \Gamma_{\mu\alpha}^\beta - \Gamma_{\mu\lambda}^\alpha \Gamma_{\nu\alpha}^\beta \right)\phi_\beta - \left(\Gamma_{\mu\nu}^\alpha - \Gamma_{\nu\mu}^\alpha \right)\nabla_\alpha \phi_\lambda \\
+&=-R_{\lambda\mu\nu}^\beta \phi_\beta - T_{\mu\nu}^\alpha \nabla_\alpha \phi_\lambda
+\end{split}
+\end{equation}
+$$
 
 ## 2.5
 

@@ -402,13 +402,549 @@ U^{(nm)}(x,y)
 &u_{tt}-a^2u_{xx}=0 \\
 &\left. u_{x} \right|_{x=0}=0 \\
 &\left. u_{x} \right|_{x=l}=0 \\
-&\left. u_{x} \right|_{t=0}=\cos\left(\frac{\pi x}{l}\right)+0.3\cos\left(\frac{3\pi x }{l }  \right) \\
+&\left. u \right|_{t=0}=\cos\left(\frac{\pi x}{l}\right)+0.3\cos\left(\frac{3\pi x }{l }  \right) \\
 &\left. u_{x} \right|_{t=0}=0
 \end{aligned}
 \right.
 \end{equation}
 
 \end{example}
+
+\begin{solution}
+    
+设 $u(x,t) $ 可分离变量：
+
+\begin{equation}
+u(x,t)=U(x)T(t),
+\end{equation}
+
+代入一维波动方程 $\displaystyle{u_{tt}-a^2u_{xx}=0 }$ 可得：
+
+\begin{equation}
+U(x) T''(t) - a^2 U''(x) T(t) = 0.
+\end{equation}
+
+两边同时除以 $U(x)T(t) $ 得到：
+
+\begin{equation}
+\frac{T''(t) }{T(t) } - a^2 \frac{U''(x) }{U(x) } = 0.
+\end{equation}
+
+观察可知：
+
+\begin{equation}
+\frac{T''(t) }{T(t) } = -\omega^2,\quad
+\frac{U''(x) }{U(x) } = -k^2,\quad 
+\omega^2 = a^2 k^2.
+\end{equation}
+
+先看场量 $u(x,t)=T(t) U(x) $ 的时间部分 $T(t) $ 满足的方程：
+
+\begin{equation}
+T''(t)+\omega^2 T(t) = 0
+\Longrightarrow T(t) = A\cos\omega t+B\sin\omega t,
+\end{equation}
+
+\begin{equation}
+T'(t)
+=-\omega A\sin\omega t + \omega B\cos\omega t,
+\end{equation}
+
+\begin{equation}
+\left. u_t \right|_{t=0}=0
+\Longrightarrow \left. T'(t)\right|_{t=0} = 0
+\Longrightarrow B = 0,
+\end{equation}
+
+因此：
+
+\begin{equation}
+T(t)=A\cos\omega t
+\end{equation}
+
+再看场量 $u(x,t)=T(t) U(x) $ 空间部分 $U(x) $ 满足的方程：
+
+\begin{equation}
+U''(x) + k^2 U(x) = 0
+\Longrightarrow U(x) = C\cos k x + D\sin k x,
+\end{equation}
+
+\begin{equation}
+U'(x)=-k C\sin k x + k D\cos k x,
+\end{equation}
+
+\begin{equation}
+\left. u_x \right|_{x=0} = 0,
+\Longrightarrow \left. U'(x)\right|_{x=0} = 0,
+\Longrightarrow D = 0.
+\end{equation}
+
+因此：
+
+\begin{equation}
+U(x) = C\cos k x,\quad U'(x) = -kC\sin k x,
+\end{equation}
+
+\begin{equation}
+\left. u_{x}\right|_{x=l}=0,
+\Longrightarrow \left. U'(x)\right|_{x=l} = 0,
+\Longrightarrow -kC\sin k l = 0.
+\end{equation}
+
+因此，$k $ 的本征值 $k_n $ 为：
+
+\begin{equation}
+k_n = \frac{n\pi }{l },\quad n=1,2,\cdots
+\end{equation}
+
+相应的本征函数 $U_n(x) $ 为：
+
+\begin{equation}
+U_n(x) = \cos k_n x = \cos\left(\frac{n\pi }{l } x \right),\quad n=1,2,\cdots
+\end{equation}
+
+由 $\omega = a k $，得 $\omega $ 的本征值 $\omega_n $ 为：
+
+\begin{equation}
+\omega_n = a k_n
+=\frac{n\pi a}{l },\quad n=1,2,\cdots
+\end{equation}
+
+相应的本征函数 $T_n(x) $ 为：
+
+\begin{equation}
+T_n(t) = \cos\omega_n t = \cos\left(\frac{n\pi a}{l } t \right),~~n=,1,2,\cdots
+\end{equation}
+
+本征解 $u_n(x,t) $ 为：
+
+\begin{equation}
+u_n(x,t)
+=U_n(t) T_n(t)
+=\cos\left(\frac{n\pi }{l } x \right)\cos\left(\frac{n\pi a}{l } t \right),\quad n=,1,2,\cdots
+\end{equation}
+
+定解问题的通解 $u(x,t) $ 为：
+
+\begin{equation}
+u(x,t)
+=\sum_{n=1}^{\infty} E_n u_n(x,t)
+=\sum_{n=1}^{\infty} E_n \cos\left(\frac{n\pi }{l } x \right)\cos\left(\frac{n\pi a}{l } t \right) 
+\end{equation}
+
+最后结合初始条件
+
+\begin{equation}
+\left. u\right|_{t=0} = \cos\left(\frac{\pi x}{l}\right) +0.3\cos\left(\frac{3\pi x }{l }  \right)
+\end{equation}
+
+得到：
+
+\begin{equation}
+\sum_{n=1}^{\infty} E_n \cos\left(\frac{n\pi }{l } x \right)
+=\cos\left(\frac{\pi x}{l}\right) +0.3\cos\left(\frac{3\pi x }{l }  \right)
+\end{equation}
+
+两边对比得到系数：
+
+\begin{equation}
+E_1 = 1,E_2 = 0,E_3 = 0.3,E_4=E_5=\cdots=0,
+\end{equation}
+
+最终得到定解问题的解为：
+
+\begin{equation}
+u(x,t)
+=\cos\left(\frac{\pi }{l}x \right)\cos\left(\frac{\pi a}{l}t \right) + 0.3\cos\left(\frac{3\pi }{l}x \right)\cos\left(\frac{3\pi a}{l}t \right).
+\end{equation}
+
+\end{solution}
+
+\subsubsection{例3}
+
+\begin{example}
+    
+求定解问题：
+
+\begin{equation}
+\left\{
+\begin{aligned}
+&u_{t}-a^2\nabla^2 u=0 \\
+&\left. u\right|_{x=0}=0,\left. u\right|_{x=l_1}=0 \\
+&\left. u\right|_{y=0}=0,\left. u\right|_{y=l_2}=0 \\
+&\left. u\right|_{z=0}=0,\left. u\right|_{z=l_3}=0 \\
+&\left. u\right|_{t=0}=T_0 \\
+\end{aligned}
+\right.
+\end{equation}
+
+\end{example}
+
+\begin{solution}
+    
+设 $u(x,y,z,t) $ 可分离变量：
+
+\begin{equation}
+u(x,y,z,t)=U(x,y,z)T(t),
+\end{equation}
+
+代入输运方程可得：
+
+\begin{equation}
+U(x,y,z)T'(t) - a^2 T(t) \nabla^2 U(x,y,z)
+=0.
+\end{equation}
+
+上式两边同时除以 $U(x,y,z)T(t) $ 得：
+
+\begin{equation}
+\frac{T'(t) }{ T(t) } = a^2 \frac{\nabla^2  U(x,y,z) }{U(x,y,z) },
+\end{equation}
+
+观察可知：
+
+\begin{equation}
+\frac{T'(t) }{T(t) } = -\omega^2,\quad
+a^2 \frac{\nabla^2  U(x,y,z) }{U(x,y,z) } = -k^2,\quad
+\omega^2 = a^2 k^2,\quad 
+\end{equation}
+
+时间部分 $T(t) $ 满足方程：
+
+\begin{equation}
+T'(t) + \omega^2 T(t) = 0,
+\end{equation}
+
+空间部分 $U(x,y,z) $ 满足方程：
+
+\begin{equation}
+\nabla^2 U(x,y,z) + k^2 U(x,y,z) = 0
+\end{equation}
+
+设 $U(x,y,z) $ 可分离变量：
+
+\begin{equation}
+U(x,y,z) = X(x)Y(y)Z(z)
+\end{equation}
+
+代入 $U(x,y,z) $ 满足的方程，得：
+
+\begin{equation}
+Y(y)Z(z)X''(x) + X(x)Z(z)Y''(y) + X(x)Y(y)Z''(z) + k^2 X(x)Y(y)Z(z)
+=0
+\end{equation}
+
+上式两边同时除以 $X(x)Y(y)Z(z) $ 得：
+
+\begin{equation}
+\frac{X''(x) }{X(x) } + \frac{Y''(y) }{Y(y) } + \frac{Z''(z) }{Z(z) } + k^2 
+=0
+\end{equation}
+
+注意到，$\displaystyle{\frac{X''(x) }{X(x) } , \frac{Y''(y) }{Y(y) } , \frac{Z''(z) }{Z(z) } }$ 分别只与 $x,y,z $ 有关。上式成立，则有：
+
+\begin{equation}
+\frac{X''(x) }{X(x) } = -k_x^2,\quad k_x>0
+\end{equation}
+
+\begin{equation}
+\frac{Y''(y) }{Y(y) } = -k_y^2,\quad k_y>0
+\end{equation}
+
+\begin{equation}
+\frac{Z''(z) }{Z(z) } = -k_z^2,\quad k_z>0
+\end{equation}
+
+\begin{equation}
+k_x^2 + k_y^2+k_z^2 = k^2
+\end{equation}
+
+即：
+
+\begin{equation}
+X''(x) + k_x^2 X(x) = 0
+\end{equation}
+
+\begin{equation}
+Y''(y) + k_y^2 Y(y) = 0
+\end{equation}
+
+\begin{equation}
+Z''(z) + k_z^2 Z(z) = 0
+\end{equation}
+
+\begin{equation}
+k_x^2 + k_y^2+k_z^2 = k^2
+\end{equation}
+
+方程 $\displaystyle{X''(x) + k_x^2 X(x) = 0 }$ 的通解为：
+
+\begin{equation}
+X(x) = A_x \cos\left(k_x x \right) + B_x \sin\left(k_x x \right)
+\end{equation}
+
+边界条件：
+
+\begin{equation}
+\left. u\right|_{x=0}=0,\left. u\right|_{x=l_1}=0
+\Longrightarrow \left. X(x)\right|_{x=0}=0,\left. X(x)\right|_{x=l_1}=0
+\end{equation}
+
+由 $\left. X(x)\right|_{x=0}=0 $ 可知：
+
+\begin{equation}
+A_x = 0,
+\end{equation}
+
+因此：
+
+\begin{equation}
+X(x) = B_x \sin\left(k_x x \right).
+\end{equation}
+
+再由 $X(x)\bigg|_{x=l_1}=0 $ 可得 $k_x $ 的本征值 $k_x^{(n_x)} $ 为：
+
+\begin{equation}
+k_x^{(n_x)} = \frac{n_x\pi }{l_1 } ,\quad n_x=1,2,\cdots
+\end{equation}
+
+相应的本征函数 $X_{n_x}(x) $ 为：
+
+\begin{equation}
+X_{n_x}(x) = \sin\left(\frac{n_x\pi x}{l_1 } \right),\quad n_x=1,2,\cdots
+\end{equation}
+
+类似的，$k_y $ 的本征值 $k_y^{(n_y)} $ 为：
+
+\begin{equation}
+k_y^{(n_y)} = \frac{n_y \pi }{l_2 } ,\quad n_y=1,2,\cdots
+\end{equation}
+
+相应的本征函数 $Y_{n_y}(y) $ 为：
+
+\begin{equation}
+Y_{n_y}(y) = \sin\left(\frac{n_y\pi y}{l_2 } \right),\quad n_y=1,2,\cdots
+\end{equation}
+
+$k_z $ 的本征值 $k_z^{(n_z)} $ 为：
+
+\begin{equation}
+k_z^{(n_z)} = \frac{n_z \pi }{l_3 } ,\quad n_z=1,2,\cdots
+\end{equation}
+
+相应的本征函数 $Z_{n_z}(z) $ 为：
+
+\begin{equation}
+Z_{n_z}(z) = \sin\left(\frac{n_z\pi z}{l_3 } \right),\quad n_z=1,2,\cdots
+\end{equation}
+
+由 $k^2=k_x^2+k_y^2+k_z^2 $ 可知，$k $ 的本征值 $k_{n_xn_yn_z} $ 为：
+
+\begin{equation}
+\begin{aligned}
+k_{n_xn_yn_z}
+&=\sqrt{\left(k_x^{(n_x)} \right)^2 + \left(k_y^{(n_y)} \right)^2 + \left(k_z^{(n_z)} \right)^2} \\
+&=\sqrt{\left(\frac{n_x\pi }{l_1 } \right)^2 + \left(\frac{n_y\pi }{l_2 } \right)^2 + \left(\frac{n_z\pi }{l_3 } \right)^2} \\
+&=\pi\sqrt{\left(\frac{n_x }{l_1 } \right)^2 + \left(\frac{n_y }{l_2 } \right)^2 + \left(\frac{n_z }{l_3 } \right)^2}
+\end{aligned}
+\end{equation}
+
+由 $U(x,y,z)=X(x)Y(y)Z(z) $ 可知，相应于本征值 $k_{n_xn_yn_z} $ 的本征函数 $U_{n_xn_yn_z} $ 为：
+
+\begin{equation}
+U_{n_xn_yn_z}(x,y,z)
+=X_{n_x}(x)Y_{n_y}(y)Z_{n_z}(z)
+=\sin\left(\frac{n_x\pi x}{l_1 } \right)\sin\left(\frac{n_y\pi y}{l_2 } \right) \sin\left(\frac{n_z\pi z}{l_3 } \right).
+\end{equation}
+
+再看时间部分。
+
+由 $\omega = a k $ 可知，$\omega $ 的本征值 $\omega_{n_xn_yn_z} $ 为：
+
+\begin{equation}
+\omega_{n_xn_yn_z}
+=a k_{n_xn_yn_z}
+=\pi a \sqrt{\left(\frac{n_x }{l_1 } \right)^2 + \left(\frac{n_y }{l_2 } \right)^2 + \left(\frac{n_z }{l_3 } \right)^2}.
+\end{equation}
+
+方程 $T'(t) + \omega^2 T(t) = 0 $ 的特解为：
+
+\begin{equation}
+T(t) = \exp\left(-\omega^2 t \right),
+\end{equation}
+
+$T(t) $ 对应本征值 $\omega_{n_xn_yn_z} $ 的本征函数 $T_{n_xn_yn_z}(t) $ 为：
+
+\begin{equation}
+T_{n_xn_yn_z}(t)
+=\mathrm{e}^{-\omega_{n_xn_yn_z}^2 t}
+\end{equation}
+
+由 $u(x,y,z,t)=U(x,y,z)T(t) $ 可知，$u(x,y,z,t) $ 的本征函数 $u_{n_xn_yn_z}(x,y,z,t) $ 为：
+
+\begin{equation}
+\begin{aligned}
+u_{n_xn_yn_z}(x,y,z,t)
+&=U_{n_xn_yn_z}(x,y,z) T_{n_xn_yn_z}(t) \\
+&=\mathrm{e}^{-\omega_{n_xn_yn_z}^2 t} \sin\left(\frac{n_x\pi x}{l_1 } \right)\sin\left(\frac{n_y\pi y}{l_2 } \right) \sin\left(\frac{n_z\pi z}{l_3 } \right) \\
+\end{aligned}
+\end{equation}
+
+因此，定解问题的形式解 $u(x,y,z,t) $ 为：
+
+\begin{equation}
+\begin{aligned}
+u(x,y,z,t)
+&=\sum_{n_x=1}^{\infty} \sum_{n_y=1}^{\infty} \sum_{n_z=1}^{\infty} C_{n_xn_yn_z}u_{n_xn_yn_z}(x,y,z,t) \\
+&=\sum_{n_x=1}^{\infty} \sum_{n_y=1}^{\infty} \sum_{n_z=1}^{\infty} C_{n_xn_yn_z}\mathrm{e}^{-\omega_{n_xn_yn_z}^2 t} \sin\left(\frac{n_x\pi x}{l_1 } \right)\sin\left(\frac{n_y\pi y}{l_2 } \right) \sin\left(\frac{n_z\pi z}{l_3 } \right) \\
+&=\sum_{n_x=1}^{\infty} \sum_{n_y=1}^{\infty} \sum_{n_z=1}^{\infty} C_{n_xn_yn_z}\exp\left\{-\pi^2 a^2 \left[\left(\frac{n_x }{l_1 } \right)^2 + \left(\frac{n_y }{l_2 } \right)^2 + \left(\frac{n_z }{l_3 } \right)^2 \right]t  \right\} \times \\
+&\sin\left(\frac{n_x\pi x}{l_1 } \right)\sin\left(\frac{n_y\pi y}{l_2 } \right) \sin\left(\frac{n_z\pi z}{l_3 } \right) \\
+\end{aligned}
+\end{equation}
+
+结合初始条件 $u(x,y,z,t)\bigg|_{t=0} = T_0 $，得：
+
+\begin{equation}
+\sum_{n_x=1}^{\infty} \sum_{n_y=1}^{\infty} \sum_{n_z=1}^{\infty} C_{n_xn_yn_z} \sin\left(\frac{n_x\pi x}{l_1 } \right)\sin\left(\frac{n_y\pi y}{l_2 } \right) \sin\left(\frac{n_z\pi z}{l_3 } \right) 
+=T_0
+\end{equation}
+
+等号两边同乘 $\displaystyle{\sin\left(\frac{n_x'\pi x}{l_1 } \right)\sin\left(\frac{n_y'\pi y}{l_2 } \right) \sin\left(\frac{n_z'\pi z}{l_3 } \right)  }$ 并积分（$n_x',n_y',n_z'\in \left\{1,2,\cdots \right\} $）：
+
+\begin{equation}
+\begin{aligned}
+&\sum_{n_x=1}^{\infty} \sum_{n_y=1}^{\infty} \sum_{n_z=1}^{\infty} C_{n_xn_yn_z} \int_{x=0}^{x=l_1} \sin\left(\frac{n_x\pi x}{l_1 } \right)\sin\left(\frac{n_x'\pi x}{l_1 } \right)\mathrm{d}x \times \\
+&\int_{y=0}^{y=l_2} \sin\left(\frac{n_y\pi y}{l_2 } \right)\sin\left(\frac{n_y'\pi y}{l_2 } \right)\mathrm{d}y \int_{z=0}^{z=l_3} \sin\left(\frac{n_z\pi z}{l_3 } \right) \sin\left(\frac{n_z'\pi z}{l_3 } \right) \mathrm{d}z \\
+=&T_0 \int_{x=0}^{x=l_1}\sin\left(\frac{n_x'\pi x}{l_1 } \right)\mathrm{d}x \int_{y=0}^{y=l_2}\sin\left(\frac{n_y'\pi y}{l_2 } \right)\mathrm{d}y\int_{z=0}^{z=l_3}\sin\left(\frac{n_z'\pi z}{l_3 } \right) \mathrm{d}z
+\end{aligned}
+\end{equation}
+
+注意到：
+
+\begin{equation}
+\begin{aligned}
+\int_{x=0}^{x=l_1}\sin\left(\frac{n_x'\pi x}{l_1 } \right)\mathrm{d}x
+&=\frac{l_1 }{n_x'\pi } \int_{x=0}^{x=l_1}\sin\left(\frac{n_x'\pi x}{l_1 } \right)\mathrm{d}\left(\frac{n_x'\pi x }{l_1 }  \right) \\
+&=\frac{-l_1 }{n_x'\pi }\int_{x=0}^{x=l_1}\mathrm{d}\left[\cos\left(\frac{n_x'\pi x }{l_1 }  \right) \right] \\
+&=\frac{-l_1 }{n_x'\pi }\cdot \cos\left(\frac{n_x'\pi x }{l_1 }  \right)\bigg|_{x=0}^{x=l_1} \\
+&=\frac{-l_1 }{n_x'\pi }\cdot\left[\cos\left(n_x'\pi \right) - 1 \right] \\
+&=\frac{l_1 }{n_x'\pi }\left[1-\left(-1 \right)^{n_x'} \right]
+\end{aligned}
+\end{equation}
+
+利用积化和差公式 $\displaystyle{\sin\alpha\sin\beta=\frac{1 }{2 }\left[\cos(\alpha-\beta) - \cos(\alpha+\beta) \right] }$，有：
+
+\begin{equation}
+\begin{aligned}
+&\int_{x=0}^{x=l_1} \sin\left(\frac{n_x\pi x}{l_1 } \right)\sin\left(\frac{n_x'\pi x}{l_1 } \right)\mathrm{d}x \\
+=&\frac{1 }{2 } \int_{x=0}^{x=l_1} \cos\left(\frac{\left(n_x-n_x' \right)\pi x }{l_1 } \right)\mathrm{d}x - \frac{1 }{2 } \int_{x=0}^{x=l_1} \cos\left(\frac{\left(n_x+n_x' \right)\pi x }{l_1 } \right)\mathrm{d}x
+\end{aligned}
+\end{equation}
+
+注意到：
+
+\begin{equation}
+\begin{aligned}
+\int_{x=0}^{x=l_1} \cos\left(\frac{\left(n_x+n_x' \right)\pi x }{l_1 } \right)\mathrm{d}x
+&=\frac{l_1 }{\left(n_x+n_x' \right)\pi } \int_{x=0}^{x=l_1} \mathrm{d}\left[\sin\left(\frac{\left(n_x+n_x' \right)\pi x }{l_1 } \right) \right] \\
+&=\frac{l_1 }{\left(n_x+n_x' \right)\pi } \cdot \sin\left(\frac{\left(n_x+n_x' \right)\pi x }{l_1 } \right)\bigg|_{x=0}^{x=l_1} \\
+&=0
+\end{aligned}
+\end{equation}
+
+再注意到，当 $n_x=n_x' $ 时，
+
+\begin{equation}
+\begin{aligned}
+\int_{x=0}^{x=l_1} \cos\left(\frac{\left(n_x-n_x' \right)\pi x }{l_1 } \right)\mathrm{d}x
+&=l_1
+\end{aligned}
+\end{equation}
+
+当 $n_x\ne n_x' $ 时，
+
+\begin{equation}
+\begin{aligned}
+\int_{x=0}^{x=l_1} \cos\left(\frac{\left(n_x-n_x' \right)\pi x }{l_1 } \right)\mathrm{d}x
+&=\frac{l_1 }{\left(n_x-n_x' \right)\pi } \int_{x=0}^{x=l_1} \mathrm{d}\left[\sin\left(\frac{\left(n_x-n_x' \right)\pi x }{l_1 } \right) \right] \\
+&=\frac{l_1 }{\left(n_x-n_x' \right)\pi } \cdot \sin\left(\frac{\left(n_x-n_x' \right)\pi x }{l_1 } \right)\bigg|_{x=0}^{x=l_1} \\
+&=0
+\end{aligned}
+\end{equation}
+
+因此：
+
+\begin{equation}
+\int_{x=0}^{x=l_1} \cos\left(\frac{\left(n_x-n_x' \right)\pi x }{l_1 } \right)\mathrm{d}x
+=l_1\delta_{n_x,n_x'}
+\end{equation}
+
+终于，我们可以计算：
+
+\begin{equation}
+\begin{aligned}
+&\int_{x=0}^{x=l_1} \sin\left(\frac{n_x\pi x}{l_1 } \right)\sin\left(\frac{n_x'\pi x}{l_1 } \right)\mathrm{d}x \\
+=&\frac{1 }{2 } \int_{x=0}^{x=l_1} \cos\left(\frac{\left(n_x-n_x' \right)\pi x }{l_1 } \right)\mathrm{d}x - \frac{1 }{2 } \int_{x=0}^{x=l_1} \cos\left(\frac{\left(n_x+n_x' \right)\pi x }{l_1 } \right)\mathrm{d}x \\
+=&\frac{1 }{2 } l_1\delta_{n_x,n_x'} - \frac{1 }{2 } \cdot 0 \\
+=&\frac{l_1 }{2 } \delta_{n_x,n_x'}
+\end{aligned}
+\end{equation}
+
+于是，下面这个复杂的方程
+
+\begin{equation}
+\begin{aligned}
+&\sum_{n_x=1}^{\infty} \sum_{n_y=1}^{\infty} \sum_{n_z=1}^{\infty} C_{n_xn_yn_z} \int_{x=0}^{x=l_1} \sin\left(\frac{n_x\pi x}{l_1 } \right)\sin\left(\frac{n_x'\pi x}{l_1 } \right)\mathrm{d}x \times \\
+&\int_{y=0}^{y=l_2} \sin\left(\frac{n_y\pi y}{l_2 } \right)\sin\left(\frac{n_y'\pi y}{l_2 } \right)\mathrm{d}y \int_{z=0}^{z=l_3} \sin\left(\frac{n_z\pi z}{l_3 } \right) \sin\left(\frac{n_z'\pi z}{l_3 } \right) \mathrm{d}z \\
+=&T_0 \int_{x=0}^{x=l_1}\sin\left(\frac{n_x'\pi x}{l_1 } \right)\mathrm{d}x \int_{y=0}^{y=l_2}\sin\left(\frac{n_y'\pi y}{l_2 } \right)\mathrm{d}y\int_{z=0}^{z=l_3}\sin\left(\frac{n_z'\pi z}{l_3 } \right) \mathrm{d}z
+\end{aligned}
+\end{equation}
+
+可简化为：
+
+\begin{equation}
+\begin{split}
+&\sum_{n_x=1}^{\infty} \sum_{n_y=1}^{\infty} \sum_{n_z=1}^{\infty} C_{n_xn_yn_z} \frac{l_1l_2l_3 }{8 } \delta_{n_x,n_x'}\delta_{n_y,n_y'}\delta_{n_z,n_z'} \\
+=&T_0\frac{l_1l_2l_3 }{n_x'n_y'n_z'\pi^3 }\left[1-\left(-1 \right)^{n_x'} \right]\left[1-\left(-1 \right)^{n_y'} \right]\left[1-\left(-1 \right)^{n_z'} \right]
+\end{split}
+\end{equation}
+
+继续化简：
+
+\begin{equation}
+C_{n_x'n_y'n_z'}\cdot\frac{1 }{8 } 
+=T_0\frac{1 }{n_x'n_y'n_z'\pi^3 } \left[1-\left(-1 \right)^{n_x'} \right]\left[1-\left(-1 \right)^{n_y'} \right]\left[1-\left(-1 \right)^{n_z'} \right]
+\end{equation}
+
+解得系数：
+
+\begin{equation}
+C_{n_x'n_y'n_z'}
+=\frac{8 }{n_x'n_y'n_z'\pi^3 } T_0\left[1-\left(-1 \right)^{n_x'} \right]\left[1-\left(-1 \right)^{n_y'} \right]\left[1-\left(-1 \right)^{n_z'} \right]
+\end{equation}
+
+把下标 $n_x',n_y,n_z' $ 替换为 $n_x,n_y,n_z $：
+
+\begin{equation}
+C_{n_xn_yn_z}
+=\frac{8 }{n_xn_yn_z\pi^3 } T_0\left[1-\left(-1 \right)^{n_x} \right]\left[1-\left(-1 \right)^{n_y} \right]\left[1-\left(-1 \right)^{n_z} \right]
+\end{equation}
+
+综上，定解问题的解 $u(x,y,z,t) $ 为：
+
+\begin{equation}
+\begin{aligned}
+u(x,y,z,t)
+&=\sum_{n_x=1}^{\infty} \sum_{n_y=1}^{\infty} \sum_{n_z=1}^{\infty} C_{n_xn_yn_z}\exp\left\{-\pi^2 a^2 \left[\left(\frac{n_x }{l_1 } \right)^2 + \left(\frac{n_y }{l_2 } \right)^2 + \left(\frac{n_z }{l_3 } \right)^2 \right]t  \right\} \times \\
+&\sin\left(\frac{n_x\pi x}{l_1 } \right)\sin\left(\frac{n_y\pi y}{l_2 } \right) \sin\left(\frac{n_z\pi z}{l_3 } \right) \\
+&=\sum_{n_x=1}^{\infty} \sum_{n_y=1}^{\infty} \sum_{n_z=1}^{\infty} \frac{8 }{n_xn_yn_z\pi^3 } T_0\left[1-\left(-1 \right)^{n_x} \right]\left[1-\left(-1 \right)^{n_y} \right]\left[1-\left(-1 \right)^{n_z} \right] \times \\
+&\exp\left\{-\pi^2   a^2 \left[\left(\frac{n_x }{l_1 } \right)^2 + \left(\frac{n_y }{l_2 } \right)^2 + \left(\frac{n_z }{l_3 } \right)^2 \right]t  \right\}\times \\
+&\sin\left(\frac{n_x\pi x}{l_1 } \right)\sin\left(\frac{n_y\pi y}{l_2 } \right) \sin\left(\frac{n_z\pi z}{l_3 } \right) \\
+\end{aligned}
+\end{equation}
+
+
+\end{solution}
 
 \section{曲线坐标系下的分离变量}
 
