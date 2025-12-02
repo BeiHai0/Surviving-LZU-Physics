@@ -873,6 +873,335 @@ $$
 \Xi'_{ij}
 =\mathrm{i} \kappa \left[\left(t^{(+)}_{ji} - t^{(+)}_{ij} \right) + \left(t^{(-)}_{ji} - t^{(-)}_{ij} \right) \right],\quad
 \Delta'_{ij}
-=\frac{\mathrm{i} \kappa }{2 }\left[\left(t^{(+)}_{ij} - t^{(+)}_{ji} \right) - \left(t^{(-)}_{ij} - t^{(-)}_{ji} \right) \right]
+=\mathrm{i} \kappa \left[\left(t^{(+)}_{ij} - t^{(+)}_{ji} \right) - \left(t^{(-)}_{ij} - t^{(-)}_{ji} \right) \right]
 \end{equation}
 $$
+
+$$
+\begin{equation}
+C'
+=-\mathrm{i} \kappa \sum_{i=1}^{N} \left[t^{(+)}_{ii} + t^{(-)}_{ii} \right]
+=0
+\end{equation}
+$$
+
+### 计算基态宇称
+
+已知
+
+$$
+\begin{equation}
+\begin{split}
+\widetilde{H}
+&=\frac{1 }{2 }
+\begin{bmatrix}
+a^\dag_{1} &\cdots &a^\dag_{N} &a_{1} &\cdots &a_{N}
+\end{bmatrix}
+\begin{bmatrix}
+\Xi &\Delta \\
+\Delta^\dag &-\Xi^{\mathrm{T}}
+\end{bmatrix}
+\begin{bmatrix}
+a_{1} \\
+\vdots \\
+a_{N} \\
+a^\dag_{1} \\
+\vdots \\
+a^\dag_{N}
+\end{bmatrix} \\
+\end{split}
+\end{equation}
+$$
+
+其中
+
+$$
+\begin{equation}
+a_{i}
+\equiv \frac{1 }{2 } \left(c_{i,A} + \mathrm{i} c_{i,B} \right),\quad
+a^\dag_{i}
+\equiv \frac{1 }{2 } \left(c_{i,A} - \mathrm{i} c_{i,B} \right),\quad
+\end{equation}
+$$
+
+$$
+\begin{equation}
+c_{i,A}
+=a_{i} + a^\dag_{i},\quad
+c_{\bm{r},B}
+=\frac{1 }{\mathrm{i} } \left(a_{i} - a^\dag_{i} \right),
+\end{equation}
+$$
+
+设 $\widetilde{H} $ 可以写为
+
+$$
+\begin{equation}
+\begin{split}
+\widetilde{H}
+=\frac{\mathrm{i} }{2 } 
+\begin{bmatrix}
+c_{1,A} &c_{1,B} &\cdots &c_{N,A} &c_{N,B}
+\end{bmatrix}
+A 
+\begin{bmatrix}
+c_{1,A} \\
+c_{1,B} \\
+\vdots \\
+c_{N,A} \\
+c_{N,B}
+\end{bmatrix}
+\end{split}
+\end{equation}
+$$
+
+则反对称的 $A $ 怎么写？
+
+设
+
+$$
+\begin{equation}
+\begin{split}
+\begin{bmatrix}
+a_{1} \\
+\vdots \\
+a_{N} \\
+a^\dag_{1} \\
+\vdots \\
+a^\dag_{N}
+\end{bmatrix}
+=P
+\begin{bmatrix}
+a_1 \\
+a^\dag_1 \\
+\vdots \\
+a_N \\
+a^\dag_N
+\end{bmatrix}
+\end{split}
+\end{equation}
+$$
+
+则上面的矩阵方程可化为
+
+$$
+\begin{equation}
+\left\{
+\begin{aligned}
+&a_i = \sum_{j=1}^{N} \left(P_{i,2j-1} a_j + P_{i,2j} a^\dag_j \right) \\
+&a^\dag_i = \sum_{j=1}^{N} \left(P_{i+N,2j-1} a_j + P_{i+N,2j} a^\dag_j \right)
+\end{aligned}
+\right.,i=1,2,\cdots,N
+\end{equation}
+$$
+
+因此，$P $ 的非零矩阵元为：
+
+$$
+\begin{equation}
+P_{i,2i-1} = 1,\quad P_{i+N,2i} = 1,\quad
+i = 1,2,\cdots,N
+\end{equation}
+$$
+
+再设
+
+$$
+\begin{equation}
+\begin{split}
+\begin{bmatrix}
+a_1 \\
+a^\dag_1 \\
+\vdots \\
+a_N \\
+a^\dag_N
+\end{bmatrix}
+=P'
+\begin{bmatrix}
+c_{1,A} \\
+c_{1,B} \\
+\vdots \\
+c_{N,A} \\
+c_{N,B}
+\end{bmatrix}
+\end{split}
+\end{equation}
+$$
+
+注意到
+
+$$
+\begin{equation}
+\begin{split}
+\begin{bmatrix}
+a_{i} \\
+a^\dag_i
+\end{bmatrix}
+=\begin{bmatrix}
+\frac{1 }{2 } \left(c_{i,A} + \mathrm{i} c_{i,B} \right) \\[1mm]
+\frac{1 }{2 } \left(c_{i,A} - \mathrm{i} c_{i,B} \right)
+\end{bmatrix}
+=\frac{1 }{2 }
+\begin{bmatrix}
+1 &\mathrm{i} \\
+1 &-\mathrm{i}
+\end{bmatrix}
+\begin{bmatrix}
+c_{i,A} \\
+c_{i,B}
+\end{bmatrix}
+\end{split}
+\end{equation}
+$$
+
+因此
+
+$$
+\begin{equation}
+P'
+=\bigoplus_{i=1}^{N} \frac{1 }{2 }
+\begin{bmatrix}
+1 &\mathrm{i} \\
+1 &-\mathrm{i}
+\end{bmatrix}
+\end{equation}
+$$
+
+总的来说
+
+$$
+\begin{equation}
+\begin{split}
+\widetilde{H}
+&=\frac{1 }{2 }
+\begin{bmatrix}
+a^\dag_{1} &\cdots &a^\dag_{N} &a_{1} &\cdots &a_{N}
+\end{bmatrix}
+\begin{bmatrix}
+\Xi &\Delta \\
+\Delta^\dag &-\Xi^{\mathrm{T}}
+\end{bmatrix}
+\begin{bmatrix}
+a_{1} \\
+\vdots \\
+a_{N} \\
+a^\dag_{1} \\
+\vdots \\
+a^\dag_{N}
+\end{bmatrix} \\
+&=\frac{1 }{2 } 
+\begin{bmatrix}
+c_{1,A} &c_{1,B} &\cdots &c_{N,A} &c_{N,B}
+\end{bmatrix}
+\left(P P' \right)^{\mathrm{T}} h \left(P P' \right)
+\begin{bmatrix}
+c_{1,A} \\
+c_{1,B} \\
+\vdots \\
+c_{N,A} \\
+c_{N,B}
+\end{bmatrix} \\
+&=\frac{\mathrm{i} }{2 } 
+\begin{bmatrix}
+c_{1,A} &c_{1,B} &\cdots &c_{N,A} &c_{N,B}
+\end{bmatrix}
+\left[-\mathrm{i}\left(P P' \right)^{\mathrm{T}} h \left(P P' \right) \right]
+\begin{bmatrix}
+c_{1,A} \\
+c_{1,B} \\
+\vdots \\
+c_{N,A} \\
+c_{N,B}
+\end{bmatrix}
+\end{split}
+\end{equation}
+$$
+
+令
+
+$$
+\begin{equation}
+A'
+=-\mathrm{i} \left(P P' \right)^{\mathrm{T}} h \left(P P' \right),\quad
+\end{equation}
+$$
+
+其中
+
+$$
+\begin{equation}
+h
+=\begin{bmatrix}
+\Xi &\Delta \\
+\Delta^\dag &-\Xi^{\mathrm{T}}
+\end{bmatrix}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+P_{i,2i-1} = 1,\quad P_{i+N,2i} = 1,\quad
+i = 1,2,\cdots,N,\quad
+P\text{的其余矩阵元为0}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+P'
+=\bigoplus_{i=1}^{N} \frac{1 }{2 }
+\begin{bmatrix}
+1 &\mathrm{i} \\
+1 &-\mathrm{i}
+\end{bmatrix}
+\end{equation}
+=I_{N} \otimes \frac{1 }{2 }
+\begin{bmatrix}
+1 &\mathrm{i} \\
+1 &-\mathrm{i}
+\end{bmatrix}
+$$
+
+由 c-Majorana 反对易关系
+
+$$
+\begin{equation}
+i\ne j,\quad c_i c_j = -c_j c_i
+\end{equation}
+$$
+
+可知
+
+$$
+\begin{equation}
+\begin{split}
+\widetilde{H}
+&=\frac{\mathrm{i} }{2 } \bold{c}^\dag A' \bold{c}
+=\frac{\mathrm{i} }{2 } \sum_{i,j,i\ne j} A'_{ij} c_i c_j
+=\frac{\mathrm{i} }{2 } \sum_{i,j,i\ne j} -A'_{ij} c_j c_i
+=\frac{\mathrm{i} }{2 } \sum_{j,i,j\ne i} -A'_{ji} c_i c_j \\
+&=\frac{\mathrm{i} }{2 } \bold{c}^\dag \left(-A'^{\mathrm{T}} \right) \bold{c}
+\end{split}
+\end{equation}
+$$
+
+于是
+
+$$
+\begin{equation}
+\widetilde{H}
+=\frac{\mathrm{i} }{2 } \bold{c}^\dag A' \bold{c}
+=\frac{\mathrm{i} }{2 } \bold{c}^\dag \left[\frac{1 }{2 } \left(A'-A'^{\mathrm{T}} \right) \right] \bold{c}
+\end{equation}
+$$
+
+于是最终有
+
+$$
+\begin{equation}
+A
+=\frac{1 }{2 } \left(A'-A'^{\mathrm{T}} \right)
+\end{equation}
+$$
+
+
