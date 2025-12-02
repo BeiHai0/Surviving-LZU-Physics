@@ -1093,7 +1093,7 @@ a^\dag_{N}
 \begin{bmatrix}
 c_{1,A} &c_{1,B} &\cdots &c_{N,A} &c_{N,B}
 \end{bmatrix}
-\left(P P' \right)^{\mathrm{T}} h \left(P P' \right)
+\left(P P' \right)^\dag h \left(P P' \right)
 \begin{bmatrix}
 c_{1,A} \\
 c_{1,B} \\
@@ -1105,7 +1105,7 @@ c_{N,B}
 \begin{bmatrix}
 c_{1,A} &c_{1,B} &\cdots &c_{N,A} &c_{N,B}
 \end{bmatrix}
-\left[-\mathrm{i}\left(P P' \right)^{\mathrm{T}} h \left(P P' \right) \right]
+\left[-\mathrm{i}\left(P P' \right)^\dag h \left(P P' \right) \right]
 \begin{bmatrix}
 c_{1,A} \\
 c_{1,B} \\
@@ -1122,7 +1122,7 @@ $$
 $$
 \begin{equation}
 A'
-=-\mathrm{i} \left(P P' \right)^{\mathrm{T}} h \left(P P' \right),\quad
+=-\mathrm{i} \left(P P' \right)^\dag h \left(P P' \right),\quad
 \end{equation}
 $$
 
