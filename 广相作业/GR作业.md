@@ -609,22 +609,86 @@ R^1_{212}
 \end{equation}
 $$
 
-$$
-\begin{equation}
-R^1_{221}
-=-R^1_{212}
-=-\sin^2\theta
-\end{equation}
-$$
+- $\lambda=1 $
+
+- - $(\mu,\nu)=(1,2) $
 
 $$
 \begin{equation}
-\begin{split}
-R^2_{121}
-=
-\end{split}
+\begin{aligned}
+R^1_{\sigma 1 2}
+&=\partial_1 \Gamma_{2\sigma}^1 - \partial_2 \Gamma_{1\sigma}^1 + \Gamma_{1\alpha}^1 \Gamma_{2\sigma}^\alpha - \Gamma_{2\alpha}^1 \Gamma_{1\sigma}^\alpha \\
+&=\partial_1 \Gamma_{2\sigma}^1 - \Gamma_{22}^1 \Gamma_{1\sigma}^2 \\
+\end{aligned}
 \end{equation}
 $$
+
+- - - $\sigma=1 $
+
+$$
+\begin{equation}
+\begin{aligned}
+R^1_{1 1 2}
+&=\partial_1 \Gamma_{2 1}^1 - \Gamma_{22}^1 \Gamma_{1 1}^2 \\
+&=- \Gamma_{22}^1 \Gamma_{1 1}^2 \\
+&=0
+\end{aligned}
+\end{equation}
+$$
+
+- - - $\sigma=2 $
+
+$$
+\begin{equation}
+\begin{aligned}
+R^1_{2 1 2}
+&=\partial_1 \Gamma_{22}^1 - \Gamma_{22}^1 \Gamma_{12}^2 \\
+&=\sin^2\theta
+\end{aligned}
+\end{equation}
+$$
+
+- $\lambda=2 $
+
+- - $\left(\mu,\nu \right)=(1,2) $
+
+$$
+\begin{equation}
+\begin{aligned}
+R_{\sigma1 2}^2
+&=\partial_1 \Gamma_{ 2\sigma}^2 - \partial_ 2 \Gamma_{1\sigma}^2 + \Gamma_{1\alpha}^2 \Gamma_{ 2\sigma}^\alpha - \Gamma_{ 2\alpha}^2 \Gamma_{1\sigma}^\alpha \\
+&=\partial_1 \Gamma_{ 2\sigma}^2 + \Gamma_{12}^2 \Gamma_{ 2\sigma}^2 - \Gamma_{ 21}^2 \Gamma_{1\sigma}^1 \\
+&=\partial_1 \Gamma_{ 2\sigma}^2 + \cot\theta \Gamma_{ 2\sigma}^2 - \cot\theta \Gamma_{1\sigma}^1 \\
+\end{aligned}
+\end{equation}
+$$
+
+- - - $\sigma=1 $
+
+$$
+\begin{equation}
+\begin{aligned}
+R_{1 1 2}^2
+&=\partial_1 \Gamma_{ 2 1 }^2 + \cot\theta \Gamma_{ 2 1 }^2 - \cot\theta \Gamma_{1 1 }^1 \\
+&=\partial_\theta \cot\theta + \cot\theta \cdot \cot\theta \\
+&=-1
+\end{aligned}
+\end{equation}
+$$
+
+- - - $\sigma=2 $
+
+$$
+\begin{equation}
+\begin{aligned}
+R_{2 1 2}^2
+&=\partial_1 \Gamma_{ 2 2 }^2 + \cot\theta \Gamma_{ 2 2 }^2 - \cot\theta \Gamma_{1 2 }^1 \\
+&=0
+\end{aligned}
+\end{equation}
+$$
+
+----
 
 $$
 \begin{equation}

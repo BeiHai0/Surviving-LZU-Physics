@@ -1154,12 +1154,12 @@ P'
 1 &\mathrm{i} \\
 1 &-\mathrm{i}
 \end{bmatrix}
-\end{equation}
 =I_{N} \otimes \frac{1 }{2 }
 \begin{bmatrix}
 1 &\mathrm{i} \\
 1 &-\mathrm{i}
 \end{bmatrix}
+\end{equation}
 $$
 
 由 c-Majorana 反对易关系
