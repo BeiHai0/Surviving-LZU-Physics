@@ -1205,3 +1205,132 @@ A
 $$
 
 
+---
+
+
+$$
+\begin{equation}
+\begin{aligned}
+\widetilde{H}
+=&\frac{\mathrm{i} }{2 }
+\begin{bmatrix}
+\cdots &c_{i,A} &c_{i,B} &\cdots
+\end{bmatrix}
+M
+\begin{bmatrix}
+\vdots \\
+c_{i,A} \\
+c_{i,B} \\
+\vdots
+\end{bmatrix} \\
+&=\frac{\mathrm{i} }{2 } \sum_{i=1}^{N} \sum_{j=1}^{N} \left(M_{2i-1,2j-1} c_{i,A} c_{j,A} + M_{2i-1,2j} c_{i,A} c_{j,B} + M_{2i,2j-1} c_{i,B} c_{j,A} + M_{2i,2j} c_{i,B} c_{j,B} \right)
+\end{aligned}
+\end{equation}
+$$
+
+对无磁场哈密顿量，
+
+$$
+\begin{equation}
+\begin{aligned}
+\widetilde{H}_0
+&=\frac{\mathrm{i} }{2 } \sum_{i=1}^{N} \sum_{j=1}^{N} \left(-2 t_{ij} \right) c_{i,A} c_{j,B}
+=\frac{\mathrm{i} }{2 } \sum_{i=1}^{N} \sum_{j=1}^{N} -\left( t_{ij} - t_{ji} \right) c_{i,A} c_{j,B} \\
+&=\frac{\mathrm{i} }{2 } \left[\sum_{i=1}^{N} \sum_{j=1}^{N} \frac{-\left( t_{ij} - t_{ji} \right) }{2 }  c_{i,A} c_{j,B} + \sum_{i=1}^{N} \sum_{j=1}^{N} \frac{\left( t_{ij} - t_{ji} \right) }{2 } c_{j,B} c_{i,A} \right] \\
+&=\frac{\mathrm{i} }{2 } \left[\sum_{i=1}^{N} \sum_{j=1}^{N} \frac{-\left( t_{ij} - t_{ji} \right) }{2 }  c_{i,A} c_{j,B} + \sum_{j=1}^{N} \sum_{i=1}^{N} \frac{\left( t_{ji} - t_{ij} \right) }{2 } c_{i,B} c_{j,A} \right] \\
+&=\frac{\mathrm{i} }{2 } \left[\sum_{i=1}^{N} \sum_{j=1}^{N} \frac{-\left( t_{ij} - t_{ji} \right) }{2 }  c_{i,A} c_{j,B} + \sum_{j=1}^{N} \sum_{i=1}^{N} \frac{-\left( t_{ij} - t_{ji} \right) }{2 } c_{i,B} c_{j,A} \right] \\
+\end{aligned}
+\end{equation}
+$$
+
+一种取法为
+
+$$
+\begin{equation}
+\left(M_0 \right)_{2i-1,2j-1} = 0
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\left(M_0 \right)_{2i-1,2j} = \frac{-\left( t_{ij} - t_{ji} \right) }{2 }
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\left(M_0 \right)_{2i,2j-1} = \frac{-\left( t_{ij} - t_{ji} \right) }{2 }
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\left(M_0 \right)_{2i,2j} = 0
+\end{equation}
+$$
+
+---
+
+对 $\kappa $ 项，
+
+$$
+\begin{equation}
+\widetilde{H}_\kappa
+=\frac{\mathrm{i} }{2 } \sum_{i=1}^{N} \sum_{j=1}^{N} \left[-\kappa \left(t^+_{ij} - t^+_{ji} \right) c_{i,B} c_{j,B} - \kappa\left(t^-_{ij} - t^-_{ji} \right) c_{i,A} c_{j,A} \right]
+\end{equation}
+$$
+
+${M}_\kappa $ 的一种取法为
+
+$$
+\begin{equation}
+\left(M_\kappa \right)_{2i-1,2j-1} = -\kappa \left(t^-_{ij} - t^-_{ji} \right)
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\left(M_\kappa \right)_{2i-1,2j} = 0
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\left(M_\kappa \right)_{2i,2j-1} = 0
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\left(M_\kappa \right)_{2i,2j} = -\kappa \left(t^+_{ij} - t^+_{ji} \right)
+\end{equation}
+$$
+
+---
+
+总哈密顿量为
+
+$$
+\begin{equation}
+\widetilde{H}
+=\widetilde{H}_0 + \widetilde{H}_\kappa
+=\frac{\mathrm{i} }{2 }
+\begin{bmatrix}
+\cdots &c_{i,A} &c_{i,B} &\cdots
+\end{bmatrix}
+M
+\begin{bmatrix}
+\vdots \\
+c_{i,A} \\
+c_{i,B} \\
+\vdots
+\end{bmatrix} \\ 
+\end{equation}
+$$
+
+$$
+\begin{equation}
+M = M_0 + M_\kappa
+\end{equation}
+$$
+
