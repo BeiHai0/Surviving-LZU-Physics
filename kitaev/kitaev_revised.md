@@ -207,31 +207,6 @@ $$
 \end{equation}
 $$
 
-### Kitaev honeycomb 哈密顿量
-
-$$
-\begin{equation}
-\hat{H}
-=-J_x \sum_{\Braket{j,k }_x} \hat{\sigma}_j^x \hat{\sigma}_k^x - J_y \sum_{\Braket{j,k }_y} \hat{\sigma}_j^y \hat{\sigma}_k^y - J_z \sum_{\Braket{j,k }_z} \hat{\sigma}_j^z \hat{\sigma}_k^z
-\end{equation}
-$$
-
-## 复费米子的Majorana分解
-
-$$
-\sigma_x = \Ket{\uarr }\Bra{\darr } + \Ket{\darr }\Bra{\uarr }
-\mapsto f^\dag_{\uarr} f_{\darr} + f^\dag_{\darr} f_{\uarr}
-$$
-
-$$
-\begin{equation}
-\tilde{\sigma}_x
-=\frac{\mathrm{i} }{2 } \left(c b^z + b^y b^x \right)
-\end{equation}
-$$
-
---- 
-
 ### Abrikosov Pseudo-Fermion Representation
 
 从自旋-1/2到 2-模式复费米子体系的映射：
@@ -279,7 +254,7 @@ $$
 \Gamma\left(\sigma^\alpha \sigma^\beta \right)
 =\Gamma\left(\sigma^\alpha \right) \Gamma\left(\sigma^\beta \right),
 \end{equation}
-$$
+$$ 
 
 $$
 \begin{equation}
@@ -400,7 +375,7 @@ $$
 $$
 \begin{equation}
 f_{\uparrow} = \frac{1 }{2 } \left(\gamma_{\uparrow,1} + \mathrm{i} \gamma_{\uparrow,2} \right),\quad
-f^\dag_{\uparrow} = \frac{1 }{2 } \left(\gamma_{\uparrow,1} - \mathrm{i} \gamma_{\uparrow,2} \right)
+f^\dag_{\uparrow} = \frac{1 }{2 } \left(\gamma_{\uparrow,1} - \mathrm{i} \gamma_{\uparrow,2} \right) 
 \end{equation}
 $$
 
@@ -441,40 +416,39 @@ $$
 
 $$
 \begin{equation}
-\gamma_{\uparrow,1} + \gamma_{\downarrow,1} \gamma_{\downarrow,2} \gamma_{\uparrow,2}
-=0
+\gamma_{\uparrow,1} \gamma_{\uparrow,2} \gamma_{\downarrow,1} \gamma_{\downarrow,2}
+=1
 \end{equation}
 $$
 
-观察到 $\gamma_{\uparrow,1} $ 比较特殊，若令：
+若令：
 
 $$
+\begin{equation}
 \gamma_{\uparrow,1} = c,\quad
-\gamma_{\downarrow,2} = -b^x,\quad
+\gamma_{\uparrow,2} = -b^z,\quad
 \gamma_{\downarrow,1} = b^y,\quad
-\gamma_{\uparrow,2} = -b^z,
+\gamma_{\downarrow,2} = -b^x,
+\end{equation}
 $$
 
 则有
 
 $$
 \begin{equation}
-\sigma^x \mapsto -\mathrm{i} c b^x
-=\mathrm{i} b^x c,
+\sigma^x \mapsto \mathrm{i} b^x c,
 \end{equation}
 $$
 
 $$
 \begin{equation}
-\sigma^y \mapsto -\mathrm{i} c b^y
-=\mathrm{i} b^y c,
+\sigma^y \mapsto \mathrm{i} b^y c,
 \end{equation}
 $$
 
 $$
 \begin{equation}
-\sigma^z \mapsto -\mathrm{i} c b^z
-=\mathrm{i} b^z c
+\sigma^z \mapsto \mathrm{i} b^z c
 \end{equation}
 $$
 
