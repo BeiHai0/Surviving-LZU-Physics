@@ -799,10 +799,10 @@ $$
 \begin{split}
 \mathrm{around}A
 &=\sigma^x_{\bm{r},A} \sigma^y_{\bm{r}+\bm{a}_1,B} \sigma^z_{\bm{r}+\bm{a}_2,B} + \sigma^x_{\bm{r},B} \sigma^y_{\bm{r},A} \sigma^z_{\bm{r}+\bm{a}_2,B} + \sigma^x_{\bm{r},B} \sigma^y_{\bm{r}+\bm{a}_1,B} \sigma^z_{\bm{r},A} \\
-&=\mathrm{i} u_{\bm{r}+\bm{a}_1,B;\bm{r},A} u_{\bm{r}+\bm{a}_2,B;\bm{r},A} c_{\bm{r}+\bm{a}_1,B} c_{\bm{r}+\bm{a}_2,B} \\
-&+\mathrm{i} u_{\bm{r}+\bm{a}_2,B;\bm{r},A} u_{\bm{r},B;\bm{r},A} c_{\bm{r}+\bm{a}_2,B} c_{\bm{r},B} \\
-&+\mathrm{i} u_{\bm{r},B;\bm{r},A} u_{\bm{r}+\bm{a}_1,B;\bm{r},A} c_{\bm{r},B} c_{\bm{r}+\bm{a}_1,B} \\
-&=\mathrm{i} \sum_{\substack{\left(\bm{\delta}_1,\bm{\delta}_2 \right)\in \\ \left\{\left(\bm{a}_1,\bm{a}_2 \right),\left(\bm{a}_2,\bm{0} \right),\left(\bm{0},\bm{a}_1 \right) \right\}}} u_{\bm{r}+\bm{\delta}_1,B;\bm{r},A} u_{\bm{r}+\bm{\delta}_2,B;\bm{r},A} c_{\bm{r}+\bm{\delta}_1,B} c_{\bm{r}+\bm{\delta}_2,B}
+&=-\mathrm{i} u_{\bm{r}+\bm{a}_1,B;\bm{r},A} u_{\bm{r}+\bm{a}_2,B;\bm{r},A} c_{\bm{r}+\bm{a}_1,B} c_{\bm{r}+\bm{a}_2,B} \\
+&-\mathrm{i} u_{\bm{r}+\bm{a}_2,B;\bm{r},A} u_{\bm{r},B;\bm{r},A} c_{\bm{r}+\bm{a}_2,B} c_{\bm{r},B} \\
+&-\mathrm{i} u_{\bm{r},B;\bm{r},A} u_{\bm{r}+\bm{a}_1,B;\bm{r},A} c_{\bm{r},B} c_{\bm{r}+\bm{a}_1,B} \\
+&=-\mathrm{i} \sum_{\substack{\left(\bm{\delta}_1,\bm{\delta}_2 \right)\in \\ \left\{\left(\bm{a}_1,\bm{a}_2 \right),\left(\bm{a}_2,\bm{0} \right),\left(\bm{0},\bm{a}_1 \right) \right\}}} u_{\bm{r}+\bm{\delta}_1,B;\bm{r},A} u_{\bm{r}+\bm{\delta}_2,B;\bm{r},A} c_{\bm{r}+\bm{\delta}_1,B} c_{\bm{r}+\bm{\delta}_2,B}
 \end{split}
 \end{equation}
 $$
@@ -813,7 +813,7 @@ $$
 \mathrm{around}B
 &=\sigma^x_{\bm{r},B} \sigma^y_{\bm{r}-\bm{a}_1,A} \sigma^z_{\bm{r}-\bm{a}_2,A} + \sigma^x_{\bm{r},A} \sigma^y_{\bm{r},B} \sigma^z_{\bm{r}-\bm{a}_2,A} + \sigma^x_{\bm{r},A} \sigma^y_{\bm{r}-\bm{a}_1,A} \sigma^z_{\bm{r},B} \\
 &=\mathrm{around}A\left(\bm{a}_1 \leftrightarrow -\bm{a}_1, \bm{a}_2 \leftrightarrow -\bm{a}_2,A \leftrightarrow B \right) \\
-&=\mathrm{i} \sum_{\substack{\left(\bm{\delta}'_1,\bm{\delta}'_2 \right)\in \\ \left\{\left(-\bm{a}_1,-\bm{a}_2 \right),\left(-\bm{a}_2,\bm{0} \right),\left(\bm{0},-\bm{a}_1 \right) \right\}}} u_{\bm{r}+\bm{\delta}'_1,A;\bm{r},B} u_{\bm{r}+\bm{\delta}'_2,A;\bm{r},B} c_{\bm{r}+\bm{\delta}'_1,A} c_{\bm{r}+\bm{\delta}'_2,A} \\
+&=-\mathrm{i} \sum_{\substack{\left(\bm{\delta}'_1,\bm{\delta}'_2 \right)\in \\ \left\{\left(-\bm{a}_1,-\bm{a}_2 \right),\left(-\bm{a}_2,\bm{0} \right),\left(\bm{0},-\bm{a}_1 \right) \right\}}} u_{\bm{r}+\bm{\delta}'_1,A;\bm{r},B} u_{\bm{r}+\bm{\delta}'_2,A;\bm{r},B} c_{\bm{r}+\bm{\delta}'_1,A} c_{\bm{r}+\bm{\delta}'_2,A} \\
 \end{split}
 \end{equation}
 $$
@@ -822,11 +822,11 @@ $$
 \begin{equation}
 \begin{split}
 -\kappa \sum_{\bm{r}} \mathrm{around}A
-&=-\mathrm{i} \kappa \sum_{\bm{r}} \sum_{\left(\bm{\delta}_1,\bm{\delta}_2 \right)} u_{\bm{r}+\bm{\delta}_1,B;\bm{r},A} u_{\bm{r}+\bm{\delta}_2,B;\bm{r},A} c_{\bm{r}+\bm{\delta}_1,B} c_{\bm{r}+\bm{\delta}_2,B} \\
-&=-\mathrm{i} \kappa \sum_{\left(\bm{\delta}_1,\bm{\delta}_2 \right)} \sum_{\bm{r}'} \sum_{\bm{r}''} \sum_{\bm{r}} \delta_{\bm{r}',\bm{r}+\bm{\delta}_1} \delta_{\bm{r}'',\bm{r}+\bm{\delta}_2} u_{\bm{r}',B;\bm{r},A} u_{\bm{r}'',B;\bm{r},A} c_{\bm{r}',B} c_{\bm{r}'',B} \\
-&=-\mathrm{i} \kappa \sum_{\left(\bm{\delta}_1,\bm{\delta}_2 \right)} \sum_{\bm{r}'} \sum_{\bm{r}''} \delta_{\bm{r}'-\bm{\delta}_1,\bm{r}''-\bm{\delta}_2} u_{\bm{r}',B;\bm{r}'-\bm{\delta}_1,A} u_{\bm{r}'',B;\bm{r}''-\bm{\delta}_2,A} c_{\bm{r}',B} c_{\bm{r}'',B} \\
-&=-\mathrm{i} \kappa \sum_{\bm{r}'} \sum_{\bm{r}''} \left(\sum_{\left(\bm{\delta}_1,\bm{\delta}_2 \right)} \delta_{\bm{r}'-\bm{\delta}_1,\bm{r}''-\bm{\delta}_2} u_{\bm{r}',B;\bm{r}'-\bm{\delta}_1,A} u_{\bm{r}'',B;\bm{r}''-\bm{\delta}_2,A} \right) c_{\bm{r}',B} c_{\bm{r}'',B} \\
-&=-\mathrm{i} \kappa \sum_{i=1}^{N} \sum_{j=1}^{N} \left(\sum_{\left(\bm{\delta}_1,\bm{\delta}_2 \right)} \delta_{\bm{r}_i-\bm{\delta}_1,\bm{r}_j-\bm{\delta}_2} u_{\bm{r}_i,B;\bm{r}_i-\bm{\delta}_1,A} u_{\bm{r}_j,B;\bm{r}_j-\bm{\delta}_2,A} \right) c_{i,B} c_{j,B} \\
+&=\mathrm{i} \kappa \sum_{\bm{r}} \sum_{\left(\bm{\delta}_1,\bm{\delta}_2 \right)} u_{\bm{r}+\bm{\delta}_1,B;\bm{r},A} u_{\bm{r}+\bm{\delta}_2,B;\bm{r},A} c_{\bm{r}+\bm{\delta}_1,B} c_{\bm{r}+\bm{\delta}_2,B} \\
+&=\mathrm{i} \kappa \sum_{\left(\bm{\delta}_1,\bm{\delta}_2 \right)} \sum_{\bm{r}'} \sum_{\bm{r}''} \sum_{\bm{r}} \delta_{\bm{r}',\bm{r}+\bm{\delta}_1} \delta_{\bm{r}'',\bm{r}+\bm{\delta}_2} u_{\bm{r}',B;\bm{r},A} u_{\bm{r}'',B;\bm{r},A} c_{\bm{r}',B} c_{\bm{r}'',B} \\
+&=\mathrm{i} \kappa \sum_{\left(\bm{\delta}_1,\bm{\delta}_2 \right)} \sum_{\bm{r}'} \sum_{\bm{r}''} \delta_{\bm{r}'-\bm{\delta}_1,\bm{r}''-\bm{\delta}_2} u_{\bm{r}',B;\bm{r}'-\bm{\delta}_1,A} u_{\bm{r}'',B;\bm{r}''-\bm{\delta}_2,A} c_{\bm{r}',B} c_{\bm{r}'',B} \\
+&=\mathrm{i} \kappa \sum_{\bm{r}'} \sum_{\bm{r}''} \left(\sum_{\left(\bm{\delta}_1,\bm{\delta}_2 \right)} \delta_{\bm{r}'-\bm{\delta}_1,\bm{r}''-\bm{\delta}_2} u_{\bm{r}',B;\bm{r}'-\bm{\delta}_1,A} u_{\bm{r}'',B;\bm{r}''-\bm{\delta}_2,A} \right) c_{\bm{r}',B} c_{\bm{r}'',B} \\
+&=\mathrm{i} \kappa \sum_{i=1}^{N} \sum_{j=1}^{N} \left(\sum_{\left(\bm{\delta}_1,\bm{\delta}_2 \right)} \delta_{\bm{r}_i-\bm{\delta}_1,\bm{r}_j-\bm{\delta}_2} u_{\bm{r}_i,B;\bm{r}_i-\bm{\delta}_1,A} u_{\bm{r}_j,B;\bm{r}_j-\bm{\delta}_2,A} \right) c_{i,B} c_{j,B} \\
 \end{split}
 \end{equation}
 $$
@@ -855,11 +855,11 @@ $$
 \begin{equation}
 \begin{split}
 -\kappa \sum_{\bm{r}} \mathrm{around}A
-&=-\mathrm{i} \kappa \sum_{i=1}^{N} \sum_{j=1}^{N} \left(\sum_{\left(\bm{\delta}_1,\bm{\delta}_2 \right)} \delta_{\bm{r}_i-\bm{\delta}_1,\bm{r}_j-\bm{\delta}_2} u_{\bm{r}_i,B;\bm{r}_i-\bm{\delta}_1,A} u_{\bm{r}_j,B;\bm{r}_j-\bm{\delta}_2,A} \right) c_{i,B} c_{j,B} \\
-&=-\mathrm{i} \kappa \sum_{i=1}^{N} \sum_{j=1}^{N} t^{(+)}_{ij} c_{i,B} c_{j,B} \\
-&=\mathrm{i} \kappa \sum_{i=1}^{N} \sum_{j=1}^{N} t^{(+)}_{ij} \left(a_i - a^\dag_i \right) \left(a_j - a^\dag_j \right) \\
-&=\mathrm{i} \kappa \sum_{i=1}^{N} \sum_{j=1}^{N} t^{(+)}_{ij} \left(a_i a_j + a^\dag_i a^\dag_j - a_i a^\dag_j - a^\dag_i a_j \right) \\
-&=\mathrm{i} \kappa \sum_{i=1}^{N} \sum_{j=1}^{N} \frac{\left(t^{(+)}_{ij} - t^{(+)}_{ji} \right) }{2 }  \left(a_i a_j + a^\dag_i a^\dag_j \right) + \mathrm{i} \kappa \sum_{i=1}^{N} \sum_{j=1}^{N} \left(t^{(+)}_{ji} - t^{(+)}_{ij} \right) a^\dag_i a_j - \mathrm{i} \kappa \sum_{i=1}^{N} t^{(+)}_{ii} \\
+&=\mathrm{i} \kappa \sum_{i=1}^{N} \sum_{j=1}^{N} \left(\sum_{\left(\bm{\delta}_1,\bm{\delta}_2 \right)} \delta_{\bm{r}_i-\bm{\delta}_1,\bm{r}_j-\bm{\delta}_2} u_{\bm{r}_i,B;\bm{r}_i-\bm{\delta}_1,A} u_{\bm{r}_j,B;\bm{r}_j-\bm{\delta}_2,A} \right) c_{i,B} c_{j,B} \\
+&=\mathrm{i} \kappa \sum_{i=1}^{N} \sum_{j=1}^{N} t^{(+)}_{ij} c_{i,B} c_{j,B} \\
+&=-\mathrm{i} \kappa \sum_{i=1}^{N} \sum_{j=1}^{N} t^{(+)}_{ij} \left(a_i - a^\dag_i \right) \left(a_j - a^\dag_j \right) \\
+&=-\mathrm{i} \kappa \sum_{i=1}^{N} \sum_{j=1}^{N} t^{(+)}_{ij} \left(a_i a_j + a^\dag_i a^\dag_j - a_i a^\dag_j - a^\dag_i a_j \right) \\
+&=\mathrm{i} \kappa \sum_{i=1}^{N} \sum_{j=1}^{N} -\frac{\left(t^{(+)}_{ij} - t^{(+)}_{ji} \right) }{2 }  \left(a_i a_j + a^\dag_i a^\dag_j \right) + \mathrm{i} \kappa \sum_{i=1}^{N} \sum_{j=1}^{N} -\left(t^{(+)}_{ji} - t^{(+)}_{ij} \right) a^\dag_i a_j + \mathrm{i} \kappa \sum_{i=1}^{N} t^{(+)}_{ii} \\
 \end{split}
 \end{equation}
 $$
@@ -879,10 +879,10 @@ $$
 \begin{equation}
 \begin{split}
 -\kappa \sum_{\bm{r}} \mathrm{around}B
-&=-\mathrm{i} \kappa \sum_{i=1}^{N} \sum_{j=1}^{N} t^{(-)}_{ij} c_{i,A} c_{j,A} \\
-&=-\mathrm{i} \kappa \sum_{i=1}^{N} \sum_{j=1}^{N} t^{(-)}_{ij} \left(a_i + a^\dag_i \right) \left(a_j + a^\dag_j \right) \\
-&=-\mathrm{i} \kappa \sum_{i=1}^{N} \sum_{j=1}^{N} t^{(-)}_{ij} \left(a_i a_j + a^\dag_i a^\dag_j + a_i a^\dag_j + a^\dag_i a_j \right) \\
-&=-\mathrm{i} \kappa \sum_{i=1}^{N} \sum_{j=1}^{N} \frac{\left(t^{(-)}_{ij} - t^{(-)}_{ji} \right) }{2 } \left(a_i a_j + a^\dag_i a^\dag_j \right) + \mathrm{i} \kappa \sum_{i=1}^{N} \sum_{j=1}^{N} \left(t^{(-)}_{ji} - t^{(-)}_{ij} \right) a^\dag_i a_j - \mathrm{i} \kappa \sum_{i=1}^{N} t^{(-)}_{ii} \\
+&=\mathrm{i} \kappa \sum_{i=1}^{N} \sum_{j=1}^{N} t^{(-)}_{ij} c_{i,A} c_{j,A} \\
+&=\mathrm{i} \kappa \sum_{i=1}^{N} \sum_{j=1}^{N} t^{(-)}_{ij} \left(a_i + a^\dag_i \right) \left(a_j + a^\dag_j \right) \\
+&=\mathrm{i} \kappa \sum_{i=1}^{N} \sum_{j=1}^{N} t^{(-)}_{ij} \left(a_i a_j + a^\dag_i a^\dag_j + a_i a^\dag_j + a^\dag_i a_j \right) \\
+&=\mathrm{i} \kappa \sum_{i=1}^{N} \sum_{j=1}^{N} \frac{\left(t^{(-)}_{ij} - t^{(-)}_{ji} \right) }{2 } \left(a_i a_j + a^\dag_i a^\dag_j \right) - \mathrm{i} \kappa \sum_{i=1}^{N} \sum_{j=1}^{N} \left(t^{(-)}_{ji} - t^{(-)}_{ij} \right) a^\dag_i a_j + \mathrm{i} \kappa \sum_{i=1}^{N} t^{(-)}_{ii} \\
 \end{split}
 \end{equation}
 $$
@@ -892,12 +892,16 @@ $$
 $$
 \begin{equation}
 \begin{split}
-\widetilde{H}^{(3)}_{\mathrm{eff}}
-&=-\kappa \sum_{\bm{r}\in \mathrm{UC}} \left(\mathrm{around}A + \mathrm{around}B \right) \\
-&=\sum_{i=1}^{N} \sum_{j=1}^{N} \frac{\mathrm{i} \kappa }{2 }\left[\left(t^{(+)}_{ij} - t^{(+)}_{ji} \right) - \left(t^{(-)}_{ij} - t^{(-)}_{ji} \right) \right]  \left(a_i a_j + a^\dag_i a^\dag_j \right) + \sum_{i=1}^{N} \sum_{j=1}^{N} \mathrm{i} \kappa \left[\left(t^{(+)}_{ji} - t^{(+)}_{ij} \right) + \left(t^{(-)}_{ji} - t^{(-)}_{ij} \right) \right] a^\dag_i a_j - \mathrm{i} \kappa \sum_{i=1}^{N} \left(t^{(+)}_{ii} + t^{(-)}_{ii} \right) \\
+\widetilde{H}_{\kappa}
+&=\frac{1 }{2 } \sum_{i,j} \mathrm{i}\kappa \left[\left(t^-_{ij} - t^+_{ij} \right) - \left(t^-_{ji} - t^+_{ji} \right) \right] a_i a_j \\
+&+ \frac{1 }{2 } \sum_{i,j} \mathrm{i}\kappa \left[\left(t^-_{ij} - t^+_{ij} \right) - \left(t^-_{ji} - t^+_{ji} \right) \right] a^\dag_i a^\dag_j \\
+&+ \frac{1 }{2 } \sum_{i,j} \mathrm{i}\kappa \left[\left(t^+_{ij} + t^-_{ij} \right) - \left(t^+_{ji} + t^-_{ji} \right) \right] a_i a^\dag_j \\
+&+ \frac{1 }{2 } \sum_{i,j} \mathrm{i}\kappa \left[\left(t^+_{ij} + t^-_{ij} \right) - \left(t^+_{ji} + t^-_{ji} \right) \right] a^\dag_i a_j
 \end{split}
 \end{equation}
 $$
+
+--- above revised
 
 设 
 
@@ -910,8 +914,8 @@ $$
 a^\dag_{1} &\cdots &a^\dag_{N} &a_{1} &\cdots &a_{N}
 \end{bmatrix}
 \begin{bmatrix}
-\Xi' &\Delta' \\
-\Delta'^\dag &-\Xi'^{\mathrm{T}}
+\bold{h}'_{11} &\bold{h}'_{12} \\
+\bold{h}'_{21} &\bold{h}'_{22}
 \end{bmatrix}
 \begin{bmatrix}
 a_{1} \\
@@ -920,30 +924,88 @@ a_{N} \\
 a^\dag_{1} \\
 \vdots \\
 a^\dag_{N}
-\end{bmatrix} + C' \\
-&=C' - \frac{1 }{2 } \sum_{i=1}^{N} \Xi'_{ii} + \sum_{j=1}^{N} \sum_{i=1}^{N} \Xi'_{ij} a^\dag_i a_j + \frac{1 }{2 } \sum_{i=1}^{N} \sum_{j=1}^{N} \Delta'_{ij} a^\dag_i a^\dag_j + \frac{1 }{2 } \sum_{i=1}^{N} \sum_{j=1}^{N}\left(-(\Delta'_{ij})^* \right) a_i a_j \\
+\end{bmatrix} \\
+&=\frac{1 }{2 } \sum_{i,j} \left(\bold{h}_{11}' \right)_{ij} a^\dag_i a_j + \frac{1 }{2 } \sum_{i,j} \left(\bold{h}'_{12} \right)_{ij} a^\dag_i a^\dag_j + \frac{1 }{2 } \sum_{i,j} \left(\bold{h}'_{21} \right)_{ij} a_i a_j + \frac{1 }{2 } \sum_{i,j} \left(\bold{h}'_{22} \right)_{ij} a_i a^\dag_j
 \end{split}
 \end{equation}
 $$
 
-对比可得
+一种取法为
 
 $$
 \begin{equation}
-\Xi'_{ij}
-=\mathrm{i} \kappa \left[\left(t^{(+)}_{ji} - t^{(+)}_{ij} \right) + \left(t^{(-)}_{ji} - t^{(-)}_{ij} \right) \right],\quad
-\Delta'_{ij}
-=\mathrm{i} \kappa \left[\left(t^{(+)}_{ij} - t^{(+)}_{ji} \right) - \left(t^{(-)}_{ij} - t^{(-)}_{ji} \right) \right]
+\left(\bold{h}'_{11} \right)_{ij}
+=\mathrm{i}\kappa \left[\left(t^+_{ij} + t^-_{ij} \right) - \left(t^+_{ji} + t^-_{ji} \right) \right]
 \end{equation}
 $$
 
 $$
 \begin{equation}
-C'
-=-\mathrm{i} \kappa \sum_{i=1}^{N} \left[t^{(+)}_{ii} + t^{(-)}_{ii} \right]
-=0
+\left(\bold{h}'_{12} \right)_{ij}
+=\mathrm{i}\kappa \left[\left(t^-_{ij} - t^+_{ij} \right) - \left(t^-_{ji} - t^+_{ji} \right) \right]
 \end{equation}
 $$
+
+$$
+\begin{equation}
+\left(\bold{h}'_{21} \right)_{ij}
+=\mathrm{i}\kappa \left[\left(t^-_{ij} - t^+_{ij} \right) - \left(t^-_{ji} - t^+_{ji} \right) \right]
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\left(\bold{h}'_{22} \right)_{ij}
+=\mathrm{i}\kappa \left[\left(t^+_{ij} + t^-_{ij} \right) - \left(t^+_{ji} + t^-_{ji} \right) \right]
+\end{equation}
+$$
+
+若令
+
+$$
+\begin{equation}
+\Xi' = \bold{h}'_{11},\quad \Delta' = \bold{h}'_{12}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\Xi'^\dag = \Xi,\quad
+\Delta'^{\mathrm{T}} = -\Delta'^{\mathrm{T}}
+\end{equation}
+$$
+
+则
+
+$$
+\begin{equation}
+\bold{h}'_{22} = -\Xi'^{\mathrm{T}} = \Xi'
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\bold{h}'_{21} = \Delta'^\dag = \Delta'
+\end{equation}
+$$
+
+则
+
+$$
+\begin{equation}
+\bold{h}'
+=\begin{bmatrix}
+\bold{h}'_{11} &\bold{h}'_{12} \\
+\bold{h}'_{21} &\bold{h}'_{22}
+\end{bmatrix}
+=\begin{bmatrix}
+\Xi' &\Delta' \\
+\Delta' &\Xi'
+\end{bmatrix}
+\end{equation}
+$$
+
+--- above revises
 
 ### 计算基态宇称
 
@@ -1264,10 +1326,6 @@ A
 \end{equation}
 $$
 
-
----
-
-
 $$
 \begin{equation}
 \begin{aligned}
@@ -1294,11 +1352,8 @@ $$
 \begin{equation}
 \begin{aligned}
 \widetilde{H}_0
-&=\frac{\mathrm{i} }{2 } \sum_{i=1}^{N} \sum_{j=1}^{N} \left(-2 t_{ij} \right) c_{i,A} c_{j,B}
-=\frac{\mathrm{i} }{2 } \sum_{i=1}^{N} \sum_{j=1}^{N} -\left( t_{ij} - t_{ji} \right) c_{i,A} c_{j,B} \\
-&=\frac{\mathrm{i} }{2 } \left[\sum_{i=1}^{N} \sum_{j=1}^{N} \frac{-\left( t_{ij} - t_{ji} \right) }{2 }  c_{i,A} c_{j,B} + \sum_{i=1}^{N} \sum_{j=1}^{N} \frac{\left( t_{ij} - t_{ji} \right) }{2 } c_{j,B} c_{i,A} \right] \\
-&=\frac{\mathrm{i} }{2 } \left[\sum_{i=1}^{N} \sum_{j=1}^{N} \frac{-\left( t_{ij} - t_{ji} \right) }{2 }  c_{i,A} c_{j,B} + \sum_{j=1}^{N} \sum_{i=1}^{N} \frac{\left( t_{ji} - t_{ij} \right) }{2 } c_{i,B} c_{j,A} \right] \\
-&=\frac{\mathrm{i} }{2 } \left[\sum_{i=1}^{N} \sum_{j=1}^{N} \frac{-\left( t_{ij} - t_{ji} \right) }{2 }  c_{i,A} c_{j,B} + \sum_{j=1}^{N} \sum_{i=1}^{N} \frac{-\left( t_{ij} - t_{ji} \right) }{2 } c_{i,B} c_{j,A} \right] \\
+&=\frac{\mathrm{i} }{2 } \sum_{i=1}^{N} \sum_{j=1}^{N} \left(2 t_{ij} \right) c_{i,A} c_{j,B} \\
+&=\frac{\mathrm{i} }{2 } \sum_{i=1}^{N} \sum_{j=1}^{N} \left[\left(t_{ij} \right) c_{i,A} c_{j,B} - t_{ji} c_{i,B} c_{j,A} \right] \\
 \end{aligned}
 \end{equation}
 $$
@@ -1313,13 +1368,13 @@ $$
 
 $$
 \begin{equation}
-\left(M_0 \right)_{2i-1,2j} = \frac{-\left( t_{ij} - t_{ji} \right) }{2 }
+\left(M_0 \right)_{2i-1,2j} = t_{ij}
 \end{equation}
 $$
 
 $$
 \begin{equation}
-\left(M_0 \right)_{2i,2j-1} = \frac{-\left( t_{ij} - t_{ji} \right) }{2 }
+\left(M_0 \right)_{2i,2j-1} = -t_{ji}
 \end{equation}
 $$
 
@@ -1336,7 +1391,7 @@ $$
 $$
 \begin{equation}
 \widetilde{H}_\kappa
-=\frac{\mathrm{i} }{2 } \sum_{i=1}^{N} \sum_{j=1}^{N} \left[-\kappa \left(t^+_{ij} - t^+_{ji} \right) c_{i,B} c_{j,B} - \kappa\left(t^-_{ij} - t^-_{ji} \right) c_{i,A} c_{j,A} \right]
+=\frac{\mathrm{i} }{2 } \sum_{i=1}^{N} \sum_{j=1}^{N} \left[\kappa \left(t^+_{ij} - t^+_{ji} \right) c_{i,B} c_{j,B} + \kappa\left(t^-_{ij} - t^-_{ji} \right) c_{i,A} c_{j,A} \right]
 \end{equation}
 $$
 
@@ -1344,7 +1399,7 @@ ${M}_\kappa $ 的一种取法为
 
 $$
 \begin{equation}
-\left(M_\kappa \right)_{2i-1,2j-1} = -\kappa \left(t^-_{ij} - t^-_{ji} \right)
+\left(M_\kappa \right)_{2i-1,2j-1} = \kappa \left(t^-_{ij} - t^-_{ji} \right)
 \end{equation}
 $$
 
@@ -1362,7 +1417,7 @@ $$
 
 $$
 \begin{equation}
-\left(M_\kappa \right)_{2i,2j} = -\kappa \left(t^+_{ij} - t^+_{ji} \right)
+\left(M_\kappa \right)_{2i,2j} = \kappa \left(t^+_{ij} - t^+_{ji} \right)
 \end{equation}
 $$
 
