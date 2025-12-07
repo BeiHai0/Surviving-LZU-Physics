@@ -948,3 +948,187 @@ u(x,y,z,t)
 
 \section{曲线坐标系下的分离变量}
 
+\subsection{亥姆霍兹方程在球坐标系下的分离变量}
+
+在球坐标系下，亥姆霍兹方程为：
+
+\begin{equation}
+\nabla^2 u(r,\theta,\varphi) + k^2 u(r,\theta,\varphi) = 0,
+\end{equation}
+
+其中，拉普拉斯算子 $\nabla^2 $ 在球坐标系下的表达式为：
+
+\begin{equation}
+\nabla^2
+=\frac{1}{r^2}\frac{\partial}{\partial r}\left(r^2\frac{\partial}{\partial r}\right) + \frac{1}{r^2\sin\theta}\frac{\partial}{\partial \theta}\left(\sin\theta\frac{\partial}{\partial\theta}\right) + \frac{1}{r^2\sin^2\theta}\frac{\partial^2}{\partial \varphi^2}.
+\end{equation}
+
+设 $u(r,\theta,\varphi) $ 可分离变量：
+
+\begin{equation}
+u(r,\theta,\varphi) = R(r)Y(\theta,\varphi) = R(r) \Theta(\theta)\Phi(\varphi),
+\end{equation}
+
+代入亥姆霍兹方程可得：
+
+\begin{equation}
+\begin{split}
+&k^2 R(r) Y(\theta,\varphi) + Y(\theta,\varphi) \frac{1}{r^2}\frac{\partial}{\partial r}\left(r^2\frac{\partial}{\partial r} R(r)\right) \\
++&R(r) \frac{1}{r^2\sin\theta}\frac{\partial}{\partial \theta}\left(\sin\theta\frac{\partial}{\partial\theta}Y(\theta,\varphi) \right) + R(r) \frac{1}{r^2\sin^2\theta}\frac{\partial^2}{\partial \varphi^2} Y(\theta,\varphi)
+=0.
+\end{split}
+\end{equation}
+
+上式两边同除 $R(r) Y(\theta,\varphi) / r^2 $ 得：
+
+\begin{equation}
+\begin{split}
+&k^2 r^2 + \frac{1 }{R(r) } \frac{\partial}{\partial r}\left(r^2\frac{\partial}{\partial r} R(r)\right) \\
++ &\frac{1}{Y(\theta,\varphi)\sin\theta}\frac{\partial}{\partial \theta}\left(\sin\theta\frac{\partial}{\partial\theta}Y(\theta,\varphi) \right) + \frac{1}{Y(\theta,\varphi)\sin^2\theta}\frac{\partial^2}{\partial \varphi^2} Y(\theta,\varphi)
+=0.
+\end{split}
+\end{equation}
+
+由上式可知，径向部分 $R(r) $ 满足\textbf{球贝塞尔方程}：
+
+\begin{equation}
+k^2 r^2 + \frac{1 }{R(r) } \frac{\partial}{\partial r}\left(r^2\frac{\partial}{\partial r} R(r)\right)
+=l(l+1),
+\end{equation}
+
+也即
+
+\begin{equation}
+\frac{\mathrm{d}^2 R(r) }{\mathrm{d}r^2 } + \frac{2 }{r } \frac{\mathrm{d}R(r) }{\mathrm{d}r } + \left[k^2 - \frac{l(l+1) }{r^2 }  \right]R(r)
+=0.
+\end{equation}
+
+角度部分 $Y(\theta,\varphi) $ 满足
+
+\begin{equation}
+\frac{1}{Y(\theta,\varphi)\sin\theta}\frac{\partial}{\partial \theta}\left(\sin\theta\frac{\partial}{\partial\theta}Y(\theta,\varphi) \right) + \frac{1}{Y(\theta,\varphi)\sin^2\theta}\frac{\partial^2}{\partial \varphi^2} Y(\theta,\varphi)
+=-l(l+1),
+\end{equation}
+
+也即
+
+\begin{equation}
+\frac{1 }{\sin\theta } \frac{\partial }{\partial \theta } \left(\sin\theta\frac{\partial Y(\theta,\varphi) }{\partial \theta }  \right) + \frac{1 }{\sin^2\theta } \frac{\partial^2 Y(\theta,\varphi) }{\partial \varphi^2 } + l(l+1)Y(\theta,\varphi)
+=0.
+\end{equation}
+
+设角度部分 $Y(\theta,\varphi)=\Theta(\theta) \Phi(\varphi) $，代入上式可得：
+
+\begin{equation}
+\Phi(\varphi) \frac{1 }{\sin\theta } \frac{\partial }{\partial\theta } \left(\sin\theta \frac{\partial \Theta(\theta) }{\partial \theta }  \right) + \frac{1 }{\sin^2\theta } \Theta(\theta) \frac{\partial^2 \Phi(\varphi) }{\partial \varphi^2 } + l(l+1) \Theta(\theta) \Phi(\varphi)
+=0.
+\end{equation}
+
+两边同除 $\Theta(\theta) \Phi(\varphi) / \sin^2\theta $ 得：
+
+\begin{equation}
+\frac{\sin\theta }{\Theta(\theta) } \frac{\mathrm{d} }{\mathrm{d}\theta } \left(\sin\theta \frac{\mathrm{d}\Theta(\theta) }{\mathrm{d}\theta }  \right) + l(l+1)\sin^2\theta + \frac{1 }{\Phi(\varphi) } \frac{\mathrm{d}^2\Phi(\varphi ) }{\mathrm{d}\varphi^2 } 
+=0.
+\end{equation}
+
+由上式可知，方位角部分 $\Phi(\varphi) $ 满足
+
+\begin{equation}
+\frac{1 }{\Phi(\varphi) } \frac{\mathrm{d}^2\Phi(\varphi ) }{\mathrm{d}\varphi^2 } 
+=-m^2,
+\end{equation}
+
+也即
+
+\begin{equation}
+\Phi''(\varphi) + m^2 \Phi(\varphi)
+=0.
+\end{equation}
+
+极角部分 $\Theta(\theta) $ 满足
+
+\begin{equation}
+\frac{1 }{\sin\theta }\frac{\mathrm{d} }{\mathrm{d}\theta } \left(\sin\theta\frac{\mathrm{d}\Theta(\theta) }{\mathrm{d}\theta }  \right) + \left[l(l+1)-\frac{m^2 }{\sin^2\theta }  \right] \Theta(\theta)
+=0.
+\end{equation}
+
+令 $x=\cos\theta,\Theta(\theta)=y(x),\theta\in(0,\pi),\left|x \right|<1,\sin\theta=\sqrt{1-x^2} $，
+
+\begin{equation}
+\mathrm{d}x
+=-\sin\theta\mathrm{d}\theta,
+\end{equation}
+
+\begin{equation}
+\frac{\mathrm{d} }{\mathrm{d}\theta } 
+=\frac{\mathrm{d}x }{\mathrm{d}\theta } \frac{\mathrm{d} }{\mathrm{d}x } 
+=-\sin\theta\frac{\mathrm{d} }{\mathrm{d}x } ,
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\frac{1 }{\sin\theta }\frac{\mathrm{d} }{\mathrm{d}\theta } \left(\sin\theta\frac{\mathrm{d}\Theta(\theta) }{\mathrm{d}\theta }  \right)
+&=\frac{1 }{\sin\theta }\frac{\mathrm{d} }{\mathrm{d}\theta } \left(-\sin^2\theta\frac{\mathrm{d}y(x) }{\mathrm{d}x } \right) \\
+&=\frac{1 }{\sin\theta }\frac{\mathrm{d} }{\mathrm{d}\theta } \left(-\left(1-\cos^2 \theta \right) \frac{\mathrm{d}y(x) }{\mathrm{d}x } \right) \\
+&=\frac{1 }{\sin\theta }\frac{\mathrm{d} }{\mathrm{d}\theta } \left(-\left(1-x^2 \right)\frac{\mathrm{d}y(x) }{\mathrm{d}x } \right) \\
+&=\frac{1 }{\sin\theta } \cdot \left(-\sin\theta \right) \frac{\mathrm{d} }{\mathrm{d}x } \left(-\left(1-x^2 \right)\frac{\mathrm{d}y(x) }{\mathrm{d}x } \right) \\
+&=\frac{\mathrm{d} }{\mathrm{d}x } \left(\left(1-x^2 \right)\frac{\mathrm{d}y(x) }{\mathrm{d}x } \right) \\
+&=\left(1-x^2 \right)\frac{\mathrm{d}^2y(x) }{\mathrm{d}x^2 } - 2x\frac{\mathrm{d}y(x) }{\mathrm{d}x },
+\end{split}
+\end{equation}
+
+则方程可化为\textbf{连带勒让德方程}：
+
+\begin{equation}
+(1-x^2)\frac{\mathrm{d}^2 y }{\mathrm{d}x^2 } - 2x\frac{\mathrm{d}y }{\mathrm{d}x } + \left[l(l+1)-\frac{m^2 }{1-x^2 }  \right]y
+=0.
+\end{equation}
+
+\subsection{亥姆霍兹方程在柱坐标系下的分离变量}
+
+在柱坐标系下，亥姆霍兹方程为：
+
+\begin{equation}
+\nabla^2 u(\rho,\varphi,z) + k^2 u(\rho,\varphi,z) = 0,
+\end{equation}
+
+其中，拉普拉斯算子在柱坐标系下的表达式为：
+
+\begin{equation}
+\nabla^2
+=\frac{1}{\rho}\frac{\partial}{\partial \rho}\left(\rho\frac{\partial }{\partial \rho}\right)+\frac{1}{\rho^2}\frac{\partial^2}{\partial \varphi^2}+\frac{\partial^2}{\partial z^2}
+\end{equation}
+
+设 $u(\rho,\varphi,z) $ 可分离变量：
+
+\begin{equation}
+u(\rho,\varphi,z) = R(\rho)\Phi(\varphi)Z(z),
+\end{equation}
+
+经过运算，可以得到，$\Phi(\varphi) $ 满足
+
+\begin{equation}
+\Phi''(\varphi) + \nu^2\Phi(\varphi)
+=0,\quad \nu\geqslant 0,
+\end{equation}
+
+\begin{equation}
+Z''(z) - \lambda Z(z)
+=0,
+\end{equation}
+
+\begin{equation}
+\frac{1 }{\rho } \frac{\mathrm{d} }{\mathrm{d}\rho }\left(\rho\frac{\mathrm{d}R(\rho) }{\mathrm{d}\rho }  \right) + \left(k^2+\lambda-\frac{\nu^2 }{\rho^2 }  \right)R(\rho)
+=0.
+\end{equation}
+
+令 $x=\sqrt{k^2+\lambda} \rho,\rho=x/\sqrt{k^2+\lambda},(k^2+\lambda\ne 0),R(\rho) \equiv y(x),y(x)=R(\rho) $，则上面方程可化为\textbf{贝塞尔方程}：
+
+\begin{equation}
+\frac{\mathrm{d}^2 y(x) }{\mathrm{d}x^2 } + \frac{1 }{x } \frac{\mathrm{d}y(x) }{\mathrm{d}x } + \left(1-\frac{\nu^2 }{x^2 }  \right) y(x)
+=0,\quad \nu\geqslant 0.
+\end{equation}
+
+或称为 $\nu $ 阶\textbf{贝塞尔方程}。
+
+

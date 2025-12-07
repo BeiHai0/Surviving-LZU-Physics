@@ -1,0 +1,822 @@
+\chapter{球函数}
+
+\section{勒让德多项式}
+
+\subsection{极轴对称性下连带勒让德方程退化为勒让德方程}
+
+我们已经知道，对球坐标下的亥姆霍兹方程
+
+\begin{equation}
+\nabla^2 u(r,\theta,\varphi) + k^2 u(r,\theta,\varphi)
+=0
+\end{equation}
+
+进行分离变量，即设
+
+\begin{equation}
+u(r,\theta,\varphi) = R(r) \Theta(\theta) \Phi(\varphi),
+\end{equation}
+
+最后得到三条方程。
+
+径向部分 $R(r) $ 满足\textbf{球贝塞尔方程}：
+
+\begin{equation}
+\frac{\mathrm{d}^2 R(r) }{\mathrm{d}r^2 } + \frac{2 }{r } \frac{\mathrm{d}R(r) }{\mathrm{d}r } + \left[k^2 - \frac{l(l+1) }{r^2 }  \right]R(r)
+=0.
+\end{equation}
+
+极角部分 $\Theta(\theta) $ 满足
+
+\begin{equation}
+\frac{1 }{\sin\theta }\frac{\mathrm{d} }{\mathrm{d}\theta } \left(\sin\theta\frac{\mathrm{d}\Theta(\theta) }{\mathrm{d}\theta }  \right) + \left[l(l+1)-\frac{m^2 }{\sin^2\theta }  \right] \Theta(\theta)
+=0.
+\end{equation}
+
+在进行变量替换 $\cos\theta=x,\Theta(\theta)=y(x) $ 后得到连带勒让德方程
+
+\begin{equation}
+(1-x^2)\frac{\mathrm{d}^2 y }{\mathrm{d}x^2 } - 2x\frac{\mathrm{d}y }{\mathrm{d}x } + \left[l(l+1)-\frac{m^2 }{1-x^2 }  \right]y
+=0.
+\end{equation}
+
+方位角部分 $\Phi(\varphi) $ 满足
+
+\begin{equation}
+\Phi''(\varphi) + m^2 \Phi(\varphi)
+=0.
+\end{equation}
+
+由上面方程，容易得到方位角部分的本征解为：
+
+\begin{equation}
+\Phi_m(\varphi)
+=\mathrm{e}^{\mathrm{i}m\varphi}.
+\end{equation}
+
+由于 $\Phi(\varphi) $ 要满足周期性边界条件($\varphi $转一圈不改变场值)
+
+\begin{equation}
+\Phi(\varphi+2\pi) = \Phi(\varphi),
+\end{equation}
+
+因此本征值 $m $ 只能取整数，即：
+
+\begin{equation}
+m\in \mathbb{Z}.
+\end{equation}
+
+现在假设场量 $u(r,\theta,\varphi) $ 具有极轴对称性，也即其值与 $\varphi $ 无关，则本征值 $m $ 只能取 $0 $：
+
+\begin{equation}
+m = 0.
+\end{equation}
+
+把 $m=0 $ 代回连带勒让德方程就得到\textbf{勒让德方程}：
+
+\begin{equation}
+(1-x^2)\frac{\mathrm{d}^2 y }{\mathrm{d}x^2 } - 2x\frac{\mathrm{d}y }{\mathrm{d}x } + l(l+1) y
+=0.
+\end{equation}
+
+总结一下，在极轴对称性下，亥姆霍兹方程 $\nabla^2 u(r,\theta) + k^2 u(r,\theta) = 0 $ 经分离变量后，径向部分 $R(r) $ 满足仍满足球贝塞尔方程：
+
+\begin{equation}
+\frac{\mathrm{d}^2 R(r) }{\mathrm{d}r^2 } + \frac{2 }{r } \frac{\mathrm{d}R(r) }{\mathrm{d}r } + \left[k^2 - \frac{l(l+1) }{r^2 }  \right]R(r)
+=0,
+\end{equation}
+
+极角部分 $\Theta(\theta)=y(x),x=\cos\theta $ 满足勒让德方程：
+
+\begin{equation}
+(1-x^2)\frac{\mathrm{d}^2 y }{\mathrm{d}x^2 } - 2x\frac{\mathrm{d}y }{\mathrm{d}x } + l(l+1) y
+=0.
+\end{equation}
+
+
+\subsection{勒让德多项式作为勒让德方程在自然边界条件下的本征函数}
+
+物理上，我们认为场值有限。勒让德方程与自然边界条件就构成S-L本征值问题：
+
+\begin{equation}
+\left\{
+\begin{aligned}
+&x=\cos\theta,\quad\left|x \right|\leqslant 1 \\
+&\left(1-x^2\right)\frac{\mathrm{d}^2 y(x) }{\mathrm{d}x^2 } - 2x\frac{\mathrm{d}y(x) }{\mathrm{d}x } + l(l+1) y(x)
+=0, \\
+&\left|y(x) \right|<+\infty
+\end{aligned}
+\right.
+\end{equation}
+
+利用级数法，可以得到这个S-L本征值问题的本征解：
+
+本征值 $l $ 取自然数 $0,1,2,\cdots $；
+
+相应于本征值 $l $ 的本征函数 $y_l(x) $ 是第一类勒让德多项式(简称勒让德多项式或勒让德函数) $\mathrm{P}_l(x) $：
+
+\begin{equation}
+y_l(x) = \mathrm{P}_l(x)
+\equiv \sum_{n=0}^{N} \frac{(-1)^n(2l-2n)!}{2^ln!(l-n)!(l-2n)!}x^{l-2n},\quad
+N
+=\left\{
+\begin{aligned}
+&\frac{l}{2}&,l\text{为偶数} \\
+&\frac{l-1}{2}&,l\text{为奇数}
+\end{aligned}
+\right.
+\end{equation}
+
+\subsection{前几个勒让德多项式}
+
+\begin{equation}
+\mathrm{P}_0(x)
+=1
+\end{equation}
+
+\begin{equation}
+\mathrm{P}_1(x)
+=x
+\end{equation}
+
+\begin{equation}
+\mathrm{P}_2(x)
+=\frac{1}{2}\left(3x^2-1 \right)
+\end{equation}
+
+\begin{equation}
+\mathrm{P}_3(x)
+=\frac{1}{2}\left(5x^3-3x \right)
+\end{equation}
+
+\section{勒让德多项式的性质}
+
+\subsection{罗德里格斯公式}
+
+\begin{equation}
+\mathrm{P}_l(x)
+=\frac{1}{2^l l! }\frac{\mathrm{d}^l}{\mathrm{d} x^l}\left(x^2-1 \right)^l.
+\end{equation}
+
+\subsection{勒让德多项式的生成函数(母函数)}
+
+定义勒让德多项式的生成函数 $f(r) $ 为：
+
+\begin{equation}
+f(r)
+\equiv \frac{1 }{\sqrt{1+r^2-2r\cos\theta} } 
+=\frac{1}{\sqrt{1+r^2-2rx}}
+\end{equation}
+
+其中，$x=\cos\theta,\left|x \right|\leqslant 1 $
+
+当 $r<1 $，可将 $f(r) $ 在 $r=0 $ 处进行泰勒展开，可得：
+
+\begin{equation}
+f(r)
+\equiv\frac{1}{\sqrt{1+r^2-2rx}}
+=\sum_{l=0}^{\infty} \mathrm{P}_l(x) r^l,\quad r<1
+\end{equation}
+
+或者用 $\theta $ 表达：
+
+\begin{equation}
+\boxed{
+f(r)
+\equiv\frac{1}{\sqrt{1+r^2-2r\cos\theta}}
+=\sum_{l=0}^{\infty} \mathrm{P}_l(\cos\theta) r^l,\quad r<1
+}
+\end{equation}
+
+当 $r>1,\frac{1 }{r } <1 $，有：
+
+\begin{equation}
+\begin{aligned}
+f(r)
+&=\frac{1 }{\sqrt{1+r^2-2rx} } \\
+&=\frac{1 }{r\sqrt{1+\left(1/r \right)^2 - 2\left(1/r \right)x} } \\
+&=\frac{1 }{r }  \sum_{l=0}^{\infty} \mathrm{P}_l(x)\left(\frac{1 }{r }  \right)^l \\
+&=\sum_{l=0}^{\infty}\mathrm{P}_l(x)r^{-(l+1)},\quad r>1
+\end{aligned}
+\end{equation}
+
+或者用 $\theta $ 表达：
+
+\begin{equation}
+\boxed{
+f(r)
+=\frac{1 }{\sqrt{1+r^2-2r\cos\theta} }
+=\sum_{l=0}^{\infty}\mathrm{P}_l(\cos\theta)r^{-(l+1)},\quad r>1
+}
+\end{equation}
+
+\subsection{勒让德多项式的递推公式}
+
+\begin{equation}
+x(1+2l)\mathrm{P}_l(x)-(l+1)\mathrm{P}_{l+1}(x)-l\mathrm{P}_{l-1}(x)
+=0
+\end{equation}
+
+\begin{equation}
+\mathrm{P}_l(x)
+=\mathrm{P}_{l+1}'(x)+\mathrm{P}_{l-1}'(x)-2x\mathrm{P}_l'(x)
+\end{equation}
+
+\begin{equation}
+(2l+1)\mathrm{P}_l(x)
+=\mathrm{P}_{l+1}'(x)-\mathrm{P}_{l-1}'(x)
+\end{equation}
+
+\begin{equation}
+(l+1)\mathrm{P}_l(x)
+=\mathrm{P}_{l+1}'(x)-x\mathrm{P}_{l}'(x)
+\end{equation}
+
+\begin{equation}
+l\mathrm{P}_{l}(x)
+=x\mathrm{P}_{l}'(x)-\mathrm{P}_{l-1}'(x)
+\end{equation}
+
+\begin{equation}
+\left(x^2-1 \right)\mathrm{P}_{l}'(x)
+=lx\mathrm{P}_{l}(x)-l\mathrm{P}_{l-1}(x)
+\end{equation}
+
+\subsection{勒让德多项式的正交性}
+
+$\displaystyle{\left\{\sqrt{\frac{2l+1}{2}}\mathrm{P}_l(x),\quad l=0,1,2,\cdots \right\} }$ 构成 $[-1,1]$ 上的正交归一函数系，基函数的正交归一性可表达为：
+
+\begin{equation}
+\int_{-1}^{1}\sqrt{\frac{2k+1}{2}}\mathrm{P}_k(x)\cdot\sqrt{\frac{2l+1}{2}}\mathrm{P}_l(x)\mathrm{d}x
+=\delta_{kl},\quad k,l=0,1,2,\cdots
+\end{equation}
+
+\section{具有极轴对称的拉普拉斯方程的求解}
+
+拉普拉斯方程 $\nabla^2 u = 0 $ 可以由亥姆霍兹方程 $\nabla^2 u + k^2 u = 0 $ 令 $k=0 $ 得到。
+
+我们已经知道,在极轴对称性下，亥姆霍兹方程 $\nabla^2 u(r,\theta) + k^2 u(r,\theta) = 0 $ 经分离变量后，径向部分 $R(r) $ 满足满足球贝塞尔方程：
+
+\begin{equation}
+\frac{\mathrm{d}^2 R(r) }{\mathrm{d}r^2 } + \frac{2 }{r } \frac{\mathrm{d}R(r) }{\mathrm{d}r } + \left[k^2 - \frac{l(l+1) }{r^2 }  \right]R(r)
+=0,
+\end{equation}
+
+极角部分 $\Theta(\theta)=y(x),x=\cos\theta $ 满足勒让德方程：
+
+\begin{equation}
+(1-x^2)\frac{\mathrm{d}^2 y }{\mathrm{d}x^2 } - 2x\frac{\mathrm{d}y }{\mathrm{d}x } + l(l+1) y
+=0.
+\end{equation}
+
+令 $k=0 $，就得到具有极轴对称性的拉普拉斯方程 $\nabla^2 u(r,\theta) = 0 $ 在分离变量 $u(r,\theta)=R(r) \Theta(\theta) $ 后 $R(r),\Theta(\theta)=y(x) $ 分别要满足的方程：
+
+\begin{equation}
+\frac{\mathrm{d}^2 R(r) }{\mathrm{d}r^2 } + \frac{2 }{r } \frac{\mathrm{d}R(r) }{\mathrm{d}r } - \frac{l(l+1) }{r^2 } R(r)
+=0,
+\end{equation}
+
+\begin{equation}
+(1-x^2)\frac{\mathrm{d}^2 y }{\mathrm{d}x^2 } - 2x\frac{\mathrm{d}y }{\mathrm{d}x } + l(l+1) y
+=0.
+\end{equation}
+
+对于极角部分 $\Theta(\theta)=y(x) $，结合自然边界条件 $\left|y(x) \right|<+\infty $，就构成S-L本征值问题。我们知道，这个S-L本征值问题的本征值 $l=0,1,2,\cdots $，相应于本征值 $l $ 的本征函数 $y_l(x) $ 为勒让德多项式：
+
+\begin{equation}
+y_l(x)
+=\mathrm{P}_l(x),
+\end{equation}
+
+\begin{equation}
+\Theta_l(\theta)
+=y_l(x)
+=y_l(\cos\theta)
+=\mathrm{P}_l(\cos\theta).
+\end{equation}
+
+对于径向部分 $R(r) $，可以证明其相应于本征值 $l $ 的本征函数 $R_l(r) $ 为
+
+\begin{equation}
+R_l(r)
+=C_l r^l + D_l r^{-(l+1)}
+\end{equation}
+
+因此，具有极轴对称性的拉普拉斯方程
+
+\begin{equation}
+\nabla^2 u(r,\theta) = 0
+\end{equation}
+
+在自然边界条件下的形式解为
+
+\begin{equation}
+u(r,\theta)
+=\sum_{l=0}^{\infty} \left(C_l r^l + D_l r^{-(l+1)} \right) \mathrm{P}_l(\cos\theta).
+\end{equation}
+
+\subsection{例题}
+
+\subsubsection{例1}
+
+\begin{example}
+    
+在单位球的北极点上放置一电荷量为 $4\pi \varepsilon_0$ 的点电荷，求单位球内任一点 $\vec{r} $ 的电势，并用勒让德多项式表示。
+
+\end{example}
+
+\begin{solution}
+    
+由余弦定理知，单位球内 $\vec{r}$ 点到 单位球上北极点的距离为：
+
+\begin{equation}
+r'
+=\sqrt{1+r^2-2r\cos\theta},\quad r<1
+\end{equation}
+
+单位球内 $\vec{r}$ 点的电势为：
+
+\begin{equation}
+\begin{split}
+u(\vec{r})
+&=\frac{1}{4\pi\varepsilon_0}\frac{q}{r'} \\
+&=\frac{1}{4\pi\varepsilon_0}\frac{4\pi\varepsilon_0}{\sqrt{1+r^2-2r\cos\theta}} \\
+&=\frac{1}{\sqrt{1+r^2-2r\cos\theta}},\quad r<1
+\end{split}
+\end{equation}
+
+这恰好是勒让德多项式的生成函数，其可在 $r=0$ 点展开为：
+
+\begin{equation}
+u(\vec{r})
+=\sum_{l=0}^{\infty}\mathrm{P}_l(\cos\theta)r^{l},\quad r<1
+\end{equation}
+
+\end{solution}
+
+\subsubsection{例2}
+
+\begin{example}
+    
+在半径 $r=r_0$ 的球内求解 $\nabla^2 u=0$，使其满足边界条件 $\left. u\right|_{r=r_0}=\sin^2\theta$.
+
+\end{example}
+
+\begin{solution}
+    
+边界条件与方位角 $\varphi $ 无关，因此所求应也与 $\varphi $ 无关：
+
+\begin{equation}
+\nabla^2 u(r,\theta) = 0.
+\end{equation}
+
+套用结论，轴对称问题的拉普拉斯方程在自然边界条件约束下的形式解为：
+
+\begin{equation}
+u(r,\theta)
+=\sum_{l=0}^{\infty}\left(A_l r^l+B_l r^{-(l+1)} \right)\mathrm{P}_l(\cos\theta)
+\end{equation}
+
+由自然边界条件，球心 $r=0 $ 处场量不应发散：
+
+\begin{equation}
+\left.\left|u(r,\theta) \right| \right|_{r=0}<+\infty
+\end{equation}
+
+因此 $-r^{(l+1)} $ 项必须舍弃，即：
+
+\begin{equation}
+B_l = 0,\quad l=0,1,2,\cdots
+\end{equation}
+
+于是：
+
+\begin{equation}
+u(r,\theta)
+=\sum_{l=0}^{\infty} A_l r^l\mathrm{P}_l(\cos\theta).
+\end{equation}
+
+考虑边界条件 $\left. u\right|_{r=r_0}=\sin^2\theta=1-\cos^2\theta$，注意到：
+
+\begin{equation}
+\left\{
+\begin{aligned}
+&\mathrm{P}_0(\cos\theta) = 1 \\
+&\mathrm{P}_1(\cos\theta) = \cos\theta \\
+&\mathrm{P}_2(\cos\theta)= \frac{1 }{2 } \left(3\cos^2\theta-1 \right)
+\end{aligned}
+\right.
+\Longrightarrow 1-\cos^2\theta = \frac{2 }{3 } \left[\mathrm{P}_0(\cos\theta) -\mathrm{P}_2(\cos\theta)\right]
+\end{equation}
+
+因此：
+
+\begin{equation}
+\sum_{l=0}^{\infty} A_l r_0^l\mathrm{P}_l(\cos\theta)
+=\frac{2 }{3 } \left[\mathrm{P}_0(\cos\theta) -\mathrm{P}_2(\cos\theta)\right]
+\end{equation}
+
+把边界条件整理成各阶勒让德多项式的线性叠加的形式：
+
+\begin{equation}
+\left(A_0-\frac{2 }{3 }  \right)\mathrm{P}_0(\cos\theta) + A_1r_0\mathrm{P}_1(\cos\theta) + \left(A_2r_0^2 + \frac{2 }{3 }  \right)\mathrm{P}_2(\cos\theta) + \sum_{l=3}^{\infty} A_l r_0^l\mathrm{P}_l(\cos\theta)
+=0
+\end{equation}
+
+由各阶勒让德多项式的正交性，它们的线性叠加为零，当且仅当所有线性叠加系数为零，即：
+
+\begin{equation}
+A_0-\frac{2 }{3 } = 0,
+A_1 = 0,
+A_2 r_0^2 + \frac{2 }{3 }  = 0,
+A_3 = A_4 = \cdots = 0
+\end{equation}
+
+即：
+
+\begin{equation}
+A_0 = \frac{2 }{3 },
+A_1 = 0,
+A_2 = -\frac{2 }{3r_0^2 },
+A_3 = A_4 = \cdots =0
+\end{equation}
+
+于是：
+
+\begin{equation}
+\begin{split}
+u(r,\theta)
+&=\sum_{l=0}^{\infty} A_l r^l\mathrm{P}_l(\cos\theta) \\
+&=\frac{2 }{3 } - \frac{2 }{3r_0^2 } r^2\mathrm{P}_2(\cos\theta) \\
+&=\frac{2 }{3 } - \frac{r^2 }{3r_0^2 } \left(3\cos^2\theta-1 \right)
+\end{split}
+\end{equation}
+
+\end{solution}
+
+\subsubsection{例3}
+
+\begin{example}
+    
+在均匀电场 $\vec{E}_0 $ 中放一半径为 $a$ 的接地导体球，求球外电势、电场、导体球表面面电荷密度分布。
+
+\end{example}
+
+\begin{solution}
+    
+以球心 $O$ 为坐标原点，选取 $\vec{E}_0 $ 方向为 $z$ 轴正方向，则电势 $u$ 关于 $z$ 轴轴对称。
+
+球外无自由电荷，于是球外电势分布 $u(\vec{r}) $ 满足拉普拉斯方程：
+
+\begin{equation}
+\nabla^2 u(\vec{r}) = 0,\quad r>a
+\end{equation}
+
+特别地，这里电势 $u$ 关于 $z$ 轴对称，$u$ 与 $\varphi$ 无关，拉普拉斯方程可简化为：
+
+\begin{equation}
+\nabla^2 u(r,\theta)
+=0,\quad r>a
+\end{equation}
+
+导体球接地，得到一个边界条件：
+
+\begin{equation}
+\left. u(r,\theta)\right|_{r=a}
+=0
+\end{equation}
+
+由电势的叠加原理，实际电势 $u(r,\theta)$ 是导体球面上的感应电荷产生的电势和匀强电场 $\vec{E}_0 $ 导致的电势的代数和。把感应电荷在无穷远处产生的电势设为零，则当 $r\to +\infty$，电势只由匀强电场贡献。设匀强电场单独存在时在坐标原点产生的电势为 $u_0$，则：
+
+\begin{equation}
+u_0-u(r,\theta)
+=E_0 r\cos\theta,\quad r\to +\infty
+\end{equation}
+
+定解问题为：
+
+\begin{equation}
+\left\{
+\begin{aligned}
+&\nabla^2 u(r,\theta)
+=0 \\
+&\left. u(r,\theta)\right|_{r=a}
+=0 \\
+&u(r,\theta)
+=u_0-E_0r\cos\theta ,\quad r\to +\infty
+\end{aligned}
+\right.
+\end{equation}
+
+套用结论，轴对称问题的拉普拉斯方程在自然边界条件约束下的形式解为：
+
+\begin{equation}
+u(r,\theta)
+=\sum_{l=0}^{\infty}\left(A_l r^l+B_l r^{-(l+1)} \right)\mathrm{P}_l(\cos\theta)
+\end{equation}
+
+考虑边界条件 $\displaystyle{\left. u(r,\theta)\right|_{r\to +\infty}=u_0-E_0r\cos\theta  }$，当 $r\to+\infty$， 有 $r^{-(l+1)}\to 0$，于是：
+
+\begin{equation}
+\begin{aligned}
+u_0-E_0r\cos\theta
+&=\sum_{l=0}^{\infty} A_l r^l \mathrm{P}_l(\cos\theta) \\
+&=A_0 +A_1r\cos\theta + \cdots
+\end{aligned}
+\end{equation}
+
+左右两边都看作关于 $r $ 的多项式，对比系数得：
+
+\begin{equation}
+A_0
+=u_0,\quad
+A_1=-E_0,\quad
+A_2=A_3=\cdots=0
+\end{equation}
+
+于是形式解可写为：
+
+\begin{equation}
+\begin{aligned}
+u(r,\theta)
+&=\sum_{l=0}^{\infty}\left(A_l r^l+B_l r^{-(l+1)} \right)\mathrm{P}_l(\cos\theta) \\
+&=u_0-E_0r\cos\theta+\sum_{l=0}^{\infty}B_l r^{-(l+1)}\mathrm{P}_l(\cos\theta)
+\end{aligned}
+\end{equation}
+
+再考虑边界条件 $\displaystyle{\left. u(r,\theta)\right|_{r=a}=0 }$，将形式解代入边界条件，得：
+
+\begin{equation}
+u_0-E_0a\cos\theta+\sum_{l=0}^{\infty}B_l a^{-(l+1)}\mathrm{P}_l(\cos\theta)
+=0
+\end{equation}
+
+即：
+
+\begin{equation}
+u_0\mathrm{P}_0(\cos\theta) - E_0 a\mathrm{P}_1(\cos\theta)+\sum_{l=0}^{\infty}B_l a^{-(l+1)}\mathrm{P}_l(\cos\theta)
+=0
+\end{equation}
+
+整理成各阶勒让德多项式的线性叠加的形式：
+
+\begin{equation}
+\left(u_0+B_0a^{-1} \right)\mathrm{P}_0(\cos\theta) + \left(-E_0 a + B_1a^{-2} \right)\mathrm{P}_1(\cos\theta) + \sum_{l=2}^{\infty} B_la^{-(l+1)}\mathrm{P}_l(\cos\theta)
+=0
+\end{equation}
+
+由各阶勒让德多项式的正交性，它们的线性叠加为零，当且仅当所有线性叠加系数为零，即：
+
+\begin{equation}
+B_0
+=-a u_0,\quad
+B_1
+=a^3 E_0,\quad
+B_2=B_3=\cdots=0
+\end{equation}
+
+综上，导体球外电势分布为：
+
+\begin{equation}
+\begin{aligned}
+u(r,\theta)
+&=u_0-E_0r\cos\theta+\sum_{l=0}^{\infty}B_l r^{-(l+1)}\mathrm{P}_l(\cos\theta) \\
+&=u_0-E_0r\cos\theta-\frac{u_0 a}{r}+E_0a^3\frac{\cos\theta}{r^2},\quad r\geqslant a
+\end{aligned}
+\end{equation}
+
+其中，$u_0$ 为匀强电场单独存在时在坐标原点产生的电势。
+
+取 $u_0=0 $，则导体球外电势分布为：
+
+\begin{equation}
+\boxed{
+u(r,\theta)
+=-E_0r\cos\theta+E_0a^3\frac{\cos\theta}{r^2}
+},\quad r\geqslant a
+\end{equation}
+
+球外电场与电势的关系为：
+
+\begin{equation}
+\begin{aligned}
+\vec{E}(\vec{r})
+&=-\nabla u(\vec{r}) \\
+&=-\left[\frac{\partial u }{\partial r } \vec{\mathrm{e}}_r  + \frac{1 }{r } \frac{\partial u }{\partial \theta } \vec{\mathrm{e}}_\theta + \frac{1 }{r\sin\theta } \frac{\partial u }{\partial \varphi } \vec{\mathrm{e}}_\varphi \right] \\
+&=E_0\cos\theta\left(1+\frac{2a^3 }{r^3 } \right) \vec{\mathrm{e}}_r  + E_0\sin\theta\left(\frac{a^3 }{r^3 } - 1 \right)\vec{\mathrm{e}}_\theta,\quad r\geqslant a
+\end{aligned}
+\end{equation}
+
+导体表面电场为：
+
+\begin{equation}
+\left. \vec{E}(\vec{r})\right|_{r=a}
+=3E_0\cos\theta\vec{\mathrm{e}}_r
+\end{equation}
+
+利用电磁场中的高斯定理，导体球表面面电荷密度分布为：
+
+\begin{equation}
+\left. \sigma(\vec{r})\right|_{r=a}
+=\varepsilon_0 \left. \vec{E}(\vec{r})\right|_{r=a}\cdot \vec{\mathrm{e}}_r
+=3\varepsilon_0 E_0\cos\theta 
+\end{equation}
+
+\end{solution}
+
+\subsubsection{例4}
+
+\begin{example}
+    
+半径为 $a$ 的导体球接地，在距球心为 $b$ 的地方放置一点电荷，$b>a$，电荷量为 $q$，求导体球外的电势分布。
+
+\end{example}
+
+\begin{solution}
+    
+选取 $z $ 轴使得点电荷的位矢为 $b\vec{\mathrm{e}}_z $，则球外电势 $u $ 具有 $z $ 轴对称性，即 $u=u(r,\theta) $.
+
+点电荷会在接地导体球表面激发出感应电荷。根据电势叠加原理，导体球外的电势 $u $ 是感应电荷单独存在时产生的电势 $u_r $ 与 点电荷单独存在时的电势 $u_q $ 之和：
+
+\begin{equation}
+u = u_r + u_q.
+\end{equation}
+
+考虑点电荷单独存在时在球外产生的电势 $u_q $，由余弦定理，场点 $\vec{r} $ 到点电荷 $q $ 的距离 $r' $ 满足：
+
+\begin{equation}
+r'
+=\sqrt{b^2+r^2-2br\cos\theta}.
+\end{equation}
+
+点电荷 $q $ 在 $\vec{r} $ 处产生的电势 $u_q $ 满足：
+
+\begin{equation}
+\begin{aligned}
+u_q
+&=\frac{1 }{4\pi \varepsilon_0 } \frac{q }{r' } \\
+&=\frac{1 }{4\pi\varepsilon_0 } \frac{q }{\sqrt{b^2+r^2-2br\cos\theta} } \\
+&=\frac{1 }{4\pi\varepsilon_0 b} \frac{q }{\sqrt{1+\left(r/b \right)^2 - 2 \left(r/b \right)\cos\theta} } ,\quad r>a
+\end{aligned}
+\end{equation}
+
+根据勒让德多项式的母函数的相关知识，
+
+\begin{equation}
+\frac{1 }{\sqrt{1+\left(r/b \right)^2 - 2 \left(r/b \right)\cos\theta} }
+=\left\{
+\begin{aligned}
+&\sum_{l=0}^{\infty} \mathrm{P}_l(\cos\theta)\left(\frac{r }{b }  \right)^l&,~~r/b<1,~~r<b \\
+&\sum_{l=0}^{\infty} \mathrm{P}_l(\cos\theta)\left(\frac{r }{b }  \right)^{-(l+1)}&,~~r/b>1,~~r>b
+\end{aligned}
+\right.
+\end{equation}
+
+因此点电荷产生的电势分布 $u_q $ 可展为：
+
+\begin{equation}
+\boxed{
+\begin{aligned}
+u_q
+&=\frac{1 }{4\pi\varepsilon_0 } \frac{q }{\sqrt{b^2+r^2-2br\cos\theta} } \\
+&=\frac{q }{4\pi\varepsilon_0 b } \frac{1 }{\sqrt{1+\left(r/b \right)^2 - 2 \left(r/b \right)\cos\theta} } \\
+&=\left\{
+\begin{aligned}
+&\frac{q }{4\pi\varepsilon_0 b }\sum_{l=0}^{\infty} \mathrm{P}_l(\cos\theta)\left(\frac{r }{b }  \right)^l&&,a<r<b \\
+&\frac{q }{4\pi\varepsilon_0 b }\sum_{l=0}^{\infty} \mathrm{P}_l(\cos\theta)\left(\frac{r }{b }  \right)^{-(l+1)}&&,r>b
+\end{aligned}
+\right.
+\end{aligned}
+}
+\end{equation}
+
+再考虑感应电荷单独存在时在球外产生的电势 $u_r $，此时球外没有电荷，因此球外的电势分布 $u_r $ 满足拉普拉斯方程：
+
+\begin{equation}
+\nabla^2 u_r(r,\theta)
+=0,\quad r>a.
+\end{equation}
+
+套用结论，轴对称问题的拉普拉斯方程在自然边界条件约束下的形式解为：
+
+\begin{equation}
+u_r(r,\theta)
+=\sum_{l=0}^{\infty}\left(A_l r^l+B_l r^{-(l+1)} \right)\mathrm{P}_l(\cos\theta)
+\end{equation}
+
+在无穷远处，电势 $u_r $ 应趋于零：
+
+\begin{equation}
+\left. u_r\right|_{r\to +\infty} = 0,
+\end{equation}
+
+可得：
+
+\begin{equation}
+A_l = 0,\quad l=0,1,2,\cdots
+\end{equation}
+
+因此：
+
+\begin{equation}
+u_r(r,\theta)
+=\sum_{l=0}^{\infty} B_l r^{-(l+1)}\mathrm{P}_l(\cos\theta)
+\end{equation}
+
+考虑点电荷和感应电荷产生的总电势 $u(r,\theta) $，形式上可写为：
+
+\begin{equation}
+\begin{aligned}
+u(r,\theta)
+&=u_q(r,\theta) + u_r(r,\theta) \\
+&=\left\{
+\begin{aligned}
+&\frac{q }{4\pi\varepsilon_0 b }\sum_{l=0}^{\infty} \mathrm{P}_l(\cos\theta)\left(\frac{r }{b }  \right)^l + \sum_{l=0}^{\infty} B_l r^{-(l+1)}\mathrm{P}_l(\cos\theta) &&,a<r<b \\
+&\frac{q }{4\pi\varepsilon_0 b }\sum_{l=0}^{\infty} \mathrm{P}_l(\cos\theta)\left(\frac{r }{b }  \right)^{-(l+1)} + \sum_{l=0}^{\infty} B_l r^{-(l+1)}\mathrm{P}_l(\cos\theta) &&,r>b
+\end{aligned}
+\right.
+\end{aligned}
+\end{equation}
+
+导体球接地给出边界条件：
+
+\begin{equation}
+\left. u(r,\theta)\right|_{r=a}
+=0
+\end{equation}
+
+即：
+
+\begin{equation}
+\frac{q }{4\pi\varepsilon_0 b }\sum_{l=0}^{\infty} \mathrm{P}_l(\cos\theta)\left(\frac{a }{b }  \right)^l + \sum_{l=0}^{\infty} B_l a^{-(l+1)}\mathrm{P}_l(\cos\theta)
+=0
+\end{equation}
+
+整理成以 $\cos\theta $ 为自变量的各阶勒让德多项式 $\mathrm{P}_l(\cos\theta) $ 的线性叠加的形式：
+
+\begin{equation}
+\sum_{l=0}^{\infty} \left(\frac{q a^l}{4\pi\varepsilon_0 b^{l+1} } + B_l a^{-(l+1)} \right) \mathrm{P}_l(\cos\theta)
+=0
+\end{equation}
+
+由各阶勒让德多项式的正交性，可得：
+
+\begin{equation}
+\frac{q a^l}{4\pi\varepsilon_0 b^{l+1} } + B_l a^{-(l+1)}
+=0,\quad l=0,1,2,\cdots
+\end{equation}
+
+解得：
+
+\begin{equation}
+B_l
+=-\frac{q a^{2l+1}}{4\pi\varepsilon_0 b^{l+1} },\quad l=0,1,2,\cdots
+\end{equation}
+
+因此：
+
+\begin{equation}
+\begin{aligned}
+u_r(r,\theta)
+&=\sum_{l=0}^{\infty} B_l r^{-(l+1)}\mathrm{P}_l(\cos\theta) \\
+&=-\frac{q }{4\pi\varepsilon_0 } \sum_{l=0}^{\infty} \frac{a^{2l+1} }{b^{l+1} }  r^{-(l+1)} \mathrm{P}_l(\cos\theta) \\
+&=-\frac{q}{4\pi\varepsilon_0 a} \sum_{l=0}^{\infty} \left(\frac{b r}{a^2 } \right)^{-(l+1)}\mathrm{P}_l(\cos\theta)
+\end{aligned}
+\end{equation}
+
+注意到，$r>a,b>a $，于是有：
+
+\begin{equation}
+\frac{b r }{a^2 } > 1,\quad \frac{1 }{\sqrt{1+\left(br/a^2 \right)^2 - 2\left(br/a^2 \right)\cos\theta} } 
+=\sum_{l=0}^{\infty} \mathrm{P}_l(\cos\theta) \left(\frac{br }{a^2 }  \right)^{-(l+1)}
+\end{equation}
+
+因此，感应电荷在导体球外产生的电势 $u_r(r,\theta) $ 实际上可写为：
+
+\begin{equation}
+\boxed{
+\begin{aligned}
+u_r(r,\theta)
+&=-\frac{q}{4\pi\varepsilon_0 a} \sum_{l=0}^{\infty} \left(\frac{b r}{a^2 } \right)^{-(l+1)}\mathrm{P}_l(\cos\theta) \\
+&=-\frac{q}{4\pi\varepsilon_0 a} \frac{1 }{\sqrt{1+\left(br/a^2 \right)^2 - 2\left(br/a^2 \right)\cos\theta} } ,\quad r>a
+\end{aligned}
+}
+\end{equation}
+
+最终得到导体球外的电势分布 $u(r,\theta) $：
+
+\begin{equation}
+\boxed{
+\begin{aligned}
+u(r,\theta)
+&=u_q(r,\theta) + u_r(r,\theta) \\
+&=\frac{1 }{4\pi\varepsilon_0 } \frac{q }{\sqrt{b^2+r^2-2br\cos\theta} } - \frac{q}{4\pi\varepsilon_0 a} \frac{1 }{\sqrt{1+\left(br/a^2 \right)^2 - 2\left(br/a^2 \right)\cos\theta} } \\
+&=\frac{1 }{4\pi\varepsilon_0 } \frac{q }{\sqrt{b^2+r^2-2br\cos\theta} } + \frac{1}{4\pi\varepsilon_0 } \frac{-aq/b }{\sqrt{\left(a^2/b \right)^2 + r^2 - 2\left(a^2/b \right)r\cos\theta} } \\
+\end{aligned}
+}
+\end{equation}
+
+可以看到，感应电荷在导体球外产生的电势与一个处于 $z $ 轴正半轴距球心 $b'=a^2/b $ 处电荷量为 $Q'=-aq/b $ 的点电荷相同。
+
+\end{solution}
+

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.11)  30 NOV 2025 18:32
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.11)  7 DEC 2025 18:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1078,15 +1078,14 @@ Package fontspec Info: Font family 'FangSong(0)' created for font 'FangSong'
 
 ] (./main.toc [3
 
-] [4] [5] [6])
+] [4] [5] [6] [7])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [7] [8
-
-] (./chapters/ch1_vector-analysis.tex
+ [8] (./chapters/ch1_vector-analysis.tex
 第一章
 [1
+
 
 ] [2] [3] [4] [5] [6] [7] [8] [9]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1155,7 +1154,15 @@ Underfull \vbox (badness 5787) has occurred while \output is active []
 第八章
 [61
 
-] [62] [63] [64] [65] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75]) (./chapters/ch9_spherical-harmonics.tex) (./chapters/ch10_cylindrical-functions.tex) (./appendices.tex) [76] (./main.bbl) [77
+] [62] [63] [64] [65] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78]) (./chapters/ch9_spherical-harmonics.tex [79]
+第九章
+[80
+
+] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90] [91]) (./chapters/ch10_cylindrical-functions.tex [92]
+第十章
+) (./appendices.tex) [93
+
+] (./main.bbl) [94
 
 
 ] (./main.aux)
@@ -1164,15 +1171,15 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 236CDC2BB11E60479CCD1AED77499C3A;21618.
+(rerunfilecheck)             Checksum: 9411EE5FDC06659225D96247CA08EE34;24683.
  ) 
 Here is how much of TeX's memory you used:
- 48263 strings out of 474772
- 1194722 string characters out of 5761268
+ 48286 strings out of 474772
+ 1195619 string characters out of 5761268
  1947842 words of memory out of 5000000
- 69602 multiletter control sequences out of 15000+600000
+ 69625 multiletter control sequences out of 15000+600000
  580542 words of font info for 151 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  107i,23n,110p,1295b,2109s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (85 pages, 836108 bytes).
+Output written on main.xdv (102 pages, 1000768 bytes).
