@@ -1999,3 +1999,94 @@ $$
 \end{equation}
 $$
 
+#### $\Ket{\widetilde{\Omega} } $ 的求和形式
+
+$$
+\begin{equation}
+\begin{split}
+\Ket{\widetilde{\Omega} }
+&=\prod_{i,j} \left(1 + \frac{1 }{2 } f_{i,j} a_i^\dag a_j^\dag \right) \Ket{0_a } \\
+&=\sum_{n=0}^{N} \frac{1 }{2^n } \sum_{i_{\left\{1\to 2n \right\}}=1}^{N} \prod_{j=1}^{n} f_{i_{2j-1},i_{2j}} a_{i_1}^\dag \cdots a_{i_{2n}}^\dag \Ket{0_a } \\
+\end{split}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\Bra{\widetilde{\Omega} }
+=\sum_{n'=0}^{N} \frac{1 }{2^{n'} } \sum_{i'_{\left\{1\to 2n' \right\}}=1}^{N} \prod_{j'=1}^{n'} f^*_{i'_{2j'-1},i'_{2j'}} \Bra{0_a } a_{i'_{2n'}} \cdots a_{i'_{1}}
+\end{equation}
+$$
+
+内积为
+
+$$
+\begin{equation}
+\begin{split}
+\Braket{\widetilde{\Omega} |  \widetilde{\Omega}}
+&=\sum_{n=0}^{N} \sum_{n'=0}^{N} \frac{1 }{2^{n+n'} } \sum_{i_{\left\{1\to 2n \right\}}=1}^{N} \sum_{i'_{\left\{1\to 2n' \right\}}=1}^{N} \prod_{j=1}^{n}f_{i_{2j-1},i_{2j}} \prod_{j'=1}^{n'} f^*_{i'_{2j'-1},i'_{2j'}} \Braket{0_a | a_{i'_{2n'}} \cdots a_{i'_1} a^\dag_{i_1} \cdots a^\dag_{i_{2n}} | 0_a } \\
+&=\sum_{n=0}^{N} \frac{1 }{2^{2n} } \sum_{i_{\left\{1\to 2n \right\}}=1}^{N} \sum_{i'_{\left\{1\to 2n \right\}}=1}^{N} \prod_{j=1}^{n}f_{i_{2j-1},i_{2j}} \prod_{j'=1}^{n} f^*_{i'_{2j'-1},i'_{2j'}} \Braket{0_a | a_{i'_{2n}} \cdots a_{i'_1} a^\dag_{i_1} \cdots a^\dag_{i_{2n}} | 0_a } \\
+&=\sum_{n=0}^{N} \frac{1 }{2^{2n} } \sum_{i_{\left\{1\to 2n \right\}}=1}^{N} \sum_{i'_{\left\{1\to 2n \right\}}=1}^{N} \prod_{j=1}^{n} f^*_{i'_{2j-1},i'_{2j}} f_{i_{2j-1},i_{2j}} \Braket{0_a | a_{i'_{2n}} \cdots a_{i'_1} a^\dag_{i_1} \cdots a^\dag_{i_{2n}} | 0_a } \\
+&=\sum_{n=0}^{N} \frac{1 }{2^{2n} } \sum_{i_{\left\{1\to 2n \right\}}=1}^{N} \sum_{P\in S_{2n}} \mathrm{sgn}(P) \prod_{j=1}^{n} f^*_{i_{P(2j-1)},i_{P(2j)}} f_{i_{2j-1},i_{2j}}
+\end{split}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\Braket{\widetilde{\Omega} | \widetilde{\Omega} }
+=\sum_{n=0}^{N} \frac{n! }{2^n } \sum_{i_1,\cdots,i_{2n}} \left(\prod_{j=1}^{n} f_{i_{2j-1},i_{2j}} \right) \mathrm{Pf}\left(M^{i_{\left\{1\to 2n \right\}}}\right)
+\end{equation}
+$$
+
+$$
+\begin{equation}
+M^{i_{\left\{1\to 2n \right\}}}_{j,k}
+=f^*_{i_j,i_k},\quad f_{i,j} = -f_{j,k},\quad f_{i,j}\text{已知}
+\end{equation}
+$$
+
+### overlap
+
+现在已知
+
+$$
+\begin{equation}
+\Ket{\Omega_0 }
+=\mathcal{N}_0 \exp\left(\frac{1 }{2 } \sum_{i,j} f^{(0)}_{i,j} a_i^\dag a_j^\dag \right) \Ket{0 }
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\Ket{\Omega_1 }
+=\mathcal{N}_1 \exp\left(\frac{1 }{2 } \sum_{i,j} f^{(1)}_{i,j} a_i^\dag a_j^\dag \right) \Ket{0 }
+\end{equation}
+$$
+
+定义
+
+$$
+\begin{equation}
+\Ket{\widetilde{\Omega}_0 }
+=\exp\left(\frac{1 }{2 } \sum_{i,j} f^{(0)}_{i,j} a_i^\dag a_j^\dag \right) \Ket{0 }
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\Ket{\widetilde{\Omega}_1 }
+=\exp\left(\frac{1 }{2 } \sum_{i,j} f^{(1)}_{i,j} a_i^\dag a_j^\dag \right) \Ket{0 }
+\end{equation}
+$$
+
+先求 overlap
+
+$$
+\begin{equation}
+\Braket{\widetilde{\Omega}_0 | \widetilde{\Omega}_1 }
+\end{equation}
+$$
+
+
+
