@@ -185,15 +185,12 @@ git pull
 
 ```
 {
-	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
-	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
-	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
-	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
-	// Placeholders with the same ids are connected.
+	// Place your snippets for markdown here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
 	// Example:
 	// "Print to console": {
-	// 	"scope": "javascript,typescript",
 	// 	"prefix": "log",
 	// 	"body": [
 	// 		"console.log('$1');",
@@ -202,6 +199,9 @@ git pull
 	// 	"description": "Log output to console"
 	// }
 
+	// ps:非全局 snippets 不用设置scope
+	// 像 "xxx.json" 这样的就是 xxx 专用 snippets
+	// 像 "xxx.code-snippets" 这样的就是全局 snippets，可通过 scope 设置 snippets 的适用范围
 	"$$ $$": {
 		//"scope":"markdown",
 		"prefix":".m",
@@ -214,7 +214,7 @@ git pull
 	},
 
 	"$ $": {
-		"scope":"markdown",
+		//"scope":"markdown",
 		"prefix":".i",
 		"body":[
 			"$$0 $"
@@ -222,17 +222,69 @@ git pull
 		"description":"$ $"
 	},
 
-	"Aligned":{
+	"Align":{
 		//"scope":"markdown",
 		"prefix":".ali",
 		"body":[
 			"$$",
+			"\\begin{align}",
+			"$0",
+			"\\end{align}",
+			"$$"
+		],
+		"description":"Align"
+	},
+
+	"Equation":{
+		//"scope":"markdown",
+		"prefix":".eq",
+		"body":[
+			"$$",
+			"\\begin{equation}",
+			"$0",
+			"\\end{equation}",
+			"$$"
+		],
+		"description":"Equation"
+	},
+
+	"split": {
+		//"scope":"markdown",
+		"prefix":".spl",
+		"body":[
+			"$$",
+			"\\begin{equation}",
+			"\\begin{split}",
+			"$0",
+			"\\end{split}",
+			"\\end{equation}",
+			"$$"			
+		],
+		"description":"one tag for multiple equations"
+	},
+
+	"aligned": {
+		//"scope":"markdown",
+		"prefix":".ali",
+		"body":[
+			"$$",
+			"\\begin{equation}",
 			"\\begin{aligned}",
 			"$0",
 			"\\end{aligned}",
-			"$$"
+			"\\end{equation}",
+			"$$"			
 		],
-		"description":"Aligned"
+		"description":"one tag for multiple equations"
+	},
+
+	"frac": {
+		//"scope":"markdown",
+		"prefix":".f",
+		"body":[
+			"\\frac{$1 }{$2 } $3"
+		],
+		"description":"frac"
 	},
 
 	"Mathrm":{
@@ -245,7 +297,7 @@ git pull
 	},
 
 	"Big Left Bracket":{
-		"scope":"markdown",
+		//"scope":"markdown",
 		"prefix":".{",
 		"body":[
 			"$$",
@@ -260,7 +312,7 @@ git pull
 	},
 
 	"Begin Cases": {
-		"scope":"markdown",
+		//"scope":"markdown",
 		"prefix":".bc",
 		"body":[
 			"$$",
@@ -317,13 +369,13 @@ git pull
 		"description":"varepsilon"
 	},
 
-	"Bigg Vertical Line": {
-		//"scope":"markdown",
+	"vertical line": {
+		//"scope":"latex",
 		"prefix":".vl",
 		"body":[
-			"\\bigg|_{$0}"
+			"\\left. $1 \\right|_{$2} $3"
 		],
-		"description":"Bigg Vertical Line"
+		"description":"vl"
 	},
 
 	"bmatrix": {
@@ -426,15 +478,6 @@ git pull
 		"description":""
 	},
 
-	"矩阵表示": {
-		//"scope":"markdown",
-		"prefix":".mr",
-		"body":[
-			"\\xlongequal{$1 } $2"
-		],
-		"description":"矩阵表示"
-	},
-
 	"empty set": {
 		//"scope":"markdown",
 		"prefix":".vn",
@@ -451,15 +494,6 @@ git pull
 			"\\left($1 \\right)$2"
 		],
 		"description":"()"
-	},
-
-	"frac": {
-		//"scope":"markdown",
-		"prefix":".f",
-		"body":[
-			"\\frac{$1 }{$2 } $3"
-		],
-		"description":"frac"
 	},
 
 	"longleftrightarrow": {
@@ -507,17 +541,45 @@ git pull
 		"description":""
 	},
 
-	"": {
-		"scope":"markdown",
+	"Bra": {
+		//"scope":"markdown",
+		"prefix":".b",
+		"body":[
+			"\\Bra{$1 }$2"
+		],
+		"description":""
+	},
+
+	"Braket": {
+		//"scope":"markdown",
+		"prefix":".bk",
+		"body":[
+			"\\Braket{$1 }$2"
+		],
+		"description":"Braket"
+	},
+
+	"overline": {
+		//"scope":"markdown",
+		"prefix":".ol",
+		"body":[
+			"\\overline{$1 }$2"
+		],
+		"description":"overling"
+	},
+
+		"": {
+		//"scope":"markdown",
 		"prefix":"",
 		"body":[
 			
 		],
 		"description":""
 	},
-
 }
 ```
+
+
 
 
 
