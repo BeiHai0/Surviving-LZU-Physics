@@ -2169,8 +2169,15 @@ $$
 
 $$
 \begin{equation}
-\int \left(\prod_{i} \mathrm{d} \theta_i \right) \exp\left(\frac{1 }{2 } \Theta^\top A \Theta \right)
+\int \left(\prod_{i=1}^{2N} \mathrm{d} \theta_i \right) \exp\left(-\frac{1 }{2 } \Theta^\top A \Theta \right)
 =\mathrm{Pf}(A)
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\int \left(\prod_{i=1}^{2N} \mathrm{d} \theta_i \right) \exp\left(\frac{1 }{2 } \Theta^\top A \Theta \right)
+=(-1)^N\mathrm{Pf}(A)
 \end{equation}
 $$
 
@@ -2325,7 +2332,10 @@ $$
 \Braket{\widetilde{\Omega}_1 | \widetilde{\Omega}_2 }
 &=\int \mathrm{d}\left(\bar{z},z \right) \exp\left(- \bar{z}^\top z \right) \exp\left(- \frac{1 }{2 }  z^\top f^{(1)*} z \right) \exp\left(\frac{1 }{2 } \bar{z}^\top f^{(2)} \bar{z} \right) \\
 &=\left(-1 \right)^{N(N-1)/2} \int \prod_{i=1}^{2N} \mathrm{d}Z_i \exp\left(\frac{1 }{2 }  Z^\top M Z \right) \\
-&=\left(-1 \right)^{N(N-1)/2} \mathrm{Pf}(M)
+&=\left(-1 \right)^{N(N-1)/2} \int \prod_{i=1}^{2N} \mathrm{d}Z_i \exp\left(-\frac{1 }{2 }  Z^\top \left(-M \right) Z \right) \\
+&=\left(-1 \right)^{N(N-1)/2} \mathrm{Pf}(-M) \\
+&=\left(-1 \right)^{N(N-1)/2} \cdot (-1)^N \mathrm{Pf}(M) \\
+&=\left(-1 \right)^{N(N+1)/2}\mathrm{Pf}(M) \\
 \end{split}
 \end{equation}
 $$
@@ -2399,7 +2409,7 @@ $$
 $$
 \begin{equation}
 \Braket{\widetilde{\Omega}_1 | \widetilde{\Omega}_1 }
-=\left(-1 \right)^{N(N-1)/2} \mathrm{Pf}
+=\left(-1 \right)^{N(N+1)/2} \mathrm{Pf}
 \begin{pmatrix}
 f^{(1)} &-I \\
 I &-f^{(1)*}
@@ -2423,8 +2433,8 @@ $$
 \begin{equation}
 \begin{split}
 \Braket{\widetilde{\Omega}_1 | \widetilde{\Omega}_1 }^2
-&=\left(-1 \right)^{N(N-1)} \mathrm{Pf}^2(M) \\
-&=\left(-1 \right)^{N(N-1)} \mathrm{det}(M)
+&=\left(-1 \right)^{N(N+1)} \mathrm{Pf}^2(M) \\
+&=\left(-1 \right)^{N(N+1)} \mathrm{det}(M)
 \end{split}
 \end{equation}
 $$
@@ -2448,12 +2458,12 @@ $$
 \begin{equation}
 \begin{split}
 \Braket{\widetilde{\Omega}_1 | \widetilde{\Omega}_1 }^2
-&=\left(-1 \right)^{N(N-1)} \mathrm{det}(M) \\
-&=\left(-1 \right)^{N(N-1)} \mathrm{det}\left(f^{(1)} \right) \mathrm{det}\left(-f^{(1)*} - I \left(f^{(1)} \right)^{-1} (-I) \right) \\
-&=\left(-1 \right)^{N(N-1)} \mathrm{det}\left(I - f^{(1)} f^{(1)*} \right) \\
-&=\left(-1 \right)^{N(N-1)} \mathrm{det}\left(\left(I - f^{(1)} f^{(1)*} \right)^\top \right) \\
-&=\left(-1 \right)^{N(N-1)} \mathrm{det}\left(I - f^{(1)*} f^{(1)} \right) \\
-&=\left(-1 \right)^{N(N-1)} \mathrm{det} \left(I + f^{(1)\dag} f^{(1)} \right) \\
+&=\left(-1 \right)^{N(N+1)} \mathrm{det}(M) \\
+&=\left(-1 \right)^{N(N+1)} \mathrm{det}\left(f^{(1)} \right) \mathrm{det}\left(-f^{(1)*} - I \left(f^{(1)} \right)^{-1} (-I) \right) \\
+&=\left(-1 \right)^{N(N+1)} \mathrm{det}\left(I - f^{(1)} f^{(1)*} \right) \\
+&=\left(-1 \right)^{N(N+1)} \mathrm{det}\left(\left(I - f^{(1)} f^{(1)*} \right)^\top \right) \\
+&=\left(-1 \right)^{N(N+1)} \mathrm{det}\left(I - f^{(1)*} f^{(1)} \right) \\
+&=\left(-1 \right)^{N(N+1)} \mathrm{det} \left(I + f^{(1)\dag} f^{(1)} \right) \\
 &=\mathrm{det} \left(I + f^{(1)\dag} f^{(1)} \right)
 \end{split}
 \end{equation}
@@ -2514,12 +2524,12 @@ $$
 \begin{split}
 &\Braket{\Psi_1 | a_l a_m | \Psi_2 } \\
 =&\Braket{\Psi_1 | a_l a_m 1 | \Psi_2 } \\
-=&\left(-1 \right)^{N(N-1)/2} \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \exp\left(-\sum_{j} \bar{z}_j z_j \right)\Braket{\Psi_1 | a_l a_m | z } \Braket{z | \Psi_2 } \\
-=&\left(-1 \right)^{N(N-1)/2} \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \exp\left(-\sum_{j} \bar{z}_j z_j \right)\Braket{\Psi_1 | a_l a_m | z } \Braket{z | \Psi_2 } \\
-=&\left(-1 \right)^{N(N-1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \exp\left(-\sum_{j} \bar{z}_j z_j \right) \Braket{0 | \exp\left(\frac{1 }{2 } \sum_{i,j} f^{(1)*}_{i,j} a_j a_i \right) | a_l a_m | z } \Braket{z | \exp\left(\frac{1 }{2 } \sum_{i,j} f^{(2)}_{i,j} a_i^\dag a_j^\dag\right) | 0 } \\
-=&\left(-1 \right)^{N(N-1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \exp\left(-\sum_{j} \bar{z}_j z_j \right) \exp\left(\frac{1 }{2 } \sum_{i,j} f^{(1)*}_{i,j} z_j z_i \right) z_l z_m \exp\left(\frac{1 }{2 } \sum_{i,j} f^{(2)}_{i,j} \bar{z}_i \bar{z}_j\right) \Braket{0 | z } \Braket{z | 0 } \\
-=&\left(-1 \right)^{N(N-1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) z_l z_m \exp\left(-\sum_{j} \bar{z}_j z_j \right) \exp\left(-\frac{1 }{2 } \sum_{i,j} f^{(1)*}_{i,j} z_i z_j \right) \exp\left(\frac{1 }{2 } \sum_{i,j} f^{(2)}_{i,j} \bar{z}_i \bar{z}_j\right) \\
-=&\left(-1 \right)^{N(N-1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) z_l z_m \exp
+=&\left(-1 \right)^{N(N+1)/2} \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \exp\left(-\sum_{j} \bar{z}_j z_j \right)\Braket{\Psi_1 | a_l a_m | z } \Braket{z | \Psi_2 } \\
+=&\left(-1 \right)^{N(N+1)/2} \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \exp\left(-\sum_{j} \bar{z}_j z_j \right)\Braket{\Psi_1 | a_l a_m | z } \Braket{z | \Psi_2 } \\
+=&\left(-1 \right)^{N(N+1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \exp\left(-\sum_{j} \bar{z}_j z_j \right) \Braket{0 | \exp\left(\frac{1 }{2 } \sum_{i,j} f^{(1)*}_{i,j} a_j a_i \right) | a_l a_m | z } \Braket{z | \exp\left(\frac{1 }{2 } \sum_{i,j} f^{(2)}_{i,j} a_i^\dag a_j^\dag\right) | 0 } \\
+=&\left(-1 \right)^{N(N+1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \exp\left(-\sum_{j} \bar{z}_j z_j \right) \exp\left(\frac{1 }{2 } \sum_{i,j} f^{(1)*}_{i,j} z_j z_i \right) z_l z_m \exp\left(\frac{1 }{2 } \sum_{i,j} f^{(2)}_{i,j} \bar{z}_i \bar{z}_j\right) \Braket{0 | z } \Braket{z | 0 } \\
+=&\left(-1 \right)^{N(N+1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) z_l z_m \exp\left(-\sum_{j} \bar{z}_j z_j \right) \exp\left(-\frac{1 }{2 } \sum_{i,j} f^{(1)*}_{i,j} z_i z_j \right) \exp\left(\frac{1 }{2 } \sum_{i,j} f^{(2)}_{i,j} \bar{z}_i \bar{z}_j\right) \\
+=&\left(-1 \right)^{N(N+1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) z_l z_m \exp
 \left(\frac{1 }{2 } 
 \begin{pmatrix}
 \bar{z} &z
@@ -2533,7 +2543,7 @@ I &-f^{(1)*}
 z
 \end{pmatrix}
 \right) \\
-=&\left(-1 \right)^{N(N-1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) z_l z_m \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right)
+=&\left(-1 \right)^{N(N+1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) z_l z_m \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right)
 \end{split}
 \end{equation}
 $$
@@ -2557,8 +2567,8 @@ $$
 \begin{split}
 &\Braket{\Psi_1 | a_l a_m^\dag | \Psi_2 } \\
 =&\Braket{\Psi_1 | a_l 1 a_m^\dag | \Psi_2 } \\
-=&\left(-1 \right)^{N(N-1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \exp\left(-\sum_{j} \bar{z}_j z_j \right) \Braket{0 | \exp\left(\frac{1 }{2 } \sum_{i,j} f^{(1)*}_{i,j} a_j a_i \right) | a_l | z } \Braket{z | a_m^\dag \exp\left(\frac{1 }{2 } \sum_{i,j} f^{(2)}_{i,j} a_i^\dag a_j^\dag\right) | 0 } \\
-=&\left(-1 \right)^{N(N-1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) z_l \bar{z}_m \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right) \\
+=&\left(-1 \right)^{N(N+1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \exp\left(-\sum_{j} \bar{z}_j z_j \right) \Braket{0 | \exp\left(\frac{1 }{2 } \sum_{i,j} f^{(1)*}_{i,j} a_j a_i \right) | a_l | z } \Braket{z | a_m^\dag \exp\left(\frac{1 }{2 } \sum_{i,j} f^{(2)}_{i,j} a_i^\dag a_j^\dag\right) | 0 } \\
+=&\left(-1 \right)^{N(N+1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) z_l \bar{z}_m \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right) \\
 \end{split}
 \end{equation}
 $$
@@ -2570,8 +2580,8 @@ $$
 \begin{split}
 \Braket{\Psi_1 | a_l^\dag a_m | \Psi_2 }
 =&\Braket{\Psi_1 | \left(\delta_{l,m} - a_m a_l^\dag \right) | \Psi_2 } \\
-=&\left(-1 \right)^{N(N-1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \left(\delta_{l,m} - z_m \bar{z}_l \right) \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right) \\
-(l\ne m)=&\left(-1 \right)^{N(N-1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \bar{z}_l z_m \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right) \\
+=&\left(-1 \right)^{N(N+1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \left(\delta_{l,m} - z_m \bar{z}_l \right) \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right) \\
+(l\ne m)=&\left(-1 \right)^{N(N+1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \bar{z}_l z_m \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right) \\
 \end{split}
 \end{equation}
 $$
@@ -2583,7 +2593,7 @@ $$
 \begin{split}
 \Braket{\Psi_1 | a_l^\dag a_m^\dag | \Psi_2 }
 =&\Braket{\Psi_1 | 1 a_l^\dag a_m^\dag | \Psi_2 } \\
-=&\left(-1 \right)^{N(N-1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \bar{z}_l \bar{z}_m \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right) \\
+=&\left(-1 \right)^{N(N+1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \bar{z}_l \bar{z}_m \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right) \\
 \end{split}
 \end{equation}
 $$
@@ -2606,8 +2616,8 @@ $$
 \begin{split}
 \Braket{\Psi_1 | \tilde{a}_i \tilde{a}_j | \Psi_2 }
 &=\Braket{\Psi_1 | a_i a_j | \Psi_2 } \\
-&=\left(-1 \right)^{N(N-1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) z_i z_j \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right) \\
-&=\left(-1 \right)^{N(N-1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \tilde{z}_{i+N} \tilde{z}_{j+N} \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right) \\
+&=\left(-1 \right)^{N(N+1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) z_i z_j \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right) \\
+&=\left(-1 \right)^{N(N+1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \tilde{z}_{i+N} \tilde{z}_{j+N} \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right) \\
 \end{split}
 \end{equation}
 $$
@@ -2619,8 +2629,8 @@ $$
 \begin{split}
 \Braket{\Psi_1 | \tilde{a}_i \tilde{a}_j | \Psi_2 }
 &=\Braket{\Psi_1 | a_i a_{j-N}^\dag | \Psi_2 } \\
-&=\left(-1 \right)^{N(N-1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) z_i \bar{z}_{j-N} \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right) \\
-&=\left(-1 \right)^{N(N-1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \tilde{z}_{i+N} \tilde{z}_{j-N} \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right)
+&=\left(-1 \right)^{N(N+1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) z_i \bar{z}_{j-N} \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right) \\
+&=\left(-1 \right)^{N(N+1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \tilde{z}_{i+N} \tilde{z}_{j-N} \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right)
 \end{split}
 \end{equation}
 $$
@@ -2632,8 +2642,8 @@ $$
 \begin{split}
 \Braket{\Psi_1 | \tilde{a}_i \tilde{a}_j | \Psi_2 }
 &=\Braket{\Psi_1 | a_{i-N}^\dag a_j | \Psi_2 } \\
-&=\left(-1 \right)^{N(N-1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \bar{z}_{i-N} z_j \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right) \\
-&=\left(-1 \right)^{N(N-1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \tilde{z}_{i-N} \tilde{z}_{j+N} \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right) \\
+&=\left(-1 \right)^{N(N+1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \bar{z}_{i-N} z_j \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right) \\
+&=\left(-1 \right)^{N(N+1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \tilde{z}_{i-N} \tilde{z}_{j+N} \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right) \\
 
 \end{split}
 \end{equation}
@@ -2646,8 +2656,223 @@ $$
 \begin{split}
 \Braket{\Psi_1 | \tilde{a}_i \tilde{a}_j | \Psi_2 }
 &=\Braket{\Psi_1 | a_{i-N}^\dag a_{j-N}^\dag | \Psi_2 } \\
-&=\left(-1 \right)^{N(N-1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \bar{z}_{i-N} \bar{z}_{j-N} \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right) \\
-&=\left(-1 \right)^{N(N-1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \tilde{z}_{i-N} \tilde{z}_{j-N} \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right) \\
+&=\left(-1 \right)^{N(N+1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \bar{z}_{i-N} \bar{z}_{j-N} \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right) \\
+&=\left(-1 \right)^{N(N+1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \tilde{z}_{i-N} \tilde{z}_{j-N} \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right) \\
 \end{split}
 \end{equation}
 $$
+
+#### 计算 $\exp $ 前有Grassmann数的积分
+
+现在要计算形如
+
+$$
+\begin{equation}
+\begin{aligned}
+\int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \tilde{z}_{l} \tilde{z}_{m} \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right)
+\end{aligned}
+\end{equation}
+$$
+
+的积分。
+
+根据
+
+$$
+\begin{equation}
+\int \left(\prod_i \mathrm{d}\theta_i \right) \exp\left(\frac{1 }{2 } \Theta^\top A \Theta \right) \exp\left(\eta^\top \Theta \right)
+=\mathrm{Pf}(A) \exp\left(\frac{1 }{2 } \eta^\top A^{-1} \eta \right)
+\end{equation}
+$$
+
+两边同时求偏导 $\partial^2/\partial \eta_m \partial \eta_l $，左边：
+
+$$
+\begin{equation}
+\begin{split}
+\mathrm{LHS}
+&=\frac{\partial^2 }{\partial \eta_m \partial \eta_l } \int \left(\prod_i \mathrm{d}\theta_i \right) \exp\left(\frac{1 }{2 } \Theta^\top A \Theta \right) \exp\left(\eta^\top \Theta \right) \\
+&=\int \left(\prod_i \mathrm{d}\theta_i \right) \exp\left(\frac{1 }{2 } \Theta^\top A \Theta \right) \frac{\partial^2 }{\partial \eta_m \partial \eta_l } \exp\left(\eta^\top \Theta \right) \\
+&=\int \left(\prod_i \mathrm{d}\theta_i \right) \exp\left(\frac{1 }{2 } \Theta^\top A \Theta \right) \left(-\theta_l \theta_m \right) \exp\left(\eta^\top \Theta \right) \\
+\end{split}
+\end{equation}
+$$
+
+右边：
+
+$$
+\begin{equation}
+\begin{aligned}
+\mathrm{RHS}
+&=\frac{\partial^2 }{\partial \eta_m \partial \eta_l } \mathrm{Pf}(A) \exp\left(\frac{1 }{2 } \eta^\top A^{-1} \eta \right) \\
+&=\mathrm{Pf}(A) \frac{\partial^2 }{\partial \eta_m \partial \eta_l } \exp\left(\frac{1 }{2 } \sum_{i,j} \left(A^{-1} \right)_{ij} \eta_i \eta_j \right) \\
+&=\mathrm{Pf}(A) \left(A^{-1} \right)_{l,m} \exp\left(\frac{1 }{2 } \eta^\top A^{-1} \eta \right) \\
+\end{aligned}
+\end{equation}
+$$
+
+于是
+
+$$
+\begin{equation}
+\int \left(\prod_i \mathrm{d}\theta_i \right) \exp\left(\frac{1 }{2 } \Theta^\top A \Theta \right) \left(-\theta_l \theta_m \right) \exp\left(\eta^\top \Theta \right) 
+=\mathrm{Pf}(A) \left(A^{-1} \right)_{l,m} \exp\left(\frac{1 }{2 } \eta^\top A^{-1} \eta \right)
+\end{equation}
+$$
+
+对比两边关于 $\eta $ 的零次项，得
+
+$$
+\begin{equation}
+\int \left(\prod_i \mathrm{d}\theta_i \right) \exp\left(\frac{1 }{2 } \Theta^\top A \Theta \right) \left(-\theta_l \theta_m \right)
+=\mathrm{Pf}(A) \left(A^{-1} \right)_{l,m}
+\end{equation}
+$$
+
+也即
+
+$$
+\begin{equation}
+\int \left(\prod_i \mathrm{d}\theta_i \right) \theta_l \theta_m \exp\left(\frac{1 }{2 } \Theta^\top A \Theta \right)
+=\mathrm{Pf}(A)(-1) \left(A^{-1} \right)_{l,m}
+\end{equation}
+$$
+
+
+
+$$
+\begin{equation}
+\begin{aligned}
+\Braket{\Psi_1 | \mathrm{i} c_{i,A} c_{j,B} | \Psi_2 }
+&=\left[\mathcal{N}_1^* \mathcal{N}_2 (-1)^{N(N+1)/2} \mathrm{Pf}(M) \right] \left[-\left(M^{-1} \right)_{i+N,j+N} + \left(M^{-1} \right)_{i+N,j} - \left(M^{-1} \right)_{i,j+N} + \left(M^{-1} \right)_{i,j} \right]
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+\Braket{\Psi_1 | c_{i,B} c_{j,B} | \Psi_2 }
+&=\left[\mathcal{N}_1^* \mathcal{N}_2 (-1)^{N(N+1)/2} \mathrm{Pf}(M) \right] \left[\left(M^{-1} \right)_{i+N,j+N} - \left(M^{-1} \right)_{i+N,j} - \left(M^{-1} \right)_{i,j+N} + \left(M^{-1} \right)_{i,j} \right]
+\end{aligned}
+\end{equation}
+$$
+
+
+
+
+
+- $1\leqslant i\leqslant N,1\leqslant j \leqslant N $
+
+$$
+\begin{equation}
+\begin{aligned}
+\Braket{\Psi_1 | \tilde{a}_i \tilde{a}_j | \Psi_2 }
+&=\Braket{\Psi_1 | a_i a_j | \Psi_2 } \\
+&=\left(-1 \right)^{N(N+1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \tilde{z}_{i+N} \tilde{z}_{j+N} \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right) \\
+&=\left(-1 \right)^{N(N+1)/2} \mathcal{N}_1^* \mathcal{N}_2 \mathrm{Pf}(M) (-1) \left(M^{-1} \right)_{i+N,j+N} \\
+\end{aligned}
+\end{equation}
+$$
+
+- $1\leqslant i\leqslant N,N+1\leqslant j \leqslant 2N $
+
+$$
+\begin{equation}
+\begin{split}
+\Braket{\Psi_1 | \tilde{a}_i \tilde{a}_j | \Psi_2 }
+&=\Braket{\Psi_1 | a_i a_{j-N}^\dag | \Psi_2 } \\
+&=\left(-1 \right)^{N(N+1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \tilde{z}_{i+N} \tilde{z}_{j-N} \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right) \\
+&=\left(-1 \right)^{N(N+1)/2} \mathcal{N}_1^* \mathcal{N}_2 \mathrm{Pf}(M) (-1) \left(M^{-1} \right)_{i+N,j-N} \\
+\end{split}
+\end{equation}
+$$
+
+- $N+1\leqslant i\leqslant 2N,1\leqslant j \leqslant N,i-N\ne j $
+
+$$
+\begin{equation}
+\begin{split}
+\Braket{\Psi_1 | \tilde{a}_i \tilde{a}_j | \Psi_2 }
+&=\Braket{\Psi_1 | a_{i-N}^\dag a_j | \Psi_2 } \\
+&=\left(-1 \right)^{N(N+1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \tilde{z}_{i-N} \tilde{z}_{j+N} \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right) \\
+&=\left(-1 \right)^{N(N+1)/2} \mathcal{N}_1^* \mathcal{N}_2 \mathrm{Pf}(M) (-1) \left(M^{-1} \right)_{i-N,j+N} \\
+\end{split}
+\end{equation}
+$$
+
+- $N+1\leqslant i\leqslant 2N,N+1\leqslant j \leqslant 2N $
+
+$$
+\begin{equation}
+\begin{split}
+\Braket{\Psi_1 | \tilde{a}_i \tilde{a}_j | \Psi_2 }
+&=\Braket{\Psi_1 | a_{i-N}^\dag a_{j-N}^\dag | \Psi_2 } \\
+&=\left(-1 \right)^{N(N+1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \tilde{z}_{i-N} \tilde{z}_{j-N} \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right) \\
+&=\left(-1 \right)^{N(N+1)/2} \mathcal{N}_1^* \mathcal{N}_2 \mathrm{Pf}(M) (-1) \left(M^{-1} \right)_{i-N,j-N} \\
+\end{split}
+\end{equation}
+$$
+
+#### 两点关联函数
+
+$$
+\begin{equation}
+\Braket{\tilde{a}_i \tilde{a}_j }
+\equiv \frac{\Braket{0 | \exp\left(\frac{1 }{2 } \sum\limits_{l,m} f^*_{l,m}(\lambda_1) a_m a_l \right) \tilde{a}_i \tilde{a}_j \exp\left(\frac{1 }{2 } \sum\limits_{l,m} f_{l,m}(\lambda_2) a_l^\dag a_m^\dag \right) | 0 }  }{\Braket{0 | \exp\left(\frac{1 }{2 } \sum\limits_{l,m} f^*_{l,m}(\lambda_1) a_m a_l \right) \exp\left(\frac{1 }{2 } \sum\limits_{l,m} f_{l,m}(\lambda_2) a_l^\dag a_m^\dag \right) | 0 } } 
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\mathcal{Z}
+\equiv \Braket{0 | \exp\left(\frac{1 }{2 } \sum\limits_{l,m} f^*_{l,m}(\lambda_1) a_m a_l \right) \exp\left(\frac{1 }{2 } \sum\limits_{l,m} f_{l,m}(\lambda_2) a_l^\dag a_m^\dag \right) | 0 }
+=(-1)^{N(N+1)/2} \mathrm{Pf}(M)
+\end{equation}
+$$
+
+- $1\leqslant i\leqslant N,1\leqslant j \leqslant N $
+
+$$
+\begin{equation}
+\begin{aligned}
+\Braket{\tilde{a}_i \tilde{a}_j }
+&=\frac{1 }{(-1)^{N(N+1)/2} \mathrm{Pf}(M) } \cdot \left(-1 \right)^{N(N+1)/2}  \mathrm{Pf}(M) (-1) \left(M^{-1} \right)_{i+N,j+N} \\
+&=(-1) \left(M^{-1} \right)_{i+N,j+N} \\
+\end{aligned}
+\end{equation}
+$$
+
+- $1\leqslant i\leqslant N,N+1\leqslant j \leqslant 2N $
+
+$$
+\begin{equation}
+\begin{aligned}
+\Braket{\tilde{a}_i \tilde{a}_j }
+&=(-1) \left(M^{-1} \right)_{i+N,j-N}
+\end{aligned}
+\end{equation}
+$$
+
+- $N+1\leqslant i\leqslant 2N,1\leqslant j \leqslant N,i-N\ne j $
+
+$$
+\begin{equation}
+\begin{aligned}
+\Braket{\tilde{a}_i \tilde{a}_j }
+&=(-1) \left(M^{-1} \right)_{i-N,j+N}
+\end{aligned}
+\end{equation}
+$$
+
+- $N+1\leqslant i\leqslant 2N,N+1\leqslant j \leqslant 2N $
+
+$$
+\begin{equation}
+\begin{aligned}
+\Braket{\tilde{a}_i \tilde{a}_j }
+&=(-1) \left(M^{-1} \right)_{i-N,j-N}
+\end{aligned}
+\end{equation}
+$$
+

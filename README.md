@@ -222,19 +222,6 @@ git pull
 		"description":"$ $"
 	},
 
-	"Align":{
-		//"scope":"markdown",
-		"prefix":".ali",
-		"body":[
-			"$$",
-			"\\begin{align}",
-			"$0",
-			"\\end{align}",
-			"$$"
-		],
-		"description":"Align"
-	},
-
 	"Equation":{
 		//"scope":"markdown",
 		"prefix":".eq",
@@ -431,15 +418,6 @@ git pull
 			"\\right."
 		],
 		"description":"bra"
-	},
-
-	"DC": {
-		//"scope":"markdown",
-		"prefix":".dc",
-		"body":[
-			"\\mathop{\\leftrightarrow}\\limits^{\\mathrm{DC}}"
-		],
-		"description":""
 	},
 
 	"bold": {
