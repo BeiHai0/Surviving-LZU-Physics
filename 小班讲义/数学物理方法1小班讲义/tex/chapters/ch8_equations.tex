@@ -1105,30 +1105,94 @@ k^2 r^2 + \frac{1 }{R(r) } \frac{\partial}{\partial r}\left(r^2\frac{\partial}{\
 u(\rho,\varphi,z) = R(\rho)\Phi(\varphi)Z(z),
 \end{equation}
 
-经过运算，可以得到，$\Phi(\varphi) $ 满足
+代入亥姆霍兹方程可得：
 
 \begin{equation}
-\Phi''(\varphi) + \nu^2\Phi(\varphi)
-=0,\quad \nu\geqslant 0,
+\frac{\Phi(\varphi) Z(z) }{\rho } \frac{\mathrm{d} }{\mathrm{d}\rho }  \left(\rho \frac{\mathrm{d}R(\rho) }{\mathrm{d}\rho }  \right) + \frac{R(\rho) Z(z) }{\rho^2 } \Phi''(\varphi) + R(\rho) \Phi(\varphi) Z''(z) + k^2 R(\rho) \Phi(\varphi) Z(z)
+=0 
+\end{equation}
+
+两边同乘 $\rho^2 / \left(R(\rho) \Phi(\varphi) Z(z) \right) $ 可得：
+
+\begin{equation}
+\frac{\rho }{R(\rho) } \frac{\mathrm{d} }{\mathrm{d}\rho } \left(\rho \frac{\mathrm{d}R(\rho) }{\mathrm{d}\rho }  \right) + \frac{\Phi''(\varphi) }{\Phi(\varphi) } + \rho^2 \frac{Z''(z) }{Z(z) } + k^2\rho^2
+=0
+\end{equation}
+
+观察可知，角度部分 $\Phi(\varphi) $ 满足：
+
+\begin{equation}
+\frac{\Phi''(\varphi) }{\Phi(\varphi) }
+=-\nu^2,\quad 
+\boxed{\Phi''(\varphi) + \nu^2 \Phi(\varphi) = 0},
+\end{equation}
+
+剩下部分满足:
+
+\begin{equation}
+\frac{\rho }{R(\rho) } \frac{\mathrm{d} }{\mathrm{d}\rho } \left(\rho \frac{\mathrm{d}R(\rho) }{\mathrm{d}\rho }  \right) + \rho^2 \frac{Z''(z) }{Z(z) } + k^2\rho^2
+=\nu^2
+\end{equation}
+
+上式两边同乘 $\frac{1 }{\rho^2 }  $ 得到：
+
+\begin{equation}
+\frac{1 }{\rho R(\rho) } \frac{\mathrm{d} }{\mathrm{d}\rho } \left(\rho \frac{\mathrm{d}R(\rho) }{\mathrm{d}\rho }  \right) + \frac{Z''(z) }{Z(z) } + k^2 - \frac{\nu^2 }{\rho^2 } 
+=0
+\end{equation}
+
+观察可知，$Z(z) $ 满足：
+
+\begin{equation}
+\frac{Z''(z) }{Z(z) }
+=\lambda,\quad 
+\boxed{Z''(z) - \lambda Z(z) = 0},
+\end{equation}
+
+剩下的 $R(\rho) $ 满足：
+
+\begin{equation}
+\frac{1 }{\rho R(\rho) } \frac{\mathrm{d} }{\mathrm{d}\rho } \left(\rho \frac{\mathrm{d}R(\rho) }{\mathrm{d}\rho }  \right) + \lambda + k^2 - \frac{\nu^2 }{\rho^2 } 
+=0
+\end{equation}
+
+也即
+
+\begin{equation}
+\boxed{\frac{1 }{\rho } \frac{\mathrm{d} }{\mathrm{d}\rho } \left(\rho \frac{\mathrm{d}R(\rho) }{\mathrm{d}\rho }  \right)  + \left(k^2 + \lambda - \frac{\nu^2 }{\rho^2 } \right) R(\rho) 
+=0}.
+\end{equation}
+
+通过变量代换
+
+\begin{equation}
+x = \sqrt{k^2+\lambda} \rho,\quad
+y(x) = R(\rho),\quad
+\frac{\mathrm{d} }{\mathrm{d}\rho }
+=\frac{\mathrm{d}x }{\mathrm{d}\rho } \frac{\mathrm{d} }{\mathrm{d}x }
+=\sqrt{k^2+\lambda } \frac{\mathrm{d} }{\mathrm{d}x },
 \end{equation}
 
 \begin{equation}
-Z''(z) - \lambda Z(z)
-=0,
+\begin{split}
+\frac{1 }{\rho } \frac{\mathrm{d} }{\mathrm{d}\rho } \left(\rho \frac{\mathrm{d}R(\rho) }{\mathrm{d}\rho }  \right)
+&=\frac{\sqrt{k^2+\lambda} }{x } \cdot \sqrt{k^2+\lambda} \frac{\mathrm{d} }{\mathrm{d}x }\left(\frac{x }{\sqrt{k^2+\lambda} } \cdot \sqrt{k^2+\lambda} \frac{\mathrm{d} y(x)}{\mathrm{d}x }  \right)  \\
+&=\frac{k^2+\lambda }{x } \frac{\mathrm{d} }{\mathrm{d}x } \left(x\frac{\mathrm{d}y(x) }{\mathrm{d}x }  \right) \\
+&=\left(k^2+\lambda \right) \left[\frac{1}{x } \frac{\mathrm{d}y(x) }{\mathrm{d}x } + \frac{\mathrm{d}^2 y(x) }{\mathrm{d}x^2 }  \right]
+\end{split}
 \end{equation}
 
 \begin{equation}
-\frac{1 }{\rho } \frac{\mathrm{d} }{\mathrm{d}\rho }\left(\rho\frac{\mathrm{d}R(\rho) }{\mathrm{d}\rho }  \right) + \left(k^2+\lambda-\frac{\nu^2 }{\rho^2 }  \right)R(\rho)
-=0.
+\begin{split}
+\left(k^2 + \lambda - \frac{\nu^2 }{\rho^2 } \right) R(\rho)
+&=\left(k^2 + \lambda - \frac{\nu^2 }{x/\left(k^2+\lambda \right) } \right) y(x) \\
+&=\left(k^2+\lambda \right) \left(1-\frac{\nu^2 }{x }  \right) y(x)
+\end{split}
 \end{equation}
 
-令 $x=\sqrt{k^2+\lambda} \rho,\rho=x/\sqrt{k^2+\lambda},(k^2+\lambda\ne 0),R(\rho) \equiv y(x),y(x)=R(\rho) $，则上面方程可化为\textbf{贝塞尔方程}：
+径向部分 $R(\rho)=y(x) $ 满足的方程就化为如下的\textbf{$\nu$阶贝塞尔方程}：
 
 \begin{equation}
-\frac{\mathrm{d}^2 y(x) }{\mathrm{d}x^2 } + \frac{1 }{x } \frac{\mathrm{d}y(x) }{\mathrm{d}x } + \left(1-\frac{\nu^2 }{x^2 }  \right) y(x)
-=0,\quad \nu\geqslant 0.
+\boxed{\frac{\mathrm{d}^2 y(x) }{\mathrm{d}x^2 } + \frac{1 }{x } \frac{\mathrm{d}y(x) }{\mathrm{d}x } + \left(1-\frac{\nu^2 }{x^2 }  \right)y(x)
+=0}
 \end{equation}
-
-或称为 $\nu $ 阶\textbf{贝塞尔方程}。
-
-

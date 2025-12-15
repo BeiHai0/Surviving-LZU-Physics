@@ -2,9 +2,513 @@
 
 \section{贝塞尔函数}
 
+\subsection{贝塞尔函数作为贝塞尔方程的解}
+
+\subsubsection{非整数阶贝塞尔函数}
+
+我们知道，柱坐标系下的亥姆霍兹方程
+
+\begin{equation}
+\nabla^2 u(\rho,\varphi,z) + k^2 u(\rho,\varphi,z) = 0,
+\end{equation}
+
+在分离变量 $u(\rho,\varphi,z) = R(\rho)\Phi(\varphi)Z(z) $ 以及变量代换 $x=\sqrt{k^2+\lambda } \rho,y(x)=R(\rho) $ 后得到
+
+\begin{equation}
+\Phi''(\varphi) + \nu^2 \Phi(\varphi) = 0,
+\end{equation}
+
+\begin{equation}
+Z''(z) - \lambda Z(z) = 0,
+\end{equation}
+
+\begin{equation}
+\frac{\mathrm{d}^2 y(x) }{\mathrm{d}x^2 } + \frac{1 }{x } \frac{\mathrm{d}y(x) }{\mathrm{d}x } + \left(1-\frac{\nu^2 }{x^2 }  \right)y(x)
+=0.
+\end{equation}
+
+当 $\nu $ \textbf{不是正整数}时，利用级数法可以证明，径向部分 $R(\rho)=y(x) $ 所要满足的 $\nu $ 阶贝塞尔方程
+
+\begin{equation}
+\frac{\mathrm{d}^2 y(x) }{\mathrm{d}x^2 } + \frac{1 }{x } \frac{\mathrm{d}y(x) }{\mathrm{d}x } + \left(1-\frac{\nu^2 }{x^2 }  \right)y(x)
+=0
+\end{equation}
+
+的通解为
+
+\begin{equation}
+y(x)
+=C_1 \mathrm{J}_\nu(x) + C_2 \mathrm{J}_{-\nu}(x),
+\end{equation}
+
+其中，$\nu $ 阶贝塞尔函数(或称为第一类贝塞尔函数) $\mathrm{J}_\nu(x) $ 由下式定义：
+
+\begin{equation}
+\mathrm{J}_\nu(x)
+\equiv \sum_{k=0}^{\infty} \frac{\left(-1 \right)^k }{k!\Gamma\left(k+\nu+1 \right) }\left(\frac{x }{2 }  \right)^{2k+\nu}.
+\end{equation}
+
+当 $\nu $ 不等于正整数时，$\mathrm{J}_\nu(x) $ 与 $\mathrm{J}_{-\nu}(x) $ 线性独立。此时用 $\mathrm{J}_\nu(x) $ 与 $\mathrm{J}_{-\nu}(x) $ 进行如下的线性组合就得到诺伊曼函数(或称为第二类贝塞尔函数) $\mathrm{N}_\nu(x) $：
+
+\begin{equation}
+\mathrm{N}_\nu(x)
+\equiv \frac{\cos\left(\nu\pi \right)\mathrm{J}_\nu(x)-\mathrm{J}_{-\nu}(x) }{\sin(\nu\pi) }.
+\end{equation}
+
+特别地，当 $\nu=m\in \mathbb{Z} $ 为整数时，诺伊曼函数 $\mathrm{N}_m(x) $ 由下面的极限给出(用洛必达法则计算)：
+
+\begin{equation}
+m\in \mathbb{Z},\quad
+\mathrm{N}_m(x)
+\equiv \lim_{\nu\to m} \mathrm{N}_\nu(x)
+\end{equation}
+
+\subsubsection{整数阶贝塞尔函数}
+
+角度部分 $\Phi(\varphi) $ 所满足的方程
+
+\begin{equation}
+\Phi''(\varphi) + \nu^2 \Phi(\varphi) = 0,
+\end{equation}
+
+的通解为：
+
+\begin{equation}
+\Phi(\varphi) = A_1 \mathrm{e}^{\mathrm{i}\nu\varphi} + A_2 \mathrm{e}^{\mathrm{-\mathrm{i}\nu\varphi}}
+\end{equation}
+
+如果我们不限制 $\varphi $ 的取值，转而用周期性边界条件
+
+\begin{equation}
+\Phi(\varphi+2\pi) = \Phi(\varphi)
+\end{equation}
+
+来保证场量的唯一性，那么有
+
+\begin{equation}
+2\pi \nu = 2\pi m,\quad m\in \mathbb{Z}
+\end{equation}
+
+也即此时 $\nu $ 取整数。
+
+可以证明，当 $\nu=m,m\in \mathbb{Z} $ 时，$\mathrm{J}_m(x) $ 与 $\mathrm{J}_{-m}(x) $ 线性相关。此时，$m $ 阶贝塞尔方程
+
+\begin{equation}
+\frac{\mathrm{d}^2 y(x) }{\mathrm{d}x^2 } + \frac{1 }{x } \frac{\mathrm{d}y(x) }{\mathrm{d}x } + \left(1-\frac{m^2 }{x^2 }  \right)y(x)
+=0,\quad m\in \mathbb{Z}
+\end{equation}
+
+的的通解为：
+
+\begin{equation}
+y(x)
+=C_1 \mathrm{J}_m(x) + C_2 \mathrm{N}_m(x)
+\end{equation}
+
 \section{贝塞尔函数的性质}
+
+\subsection{整数阶贝塞尔函数的简单性质}
+
+\begin{equation}
+\mathrm{J}_m(-x) = \left(-1 \right)^m\mathrm{J}_m(x)
+\end{equation}
+
+\begin{equation}
+\mathrm{J}_0(0) = 1
+\end{equation}
+
+\begin{equation}
+\mathrm{J}_m(0) = 0,\quad m=1,2,\cdots
+\end{equation}
+
+\begin{equation}
+\mathrm{N}_{-m}(x) = \left(-1 \right)^m \mathrm{N}_m(x)
+\end{equation}
+
+\subsection{贝塞尔函数的递推关系}
+
+\begin{equation}
+\mathrm{J}_{\nu-1}(x) + \mathrm{J}_{\nu+1}(x) = \frac{2\nu }{x } \mathrm{J}_\nu(x)
+\end{equation}
+
+\begin{equation}
+\mathrm{J}_{\nu-1}(x) - \mathrm{J}_{\nu+1}(x) = 2\mathrm{J}_\nu'(x)
+\end{equation}
+
+\begin{equation}
+\mathrm{N}_{\nu-1}(x) + \mathrm{N}_{\nu+1}(x) = \frac{2\nu }{x } \mathrm{N}_\nu(x)
+\end{equation}
+
+\begin{equation}
+\mathrm{N}_{\nu-1}(x) - \mathrm{N}_{\nu+1}(x) = 2\mathrm{N}_\nu'(x)
+\end{equation}
+
+\begin{equation}
+\mathrm{J}_0'(x) = -\mathrm{J}_1(x)
+\end{equation}
 
 \section{柱函数}
 
-\section{贝塞尔方程的本征值问题}
+若函数 $y_\nu(x) $ 满足：
 
+\begin{equation}
+\left\{
+\begin{aligned}
+&y_{\nu-1}(x)+y_{\nu+1}(x)
+=\frac{2\nu}{x} y_\nu(x) \\
+&y_{\nu-1}(x)-y_{\nu+1}(x)
+=2y_\nu'(x)
+\end{aligned}
+\right.
+\end{equation}
+
+或满足与上两式等价的关系：
+
+\begin{equation}
+\left\{
+\begin{aligned}
+&\frac{\mathrm{d} }{\mathrm{d}x }\left[x^\nu y_\nu(x) \right]
+=x^\nu y_{\nu-1}(x) \\
+&\frac{\mathrm{d} }{\mathrm{d}x }\left[x^{-\nu}y_{\nu+1}(x) \right]=x^{-\nu} y_{\nu+1}(x)
+\end{aligned}
+\right.
+\end{equation}
+
+则这类函数统称为柱函数。
+
+柱函数必定满足贝塞尔方程。
+
+\section{例题}
+
+\subsection{边缘固定圆形膜本征振动}
+
+\begin{example}
+    
+求边缘固定半径为 $b $ 的圆形膜的本征振动频率及本征振动模式。
+
+\end{example}
+
+\begin{solution}
+    
+以圆形膜的圆心为原点建立极坐标，设 $u(\rho,\varphi,t) $ 是 $t $ 时刻 $\rho,\varphi $ 处质点偏离平衡位置的位移，则 $u(\rho,\varphi,t) $ 满足二维波动方程：
+
+\begin{equation}
+u_{tt}(\rho,\varphi,t) - a^2 \nabla^2_{(2)} u(\rho,\varphi,t)
+=0,
+\end{equation}
+
+其中，$\nabla^2_{(2)} $ 是二维拉普拉斯算子：
+
+\begin{equation}
+\nabla^2_{(2)}
+\equiv \frac{1}{\rho}\frac{\partial}{\partial \rho}\left(\rho\frac{\partial }{\partial \rho}\right)+\frac{1}{\rho^2}\frac{\partial^2}{\partial \varphi^2}.
+\end{equation}
+
+设 $u(\rho,\varphi,t) $ 可分离变量为：
+
+\begin{equation}
+u(\rho,\varphi,t)
+=U(\rho,\varphi) T(t),
+\end{equation}
+
+代入二维波动方程可得：
+
+\begin{equation}
+U(\rho,\varphi) T''(t) - a^2 T(t)\left[\frac{1}{\rho}\frac{\partial}{\partial \rho}\left(\rho\frac{\partial }{\partial \rho}\right)+\frac{1}{\rho^2}\frac{\partial^2}{\partial \varphi^2} \right]U(\rho,\varphi)
+=0.
+\end{equation}
+
+上式两边同时除以 $U(\rho,\varphi) T(t) $，得：
+
+\begin{equation}
+\frac{T''(t) }{T(t) } - \frac{a^2 }{U(\rho,\varphi) } \left[\frac{1}{\rho}\frac{\partial}{\partial \rho}\left(\rho\frac{\partial }{\partial \rho}\right)+\frac{1}{\rho^2}\frac{\partial^2}{\partial \varphi^2} \right]U(\rho,\varphi)
+=0.
+\end{equation}
+
+观察可知：
+
+\begin{equation}
+\frac{T''(t) }{T(t) }
+=-\omega^2,\quad 
+\frac{a^2 }{U(\rho,\varphi) } \left[\frac{1}{\rho}\frac{\partial}{\partial \rho}\left(\rho\frac{\partial }{\partial \rho}\right)+\frac{1}{\rho^2}\frac{\partial^2}{\partial \varphi^2} \right]U(\rho,\varphi)
+=-\omega^2
+\end{equation}
+
+由于要求本征振动频率和本征振动模式，因此只需要关注空间部分 $U(\rho,\varphi) $ 满足的方程和边界条件。
+
+对上式空间部分 $U(\rho,\varphi) $ 满足的方程等号两边同乘 $\displaystyle{\frac{U(\rho,\varphi) }{a^2 }  }$ 并移项，得：
+
+\begin{equation}
+\frac{1}{\rho}\frac{\partial}{\partial \rho}\left(\rho\frac{\partial U(\rho,\varphi)}{\partial \rho}\right)+\frac{1}{\rho^2}\frac{\partial^2 U(\rho,\varphi)}{\partial \varphi^2} + \frac{\omega^2 }{a^2 } U(\rho,\varphi)
+=0.
+\end{equation}
+
+令：
+
+\begin{equation}
+k
+\equiv \frac{\omega }{a } ,\quad k^2=\frac{\omega^2 }{a^2 }
+\end{equation}
+
+则 $U(\rho,\varphi) $ 满足的方程为：
+
+\begin{equation}
+\frac{1}{\rho}\frac{\partial}{\partial \rho}\left(\rho\frac{\partial U(\rho,\varphi)}{\partial \rho}\right)+\frac{1}{\rho^2}\frac{\partial^2 U(\rho,\varphi)}{\partial \varphi^2} + k^2 U(\rho,\varphi)
+=0
+\end{equation}
+
+由于圆形膜边界固定，因此得到一个边界条件：
+
+\begin{equation}
+\left. U(\rho,\varphi)\right|_{\rho=b}
+=0
+\end{equation}
+
+且圆心处质点偏离平衡位置的位移应有限，因此得到一个自然边界条件：
+
+\begin{equation}
+\left. \left|U(\rho,\varphi)\right|\right|_{\rho=0} 
+<+\infty
+\end{equation}
+
+再结合 $\varphi $ 作为角度这一物理量应使得 $U(\rho,\varphi) $ 满足周期性边界条件：
+
+\begin{equation}
+U(\rho,\varphi+2\pi)
+=U(\rho,\varphi)
+\end{equation}
+
+综上，空间部分 $U(\rho,\varphi) $ 要满足的所有条件为：
+
+\begin{equation}
+\left\{
+\begin{aligned}
+&\frac{1}{\rho}\frac{\partial}{\partial \rho}\left(\rho\frac{\partial U(\rho,\varphi)}{\partial \rho}\right)+\frac{1}{\rho^2}\frac{\partial^2 U(\rho,\varphi)}{\partial \varphi^2} + k^2 U(\rho,\varphi)
+=0 \\
+&\left. U(\rho,\varphi)\right|_{\rho=b}
+=0 \\
+&\left. \left|U(\rho,\varphi)\right|\right|_{\rho=0} 
+<+\infty \\
+&U(\rho,\varphi+2\pi)
+=U(\rho,\varphi)
+\end{aligned}
+\right.
+\end{equation}
+
+设 $U(\rho,\varphi) $ 可分离变量为：
+
+\begin{equation}
+U(\rho,\varphi)
+=R(\rho)\Phi(\varphi)
+\end{equation}
+
+代入空间部分 $U(\rho,\varphi) $ 要满足的方程，得：
+
+\begin{equation}
+\frac{\Phi(\varphi) }{\rho } \frac{\mathrm{d} }{\mathrm{d}\rho }\left(\rho \frac{\mathrm{d}R(\rho) }{\mathrm{d}\rho } \right) + \frac{R(\rho) }{\rho^2 } \frac{\mathrm{d}^2 \Phi(\varphi) }{\mathrm{d}\varphi^2 } + k^2 R(\rho)\Phi(\varphi)
+=0
+\end{equation}
+
+上式等号两边同乘 $\displaystyle{\frac{\rho^2 }{R(\rho)\Phi(\varphi) }  }$，整理得：
+
+\begin{equation}
+\frac{1 }{\Phi(\varphi) } \frac{\mathrm{d}^2\Phi(\varphi) }{\mathrm{d}\varphi^2 } + \left[\frac{\rho }{R(\rho) } \frac{\mathrm{d} }{\mathrm{d}\rho }\left(\rho\frac{\mathrm{d}R(\rho) }{\mathrm{d}\rho }  \right) +k^2\rho^2  \right]
+=0
+\end{equation}
+
+观察可知：
+
+\begin{equation}
+\frac{1 }{\Phi(\varphi) } \frac{\mathrm{d}^2\Phi(\varphi) }{\mathrm{d}\varphi^2 } = -m^2,\quad
+\frac{\rho }{R(\rho) } \frac{\mathrm{d} }{\mathrm{d}\rho }\left(\rho\frac{\mathrm{d}R(\rho) }{\mathrm{d}\rho }  \right) +k^2\rho^2 - m^2
+=0
+\end{equation}
+
+因此，角度部分满足方程：
+
+\begin{equation}
+\Phi''(\varphi) + m^2\Phi(\varphi)
+=0
+\end{equation}
+
+周期性边界条件：
+
+\begin{equation}
+U(\rho,\varphi+2\pi)
+=U(\rho,\varphi)
+\Longrightarrow R(\rho)\Phi(\varphi+2\pi)=R(\rho)\Phi(\varphi)
+\Longrightarrow \Phi(\varphi+2\pi)=\Phi(\varphi)
+\end{equation}
+
+\begin{equation}
+\left\{
+\begin{aligned}
+&\Phi''(\varphi) + m^2\Phi(\varphi)=0 \\
+&\Phi(\varphi+2\pi)=\Phi(\varphi)
+\end{aligned}
+\right.
+\end{equation}
+
+从
+
+\begin{equation}
+\Phi''(\varphi) + m^2\Phi(\varphi)
+=0
+\end{equation}
+
+可以解得：
+
+\begin{equation}
+\Phi(\varphi)
+=A\cos(m\varphi) + B\sin(m\varphi)
+\end{equation}
+
+结合周期性边界条件
+
+\begin{equation}
+\Phi(\varphi+2\pi)=\Phi(\varphi)
+\end{equation}
+
+可得：
+
+\begin{equation}
+m=0,1,2,\cdots
+\end{equation}
+
+径向部分 $R(\rho) $ 满足：
+
+\begin{equation}
+\frac{\rho }{R(\rho) } \frac{\mathrm{d} }{\mathrm{d}\rho }\left(\rho\frac{\mathrm{d}R(\rho) }{\mathrm{d}\rho }  \right) +k^2\rho^2 - m^2
+=0
+\end{equation}
+
+可以整理成：
+
+\begin{equation}
+\frac{1 }{\rho } \frac{\mathrm{d} }{\mathrm{d}\rho }\left(\rho \frac{\mathrm{d}R(\rho) }{\mathrm{d}\rho } \right) + \left(k^2 - \frac{m^2 }{\rho^2 }  \right)R(\rho)
+=0
+\end{equation}
+
+令 $x=k\rho,\rho=x/k,R(\rho)=y(x) $，则上面可方程化为 $m $ 阶贝塞尔方程：
+
+\begin{equation}
+\frac{\mathrm{d}^2 y }{\mathrm{d}x^2 } + \frac{1 }{x } \frac{\mathrm{d}y }{\mathrm{d}x } + \left(1-\frac{m^2 }{x^2 }  \right)y
+=0,\quad m\in \mathbb{Z}
+\end{equation}
+
+$$
+\left. U(\rho,\varphi)\right|_{\rho=b}
+=0
+\Longrightarrow \left. R(\rho)\Phi(\varphi) \right|_{\rho=b} = 0
+\Longrightarrow \left. R(\rho)\right|_{\rho=b} = 0
+$$
+
+\begin{equation}
+\left. \left|U(\rho,\varphi)\right|\right|_{\rho=0} 
+<+\infty
+\Longrightarrow \left. \left|R(\rho)\Phi(\varphi) \right|\right|_{\rho=0}<+\infty
+\Longrightarrow \left. \left|R(\rho) \right|\right|_{\rho=0}<+\infty
+\end{equation}
+
+\begin{equation}
+\left\{
+\begin{aligned}
+&\frac{\mathrm{d}^2 y }{\mathrm{d}x^2 } + \frac{1 }{x } \frac{\mathrm{d}y }{\mathrm{d}x } + \left(1-\frac{m^2 }{x^2 }  \right)y
+=0 \\
+&R(\rho)=y(x)=y(k\rho)\\
+&\left. R(\rho)\right|_{\rho=b} = 0 \\
+&\left. \left|R(\rho) \right|\right|_{\rho=0}<+\infty
+\end{aligned}
+\right.
+\end{equation}
+
+对于 $m $ 阶贝塞尔方程
+
+\begin{equation}
+\frac{\mathrm{d}^2 y }{\mathrm{d}x^2 } + \frac{1 }{x } \frac{\mathrm{d}y }{\mathrm{d}x } + \left(1-\frac{m^2 }{x^2 }  \right)y
+=0,\quad m\in \mathbb{Z}
+\end{equation}
+
+其通解为：
+
+\begin{equation}
+y^{(m)}(x)
+=C_m \mathrm{J}_m(x) + D_m\mathrm{N}_m(x)
+\end{equation}
+
+考虑自然边界条件 $\displaystyle{\left. \left|R(\rho) \right|\right|_{\rho=0}<+\infty }$，可得：
+
+\begin{equation}
+D_m=0
+\end{equation}
+
+因此：
+
+\begin{equation}
+y^{(m)}(x)
+=C_m\mathrm{J}_m(x)
+\end{equation}
+
+由 $R(\rho)=y(x),x=k\rho $ 有
+
+\begin{equation}
+R^{(m)}(\rho)
+=y^{(m)}(x)
+=C_m\mathrm{J}_m(k\rho)
+\end{equation}
+
+设 $m $ 阶贝塞尔函数 $\mathrm{J}_m(x) $ 的第 $n $ 个正零点为 $x_n^{(m)} $，即：
+
+\begin{equation}
+\mathrm{J}_m\left(x_n^{(m)} \right)
+=0,\quad m=0,1,2,\cdots;\quad n=,1,2,\cdots
+\end{equation}
+
+结合边界条件 $\displaystyle{\left. R(\rho)\right|_{\rho=b} = 0 }$，即：
+
+\begin{equation}
+C_m\mathrm{J}_m\left(k b \right)
+=0
+\end{equation}
+
+因此 $k $ 的本征值 $k_n^{(m)} $ 为：
+
+\begin{equation}
+k_n^{(m)}
+=\frac{x_n^{(m)} }{b } ,\quad m=0,1,2,\cdots;\quad n=1,2,\cdots
+\end{equation}
+
+相应的本征振动模式 $R_n^{(m)}(\rho) $ 为：
+
+\begin{equation}
+R_n^{(m)}(\rho)
+=\mathrm{J}_m\left(k_n^{(m)}\rho \right)
+=\mathrm{J}_m\left(\frac{x_n^{(m)} }{b } \rho \right),\quad m=0,1,2,\cdots;\quad n=1,2,\cdots
+\end{equation}
+
+再根据 $k\equiv \omega/a $，得到 $\omega $ 的本征值，即圆形膜的本征频率 $\omega_n^{(m)} $ 为：
+
+\begin{equation}
+\omega_n^{(m)}
+=ak_n^{(m)}
+=\frac{x_n^{(m)} }{b }\cdot a,\quad m=0,1,2,\cdots;\quad n=1,2,\cdots
+\end{equation}
+
+综上所述，边缘固定半径为 $b $ 的圆形膜的本征振动频率 $\omega_n^{(m)} $ 及本征振动模式 $R_n^{(m)}(\rho) $ 为：
+
+\begin{equation}
+\boxed{
+\omega_n^{(m)} = \frac{x_n^{(m)} }{b }\cdot a
+},\quad m=0,1,2,\cdots;\quad n=1,2,\cdots
+\end{equation}
+
+\begin{equation}
+\boxed{
+R_n^{(m)}(\rho)
+=\mathrm{J}_m\left(\frac{x_n^{(m)} }{b } \rho \right)
+},\quad m=0,1,2,\cdots;\quad n=1,2,\cdots
+\end{equation}
+
+其中，$x_n^{(m)} $ 是 $m $ 阶贝塞尔函数 $\mathrm{J}_m(x) $ 的第 $n $ 个正零点。
+
+\end{solution}
