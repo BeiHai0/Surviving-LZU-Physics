@@ -924,5 +924,438 @@ c_{\mathrm{obs}}
 \end{equation}
 $$
 
+# 3
 
+## 3.1 
 
+弱引力场近似下，度规表示为
+
+$$
+\begin{equation}
+g_{\mu\nu}
+=\eta_{\mu\nu} + h_{\mu\nu},\quad
+\left|h_{\mu\nu} \right| \ll 1
+\end{equation}
+$$
+
+线性近似理论中只保留 $h_{\mu\nu} $ 中的线性项（一阶小量）。定义
+
+$$
+\begin{equation}
+\bar{h}_{\mu\nu}
+\equiv h_{\mu\nu} - \frac{1 }{2 } \eta_{\mu\nu} h,\quad
+h
+\equiv \eta^{\mu\nu} h_{\mu\nu},
+\end{equation}
+$$
+
+试证明，它的逆变换是
+
+$$
+\begin{equation}
+\bar{\bar{h}}_{\mu\nu}
+\equiv \bar{h}_{\mu\nu} - \frac{1 }{2 } \eta_{\mu\nu} \bar{h}
+=h_{\mu\nu}
+\end{equation}
+$$
+
+**证明**：
+
+$$
+\begin{equation}
+\begin{aligned}
+\bar{h}
+\equiv \eta^{\mu\nu} \bar{h}_{\mu\nu}
+&=\eta^{\mu\nu}\left(h_{\mu\nu} - \frac{1 }{2 } \eta_{\mu\nu} h \right) \\
+&=\eta^{\mu\nu} h_{\mu\nu} - \frac{1 }{2 } \eta^{\mu\nu} \eta_{\mu\nu} h \\
+&=h - \frac{1 }{2 } \delta^{\mu}_{\mu} h \\
+&=-h
+\end{aligned}
+\end{equation}
+$$
+
+于是
+
+$$
+\begin{equation}
+\begin{aligned}
+\bar{\bar{h}}_{\mu\nu}
+&\equiv \bar{h}_{\mu\nu} - \frac{1 }{2 } \eta_{\mu\nu} \bar{h} \\
+&=\left(h_{\mu\nu} - \frac{1 }{2 } \eta_{\mu\nu} h \right) - \frac{1 }{2 } \eta_{\mu\nu} \left(-h \right) \\
+&=h_{\mu\nu}
+\end{aligned}
+\end{equation}
+$$
+
+## 3.2
+
+线性近似理论中，证明克氏符
+
+$$
+\begin{equation}
+\Gamma^\mu_{\alpha\beta}
+=\frac{1 }{2 } \eta^{\mu\nu} \left(\partial_\beta h_{\alpha\nu} + \partial_\alpha h_{\beta\nu} - \partial_\nu h_{\alpha\beta} \right)
+=\frac{1 }{2 } \left(h^\mu_{\alpha,\beta} + h^\mu_{\beta,\alpha} - h^{,\mu}_{\alpha\beta} \right)
+\end{equation}
+$$
+
+线性近似理论中张量指标的升降借助 $\eta_{\mu\nu} $ 和 $\eta^{\mu\nu} $ 进行。并求线性化后的Ricci张量
+
+$$
+\begin{equation}
+R_{\mu\nu}
+=\Gamma^\lambda_{\mu\nu,\lambda} - \Gamma^\lambda_{\mu\lambda,\nu}
+=-\frac{1 }{2 } \left(h^{,\alpha}_{\mu\nu,\alpha} + h_{,\mu,\nu} - h^\alpha_{\mu,\nu,\alpha} - h^\alpha_{\nu,\mu,\alpha} \right)
+\end{equation}
+$$
+
+**证明**：
+
+由于
+
+$$
+\begin{equation}
+g_{\mu\nu}
+=\eta_{\mu\nu} + h_{\mu\nu},\quad
+\left|h_{\mu\nu} \right|\ll 1,
+\end{equation}
+$$
+
+线性近似理论只保留小量 $h_{\mu\nu} $ 的一阶项，于是
+
+$$
+\begin{equation}
+\begin{aligned}
+\Gamma^\mu_{\alpha\beta}
+&\equiv \frac{1 }{2 } g^{\mu\nu}\left(\partial_\alpha g_{\beta \nu} + \partial_\beta g_{\alpha\nu} - \partial_\nu g_{\alpha\beta} \right) \\
+&\equiv \frac{1 }{2 } \left(\eta^{\mu\nu} + h^{\mu\nu} \right) \left[\partial_\alpha \left(\eta_{\beta \nu} + h_{\beta \nu} \right) + \partial_\beta \left(\eta_{\alpha\nu + h_{\alpha\nu}} \right) - \partial_\nu \left(\eta_{\alpha\beta} + h_{\alpha\beta} \right) \right] \\
+&=\frac{1 }{2 } \eta^{\mu\nu} \left(\partial_\beta h_{\alpha\nu} + \partial_\alpha h_{\beta\nu} - \partial_\nu h_{\alpha\beta} \right) \\
+&=\frac{1 }{2 } \left[\partial_\beta \left(\eta^{\mu\nu} h_{\alpha\nu} \right) + \partial_\alpha \left(\eta^{\mu\nu} h_{\beta\nu} \right) - \eta^{\mu\nu} \partial_\nu \left( h_{\alpha\beta} \right) \right] \\
+&=\frac{1 }{2 } \left(\partial_\beta h^\mu_\alpha + \partial_\alpha h^\mu_\beta - \partial^\mu h_{\alpha\beta} \right) \\
+&=\frac{1 }{2 } \left(h^\mu_{\alpha,\beta} + h^\mu_{\beta,\alpha} - h^{,\mu}_{\alpha\beta} \right)
+\end{aligned}
+\end{equation}
+$$
+
+克氏符 $\Gamma $ 是 $h_{\mu\nu} $ 一阶小量的叠加，因此 Riemann 曲率张量中的 $\Gamma \Gamma $ 项可以舍去，此时 Riemann 曲率张量为：
+
+$$
+\begin{equation}
+\begin{aligned}
+R^\lambda_{\mu\alpha\nu}
+&\equiv \partial_\alpha \Gamma^\lambda_{\nu\mu} - \partial_\nu \Gamma^\lambda_{\alpha\mu} + \Gamma^\lambda_{\alpha\beta} \Gamma^\beta_{\nu\mu} - \Gamma^\lambda_{\nu\beta} \Gamma^\beta_{\alpha\mu} \\
+&=\partial_\alpha \Gamma^\lambda_{\nu\mu} - \partial_\nu \Gamma^\lambda_{\alpha\mu} \\
+&=\frac{1 }{2 } \left[\partial_\alpha \left(h^\lambda_{\nu,\mu} + h^\lambda_{\mu,\nu} - h^{,\lambda}_{\nu\mu} \right) - \partial_\nu \left(h^\lambda_{\alpha,\mu} + h^\lambda_{\mu,\alpha} - h^{,\lambda}_{\alpha\mu} \right) \right]
+\end{aligned}
+\end{equation}
+$$
+
+Ricci张量为
+
+$$
+\begin{equation}
+\begin{aligned}
+R_{\mu\nu}
+&=R^\alpha_{\mu\alpha\nu} \\
+&=\frac{1 }{2 } \left[\partial_\alpha \left(h^\alpha_{\nu,\mu} + h^\alpha_{\mu,\nu} - h^{,\alpha}_{\nu\mu} \right) - \partial_\nu \left(h^\alpha_{\alpha,\mu} + h^\alpha_{\mu,\alpha} - h^{,\alpha}_{\alpha\mu} \right) \right] \\
+&=\frac{1 }{2 } \left(\partial_\alpha h^\alpha_{\nu,\mu} + \partial_\nu h^{,\alpha}_{\alpha\mu} - \partial_\alpha h^{,\alpha}_{\nu\mu} - \partial_\nu h^\alpha_{\alpha,\mu} \right) \\
+&=-\frac{1 }{2 } \left(h^{,\alpha}_{\nu\mu,\alpha} + h^\alpha_{\alpha,\mu,\nu} - h^\alpha_{\nu,\mu,\alpha} - h^{,\alpha}_{\alpha\mu,\nu} \right) \\
+&=-\frac{1 }{2 } \left(h^{,\alpha}_{\mu\nu,\alpha} + h^\alpha_{\alpha,\mu,\nu} - h^\alpha_{\nu,\mu,\alpha} - h^{,\alpha}_{\alpha\mu,\nu} \right) \\
+\end{aligned}
+\end{equation}
+$$
+
+注意到
+
+$$
+\begin{equation}
+h^\alpha_{\alpha,\mu,\nu}
+=\eta^{\lambda\alpha}h_{\lambda\alpha,\mu,\nu}
+=\left(\eta^{\lambda\alpha} h_{\lambda\alpha} \right)_{,\mu,\nu}
+=h_{,\mu,\nu}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+h^{,\alpha}_{\alpha\mu,\nu}
+=\eta^{\alpha\beta}h_{\alpha\mu,\nu,\beta}
+=h^\beta_{\mu,\nu,\beta}
+=h^\alpha_{\mu,\nu,\alpha}
+\end{equation}
+$$
+
+因此Ricci张量可化为
+
+$$
+\begin{equation}
+\begin{aligned}
+R_{\mu\nu}
+=-\frac{1 }{2 } \left(h^{,\alpha}_{\mu\nu,\alpha} + h^\alpha_{\alpha,\mu,\nu} - h^\alpha_{\nu,\mu,\alpha} - h^{,\alpha}_{\alpha\mu,\nu} \right) \\
+=-\frac{1 }{2 } \left(h^{,\alpha}_{\mu\nu,\alpha} + h_{,\mu,\nu} - h^\alpha_{\nu,\mu,\alpha} - h^\alpha_{\mu,\nu,\alpha} \right) \\
+\end{aligned}
+\end{equation}
+$$
+
+## 3.3
+
+由以上公式，证明线性化Einstein引力场方程
+
+$$
+\begin{equation}
+\bar{R}_{\mu\nu}
+\equiv R_{\mu\nu} - \frac{1 }{2 } \eta_{\mu\nu} R
+=8\pi G T_{\mu\nu}
+\end{equation}
+$$
+
+具体化为
+
+$$
+\begin{equation}
+\bar{h}^{,\alpha}_{\mu\nu,\alpha} + \eta_{\mu\nu} \bar{h}^{,\alpha,\beta}_{\alpha\beta} - \bar{h}^{,\alpha}_{\mu\alpha,\nu} - \bar{h}^{,\alpha}_{\nu\alpha,\mu}
+=-16\pi G T_{\mu\nu}
+\end{equation}
+$$
+
+**证明**：
+
+先算Ricci标量：
+
+$$
+\begin{equation}
+\begin{aligned}
+R
+&=\eta^{\mu\nu} R_{\mu\nu} \\
+&=-\frac{1 }{2 } \eta^{\mu\nu} \left(h^{,\alpha}_{\mu\nu,\alpha} + h_{,\mu,\nu} - h^\alpha_{\nu,\mu,\alpha} - h^\alpha_{\mu,\nu,\alpha} \right) \\
+&=-\frac{1 }{2 } \left(h^{,\alpha}_{,\alpha} + h^{,\nu}_{,\nu} - h^{\alpha,\nu}_{\nu,\alpha} - h^{\alpha,\mu}_{\mu,\alpha} \right) \\
+&=-\frac{1 }{2 } \left(2 h^{,\alpha}_{,\alpha} - 2 h^{\alpha,\beta}_{\beta,\alpha} \right) \\
+&=- h^{,\alpha}_{,\alpha} + h^{\alpha,\beta}_{\beta,\alpha} \\
+\end{aligned}
+\end{equation}
+$$
+
+利用
+
+$$
+\begin{equation}
+\bar{h} = -h,\quad 
+\bar{h}_{\mu\nu}
+\equiv h_{\mu\nu} - \frac{1 }{2 } \eta_{\mu\nu} h
+=h_{\mu\nu} + \frac{1 }{2 } \eta_{\mu\nu} \bar{h}
+\Longrightarrow h_{\mu\nu} = \bar{h}_{\mu\nu} - \frac{1 }{2 }  \eta_{\mu\nu} \bar{h}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+h^\alpha_\nu
+=\bar{h}^\alpha_\nu - \frac{1 }{2 } \delta^\alpha_\nu \bar{h}
+\end{equation}
+$$
+
+有
+
+$$
+\begin{equation}
+\begin{aligned}
+\bar{R}_{\mu\nu}
+&\equiv R_{\mu\nu} - \frac{1 }{2 } \eta_{\mu\nu} R \\
+&=-\frac{1 }{2 } \left(h^{,\alpha}_{\mu\nu,\alpha} + h_{,\mu,\nu} - h^\alpha_{\nu,\mu,\alpha} - h^\alpha_{\mu,\nu,\alpha} \right) - \frac{1 }{2 } \eta_{\mu\nu} \left(- h^{,\alpha}_{,\alpha} + h^{\alpha,\beta}_{\beta,\alpha}  \right) \\
+&=-\frac{1 }{2 } \left[h^{,\alpha}_{\mu\nu,\alpha} + h_{,\mu,\nu} - h^\alpha_{\nu,\mu,\alpha} - h^\alpha_{\mu,\nu,\alpha} -\eta_{\mu\nu} h^{,\alpha}_{,\alpha} + \eta_{\mu\nu} h^{\alpha,\beta}_{\beta,\alpha} \right] \\
+&=-\frac{1 }{2 } \left[\left(\bar{h}_{\mu\nu,\alpha}^{,\alpha} - \frac{1 }{2 } \eta_{\mu\nu} \bar{h}^{,\alpha}_{,\alpha} \right) + \left(-\bar{h}_{,\mu,\nu} \right) - \left(\bar{h}^\alpha_{\nu,\mu,\alpha} - \frac{1 }{2 } \delta^\alpha_\nu \bar{h}_{,\mu,\alpha} \right) - \left(\bar{h}^\alpha_{\mu,\nu,\alpha} - \frac{1 }{2 } \delta^\alpha_\mu \bar{h}_{,\nu,\alpha} \right) - \left(-\eta_{\mu\nu} \bar{h}^{,\alpha}_{,\alpha} \right) + \left(\eta_{\mu\nu} \left(\bar{h}^{\alpha,\beta}_{\beta,\alpha} - \frac{1 }{2 } \delta^\alpha_\beta \bar{h}^{,\beta}_{,\alpha} \right) \right) \right] \\
+&=-\frac{1 }{2 } \left[\bar{h}^{,\alpha}_{\mu\nu,\alpha} - \bar{h}^\alpha_{\nu,\mu,\alpha} - \bar{h}^\alpha_{\mu,\nu,\alpha} + \eta_{\mu\nu} \bar{h}^{\alpha,\beta}_{\beta,\alpha} \right] \\
+&=-\frac{1 }{2 } \left[\bar{h}^{,\alpha}_{\mu\nu,\alpha} - \bar{h}^\alpha_{\nu,\mu,\alpha} - \bar{h}^\alpha_{\mu,\nu,\alpha} + \eta_{\mu\nu} \eta^{\alpha\rho} \bar{h}_{\rho\beta,\alpha}^{,\beta} \right] \\
+&=-\frac{1 }{2 } \left[\bar{h}^{,\alpha}_{\mu\nu,\alpha} - \bar{h}^\alpha_{\nu,\mu,\alpha} - \bar{h}^\alpha_{\mu,\nu,\alpha} + \eta_{\mu\nu} \bar{h}_{\rho\beta}^{,\rho,\beta} \right] \\
+&=-\frac{1 }{2 } \left[\bar{h}^{,\alpha}_{\mu\nu,\alpha} + \eta_{\mu\nu} \bar{h}_{\alpha\beta}^{,\alpha,\beta} - \bar{h}^\alpha_{\nu,\mu,\alpha} - \bar{h}^\alpha_{\mu,\nu,\alpha} \right] \\
+\end{aligned}
+\end{equation}
+$$
+
+最后，Einstein引力场方程
+
+$$
+\begin{equation}
+\bar{R}_{\mu\nu}
+\equiv R_{\mu\nu} - \frac{1 }{2 } \eta_{\mu\nu} R
+=8\pi G T_{\mu\nu}
+\end{equation}
+$$
+
+就化为：
+
+$$
+\begin{equation}
+-\frac{1 }{2 } \left[\bar{h}^{,\alpha}_{\mu\nu,\alpha} + \eta_{\mu\nu} \bar{h}_{\alpha\beta}^{,\alpha,\beta} - \bar{h}^\alpha_{\nu,\mu,\alpha} - \bar{h}^\alpha_{\mu,\nu,\alpha} \right] \\
+=8\pi G T_{\mu\nu}
+\end{equation}
+$$
+
+也即：
+
+$$
+\begin{equation}
+\bar{h}^{,\alpha}_{\mu\nu,\alpha} + \eta_{\mu\nu} \bar{h}_{\alpha\beta}^{,\alpha,\beta} - \bar{h}^\alpha_{\nu,\mu,\alpha} - \bar{h}^\alpha_{\mu,\nu,\alpha}
+=-16\pi G T_{\mu\nu}
+\end{equation}
+$$
+
+## 3.4
+
+证明对于静态时空，线性化Ricci
+
+$$
+\begin{equation}
+R_{\mu\nu}
+=\Gamma^\lambda_{\mu\nu,\lambda} - \Gamma^\lambda_{\mu\lambda,\nu}
+=-\frac{1 }{2 } \left(h^{,\alpha}_{\mu\nu,\alpha} + h_{,\mu,\nu} - h^\alpha_{\mu,\nu,\alpha} - h^\alpha_{\nu,\mu,\alpha} \right)
+\end{equation}
+$$
+
+可化为
+
+$$
+\begin{equation}
+R_{00} = -\frac{1 }{2 } h_{00,i,i},\quad
+R_{0i} = \frac{1 }{2 } \left(h_{k0,i,k} - h_{0i,k,k} \right)
+\end{equation}
+$$
+
+$$
+\begin{equation}
+R_{ij}
+=-\frac{1 }{2 } \left(-h_{00,i,j} + h_{kk,i,j} - h_{ki,j,k} - h_{kj,i,k} + h_{ij,k,k} \right)
+\end{equation}
+$$
+
+**证明**：
+
+静态时空满足
+
+$$
+\begin{equation}
+\partial_0 h_{\mu\nu} = 0
+\end{equation}
+$$
+
+也即
+
+$$
+\begin{equation}
+h_{\mu\nu,0}
+=0
+\end{equation}
+$$
+
+$$
+\begin{equation}
+h_{\mu\nu}^{,0}
+=\eta^{0\alpha} h_{\mu\nu,\alpha}
+=\eta^{00} h_{\mu\nu,0}
+=0
+\end{equation}
+$$
+
+$$
+\begin{equation}
+h_{,0}
+=\eta^{\mu\nu} h_{\mu\nu,0}
+=0
+\end{equation}
+$$
+
+$$
+\begin{equation}
+h^{,0}
+=\eta^{0\alpha} h_{,\alpha}
+=\eta^{00} h^{,0}
+=0
+\end{equation}
+$$
+
+$$
+\begin{equation}
+h^\mu_{\nu,0}
+=\eta^{\mu\alpha} h_{\alpha\nu,0}
+=0
+\end{equation}
+$$
+
+于是可计算Ricci张量：
+
+$$
+\begin{equation}
+\begin{aligned}
+R_{00}
+&=-\frac{1 }{2 } \left(h^{,\alpha}_{00,\alpha} + h_{,0,0} - h^\alpha_{0,0,\alpha} - h^\alpha_{0,0,\alpha} \right) \\
+&=-\frac{1 }{2 } h_{00,\alpha}^{,\alpha} \\
+&=-\frac{1 }{2 } h_{00,i}^{,i}
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+R_{0i}
+&=-\frac{1 }{2 } \left(h^{,\alpha}_{0i,\alpha} + h_{,0,i} - h^\alpha_{0,i,\alpha} - h^\alpha_{i,0,\alpha} \right) \\
+&=\frac{1 }{2 } \left(h^\alpha_{0,i,\alpha} - h^{,\alpha}_{0i,\alpha} \right) \\
+&=\frac{1 }{2 } \left(h^k_{0,i,k} - h^{,k}_{0i,k} \right) \\
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+R_{ij}
+&=-\frac{1 }{2 } \left(h^{,\alpha}_{ij,\alpha} + h_{,i,j} - h^\alpha_{i,j,\alpha} - h^\alpha_{j,i,\alpha} \right) \\
+&=-\frac{1 }{2 } \left(h^{,k}_{ij,k} + h_{,i,j} - h^k_{i,j,k} - h^k_{j,i,k} \right) \\
+&=-\frac{1 }{2 } \left(h^{,k}_{ij,k} - h_{00,i,j} + h^k_{k,i,j} - h^k_{i,j,k} - h^k_{j,i,k} \right) \\
+\end{aligned}
+\end{equation}
+$$
+
+由于
+
+$$
+\begin{equation}
+\eta_{\mu\nu}
+=\mathrm{diag}(-1,+1,+1,+1)
+\end{equation}
+$$
+
+若认为一对重复的上/下指标也代表求和，则：
+
+$$
+\begin{equation}
+\begin{aligned}
+R_{00}
+&=-\frac{1 }{2 } h_{00,i}^{,i} \\
+&=-\frac{1 }{2 } \eta^{\alpha i} h_{00,i,\alpha} \\
+&=-\frac{1 }{2 } h_{00,i,i}
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+R_{0i}
+&=\frac{1 }{2 } \left(h^k_{0,i,k} - h^{,k}_{0i,k} \right) \\
+&=\frac{1 }{2 } \left(\eta^{k\alpha} h_{\alpha0,i,k} - \eta^{k\alpha} h_{0i,k,\alpha} \right) \\
+&=\frac{1 }{2 } \left( h_{k0,i,k} - h_{0i,k,k} \right) \\
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+R_{ij}
+&=-\frac{1 }{2 } \left(h^{,k}_{ij,k} - h_{00,i,j} + h^k_{k,i,j} - h^k_{i,j,k} - h^k_{j,i,k} \right) \\
+&=-\frac{1 }{2 } \left(\eta^{k\alpha} h_{ij,k,\alpha} - h_{00,i,j} + \eta^{k\alpha} h_{\alpha k,i,j} - \eta^{k\alpha} h_{\alpha i,j,k} - \eta^{k\alpha} h_{kj,i,k} \right) \\
+&=-\frac{1 }{2 } \left(-h_{00,i,j} + h_{kk,i,j} - h_{ki,j,k} - h_{kj,i,k} + h_{ij,k,k} \right)
+\end{aligned}
+\end{equation}
+$$
