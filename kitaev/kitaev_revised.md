@@ -2300,7 +2300,7 @@ $$
 $$
 \begin{equation}
 \begin{split}
-- \frac{1 }{2 } \bar{z}^\top z + \frac{1 }{2 } z^\top \bar{z} - \frac{1 }{2 }  z^\top f^{(1)*} z + \frac{1 }{2 } \bar{z}^\top f^{(2)} \bar{z}
+-\frac{1 }{2 } \bar{z}^\top z + \frac{1 }{2 } z^\top \bar{z} - \frac{1 }{2 }  z^\top f^{(1)*} z + \frac{1 }{2 } \bar{z}^\top f^{(2)} \bar{z}
 &=\frac{1 }{2 } 
 \begin{pmatrix}
 \bar{z}^\top & z^\top \\
@@ -2644,7 +2644,6 @@ $$
 &=\Braket{\Psi_1 | a_{i-N}^\dag a_j | \Psi_2 } \\
 &=\left(-1 \right)^{N(N+1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \bar{z}_{i-N} z_j \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right) \\
 &=\left(-1 \right)^{N(N+1)/2} \mathcal{N}_1^* \mathcal{N}_2 \int \left(\prod_{i=1}^{2N} \mathrm{d}\tilde{z}_i \right) \tilde{z}_{i-N} \tilde{z}_{j+N} \exp\left(\frac{1 }{2 } \tilde{z}^\top M \tilde{z} \right) \\
-
 \end{split}
 \end{equation}
 $$
@@ -2876,3 +2875,213 @@ $$
 \end{equation}
 $$
 
+### 关联函数矩阵
+
+$$
+\begin{equation}
+\Braket{
+    \begin{pmatrix}
+    c_1^\dag \\
+    \vdots \\
+    c_N^\dag \\
+    c_1 \\
+    \vdots \\
+    c_N
+    \end{pmatrix}
+    \begin{pmatrix}
+    c_1^\dag &\cdots &c_N^\dag &c_1 &\cdots &c_N
+    \end{pmatrix}
+ }
+\end{equation}
+$$
+
+如何用 $M $ 表达？
+
+### $\chi $费米子
+
+### 低能激发态
+
+### 矩阵元
+
+已知费米型 vison pair 湮灭、产生算符：
+
+$$
+\begin{equation}
+\chi_{\bm{r},\alpha}
+\equiv \frac{1 }{2 } \left(b_{\bm{r}}^\alpha + \mathrm{i}b_{\bm{r}+\bm{\delta}_\alpha}^\alpha \right),\quad
+\bm{r}\in A
+\end{equation}
+$$
+
+$$
+\begin{equation} 
+\chi^\dag_{\bm{r},\alpha}
+\equiv \frac{1 }{2 } \left(b_{\bm{r}}^\alpha - \mathrm{i}b_{\bm{r}+\bm{\delta}_\alpha}^\alpha \right),\quad
+\bm{r}\in A
+\end{equation}
+$$
+
+
+
+如何证明
+
+$$
+\begin{equation}
+u_{i,j}
+\equiv -\mathrm{i} b_i^\alpha b_j^\alpha
+=(-1)^{\chi_{i,\alpha}^\dag \chi_{i,\alpha}},\quad
+i\in A
+\end{equation}
+$$
+
+$$
+\begin{equation}
+u_{\bm{r},\bm{r}+\bm{\delta}_\alpha}
+\equiv -\mathrm{i} b_{\bm{r}}^\alpha b_{\bm{r}+\bm{\delta}_\alpha}^\alpha
+=1 - 2\chi^\dag_{\bm{r},\alpha} \chi_{\bm{r},\alpha}
+=(-1)^{\chi^\dag_{\bm{r},\alpha} \chi_{\bm{r},\alpha}}
+\end{equation}
+$$
+
+$u $ 算符本征值为 $+1 $ 的本征态是 $\chi^\dag \chi $ 本征值为 $0 $ 的本征态，$u $ 算符本征值为 $-1 $ 的本征态是 $\chi^\dag \chi $ 本征值为 $1 $ 的本征态。因此，$u $ 取 $-1 $ 相当于 bond 上占据了一个 $\chi $ 费米子。$u $ 取 $+1 $ 相当于 bond 上没有 $\chi $ 费米子。
+
+$\chi $ 与 vison 的联系是什么？
+
+若用 $\Ket{\Omega } $ 表示无磁场基态（$\alpha $ 准粒子零占据、所有 $u_{ij} $ 全为 $+1 $，也就是所有 $\chi $ 费米子也零占据），则 $\chi^\dag_{\bm{r},\alpha} \Ket{\Omega } $ 表示产生一个 $\chi $ 费米子的态，也就是翻转某个 $u_{i,j} $ 使得 $u_{i,j}=-1 $ 的态。这条键两边的 $W_p $ 也反号，因此产生一对 vison
+
+玻色型 vison pair 产生算符：
+
+$$
+\begin{equation}
+d^\dag_{\bm{r},\alpha,j} \Ket{\Omega }
+\equiv \left(\prod_{\mathrm{boundary}} \chi^\dag \right) \chi^\dag_{\bm{r},\alpha} \tilde{\alpha}^\dag_j \Ket{\Omega }
+\end{equation}
+$$
+
+如何计算
+
+$$
+\begin{equation}
+\Braket{\Omega | d_{\bm{r},\beta,m} H_h d^\dag_{\bm{r},\alpha,l} | \Omega }
+\end{equation}
+$$
+
+考虑
+
+$$
+\begin{equation}
+\left(-\vec{h}\cdot \sum_{\bm{r}} \vec{\sigma}_{\bm{r}} \right) \left(\prod \chi^\dag \right) \chi^\dag_{\bm{r},\alpha} \tilde{\alpha}_j^\dag \Ket{0_\chi,0_\alpha }
+\end{equation}
+$$
+
+$\displaystyle{\left(\prod \chi^\dag \right) \chi^\dag_{\bm{r},\alpha} \tilde{\alpha}_j^\dag \Ket{0_\chi,0_\alpha } }$ 是 $\hat{W}_p $ 的本征态。
+
+$\sigma_{\bm{r}}^\alpha d^\dag_{\bm{r},\beta,l} \Ket{\Omega } $ 仍是 $\hat{W}_p $ 的本征态。相对于 $d^\dag_{\bm{r},\beta,l} \Ket{\Omega } $，$\sigma_{\bm{r}}^\alpha d^\dag_{\bm{r},\beta,l} \Ket{\Omega } $ 由 $(\bm{r},\alpha) $ 确定的 bond 所连接的两个 $W_p $ 的本征值反号。
+
+$$
+\begin{equation}
+\Braket{\Omega | d_{\bm{r},\alpha,m} \left(-\vec{h}\cdot \sum_{\bm{r}'} \vec{\sigma}_{\bm{r}'} \right) d^\dag_{\bm{r},\beta,l} | \Omega }
+=-\sum_\gamma \varepsilon^{\alpha\beta\gamma} h_\gamma \Braket{\Omega | d_{\bm{r},\alpha,m} \left(\sigma^\gamma_{\bm{r}} + \sigma^\gamma_{\bm{r}+\bm{\delta}_\gamma} \right) d^\dag_{\bm{r},\beta,l} | \Omega }
+\end{equation}
+$$
+
+- $\alpha,\beta=x,y, $ 非零 $\gamma=z $
+
+$$
+\begin{equation}
+\begin{aligned}
+\Braket{\Omega | d_{\bm{r},x,m} H_h d^\dag_{\bm{r},y,l} | \Omega }
+&=-h_z \Braket{\Omega | d_{\bm{r},x,m} \left(\sigma_{\bm{r}}^z + \sigma_{\bm{r}+\bm{\delta}_z}^z \right) d^\dag_{\bm{r},y,l} | \Omega  } \\
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+\sigma_{\bm{r}}^z
+&=\mathrm{i} b_{\bm{r}}^z c_{\bm{r}} \\
+&=\mathrm{i} b_{\bm{r}}^z c_{\bm{r}} \left(b_{\bm{r}}^x b_{\bm{r}}^y b_{\bm{r}}^z c_{\bm{r}} \right) \\
+&=-\mathrm{i} b_{\bm{r}}^x b_{\bm{r}}^y \\
+&=-\mathrm{i} \left(\chi_{\bm{r},x} + \chi_{\bm{r},x}^\dag  \right)\left(\chi_{\bm{r},y} + \chi_{\bm{r},y}^\dag  \right)
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+\chi_{\bm{r},x} \sigma_{\bm{r}}^z \chi^\dag_{\bm{r},y}
+&=-\mathrm{i} \chi_{\bm{r},x} \left(\chi_{\bm{r},x} + \chi_{\bm{r},x}^\dag  \right)\left(\chi_{\bm{r},y} + \chi_{\bm{r},y}^\dag  \right) \chi^\dag_{\bm{r},y} \\
+&=-\mathrm{i} \chi_{\bm{r},x} \chi^\dag_{\bm{r},x} \chi_{\bm{r},y} \chi^\dag_{\bm{r},y} \\
+&=-\mathrm{i} \left(1 - \chi^\dag_{\bm{r},x} \chi_{\bm{r},x} \right) \left(1 - \chi^\dag_{\bm{r},y} \chi_{\bm{r},y} \right)
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+-h_z \Braket{\Omega | d_{\bm{r},x,m} \left(\sigma_{\bm{r}}^z \right) d^\dag_{\bm{r},y,l} | \Omega  }
+=-h_z \Braket{\Psi^c_0(\bm{r},x) | \tilde{\alpha}_m(\bm{r},x) \left(-\mathrm{i} \right) \tilde{\alpha}_l^\dag(\bm{r},y) | \Psi^c_0(\bm{r},y) }
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\Ket{\Omega }
+\equiv \Ket{0_\chi } \otimes \Ket{\Psi^c_0\left[\left\{u_{ij}^{\mathrm{std}} \right\} \right] } ?
+\end{equation}
+$$
+
+$$
+\begin{equation}
+d^\dag_{\bm{r},y,l} \Ket{\Omega }
+\equiv \chi^\dag_{\bm{r},y} \Ket{0_\chi } \otimes \tilde{a}_l^\dag \Ket{\Psi^c_0\left(\bm{r},y \right) } ?
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+\sigma_{\bm{r}+\bm{\delta}_z}^z
+&=\mathrm{i} b_{\bm{r}+\bm{\delta}_z}^z c_{\bm{r}+\bm{\delta}_z} \\
+&=b_{\bm{r}}^x b_{\bm{r}}^y b_{\bm{r}}^z c_{\bm{r}} \left(\mathrm{i} b_{\bm{r}+\bm{\delta}_z}^z c_{\bm{r}+\bm{\delta}_z} \right) \\
+&=-\mathrm{i }b_{\bm{r}}^x b_{\bm{r}}^y \left(-\mathrm{i} c_{\bm{r}} c_{\bm{r}+\bm{\delta}_z} \right) \left(\mathrm{i} b_{\bm{r}}^z b_{\bm{r}+\bm{\delta}_z}^z \right) \\
+&=\sigma_{\bm{r}}^z \left(\mathrm{i} c_{\bm{r}} c_{\bm{r}+\bm{\delta}_z} \right) \left(-\mathrm{i} b_{\bm{r}}^z b_{\bm{r}+\bm{\delta}_z}^z \right) \\
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+&-h_z \Braket{\Omega | d_{\bm{r},x,m} \left[\sigma_{\bm{r}}^z \left(\mathrm{i} c_{\bm{r}} c_{\bm{r}+\bm{\delta}_z} \right) \left(-\mathrm{i} b_{\bm{r}}^z b_{\bm{r}+\bm{\delta}_z}^z \right) \right] d^\dag_{\bm{r},y,l} | \Omega  } \\
+=&-h_z \Braket{\Omega | d_{\bm{r},x,m} \left[\sigma_{\bm{r}}^z \left(\mathrm{i} c_{\bm{r}} c_{\bm{r}+\bm{\delta}_z} \right) \left(+1 \right) \right] d^\dag_{\bm{r},y,l} | \Omega  } \\
+=&-h_z \Braket{\Psi^c_0(\bm{r},x) | \tilde{\alpha}_m(\bm{r},x) \left(-\mathrm{i} \right) \left(\mathrm{i} c_{\bm{r}} c_{\bm{r}+\bm{\delta}_z} \right) \tilde{\alpha}_l^\dag(\bm{r},y) | \Psi^c_0(\bm{r},y) }
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+\Braket{\Omega | d_{\bm{r},x,m} H_h d^\dag_{\bm{r},y,l} | \Omega }
+&=\mathrm{i} h_z \Braket{\Psi^c_0(\bm{r},x) | \tilde{\alpha}_m(\bm{r},x) \left(1 + \mathrm{i} c_{\bm{r}} c_{\bm{r}+\bm{\delta}_z} \right) \tilde{\alpha}_l^\dag(\bm{r},y) | \Psi^c_0(\bm{r},y) }
+\end{aligned}
+\end{equation}
+$$
+
+$\alpha,\beta $ 更一般情况的写法为
+
+$$
+\begin{equation}
+\begin{aligned}
+\Braket{\Omega | d_{\bm{r},\alpha,m} H_h d^\dag_{\bm{r},\beta,l} | \Omega }
+=\sum_{\gamma} \mathrm{i} \varepsilon^{\alpha\beta\gamma} h_\gamma \Braket{\Psi^c_0(\bm{r},\alpha) | \tilde{\alpha}_m(\bm{r},\alpha) \left(1 + \mathrm{i} c_{\bm{r}} c_{\bm{r}+\bm{\delta}_\gamma} \right) \tilde{\alpha}_l^\dag(\bm{r},\beta) | \Psi^c_0(\bm{r},\beta) }
+\end{aligned}
+\end{equation}
+$$
+
+- $\Ket{\Psi^c_0\left[\left\{u_{ij} \right\} \right] }=\mathcal{N} \exp\left(\frac{1 }{2 } \sum_{i,j} f_i^\dag f_j^\dag \right) \Ket{0_f } $ 如何用 $\Ket{\Psi^c_0\left[\left\{u_{ij}^{\mathrm{std}} \right\} \right] }=\Ket{0_f } $ 表达?
