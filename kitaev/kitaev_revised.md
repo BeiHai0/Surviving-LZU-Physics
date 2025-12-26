@@ -3084,4 +3084,4 @@ $$
 \end{equation}
 $$
 
-- $\Ket{\Psi^c_0\left[\left\{u_{ij} \right\} \right] }=\mathcal{N} \exp\left(\frac{1 }{2 } \sum_{i,j} f_i^\dag f_j^\dag \right) \Ket{0_f } $ 如何用 $\Ket{\Psi^c_0\left[\left\{u_{ij}^{\mathrm{std}} \right\} \right] }=\Ket{0_f } $ 表达?
+- $\Ket{\Psi^c_0\left[\left\{u_{ij} \right\} \right] }=\mathcal{N} \exp\left(\frac{1 }{2 } \sum_{i,j} \psi_{i,j} f_i^\dag f_j^\dag \right) \Ket{0_f } $ 如何用 $\Ket{\Psi^c_0\left[\left\{u_{ij}^{\mathrm{std}} \right\} \right] }=\Ket{0_f } $ 表达?
