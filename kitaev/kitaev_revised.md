@@ -2478,11 +2478,21 @@ $$
 \end{equation}
 $$
 
+以及内积的正定性
+
+$$
+\begin{equation}
+\Braket{\widetilde{\Omega}_1 | \widetilde{\Omega}_1 }
+\geqslant 0,
+\end{equation}
+$$
+
 归一化系数 $\mathcal{N}_1 $ 可以取为
 
 $$
 \begin{equation}
-\mathrm{Pf}(I + f^\dag f),\quad f^\top = -f
+\mathcal{N}_1
+=\mathrm{det}^{-1/4}\left(I + f^{(1)\dag} f^{(1)} \right)
 \end{equation}
 $$
 
@@ -2875,6 +2885,15 @@ $$
 \end{equation}
 $$
 
+#### 用广义wick定理算4点关联函数
+
+$$
+\begin{equation}
+\Braket{\tilde{a}_i \tilde{a}_j \tilde{a}_k \tilde{a}_l }
+=\Braket{\tilde{a}_{i} \tilde{a}_{j} } \Braket{\tilde{a}_{k} \tilde{a}_{l} } - \Braket{\tilde{a}_{i} \tilde{a}_{k} } \Braket{\tilde{a}_{j} \tilde{a}_{l} } + \Braket{\tilde{a}_{i} \tilde{a}_{l} } \Braket{\tilde{a}_{j} \tilde{a}_{k} } 
+\end{equation}
+$$
+
 ### 关联函数矩阵
 
 $$
@@ -3085,3 +3104,307 @@ $$
 $$
 
 - $\Ket{\Psi^c_0\left[\left\{u_{ij} \right\} \right] }=\mathcal{N} \exp\left(\frac{1 }{2 } \sum_{i,j} \psi_{i,j} f_i^\dag f_j^\dag \right) \Ket{0_f } $ 如何用 $\Ket{\Psi^c_0\left[\left\{u_{ij}^{\mathrm{std}} \right\} \right] }=\Ket{0_f } $ 表达?
+
+#### recall
+
+$$
+\begin{equation}
+\begin{aligned}
+H
+&=\frac{1 }{2 }
+\begin{pmatrix}
+a^\dag &a^\top
+\end{pmatrix}
+h
+\begin{pmatrix}
+a \\
+\left(a^\dag \right)^\top
+\end{pmatrix} \\
+&=\frac{1 }{2 }
+\begin{pmatrix}
+a^\dag &a^\top
+\end{pmatrix}
+U D U^\dag
+\begin{pmatrix}
+a \\
+\left(a^\dag \right)^\top
+\end{pmatrix} \\
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+U
+=\begin{pmatrix}
+\bold{W} &\bold{V}^* \\
+\bold{V} &\bold{W}^*
+\end{pmatrix},\quad
+D
+=\mathrm{diag}(E_1,\cdots,E_N,-E_1,\cdots,-E_N)
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{pmatrix}
+\alpha \\
+\left(\alpha^\dag \right)^\top
+\end{pmatrix}
+\equiv U^\dag
+\begin{pmatrix}
+a \\
+\left(a^\dag \right)^\top
+\end{pmatrix}
+=\begin{pmatrix}
+W^\dag &V^\dag \\
+V^\top &W^\top
+\end{pmatrix}
+\begin{pmatrix}
+a \\
+\left(a^\dag \right)^\top
+\end{pmatrix}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\alpha
+=W^\dag a + V^\dag \left(a^\dag \right)^\top,\quad
+\alpha_i = \sum_j \left[\left(W^\dag \right)_{ij}a_j + \left(V^\dag \right)_{ij} a_j^\dag \right] \\
+=\sum_j \left[W_{ji}^* a_j + V_{ji}^* a_j^\dag \right]
+\end{equation}
+$$
+
+设
+
+$$
+\begin{equation}
+\Ket{0_\alpha }
+=\mathcal{N} \exp\left(\frac{1 }{2 } \sum_{i,j} F_{i,j} a_i^\dag a_j^\dag \right) \Ket{0_a }
+\end{equation}
+$$
+
+由
+
+$$
+\begin{equation}
+\alpha_i \Ket{0_\alpha } = 0
+\end{equation}
+$$
+
+可得
+
+$$
+\begin{equation}
+\bold{F}
+=V^* \left(W^* \right)^{-1}
+\end{equation}
+$$
+
+#### 以 $\left\{u_{ij}^{\mathrm{std}} \right\} $ 为参考
+
+标准规范 $\left\{u_{ij}=+1 \right\} $ 下，哈密顿量
+
+$$
+\begin{equation}
+\begin{aligned}
+H
+&=\frac{1 }{2 }
+\begin{pmatrix}
+a^\dag &a^\top
+\end{pmatrix}
+h(0)
+\begin{pmatrix}
+a \\
+\left(a^\dag \right)^\top
+\end{pmatrix} \\
+&=\frac{1 }{2 }
+\begin{pmatrix}
+a^\dag &a^\top
+\end{pmatrix}
+U(0) D(0) U^\dag(0)
+\begin{pmatrix}
+a \\
+\left(a^\dag \right)^\top
+\end{pmatrix} \\
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+U(0)
+=\begin{pmatrix}
+\bold{W}(0) &\bold{V}^*(0) \\
+\bold{V}(0) &\bold{W}^*(0)
+\end{pmatrix},\quad
+D(0)
+=\mathrm{diag}(E_1(0),\cdots,E_N(0),-E_1(0),\cdots,-E_N(0))
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+\begin{pmatrix}
+\alpha(0) \\
+\left(\alpha^\dag(0) \right)^\top
+\end{pmatrix}
+=U^\dag(0)
+\begin{pmatrix}
+a \\
+\left(a^\dag \right)^\top
+\end{pmatrix}
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{pmatrix}
+a \\
+\left(a^\dag \right)^\top
+\end{pmatrix}
+=U(0)
+\begin{pmatrix}
+\alpha(0) \\
+\left(\alpha^\dag(0) \right)^\top
+\end{pmatrix},\quad
+\begin{pmatrix}
+a^\dag &a^\top 
+\end{pmatrix}
+=\begin{pmatrix}
+\alpha^\dag(0) &\alpha^\top(0)
+\end{pmatrix}
+U^\dag(0)
+\end{equation}
+$$
+
+考虑构型 $\left\{u_{ij} \right\} $ 下，哈密顿量
+
+$$
+\begin{equation}
+\begin{aligned}
+H
+&=\frac{1 }{2 }
+\begin{pmatrix}
+a^\dag &a^\top
+\end{pmatrix}
+h
+\begin{pmatrix}
+a \\
+\left(a^\dag \right)^\top
+\end{pmatrix} \\
+&=\frac{1 }{2 }
+\begin{pmatrix}
+a^\dag &a^\top
+\end{pmatrix}
+U D U^\dag
+\begin{pmatrix}
+a \\
+\left(a^\dag \right)^\top
+\end{pmatrix} \\
+&=\frac{1 }{2 }
+\begin{pmatrix}
+\alpha^\dag(0) &\alpha^\top(0)
+\end{pmatrix}
+U^\dag(0) U D U^\dag U(0)
+\begin{pmatrix}
+\alpha(0) \\
+\left(\alpha^\dag(0) \right)^\top
+\end{pmatrix}
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+U
+=\begin{pmatrix}
+\bold{W} &\bold{V}^* \\
+\bold{V} &\bold{W}^*
+\end{pmatrix},\quad
+D
+=\mathrm{diag}(E_1,\cdots,E_N,-E_1,\cdots,-E_N)
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+\begin{pmatrix}
+\alpha \\
+\left(\alpha^\dag \right)^\top
+\end{pmatrix}
+&\equiv U^\dag
+\begin{pmatrix}
+a \\
+\left(a^\dag \right)^\top
+\end{pmatrix}
+=U^\dag U(0)
+\begin{pmatrix}
+\alpha(0) \\
+\left(\alpha^\dag(0) \right)^\top
+\end{pmatrix} \\
+&=\begin{pmatrix}
+W &V^* \\
+V &W^*
+\end{pmatrix}
+\begin{pmatrix}
+W(0) &V^*(0) \\
+V(0) &W^*(0)
+\end{pmatrix}
+\begin{pmatrix}
+\alpha(0) \\
+\left(\alpha^\dag(0) \right)^\top
+\end{pmatrix} \\
+&=\begin{pmatrix}
+W W(0) + V^* V(0) &W V^*(0) + V^* W^*(0) \\
+V W(0) + W^* V(0) &V V^*(0) + W^* W^*(0)
+\end{pmatrix}
+\begin{pmatrix}
+\alpha(0) \\
+\left(\alpha^\dag(0) \right)^\top
+\end{pmatrix} \\
+&=\begin{pmatrix}
+W' &V'^* \\
+V' &W'^*
+\end{pmatrix}
+\begin{pmatrix}
+\alpha(0) \\
+\left(\alpha^\dag(0) \right)^\top
+\end{pmatrix}
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+W'
+=W W(0) + V^* V(0),\quad
+V'
+=V W(0) + W^* V(0)
+\end{equation}
+$$
+
+设
+
+$$
+\begin{equation}
+\Ket{0_\alpha }
+=\mathcal{N} \exp\left(\frac{1 }{2 } \sum_{i,j} F_{i,j} \alpha^\dag_i(0) \alpha^\dag_j(0) \right) \Ket{0_{\alpha(0)} }
+\end{equation}
+$$
+
+则类似有
+
+$$
+\begin{equation}
+\bold{F}
+=\left(V'^* \right)\left(W'^* \right)^{-1},\quad
+\mathcal{N}
+=\mathrm{det}\left(1 - \bold{F}^* \bold{F} \right)^{-1/4}
+\end{equation}
+$$
+
