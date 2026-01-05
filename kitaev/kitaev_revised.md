@@ -1024,7 +1024,7 @@ $$
 \begin{equation}
 c_{i,A}
 =a_{i} + a^\dag_{i},\quad
-c_{\bm{r},B}
+c_{i,B}
 =\frac{1 }{\mathrm{i} } \left(a_{i} - a^\dag_{i} \right),
 \end{equation}
 $$
