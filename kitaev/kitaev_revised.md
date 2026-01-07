@@ -2487,12 +2487,22 @@ $$
 \end{equation}
 $$
 
+$$
+\begin{equation}
+f^{(1)}
+=V^* \left(W^* \right)^{-1}
+\end{equation}
+$$
+
 归一化系数 $\mathcal{N}_1 $ 可以取为
 
 $$
 \begin{equation}
+\begin{aligned}
 \mathcal{N}_1
-=\mathrm{det}^{-1/4}\left(I + f^{(1)\dag} f^{(1)} \right)
+&=\mathrm{det}^{-1/4}\left(I + f^{(1)\dag} f^{(1)} \right) \\
+&=
+\end{aligned}
 \end{equation}
 $$
 
@@ -3253,7 +3263,14 @@ $$
 \begin{pmatrix}
 a \\
 \left(a^\dag \right)^\top
+\end{pmatrix},\quad
+\begin{pmatrix}
+\alpha^\dag(0) &\alpha^\top(0)
 \end{pmatrix}
+=\begin{pmatrix}
+a^\dag &a^\top
+\end{pmatrix}
+U(0)
 \end{aligned}
 \end{equation}
 $$
@@ -3311,10 +3328,21 @@ U^\dag(0) U D U^\dag U(0)
 \begin{pmatrix}
 \alpha(0) \\
 \left(\alpha^\dag(0) \right)^\top
+\end{pmatrix} \\
+&\equiv \frac{1 }{2 }
+\begin{pmatrix}
+\alpha^\dag(0) &\alpha^\top(0)
 \end{pmatrix}
+\widetilde{U} D \widetilde{U}^\dag
+\begin{pmatrix}
+\alpha(0) \\
+\left(\alpha^\dag(0) \right)^\top
+\end{pmatrix} \\
 \end{aligned}
 \end{equation}
 $$
+
+> 以下 $W',V' $ 未修正
 
 $$
 \begin{equation}
@@ -3346,8 +3374,8 @@ a \\
 \left(\alpha^\dag(0) \right)^\top
 \end{pmatrix} \\
 &=\begin{pmatrix}
-W &V^* \\
-V &W^*
+W^\dag &V^\dag \\
+V^\top &W^\top
 \end{pmatrix}
 \begin{pmatrix}
 W(0) &V^*(0) \\
@@ -3358,8 +3386,8 @@ V(0) &W^*(0)
 \left(\alpha^\dag(0) \right)^\top
 \end{pmatrix} \\
 &=\begin{pmatrix}
-W W(0) + V^* V(0) &W V^*(0) + V^* W^*(0) \\
-V W(0) + W^* V(0) &V V^*(0) + W^* W^*(0)
+W^\dag W(0) + V^\dag V(0) &W^\dag V^*(0) + V^\dag W^*(0) \\
+V^\top W(0) + W^\top V(0) &V^\top V^*(0) + W^\top W^*(0)
 \end{pmatrix}
 \begin{pmatrix}
 \alpha(0) \\
@@ -3380,9 +3408,9 @@ $$
 $$
 \begin{equation}
 W'
-=W W(0) + V^* V(0),\quad
+=W^\dag W(0) + V^\dag V(0),\quad
 V'
-=V W(0) + W^* V(0)
+=V^\top W(0) + W^\top V(0)
 \end{equation}
 $$
 
