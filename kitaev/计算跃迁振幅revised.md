@@ -109,6 +109,8 @@ F(0)
 \end{equation}
 $$
 
+> 好像还要反对称化一下？
+
 $$
 \begin{equation}
 \mathcal{N}(0)
@@ -499,8 +501,8 @@ $$
 =&\mathrm{i} h_z\Braket{\chi , 0_{\alpha(1)} | \alpha(1) \left(1 + \mathrm{i} c_{i,A} c_{j,B} \right) \alpha^\dag(2) | \chi , 0_{\alpha(2)} } \\
 =&\mathrm{i} h_z \widetilde{\mathcal{N}}(1) \widetilde{\mathcal{N}}(2) \Braket{\chi , 0_{\alpha(0)} | \exp\left(\frac{1 }{2 } F_{i,j}^*(1) \alpha_i(0) \alpha_j(0) \right) \alpha(1) \left(1 + \mathrm{i} c_{i,A} c_{j,B} \right) \alpha^\dag(2) \exp\left(\frac{1 }{2 } \sum_{i,j} F_{i,j}(2) \alpha_i^\dag(0) \alpha_j^\dag(0) \right) | \chi , 0_{\alpha(2)}} \\
 \equiv&\mathrm{i} h_z\Braket{\Psi(1) | \alpha(1) \left(1 + \mathrm{i} c_{i,A} c_{j,B} \right) \alpha^\dag(2) |\Psi(2) } \\
-=&\mathrm{i} \Braket{\Psi(1) | \Psi(2) } \langle \alpha(1) \left(1 + \mathrm{i} c_{i,A} c_{j,B} \right) \alpha^\dag(2) \rangle \\
-=&\langle \Psi(1) | \Psi(2) \rangle \left[\mathrm{i} \langle \alpha(1) \alpha^\dag(2) \rangle - \langle \alpha(1) c_{i,A} c_{j,B} \alpha^\dag(2) \rangle \right]
+=&\mathrm{i} h_z \Braket{\Psi(1) | \Psi(2) } \langle \alpha(1) \left(1 + \mathrm{i} c_{i,A} c_{j,B} \right) \alpha^\dag(2) \rangle \\
+=&h_z \langle \Psi(1) | \Psi(2) \rangle \left[\mathrm{i} \langle \alpha(1) \alpha^\dag(2) \rangle - \langle \alpha(1) c_{i,A} c_{j,B} \alpha^\dag(2) \rangle \right]
 \end{aligned}
 \end{equation}
 $$
@@ -522,6 +524,44 @@ M
 \equiv \begin{pmatrix}
 \widetilde{F}(2) &-I \\
 I &-\widetilde{F}^*(1)
+\end{pmatrix}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\widetilde{N}
+=\left|\mathrm{det}\left(\widetilde{W} \right) \right|^{1/2}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\widetilde{F}
+=\widetilde{V}^* \left(\widetilde{W}^* \right)^{-1}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\widetilde{U}
+\equiv U^\dag(0) U,\quad
+\widetilde{U}^\dag
+=U^\dag U(0)
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\widetilde{U}
+=\begin{pmatrix}
+\widetilde{W} &\widetilde{V}^* \\
+\widetilde{V} &\widetilde{W}^*
+\end{pmatrix},\quad
+\widetilde{U}^\dag
+=\begin{pmatrix}
+\widetilde{W}^\dag &\widetilde{V}^\dag \\
+\widetilde{V}^\top &\widetilde{W}^\top 
 \end{pmatrix}
 \end{equation}
 $$
@@ -874,7 +914,7 @@ $$
 \widetilde{V}(2)
 \end{pmatrix} \\
 =&\begin{pmatrix}
-\bold{U}'_{12}(0)_{j,} &\bold{U}'_{11}(0)_{j,}
+\bold{U}'_{22}(0)_{j,} &\bold{U}'_{21}(0)_{j,}
 \end{pmatrix}
 \left(-M^{-1} + 
 \begin{pmatrix}
