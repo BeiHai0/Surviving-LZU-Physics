@@ -6,6 +6,76 @@
 
 写出逆变、协变与二阶张量的坐标变换式，已知 $A^\mu_\nu=\partial \bar{x}^\mu/\partial x^\nu,\bar{A}^\mu_\nu=\partial x^\mu/\partial\bar{x}^\nu $ 且 $\mathrm{det}\left[A^\mu_\nu \right]\ne 0 $，并写出它们的协变微分表达式。
 
+$$
+\begin{equation}
+\phi'^\mu(x')
+=A^\mu_\alpha \phi^\alpha(x)
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\phi'_\mu(x')
+=\bar{A}_\mu^\alpha \phi_\alpha(x)
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\phi'^{\mu\nu}(x')
+=A^\mu_\alpha A^\nu_\beta \phi^{\alpha\beta}(x)
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\phi'^\mu_\nu(x')
+=A^\mu_\alpha \bar{A}_\nu^\beta \phi^\alpha_\beta(x)
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\phi'_{\mu\nu}(x')
+=\bar{A}_\mu^\alpha \bar{A}_\nu^\beta \phi_{\alpha\beta}(x)
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\nabla_\mu \phi^\nu
+=\partial_\mu \phi^\nu + \Gamma_{\mu\lambda}^\nu \phi^\lambda
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\nabla_\mu \phi_\nu
+=\partial_\mu \phi_\nu - \Gamma_{\mu\nu}^\lambda \phi_\lambda
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\nabla_\mu \phi^{\nu\lambda}
+=\partial_\mu \phi^{\nu\lambda} + \Gamma_{\mu\rho}^\nu \phi^{\rho\lambda} + \Gamma_{\mu\rho}^\lambda \phi^{\nu\rho}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\nabla_\mu \phi^\nu_\lambda
+=\partial_\mu \phi^\nu_\lambda + \Gamma_{\mu\rho}^\nu \phi^\rho_\lambda - \Gamma_{\mu\lambda}^\rho \phi^\nu_\rho
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\nabla_\mu \phi_{\nu\lambda}
+=\partial_\mu \phi_{\nu\lambda} - \Gamma_{\mu\nu}^\rho \phi_{\rho\lambda} - \Gamma_{\mu\lambda}^\rho \phi_{\nu\rho}
+\end{equation}
+$$
+
 # 3
 
 由比安基恒等式证明 $\left(R^{\mu\nu} - \frac{1 }{2 } g^{\mu\nu} R \right)_{;\nu}=0 $
@@ -158,6 +228,161 @@ $$
 \delta g
 =g g^{\mu\nu} \delta g_{\mu\nu}
 =-g g_{\mu\nu} \delta g^{\mu\nu}
+\end{equation}
+$$
+
+总作用量
+
+$$
+\begin{equation}
+I = I_g + I_m
+\end{equation}
+$$
+
+其中 $I_g $ 是引力场作用量，$I_m $ 是引力源物质作用量。
+
+$$
+\begin{equation}
+I_g
+=\int\limits_M L_g \sqrt{-g} \mathrm{d}^4x
+=\frac{c^3 }{16\pi G } \int\limits_M R \sqrt{-g} \mathrm{d}^4 x,\quad L_g = \frac{c^3 }{16\pi G } R
+\end{equation}
+$$
+
+想算 $I_g $ 对度规的变分，要先算 $R\sqrt{-g} $ 对度规的变分。
+
+$$
+\begin{equation}
+\begin{aligned}
+\delta(R \sqrt{-g})
+&=\delta\left(g^{\mu\nu} R_{\mu\nu} \sqrt{-g} \right) \\
+&=\left(\delta g^{\mu\nu} \right) R_{\mu\nu} \sqrt{-g} + g^{\mu\nu} \left(\delta R_{\mu\nu} \right) \sqrt{-g} + g^{\mu\nu} R_{\mu\nu} \delta\left(\sqrt{-g} \right)
+\end{aligned}
+\end{equation}
+$$
+
+利用Palatini.II公式
+
+$$
+\begin{equation}
+\sqrt{-g} g^{\mu\nu} \delta R_{\mu\nu}
+=\partial_\mu\left(\sqrt{-g}\phi^\mu \right),\quad
+\phi^\mu
+\equiv g^{\lambda\nu} \delta \Gamma_{\lambda\nu}^\mu - g^{\mu\nu} \delta \Gamma_{\lambda\nu}^\lambda
+\end{equation}
+$$
+
+以及
+
+$$
+\begin{equation}
+\delta g 
+=g g^{\mu\nu} \delta g_{\mu\nu}
+=-g g_{\mu\nu} \delta g^{\mu\nu}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+\delta\left(\sqrt{-g} \right)
+=-\frac{1 }{2 } \frac{\delta g }{\sqrt{-g} } 
+=-\frac{1 }{2 } \frac{-g g_{\mu\nu} \delta g^{\mu\nu} }{\sqrt{-g} } 
+=-\frac{1 }{2 } \sqrt{-g} g_{\mu\nu} \delta g^{\mu\nu}
+\end{aligned}
+\end{equation}
+$$
+
+于是有
+
+$$
+\begin{equation}
+\begin{aligned}
+\delta(R \sqrt{-g})
+&=\left(\delta g^{\mu\nu} \right) R_{\mu\nu} \sqrt{-g} + g^{\mu\nu} \left(\delta R_{\mu\nu} \right) \sqrt{-g} + g^{\mu\nu} R_{\mu\nu} \delta\left(\sqrt{-g} \right) \\
+&=R_{\mu\nu} \sqrt{-g} \delta g^{\mu\nu} + \partial_\mu \left(\sqrt{-g} \phi^\mu \right) - \frac{1 }{2 } \sqrt{-g} R g_{\mu\nu} \delta g^{\mu\nu}
+\end{aligned}
+\end{equation}
+$$
+
+因此引力场作用量对度规的变分为
+
+$$
+\begin{equation}
+\begin{aligned}
+\delta I_g
+&=\frac{c^3 }{16\pi G } \int\limits_M \delta\left(R \sqrt{-g} \right) \mathrm{d}^4 x \\
+&=\frac{c^3 }{16\pi G } \int\limits_M \left(R_{\mu\nu} \sqrt{-g} \delta g^{\mu\nu} + \partial_\mu \left(\sqrt{-g} \phi^\mu \right) - \frac{1 }{2 } \sqrt{-g} R g_{\mu\nu} \delta g^{\mu\nu} \right) \mathrm{d}^4 x \\
+&=\frac{c^3 }{16\pi G } \int\limits_M \left(R_{\mu\nu} - \frac{1 }{2 } g_{\mu\nu} R \right) \left(\delta g^{\mu\nu} \right) \sqrt{-g} \mathrm{d}^4 x \\
+\end{aligned}
+\end{equation}
+$$
+
+接下来还需要引力源物质作用量对度规的变分。
+
+$$
+\begin{equation}
+\begin{aligned}
+I_m
+=\frac{1 }{c } \int\limits_M L_m \sqrt{-g} \mathrm{d}^4 x
+\end{aligned}
+\end{equation}
+$$
+
+假定拉式密度 $L_m $ 只含 $g^{\mu\nu} $，而不含 $\partial_\lambda g^{\mu\nu} $，则
+
+$$
+\begin{equation}
+\begin{aligned}
+\delta I_m
+&=\frac{1 }{c } \int\limits_M \delta \left(L_m \sqrt{-g} \right) \mathrm{d}^4 x \\
+&=\frac{1 }{c } \int\limits_M \frac{\partial \left(L_m \sqrt{-g} \right) }{\partial g^{\mu\nu} } \delta g^{\mu\nu} \mathrm{d}^4 x \\
+\end{aligned}
+\end{equation}
+$$
+
+定义
+
+$$
+\begin{equation}
+T_{\mu\nu}
+\equiv -\frac{2 }{\sqrt{-g} } \frac{\partial \left(L_m \sqrt{-g} \right) }{\partial g^{\mu\nu} },\quad
+\frac{\partial \left(L_m \sqrt{-g} \right) }{\partial g^{\mu\nu} }
+=-\frac{1 }{2 } \sqrt{-g} T_{\mu\nu}
+\end{equation}
+$$
+
+则
+
+$$
+\begin{equation}
+\begin{aligned}
+\delta I_m
+&=\frac{1 }{c } \int\limits_M \frac{\partial \left(L_m \sqrt{-g} \right) }{\partial g^{\mu\nu} } \delta g^{\mu\nu} \mathrm{d}^4 x \\
+&=-\frac{1 }{2c } \int\limits_M T_{\mu\nu} \left(\delta g^{\mu\nu} \right) \sqrt{-g} \mathrm{d}^4 x
+\end{aligned}
+\end{equation}
+$$
+
+最小作用量原理说，$\delta I=0 $ 给出体系的运动方程，也即
+
+$$
+\begin{equation}
+\begin{aligned}
+0
+&=\delta I
+=\delta I_g + \delta I_m
+=\frac{c^3 }{16\pi G } \int\limits_M \left(R_{\mu\nu} - \frac{1 }{2 } g_{\mu\nu} R \right) \left(\delta g^{\mu\nu} \right) \sqrt{-g} \mathrm{d}^4 x -\frac{1 }{2c } \int\limits_M T_{\mu\nu} \left(\delta g^{\mu\nu} \right) \sqrt{-g} \mathrm{d}^4 x \\
+&=\frac{c^3 }{16\pi G } \int\limits_M \left(R_{\mu\nu} - \frac{1 }{2 } g_{\mu\nu} R - \frac{8\pi G }{c^4 } T_{\mu\nu} \right) \left(\delta g^{\mu\nu} \right) \sqrt{-g} \mathrm{d}^4 x
+\end{aligned}
+\end{equation}
+$$
+
+最终得到爱因斯坦引力场方程：
+
+$$
+\begin{equation}
+R_{\mu\nu} - \frac{1 }{2 } g_{\mu\nu} R = \frac{8\pi G }{c^4 } T_{\mu\nu}
 \end{equation}
 $$
 

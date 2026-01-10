@@ -1359,3 +1359,69 @@ R_{ij}
 \end{aligned}
 \end{equation}
 $$
+
+# 4
+
+## 4.1
+
+由 $f(R) $ 引力作用量
+
+$$
+\begin{equation}
+S
+=\frac{1 }{16\pi G } \int \mathrm{d}^4 \sqrt{-g} f(r) + S_m
+\end{equation}
+$$
+
+变分，推出 $f(R) $ 引力中的引力场方程
+
+$$
+\begin{equation}
+f'(R) R_{\mu\nu} - \frac{1 }{2 } f(R) g_{\mu\nu} - \left(\nabla_\mu\nabla_\nu - g_{\mu\nu} \nabla^\lambda\nabla_\lambda \right) f'(R)
+=8\pi G T_{\mu\nu}
+\end{equation}
+$$
+
+## 4.2
+
+计算Schwarzchild解的空间部分线元
+
+$$
+\begin{equation}
+\mathrm{d}s^2
+=r^2\left(\mathrm{d}\theta^2 + \sin^2\theta\mathrm{d}\phi^2 \right) + \frac{\mathrm{d}r^2 }{1-2GM/c^2 r } 
+\end{equation}
+$$
+
+当坐标半径 $r=a $ 时的球面面积；$r=a $ 时的球体体积；从半径为 $r=2GM/c^2 $ 的球面到 $r=3GM/c^2 $ 的球面的径向距离。
+
+## 4.3
+
+计算Schwarzchild度规
+
+$$
+\begin{equation}
+\mathrm{d}s^2
+=-\mathrm{e}^\nu c^2 \mathrm{d}t^2 + r^2\left(\mathrm{d}\theta^2 +\sin^2\theta\mathrm{d}\phi^2 \right) + \mathrm{e}^{-\nu} \mathrm{d}r^2
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\mathrm{e}^\nu
+=1-\frac{2GM }{c^2 r } 
+\end{equation}
+$$
+
+情况下所有联络 $\Gamma_{\mu\nu}^\lambda $
+
+## 4.4
+
+据上题结果，由Schwarzchild时空粒子运动方程出发，导出在平面极坐标系下轨道满足的方程（GR中的Binet方程），并讨论水星进动问题。
+
+## 4.5
+
+导出光子在平面极坐标系下轨道所满足的方程，并讨论光线在太阳附近偏折的问题。
+
+
+
