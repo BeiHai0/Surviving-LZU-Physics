@@ -1369,11 +1369,194 @@ $$
 $$
 \begin{equation}
 S
-=\frac{1 }{16\pi G } \int \mathrm{d}^4 \sqrt{-g} f(r) + S_m
+=\frac{1 }{16\pi G } \int \mathrm{d}^4 x \sqrt{-g} f(R) + S_m
 \end{equation}
 $$
 
 变分，推出 $f(R) $ 引力中的引力场方程
+
+$$
+\begin{equation}
+f'(R) R_{\mu\nu} - \frac{1 }{2 } f(R) g_{\mu\nu} - \left(\nabla_\mu\nabla_\nu - g_{\mu\nu} \nabla^\lambda\nabla_\lambda \right) f'(R)
+=8\pi G T_{\mu\nu}
+\end{equation}
+$$
+
+先看引力作用量
+
+$$
+\begin{equation}
+S_g
+=\frac{1 }{16\pi G } \int \mathrm{d}^4 x \sqrt{-g} f(R)
+\end{equation}
+$$
+
+对度规的变分。计算
+
+$$
+\begin{equation}
+\begin{aligned}
+\delta \left[\sqrt{-g} f(R) \right]
+&=\delta \left(\sqrt{-g} \right) f(R) + \sqrt{-g} \delta\left[f(R) \right]
+\end{aligned}
+\end{equation}
+$$
+
+对于第一项，利用 $\delta g = -g g_{\mu\nu}\delta g^{\mu\nu} $ 有
+
+$$
+\begin{equation}
+\begin{aligned}
+\delta \left(\sqrt{-g} \right) f(R)
+&=-\frac{1 }{2 } \frac{\delta g }{\sqrt{-g} } f(R) \\
+&=-\frac{1 }{2 } \frac{-g g_{\mu\nu}\delta g^{\mu\nu} }{\sqrt{-g} } f(R) \\
+&=-\frac{1 }{2 } \sqrt{-g} g_{\mu\nu} f(R) \delta g^{\mu\nu}
+\end{aligned}
+\end{equation}
+$$
+
+对于第二项，利用 $g^{\mu\nu} \delta R_{\mu\nu} = \nabla_\mu \phi^\mu $
+
+$$
+\begin{equation}
+\begin{aligned}
+\sqrt{-g} \delta\left[f(R) \right]
+&=\sqrt{-g} f'(R) \delta R \\
+&=\sqrt{-g} f'(R) \delta \left(g^{\mu\nu} R_{\mu\nu} \right) \\
+&=\sqrt{-g} f'(R) \left[\left(\delta g^{\mu\nu} \right) R_{\mu\nu} + g^{\mu\nu} \delta R_{\mu\nu} \right] \\
+&=\sqrt{-g} f'(R) R_{\mu\nu} \delta g^{\mu\nu} + \sqrt{-g} f'(R) \nabla_\mu \phi^\mu \\
+&=\sqrt{-g} f'(R) R_{\mu\nu} \delta g^{\mu\nu} + \sqrt{-g} \left\{\nabla_\mu \left[f'(R) \phi^\mu \right] - \phi^\mu \nabla_\mu f'(R) \right\} \\
+&=\sqrt{-g} f'(R) R_{\mu\nu} \delta g^{\mu\nu} + \sqrt{-g} \nabla_\mu \left[f'(R) \phi^\mu \right] - \sqrt{-g} \phi^\mu \nabla_\mu f'(R) \\
+&=\sqrt{-g} f'(R) R_{\mu\nu} \delta g^{\mu\nu} - \sqrt{-g} \phi^\mu \nabla_\mu f'(R) + \left[\partial M~\mathrm{term} \right] \\
+\end{aligned}
+\end{equation}
+$$
+
+其中 $\partial M~\mathrm{term} $ 在体积分中可化为边界面积分，为零。为了进一步计算，注意到
+
+$$
+\begin{equation}
+\begin{aligned}
+\phi^\mu
+\equiv g^{\lambda\nu} \delta \Gamma^\mu_{\lambda\nu} - g^{\mu\nu}\delta \Gamma^\lambda_{\lambda\nu}
+\end{aligned}
+\end{equation}
+$$
+
+利用联络对 $g_{\mu\nu} $ 的变分
+
+$$
+\begin{equation}
+\delta \Gamma_{\mu\nu}^\lambda
+=\frac{1 }{2 } g^{\lambda\sigma}\left(\nabla_\mu \delta g_{\nu\sigma} + \nabla_\nu \delta g_{\nu\sigma} - \nabla_\sigma \delta g_{\mu\nu} \right)
+\end{equation}
+$$
+
+可以计算
+
+$$
+\begin{equation}
+\delta \Gamma^\mu_{\lambda\nu}
+=\frac{1 }{2 } g^{\mu\sigma} \left(\nabla_\lambda \delta g_{\nu\sigma} + \nabla_\nu \delta g_{\lambda\sigma} - \nabla_\sigma \delta g_{\lambda\nu} \right)
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+\delta \Gamma^\lambda_{\lambda\nu}
+&=\frac{1 }{2 } g^{\lambda\sigma} \left(\nabla_\lambda \delta g_{\nu\sigma} + \nabla_\nu \delta g_{\lambda\sigma} - \nabla_\sigma \delta g_{\lambda\nu} \right) \\
+\end{aligned}
+\end{equation}
+$$
+
+于是可以进一步表达 $\phi^\mu $
+
+$$
+\begin{equation}
+\begin{aligned}
+\phi^\mu
+&\equiv g^{\lambda\nu} \delta \Gamma^\mu_{\lambda\nu} - g^{\mu\nu}\delta \Gamma^\lambda_{\lambda\nu} \\
+&=g^{\lambda\nu} \left[\frac{1 }{2 } g^{\mu\sigma} \left(\nabla_\lambda \delta g_{\nu\sigma} + \nabla_\nu \delta g_{\lambda\sigma} - \nabla_\sigma \delta g_{\lambda\nu} \right) \right] - g^{\mu\nu} \left[\frac{1 }{2 } g^{\lambda\sigma} \left(\nabla_\lambda \delta g_{\nu\sigma} + \nabla_\nu \delta g_{\lambda\sigma} - \nabla_\sigma \delta g_{\lambda\nu} \right) \right] \\
+&=\frac{1 }{2 } \left(\nabla^\nu \delta g^\mu_\nu + \nabla^\lambda \delta g^\mu_\lambda - \nabla^\mu \delta g^\nu_\nu \right) - \frac{1 }{2 } \left(\nabla^\sigma \delta g^\mu_\sigma + \nabla^\mu \delta g^\sigma_\sigma - \nabla^\lambda \delta g^\mu_\lambda\right) \\
+&=\frac{1 }{2 } \left(2 \nabla^\nu \delta g^\mu_\nu - \nabla^\mu \delta g^\nu_\nu \right) - \frac{1 }{2 } \nabla^\mu \delta g^\sigma_\sigma \\
+&=\nabla^\nu \delta g^\mu_\nu - \nabla^\mu \delta g^\nu_\nu \\
+\end{aligned}
+\end{equation}
+$$
+
+于是
+
+$$
+\begin{equation}
+\begin{aligned}
+-\sqrt{-g} \phi^\mu \nabla_\mu f'(R)
+&=-\sqrt{-g} \left[\nabla^\nu \left(\delta g^\mu_\nu \right) - \nabla^\mu \left(\delta g^\nu_\nu \right) \right] \nabla_\mu f'(R) \\
+&=\sqrt{-g} \left[\nabla^\mu \left(\delta g^\nu_\nu \right) \right]\nabla_\mu f'(R) - \sqrt{-g} \left[\nabla^\nu\left(\delta g^\mu_\nu \right) \right]\nabla_\mu f'(R) \\
+&=\sqrt{-g} \left[- \left(\delta g^\nu_\nu \right) \nabla^\mu \nabla_\mu f'(R) \right] - \sqrt{-g} \left[-\left(\delta g^\mu_\nu \right) \nabla^\nu \nabla_\mu f'(R) \right] + \left[\partial M~\mathrm{term} \right] \\
+&=\sqrt{-g} g_{\nu\sigma} \left(\delta g^{\mu\sigma} \right) \nabla^\nu \nabla_\mu f'(R) - \sqrt{-g} g_{\nu\sigma} \left( \delta g^{\nu\sigma} \right)\nabla^\mu \nabla_\mu f'(R) + \left[\partial M~\mathrm{term} \right] \\
+&=\sqrt{-g} \left(\delta g^{\mu\sigma} \right) \nabla_\sigma \nabla_\mu f'(R) - \sqrt{-g} g_{\mu\nu} \left( \delta g^{\mu\nu} \right)\nabla^\lambda \nabla_\lambda f'(R) + \left[\partial M~\mathrm{term} \right] \\
+&=\sqrt{-g} \left(\delta g^{\mu\nu} \right) \nabla_\nu \nabla_\mu f'(R) - \sqrt{-g} g_{\mu\nu} \left( \delta g^{\mu\nu} \right)\nabla^\lambda \nabla_\lambda f'(R) + \left[\partial M~\mathrm{term} \right] \\
+&=\sqrt{-g} \left(\delta g^{\nu\mu} \right) \nabla_\nu \nabla_\mu f'(R) - \sqrt{-g} g_{\mu\nu} \left( \delta g^{\mu\nu} \right)\nabla^\lambda \nabla_\lambda f'(R) + \left[\partial M~\mathrm{term} \right] \\
+&=\sqrt{-g} \left(\delta g^{\mu\nu} \right) \nabla_\mu \nabla_\nu f'(R) - \sqrt{-g} g_{\mu\nu} \left( \delta g^{\mu\nu} \right)\nabla^\lambda \nabla_\lambda f'(R) + \left[\partial M~\mathrm{term} \right] \\
+\end{aligned}
+\end{equation}
+$$
+
+总之，
+
+$$
+\begin{equation}
+\begin{aligned}
+\delta \left[\sqrt{-g} f(R) \right]
+&=\delta \left(\sqrt{-g} \right) f(R) + \sqrt{-g} \delta\left[f(R) \right] \\
+&=-\frac{1 }{2 } \sqrt{-g} g_{\mu\nu} f(R) \delta g^{\mu\nu} + \sqrt{-g} f'(R) R_{\mu\nu} \delta g^{\mu\nu} - \sqrt{-g} \phi^\mu \nabla_\mu f'(R) + \left[\partial M~\mathrm{term} \right] \\
+&=-\frac{1 }{2 } \sqrt{-g} g_{\mu\nu} f(R) \delta g^{\mu\nu} + \sqrt{-g} f'(R) R_{\mu\nu} \delta g^{\mu\nu} + \sqrt{-g} \left(\delta g^{\mu\nu} \right) \nabla_\mu \nabla_\nu f'(R) - \sqrt{-g} g_{\mu\nu} \left( \delta g^{\mu\nu} \right)\nabla^\lambda \nabla_\lambda f'(R) + \left[\partial M~\mathrm{term} \right]  \\
+&=\sqrt{-g} \left[f'(R) R_{\mu\nu} - \frac{1 }{2 } g_{\mu\nu} f(R) + \left(\nabla_\mu\nabla_\nu - g_{\mu\nu} \nabla^\lambda \nabla_\lambda \right)f'(R) \right] \delta g^{\mu\nu} + \left[\partial M~\mathrm{term} \right]
+\end{aligned}
+\end{equation}
+$$
+
+则引力作用量的变分为
+
+$$
+\begin{equation}
+\begin{aligned}
+\delta S_g
+&=\frac{1 }{16\pi G } \int \mathrm{d}^4 x \delta \left[\sqrt{-g} f(R) \right] \\
+&=\frac{1 }{16\pi G } \int \mathrm{d}^4 x \sqrt{-g} \left[f'(R) R_{\mu\nu} - \frac{1 }{2 } g_{\mu\nu} f(R) + \left(\nabla_\mu\nabla_\nu - g_{\mu\nu} \nabla^\lambda \nabla_\lambda \right)f'(R) \right] \delta g^{\mu\nu} + \int \left[\partial M~\mathrm{term} \right] \\
+&=\frac{1 }{16\pi G } \int \mathrm{d}^4 x \sqrt{-g} \left[f'(R) R_{\mu\nu} - \frac{1 }{2 } g_{\mu\nu} f(R) + \left(\nabla_\mu\nabla_\nu - g_{\mu\nu} \nabla^\lambda \nabla_\lambda \right)f'(R) \right] \delta g^{\mu\nu}
+\end{aligned}
+\end{equation}
+$$
+
+对于引力源物质作用量，能动张量满足
+
+$$
+\begin{equation}
+\delta S_m
+=-\frac{1 }{2 } \int \mathrm{d}^4 x \sqrt{-g} T_{\mu\nu} \delta g^{\mu\nu}
+\end{equation}
+$$
+
+由最小作用量原理
+
+$$
+\begin{equation}
+\delta S = \delta S_g + \delta S_m = 0
+\end{equation}
+$$
+
+可得
+
+$$
+\begin{equation}
+f'(R) R_{\mu\nu} - \frac{1 }{2 } g_{\mu\nu} f(R) + \left(\nabla_\mu\nabla_\nu - g_{\mu\nu} \nabla^\lambda \nabla_\lambda \right)f'(R) - 8\pi G T_{\mu\nu}
+=0
+\end{equation}
+$$
+
+也即 $f(R) $ 引力中的引力场方程
 
 $$
 \begin{equation}
@@ -1395,6 +1578,121 @@ $$
 
 当坐标半径 $r=a $ 时的球面面积；$r=a $ 时的球体体积；从半径为 $r=2GM/c^2 $ 的球面到 $r=3GM/c^2 $ 的球面的径向距离。
 
+- $r=a $ 时的球面面积
+
+在 $r=a $ 的二维球面上，
+
+$$
+\begin{equation}
+\mathrm{d}s^2
+=a^2 \mathrm{d}\theta^2  + a^2 \sin^2\theta \mathrm{d}\phi^2
+\end{equation}
+$$
+
+度规：
+
+$$
+\begin{equation}
+\left[g_{ij} \right]
+=\mathrm{diag}\left(a^2,a^2 \sin^2\theta \right)
+\end{equation}
+$$
+
+面元为
+
+$$
+\begin{equation}
+\mathrm{d}A
+=\sqrt{\mathrm{det}\left[g_{ij} \right]}\mathrm{d}x^i\mathrm{d}x^j
+=a^2\sin\theta\mathrm{d}\theta\mathrm{d}\phi
+\end{equation}
+$$
+
+球面面积：
+
+$$
+\begin{equation}
+\begin{aligned}
+A
+=\int \mathrm{d}A
+=\int_{\phi=0}^{\phi=2\pi} \int_{\theta=0}^{\theta=\pi} a^2\sin\theta\mathrm{d}\theta\mathrm{d}\phi
+=4\pi a^2
+\end{aligned}
+\end{equation}
+$$
+
+- $r=a $ 时的球体体积
+
+令
+
+$$
+\begin{equation}
+r_s
+\equiv \frac{2G M }{c^2 } 
+\end{equation}
+$$
+
+则
+
+$$
+\begin{equation}
+\begin{aligned}
+\mathrm{d}s^2
+&=r^2\left(\mathrm{d}\theta^2 + \sin^2\theta\mathrm{d}\phi^2 \right) + \frac{\mathrm{d}r^2 }{1-2GM/c^2 r } \\
+&=\mathrm{d}s^2
+=r^2\left(\mathrm{d}\theta^2 + \sin^2\theta\mathrm{d}\phi^2 \right) + \frac{\mathrm{d}r^2 }{1-r_s / r } 
+\end{aligned}
+\end{equation}
+$$
+
+度规：
+
+$$
+\begin{equation}
+\left[g_{ij} \right]
+=\mathrm{diag}\left(1-r_s/r,r^2,r^2 \sin^2\theta \right)
+\end{equation}
+$$
+
+体元：
+
+$$
+\begin{equation}
+\begin{aligned}
+\mathrm{d}V
+=\sqrt{\mathrm{det}\left[g_{ij} \right]} \mathrm{d}x^i\mathrm{d}x^j
+=\frac{r^2\sin\theta }{\sqrt{1-r_s/r} } \mathrm{d}r\mathrm{d}\theta\mathrm{d}\phi
+\end{aligned}
+\end{equation}
+$$
+
+球体体积：
+
+$$
+\begin{equation}
+\begin{aligned}
+V
+&=\int \mathrm{d}V
+=\int_{r=0}^{r=a} \int_{\phi=0}^{\phi=2\pi} \int_{\theta=0}^{\theta=\pi}  \frac{r^2\sin\theta }{\sqrt{1-r_s/r} } \mathrm{d}r\mathrm{d}\theta\mathrm{d}\phi \\
+&=4\pi \int_{r=0}^{r=a} \frac{r^2 }{\sqrt{1-r_s/r} } \mathrm{d}r \\
+\end{aligned}
+\end{equation}
+$$
+
+- 从半径为 $r=2GM/c^2=r_s $ 的球面到 $r=3GM/c^2=3r_s/2 $ 的球面的径向距离
+
+$$
+\begin{equation}
+\begin{aligned}
+\Delta r
+&=\int_{r=r_s}^{r=3r_s/2} \frac{\mathrm{d}r }{\sqrt{1-r_s/r} } 
+=\left. \left[\sqrt{r(r-r_s)} + r_s\ln \left|\frac{\sqrt{r-r_s} + \sqrt{r} }{\sqrt{r_s} }  \right| \right] \right|_{r=r_s}^{r=3r_s/2} \\
+&=\frac{\sqrt{3} }{2 } r_s + r_s \ln\left(\frac{\sqrt{2} + \sqrt{6} }{2 }  \right) \\
+&=\left[\frac{\sqrt{3} }{2 } + \ln \left(\frac{\sqrt{2} + \sqrt{6} }{2 }  \right) \right] r_s
+\end{aligned}
+\end{equation}
+$$
+
 ## 4.3
 
 计算Schwarzchild度规
@@ -1413,11 +1711,238 @@ $$
 \end{equation}
 $$
 
-情况下所有联络 $\Gamma_{\mu\nu}^\lambda $
+情况下所有联络 $\Gamma_{\mu\nu}^\lambda .$
+
+$$
+\begin{equation}
+\left(x^0,x^1,x^2,x^3 \right)
+\equiv \left(ct,r,\theta,\phi \right)
+\end{equation}
+$$
+
+线元
+
+$$
+\begin{equation}
+\begin{aligned}
+\mathrm{d}s^2
+&=-\mathrm{e}^\nu c^2 \mathrm{d}t^2 + r^2\left(\mathrm{d}\theta^2 +\sin^2\theta\mathrm{d}\phi^2 \right) + \mathrm{e}^{-\nu} \mathrm{d}r^2 \\
+&=g_{\mu\nu} \mathrm{d}x^\mu\mathrm{d}x^\nu
+\end{aligned}
+\end{equation}
+$$
+
+度规
+
+$$
+\begin{equation}
+\left[g_{\mu\nu} \right]
+=\mathrm{diag}\left(-\mathrm{e}^\nu,\mathrm{e}^{-\nu},r^2,r^2\sin^2\theta \right)
+\end{equation}
+$$
+
+逆度规
+
+$$
+\begin{equation}
+\left[g^{\mu\nu} \right]
+=\mathrm{diag}\left(-\mathrm{e}^{-\nu},\mathrm{e}^{\nu},\frac{1 }{r^2 } ,\frac{1 }{r^2\sin^2\theta } \right)
+\end{equation}
+$$
+
+下面计算联络。
+
+$$
+\begin{equation}
+\Gamma^\lambda_{\mu\nu}
+=\frac{1 }{2 } g^{\lambda\sigma} \left(\partial_\mu g_{\nu\sigma} + \partial_\nu g_{\mu\sigma} - \partial_\sigma g_{\mu\nu} \right)
+\end{equation}
+$$
+
+- $\lambda=0 $
+
+$$
+\begin{equation}
+\begin{aligned}
+\Gamma^0_{\mu\nu}
+&=\frac{1 }{2 } g^{0\sigma} \left(\partial_\mu g_{\nu\sigma} + \partial_\nu g_{\mu\sigma} - \partial_\sigma g_{\mu\nu} \right) \\
+&=\frac{1 }{2 } g^{00} \left(\partial_\mu g_{\nu0} + \partial_\nu g_{\mu0} - \partial_0 g_{\mu\nu} \right) \\
+&=-\frac{1 }{2 } \mathrm{e}^{-\nu} \left(\partial_\mu g_{\nu0} + \partial_\nu g_{\mu0} \right)
+\end{aligned}
+\end{equation}
+$$
+
+当 $(\mu,\nu)=(i,j) $ 时，联络恒为零；当 $\mu=0 $ 且 $\nu=0 $ 时联络也为零。
+
+非零联络：
+
+$$
+\begin{equation}
+\begin{aligned}
+\Gamma^0_{10}
+=\Gamma^0_{01}
+=-\frac{1 }{2 } \mathrm{e}^{-\nu} \left(\partial_0 g_{10} + \partial_1 g_{00} \right)
+=-\frac{1 }{2 } \mathrm{e}^{-\nu} \partial_1 \left(-\mathrm{e}^\nu \right)
+=\frac{1 }{2 } \nu'
+\end{aligned}
+\end{equation}
+$$
+
+- $\lambda=1 $
+
+$$
+\begin{equation}
+\begin{aligned}
+\Gamma^1_{\mu\nu}
+&=\frac{1 }{2 } g^{1\sigma} \left(\partial_\mu g_{\nu\sigma} + \partial_\nu g_{\mu\sigma} - \partial_\sigma g_{\mu\nu} \right) \\
+&=\frac{1 }{2 } g^{11} \left(\partial_\mu g_{\nu1} + \partial_\nu g_{\mu1} - \partial_1 g_{\mu\nu} \right) \\
+&=\frac{1 }{2 } \mathrm{e}^\nu \left(\partial_\mu g_{\nu1} + \partial_\nu g_{\mu1} - \partial_1 g_{\mu\nu} \right) \\
+\end{aligned}
+\end{equation}
+$$
+
+当 $\mu,\nu\ne 1 $ 时，非零的联络为
+
+$$
+\begin{equation}
+\Gamma^1_{00}
+=\frac{1 }{2 } \mathrm{e}^\nu \left(- \partial_r \left(-\mathrm{e}^\nu \right) \right)
+=\frac{\nu' }{2 } \mathrm{e}^{2\nu}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\Gamma^1_{22}
+=\frac{1 }{2 } \mathrm{e}^\nu \left(-\partial_r \left(r^2 \right) \right)
+=-r\mathrm{e}^\nu
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\Gamma^1_{33}
+=\frac{1 }{2 } \mathrm{e}^\nu\left(-\partial_r \left(r^2\sin^2\theta \right) \right)
+=-r \mathrm{e}^\nu \sin^2\theta
+\end{equation}
+$$
+
+当 $\mu=\nu=1 $ 时，
+
+$$
+\begin{equation}
+\Gamma^1_{11}
+=\frac{1 }{2 } \mathrm{e}^\nu \left(\partial_1 g_{11} \right)
+=\frac{1 }{2 } \mathrm{e}^\nu \left(\partial_r \left(\mathrm{e}^{-\nu} \right) \right)
+=-\frac{\nu' }{2 }
+\end{equation}
+$$
+
+当 $\mu,\nu $ 中只有一个为 $1 $ 时，
+
+$$
+\begin{equation}
+\Gamma^1_{01}=\Gamma^1_{10}=\Gamma^1_{12}=\Gamma^1_{21}=\Gamma^1_{13}=\Gamma^1_{31}=0
+\end{equation}
+$$
+
+- $\lambda=2 $
+
+$$
+\begin{equation}
+\begin{aligned}
+\Gamma^2_{\mu\nu}
+&=\frac{1 }{2 } g^{2\sigma} \left(\partial_\mu g_{\nu\sigma} + \partial_\nu g_{\mu\sigma} - \partial_\sigma g_{\mu\nu} \right) \\
+&=\frac{1 }{2 } g^{22} \left(\partial_\mu g_{\nu2} + \partial_\nu g_{\mu2} - \partial_2 g_{\mu\nu} \right) \\
+&=\frac{1 }{2r^2 } \left(\partial_\mu g_{\nu2} + \partial_\nu g_{\mu2} - \partial_2 g_{\mu\nu} \right) \\
+\end{aligned}
+\end{equation}
+$$
+
+当 $\mu,\nu\ne 2 $ 时，
+
+$$
+\begin{equation}
+\Gamma^2_{33}
+=\frac{1 }{2r^2 } \left(-\partial_\theta \left(r^2 \sin^2\theta \right) \right)
+=-\sin\theta\cos\theta
+\end{equation}
+$$
+
+当 $\mu,\nu $ 中只有一个为 $2 $ 时，
+
+$$
+\begin{equation}
+\Gamma^2_{12} = \Gamma^2_{21}
+=\frac{1 }{2r^2 } \left(\partial_1 g_{22} \right)
+=\frac{1 }{2r^2 } \left(\partial_r \left(r^2 \right) \right)
+=\frac{1 }{r } 
+\end{equation}
+$$
+
+当 $(\mu,\nu)=(2,2) $ 时，
+
+$$
+\begin{equation}
+\Gamma^2_{22}=0
+\end{equation}
+$$
+
+- $\lambda=3 $
+
+$$
+\begin{equation}
+\begin{aligned}
+\Gamma^3_{\mu\nu}
+&=\frac{1 }{2 } g^{3\sigma} \left(\partial_\mu g_{\nu\sigma} + \partial_\nu g_{\mu\sigma} - \partial_\sigma g_{\mu\nu} \right) \\
+&=\frac{1 }{2 } g^{33} \left(\partial_\mu g_{\nu3} + \partial_\nu g_{\mu3} - \partial_3 g_{\mu\nu} \right) \\
+&=\frac{1 }{2 r^2\sin^2\theta} \left(\partial_\mu g_{\nu3} + \partial_\nu g_{\mu3} \right) \\
+\end{aligned}
+\end{equation}
+$$
+
+当 $\mu,\nu\ne 3 $ 时，所有联络都为零。
+
+当 $\mu,\nu $ 中只有一个为 $3 $ 时，
+
+$$
+\begin{equation}
+\Gamma^3_{13}=\Gamma^3_{31}
+=\frac{1 }{2r^2 \sin^2\theta } \left(\partial_1 g_{33} \right)
+=\frac{1 }{2r^2 \sin^2\theta } \left(\partial_r \left(r^2\sin^2\theta \right) \right)
+=\frac{1 }{r } 
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\Gamma^3_{23}=\Gamma^3_{32}
+=\frac{1 }{2r^2\sin^2\theta } \left(\partial_2 g_{33} \right)
+=\frac{1 }{2r^2\sin^2\theta } \left(\partial_\theta \left(r^2\sin^2\theta \right) \right)
+=\cot\theta
+\end{equation}
+$$
+
+当 $\mu,\nu=3 $ 时，
+
+$$
+\begin{equation}
+\Gamma^3_{33}
+=0
+\end{equation}
+$$
+
+$$
+\begin{equation}
+
+\end{equation}
+$$
 
 ## 4.4
 
 据上题结果，由Schwarzchild时空粒子运动方程出发，导出在平面极坐标系下轨道满足的方程（GR中的Binet方程），并讨论水星进动问题。
+
+
 
 ## 4.5
 
