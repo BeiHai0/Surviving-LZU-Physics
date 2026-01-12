@@ -1,10 +1,10 @@
 # 1
 
-计算牛顿近似中的所有非零联络 $\Gamma_{\mu\nu}^\lambda $
+计算牛顿近似中的所有非零联络 $\Gamma_{\mu\nu}^\lambda .$
 
 # 2
 
-写出逆变、协变与二阶张量的坐标变换式，已知 $A^\mu_\nu=\partial \bar{x}^\mu/\partial x^\nu,\bar{A}^\mu_\nu=\partial x^\mu/\partial\bar{x}^\nu $ 且 $\mathrm{det}\left[A^\mu_\nu \right]\ne 0 $，并写出它们的协变微分表达式。
+写出逆变、协变与二阶张量的坐标变换式，已知 $A^\mu_\nu=\partial \bar{x}^\mu/\partial x^\nu,\bar{A}^\mu_\nu=\partial x^\mu/\partial\bar{x}^\nu $ 且 $\mathrm{det}\left[A^\mu_\nu \right]\ne 0 $ 
 
 $$
 \begin{equation}
@@ -396,4 +396,198 @@ $$
 
 # 7
 
-推导史瓦西时空与闵可夫斯基时空的类光测地线，简述并画出krusal延拓图与彭罗斯图。
+推导史瓦西时空与闵可夫斯基时空的类光测地线，简述并画出Kruskal延拓图与彭罗斯图。
+
+闵氏时空线元
+
+$$
+\begin{equation}
+\mathrm{d}s^2
+=-c^2\mathrm{d}t^2 + \mathrm{d}r^2 + r^2\left(\mathrm{d}\theta^2 + \sin^2\theta\mathrm{d}\phi^2 \right)
+\end{equation}
+$$
+
+类光测地线满足
+
+$$
+\begin{equation}
+\mathrm{d}s^2 = 0
+\end{equation}
+$$
+
+如果只考虑径向，则
+
+$$
+\begin{equation}
+-c^2 \mathrm{d}t^2 + \mathrm{d}r^2 = 0
+\end{equation}
+$$
+
+取 $c=1 $，则
+
+$$
+\begin{equation}
+\left(\frac{\mathrm{d}t }{\mathrm{d}r }  \right)^2
+=1,\quad
+\frac{\mathrm{d}t }{\mathrm{d}r } = \pm 1,
+\end{equation}
+$$
+
+径向类光测地线为
+
+$$
+\begin{equation}
+t = \pm r + \mathrm{const}
+\end{equation}
+$$
+
+史瓦西时空线元
+
+$$
+\begin{equation}
+\mathrm{d}s^2
+=-c^2 \left(1-\frac{2GM }{c^2 r }  \right)\mathrm{d}t^2 + \left(1-\frac{2GM }{c^2 r}  \right)^{-1} \mathrm{d}r^2 + r^2\left(\mathrm{d}\theta^2 + \sin^2\theta\mathrm{d}\phi^2 \right)
+\end{equation}
+$$
+
+如果只考虑径向，并取 $c=G=1 $，则
+
+$$
+\begin{equation}
+\mathrm{d}s^2
+=-\left(1-\frac{2M }{r }  \right)\mathrm{d}t^2 + \left(1-\frac{2M }{r }  \right)^{-1} \mathrm{d}r^2
+\end{equation}
+$$
+
+类光测地线满足
+
+$$
+\begin{equation}
+\mathrm{d}s^2 = 0
+\end{equation}
+$$
+
+即
+
+$$
+\begin{equation}
+\left(\frac{\mathrm{d}t }{\mathrm{d}r }  \right)^2
+=\left(1-\frac{2M }{r }  \right)^{-2},\quad
+\frac{\mathrm{d}t }{\mathrm{d}r }
+=\pm \left(1-\frac{2M }{r }  \right)^{-1}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\mathrm{d}t
+=\pm \frac{1 }{1-2M/r } \mathrm{d}r
+=\pm \frac{r }{r-2M } \mathrm{d}r
+=\pm \frac{r-2M + 2M }{r-2M } \mathrm{d}r
+=\pm\left(1 + \frac{2M }{r-2M }  \right)\mathrm{d}(r-2M)
+\end{equation}
+$$
+
+两边积分得
+
+$$
+\begin{equation}
+t = \pm \left(r + 2M\ln\left|r-2M \right| \right) + \mathrm{const}
+\end{equation}
+$$
+
+史瓦西时空径向线元：
+
+$$
+\begin{equation}
+\mathrm{d}s^2
+=-\left(1-2M/r \right) \mathrm{d}t^2 + \left(1-2M/r \right)^{-1} \mathrm{d}r^2
+\end{equation}
+$$
+
+考虑坐标变换
+
+$$
+\left\{
+\begin{aligned}
+&T = 4M\left(\frac{r }{2M } -1 \right)^{1/2} \mathrm{e}^{\frac{r }{4M } } \sinh\left(\frac{t }{4M }  \right) \\
+&R = 4M\left(\frac{r }{2M } -1 \right)^{1/2} \mathrm{e}^{\frac{r }{4M } } \cosh\left(\frac{t }{4M }  \right)
+\end{aligned}
+\right.,r>2M,\mathrm{I}
+$$
+
+$$
+\left\{
+\begin{aligned}
+&T = -4M\left(\frac{r }{2M } -1 \right)^{1/2} \mathrm{e}^{\frac{r }{4M } } \sinh\left(\frac{t }{4M }  \right) \\
+&R = -4M\left(\frac{r }{2M } -1 \right)^{1/2} \mathrm{e}^{\frac{r }{4M } } \cosh\left(\frac{t }{4M }  \right)
+\end{aligned}
+\right.,r>2M,\mathrm{II}
+$$
+
+$$
+\left\{
+\begin{aligned}
+&T = 4M\left(1 - \frac{r }{2M } \right)^{1/2} \mathrm{e}^{\frac{r }{4M } } \cosh\left(\frac{t }{4M }  \right) \\
+&R = 4M\left(1 - \frac{r }{2M } \right)^{1/2} \mathrm{e}^{\frac{r }{4M } } \sinh\left(\frac{t }{4M }  \right)
+\end{aligned}
+\right.,r<2M,F
+$$
+
+$$
+\left\{
+\begin{aligned}
+&T = -4M\left(1 - \frac{r }{2M } \right)^{1/2} \mathrm{e}^{\frac{r }{4M } } \cosh\left(\frac{t }{4M }  \right) \\
+&R = -4M\left(1 - \frac{r }{2M } \right)^{1/2} \mathrm{e}^{\frac{r }{4M } } \sinh\left(\frac{t }{4M }  \right)
+\end{aligned}
+\right.,r<2M,P
+$$
+
+Kruskal坐标下的线元：
+
+$$
+\begin{equation}
+\mathrm{d}s^2
+=\frac{2M }{r } \mathrm{e}^{-r/2M} \left(-\mathrm{d}T^2 + \mathrm{d}R^2 \right) + r^2\left(\mathrm{d}\theta^2 + \sin^2\theta\mathrm{d}\phi^2 \right)
+\end{equation}
+$$
+
+$r $ 与 $R,T $ 的关系：
+
+$$
+\begin{equation}
+R^2 - T^2 = 16 M^2 \left(\frac{r }{2M } -1 \right) \mathrm{e}^{r/2M}
+\end{equation}
+$$
+
+> 上式对四个区域都成立。
+
+Kruskal坐标消除了度规分量在引力半径处的奇异性，但无法消除 $r=0 $ 的奇点。
+
+Kruskal度规具有最大解析区和最高完备性。
+
+- 类时未来无穷远 $I^+: $ $r $ 有限，$t\to +\infty $
+
+- 类时过去无穷远 $I^-: $ $r $ 有限，$t\to -\infty $
+
+- 类空无穷远 $I^0: $ $t $ 有限，$r\to +\infty $
+
+- 类光未来无穷远 $J^+: $ $(t-r) $ 有限，$(t+r)\to +\infty $
+
+- 类光过去无穷远 $J^-: $ $(t+r) $ 有限，$(t-r)\to +\infty $ 
+
+<div align="center">
+  <img src="fig/fig1.png" width="30%" title="图片描述">
+</div>
+
+<div align="center">
+  <img src="fig/fig2.png" width="30%" title="图片描述">
+</div>
+
+<div align="center">
+  <img src="fig/fig3.png" width="70%" title="图片描述">
+</div>
+
+<div align="center">
+  <img src="fig/fig4.png" width="30%" title="图片描述">
+</div>
