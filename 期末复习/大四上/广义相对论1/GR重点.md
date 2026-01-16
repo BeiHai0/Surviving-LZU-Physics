@@ -240,13 +240,131 @@ $$
 \end{equation}
 $$
 
+**证明**：
+
+比安基恒等式：
+
+$$
+\begin{equation}
+\nabla_\lambda R^\rho{}_{\sigma\mu\nu} + \nabla_\mu R^\rho{}_{\sigma\nu\lambda} + \nabla_\nu R^\rho{}_{\sigma\lambda\mu}
+=0
+\end{equation}
+$$
+
+令 $\rho=\mu $ 得到
+
+$$
+\begin{equation}
+\begin{aligned}
+\nabla_\lambda R^\mu{}_{\sigma\mu\nu} + \nabla_\mu R^\mu{}_{\sigma\nu\lambda} + \nabla_\nu R^\mu{}_{\sigma\lambda\mu}
+=0
+\end{aligned}
+\end{equation}
+$$
+
+由 $R_{\mu\nu}\equiv R^\lambda{}_{\mu\lambda\nu} $ 可知第一项化为
+
+$$
+\begin{equation}
+\nabla_\lambda R^\mu{}_{\sigma\mu\nu} = \nabla_\lambda R_{\sigma\nu}
+\end{equation}
+$$
+
+由 $R^{\rho}{}_{\sigma\mu\nu} = -R^\rho{}_{\sigma\nu\mu} $ 知第三项化为
+
+$$
+\begin{equation}
+\nabla_\nu R^\mu{}_{\sigma\lambda\mu}
+=-\nabla_\nu R^\mu{}_{\sigma\mu\lambda}
+=-\nabla_\nu R_{\sigma\lambda}
+\end{equation}
+$$
+
+于是有
+
+$$
+\begin{equation}
+\nabla_\nu R_{\sigma\lambda}
+=\nabla_\lambda R_{\sigma\nu} + \nabla_\mu R^\mu{}_{\sigma\nu\lambda}
+\end{equation}
+$$
+
+两边同乘 $g^{\sigma\lambda} $，利用 $\nabla_\nu g^{\sigma\lambda}=0 $ 、协变微分的莱布尼兹律以及 $R\equiv g^{\mu\nu} R_{\mu\nu},R^\mu{}_{\nu}\equiv g^{\mu\rho} R_{\rho\nu} $ 有
+
+$$
+\begin{equation}
+\begin{aligned}
+\nabla_\nu R
+=\nabla_\lambda R^\lambda{}_{\nu} + \nabla_\mu\left(g^{\sigma\lambda} R^{\mu}{}_{\sigma\nu\lambda} \right)
+\end{aligned}
+\end{equation}
+$$
+
+上式右边第二项，利用 $R_{\mu\nu\lambda\rho}=-R_{\nu\mu\lambda\rho},R^\lambda{}_{\sigma\mu\nu} = -R^\lambda{}_{\sigma\nu\mu} $ 有
+
+$$
+\begin{equation}
+\begin{aligned}
+g^{\sigma\lambda} R^{\mu}{}_{\sigma\nu\lambda}
+&=g^{\mu\rho}g^{\sigma\lambda} R_{\rho\sigma\nu\lambda}
+=g^{\mu\rho} g^{\sigma\lambda} R_{\nu\lambda\rho\sigma} \\
+&=-g^{\mu\rho} g^{\sigma\lambda} R_{\lambda\nu\rho\sigma}
+=-g^{\mu\rho} R^\sigma{}_{\nu\rho\sigma}
+=g^{\mu\rho} R^\sigma{}_{\nu\sigma\rho} \\
+&=g^{\mu\rho} R_{\nu\rho}
+=R^\mu{}_{\nu}
+\end{aligned}
+\end{equation}
+$$
+
+于是得到
+
+$$
+\begin{equation}
+\nabla_\nu R = \nabla_\lambda R^\lambda{}_{\nu} + \nabla_\mu R^\mu{}_{\nu}
+\end{equation}
+$$
+
+也即
+
+$$
+\begin{equation}
+\nabla_\nu R
+=2 \nabla_\mu R^\mu{}_{\nu},\quad
+\nabla_\mu R^\mu{}_{\nu}
+=\frac{1 }{2 } \nabla_\nu R
+=\frac{1 }{2 } \delta^\mu{}_{\nu} \nabla_\mu R
+\end{equation}
+$$
+
+即
+
+$$
+\begin{equation}
+\nabla_\mu\left(R^\mu{}_\nu - \frac{1 }{2 } \delta^\mu{}_{\nu} R \right)
+=0
+\end{equation}
+$$
+
+两边同乘 $g^{\rho\nu} $ 得
+
+$$
+\begin{equation}
+\nabla_\mu\left(R^{\mu\rho} - \frac{1 }{2 } g^{\rho\mu} R \right)
+=0
+\end{equation}
+$$
+
+又 $R^{\mu\nu} = R^{\nu\mu} $ 于是
+
+$$
+\begin{equation}
+\nabla_\mu\left(R^{\rho\mu} - \frac{1 }{2 } g^{\rho\mu} R \right)
+=0
+\end{equation}
+$$
+
 ## 解题必背物理量
-
-### 牛顿近似
-
-### 弱场线性近似
-
-
 
 ### 引力场作用量、拉式密度以及变分
 
@@ -1803,11 +1921,4 @@ $$
 \end{equation}
 $$
 
-## 雷达回波延迟
-
-## 牛顿近似克氏符
-
-## 弱场线性近似与场方程
-
-## 一些公式的推导
 

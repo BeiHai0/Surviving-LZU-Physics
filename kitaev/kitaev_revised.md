@@ -3530,9 +3530,9 @@ $$
 
 $$
 \begin{equation}
-\sigma_{\bm{r}}^y
-=\mathrm{i}b_{\bm{r}}^y c_{\bm{r}}
-=\left(b_{\bm{r}}^x b_{\bm{r}}^y b_{\bm{r}}^z c_{\bm{r}} \right) \left(\mathrm{i}b_{\bm{r}}^y c_{\bm{r}} \right)
+\sigma_{\bm{r}}^z
+=\mathrm{i}b_{\bm{r}}^z c_{\bm{r}}
+=\left(b_{\bm{r}}^x b_{\bm{r}}^y b_{\bm{r}}^z c_{\bm{r}} \right) \left(\mathrm{i}b_{\bm{r}}^z c_{\bm{r}} \right)
 =-\mathrm{i} b_{\bm{r}}^x b_{\bm{r}}^y
 \end{equation}
 $$

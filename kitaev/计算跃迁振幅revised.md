@@ -1,5 +1,3 @@
-####
-
 标准规范 $\left\{u_{ij}=+1 \right\} $ 下，哈密顿量
 
 $$
@@ -108,8 +106,6 @@ F(0)
 =V(0)^* \left[W^*(0) \right]^{-1}
 \end{equation}
 $$
-
-> 好像还要反对称化一下？
 
 $$
 \begin{equation}
@@ -264,8 +260,6 @@ $$
 $$
 
 实际上 $\widetilde{\mathcal{N}} $ 可以化简。
-
-#### 化简 $\widetilde{\mathcal{N}} $
 
 $$
 \begin{equation}
@@ -499,7 +493,7 @@ $$
 =&-h_z\Braket{\chi(\bm{r},x) , 0_{\alpha(1)} | \alpha(1) \left(\sigma_{\bm{r}}^z + \sigma_{\bm{r}+\bm{\delta}_z}^z \right)  \alpha^\dag(2) | \chi(\bm{r},y) , 0_{\alpha(2)} } \\
 =&-h_z\Braket{\chi , 0_{\alpha(1)} | \alpha(1) \left[-\mathrm{i}\left(1 + \mathrm{i} c_{i,A} c_{j,B} \right) \right] \alpha^\dag(2) | \chi , 0_{\alpha(2)} } \\
 =&\mathrm{i} h_z\Braket{\chi , 0_{\alpha(1)} | \alpha(1) \left(1 + \mathrm{i} c_{i,A} c_{j,B} \right) \alpha^\dag(2) | \chi , 0_{\alpha(2)} } \\
-=&\mathrm{i} h_z \widetilde{\mathcal{N}}(1) \widetilde{\mathcal{N}}(2) \Braket{\chi , 0_{\alpha(0)} | \exp\left(\frac{1 }{2 } F_{i,j}^*(1) \alpha_i(0) \alpha_j(0) \right) \alpha(1) \left(1 + \mathrm{i} c_{i,A} c_{j,B} \right) \alpha^\dag(2) \exp\left(\frac{1 }{2 } \sum_{i,j} F_{i,j}(2) \alpha_i^\dag(0) \alpha_j^\dag(0) \right) | \chi , 0_{\alpha(2)}} \\
+=&\mathrm{i} h_z \widetilde{\mathcal{N}}(1) \widetilde{\mathcal{N}}(2) \Braket{\chi , 0_{\alpha(0)} | \exp\left(\frac{1 }{2 } F_{i,j}^*(1) \alpha_i(0) \alpha_j(0) \right) \alpha(1) \left(1 + \mathrm{i} c_{i,A} c_{j,B} \right) \alpha^\dag(2) \exp\left(\frac{1 }{2 } \sum_{i,j} F_{i,j}(2) \alpha_i^\dag(0) \alpha_j^\dag(0) \right) | \chi , 0_{\alpha(0)}} \\
 \equiv&\mathrm{i} h_z\Braket{\Psi(1) | \alpha(1) \left(1 + \mathrm{i} c_{i,A} c_{j,B} \right) \alpha^\dag(2) |\Psi(2) } \\
 =&\mathrm{i} h_z \Braket{\Psi(1) | \Psi(2) } \langle \alpha(1) \left(1 + \mathrm{i} c_{i,A} c_{j,B} \right) \alpha^\dag(2) \rangle \\
 =&h_z \langle \Psi(1) | \Psi(2) \rangle \left[\mathrm{i} \langle \alpha(1) \alpha^\dag(2) \rangle - \langle \alpha(1) c_{i,A} c_{j,B} \alpha^\dag(2) \rangle \right]
@@ -988,3 +982,518 @@ $$
 \end{aligned}
 \end{equation}
 $$
+
+### 以B子格为中心
+
+要算
+
+$$
+\begin{equation}
+\begin{aligned}
+&\Braket{0_\chi,0_{\alpha(1)} | \chi_{\bm{r}+\bm{a}_2,x} \alpha(1) H_h \alpha^\dag(2) \chi^\dag_{\bm{r}-\bm{a}_1+\bm{a}_2,y} | 0_\chi,0_{\alpha(2)} } \\
+=&\Braket{0_\chi,0_{\alpha(1)} | \chi_{\bm{r}+\bm{a}_2,x} \alpha(1) \left[-h_z \left(\sigma_{\bm{r}} + \sigma_{\bm{r}+\bm{\delta}_z} \right) \right] \alpha^\dag(2) \chi^\dag_{\bm{r}-\bm{a}_1+\bm{a}_2,y} | 0_\chi,0_{\alpha(2)} } \\
+\end{aligned}
+\end{equation}
+$$
+
+注意到
+
+$$
+\begin{equation}
+\chi_{\bm{r},\alpha}
+\equiv \frac{1 }{2 } \left(b_{\bm{r}}^\alpha + \mathrm{i}b_{\bm{r}+\bm{\delta}_\alpha}^\alpha \right),\quad
+\chi_{\bm{r},\alpha}^\dag
+\equiv \frac{1 }{2 } \left(b_{\bm{r}}^\alpha - \mathrm{i}b_{\bm{r}+\bm{\delta}_\alpha}^\alpha \right),\quad
+\bm{r}\in A
+\end{equation}
+$$
+
+$$
+\begin{equation}
+b_{\bm{r}}^\alpha
+=\chi_{\bm{r},\alpha} + \chi^\dag_{\bm{r},\alpha},\quad
+b_{\bm{r}+\bm{\delta}_\alpha}^\alpha
+=\frac{1 }{\mathrm{i} } \left(\chi_{\bm{r},\alpha} - \chi^\dag_{\bm{r},\alpha} \right)
+\end{equation}
+$$
+
+于是
+
+$$
+\begin{equation}
+\begin{aligned}
+\sigma_{\bm{r}+\bm{\delta}_z}^z
+&=\mathrm{i} b_{\bm{r}+\bm{\delta}_z}^z c_{\bm{r}+\bm{\delta}_z}
+=-\mathrm{i} b_{\bm{r}+\bm{\delta}_z}^x b_{\bm{r}+\bm{\delta}_z}^y \\
+&=-\mathrm{i} b_{\bm{r+a_2+\delta_x}}^x b_{\bm{r-a_1+a_2+\delta_y}}^y \\
+&=-\mathrm{i} \cdot \frac{1 }{\mathrm{i} } \left(\chi_{\bm{r+a_2},x} - \chi_{\bm{r+a_2},x}^\dag \right) \cdot \frac{1 }{\mathrm{i} } \left(\chi_{\bm{r-a_1+a_2},y} - \chi_{\bm{r-a_1+a_2},y}^\dag \right) \\
+&=\mathrm{i} \left(\chi_{\bm{r+a_2},x} - \chi_{\bm{r+a_2},x}^\dag \right) \left(\chi_{\bm{r-a_1+a_2},y} - \chi_{\bm{r-a_1+a_2},y}^\dag \right)
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+\sigma_{\bm{r+\delta_z}} \chi^\dag_{\bm{r}-\bm{a}_1+\bm{a}_2,y} 
+&=\mathrm{i} \left(\chi_{\bm{r+a_2},x} - \chi_{\bm{r+a_2},x}^\dag \right) \left(\chi_{\bm{r-a_1+a_2},y} - \chi_{\bm{r-a_1+a_2},y}^\dag \right) \cdot \chi^\dag_{\bm{r}-\bm{a}_1+\bm{a}_2,y} \\
+&=\mathrm{i} \left(\chi_{\bm{r+a_2},x} - \chi_{\bm{r+a_2},x}^\dag \right) \\
+\text{在braket中}&=-\mathrm{i} \chi_{\bm{r+a_2},x}^\dag
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+\sigma_{\bm{r}}^z
+&=\mathrm{i}b_{\bm{r}}^z c_{\bm{r}}
+=b^x_{\bm{r+\delta_z}} b^y_{\bm{r+\delta_z}} b^z_{\bm{r+\delta_z}} c_{\bm{r+\delta_z}} \left(\mathrm{i}b_{\bm{r}}^z c_{\bm{r}} \right) \\
+&=\left(-\mathrm{i} b_{\bm{r}+\bm{\delta}_z}^x b_{\bm{r}+\bm{\delta}_z}^y \right) \left(\mathrm{i} c_{\bm{r}} c_{\bm{r+\delta_z}} \right) \left(-\mathrm{i} b_{\bm{r}}^z b_{\bm{r+\delta_z}}^z \right) \\
+&=\left(-\mathrm{i} b_{\bm{r}+\bm{\delta}_z}^x b_{\bm{r}+\bm{\delta}_z}^y \right) \left(\mathrm{i} c_{\bm{r}} c_{\bm{r+\delta_z}} \right) \cdot 1 \\
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+\sigma_{\bm{r}}^z \chi^\dag_{\bm{r}-\bm{a}_1+\bm{a}_2,y} 
+&=\left(-\mathrm{i} b_{\bm{r}+\bm{\delta}_z}^x b_{\bm{r}+\bm{\delta}_z}^y \right) \left(\mathrm{i} c_{\bm{r}} c_{\bm{r+\delta_z}} \right) \chi^\dag_{\bm{r}-\bm{a}_1+\bm{a}_2,y} \\
+&=\left(\mathrm{i} c_{\bm{r}} c_{\bm{r+\delta_z}} \right) \left(-\mathrm{i} b_{\bm{r}+\bm{\delta}_z}^x b_{\bm{r}+\bm{\delta}_z}^y \right) \chi^\dag_{\bm{r}-\bm{a}_1+\bm{a}_2,y} \\
+&=\left(\mathrm{i} c_{\bm{r}} c_{\bm{r+\delta_z}} \right) \left[\mathrm{i} \left(\chi_{\bm{r+a_2},x} - \chi_{\bm{r+a_2},x}^\dag \right) \right] \\
+&=-c_{\bm{r}} c_{\bm{r+\delta_z}} \left(\chi_{\bm{r+a_2},x} - \chi_{\bm{r+a_2},x}^\dag \right) \\
+\text{在braket中}&=c_{\bm{r}} c_{\bm{r+\delta_z}} \chi_{\bm{r+a_2},x}^\dag
+\end{aligned}
+\end{equation}
+$$
+
+因此
+
+$$
+\begin{equation}
+\begin{aligned}
+&\Braket{0_\chi,0_{\alpha(1)} | \chi_{\bm{r}+\bm{a}_2,x} \alpha(1) H_h \alpha^\dag(2) \chi^\dag_{\bm{r}-\bm{a}_1+\bm{a}_2,y} | 0_\chi,0_{\alpha(2)} } \\
+=&\Braket{0_\chi,0_{\alpha(1)} | \chi_{\bm{r}+\bm{a}_2,x} \alpha(1) \left[-h_z \left(\sigma_{\bm{r}} + \sigma_{\bm{r}+\bm{\delta}_z} \right) \right] \alpha^\dag(2) \chi^\dag_{\bm{r}-\bm{a}_1+\bm{a}_2,y} | 0_\chi,0_{\alpha(2)} } \\
+=&-h_z \Braket{0_\chi,0_{\alpha(1)} | \chi_{\bm{r}+\bm{a}_2,x} \alpha(1) \left[\left(c_{\bm{r}} c_{\bm{r+\delta_z}} -\mathrm{i} \right) \right] \alpha^\dag(2) \chi_{\bm{r}+\bm{a}_2,x}^\dag | 0_\chi,0_{\alpha(2)} } \\
+=&\mathrm{i} h_z \Braket{0_\chi,0_{\alpha(1)} | \chi_{\bm{r}+\bm{a}_2,x} \alpha(1) \left(1 + \mathrm{i} c_{\bm{r}} c_{\bm{r+\delta_z}} \right) \alpha^\dag(2) \chi_{\bm{r}+\bm{a}_2,x}^\dag | 0_\chi,0_{\alpha(2)} } \\
+=&\mathrm{i} h_z \Braket{0_\chi,0_{\alpha(1)} | \alpha(1) \left(1 + \mathrm{i} c_{\bm{r}} c_{\bm{r+\delta_z}} \right) \alpha^\dag(2) | 0_\chi,0_{\alpha(2)} } \\
+=&\mathrm{i} h_z \Braket{0_\chi,0_{\alpha(1)} | \alpha(1) \left(1 + \mathrm{i} c_{i,A} c_{j,B} \right) \alpha^\dag(2) | 0_\chi,0_{\alpha(2)} }
+\end{aligned}
+\end{equation}
+$$
+
+#### $T(\bm{a}_1) $ 的作用
+
+$$
+\begin{equation}
+\begin{aligned}
+&T(\bm{a}_1) 
+\begin{pmatrix}
+a_1 &a_2 &\cdots &a_{N_1} &a_{N_1+1} &a_{N_1+2} &\cdots &a_{2N_1} &\cdots &\cdots
+\end{pmatrix}
+T^{-1}(\bm{a}_1) \\
+=&\begin{pmatrix}
+a_2 &a_3 &\cdots &-a_{1} &a_{N_1+2} &a_{N_1+3} &\cdots &-a_{N_1} &\cdots &\cdots
+\end{pmatrix} \\
+=&\begin{pmatrix}
+a_1 &a_2 &\cdots &a_{N_1} &a_{N_1+1} &a_{N_1+2} &\cdots &a_{2N_1} &\cdots &\cdots
+\end{pmatrix}
+\bigoplus_{i=1}^{N_2} 
+\begin{pmatrix}
+0 &0 &0 &0 &\cdots &-1 \\
+1 &0 &0 &0 &\cdots &0 \\
+0 &1 &0 &0 &\cdots &0 \\
+0 &0 &1 &0 &\cdots &0 \\
+\vdots &\vdots &\vdots &\ddots &\vdots &\vdots \\
+0 &0 &0 &\cdots &1 &0
+\end{pmatrix} \\
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+T_1
+\equiv \bigoplus_{i=1}^{N_2} 
+\begin{pmatrix}
+0 &0 &0 &0 &\cdots &-1 \\
+1 &0 &0 &0 &\cdots &0 \\
+0 &1 &0 &0 &\cdots &0 \\
+0 &0 &1 &0 &\cdots &0 \\
+\vdots &\vdots &\vdots &\ddots &\vdots &\vdots \\
+0 &0 &0 &\cdots &1 &0
+\end{pmatrix}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+T(\bm{a}_1)
+\begin{pmatrix}
+a^\dag &a^\top \\
+\end{pmatrix}
+T^{-1}(\bm{a}_1)
+=\begin{pmatrix}
+a^\dag &a^\top \\
+\end{pmatrix}
+\begin{pmatrix}
+T_1 &0 \\
+0 &T_1
+\end{pmatrix}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+T(\bm{a}_1)
+\begin{pmatrix}
+a \\
+\left(a^\dag \right)^\top
+\end{pmatrix}
+T^{-1}(\bm{a}_1)
+&=\begin{pmatrix}
+T_1^\dag &0 \\
+0 &T_1^\dag
+\end{pmatrix}
+\begin{pmatrix}
+a \\
+\left(a^\dag \right)^\top
+\end{pmatrix} \\
+&=\begin{pmatrix}
+T_1^\top &0 \\
+0 &T_1^\top
+\end{pmatrix}
+\begin{pmatrix}
+a \\
+\left(a^\dag \right)^\top
+\end{pmatrix} \\
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+\begin{pmatrix}
+a^\dag &a^\top \\
+\end{pmatrix}
+&=T(\bm{a}_1)
+\begin{pmatrix}
+a^\dag &a^\top \\
+\end{pmatrix}
+T^{-1}(\bm{a}_1)
+\begin{pmatrix}
+T_1 &0 \\
+0 &T_1
+\end{pmatrix}^{-1} \\
+&=T(\bm{a}_1)
+\begin{pmatrix}
+a^\dag &a^\top \\
+\end{pmatrix}
+T^{-1}(\bm{a}_1)
+\begin{pmatrix}
+T_1 &0 \\
+0 &T_1
+\end{pmatrix}^{\dag} \\
+&=T(\bm{a}_1)
+\begin{pmatrix}
+a^\dag &a^\top \\
+\end{pmatrix}
+T^{-1}(\bm{a}_1)
+\begin{pmatrix}
+T_1^\top &0 \\
+0 &T_1^\top
+\end{pmatrix} \\
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\boxed{
+\begin{aligned}
+T(-\bm{a}_1)
+\begin{pmatrix}
+a^\dag &a^\top \\
+\end{pmatrix}
+T^{-1}(-\bm{a}_1)
+&=T^{-1}(\bm{a}_1)
+\begin{pmatrix}
+a^\dag &a^\top \\
+\end{pmatrix} 
+T(\bm{a}_1) \\
+&=\begin{pmatrix}
+a^\dag &a^\top \\
+\end{pmatrix}
+\begin{pmatrix}
+T_1^\top &0 \\
+0 &T_1^\top
+\end{pmatrix}
+\end{aligned}
+}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+T(-\bm{a}_1)
+\begin{pmatrix}
+a^\top \\
+\left(a^\dag \right)^\top
+\end{pmatrix}
+T^{-1}(-\bm{a}_1)
+=\begin{pmatrix}
+T_1 &0 \\
+0 &T_1
+\end{pmatrix}
+\begin{pmatrix}
+a \\
+\left(a^\dag \right)^\top
+\end{pmatrix}
+\end{aligned}
+\end{equation}
+$$
+
+#### $T(\bm{a}_2) $ 的作用
+
+$$
+\begin{equation}
+\begin{aligned}
+&T(\bm{a}_2) 
+\begin{pmatrix}
+a_1 &a_2 &\cdots &a_{N_1} &a_{N_1+1} &a_{N_1+2} &\cdots &a_{2N_1} &\cdots &\cdots
+\end{pmatrix}
+T^{-1}(\bm{a}_2) \\
+=&T(\bm{a}_1) 
+\begin{pmatrix}
+a_{N_1+1} &a_{N_1+2} &\cdots &a_{2N_1} &a_{2N_1+1} &a_{2N_1+2} &\cdots &a_{3N_1} &\cdots &-a_{1} &-a_{2} &\cdots &-a_{N_1}
+\end{pmatrix}
+T^{-1}(\bm{a}_1) \\
+=&\begin{pmatrix}
+a_1 &a_2 &\cdots &a_{N_1} &a_{N_1+1} &a_{N_1+2} &\cdots &a_{2N_1} &\cdots &\cdots
+\end{pmatrix}
+\begin{pmatrix}
+0 &0 &0 &0 &\cdots &-I_{N_1} \\
+I_{N_1} &0 &0 &0 &\cdots &0 \\
+0 &I_{N_1} &0 &0 &\cdots &0 \\
+0 &0 &\ddots &\cdots &\cdots &0 \\
+\vdots &\vdots &\vdots &\ddots &\cdots &0 \\
+0 &0 &0 &\cdots &I_{N_1} &0
+\end{pmatrix}
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+T_2
+\equiv \begin{pmatrix}
+0 &0 &0 &0 &\cdots &-I_{N_1} \\
+I_{N_1} &0 &0 &0 &\cdots &0 \\
+0 &I_{N_1} &0 &0 &\cdots &0 \\
+0 &0 &\ddots &\cdots &\cdots &0 \\
+\vdots &\vdots &\vdots &\ddots &\cdots &0 \\
+0 &0 &0 &\cdots &I_{N_1} &0
+\end{pmatrix}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+T(\bm{a}_2)
+\begin{pmatrix}
+a^\dag &a^\top
+\end{pmatrix}
+T^{-1}(\bm{a}_2)
+=\begin{pmatrix}
+a^\dag &a^\top
+\end{pmatrix}
+\begin{pmatrix}
+T_2 &0 \\
+0 &T_2
+\end{pmatrix}
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+T(\bm{a}_2)
+\begin{pmatrix}
+a \\
+\left(a^\dag \right)^\top
+\end{pmatrix}
+T^{-1}(\bm{a}_2)
+&=\begin{pmatrix}
+T_2^\dag &0 \\
+0 &T_2^\dag
+\end{pmatrix}
+\begin{pmatrix}
+a \\
+\left(a^\dag \right)^\top
+\end{pmatrix} \\
+&=\begin{pmatrix}
+T_2^\top &0 \\
+0 &T_2^\top
+\end{pmatrix}
+\begin{pmatrix}
+a \\
+\left(a^\dag \right)^\top
+\end{pmatrix} \\
+\end{aligned}
+\end{equation}
+$$
+
+#### 哈密顿量的关系
+
+已知 $H(\bm{r},x/y/z) $，要求 $H(\bm{r}+\bm{a}_2,x) $ 和 $H(\bm{r}-\bm{a}_1+\bm{a}_2,y) $
+
+$$
+\begin{equation}
+\begin{aligned}
+H(\bm{r}+\bm{a}_2,x)
+&=T(\bm{a}_2) H(\bm{r},x) T^{-1}(\bm{a}_2) \\
+&=\frac{1 }{2 }
+T(\bm{a}_2)
+\begin{pmatrix}
+a^\dag &a^\top 
+\end{pmatrix}
+T^{-1}(\bm{a}_2)
+h(\bm{r},x)
+T(\bm{a}_2)
+\begin{pmatrix}
+a \\
+\left(a^\dag \right)^\top 
+\end{pmatrix}
+T^{-1}(\bm{a}_2) \\
+&=\frac{1 }{2 } 
+\begin{pmatrix}
+a^\dag &a^\top 
+\end{pmatrix}
+\begin{pmatrix}
+T_2 &0 \\
+0 &T_2
+\end{pmatrix}
+h(\bm{r},x)
+\begin{pmatrix}
+T_2^\top &0 \\
+0 &T_2^\top
+\end{pmatrix}
+\begin{pmatrix}
+a \\
+\left(a^\dag \right)^\top 
+\end{pmatrix}
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\boxed{
+h(\bm{r}+\bm{a}_2)
+=\begin{pmatrix}
+T_2 &0 \\
+0 &T_2
+\end{pmatrix}
+h(\bm{r},x)
+\begin{pmatrix}
+T_2^\top &0 \\
+0 &T_2^\top
+\end{pmatrix}
+}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+h(\bm{r},x) U = U D
+\Longrightarrow
+h(\bm{r}+\bm{a}_2) \left(\bold{T}_2 U \right) = \left(\bold{T}_2 U \right) D
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+H(\bm{r}-\bm{a}_1+\bm{a}_2,y)
+&=T(-\bm{a}_1) T(\bm{a}_2) H(\bm{r},y) T^{-1}(\bm{a}_2) T^{-1}(-\bm{a}_1) \\
+&=\frac{1 }{2 }
+T(-\bm{a_1}) T(\bm{a}_2)
+\begin{pmatrix}
+a^\dag &a^\top 
+\end{pmatrix}
+T^{-1}(\bm{a}_2) T^{-1}(-\bm{a}_1)
+h(\bm{r},y)
+T(-\bm{a}_1)T(\bm{a}_2)
+\begin{pmatrix}
+a \\
+\left(a^\dag \right)^\top 
+\end{pmatrix}
+T^{-1}(\bm{a}_2) T^{-1}(-\bm{a}_1) \\
+&=\frac{1 }{2 } 
+\begin{pmatrix}
+a^\dag &a^\top 
+\end{pmatrix}
+\begin{pmatrix}
+T_2 &0 \\
+0 &T_2
+\end{pmatrix}
+\begin{pmatrix}
+T_1^\top &0 \\
+0 &T_1^\top
+\end{pmatrix}
+h(\bm{r},y)
+\begin{pmatrix}
+T_1 &0 \\
+0 &T_1
+\end{pmatrix}
+\begin{pmatrix}
+T_2^\top &0 \\
+0 &T_2^\top
+\end{pmatrix}
+\begin{pmatrix}
+a \\
+\left(a^\dag \right)^\top 
+\end{pmatrix}
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\boxed{
+h(\bm{r}-\bm{a}_1+\bm{a}_2,y)
+=\begin{pmatrix}
+T_2 &0 \\
+0 &T_2
+\end{pmatrix}
+\begin{pmatrix}
+T_1^\top &0 \\
+0 &T_1^\top
+\end{pmatrix}
+h(\bm{r},y)
+\begin{pmatrix}
+T_1 &0 \\
+0 &T_1
+\end{pmatrix}
+\begin{pmatrix}
+T_2^\top &0 \\
+0 &T_2^\top
+\end{pmatrix}
+}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+h(\bm{r},y) U = U D
+\Longrightarrow
+h(\bm{r}-\bm{a}_1+\bm{a}_2) \left(\bold{T}_2 \bold{T}_1^\top U \right) = \left(\bold{T}_2 \bold{T}_1^\top U \right) D
+\end{equation}
+$$
+
