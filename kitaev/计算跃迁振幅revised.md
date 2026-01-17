@@ -985,6 +985,8 @@ $$
 
 ### 以B子格为中心
 
+#### $x-y $ hop
+
 要算
 
 $$
@@ -1074,11 +1076,109 @@ $$
 \begin{equation}
 \begin{aligned}
 &\Braket{0_\chi,0_{\alpha(1)} | \chi_{\bm{r}+\bm{a}_2,x} \alpha(1) H_h \alpha^\dag(2) \chi^\dag_{\bm{r}-\bm{a}_1+\bm{a}_2,y} | 0_\chi,0_{\alpha(2)} } \\
-=&\Braket{0_\chi,0_{\alpha(1)} | \chi_{\bm{r}+\bm{a}_2,x} \alpha(1) \left[-h_z \left(\sigma_{\bm{r}} + \sigma_{\bm{r}+\bm{\delta}_z} \right) \right] \alpha^\dag(2) \chi^\dag_{\bm{r}-\bm{a}_1+\bm{a}_2,y} | 0_\chi,0_{\alpha(2)} } \\
+=&\Braket{0_\chi,0_{\alpha(1)} | \chi_{\bm{r}+\bm{a}_2,x} \alpha(1) \left[-h_z \left(\sigma_{\bm{r}}^z + \sigma_{\bm{r}+\bm{\delta}_z}^z \right) \right] \alpha^\dag(2) \chi^\dag_{\bm{r}-\bm{a}_1+\bm{a}_2,y} | 0_\chi,0_{\alpha(2)} } \\
 =&-h_z \Braket{0_\chi,0_{\alpha(1)} | \chi_{\bm{r}+\bm{a}_2,x} \alpha(1) \left[\left(c_{\bm{r}} c_{\bm{r+\delta_z}} -\mathrm{i} \right) \right] \alpha^\dag(2) \chi_{\bm{r}+\bm{a}_2,x}^\dag | 0_\chi,0_{\alpha(2)} } \\
 =&\mathrm{i} h_z \Braket{0_\chi,0_{\alpha(1)} | \chi_{\bm{r}+\bm{a}_2,x} \alpha(1) \left(1 + \mathrm{i} c_{\bm{r}} c_{\bm{r+\delta_z}} \right) \alpha^\dag(2) \chi_{\bm{r}+\bm{a}_2,x}^\dag | 0_\chi,0_{\alpha(2)} } \\
 =&\mathrm{i} h_z \Braket{0_\chi,0_{\alpha(1)} | \alpha(1) \left(1 + \mathrm{i} c_{\bm{r}} c_{\bm{r+\delta_z}} \right) \alpha^\dag(2) | 0_\chi,0_{\alpha(2)} } \\
 =&\mathrm{i} h_z \Braket{0_\chi,0_{\alpha(1)} | \alpha(1) \left(1 + \mathrm{i} c_{i,A} c_{j,B} \right) \alpha^\dag(2) | 0_\chi,0_{\alpha(2)} }
+\end{aligned}
+\end{equation}
+$$
+
+#### $y-z $ hop
+
+要算
+
+$$
+\begin{equation}
+\begin{aligned}
+&\Braket{0_\chi,0_{\alpha(1)} | \chi_{\bm{r-a_1+a_2},y} \alpha(1) H_h \alpha^\dag(2) \chi^\dag_{\bm{r},z} | 0_\chi,0_{\alpha(2)} } \\
+=&\Braket{0_\chi,0_{\alpha(1)} | \chi_{\bm{r-a_1+a_2},y} \alpha(1) \left[-h_x \left(\sigma^x_{\bm{r+a_2}} + \sigma^x_{\bm{r+a_2+\delta_x}} \right) \right] \alpha^\dag(2) \chi^\dag_{\bm{r},z} | 0_\chi,0_{\alpha(2)} } \\
+\end{aligned}
+\end{equation}
+$$
+
+注意到
+
+$$
+\begin{equation}
+\begin{aligned}
+\sigma^x_{\bm{r+a_2+\delta_x}}
+&=-\mathrm{i} b^y_{\bm{r+a_2+\delta_x}} b^z_{\bm{r+a_2+\delta_x}}
+=-\mathrm{i} b^y_{\bm{r-a_1+a_2+\delta_y}} b^z_{\bm{r+\delta_z}} \\
+&=-\mathrm{i} \cdot \frac{1 }{\mathrm{i} } \left(\chi_{\bm{r-a_1+a_2},y} - \chi^\dag_{\bm{r-a_1+a_2},y} \right) \cdot \frac{1 }{\mathrm{i} } \left(\chi_{\bm{r},z} - \chi^\dag_{\bm{r},z} \right) \\
+&=\mathrm{i} \left(\chi_{\bm{r-a_1+a_2},y} - \chi^\dag_{\bm{r-a_1+a_2},y} \right) \left(\chi_{\bm{r},z} - \chi^\dag_{\bm{r},z} \right)
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+\sigma^x_{\bm{r+a_2+\delta_x}} \chi^\dag_{\bm{r},z}
+&=\mathrm{i} \left(\chi_{\bm{r-a_1+a_2},y} - \chi^\dag_{\bm{r-a_1+a_2},y} \right) \left(\chi_{\bm{r},z} - \chi^\dag_{\bm{r},z} \right) \cdot \chi^\dag_{\bm{r},z} \\
+&=\mathrm{i} \left(\chi_{\bm{r-a_1+a_2},y} - \chi^\dag_{\bm{r-a_1+a_2},y} \right) \\
+\text{在braket中}&=-\mathrm{i} \chi^\dag_{\bm{r-a_1+a_2},y}
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+\sigma^x_{\bm{r+a_2}}
+&=\mathrm{i} b^x_{\bm{r+a_2}} c_{\bm{r+a_2}}
+=\left(b^x_{\bm{r+a_2+\delta_x}} b^y_{\bm{r+a_2+\delta_x}} b^z_{\bm{r+a_2+\delta_x}} c_{\bm{r+a_2+\delta_x}} \right) \left(\mathrm{i} b^x_{\bm{r+a_2}} c_{\bm{r+a_2}} \right) \\
+&=\mathrm{i} c_{\bm{r+a_2}} c_{\bm{r+a_2+\delta_x}} \left(-\mathrm{i} b^x_{\bm{r+a_2}} b^x_{\bm{r+a_2+\delta_x}} \right) \left(-\mathrm{i} b^y_{\bm{r+a_2+\delta_x}} b^z_{\bm{r+a_2+\delta_x}} \right) \\
+&=\mathrm{i} c_{\bm{r+a_2}} c_{\bm{r+a_2+\delta_x}} \left(-\mathrm{i} b^y_{\bm{r+a_2+\delta_x}} b^z_{\bm{r+a_2+\delta_x}} \right)
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+\sigma^x_{\bm{r+a_2}} \chi^\dag_{\bm{r},z}
+&=\mathrm{i} c_{\bm{r+a_2}} c_{\bm{r+a_2+\delta_x}} \left(-\mathrm{i} b^y_{\bm{r+a_2+\delta_x}} b^z_{\bm{r+a_2+\delta_x}} \right) \chi^\dag_{\bm{r},z} \\
+&=\mathrm{i} c_{\bm{r+a_2}} c_{\bm{r+a_2+\delta_x}} \cdot \mathrm{i} \left(\chi_{\bm{r-a_1+a_2},y} - \chi^\dag_{\bm{r-a_1+a_2},y} \right) \\
+\text{在braket中}&=c_{\bm{r+a_2}} c_{\bm{r+a_2+\delta_x}} \chi^\dag_{\bm{r-a_1+a_2},y}
+\end{aligned}
+\end{equation}
+$$
+
+于是
+
+$$
+\begin{equation}
+\begin{aligned}
+&\Braket{0_\chi,0_{\alpha(1)} | \chi_{\bm{r-a_1+a_2},y} \alpha(1) H_h \alpha^\dag(2) \chi^\dag_{\bm{r},z} | 0_\chi,0_{\alpha(2)} } \\
+=&\Braket{0_\chi,0_{\alpha(1)} | \chi_{\bm{r-a_1+a_2},y} \alpha(1) \left[-h_x \left(\sigma^x_{\bm{r+a_2}} + \sigma^x_{\bm{r+a_2+\delta_x}} \right) \right] \alpha^\dag(2) \chi^\dag_{\bm{r},z} | 0_\chi,0_{\alpha(2)} } \\
+=&-h_x\Braket{0_\chi,0_{\alpha(1)} | \chi_{\bm{r-a_1+a_2},y} \alpha(1) \left(c_{\bm{r+a_2}} c_{\bm{r+a_2+\delta_x}} - \mathrm{i} \right) \alpha^\dag(2) \chi^\dag_{\bm{r-a_1+a_2},y} | 0_\chi,0_{\alpha(2)} } \\
+=&-h_x\Braket{0_\chi,0_{\alpha(1)} | \alpha(1) \left(c_{\bm{r+a_2}} c_{\bm{r+a_2+\delta_x}} - \mathrm{i} \right) \alpha^\dag(2) | 0_\chi,0_{\alpha(2)} } \\
+=&\mathrm{i} h_x\Braket{0_\chi,0_{\alpha(1)} | \alpha(1) \left(1 + \mathrm{i} c_{\bm{r+a_2}} c_{\bm{r+a_2+\delta_x}} \right) \alpha^\dag(2) | 0_\chi,0_{\alpha(2)} } \\
+\end{aligned}
+\end{equation}
+$$
+
+#### $z-x $ hop
+
+要算
+
+$$
+\begin{equation}
+\begin{aligned}
+&\Braket{0_\chi,0_{\alpha(1)} | \chi_{\bm{r},z} \alpha(1) H_h \alpha^\dag(2) \chi^\dag_{\bm{r+a_2},x} | 0_\chi,0_{\alpha(2)} } \\
+=&\Braket{0_\chi,0_{\alpha(1)} | \chi_{\bm{r},z} \alpha(1) \left[-h_y \left(\sigma^y_{\bm{r-a_1+a_2}} + \sigma^y_{\bm{r-a_1+a_2+\delta_y}} \right) \right] \alpha^\dag(2) \chi^\dag_{\bm{r+a_2},x} | 0_\chi,0_{\alpha(2)} } \\
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+&\Braket{0_\chi,0_{\alpha(1)} | \chi_{\bm{r},z} \alpha(1) H_h \alpha^\dag(2) \chi^\dag_{\bm{r+a_2},x} | 0_\chi,0_{\alpha(2)} } \\
+=&\Braket{0_\chi,0_{\alpha(1)} | \chi_{\bm{r},z} \alpha(1) \left[-h_y \left(\sigma^y_{\bm{r-a_1+a_2}} + \sigma^y_{\bm{r-a_1+a_2+\delta_y}} \right) \right] \alpha^\dag(2) \chi^\dag_{\bm{r+a_2},x} | 0_\chi,0_{\alpha(2)} } \\
+=&\mathrm{i} h_y\Braket{0_\chi,0_{\alpha(1)} | \alpha(1) \left(1 + \mathrm{i} c_{\bm{r-a_1+a_2}} c_{\bm{r-a_1+a_2+\delta_y}} \right) \alpha^\dag(2) | 0_\chi,0_{\alpha(2)} } \\
 \end{aligned}
 \end{equation}
 $$
@@ -1267,11 +1367,9 @@ $$
 a_1 &a_2 &\cdots &a_{N_1} &a_{N_1+1} &a_{N_1+2} &\cdots &a_{2N_1} &\cdots &\cdots
 \end{pmatrix}
 T^{-1}(\bm{a}_2) \\
-=&T(\bm{a}_1) 
-\begin{pmatrix}
+=&\begin{pmatrix}
 a_{N_1+1} &a_{N_1+2} &\cdots &a_{2N_1} &a_{2N_1+1} &a_{2N_1+2} &\cdots &a_{3N_1} &\cdots &-a_{1} &-a_{2} &\cdots &-a_{N_1}
-\end{pmatrix}
-T^{-1}(\bm{a}_1) \\
+\end{pmatrix} \\
 =&\begin{pmatrix}
 a_1 &a_2 &\cdots &a_{N_1} &a_{N_1+1} &a_{N_1+2} &\cdots &a_{2N_1} &\cdots &\cdots
 \end{pmatrix}
