@@ -1604,7 +1604,6 @@ $$
 \end{equation}
 $$
 
-
 $$
 \begin{equation}
 \begin{split}
