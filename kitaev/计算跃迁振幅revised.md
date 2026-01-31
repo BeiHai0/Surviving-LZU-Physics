@@ -319,6 +319,22 @@ a_1 \\
 \vdots \\
 a_N
 \end{pmatrix}
+=\begin{pmatrix}
+\frac{1 }{2 } c_{1,A} + \frac{\mathrm{i} }{2 } c_{1,B}  \\
+\vdots \\
+\frac{1 }{2 } c_{N,A} + \frac{\mathrm{i} }{2 } c_{N,B}
+\end{pmatrix}
+=\frac{1 }{2 }
+\begin{pmatrix}
+c_{1,A} \\
+\vdots \\
+c_{N,A}
+\end{pmatrix} + \frac{\mathrm{i} }{2 } 
+\begin{pmatrix}
+c_{1,B} \\
+\vdots \\
+c_{N,B}
+\end{pmatrix}
 =\frac{1 }{2 } c_A + \frac{\mathrm{i} }{2 } c_B
 \end{aligned}
 \end{equation}
@@ -1493,7 +1509,7 @@ $$
 $$
 \begin{equation}
 \boxed{
-h(\bm{r}+\bm{a}_2)
+h(\bm{r}+\bm{a}_2,x)
 =\begin{pmatrix}
 T_2 &0 \\
 0 &T_2
