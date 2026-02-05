@@ -172,10 +172,7 @@ H_K^{\mathrm{ext}}[u]
 -\bm{M}_K^\top &\bm{0}
 \end{pmatrix}
 \bm{\psi}_c \\
-&\equiv\frac{\mathrm{i} }{2 } 
-\bm{\psi}_c^\dag
-\bm{H}_c^K[u]
-\bm{\psi}_c
+&\equiv\frac{\mathrm{i} }{2 } \bm{\psi}_c^\dag \bm{H}_c^K[u] \bm{\psi}_c
 \end{aligned}
 \end{equation}
 $$
@@ -332,8 +329,13 @@ $$
 
 $$
 \begin{equation}
+\begin{aligned}
 \left(M_\kappa^A \right)_{ij}
-=\sum_{\substack{\left(\bm{\delta}_1,\bm{\delta}_2 \right)\in \\ \left\{\left(\bm{a}_1,\bm{a}_2 \right),\left(\bm{a}_2,\bm{0} \right),\left(\bm{0},\bm{a}_1 \right) \right\}}} \delta_{\bm{r}_i-\bm{\delta}_1,\bm{r}_j-\bm{\delta}_2} u_{\bm{r}_i-\bm{\delta}_1,A;\bm{r}_i,B} u_{\bm{r}_j-\bm{\delta}_2,A;\bm{r}_j,B}
+&=\sum_{\substack{\left(\bm{\delta}_1,\bm{\delta}_2 \right)\in \\ \left\{\left(\bm{a}_1,\bm{a}_2 \right),\left(\bm{a}_2,\bm{0} \right),\left(\bm{0},\bm{a}_1 \right) \right\}}} \delta_{\bm{r}_i-\bm{\delta}_1,\bm{r}_j-\bm{\delta}_2} u_{\bm{r}_i-\bm{\delta}_1,A;\bm{r}_i,B} u_{\bm{r}_j-\bm{\delta}_2,A;\bm{r}_j,B} \\
+&=\delta_{\bm{r}_i-\bm{a}_1,\bm{r}_j-\bm{a}_2} u_{\bm{r}_i-\bm{a}_1,A;\bm{r}_i,B} u_{\bm{r}_j-\bm{a}_2,A;\bm{r}_j,B} \\
+&+ \delta_{\bm{r}_i-\bm{a}_2,\bm{r}_j} u_{\bm{r}_i-\bm{a}_2,A;\bm{r}_i,B} u_{\bm{r}_j,A;\bm{r}_j,B} \\
+&+ \delta_{\bm{r}_i,\bm{r}_j-\bm{a}_1} u_{\bm{r}_i,A;\bm{r}_i,B} u_{\bm{r}_j-\bm{a}_1,A;\bm{r}_j,B}
+\end{aligned}
 \end{equation}
 $$
 
@@ -512,3 +514,54 @@ $$
 \end{equation}
 $$
 
+#### 总哈密顿量
+
+$$
+\begin{equation}
+H_K[u]
+=\frac{\mathrm{i} }{2 } \bm{\psi}_c^\dag \bm{H}_c^K[u] \bm{\psi}_c
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\bm{H}_c^K[u]
+=\begin{pmatrix}
+\bm{0} &\bm{M}_K \\
+-\bm{M}_K^\top &\bm{0}
+\end{pmatrix}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\bm{M}_K
+=K_x \bm{M}_K^x + K_y \bm{M}_K^y + K_z \bm{M}_K^z
+=\sum_{\mu} K_\mu \bm{M}_K^\mu
+\end{equation}
+$$
+
+$$
+\begin{equation}
+H_\kappa[u]
+=\frac{\mathrm{i} }{2 } \bm{\psi}_c^\dag \bm{H}_{\kappa,c}[u] \bm{\psi}_c
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\bm{H}_{\kappa,c}[u]
+=\bm{H}_{\kappa,c}^A[u] + \bm{H}_{\kappa,c}^B[u]
+=\kappa \bm{M}_\kappa^{AB}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\bm{M}_\kappa^{AB}
+=\begin{pmatrix}
+\bm{M}_\kappa^B - \left(\bm{M}_\kappa^B \right)^\top &\bm{0} \\
+\bm{0} &\bm{M}_\kappa^A - \left(\bm{M}_\kappa^A \right)^\top
+\end{pmatrix}
+\end{equation}
+$$

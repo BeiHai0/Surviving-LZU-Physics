@@ -100,7 +100,7 @@ def A3_kappa(N1, N2, u):
 
     return (M - M.T) / 2.0
                 
-N1, N2 = 2, 2 
+N1, N2 = 10, 10
 for bc1 in ["PBC", "APBC"]:
     for bc2 in ["PBC", "APBC"]:
         print("bc1=", bc1, ",bc2=", bc2, "\n")
