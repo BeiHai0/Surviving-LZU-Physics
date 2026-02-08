@@ -65,7 +65,7 @@ def build_MkappaAB_matrix(MkappaA, MkappaB):
     return MkappaAB
 
 manager = KitaevDataExporter()
-params = {'N1': 60, 'N2': 60, 'bc1': -1, 'bc2': -1}
+params = {'N1': 40, 'N2': 40, 'bc1': -1, 'bc2': -1}
 
 try:
     u_std = manager.load_sparse_matrix_grid('u_std', **params)

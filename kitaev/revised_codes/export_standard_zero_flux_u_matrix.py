@@ -29,7 +29,7 @@ def build_standard_zero_flux_u_matrix(N1, N2, bc1, bc2):
                 u[i, jz] = 1
     return u
     
-params_export = {'N1': 60, 'N2': 60, 'bc1': -1, 'bc2': -1}
+params_export = {'N1': 40, 'N2': 40, 'bc1': -1, 'bc2': -1}
 manager = KitaevDataExporter() # 不传参，默认 root 为 kitaev_data
 u_std = build_standard_zero_flux_u_matrix(**params_export)
 print(u_std)

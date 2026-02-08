@@ -45,26 +45,34 @@ def build_MKz_matrix(u, N1, N2, bc1, bc2):
     return MKz
 
 manager = KitaevDataExporter()
-params = {'N1': 30, 'N2': 30, 'bc1': -1, 'bc2': -1}
+params = {'N1': 40, 'N2': 40, 'bc1': -1, 'bc2': -1}
 
-try:
-    u_std = manager.load_sparse_matrix_grid('u_std', **params)
-    print('成功读取矩阵!')
-    # print(u_std)
-except FileNotFoundError as e:
-    print(f"读取失败:{e}")
+case_list = ['std', 'vison_pair_x', 'vison_pair_y', 'vison_pair_z']
 
-MKx_std = build_MKx_matrix(u_std, **params)
-MKy_std = build_MKy_matrix(u_std, **params)
-MKz_std = build_MKz_matrix(u_std, **params)
-
-manager.save_sparse_matrix_grid(MKx_std, 'MKx_std', **params)
-manager.save_sparse_matrix_grid(MKy_std, 'MKy_std', **params)
-manager.save_sparse_matrix_grid(MKz_std, 'MKz_std', **params)
-
-print(MKx_std)
-print(MKy_std)
-print(MKz_std)
-
-
-
+for case in case_list:
+    input_name = f'u_{case}'
+    try:
+        # 1. 动态加载矩阵
+        u_matrix = manager.load_sparse_matrix_grid(input_name, **params)
+        print(f'成功读取 {input_name}!')
+        
+        # 2. 构造三种 MK 矩阵并存入字典或直接操作
+        # 这里用字典存储可以方便后续调用，例如 result_matrices['MKx_std']
+        mk_functions = {
+            'MKx': build_MKx_matrix,
+            'MKy': build_MKy_matrix,
+            'MKz': build_MKz_matrix
+        }
+        
+        for mk_type, func in mk_functions.items():
+            output_name = f'{mk_type}_{case}'
+            # 执行构造
+            mk_res = func(u_matrix, **params)
+            # 保存结果
+            manager.save_sparse_matrix_grid(mk_res, output_name, **params)
+            print(f'  已生成并保存: {output_name}')
+            
+    except FileNotFoundError:
+        print(f"读取失败: 未找到文件 {input_name}")
+    except Exception as e:
+        print(f"处理 {case} 时发生错误: {e}")
