@@ -1,8 +1,30 @@
 $$
 \begin{equation}
 \left(M_K^{\bm{\delta}} \right)_{ij}
-=\delta_{\bm{r}_i-\bm{\delta},\bm{r}_j} u_{\bm{r}_i-\bm{\delta},A;\bm{r}_i,B},\quad
+=\delta_{\bm{r}_i+\bm{\delta},\bm{r}_j} u_{\bm{r}_i,A;\bm{r}_i+\bm{\delta},B}
+=\delta_{\bm{r}_j-\bm{\delta},\bm{r}_i} u_{\bm{r}_j-\bm{\delta},A;\bm{r}_j,B},\quad
 \bm{\delta} \in \left\{\bm{0},\bm{a}_1,\bm{a}_2 \right\}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\left(M_K^{\bm{0}} \right)_{ij}
+=\delta_{\bm{r}_i,\bm{r}_j} u_{\bm{r}_i,A;\bm{r}_i,B}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\left(M_K^{\bm{a}_1} \right)_{ij}
+=\delta_{\bm{r}_i+\bm{a}_1,\bm{r}_j} u_{\bm{r}_i,A;\bm{r}_i+\bm{a}_1,B}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\left(M_K^{\bm{a}_2} \right)_{ij}
+=\delta_{\bm{r}_i+\bm{a}_2,\bm{r}_j} u_{\bm{r}_i,A;\bm{r}_i+\bm{a}_2,B}
 \end{equation}
 $$
 
@@ -14,9 +36,9 @@ H_\kappa^A[u]
 &=\mathrm{i} \kappa \sum_{\bm{r}',\bm{r}''} \sum_{\left(\bm{\delta}_1,\bm{\delta}_2 \right)} \sum_{\bm{r}} \delta_{\bm{r}-\bm{\delta}_1,\bm{r}'} \delta_{\bm{r}-\bm{\delta}_2,\bm{r}''} u_{\bm{r}-\bm{\delta}_1,A;\bm{r},B} u_{\bm{r}-\bm{\delta}_2,A;\bm{r},B} c_{\bm{r}',A} c_{\bm{r}'',A} \\
 &=\mathrm{i} \kappa \sum_{\bm{r}',\bm{r}''} \sum_{\left(\bm{\delta}_1,\bm{\delta}_2 \right)} \sum_{\bm{r}} \left(\delta_{\bm{r}-\bm{\delta}_1,\bm{r}'} u_{\bm{r}-\bm{\delta}_1,A;\bm{r},B} \right) \left(\delta_{\bm{r}-\bm{\delta}_2,\bm{r}''} u_{\bm{r}-\bm{\delta}_2,A;\bm{r},B} \right) c_{\bm{r}',A} c_{\bm{r}'',A} \\
 &=\mathrm{i} \kappa \sum_{i,j} \sum_{\left(\bm{\delta}_1,\bm{\delta}_2 \right)} \sum_{k} \left(\delta_{\bm{r}_k-\bm{\delta}_1,\bm{r}_i} u_{\bm{r}_k-\bm{\delta}_1,A;\bm{r}_k,B} \right) \left(\delta_{\bm{r}_k-\bm{\delta}_2,\bm{r}_j} u_{\bm{r}_k-\bm{\delta}_2,A;\bm{r}_k,B} \right) c_{i,A} c_{j,A} \\
-&=\mathrm{i} \kappa \sum_{i,j} \sum_{\left(\bm{\delta}_1,\bm{\delta}_2 \right)} \sum_{k} \left(M_K^{\bm{\delta}_1} \right)_{ki} \left(M_K^{\bm{\delta}_2} \right)_{kj} c_{i,A} c_{j,A} \\
-&=\mathrm{i} \kappa \sum_{i,j} \sum_{\left(\bm{\delta}_1,\bm{\delta}_2 \right)} \sum_{k} \left(M_K^{\bm{\delta}_1} \right)^\top_{ik} \left(M_K^{\bm{\delta}_2} \right)_{kj} c_{i,A} c_{j,A} \\
-&=\mathrm{i} \kappa \sum_{i,j} \sum_{\left(\bm{\delta}_1,\bm{\delta}_2 \right)} \left[\left(M_K^{\bm{\delta}_1} \right)^\top \left(M_K^{\bm{\delta}_2} \right) \right]_{ij} c_{i,A} c_{j,A} \\
+&=\mathrm{i} \kappa \sum_{i,j} \sum_{\left(\bm{\delta}_1,\bm{\delta}_2 \right)} \sum_{k} \left(M_K^{\bm{\delta}_1} \right)_{ik} \left(M_K^{\bm{\delta}_2} \right)_{jk} c_{i,A} c_{j,A} \\
+&=\mathrm{i} \kappa \sum_{i,j} \sum_{\left(\bm{\delta}_1,\bm{\delta}_2 \right)} \sum_{k} \left(M_K^{\bm{\delta}_1} \right)_{ik} \left(M_K^{\bm{\delta}_2} \right)^\top_{kj} c_{i,A} c_{j,A} \\
+&=\mathrm{i} \kappa \sum_{i,j} \sum_{\left(\bm{\delta}_1,\bm{\delta}_2 \right)} \left[\left(M_K^{\bm{\delta}_1} \right) \left(M_K^{\bm{\delta}_2} \right)^\top \right]_{ij} c_{i,A} c_{j,A} \\
 &\equiv \mathrm{i} \kappa \sum_{i,j} \left(M_\kappa^A \right)_{ij} c_{i,A} c_{j,A}
 \end{aligned}
 \end{equation}
@@ -25,7 +47,7 @@ $$
 $$
 \begin{equation}
 \left(M_\kappa^A \right)_{ij}
-=\sum_{\left(\bm{\delta}_1,\bm{\delta}_2 \right)} \left[\left(M_K^{\bm{\delta}_1} \right)^\top \left(M_K^{\bm{\delta}_2} \right) \right]_{ij}
+=\sum_{\left(\bm{\delta}_1,\bm{\delta}_2 \right)} \left[\left(M_K^{\bm{\delta}_1} \right) \left(M_K^{\bm{\delta}_2} \right)^\top \right]_{ij}
 \end{equation}
 $$
 
@@ -62,8 +84,6 @@ H_\kappa^A[u]
 \end{equation}
 $$
 
----
-
 $$
 \begin{equation}
 \begin{aligned}
@@ -73,8 +93,8 @@ H_\kappa^B[u]
 &=\mathrm{i} \kappa \sum_{\bm{r}',\bm{r}''} \sum_{\left(\bm{\delta}_1,\bm{\delta}_2 \right)} \sum_{\bm{r}} \left(\delta_{\bm{r}',\bm{r}+\bm{\delta}_1} u_{\bm{r},A;\bm{r}+\bm{\delta}_1,B} \right) \left(\delta_{\bm{r}'',\bm{r}+\bm{\delta}_2} u_{\bm{r},A;\bm{r}+\bm{\delta}_2,B} \right) c_{\bm{r}',B} c_{\bm{r}'',B} \\
 &=\mathrm{i} \kappa \sum_{\bm{r}',\bm{r}''} \sum_{\left(\bm{\delta}_1,\bm{\delta}_2 \right)} \sum_{\bm{r}} \left(\delta_{\bm{r}'-\bm{\delta}_1,\bm{r}} u_{\bm{r}'-\bm{\delta}_1,A;\bm{r}',B} \right) \left(\delta_{\bm{r}''-\bm{\delta}_2,\bm{r}} u_{\bm{r}''-\bm{\delta}_2,A;\bm{r}'',B} \right) c_{\bm{r}',B} c_{\bm{r}'',B} \\
 &=\mathrm{i} \kappa \sum_{i,j} \sum_{\left(\bm{\delta}_1,\bm{\delta}_2 \right)} \sum_{k} \left(\delta_{\bm{r}_i-\bm{\delta}_1,\bm{r}_k} u_{\bm{r}_i-\bm{\delta}_1,A;\bm{r}_i,B} \right) \left(\delta_{\bm{r}_j-\bm{\delta}_2,\bm{r}_k} u_{\bm{r}_j-\bm{\delta}_2,A;\bm{r}_j,B} \right) c_{i,B} c_{j,B} \\
-&=\mathrm{i} \kappa \sum_{i,j} \sum_{\left(\bm{\delta}_1,\bm{\delta}_2 \right)} \sum_{k} \left(M_K^{\bm{\delta}_1} \right)_{ik} \left(M_K^{\bm{\delta}_2} \right)_{jk} c_{i,B} c_{j,B} \\
-&=\mathrm{i} \kappa \sum_{i,j} \sum_{\left(\bm{\delta}_1,\bm{\delta}_2 \right)} \left[\left(M_K^{\bm{\delta}_1} \right)\left(M_K^{\bm{\delta}_2} \right)^\top \right]_{ij} c_{i,B} c_{j,B} \\
+&=\mathrm{i} \kappa \sum_{i,j} \sum_{\left(\bm{\delta}_1,\bm{\delta}_2 \right)} \sum_{k} \left(M_K^{\bm{\delta}_1} \right)_{ki} \left(M_K^{\bm{\delta}_2} \right)_{kj} c_{i,B} c_{j,B} \\
+&=\mathrm{i} \kappa \sum_{i,j} \sum_{\left(\bm{\delta}_1,\bm{\delta}_2 \right)} \left[\left(M_K^{\bm{\delta}_1} \right)^\top \left(M_K^{\bm{\delta}_2} \right) \right]_{ij} c_{i,B} c_{j,B} \\
 &\equiv \mathrm{i} \kappa \sum_{i,j} \left(M_\kappa^B \right)_{ij} c_{i,B} c_{j,B}
 \end{aligned}
 \end{equation}
@@ -83,7 +103,7 @@ $$
 $$
 \begin{equation}
 \left(M_\kappa^B \right)_{ij}
-=\left[\left(M_K^{\bm{\delta}_1} \right)\left(M_K^{\bm{\delta}_2} \right)^\top \right]_{ij}
+=\left[\left(M_K^{\bm{\delta}_1} \right)^\top \left(M_K^{\bm{\delta}_2} \right) \right]_{ij}
 \end{equation}
 $$
 
@@ -120,5 +140,55 @@ H_\kappa^B[u]
 &\equiv \frac{\mathrm{i} }{2 } \bm{\psi}_c^\dag \left(\kappa \bm{H}_{c}^B[u] \right) \bm{\psi}_c \\
 &\equiv \frac{\mathrm{i} }{2 } \bm{\psi}_c^\dag \bm{H}_{\kappa,c}^B[u] \bm{\psi}_c
 \end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+H_K[u]
+=\frac{\mathrm{i} }{2 } \bm{\psi}_c^\dag \bm{H}_c^K[u] \bm{\psi}_c
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\bm{H}_c^K[u]
+=\begin{pmatrix}
+\bm{0} &\bm{M}_K \\
+-\bm{M}_K^\top &\bm{0}
+\end{pmatrix}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\bm{M}_K
+=K_x \bm{M}_K^x + K_y \bm{M}_K^y + K_z \bm{M}_K^z
+=\sum_{\mu} K_\mu \bm{M}_K^\mu
+\end{equation}
+$$
+
+$$
+\begin{equation}
+H_\kappa[u]
+=\frac{\mathrm{i} }{2 } \bm{\psi}_c^\dag \bm{H}_{\kappa,c}[u] \bm{\psi}_c
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\bm{H}_{\kappa,c}[u]
+=\bm{H}_{\kappa,c}^A[u] + \bm{H}_{\kappa,c}^B[u]
+=\kappa \bm{M}_\kappa^{AB}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\bm{M}_\kappa^{AB}
+=\begin{pmatrix}
+\bm{M}_\kappa^A - \left(\bm{M}_\kappa^A \right)^\top &\bm{0} \\
+\bm{0} &\bm{M}_\kappa^B - \left(\bm{M}_\kappa^B \right)^\top
+\end{pmatrix}
 \end{equation}
 $$
