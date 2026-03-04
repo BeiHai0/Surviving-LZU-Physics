@@ -1,5 +1,42 @@
 $$
 \begin{equation}
+H_0
+=H_K+H_\kappa
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+H_K
+&=\sum_{\bm{r}} \left(K_x \sigma_{\bm{r},A}^x \sigma_{\bm{r},B}^x + K_y \sigma_{\bm{r},A}^y \sigma_{\bm{r}+\bm{a}_1,B}^y + K_z \sigma_{\bm{r},A}^z \sigma_{\bm{r}+\bm{a}_2,B}^z \right) \\
+&=\sum_{\bm{r}} \sum_{\mu} K_\mu \sigma_{\bm{r},A}^\mu \sigma_{\bm{r}+\bm{\delta}_\mu,B}^\mu
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\bm{\delta}_x = \bm{0},\quad
+\bm{\delta}_y = \bm{a}_1,\quad
+\bm{\delta}_z = \bm{a}_2
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+H_\kappa
+&=-\kappa \sum_{\Braket{j,k,l }} \sigma_j^x \sigma_k^y \sigma_l^z \\
+&=-\kappa \sum_{\bm{r}\in \mathrm{UC}} \left(\sigma^x_{\bm{r},A} \sigma^y_{\bm{r}+\bm{a}_1,B} \sigma^z_{\bm{r}+\bm{a}_2,B} + \sigma^x_{\bm{r},B} \sigma^y_{\bm{r},A} \sigma^z_{\bm{r}+\bm{a}_2,B} + \sigma^x_{\bm{r},B} \sigma^y_{\bm{r}+\bm{a}_1,B} \sigma^z_{\bm{r},A} \right) \\
+&-\kappa \sum_{\bm{r}\in \mathrm{UC}} \left(\sigma^x_{\bm{r},B} \sigma^y_{\bm{r}-\bm{a}_1,A} \sigma^z_{\bm{r}-\bm{a}_2,A} + \sigma^x_{\bm{r},A} \sigma^y_{\bm{r},B} \sigma^z_{\bm{r}-\bm{a}_2,A} + \sigma^x_{\bm{r},A} \sigma^y_{\bm{r}-\bm{a}_1,A} \sigma^z_{\bm{r},B} \right) \\
+&\equiv H_\kappa^A + H_\kappa^B
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
 H_{\mathrm{TB}}
 =H_{\mathrm{hop}} + H_{\mathrm{on-site}}
 \end{equation}
