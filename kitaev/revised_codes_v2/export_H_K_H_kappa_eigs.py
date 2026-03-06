@@ -5,6 +5,7 @@ from scipy import sparse
 import scipy.linalg as la
 import matplotlib.pyplot as plt
 import time
+import gc
 
 def build_H_K_plus_H_kappa_c_matrix(M_Ka0, M_Ka1, M_Ka2, M_kappaAB, Kx, Ky, Kz, kappa):
     M_K = Kx*M_Ka0 + Ky*M_Ka1 + Kz*M_Ka2

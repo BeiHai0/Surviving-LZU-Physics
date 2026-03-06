@@ -173,7 +173,7 @@ def diagonalize_BdG_matrix(H_BdG_sparse):
     return eigvals_positive, W, V
 
 manager = KitaevDataManager() # 不传参，默认 root 为 kitaev_data
-N1, N2, bc1, bc2 = 10, 10, -1, -1
+N1, N2, bc1, bc2 = 20, 20, -1, -1
 n1, n2 = N1//2, N2//2
 
 u_std = build_standard_zero_flux_u_matrix(N1, N2, bc1, bc2)

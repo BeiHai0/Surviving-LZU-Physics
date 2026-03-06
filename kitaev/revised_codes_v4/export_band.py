@@ -46,7 +46,7 @@ def k_path(points, total_interval_number):
     return np.array(k_list), np.array(k_dist), node_indices
 
 manager = KitaevDataManager() # 不传参，默认 root 为 kitaev_data
-N1, N2, bc1, bc2 = 10, 10, -1, -1
+N1, N2, bc1, bc2 = 20, 20, -1, -1
 N = N1 * N2
 
 Gamma = np.array([0.0, 0.0])

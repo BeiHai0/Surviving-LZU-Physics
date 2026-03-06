@@ -114,7 +114,7 @@ plt.figure(figsize=(8, 6), dpi=100)
 
 # 1. 绘制所有能带
 # energies 的形状是 (k_number, 3*N)，直接 plot 会按列画出 3N 条线
-plt.plot(k_dist, energies[:, :4], color='blue', alpha=0.6)
+plt.plot(k_dist, energies[:, :4], color='black', alpha=0.6)
 
 # 2. 绘制高对称点垂直线
 for idx in node_idx:
@@ -128,9 +128,6 @@ plt.xlim(k_dist[0], k_dist[-1])
 plt.ylabel('Energy', fontsize=12)
 plt.title(f'Band Structure (N1={N1}, N2={N2}, $\kappa$={params["kappa"]})', fontsize=14)
 plt.grid(axis='y', alpha=0.3, linestyle=':')
-
-# 如果有费米能级可以标出（假设为0）
-plt.axhline(0, color='gray', linestyle='--', lw=0.8)
 
 plt.tight_layout()
 plt.show()

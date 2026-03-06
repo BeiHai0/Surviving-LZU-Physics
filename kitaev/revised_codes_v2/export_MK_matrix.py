@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from kitaev_data_manager import KitaevDataManager
 from scipy import sparse
+import numpy as np
 
 def one_idx_to_two_idx(N1, N2, i):
     n1 = i % N1

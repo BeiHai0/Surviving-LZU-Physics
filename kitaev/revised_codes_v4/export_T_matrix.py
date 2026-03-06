@@ -92,7 +92,7 @@ def build_T_matrix(U0, U0_prime_11, U0_prime_12, U0_prime_21, U0_prime_22, U_1, 
     return T
     
 manager = KitaevDataManager() # 不传参，默认 root 为 kitaev_data
-N1, N2, bc1, bc2 = 10, 10, -1, -1
+N1, N2, bc1, bc2 = 20, 20, -1, -1
 N = N1 * N2
 n1, n2 = N1//2, N2//2
 
