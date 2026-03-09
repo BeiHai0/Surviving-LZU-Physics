@@ -46,7 +46,7 @@ def k_path(points, total_interval_number):
     return np.array(k_list), np.array(k_dist), node_indices
 
 manager = KitaevDataManager() # 不传参，默认 root 为 kitaev_data
-N1, N2, bc1, bc2 = 20, 20, -1, -1
+N1, N2, bc1, bc2 = 50, 50, -1, -1
 N = N1 * N2
 
 Gamma = np.array([0.0, 0.0])
@@ -54,7 +54,7 @@ K = np.array([4*np.pi/3, 0.0])
 M = np.array([np.pi, np.pi/np.sqrt(3)])
 
 points = [Gamma, K, M, Gamma]
-total_interval_number = 100
+total_interval_number = 50
 
 k_list, k_dist, node_idx = k_path(points, total_interval_number)
 
@@ -66,8 +66,8 @@ phase1 = np.exp(-1j * np.dot(k_list, a1))
 phase2 = np.exp(1j * np.dot(k_list, a1 - a2))
 phase3 = np.exp(1j * np.dot(k_list, a2))
 
-for Kx, Ky, Kz in [(1, 1, 1), (-1, -1, -1)]:
-    for kappa in np.linspace(0, 0, 1):
+for Kx, Ky, Kz in [(1, 1, 1)]:
+    for kappa in np.linspace(0, 0.2, 3):
         params = {'Kx':Kx, 'Ky':Ky, 'Kz':Kz, 'kappa':kappa}
         T_A_xy = manager.load_data('T_A_xy', N1, N2, bc1, bc2, **params)
         T_A_yz = manager.load_data('T_A_yz', N1, N2, bc1, bc2, **params)
@@ -86,34 +86,53 @@ for Kx, Ky, Kz in [(1, 1, 1), (-1, -1, -1)]:
             GS_energy = -np.sum(positive_eigvals) / 2
             GS_energy_list.append(GS_energy)
         print(params)
-        print(GS_energy_list)
-        print(GS_energy_list-GS_energy_list[0])
-        Ex = np.diag(GS_energy_list[1] - GS_energy_list[0] + positive_eigvals_list[1])
-        Ey = np.diag(GS_energy_list[2] - GS_energy_list[0] + positive_eigvals_list[2])
-        Ez = np.diag(GS_energy_list[3] - GS_energy_list[0] + positive_eigvals_list[3])
+        #print(GS_energy_list)
+        #print(GS_energy_list-GS_energy_list[0])
         
-        H_stack = np.zeros((k_number, 3*N, 3*N), dtype=complex)
-
-        H_stack[:, 0:N, 0:N] = Ex
-        H_stack[:, N:2*N, N:2*N] = Ey
-        H_stack[:, 2*N:3*N, 2*N:3*N] = Ez
+        # 优化点1：预先计算对角块的值
+        Ex_val = GS_energy_list[1] - GS_energy_list[0] + positive_eigvals_list[1]
+        Ey_val = GS_energy_list[2] - GS_energy_list[0] + positive_eigvals_list[2]
+        Ez_val = GS_energy_list[3] - GS_energy_list[0] + positive_eigvals_list[3]
+        
+        # 优化点2：构造一个基础的对角矩阵模版，避免在k循环中重复调用np.diag
+        H_base = np.zeros((3*N, 3*N), dtype=complex)
+        H_base[range(0, N), range(0, N)] = Ex_val
+        H_base[range(N, 2*N), range(N, 2*N)] = Ey_val
+        H_base[range(2*N, 3*N), range(2*N, 3*N)] = Ez_val
         
         for hx, hy, hz in [(v,v,v) for v in np.linspace(0, 0.5, 6)]:
             start_time = time.time()
-            H12 = hz * (T_A_xy + phase1[:, None, None] * T_B_xy)
-            H_stack[:, 0:N, N:2*N] = H12
-            H_stack[:, N:2*N, 0:N] = np.swapaxes(np.conj(H12), 1, 2)
-    
-            H23 = hx * (T_A_yz + phase2[:, None, None] * T_B_yz)
-            H_stack[:, N:2*N, 2*N:3*N] = H23
-            H_stack[:, 2*N:3*N, N:2*N] = np.swapaxes(np.conj(H23), 1, 2)
-    
-            H31 = hy * (T_A_zx + phase3[:, None, None] * T_B_zx)
-            H_stack[:, 2*N:3*N, 0:N] = H31
-            H_stack[:, 0:N, 2*N:3*N] = np.swapaxes(np.conj(H31), 1, 2)
+            
+            energies = np.zeros((k_number, 3*N))
+            
+            # 核心优化循环
+            for idx in range(k_number):
+                # 优化点3：使用 copy() 快速获取基础对角阵，而不是从零开始填充
+                H_curr = H_base.copy()
+                
+                # 优化点4：减少冗余乘法，直接填充非对角块
+                # 利用 T_A_xy + p * T_B_xy 的线性性质
+                p1, p2, p3 = phase1[idx], phase2[idx], phase3[idx]
+                
+                # XY 块
+                H12 = hz * (T_A_xy + p1 * T_B_xy)
+                H_curr[0:N, N:2*N] = H12
+                H_curr[N:2*N, 0:N] = H12.T.conj()
+                
+                # YZ 块
+                H23 = hx * (T_A_yz + p2 * T_B_yz)
+                H_curr[N:2*N, 2*N:3*N] = H23
+                H_curr[2*N:3*N, N:2*N] = H23.T.conj()
+                
+                # ZX 块
+                H31 = hy * (T_A_zx + p3 * T_B_zx)
+                H_curr[2*N:3*N, 0:N] = H31
+                H_curr[0:N, 2*N:3*N] = H31.T.conj()
+                
+                # 计算该 k 点的本征值
+                energies[idx, :] = np.linalg.eigvalsh(H_curr)
             
             params2 = {'Kx':Kx, 'Ky':Ky, 'Kz':Kz, 'kappa':kappa, 'hx':hx, 'hy':hy, 'hz':hz}
-            energies = np.linalg.eigvalsh(H_stack)
             manager.save_data('k_space_energy', energies, N1, N2, bc1, bc2, **params2)
             
             labels = [r'$\Gamma$', 'K', 'M', r'$\Gamma$']
@@ -121,8 +140,6 @@ for Kx, Ky, Kz in [(1, 1, 1), (-1, -1, -1)]:
             plt.figure(figsize=(8, 6), dpi=100)
 
             # 1. 绘制所有能带
-            # energies 的形状是 (k_number, 3*N)，直接 plot 会按列画出 3N 条线
-            print(energies)
             plt.plot(k_dist, energies[:, :20], color='black', alpha=0.6)
 
             # 2. 绘制高对称点垂直线
@@ -143,25 +160,13 @@ for Kx, Ky, Kz in [(1, 1, 1), (-1, -1, -1)]:
             save_dir.mkdir(parents=True, exist_ok=True)
             filename = save_dir / f"band_N1={N1}, N2={N2}, bc1={bc1}, bc2={bc2}, Kx=Ky=Kz={Kx}, kappa={kappa:.3f}, hx=hy=hz={hx:.3f}.png"
             plt.savefig(filename)
-            plt.show()
-            # plt.close()
+            plt.close()
             end_time = time.time() 
             print(f"能带计算耗时: {end_time - start_time:.6f} 秒")
             
-            del H12, H23, H31
             del energies
             
-        del T_A_xy, T_A_yz, T_A_zx, T_B_xy, T_B_yz, T_B_zx, Ex, Ey, Ez, H_stack
+        del T_A_xy, T_A_yz, T_A_zx, T_B_xy, T_B_yz, T_B_zx, Ex_val, Ey_val, Ez_val, H_base
 
 
-
-
-
-
-
-
-
-
-
-
-
+print("all done")
