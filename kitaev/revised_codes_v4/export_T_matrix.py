@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 from kitaev_data_manager import KitaevDataManager
 import numpy as np
 import time
@@ -51,26 +52,28 @@ def build_T_matrix(U0, U0_prime_11, U0_prime_12, U0_prime_21, U0_prime_22, U_1, 
 
         
     F_tilde_1 = V_tilde_1.conj() @ np.linalg.inv(W_tilde_1.conj())
+    pf_check_1 = np.max(np.abs(F_tilde_1 + F_tilde_1.T))
     # print(F_tilde_1 + F_tilde_1.T)
-    print(np.max(np.abs(F_tilde_1 + F_tilde_1.T)))
+    F_tilde_1 = (F_tilde_1 - F_tilde_1.T) / 2
+    
+    print(f"pf_check_1:{pf_check_1}")
     F_tilde_2 = V_tilde_2.conj() @ np.linalg.inv(W_tilde_2.conj())
-    print(np.max(np.abs(F_tilde_2 + F_tilde_2.T)))
-    #print(F_tilde_2 + F_tilde_2.T)
+    pf_check_2 = np.max(np.abs(F_tilde_2 + F_tilde_2.T))
+    F_tilde_2 = (F_tilde_2 - F_tilde_2.T) / 2
+    print(f"pf_check_2:{pf_check_2}")
 
     N_1_tilde = np.sqrt(np.abs(np.linalg.det(W_tilde_1)))
-    print(f"N_1_tilde:{N_1_tilde}")
+    # print(f"N_1_tilde:{N_1_tilde}")
     N_2_tilde = np.sqrt(np.abs(np.linalg.det(W_tilde_2)))
     
-
     M = np.block([
                     [F_tilde_2, -np.eye(N)],
                     [np.eye(N), -F_tilde_1.conj()]
                 ])
-    # M = (M - M.T) / 2 # 有一些误差会让 pf M 无法计算
     
     #print(f"当前参数: {params}")
     overlap = N_1_tilde * N_2_tilde * (-1)**(N*(N+1)/2) * pfaffian.pfaffian(M)
-    print(overlap)
+    print(f"overlap:{overlap}")
     
     middle_matrix = -np.linalg.inv(M) + np.block([ [np.zeros((N, N)), np.eye(N)], [np.zeros((N, N)), np.zeros((N, N))] ])
     left_WV = np.hstack([V_tilde_1.T.conj(), W_tilde_1.T.conj()])
@@ -89,15 +92,17 @@ def build_T_matrix(U0, U0_prime_11, U0_prime_12, U0_prime_21, U0_prime_22, U_1, 
     T = overlap * (1j * cor_alpha_1_alpha_2_dag - cor_alpha_1_c_i_A_c_j_B_alpha_2_dag)
     end_time = time.time() 
     print(f"T_matrix计算耗时: {end_time - start_time:.6f} 秒")
-    return T
+    return T, pf_check_1, pf_check_2
     
 manager = KitaevDataManager() # 不传参，默认 root 为 kitaev_data
-N1, N2, bc1, bc2 = 20, 20, -1, -1
+N1, N2, bc1, bc2 = 50, 50, -1, -1
 N = N1 * N2
 n1, n2 = N1//2, N2//2
 
-for Kx, Ky, Kz in [(1, 1, 1), (-1, -1, -1)]:
-    for kappa in np.linspace(0, 0, 1):
+pf_check_list = []
+
+for Kx, Ky, Kz in [(1, 1, 1)]:
+    for kappa in np.linspace(0.2, 0.5, 4):
         U_A_list = [None,]
         U_B_list = [None,]
         params = {'Kx':Kx, 'Ky':Ky, 'Kz':Kz, 'kappa':kappa}
@@ -130,34 +135,39 @@ for Kx, Ky, Kz in [(1, 1, 1), (-1, -1, -1)]:
         # T_A_xy
         i = N1 * n2 + n1
         j = N1 * ((n2+1) % N2) + n1
-        T_A_xy = build_T_matrix(U0, U0_prime_11, U0_prime_12, U0_prime_21, U0_prime_22, U_A_list[1], U_A_list[2], i, j, N1, N2, bc1, bc2, Kx, Ky, Kz, kappa)
+        T_A_xy, pf_check_1, pf_check_2 = build_T_matrix(U0, U0_prime_11, U0_prime_12, U0_prime_21, U0_prime_22, U_A_list[1], U_A_list[2], i, j, N1, N2, bc1, bc2, Kx, Ky, Kz, kappa)
         manager.save_data('T_A_xy', T_A_xy, N1, N2, bc1, bc2, **params) 
+        pf_check_list.extend([pf_check_1, pf_check_2])
         # T_A_yz
         i = N1 * n2 + n1
         j = N1 * n2 + n1
-        T_A_yz = build_T_matrix(U0, U0_prime_11, U0_prime_12, U0_prime_21, U0_prime_22, U_A_list[2], U_A_list[3], i, j, N1, N2, bc1, bc2, Kx, Ky, Kz, kappa)
-        manager.save_data('T_A_yz', T_A_yz, N1, N2, bc1, bc2, **params)       
+        T_A_yz, pf_check_1, pf_check_2 = build_T_matrix(U0, U0_prime_11, U0_prime_12, U0_prime_21, U0_prime_22, U_A_list[2], U_A_list[3], i, j, N1, N2, bc1, bc2, Kx, Ky, Kz, kappa)
+        manager.save_data('T_A_yz', T_A_yz, N1, N2, bc1, bc2, **params) 
+        pf_check_list.extend([pf_check_1, pf_check_2])
         # T_A_zx
         i = N1 * n2 + n1
         j = N1 * n2 + (n1 + 1) % N1
-        T_A_zx = build_T_matrix(U0, U0_prime_11, U0_prime_12, U0_prime_21, U0_prime_22, U_A_list[3], U_A_list[1], i, j, N1, N2, bc1, bc2, Kx, Ky, Kz, kappa)
-        manager.save_data('T_A_zx', T_A_zx, N1, N2, bc1, bc2, **params)         
+        T_A_zx, pf_check_1, pf_check_2 = build_T_matrix(U0, U0_prime_11, U0_prime_12, U0_prime_21, U0_prime_22, U_A_list[3], U_A_list[1], i, j, N1, N2, bc1, bc2, Kx, Ky, Kz, kappa)
+        manager.save_data('T_A_zx', T_A_zx, N1, N2, bc1, bc2, **params)  
+        pf_check_list.extend([pf_check_1, pf_check_2])
         # T_B_xy
         i = N1 * n2 + n1
         j = N1 * ((n2+1) % N2) + n1
-        T_B_xy = build_T_matrix(U0, U0_prime_11, U0_prime_12, U0_prime_21, U0_prime_22, U_B_list[1], U_B_list[2], i, j, N1, N2, bc1, bc2, Kx, Ky, Kz, kappa)
+        T_B_xy, pf_check_1, pf_check_2 = build_T_matrix(U0, U0_prime_11, U0_prime_12, U0_prime_21, U0_prime_22, U_B_list[1], U_B_list[2], i, j, N1, N2, bc1, bc2, Kx, Ky, Kz, kappa)
         manager.save_data('T_B_xy', T_B_xy, N1, N2, bc1, bc2, **params) 
+        pf_check_list.extend([pf_check_1, pf_check_2])
         # T_B_yz
         i = N1 * ((n2+1) % N2) + n1
         j = N1 * ((n2+1) % N2) + n1
-        T_B_yz = build_T_matrix(U0, U0_prime_11, U0_prime_12, U0_prime_21, U0_prime_22, U_B_list[2], U_B_list[3], i, j, N1, N2, bc1, bc2, Kx, Ky, Kz, kappa)
-        manager.save_data('T_B_yz', T_B_yz, N1, N2, bc1, bc2, **params) 
+        T_B_yz, pf_check_1, pf_check_2 = build_T_matrix(U0, U0_prime_11, U0_prime_12, U0_prime_21, U0_prime_22, U_B_list[2], U_B_list[3], i, j, N1, N2, bc1, bc2, Kx, Ky, Kz, kappa)
+        manager.save_data('T_B_yz', T_B_yz, N1, N2, bc1, bc2, **params)
+        pf_check_list.extend([pf_check_1, pf_check_2])
         # T_B_zx
         i = N1 * ((n2+1) % N2) + (n1-1+N1) % N1
         j = N1 * ((n2+1) % N2) + n1
-        T_B_zx = build_T_matrix(U0, U0_prime_11, U0_prime_12, U0_prime_21, U0_prime_22, U_B_list[3], U_B_list[1], i, j, N1, N2, bc1, bc2, Kx, Ky, Kz, kappa)
+        T_B_zx, pf_check_1, pf_check_2 = build_T_matrix(U0, U0_prime_11, U0_prime_12, U0_prime_21, U0_prime_22, U_B_list[3], U_B_list[1], i, j, N1, N2, bc1, bc2, Kx, Ky, Kz, kappa)
         manager.save_data('T_B_zx', T_B_zx, N1, N2, bc1, bc2, **params) 
+        pf_check_list.extend([pf_check_1, pf_check_2])
         
-
 print("all done")
-
+print(f"final pf check:{max(pf_check_list)}")
