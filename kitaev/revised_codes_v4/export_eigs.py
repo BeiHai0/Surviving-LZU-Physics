@@ -185,7 +185,7 @@ u_list = [u_std, u_vison_pair_x, u_vison_pair_y, u_vison_pair_z]
 
 for i in [0, 1, 2, 3]:
     for Kx, Ky, Kz in [(1, 1, 1), (-1, -1, -1)]:
-        for kappa in np.linspace(0, 0.5, 6):
+        for kappa in np.linspace(0, 0.4, 5):
             u = u_list[i]
             M_Ka0 = build_M_Ka0_matrix(u, N1, N2, bc1, bc2)
             M_Ka1 = build_M_Ka1_matrix(u, N1, N2, bc1, bc2)

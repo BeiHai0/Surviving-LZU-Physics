@@ -66,8 +66,8 @@ phase1 = np.exp(-1j * np.dot(k_list, a1))
 phase2 = np.exp(1j * np.dot(k_list, a1 - a2))
 phase3 = np.exp(1j * np.dot(k_list, a2))
 
-for Kx, Ky, Kz in [(1, 1, 1)]:
-    for kappa in np.linspace(0, 0.2, 3):
+for Kx, Ky, Kz in [(1, 1, 1),(-1, -1, -1)]:
+    for kappa in np.linspace(0, 0, 1):
         params = {'Kx':Kx, 'Ky':Ky, 'Kz':Kz, 'kappa':kappa}
         T_A_xy = manager.load_data('T_A_xy', N1, N2, bc1, bc2, **params)
         T_A_yz = manager.load_data('T_A_yz', N1, N2, bc1, bc2, **params)
@@ -100,7 +100,7 @@ for Kx, Ky, Kz in [(1, 1, 1)]:
         H_base[range(N, 2*N), range(N, 2*N)] = Ey_val
         H_base[range(2*N, 3*N), range(2*N, 3*N)] = Ez_val
         
-        for hx, hy, hz in [(v,v,v) for v in np.linspace(0, 0.5, 6)]:
+        for hx, hy, hz in [(v,v,v) for v in np.linspace(0.3, 0.5, 3)]:
             start_time = time.time()
             
             energies = np.zeros((k_number, 3*N))
