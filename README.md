@@ -557,6 +557,298 @@ git pull
 }
 ```
 
+## latex snippets
+
+```
+{
+	// Place your snippets for latex here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	// ps:非全局 snippets 不用设置scope
+	// 像 "xxx.json" 这样的就是 xxx 专用 snippets
+	// 像 "xxx.code-snippets" 这样的就是全局 snippets，可通过 scope 设置 snippets 的适用范围
+
+//--------------------模板--------------------//
+
+		"": {
+		//"scope":"latex",
+		"prefix":"",
+		"body":[
+			
+		],
+		"description":""
+	},
+
+//--------------------数学环境--------------------//
+
+	"$ $": {
+		//"scope":"latex",
+		"prefix":".i",
+		"body":[
+			"$$0 $"
+		],
+		"description":"$ $"
+	},
+
+	"Equation":{
+		//"scope":"latex",
+		"prefix":".eq",
+		"body":[
+			"\\begin{equation}",
+			"$0",
+			"\\end{equation}",
+		],
+		"description":"Equation"
+	},
+
+	"Align":{
+		//"scope":"latex",
+		"prefix":".ali",
+		"body":[
+			"\\begin{align}",
+			"$0",
+			"\\end{align}",
+		],
+		"description":"Align"
+	},
+
+	"split": {
+		//"scope":"latex",
+		"prefix":".spl",
+		"body":[
+			"\\begin{equation}",
+			"\\begin{split}",
+			"$0",
+			"\\end{split}",
+			"\\end{equation}",		
+		],
+		"description":"one tag for multiple equations"
+	},
+
+	"displaystyle": {
+		//"scope":"latex",
+		"prefix":".ds",
+		"body":[
+			"$\\displaystyle{$1 }$ $2"
+		],
+		"description":""
+	},
+
+		"itemize": {
+		//"scope":"latex",
+		"prefix":".it",
+		"body":[
+			"\\begin{itemize}",
+			"\\item $1",
+			"\\end{itemize}"
+		],
+		"description":"itemize"
+	},
+
+//--------------------数学对象--------------------//
+
+	"frac": {
+		//"scope":"latex",
+		"prefix":".f",
+		"body":[
+			"\\frac{$1 }{$2 } $3"
+		],
+		"description":"frac"
+	},
+
+	"bmatrix": {
+		//"scope":"latex",
+		"prefix":".bm",
+		"body":[
+			"\\begin{bmatrix}",
+			"$0",
+			"\\end{bmatrix}"
+		],
+		"description":"bmatrix"
+	},
+
+	"vmatrix": {
+		//"scope":"latex",
+		"prefix":".vm",
+		"body":[
+			"\\begin{vmatrix}",
+			"$0",
+			"\\end{vmatrix}"
+		],
+		"description":"vmatrix"
+	},
+
+	"pmatrix": {
+		//"scope":"latex",
+		"prefix":".pm",
+		"body":[
+			"\\begin{pmatrix}",
+			"$0",
+			"\\end{pmatrix}"
+		],
+		"description":"pmatrix"
+	},
+
+	"ps": {
+		//"scope":"latex",
+		"prefix":".ps",
+		"body":[
+			"\\left\\{$1 \\right\\\\}$2"
+		],
+		"description":"ps"
+	},
+
+	"()": {
+		//"scope":"latex",
+		"prefix":".p",
+		"body":[
+			"\\left($1 \\right)$2"
+		],
+		"description":"()"
+	},
+
+	"[]": {
+		//"scope":"latex",
+		"prefix":".[",
+		"body":[
+			"\\left[$1 \\right]$2"
+		],
+		"description":"[]"
+	},
+
+	"abs": {
+		//"scope":"latex",
+		"prefix":".abs",
+		"body":[
+			"\\left|$1 \\right|$2"
+		],
+		"description":"abs"
+	},
+
+	"Ket": {
+		//"scope":"latex",
+		"prefix":".k",
+		"body":[
+			"\\Ket{$1 }$2"
+		],
+		"description":""
+	},
+
+	"Bra": {
+		//"scope":"latex",
+		"prefix":".b",
+		"body":[
+			"\\Bra{$1 }$2"
+		],
+		"description":""
+	},
+
+	"Braket": {
+		//"scope":"latex",
+		"prefix":".bk",
+		"body":[
+			"\\Braket{$1 }$2"
+		],
+		"description":"Braket"
+	},
+
+	"empty set": {
+		//"scope":"latex",
+		"prefix":".vn",
+		"body":[
+			"\\varnothing"
+		],
+		"description":"empty set"
+	},
+
+//--------------------字母/字体--------------------//
+
+	"varepsilon": {
+		//"scope":"latex",
+		"prefix":".veps",
+		"body":[
+			"\\varepsilon"
+		],
+		"description":"varepsilon"
+	},
+
+	"Mathrm":{
+		//"scope":"latex",
+		"prefix":".rm",
+		"body":[
+			"\\mathrm{$1}$2",
+		],
+		"description":"Mathrm"
+	},
+
+	"Mathscr": {
+		//"scope":"latex",
+		"prefix":".scr",
+		"body":[
+			"\\mathscr{$0}"
+		],
+		"description":"Mathscr"
+	},
+
+	"Mathcal": {
+		//"scope":"latex",
+		"prefix":".cal",
+		"body":[
+			"\\mathcal{$0}"
+		],
+		"description":"Mathcal"
+	},
+
+	"mathbb": {
+		//"scope":"latex",
+		"prefix":".bb",
+		"body":[
+			"\\mathbb{$0}"
+		],
+		"description":"mathbb"
+	},
+
+	"bold": {
+		//"scope":"latex",
+		"prefix":".bd",
+		"body":[
+			"\\bold{$1}$2"
+		],
+		"description":"bold"
+	},
+
+	"vertical line": {
+		//"scope":"latex",
+		"prefix":".vl",
+		"body":[
+			"\\left. $1 \\right|_{$2} $3"
+		],
+		"description":"vl"
+	},
+
+	"square brackets": {
+		//"scope":"latex",
+		"prefix":".[]",
+		"body":[
+			"\\left[$1 \\right]$2"
+		],
+		"description":"[]"
+	},
+
+}
+```
+
 
 
 
