@@ -95,14 +95,14 @@ def build_T_matrix(U0, U0_prime_11, U0_prime_12, U0_prime_21, U0_prime_22, U_1, 
     return T, pf_check_1, pf_check_2
     
 manager = KitaevDataManager() # 不传参，默认 root 为 kitaev_data
-N1, N2, bc1, bc2 = 50, 50, -1, -1
+N1, N2, bc1, bc2 = 40, 40, -1, -1
 N = N1 * N2
 n1, n2 = N1//2, N2//2
 
 pf_check_list = []
 
-for Kx, Ky, Kz in [(1, 1, 1)]:
-    for kappa in np.linspace(0.2, 0.5, 4):
+for Kx, Ky, Kz in [(1, 1, 1),(-1, -1, -1)]:
+    for kappa in np.linspace(0, 0.1, 6):
         U_A_list = [None,]
         U_B_list = [None,]
         params = {'Kx':Kx, 'Ky':Ky, 'Kz':Kz, 'kappa':kappa}
@@ -119,7 +119,7 @@ for Kx, Ky, Kz in [(1, 1, 1)]:
             #print(U_A @ U_A.conj().T)
             U_A_list.append(U_A)
             
-        # 利用平移对称性构造下三角的本征向量
+        # 利用平移对称性构造上三角的本征向量
         T_1 = build_T_1_matrix(N1, N2)
         T_2 = build_T_2_matrix(N1, N2)
         
