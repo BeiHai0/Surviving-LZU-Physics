@@ -46,7 +46,7 @@ def k_path(points, total_interval_number):
     return np.array(k_list), np.array(k_dist), node_indices
 
 manager = KitaevDataManager() # 不传参，默认 root 为 kitaev_data
-N1, N2, bc1, bc2 = 50, 50, -1, -1
+N1, N2, bc1, bc2 = 20, 20, -1, -1
 N = N1 * N2
 
 Gamma = np.array([0.0, 0.0])
@@ -67,7 +67,7 @@ phase2 = np.exp(1j * np.dot(k_list, a1 - a2))
 phase3 = np.exp(1j * np.dot(k_list, a2))
 
 for Kx, Ky, Kz in [(1, 1, 1),(-1, -1, -1)]:
-    for kappa in np.linspace(0, 0, 1):
+    for kappa in np.linspace(0, 0.1, 6):
         params = {'Kx':Kx, 'Ky':Ky, 'Kz':Kz, 'kappa':kappa}
         T_A_xy = manager.load_data('T_A_xy', N1, N2, bc1, bc2, **params)
         T_A_yz = manager.load_data('T_A_yz', N1, N2, bc1, bc2, **params)
@@ -100,7 +100,7 @@ for Kx, Ky, Kz in [(1, 1, 1),(-1, -1, -1)]:
         H_base[range(N, 2*N), range(N, 2*N)] = Ey_val
         H_base[range(2*N, 3*N), range(2*N, 3*N)] = Ez_val
         
-        for hx, hy, hz in [(v,v,v) for v in np.linspace(0.3, 0.5, 3)]:
+        for hx, hy, hz in [(v,v,v) for v in np.linspace(0, 0.5, 6)]:
             start_time = time.time()
             
             energies = np.zeros((k_number, 3*N))
