@@ -51,7 +51,7 @@ delta_list = [None, delta_x, delta_y, delta_z]
 T_1 = build_T_1_matrix(N1, N2)
 T_2 = build_T_2_matrix(N1, N2)
 
-for Kx, Ky, Kz in [(1, 1, 1),(-1, -1, -1)]:
+for Kx, Ky, Kz in [(1, 1, 1)]:
     for kappa in np.linspace(0.04, 0.04, 1):
         sigma_A_list = []
         sigma_B_list = []
@@ -78,6 +78,7 @@ for Kx, Ky, Kz in [(1, 1, 1),(-1, -1, -1)]:
                 k = Gamma
             elif Kx == -1:
                 k = K
+            params2 = {'Kx':Kx, 'Ky':Ky, 'Kz':Kz, 'kappa':kappa, 'bond':l}
             phase_A = np.exp(1j * np.dot(k, r_i))
             
             W_A = manager.load_data(f'W_u_{l}', N1, N2, bc1, bc2, **params)
@@ -102,7 +103,8 @@ for Kx, Ky, Kz in [(1, 1, 1),(-1, -1, -1)]:
             middle_matrix = -M_A_inv + np.block([ [np.zeros((N, N)), np.eye(N)], [np.zeros((N, N)), np.zeros((N, N))] ])
             right_WV = np.vstack([W_A_tilde, V_A_tilde])
             cor_c_i_A_alpha_2_dag = np.hstack([U0_prime_12[i,:].reshape(1,-1), U0_prime_11[i,:].reshape(1,-1) ]) @ middle_matrix @ right_WV
-            
+            tmp = overlap_A * 1j * cor_c_i_A_alpha_2_dag # 保存
+            manager.save_data('sigma_A_d_dag_GS_exp', tmp, N1, N2, bc1, bc2, **params2)
             result_A = 1/np.sqrt(N) * phase_A * overlap_A * 1j * cor_c_i_A_alpha_2_dag @ phi_list[l]
             spin_A = result_A + result_A.conj()
             sigma_A_list.append(spin_A)
@@ -144,7 +146,10 @@ for Kx, Ky, Kz in [(1, 1, 1),(-1, -1, -1)]:
             right_WV = np.vstack([W_B_tilde, V_B_tilde])
             cor_c_j_B_alpha_2_dag = np.hstack([U0_prime_22[j,:].reshape(1,-1), U0_prime_21[j,:].reshape(1,-1) ]) @ middle_matrix @ right_WV
             
-            result_B = 1/np.sqrt(N) * phase_B * overlap_B * cor_c_j_B_alpha_2_dag @ phi_list[l]
+            tmp = overlap_B * cor_c_j_B_alpha_2_dag # 保存
+            manager.save_data('sigma_B_d_dag_GS_exp', tmp, N1, N2, bc1, bc2, **params2)
+            
+            result_B = 1/np.sqrt(N) * phase_B * tmp @ phi_list[l]
             spin_B = result_B + result_B.conj()
             sigma_B_list.append(spin_B)
             print(f"B sigma_{l}:{spin_B}")
@@ -171,8 +176,8 @@ S2_B = -S2_A
 
 x, y, u, v = [], [], [], []
 
-for n1 in range(N1):
-    for n2 in range(N2):
+for n1 in range(3):
+    for n2 in range(3):
         rA = n1*a1 + n2*a2
         rB = rA + delta_x
 
@@ -193,6 +198,9 @@ y = np.array(y)
 u = np.array(u)
 v = np.array(v)
 
+x = x
+y = y
+
 norm = np.sqrt(u**2 + v**2)
 u = u / (norm + 1e-8)
 v = v / (norm + 1e-8)
@@ -200,8 +208,8 @@ v = v / (norm + 1e-8)
 plt.figure(figsize=(12,12))
 
 # ===== 画 honeycomb bond（底层）=====
-for n1 in range(N1):
-    for n2 in range(N2):
+for n1 in range(3):
+    for n2 in range(3):
         rA = n1*a1 + n2*a2
 
         neighbors = [
@@ -216,7 +224,7 @@ for n1 in range(N1):
                      'k-', lw=0.8, alpha=0.4)
 
 # ===== 缩小箭头 =====
-scale_factor = 0.5
+scale_factor = 0.2
 u_plot = scale_factor * u
 v_plot = scale_factor * v
 
