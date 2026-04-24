@@ -59,7 +59,7 @@ phase1_gpu = cp.array(np.exp(-1j * np.dot(k_list, a1)), dtype=dtype)
 phase2_gpu = cp.array(np.exp(1j * np.dot(k_list, a1 - a2)), dtype=dtype)
 phase3_gpu = cp.array(np.exp(1j * np.dot(k_list, a2)), dtype=dtype)
 
-# 【核心：预分配固定空间，防止 OOM】
+# 【核心：预分配固定空间，防止 OoM】
 H_curr = cp.zeros((3*N, 3*N), dtype=dtype)
 
 for Kx, Ky, Kz in [(1, 1, 1), (-1, -1, -1)]:
@@ -86,7 +86,7 @@ for Kx, Ky, Kz in [(1, 1, 1), (-1, -1, -1)]:
             start_time = time.time()
             energies_gpu = cp.zeros((k_number, 3*N), dtype=cp.float64)
 
-            # 磁场项预乘（已修复语法错误）
+            # 磁场项预乘
             A_xy_h = hz * T_data['T_A_xy']; B_xy_h = hz * T_data['T_B_xy']
             A_yz_h = hx * T_data['T_A_yz']; B_yz_h = hx * T_data['T_B_yz']
             A_zx_h = hy * T_data['T_A_zx']; B_zx_h = hy * T_data['T_B_zx']

@@ -52,7 +52,7 @@ T_1 = build_T_1_matrix(N1, N2)
 T_2 = build_T_2_matrix(N1, N2)
 
 for Kx, Ky, Kz in [(1, 1, 1)]:
-    for kappa in np.linspace(0.04, 0.04, 1):
+    for kappa in np.linspace(0, 0.02, 2):
         sigma_A_list = []
         sigma_B_list = []
         U_A_list = [None,]
@@ -104,7 +104,7 @@ for Kx, Ky, Kz in [(1, 1, 1)]:
             right_WV = np.vstack([W_A_tilde, V_A_tilde])
             cor_c_i_A_alpha_2_dag = np.hstack([U0_prime_12[i,:].reshape(1,-1), U0_prime_11[i,:].reshape(1,-1) ]) @ middle_matrix @ right_WV
             tmp = overlap_A * 1j * cor_c_i_A_alpha_2_dag # 保存
-            manager.save_data('sigma_A_d_dag_GS_exp', tmp, N1, N2, bc1, bc2, **params2)
+            manager.save_data(f'sigma_A_d_dag_GS_exp_bond_{l}', tmp, N1, N2, bc1, bc2, **params2)
             result_A = 1/np.sqrt(N) * phase_A * overlap_A * 1j * cor_c_i_A_alpha_2_dag @ phi_list[l]
             spin_A = result_A + result_A.conj()
             sigma_A_list.append(spin_A)
@@ -114,15 +114,15 @@ for Kx, Ky, Kz in [(1, 1, 1)]:
             if l == 1:
                 U_B = np.kron(np.eye(2), T_2) @ U_A
                 j = (n1) + N1 * (n2+1) 
-                r_j = (n1) * a1 + (n2+1) * a2
+                r_j = (n1) * a1 + (n2+1) * a2 + delta_x
             elif l == 2:
                 U_B = np.kron(np.eye(2), T_2) @ np.kron(np.eye(2), T_1.T) @ U_A
                 j = (n1) + N1 * (n2+1) 
-                r_j = (n1) * a1 + (n2+1) * a2
+                r_j = (n1) * a1 + (n2+1) * a2 + delta_x
             elif l == 3:
                 U_B = U_A
                 j = (n1) + N1 * (n2+1) 
-                r_j = (n1) * a1 + (n2+1) * a2
+                r_j = (n1) * a1 + (n2+1) * a2 +delta_x
                 
             phase_B = np.exp(1j * np.dot(k, (r_j - delta_list[l])))
             
@@ -147,7 +147,7 @@ for Kx, Ky, Kz in [(1, 1, 1)]:
             cor_c_j_B_alpha_2_dag = np.hstack([U0_prime_22[j,:].reshape(1,-1), U0_prime_21[j,:].reshape(1,-1) ]) @ middle_matrix @ right_WV
             
             tmp = overlap_B * cor_c_j_B_alpha_2_dag # 保存
-            manager.save_data('sigma_B_d_dag_GS_exp', tmp, N1, N2, bc1, bc2, **params2)
+            manager.save_data(f'sigma_B_d_dag_GS_exp_bond_{l}', tmp, N1, N2, bc1, bc2, **params2)
             
             result_B = 1/np.sqrt(N) * phase_B * tmp @ phi_list[l]
             spin_B = result_B + result_B.conj()

@@ -205,4 +205,4 @@ for Kx, Ky, Kz in [(-1,-1,-1)]:
 
 plt.show()
 
-print("\n🎉 all done")
+print("\n all done")
