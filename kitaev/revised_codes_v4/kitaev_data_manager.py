@@ -37,7 +37,7 @@ class KitaevDataManager:
             if key in all_args:
                 val = all_args[key]
                 # 对浮点数保留 3 位
-                if isinstance(val, (float, np.float64)):
+                if isinstance(val, (float, np.floating)):
                     parts.append(f"{key}_{val:.3f}")
                 else:
                     parts.append(f"{key}_{val}")

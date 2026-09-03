@@ -4,7 +4,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import scipy.linalg as la
 from pfapack import pfaffian
-from matplotlib.ticker import MultipleLocator
 
 def build_U0_prime_matrix(U0, N):
     I_N = np.eye(N, dtype=complex)
@@ -81,8 +80,6 @@ points = [Gamma, K, M_prime, Gamma_prime, K_prime, M, Gamma]
 q_interval_number = 50
 q_list, q_dist, node_idx = k_path(points, q_interval_number)
 
-# 预先计算相位
-
 H_k = np.zeros((3*N, 3*N), dtype=complex)
 
 for Kx, Ky, Kz in [(1, 1, 1)]:
@@ -124,13 +121,13 @@ for Kx, Ky, Kz in [(1, 1, 1)]:
         #print(p_B_list)
         
         for hx, hy, hz in [(v,v,v) for v in np.linspace(0, 0.3, 4)]:
-            params2 = {'Kx':Kx, 'Ky':Ky, 'Kz':Kz, 'kappa':kappa, 'hx':hx, 'hy':hy, 'hz':hz}
+            params2 = {'Kx': Kx, 'Ky': Ky, 'Kz': Kz, 'kappa': kappa, 'hx': hx, 'hy': hy, 'hz': hz}
             A_xy_h = hz * T_dict['T_A_xy']; B_xy_h = hz * T_dict['T_B_xy']
             A_yz_h = hx * T_dict['T_A_yz']; B_yz_h = hx * T_dict['T_B_yz']
             A_zx_h = hy * T_dict['T_A_zx']; B_zx_h = hy * T_dict['T_B_zx']
             
-            omega = np.linspace(0, 5, 500)
-            S = np.zeros((len(q_list), len(omega)))
+            omega = np.linspace(0, 5, 501)
+            S = np.zeros((len(q_list), len(omega)), dtype=complex)
             
             for q_idx, q in enumerate(q_list):
                 q_in_1BZ = fold_to_1BZ(q, b1, b2)
@@ -155,7 +152,7 @@ for Kx, Ky, Kz in [(1, 1, 1)]:
                 #print(eigvals)
                 
                 
-                eta = 4.0 / N1
+                eta = 0.04
                 
                 
                 for i in np.arange(3*N):
@@ -179,7 +176,7 @@ for Kx, Ky, Kz in [(1, 1, 1)]:
                         total_weight += np.abs(amp)**2
                     
                     S[q_idx] += total_weight * (eta)/((omega - eps)**2 + eta**2)
-            
+            S = np.real(S)
             manager.save_data('S', S, N1, N2, bc1, bc2, **params2)
             manager.save_data('q_list', q_list, N1, N2, bc1, bc2, **params2)
             manager.save_data('omega', omega, N1, N2, bc1, bc2, **params2)

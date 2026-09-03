@@ -10,7 +10,7 @@ N1, N2, bc1, bc2 = 20, 20, -1, -1
 
 Kx,Ky,Kz = 1,1,1
 kappa = 0.0
-hx,hy,hz = 0.3,0.3,0.3
+hx,hy,hz = 0.0,0.0,0.0
 
 params = {'Kx':Kx, 'Ky':Ky, 'Kz':Kz, 'kappa':kappa, 'hx':hx, 'hy':hy, 'hz':hz}
 

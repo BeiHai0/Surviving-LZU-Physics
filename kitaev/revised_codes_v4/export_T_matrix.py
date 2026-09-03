@@ -5,7 +5,7 @@ import numpy as np
 import time
 from pfapack import pfaffian
 from scipy.linalg import solve
-from scipy.linalg import pinv
+
 
 def build_U0_prime_matrix(U0, N):
     I_N = np.eye(N, dtype=complex)
@@ -95,14 +95,14 @@ def build_T_matrix(U0, U0_prime_11, U0_prime_12, U0_prime_21, U0_prime_22, U_1, 
     return T, pf_check_1, pf_check_2
     
 manager = KitaevDataManager() # 不传参，默认 root 为 kitaev_data
-N1, N2, bc1, bc2 = 40, 40, -1, -1
+N1, N2, bc1, bc2 = 20, 20, -1, -1
 N = N1 * N2
 n1, n2 = N1//2, N2//2
 
 pf_check_list = []
 
 for Kx, Ky, Kz in [(1, 1, 1),(-1, -1, -1)]:
-    for kappa in np.linspace(0, 0.1, 6):
+    for kappa in np.linspace(0, 0.6, 4):
         U_A_list = [None,]
         U_B_list = [None,]
         params = {'Kx':Kx, 'Ky':Ky, 'Kz':Kz, 'kappa':kappa}

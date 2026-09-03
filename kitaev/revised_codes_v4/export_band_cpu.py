@@ -52,7 +52,7 @@ def k_path(points, total_interval_number):
 
 manager = KitaevDataManager()
 
-N1, N2, bc1, bc2 = 20, 20, -1, -1
+N1, N2, bc1, bc2 = 60, 60, -1, -1
 N = N1 * N2
 
 Gamma = np.array([0.0, 0.0])

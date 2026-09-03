@@ -138,7 +138,7 @@ for Kx, Ky, Kz in [(1, 1, 1)]:
                             [np.zeros((N, N)), np.eye(N)],
                             [-np.eye(N), F_B_tilde]
                         ])
-            N_0_tilde = 1/np.sqrt(2)
+            N_0_tilde = 1
             N_B_tilde = np.sqrt(np.abs(np.linalg.det(W_B_tilde)))
             overlap_B = N_0_tilde * N_B_tilde * (-1)**(N*(N+1)/2) * pfaffian.pfaffian(M_B)
             
@@ -151,6 +151,7 @@ for Kx, Ky, Kz in [(1, 1, 1)]:
             
             result_B = 1/np.sqrt(N) * phase_B * tmp @ phi_list[l]
             spin_B = result_B + result_B.conj()
+            #print(result_B)
             sigma_B_list.append(spin_B)
             print(f"B sigma_{l}:{spin_B}")
             

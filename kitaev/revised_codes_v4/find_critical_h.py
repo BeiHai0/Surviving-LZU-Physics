@@ -18,8 +18,8 @@ a1 = np.array([1.0, 0.0])
 a2 = np.array([0.5, np.sqrt(3)/2])
 
 # ===== 数值参数 =====
-tol = 1e-7
-max_iter = 50
+tol = 1e-4 # 允许的误差
+max_iter = 50 # 最大迭代次数
 
 plt.figure()
 plt.xlabel(r'$\kappa$')
